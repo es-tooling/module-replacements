@@ -1,0 +1,16 @@
+{
+  "modules": [
+    {
+      "id": "some-package",
+      "replacements": ["some-native-equivalent"]
+    }
+  ],
+  "replacements": [
+    {
+      "id": "some-native-thing",
+      "native": true,
+      "example": "new URLSearchParams(foo)",
+      "url": "mdn-url-here"
+    }
+  ]
+}

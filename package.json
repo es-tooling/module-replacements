@@ -1,0 +1,54 @@
+{
+  "name": "module-replacements",
+  "description": "This package provides a set of manifests which each define a mapping of JS modules to their suggested replacements.",
+  "version": "1.0.0",
+  "main": "./dist/commonjs/main.js",
+  "scripts": {
+    "clean": "rimraf dist main.js",
+    "prepare": "tshy",
+    "format": "prettier --write \"./src/**/*.ts\" \"./manifests/**/*.json\"",
+    "build:types": "tsc --noEmit",
+    "build:bundle": "esbuild src/main.ts --format=esm --outfile=main.js --bundle",
+    "build": "npm run clean && npm run build:bundle && npm run build:types"
+  },
+  "tshy": {
+    "exports": {
+      ".": "./src/main.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/node_modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/es-tooling/module-replacements.git"
+  },
+  "author": "James Garbutt (https://github.com/43081j)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/es-tooling/module-replacements/issues"
+  },
+  "homepage": "https://github.com/es-tooling/module-replacements#readme",
+  "devDependencies": {
+    "esbuild": "^0.20.0",
+    "prettier": "^3.2.4",
+    "rimraf": "^5.0.5",
+    "tshy": "^1.11.0",
+    "typescript": "^5.3.3"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/main.d.ts",
+        "default": "./dist/esm/main.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/main.d.ts",
+        "default": "./dist/commonjs/main.js"
+      }
+    }
+  },
+  "types": "./dist/commonjs/main.d.ts",
+  "type": "module"
+}

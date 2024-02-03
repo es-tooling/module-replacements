@@ -1,0 +1,15 @@
+{
+  "modules": [
+    {
+      "id": "some-package",
+      "replacements": ["some-npm-package"]
+    }
+  ],
+  "replacements": [
+    {
+      "id": "some-npm-package",
+      "example": "import {X} from 'some-npm-package'; X;",
+      "url": "https://github.com/wherever"
+    }
+  ]
+}
