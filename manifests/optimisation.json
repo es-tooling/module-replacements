@@ -1,4 +1,5 @@
 {
+  "$schema": "../manifest-schema.json",
   "modules": [
     {
       "id": "some-package",
