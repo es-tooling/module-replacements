@@ -1,9 +1,19 @@
 # module-replacements
 
-This package provides a set of manifests which each define a mapping of
-JS modules to their suggested replacements.
+This project provides two things:
 
-## Usage
+- A JS package containing manifests of suggested module replacements
+- Documentation for replacements which are not entirely replaced by native
+functionality
+
+## Replacements documentation
+
+You can read more about module replacements and browse the list
+[by clicking here](./docs/modules/README.md).
+
+## `module-replacements` package
+
+### Usage
 
 You can install this package via NPM:
 
@@ -17,7 +27,7 @@ You can then import the manifest of your choice:
 import {NativeReplacements} from 'module-replacements';
 ```
 
-## Manifests
+### Manifests
 
 We provide three manifests:
 
@@ -26,7 +36,7 @@ We provide three manifests:
 - Optimisation replacements (modules which can be replaced by leaner or
 closer-to-the-platform equivalents)
 
-### Native replacements
+#### Native replacements
 
 These are modules which can now be replaced by native functionality.
 
@@ -36,7 +46,7 @@ platform features can be replaced by their platform equivalents.
 Similarly, features which did not exist at the time but have now existed in
 the platform for many years, so no longer need a dependency.
 
-### Optimisation replacements
+#### Optimisation replacements
 
 These are modules which have more optimal replacements.
 
