@@ -8,6 +8,6 @@
 
 {Description of alternative package}
 
-Project: {URL to project (e.g. github)}
+[Project Page](https://github.com)
 
-NPM: {URL to npm package (on npmjs.com)}
+[NPM](https://npmjs.com)
