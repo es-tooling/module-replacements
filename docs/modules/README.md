@@ -12,4 +12,5 @@ ESLint plugin.
 
 ## List of modules
 
+- [`is-builtin-module`](./is-builtin-module.md)
 - [`npm-run-all`](./npm-run-all.md)
