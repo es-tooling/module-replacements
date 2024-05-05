@@ -12,5 +12,7 @@ ESLint plugin.
 
 ## List of modules
 
+- [`eslint-plugin-import`](./eslint-plugin-import.md)
+- [`eslint-plugin-react`](./eslint-plugin-react.md)
 - [`is-builtin-module`](./is-builtin-module.md)
 - [`npm-run-all`](./npm-run-all.md)
