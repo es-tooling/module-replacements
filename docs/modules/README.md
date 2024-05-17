@@ -17,4 +17,5 @@ ESLint plugin.
 - [`eslint-plugin-react`](./eslint-plugin-react.md)
 - [`is-builtin-module`](./is-builtin-module.md)
 - [`MaterializeCSS`](./materialize-css.md)
+- [`moment.js`](./momentjs.md)
 - [`npm-run-all`](./npm-run-all.md)
