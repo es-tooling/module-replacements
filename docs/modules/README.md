@@ -12,6 +12,7 @@ ESLint plugin.
 
 ## List of modules
 
+- [`cpx`](./cpx.md)
 - [`eslint-plugin-import`](./eslint-plugin-import.md)
 - [`eslint-plugin-node`](./eslint-plugin-node.md)
 - [`eslint-plugin-react`](./eslint-plugin-react.md)
