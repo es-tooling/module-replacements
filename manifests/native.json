@@ -1,17 +1,226 @@
 {
-  "$schema": "../manifest-schema.json",
-  "modules": [
+  "moduleReplacements": [
     {
-      "id": "some-package",
-      "replacements": ["some-native-equivalent"]
-    }
-  ],
-  "replacements": [
+      "type": "native",
+      "moduleName": "object.entries",
+      "nodeVersion": "7.0.0",
+      "replacement": "Object.entries",
+      "mdnPath": "Global_Objects/Object/entries",
+      "category": "native"
+    },
     {
-      "id": "some-native-thing",
-      "native": true,
-      "example": "new URLSearchParams(foo)",
-      "url": "mdn-url-here"
+      "type": "native",
+      "moduleName": "date",
+      "nodeVersion": "0.10.0",
+      "replacement": "Date",
+      "mdnPath": "Global_Objects/Date",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "for-each",
+      "nodeVersion": "0.12.0",
+      "replacement": "for...of (using \"Object.entries\" if dealing with objects)",
+      "mdnPath": "Statements/for...of",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.of",
+      "nodeVersion": "4.0.0",
+      "replacement": "Array.of",
+      "mdnPath": "Global_Objects/Array/of",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "number.isnan",
+      "nodeVersion": "0.10.0",
+      "replacement": "Number.isNaN",
+      "mdnPath": "Global_Objects/Number/isNaN",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.findindex",
+      "nodeVersion": "4.0.0",
+      "replacement": "Array.prototype.findIndex",
+      "mdnPath": "Global_Objects/Array/findIndex",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.from",
+      "nodeVersion": "4.0.0",
+      "replacement": "Array.from",
+      "mdnPath": "Global_Objects/Array/from",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "object-is",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.is",
+      "mdnPath": "Global_Objects/Object/is",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "hasown",
+      "nodeVersion": "0.10.0",
+      "replacement":
+        "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
+      "mdnPath": "Global_Objects/Object/hasOwnProperty",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "has-own-prop",
+      "nodeVersion": "0.10.0",
+      "replacement":
+        "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
+      "mdnPath": "Global_Objects/Object/hasOwnProperty",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array-map",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.map",
+      "mdnPath": "Global_Objects/Array/map",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "is-nan",
+      "nodeVersion": "0.10.0",
+      "replacement": "Number.isNaN",
+      "mdnPath": "Global_Objects/Number/isNaN",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "node.extend",
+      "nodeVersion": "4.0.0",
+      "replacement":
+        "Object.assign, or if deep clones are needed, use structuredClone",
+      "mdnPath": "Global_Objects/Object/assign",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "extend-shallow",
+      "nodeVersion": "4.0.0",
+      "replacement":
+        "Object.assign, or if deep clones are needed, use structuredClone",
+      "mdnPath": "Global_Objects/Object/assign",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "xtend",
+      "nodeVersion": "4.0.0",
+      "replacement":
+        "Object.assign, or if deep clones are needed, use structuredClone",
+      "mdnPath": "Global_Objects/Object/assign",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "defaults",
+      "nodeVersion": "4.0.0",
+      "replacement":
+        "Object.assign, or if deep clones are needed, use structuredClone",
+      "mdnPath": "Global_Objects/Object/assign",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "function-bind",
+      "nodeVersion": "0.10.0",
+      "replacement": "Function.prototype.bind",
+      "mdnPath": "Global_Objects/Function/bind",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "regexp.prototype.flags",
+      "nodeVersion": "6.0.0",
+      "replacement": "RegExp.prototype.flags (e.g. \"/foo/g.flags\")",
+      "mdnPath": "Global_Objects/RegExp/flags",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.find",
+      "nodeVersion": "4.0.0",
+      "replacement": "Array.prototype.find",
+      "mdnPath": "Global_Objects/Array/find",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "object-keys",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.keys(obj)",
+      "mdnPath": "Global_Objects/Object/keys",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "define-properties",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.defineProperties",
+      "mdnPath": "Global_Objects/Object/defineProperties",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "left-pad",
+      "nodeVersion": "8.0.0",
+      "replacement": "String.prototype.padStart",
+      "mdnPath": "Global_Objects/String/padStart",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "pad-left",
+      "nodeVersion": "8.0.0",
+      "replacement": "String.prototype.padStart",
+      "mdnPath": "Global_Objects/String/padStart",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "filter-array",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.filter",
+      "mdnPath": "Global_Objects/Array/filter",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array-every",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.every",
+      "mdnPath": "Global_Objects/Array/every",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "index-of",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.indexOf",
+      "mdnPath": "Global_Objects/Array/indexOf",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "last-index-of",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.lastIndexOf",
+      "mdnPath": "Global_Objects/Array/lastIndexOf",
+      "category": "native"
     }
   ]
 }

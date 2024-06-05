@@ -1,0 +1,46 @@
+{
+  "moduleReplacements": [
+    {
+      "type": "documented",
+      "moduleName": "npm-run-all",
+      "docPath": "npm-run-all",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "cpx",
+      "docPath": "cpx",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "is-builtin-module",
+      "docPath": "is-builtin-module",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "builtin-modules",
+      "docPath": "is-builtin-module",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "eslint-plugin-react",
+      "docPath": "eslint-plugin-react",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "eslint-plugin-import",
+      "docPath": "eslint-plugin-import",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "eslint-plugin-node",
+      "docPath": "eslint-plugin-node",
+      "category": "preferred"
+    }
+  ]
+}

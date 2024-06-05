@@ -9,7 +9,9 @@
     "format": "prettier --write \"./src/**/*.ts\" \"./manifests/**/*.json\"",
     "build:types": "tsc --noEmit",
     "build:bundle": "esbuild src/main.ts --format=esm --outfile=main.js --bundle",
-    "build": "npm run clean && npm run build:bundle && npm run build:types"
+    "build": "npm run clean && npm run build:bundle && npm run build:types",
+    "validate-manifests": "node scripts/validate-manifests.js",
+    "generate-schema": "node scripts/generate-schema.js"
   },
   "tshy": {
     "exports": {
@@ -31,9 +33,11 @@
   },
   "homepage": "https://github.com/es-tooling/module-replacements#readme",
   "devDependencies": {
+    "ajv": "^8.16.0",
     "esbuild": "^0.20.0",
     "prettier": "^3.2.4",
     "rimraf": "^5.0.5",
+    "ts-json-schema-generator": "^2.3.0",
     "tshy": "^1.11.0",
     "typescript": "^5.3.3"
   },

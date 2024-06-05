@@ -1,0 +1,82 @@
+{
+  "moduleReplacements": [
+    {
+      "type": "simple",
+      "moduleName": "is-number",
+      "replacement": "Use typeof v === \"number\"",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-plain-object",
+      "replacement": "Use typeof v === \"object\" && v !== null && v.constructor === Object",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-primitve",
+      "replacement": "Use v === null || (typeof v !== \"function\" && typeof v !== \"object\")",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-regexp",
+      "replacement": "Use v instanceof RegExp, or if cross-realm, use Object.prototype.toString.call(v) === \"[object RegExp]\"",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-travis",
+      "replacement": "Use (\"TRAVIS\" in process.env)",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-npm",
+      "replacement": "Use process.env.npm_config_user_agent?.startsWith(\"npm\")",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "clone-regexp",
+      "replacement": "Use new RegExp(regexpToCopy)",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "split-lines",
+      "replacement": "Use str.split(/\\r?\\n/)",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-windows",
+      "replacement": "Use process.platform === \"win32\"",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-whitespace",
+      "replacement": "Use str.trim() === \"\" or /^\\s*$/.test(str)",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-string",
+      "replacement": "Use typeof str === \"string\"",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-odd",
+      "replacement": "Use (n % 2) === 1",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-even",
+      "replacement": "Use (n % 2) === 0",
+      "category": "micro-utilities"
+    }
+  ]
+}
