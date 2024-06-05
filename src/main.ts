@@ -7,6 +7,8 @@ const nativeReplacements = native as ManifestModule;
 const microUtilsReplacements = microUtils as ManifestModule;
 const preferredReplacements = preferred as ManifestModule;
 
+export * from './types.js';
+
 export {
   nativeReplacements,
   microUtilsReplacements,
