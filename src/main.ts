@@ -1,29 +1,22 @@
 import native from '../manifests/native.json';
-import optimisation from '../manifests/optimisation.json';
+import microUtils from '../manifests/micro-utilities.json';
+import preferred from '../manifests/preferred.json';
+import {ManifestModule} from './types.js';
 
-export interface ManifestModule {
-  id: string;
-  replacements: string[];
-}
+const nativeReplacements = native as ManifestModule;
+const microUtilsReplacements = microUtils as ManifestModule;
+const preferredReplacements = preferred as ManifestModule;
 
-export interface ManifestReplacement {
-  id: string;
-  native?: boolean;
-  example: string;
-  url: string;
-}
+export {
+  nativeReplacements,
+  microUtilsReplacements,
+  preferredReplacements
+};
 
-export interface Manifest {
-  modules: ManifestModule[];
-  replacements: ManifestReplacement[];
-}
-
-const nativeReplacements = native as Manifest;
-const optimisationReplacements = optimisation as Manifest;
-
-export {nativeReplacements, optimisationReplacements};
-
-export const all: Manifest = {
-  modules: [...native.modules, ...optimisation.modules],
-  replacements: [...native.replacements, ...optimisation.replacements]
+export const all: ManifestModule = {
+  moduleReplacements: [
+    ...nativeReplacements.moduleReplacements,
+    ...microUtilsReplacements.moduleReplacements,
+    ...preferredReplacements.moduleReplacements
+  ]
 };

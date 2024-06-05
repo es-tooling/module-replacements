@@ -1,53 +1,118 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/es-tooling/module-replacements/blob/main/manifest-schema.json",
-  "title": "Module replacements manifest schema",
-  "description": "A schema for the structure used when defining JS module replacements",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "additionalProperties": false,
   "properties": {
-    "modules": {
+    "moduleReplacements": {
       "type": "array",
       "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "id": {
-            "type": "string"
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "documented"
+              },
+              "moduleName": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "docPath": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "docPath",
+              "moduleName",
+              "type"
+            ],
+            "additionalProperties": false
           },
-          "replacements": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "native"
+              },
+              "moduleName": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "mdnPath": {
+                "type": "string"
+              },
+              "nodeVersion": {
+                "type": "string"
+              },
+              "replacement": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "mdnPath",
+              "moduleName",
+              "nodeVersion",
+              "replacement",
+              "type"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "simple"
+              },
+              "moduleName": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "replacement": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "moduleName",
+              "replacement",
+              "type"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "none"
+              },
+              "moduleName": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "moduleName",
+              "type"
+            ],
+            "additionalProperties": false
           }
-        },
-        "required": ["id", "replacements"]
-      }
-    },
-    "replacements": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "native": {
-            "type": "boolean"
-          },
-          "example": {
-            "type": "string"
-          },
-          "url": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "id", "example", "url"
         ]
       }
     }
-  }
+  },
+  "required": [
+    "moduleReplacements"
+  ],
+  "additionalProperties": false,
+  "definitions": {}
 }

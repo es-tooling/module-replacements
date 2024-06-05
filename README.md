@@ -32,9 +32,9 @@ import {NativeReplacements} from 'module-replacements';
 We provide three manifests:
 
 - All (includes every manifest)
-- Native replacements (modules which can be replaced by native equivalents)
-- Optimisation replacements (modules which can be replaced by leaner or
-closer-to-the-platform equivalents)
+- Native replacements
+- Micro utility replacements
+- Preferred replacements
 
 #### Native replacements
 
@@ -46,19 +46,20 @@ platform features can be replaced by their platform equivalents.
 Similarly, features which did not exist at the time but have now existed in
 the platform for many years, so no longer need a dependency.
 
-#### Optimisation replacements
+#### Micro utility replacements
 
-These are modules which have more optimal replacements.
+This is a more opinionated list of modules considered to be 'micro utilities' -
+very small utilities which could possibly be replaced with native equivalents
+or removed entirely.
 
-For example, some modules have arguably unnecessarily deep dependencies trees,
-or rely on functionality themselves which fit into the "Native replacements"
-category. These should likely be replaced by leaner alternatives.
+#### Preferred replacements
 
-Another example - modules which are too granularly modularised, leading to
-unnecessarily large amounts of small dependencies (aka "micro dependencies").
+This is a very opinionated list of modules with preferred replacements. Often
+these replacements are much lighter or more modern than the modules they are
+replacing.
 
-Due to this being a one-to-many mapping (there are often many possible
-replacements), this list can contain multiple replacements per module.
+Sometimes these may also be forks of older packages which are actively
+maintained (unlike the source module).
 
 # Contributing
 
