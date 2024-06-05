@@ -4,12 +4,12 @@
   "version": "1.0.0",
   "main": "./dist/commonjs/main.js",
   "scripts": {
-    "clean": "rimraf dist main.js",
-    "prepare": "tshy",
+    "clean": "rimraf dist",
+    "prepare": "tshy && npm run build:copy-manifests",
     "format": "prettier --write \"./src/**/*.ts\" \"./manifests/**/*.json\"",
     "build:types": "tsc --noEmit",
-    "build:bundle": "esbuild src/main.ts --format=esm --outfile=main.js --bundle",
-    "build": "npm run clean && npm run build:bundle && npm run build:types",
+    "build:copy-manifests": "cp -R manifests dist/manifests",
+    "build": "npm run clean && npm run build:types",
     "validate-manifests": "node scripts/validate-manifests.js",
     "generate-schema": "node scripts/generate-schema.js"
   },
@@ -20,7 +20,7 @@
   },
   "files": [
     "dist",
-    "!dist/node_modules"
+    "manifests"
   ],
   "repository": {
     "type": "git",
@@ -34,7 +34,6 @@
   "homepage": "https://github.com/es-tooling/module-replacements#readme",
   "devDependencies": {
     "ajv": "^8.16.0",
-    "esbuild": "^0.20.0",
     "prettier": "^3.2.4",
     "rimraf": "^5.0.5",
     "ts-json-schema-generator": "^2.3.0",
