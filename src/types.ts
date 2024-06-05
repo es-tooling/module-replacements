@@ -4,28 +4,28 @@ interface ModuleReplacementLike {
   category?: string;
 }
 
-interface DocumentedModuleReplacement extends ModuleReplacementLike {
+export interface DocumentedModuleReplacement extends ModuleReplacementLike {
   type: 'documented';
   docPath: string;
 }
 
-interface NativeModuleReplacement extends ModuleReplacementLike {
+export interface NativeModuleReplacement extends ModuleReplacementLike {
   type: 'native';
   mdnPath: string;
   nodeVersion: string;
   replacement: string;
 }
 
-interface SimpleModuleReplacement extends ModuleReplacementLike {
+export interface SimpleModuleReplacement extends ModuleReplacementLike {
   type: 'simple';
   replacement: string;
 }
 
-interface NoModuleReplacement extends ModuleReplacementLike {
+export interface NoModuleReplacement extends ModuleReplacementLike {
   type: 'none';
 }
 
-type ModuleReplacement = DocumentedModuleReplacement |
+export type ModuleReplacement = DocumentedModuleReplacement |
   NativeModuleReplacement |
   SimpleModuleReplacement |
   NoModuleReplacement;
