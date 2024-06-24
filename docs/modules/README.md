@@ -12,6 +12,7 @@ ESLint plugin.
 
 ## List of modules
 
+- [`bluebird`](./bluebird.md)
 - [`cpx`](./cpx.md)
 - [`eslint-plugin-import`](./eslint-plugin-import.md)
 - [`eslint-plugin-node`](./eslint-plugin-node.md)

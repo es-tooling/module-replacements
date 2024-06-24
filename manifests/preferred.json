@@ -8,6 +8,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "bluebird",
+      "docPath": "bluebird",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "cpx",
       "docPath": "cpx",
       "category": "preferred"
