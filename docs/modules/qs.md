@@ -1,4 +1,4 @@
-# cpx
+# qs
 
 `qs` can typically be replaced with platform-provided APIs. When you need more functionality, there are other alternatives.
 
