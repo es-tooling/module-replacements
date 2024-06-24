@@ -1,6 +1,6 @@
 # deep-equal
 
-`deep-equal` has [many dependencies](https://npmgraph.js.org/?q=deep-equal) while alternatives have zero.
+`deep-equal` has various alternatives which are lighter and faster.
 
 # Alternatives
 
