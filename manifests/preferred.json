@@ -41,6 +41,12 @@
       "moduleName": "eslint-plugin-node",
       "docPath": "eslint-plugin-node",
       "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "qs",
+      "docPath": "qs",
+      "category": "preferred"
     }
   ]
 }
