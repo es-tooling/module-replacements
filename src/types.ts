@@ -25,10 +25,11 @@ export interface NoModuleReplacement extends ModuleReplacementLike {
   type: 'none';
 }
 
-export type ModuleReplacement = DocumentedModuleReplacement |
-  NativeModuleReplacement |
-  SimpleModuleReplacement |
-  NoModuleReplacement;
+export type ModuleReplacement =
+  | DocumentedModuleReplacement
+  | NativeModuleReplacement
+  | SimpleModuleReplacement
+  | NoModuleReplacement;
 
 export interface ManifestModule {
   moduleReplacements: ModuleReplacement[];
