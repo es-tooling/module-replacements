@@ -26,18 +26,74 @@
     },
     {
       "type": "native",
-      "moduleName": "array.of",
-      "nodeVersion": "4.0.0",
-      "replacement": "Array.of",
-      "mdnPath": "Global_Objects/Array/of",
-      "category": "native"
-    },
-    {
-      "type": "native",
       "moduleName": "number.isnan",
       "nodeVersion": "0.10.0",
       "replacement": "Number.isNaN",
       "mdnPath": "Global_Objects/Number/isNaN",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array-includes",
+      "nodeVersion": "6.0.0",
+      "replacement": "Array.prototype.includes",
+      "mdnPath": "Global_Objects/Array/includes",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.at",
+      "nodeVersion": "16.6.0",
+      "replacement": "Array.prototype.at",
+      "mdnPath": "Global_Objects/Array/at",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.concat",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.concat",
+      "mdnPath": "Global_Objects/Array/concat",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.copywithin",
+      "nodeVersion": "4.0.0",
+      "replacement": "Array.prototype.copyWithin",
+      "mdnPath": "Global_Objects/Array/copyWithin",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.entries",
+      "nodeVersion": "0.12.0",
+      "replacement": "Array.prototype.entries",
+      "mdnPath": "Global_Objects/Array/entries",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.every",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.every",
+      "mdnPath": "Global_Objects/Array/every",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.filter",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.filter",
+      "mdnPath": "Global_Objects/Array/filter",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.find",
+      "nodeVersion": "4.0.0",
+      "replacement": "Array.prototype.find",
+      "mdnPath": "Global_Objects/Array/find",
       "category": "native"
     },
     {
@@ -50,10 +106,146 @@
     },
     {
       "type": "native",
+      "moduleName": "array.prototype.flat",
+      "nodeVersion": "11.0.0",
+      "replacement": "Array.prototype.flat",
+      "mdnPath": "Global_Objects/Array/flat",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.flatmap",
+      "nodeVersion": "11.0.0",
+      "replacement": "Array.prototype.flatMap",
+      "mdnPath": "Global_Objects/Array/flatMap",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.foreach",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.forEach",
+      "mdnPath": "Global_Objects/Array/forEach",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "array.from",
       "nodeVersion": "4.0.0",
       "replacement": "Array.from",
       "mdnPath": "Global_Objects/Array/from",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.indexof",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.indexOf",
+      "mdnPath": "Global_Objects/Array/indexOf",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.join",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.join",
+      "mdnPath": "Global_Objects/Array/join",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.keys",
+      "nodeVersion": "0.12.0",
+      "replacement": "Array.prototype.keys",
+      "mdnPath": "Global_Objects/Array/keys",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.lastindexof",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.lastIndexOf",
+      "mdnPath": "Global_Objects/Array/lastIndexOf",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.map",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.map",
+      "mdnPath": "Global_Objects/Array/map",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.of",
+      "nodeVersion": "4.0.0",
+      "replacement": "Array.of",
+      "mdnPath": "Global_Objects/Array/of",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.push",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.push",
+      "mdnPath": "Global_Objects/Array/push",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.reduce",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.reduce",
+      "mdnPath": "Global_Objects/Array/reduce",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.reduceright",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.reduceRight",
+      "mdnPath": "Global_Objects/Array/reduceRight",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.slice",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.slice",
+      "mdnPath": "Global_Objects/Array/slice",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.some",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.some",
+      "mdnPath": "Global_Objects/Array/some",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.splice",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.splice",
+      "mdnPath": "Global_Objects/Array/splice",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.unshift",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.unshift",
+      "mdnPath": "Global_Objects/Array/unshift",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.values",
+      "nodeVersion": "10.9.0",
+      "replacement": "Array.prototype.values",
+      "mdnPath": "Global_Objects/Array/values",
       "category": "native"
     },
     {
@@ -142,14 +334,6 @@
       "nodeVersion": "6.0.0",
       "replacement": "RegExp.prototype.flags (e.g. \"/foo/g.flags\")",
       "mdnPath": "Global_Objects/RegExp/flags",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "array.prototype.find",
-      "nodeVersion": "4.0.0",
-      "replacement": "Array.prototype.find",
-      "mdnPath": "Global_Objects/Array/find",
       "category": "native"
     },
     {
