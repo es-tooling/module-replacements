@@ -223,6 +223,6 @@
       "replacement": "Promise",
       "mdnPath": "Global_Objects/Promise",
       "category": "native"
-    },
+    }
   ]
 }
