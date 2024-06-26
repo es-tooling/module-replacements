@@ -66,6 +66,14 @@
     },
     {
       "type": "native",
+      "moduleName": "has",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
+      "mdnPath": "Global_Objects/Object/hasOwnProperty",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "hasown",
       "nodeVersion": "0.10.0",
       "replacement": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
