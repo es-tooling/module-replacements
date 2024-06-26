@@ -215,6 +215,14 @@
       "replacement": "Array.prototype.lastIndexOf",
       "mdnPath": "Global_Objects/Array/lastIndexOf",
       "category": "native"
-    }
+    },
+    {
+      "type": "native",
+      "moduleName": "bluebird",
+      "nodeVersion": "0.12.0",
+      "replacement": "Promise",
+      "mdnPath": "Global_Objects/Promise",
+      "category": "native"
+    },
   ]
 }
