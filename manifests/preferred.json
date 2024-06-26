@@ -44,6 +44,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "eslint-plugin-eslint-comments",
+      "docPath": "eslint-plugin-eslint-comments",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "eslint-plugin-import",
       "docPath": "eslint-plugin-import",
       "category": "preferred"
