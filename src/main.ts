@@ -1,19 +1,20 @@
-import native from '../manifests/native.json';
-import microUtils from '../manifests/micro-utilities.json';
-import preferred from '../manifests/preferred.json';
+import {readFileSync} from 'node:fs';
 import {ManifestModule} from './types.js';
+import {manifestsDir} from './manifests-dir.js';
 
-const nativeReplacements = native as ManifestModule;
-const microUtilsReplacements = microUtils as ManifestModule;
-const preferredReplacements = preferred as ManifestModule;
+const nativeReplacements = JSON.parse(
+  readFileSync(`${manifestsDir}/native.json`, 'utf8')
+) as ManifestModule;
+const microUtilsReplacements = JSON.parse(
+  readFileSync(`${manifestsDir}/micro-utilities.json`, 'utf8')
+) as ManifestModule;
+const preferredReplacements = JSON.parse(
+  readFileSync(`${manifestsDir}/preferred.json`, 'utf8')
+) as ManifestModule;
 
 export * from './types.js';
 
-export {
-  nativeReplacements,
-  microUtilsReplacements,
-  preferredReplacements
-};
+export {nativeReplacements, microUtilsReplacements, preferredReplacements};
 
 export const all: ManifestModule = {
   moduleReplacements: [

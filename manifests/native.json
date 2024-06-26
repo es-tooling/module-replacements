@@ -68,8 +68,7 @@
       "type": "native",
       "moduleName": "hasown",
       "nodeVersion": "0.10.0",
-      "replacement":
-        "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
+      "replacement": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
       "mdnPath": "Global_Objects/Object/hasOwnProperty",
       "category": "native"
     },
@@ -77,8 +76,7 @@
       "type": "native",
       "moduleName": "has-own-prop",
       "nodeVersion": "0.10.0",
-      "replacement":
-        "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
+      "replacement": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
       "mdnPath": "Global_Objects/Object/hasOwnProperty",
       "category": "native"
     },
@@ -102,8 +100,7 @@
       "type": "native",
       "moduleName": "node.extend",
       "nodeVersion": "4.0.0",
-      "replacement":
-        "Object.assign, or if deep clones are needed, use structuredClone",
+      "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
       "mdnPath": "Global_Objects/Object/assign",
       "category": "native"
     },
@@ -111,8 +108,7 @@
       "type": "native",
       "moduleName": "extend-shallow",
       "nodeVersion": "4.0.0",
-      "replacement":
-        "Object.assign, or if deep clones are needed, use structuredClone",
+      "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
       "mdnPath": "Global_Objects/Object/assign",
       "category": "native"
     },
@@ -120,8 +116,7 @@
       "type": "native",
       "moduleName": "xtend",
       "nodeVersion": "4.0.0",
-      "replacement":
-        "Object.assign, or if deep clones are needed, use structuredClone",
+      "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
       "mdnPath": "Global_Objects/Object/assign",
       "category": "native"
     },
@@ -129,8 +124,7 @@
       "type": "native",
       "moduleName": "defaults",
       "nodeVersion": "4.0.0",
-      "replacement":
-        "Object.assign, or if deep clones are needed, use structuredClone",
+      "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
       "mdnPath": "Global_Objects/Object/assign",
       "category": "native"
     },

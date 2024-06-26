@@ -20,6 +20,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "deep-equal",
+      "docPath": "deep-equal",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "is-builtin-module",
       "docPath": "is-builtin-module",
       "category": "preferred"
@@ -32,8 +38,20 @@
     },
     {
       "type": "documented",
+      "moduleName": "eslint-plugin-es",
+      "docPath": "eslint-plugin-es",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "eslint-plugin-react",
       "docPath": "eslint-plugin-react",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "eslint-plugin-eslint-comments",
+      "docPath": "eslint-plugin-eslint-comments",
       "category": "preferred"
     },
     {
@@ -46,6 +64,12 @@
       "type": "documented",
       "moduleName": "eslint-plugin-node",
       "docPath": "eslint-plugin-node",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "qs",
+      "docPath": "qs",
       "category": "preferred"
     }
   ]

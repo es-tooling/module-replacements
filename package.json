@@ -5,10 +5,10 @@
   "main": "./dist/commonjs/main.js",
   "scripts": {
     "clean": "rimraf dist",
-    "prepare": "tshy && npm run build:copy-manifests",
+    "prepare": "tshy && npm run build:update-manifest-paths",
     "format": "prettier --write \"./src/**/*.ts\" \"./manifests/**/*.json\"",
     "build:types": "tsc --noEmit",
-    "build:copy-manifests": "cp -R manifests dist/manifests",
+    "build:update-manifest-paths": "node scripts/update-manifests-dist-path.js",
     "build": "npm run clean && npm run build:types",
     "validate-manifests": "node scripts/validate-manifests.js",
     "generate-schema": "node scripts/generate-schema.js"
@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/es-tooling/module-replacements#readme",
   "devDependencies": {
+    "@types/node": "^20.14.9",
     "ajv": "^8.16.0",
     "prettier": "^3.2.4",
     "rimraf": "^5.0.5",
