@@ -71,6 +71,18 @@
       "moduleName": "tempy",
       "docPath": "tempy",
       "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "rimraf",
+      "docPath": "rimraf",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "mkdirp",
+      "docPath": "mkdirp",
+      "category": "preferred"
     }
   ]
 }
