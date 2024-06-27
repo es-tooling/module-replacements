@@ -65,6 +65,12 @@
       "moduleName": "qs",
       "docPath": "qs",
       "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "tempy",
+      "docPath": "tempy",
+      "category": "preferred"
     }
   ]
 }
