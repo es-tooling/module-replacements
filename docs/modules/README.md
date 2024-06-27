@@ -12,7 +12,6 @@ ESLint plugin.
 
 ## List of modules
 
-- [`MaterializeCSS`](./materialize-css.md)
 - [`cpx`](./cpx.md)
 - [`deep-equal`](./deep-equal.md)
 - [`eslint-plugin-es`](./eslint-plugin-es.md)
@@ -21,6 +20,7 @@ ESLint plugin.
 - [`eslint-plugin-node`](./eslint-plugin-node.md)
 - [`eslint-plugin-react`](./eslint-plugin-react.md)
 - [`is-builtin-module`](./is-builtin-module.md)
+- [`MaterializeCSS`](./materialize-css.md)
 - [`moment.js`](./momentjs.md)
 - [`npm-run-all`](./npm-run-all.md)
 - [`qs`](./qs.md)
