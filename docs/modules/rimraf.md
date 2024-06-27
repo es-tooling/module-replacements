@@ -35,3 +35,11 @@ async function main() {
 rmdirSync(path, {recursive: true});
 
 ```
+
+For command-line usage, such as npm scripts, you can run Node in eval mode:
+```bash
+node -e "fs.rmSync('./foo', { recursive: true, force: true })"
+```
+Note that this may not work for developers who use alternative JavaScript
+runtimes and do not have Node installed. To support them, you can use the
+[premove](https://www.npmjs.com/package/premove) package instead.
