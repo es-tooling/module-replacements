@@ -24,3 +24,4 @@ ESLint plugin.
 - [`moment.js`](./momentjs.md)
 - [`npm-run-all`](./npm-run-all.md)
 - [`qs`](./qs.md)
+- [`tempy`](./tempy.md)
