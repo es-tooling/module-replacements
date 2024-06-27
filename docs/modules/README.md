@@ -12,6 +12,7 @@ ESLint plugin.
 
 ## List of modules
 
+- [`bluebird`](./bluebird.md)
 - [`cpx`](./cpx.md)
 - [`deep-equal`](./deep-equal.md)
 - [`eslint-plugin-es`](./eslint-plugin-es.md)
