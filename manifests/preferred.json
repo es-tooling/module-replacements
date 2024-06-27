@@ -2,8 +2,8 @@
   "moduleReplacements": [
     {
       "type": "documented",
-      "moduleName": "npm-run-all",
-      "docPath": "npm-run-all",
+      "moduleName": "bluebird",
+      "docPath": "bluebird",
       "category": "preferred"
     },
     {
@@ -16,18 +16,6 @@
       "type": "documented",
       "moduleName": "deep-equal",
       "docPath": "deep-equal",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "is-builtin-module",
-      "docPath": "is-builtin-module",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "builtin-modules",
-      "docPath": "is-builtin-module",
       "category": "preferred"
     },
     {
@@ -58,6 +46,24 @@
       "type": "documented",
       "moduleName": "eslint-plugin-node",
       "docPath": "eslint-plugin-node",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "is-builtin-module",
+      "docPath": "is-builtin-module",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "builtin-modules",
+      "docPath": "is-builtin-module",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "npm-run-all",
+      "docPath": "npm-run-all",
       "category": "preferred"
     },
     {
