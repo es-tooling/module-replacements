@@ -15,8 +15,13 @@ files and directories to be deleted recursively:
 import {rm} from 'node:fs/promises';
 import {rmSync} from 'node:fs';
 
+// This will throw an error if the path does not exist.
 await rm(path, {recursive: true});
 rmSync(path, {recursive: true});
+
+// This will do nothing if the path does not exist.
+await rm(path, {recursive: true, force: true});
+rmSync(path, {recursive: true, force: true});
 ```
 
 If you need to support Node 12, you can [use
