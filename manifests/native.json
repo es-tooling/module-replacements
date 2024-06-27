@@ -258,6 +258,118 @@
     },
     {
       "type": "native",
+      "moduleName": "string.prototype.at",
+      "nodeVersion": "16.6.0",
+      "replacement": "String.prototype.at",
+      "mdnPath": "Global_Objects/String/at",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.prototype.lastindexof",
+      "nodeVersion": "0.10.0",
+      "replacement": "String.prototype.lastIndexOf",
+      "mdnPath": "Global_Objects/String/lastIndexOf",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.prototype.matchall",
+      "nodeVersion": "12.0.0",
+      "replacement": "String.prototype.matchAll",
+      "mdnPath": "Global_Objects/String/matchAll",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.prototype.padend",
+      "nodeVersion": "8.0.0",
+      "replacement": "String.prototype.padEnd",
+      "mdnPath": "Global_Objects/String/padEnd",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.prototype.padstart",
+      "nodeVersion": "8.0.0",
+      "replacement": "String.prototype.padStart",
+      "mdnPath": "Global_Objects/String/padStart",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.prototype.replaceall",
+      "nodeVersion": "15.0.0",
+      "replacement": "String.prototype.replaceAll",
+      "mdnPath": "Global_Objects/String/replaceAll",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.prototype.split",
+      "nodeVersion": "0.10.0",
+      "replacement": "String.prototype.split",
+      "mdnPath": "Global_Objects/String/split",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.prototype.substr",
+      "nodeVersion": "0.10.0",
+      "replacement": "String.prototype.substr",
+      "mdnPath": "Global_Objects/String/substr",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.prototype.trim",
+      "nodeVersion": "0.10.0",
+      "replacement": "String.prototype.trim",
+      "mdnPath": "Global_Objects/String/trim",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.prototype.trimend",
+      "nodeVersion": "10.0.0",
+      "replacement": "String.prototype.trimEnd",
+      "mdnPath": "Global_Objects/String/trimEnd",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.prototype.trimleft",
+      "nodeVersion": "10.0.0",
+      "replacement": "String.prototype.trimLeft",
+      "mdnPath": "Global_Objects/String/trimLeft",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.prototype.trimright",
+      "nodeVersion": "10.0.0",
+      "replacement": "String.prototype.trimRight",
+      "mdnPath": "Global_Objects/String/trimRight",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.prototype.trimStart",
+      "nodeVersion": "10.0.0",
+      "replacement": "String.prototype.trimStart",
+      "mdnPath": "Global_Objects/String/trimStart",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.raw",
+      "nodeVersion": "4.0.0",
+      "replacement": "String.raw",
+      "mdnPath": "Global_Objects/String/raw",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "has",
       "nodeVersion": "0.10.0",
       "replacement": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
