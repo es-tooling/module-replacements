@@ -12,16 +12,16 @@ function](https://nodejs.org/api/fs.html#fspromisesrmpath-options), which allows
 files and directories to be deleted recursively:
 
 ```js
-import {rm} from 'node:fs/promises';
-import {rmSync} from 'node:fs';
+import { rm } from 'node:fs/promises';
+import { rmSync } from 'node:fs';
 
 // This will throw an error if the path does not exist.
-await rm(path, {recursive: true});
-rmSync(path, {recursive: true});
+await rm(path, { recursive: true });
+rmSync(path, { recursive: true });
 
 // This will do nothing if the path does not exist.
-await rm(path, {recursive: true, force: true});
-rmSync(path, {recursive: true, force: true});
+await rm(path, { recursive: true, force: true });
+rmSync(path, { recursive: true, force: true });
 ```
 
 If you need to support Node 12, you can [use
@@ -30,14 +30,14 @@ also has the `recursive` option available since Node v12.10, although it will
 print a deprecation message in Node v14 and up:
 
 ```js
-const {rmdir} = require('fs').promises;
-const {rmdirSync} = require('fs');
+const { rmdir } = require('fs').promises;
+const { rmdirSync } = require('fs');
 
 async function main() {
-    await rmdir(path, {recursive: true});
+    await rmdir(path, { recursive: true });
 }
 
-rmdirSync(path, {recursive: true});
+rmdirSync(path, { recursive: true });
 
 ```
 
