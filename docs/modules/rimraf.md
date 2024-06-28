@@ -45,6 +45,11 @@ For command-line usage, such as npm scripts, you can run Node in eval mode:
 ```bash
 node -e "fs.rmSync('./foo', { recursive: true, force: true })"
 ```
-Note that this may not work for developers who use alternative JavaScript
-runtimes and do not have Node installed. To support them, you can use the
-[premove](https://www.npmjs.com/package/premove) package instead.
+
+## premove (Node 8.x and up)
+
+For command-line usage across runtimes (to support developers who use
+alternative runtimes and may not have the `node` command available), the
+[`premove`](https://www.npmjs.com/package/premove) package includes a CLI.
+
+`premove` also supports older versions of Node (v8.x and up) than `fs.rm` does.
