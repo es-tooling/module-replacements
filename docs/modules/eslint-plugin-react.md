@@ -4,13 +4,6 @@
 
 # Alternatives
 
-## `@shimful/eslint-plugin-react-lite`
-
-A small plugin with all of the essential react lint rules.
-
-[Project Page](https://github.com/shimful/eslint-plugin-react-lite)
-[NPM](https://www.npmjs.com/package/@shimful/eslint-plugin-react-lite)
-
 ## `@eslint-react/eslint-plugin`
 
 Feature rich alternative with many of the same rules.
