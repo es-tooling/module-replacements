@@ -62,6 +62,1944 @@
     },
     {
       "type": "documented",
+      "moduleName": "lodash",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.add",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.after",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.ary",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.assign",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.assignin",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.assigninwith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.assignwith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.at",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.attempt",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.before",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.bind",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.bindall",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.bindkey",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.callback",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.camelcase",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.capitalize",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.castarray",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.ceil",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.chunk",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.clamp",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.clone",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.clonedeep",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.clonedeepwith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.clonewith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.compact",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.compose",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.concat",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.cond",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.conforms",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.conformsto",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.constant",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.contains",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.countby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.create",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.createcallback",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.curry",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.curryright",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.debounce",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.deburr",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.defaults",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.defaultto",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.defaultsdeep",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.defer",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.delay",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.difference",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.differenceby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.differencewith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.divide",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.drop",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.dropright",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.droprightwhile",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.dropwhile",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.endswith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.eq",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.escape",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.escaperegexp",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.every",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.fill",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.filter",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.find",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.findindex",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.findkey",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.findlast",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.findlastindex",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.findlastkey",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.findwhere",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.first",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.flatmap",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.flatmapdeep",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.flatmapdepth",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.flatten",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.flattendepth",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.flattendeep",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.flip",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.floor",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.flow",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.flowright",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.foreach",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.forin",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.foreachright",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.forinright",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.forown",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.forownright",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.frompairs",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.functions",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.functionsin",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.get",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.groupby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.gt",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.gte",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.has",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.hasin",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.head",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.identity",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.includes",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.indexby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.indexof",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.initial",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.inrange",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.intersection",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.intersectionby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.intersectionwith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.invert",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.invertby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.invoke",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.invokemap",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isarguments",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isarray",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isarraybuffer",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isarraylike",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isarraylikeobject",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isboolean",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isbuffer",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isdate",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.iselement",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isempty",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isequal",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isequalwith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.iserror",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isfinite",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isfunction",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isinteger",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.islength",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.ismap",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.ismatch",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.ismatchwith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isnan",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isnative",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isnil",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isnull",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isnumber",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isobject",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isobjectlike",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isplainobject",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isregexp",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.issafeinteger",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isset",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isstring",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.issymbol",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.istypedarray",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isundefined",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isweakmap",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.isweakset",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.iteratee",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.join",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.kebabcase",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.keyby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.keys",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.keysin",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.last",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.lastindexof",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.lowercase",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.lowerfirst",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.lt",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.lte",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.map",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.mapkeys",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.mapvalues",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.matches",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.matchesproperty",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.max",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.maxby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.mean",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.meanby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.memoize",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.merge",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.mergewith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.method",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.methodof",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.min",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.minby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.mixin",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.modargs",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.multiply",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.negate",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.noop",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.now",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.nth",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.ntharg",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.omit",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.omitby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.once",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.orderby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.over",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.overargs",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.overevery",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.oversome",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.pad",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.padend",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.padleft",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.padright",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.padstart",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.pairs",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.parseint",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.partial",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.partialright",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.partition",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.pick",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.pickby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.pluck",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.property",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.propertyof",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.pull",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.pullall",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.pullallwith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.pullby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.pullat",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.random",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.range",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.rangeright",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.rearg",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.reduce",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.reduceright",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.reescape",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.reevaluate",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.reinterpolate",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.reject",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.remove",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.repeat",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.replace",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.rest",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.restparam",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.result",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.reverse",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.round",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.sample",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.samplesize",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.set",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.setwith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.shuffle",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.size",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.slice",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.snakecase",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.some",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.sortby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.sortbyall",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.sortbyorder",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.sortedindex",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.sortedindexby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.sortedindexof",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.sortedlastindex",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.sortedlastindexby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.sortedlastindexof",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.sorteduniq",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.sorteduniqby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.split",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.spread",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.startcase",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.startswith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.stubarray",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.stubfalse",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.stubobject",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.stubstring",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.stubtrue",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.subtract",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.sum",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.sumby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.support",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.tail",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.take",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.takeright",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.takerightwhile",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.takewhile",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.template",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.templatesettings",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.throttle",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.times",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.toarray",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.tofinite",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.tointeger",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.tolength",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.tolower",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.tonumber",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.topairs",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.topairsin",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.topath",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.toplainobject",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.tosafeinteger",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.tostring",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.toupper",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.transform",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.trim",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.trimend",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.trimleft",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.trimright",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.trimstart",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.trunc",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.truncate",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.unary",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.unescape",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.union",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.unionby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.unionwith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.uniqby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.unique",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.uniqueid",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.uniqwith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.unset",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.unzip",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.unzipwith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.update",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.updatewith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.uppercase",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.upperfirst",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.values",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.valuesin",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.where",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.without",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.words",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.wrap",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.xor",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.xorby",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.xorwith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.zip",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.zipwith",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.zipobject",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash.zipobjectdeep",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash-amd",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash-compat",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash-es",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash-fp",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash-node",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "npm-run-all",
       "docPath": "npm-run-all",
       "category": "preferred"
@@ -94,6 +2032,12 @@
       "type": "documented",
       "moduleName": "sort-object",
       "docPath": "sort-object",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "underscore",
+      "docPath": "lodash-underscore",
       "category": "preferred"
     }
   ]
