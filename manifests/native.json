@@ -26,14 +26,6 @@
     },
     {
       "type": "native",
-      "moduleName": "number.isnan",
-      "nodeVersion": "0.10.0",
-      "replacement": "Number.isNaN",
-      "mdnPath": "Global_Objects/Number/isNaN",
-      "category": "native"
-    },
-    {
-      "type": "native",
       "moduleName": "array-includes",
       "nodeVersion": "6.0.0",
       "replacement": "Array.prototype.includes",
@@ -246,6 +238,62 @@
       "nodeVersion": "10.9.0",
       "replacement": "Array.prototype.values",
       "mdnPath": "Global_Objects/Array/values",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "number.isfinite",
+      "nodeVersion": "0.10.0",
+      "replacement": "Number.isFinite",
+      "mdnPath": "Global_Objects/Number/isFinite",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "number.isinteger",
+      "nodeVersion": "0.10.0",
+      "replacement": "Number.isInteger",
+      "mdnPath": "Global_Objects/Number/isInteger",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "number.isnan",
+      "nodeVersion": "0.10.0",
+      "replacement": "Number.isNaN",
+      "mdnPath": "Global_Objects/Number/isNaN",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "number.issafeinteger",
+      "nodeVersion": "0.10.0",
+      "replacement": "Number.isSafeInteger",
+      "mdnPath": "Global_Objects/Number/isSafeInteger",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "number.parsefloat",
+      "nodeVersion": "0.10.0",
+      "replacement": "Number.parseFloat",
+      "mdnPath": "Global_Objects/Number/parseFloat",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "number.parseint",
+      "nodeVersion": "0.10.0",
+      "replacement": "Number.parseInt",
+      "mdnPath": "Global_Objects/Number/parseInt",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "number.prototype.exponential",
+      "nodeVersion": "0.10.0",
+      "replacement": "Number.prototype.toExponential",
+      "mdnPath": "Global_Objects/Number/toExponential",
       "category": "native"
     },
     {
