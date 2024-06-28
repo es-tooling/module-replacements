@@ -2,14 +2,6 @@
   "moduleReplacements": [
     {
       "type": "native",
-      "moduleName": "object.entries",
-      "nodeVersion": "7.0.0",
-      "replacement": "Object.entries",
-      "mdnPath": "Global_Objects/Object/entries",
-      "category": "native"
-    },
-    {
-      "type": "native",
       "moduleName": "date",
       "nodeVersion": "0.10.0",
       "replacement": "Date",
@@ -258,6 +250,70 @@
     },
     {
       "type": "native",
+      "moduleName": "object.defineproperties",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.defineProperties",
+      "mdnPath": "Global_Objects/Object/defineProperties",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "object.entries",
+      "nodeVersion": "7.0.0",
+      "replacement": "Object.entries",
+      "mdnPath": "Global_Objects/Object/entries",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "object.fromentries",
+      "nodeVersion": "12.0.0",
+      "replacement": "Object.fromEntries",
+      "mdnPath": "Global_Objects/Object/fromEntries",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "object.getownpropertydescriptors",
+      "nodeVersion": "7.0.0",
+      "replacement": "Object.getOwnPropertyDescriptors",
+      "mdnPath": "Global_Objects/Object/getOwnPropertyDescriptors",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "object.getprototypeof",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.getPrototypeOf",
+      "mdnPath": "Global_Objects/Object/getPrototypeOf",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "object.hasown",
+      "nodeVersion": "16.9.0",
+      "replacement": "Object.hasOwn",
+      "mdnPath": "Global_Objects/Object/hasOwn",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "object-keys",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.keys(obj)",
+      "mdnPath": "Global_Objects/Object/keys",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "object.values",
+      "nodeVersion": "7.0.0",
+      "replacement": "Object.values",
+      "mdnPath": "Global_Objects/Object/values",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "string.prototype.at",
       "nodeVersion": "16.6.0",
       "replacement": "String.prototype.at",
@@ -454,14 +510,6 @@
       "nodeVersion": "6.0.0",
       "replacement": "RegExp.prototype.flags (e.g. \"/foo/g.flags\")",
       "mdnPath": "Global_Objects/RegExp/flags",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "object-keys",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.keys(obj)",
-      "mdnPath": "Global_Objects/Object/keys",
       "category": "native"
     },
     {
