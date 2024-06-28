@@ -234,6 +234,94 @@
     },
     {
       "type": "native",
+      "moduleName": "math.acosh",
+      "nodeVersion": "0.10.0",
+      "replacement": "Math.acosh",
+      "mdnPath": "Global_Objects/Math/acosh",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "math.atanh",
+      "nodeVersion": "0.10.0",
+      "replacement": "Math.atanh",
+      "mdnPath": "Global_Objects/Math/atanh",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "math.cbrt",
+      "nodeVersion": "0.10.0",
+      "replacement": "Math.cbrt",
+      "mdnPath": "Global_Objects/Math/cbrt",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "math.clz32",
+      "nodeVersion": "0.10.0",
+      "replacement": "Math.clz32",
+      "mdnPath": "Global_Objects/Math/clz32",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "math.f16round",
+      "nodeVersion": "0.10.0",
+      "replacement": "Math.f16round",
+      "mdnPath": "Global_Objects/Math/f16round",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "math.fround",
+      "nodeVersion": "0.10.0",
+      "replacement": "Math.fround",
+      "mdnPath": "Global_Objects/Math/fround",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "math.imul",
+      "nodeVersion": "0.10.0",
+      "replacement": "Math.imul",
+      "mdnPath": "Global_Objects/Math/imul",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "math.log10",
+      "nodeVersion": "0.10.0",
+      "replacement": "Math.log10",
+      "mdnPath": "Global_Objects/Math/log10",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "math.log1p",
+      "nodeVersion": "0.10.0",
+      "replacement": "Math.log1p",
+      "mdnPath": "Global_Objects/Math/log1p",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "math.sign",
+      "nodeVersion": "0.10.0",
+      "replacement": "Math.sign",
+      "mdnPath": "Global_Objects/Math/sign",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "math.sinh",
+      "nodeVersion": "0.10.0",
+      "replacement": "Math.sinh",
+      "mdnPath": "Global_Objects/Math/sinh",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "number.isfinite",
       "nodeVersion": "0.10.0",
       "replacement": "Number.isFinite",
