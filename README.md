@@ -1,17 +1,37 @@
 # module-replacements
 
-This project provides two things:
+As part of the community [e18e](https://e18e.dev) effort, this project
+provides a collection of module replacements (i.e. possible alternative
+packages).
 
-- A JS package containing manifests of suggested module replacements
-- Documentation for replacements which are not entirely replaced by native
-functionality
+We provide two things:
+- Manifests (mappings of modules to their possible replacements)
+- Documentation for more complex replacements
 
-## Replacements documentation
+## List of replacements
 
-You can read more about module replacements and browse the list
-[by clicking here](./docs/modules/README.md).
+You can find a list of replacements in the
+[modules readme](./docs/modules/README.md).
 
-## `module-replacements` package
+## Tools
+
+Some tools consume the lists of modules in this repository:
+
+| Name | Description |
+| -- | -- |
+| [eslint-plugin-depend](https://github.com/es-tooling/eslint-plugin-depend) | ESLint plugin to detect possible replacements |
+
+
+## Manifests
+
+The manifests can be used via the `module-replacements` NPM package.
+
+We provide three manifests:
+
+- All (includes every manifest)
+- Native replacements
+- Micro utility replacements
+- Preferred replacements
 
 ### Usage
 
@@ -24,19 +44,13 @@ npm i -S module-replacements
 You can then import the manifest of your choice:
 
 ```ts
-import {NativeReplacements} from 'module-replacements';
+import {nativeReplacements} from 'module-replacements';
 ```
 
-### Manifests
+The manifests are also available directly in the `manifests/` directory
+of the package (e.g. `node_modules/module-replacements/manifests/native.json`).
 
-We provide three manifests:
-
-- All (includes every manifest)
-- Native replacements
-- Micro utility replacements
-- Preferred replacements
-
-#### Native replacements
+### Native replacements (`nativeReplacements`, `native.json`)
 
 These are modules which can now be replaced by native functionality.
 
@@ -46,13 +60,13 @@ platform features can be replaced by their platform equivalents.
 Similarly, features which did not exist at the time but have now existed in
 the platform for many years, so no longer need a dependency.
 
-#### Micro utility replacements
+### Micro utility replacements (`microUtilsReplacements`, `micro-utilities.json`)
 
 This is a more opinionated list of modules considered to be 'micro utilities' -
 very small utilities which could possibly be replaced with native equivalents
 or removed entirely.
 
-#### Preferred replacements
+### Preferred replacements (`preferredReplacements`, `preferred.json`)
 
 This is a very opinionated list of modules with preferred replacements. Often
 these replacements are much lighter or more modern than the modules they are
