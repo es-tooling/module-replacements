@@ -89,6 +89,12 @@
       "moduleName": "mkdirp",
       "docPath": "mkdirp",
       "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "sort-object",
+      "docPath": "sort-object",
+      "category": "preferred"
     }
   ]
 }
