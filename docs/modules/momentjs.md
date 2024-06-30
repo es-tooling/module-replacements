@@ -28,3 +28,9 @@ Date-fns offers a series of functions for manipulating JavaScript [`Date`](https
 
 [Project Page](https://github.com/date-fns/date-fns)
 [NPM](https://www.npmjs.com/package/date-fns)
+
+## You don’t (may not) need Moment.js
+
+Here you could read how to replace Moment.js in your project.
+
+[Website](https://you-dont-need.github.io/You-Dont-Need-Momentjs)
