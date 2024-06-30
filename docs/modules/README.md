@@ -21,6 +21,7 @@ ESLint plugin.
 - [`eslint-plugin-node`](./eslint-plugin-node.md)
 - [`eslint-plugin-react`](./eslint-plugin-react.md)
 - [`is-builtin-module`](./is-builtin-module.md)
+- [`jQuery`](./jquery.md)
 - [`lodash`, `underscore` and related](./lodash-underscore.md)
 - [`MaterializeCSS`](./materialize-css.md)
 - [`moment.js`](./momentjs.md)

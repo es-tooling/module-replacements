@@ -62,6 +62,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "jquery",
+      "docPath": "jquery",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "lodash",
       "docPath": "lodash-underscore",
       "category": "preferred"
