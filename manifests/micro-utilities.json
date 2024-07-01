@@ -77,6 +77,12 @@
       "moduleName": "is-even",
       "replacement": "Use (n % 2) === 0",
       "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "path-parse",
+      "replacement": "Use built-in parse via import { parse } from 'node:path'",
+      "category": "micro-utilities"
     }
   ]
 }
