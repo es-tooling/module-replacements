@@ -28,3 +28,4 @@ ESLint plugin.
 - [`npm-run-all`](./npm-run-all.md)
 - [`qs`](./qs.md)
 - [`tempy`](./tempy.md)
+- [`uri-js`](./uri-js.md)
