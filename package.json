@@ -4,14 +4,16 @@
   "version": "1.0.0",
   "main": "./dist/commonjs/main.js",
   "scripts": {
-    "clean": "node -e \"fs.rmSync('./dist', {force: true, recursive: true})\"",
-    "prepare": "tshy && npm run build:update-manifest-paths",
-    "format": "prettier --write \"./src/**/*.ts\" \"./manifests/**/*.json\"",
+    "build": "npm run clean && npm run build:types",
     "build:types": "tsc --noEmit",
     "build:update-manifest-paths": "node scripts/update-manifests-dist-path.js",
-    "build": "npm run clean && npm run build:types",
+    "clean": "node -e \"fs.rmSync('./dist', {force: true, recursive: true})\"",
+    "format": "prettier --write \"./src/**/*.ts\" \"./manifests/**/*.json\"",
+    "generate-schema": "node scripts/generate-schema.js",
+    "prepare": "tshy && npm run build:update-manifest-paths",
+    "test:validate": "npm run validate-manifests && npm run validate-module-list",
     "validate-manifests": "node scripts/validate-manifests.js",
-    "generate-schema": "node scripts/generate-schema.js"
+    "validate-module-list": "node scripts/validate-module-list.js"
   },
   "tshy": {
     "exports": {

@@ -23,5 +23,5 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      - name: Validate Manifests
-        run: npm run validate-manifests
+      - name: Validate Files
+        run: npm run test:validate
