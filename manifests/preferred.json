@@ -2051,6 +2051,12 @@
       "moduleName": "underscore",
       "docPath": "lodash-underscore",
       "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "uri-js",
+      "docPath": "uri-js",
+      "category": "preferred"
     }
   ]
 }
