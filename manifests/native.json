@@ -242,6 +242,14 @@
     },
     {
       "type": "native",
+      "moduleName": "aggregate-error",
+      "nodeVersion": "15.0.0",
+      "replacement": "AggregateError",
+      "mdnPath": "Global_Objects/AggregateError",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "math.acosh",
       "nodeVersion": "0.10.0",
       "replacement": "Math.acosh",
