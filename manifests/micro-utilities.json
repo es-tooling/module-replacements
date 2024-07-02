@@ -2,6 +2,12 @@
   "moduleReplacements": [
     {
       "type": "simple",
+      "moduleName": "call-bind",
+      "replacement": "Use Function.call.bind(v)",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
       "moduleName": "is-number",
       "replacement": "Use typeof v === \"number\"",
       "category": "micro-utilities"
