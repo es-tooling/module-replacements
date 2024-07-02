@@ -12,9 +12,11 @@ ESLint plugin.
 
 ## List of modules
 
+- [`aggregate-error`](./aggregate-error.md)
 - [`bluebird`](./bluebird.md)
 - [`cpx`](./cpx.md)
 - [`deep-equal`](./deep-equal.md)
+- [`es-aggregate-error`](./es-aggregate-error.md)
 - [`eslint-plugin-es`](./eslint-plugin-es.md)
 - [`eslint-plugin-eslint-comments`](./eslint-plugin-eslint-comments.md)
 - [`eslint-plugin-import`](./eslint-plugin-import.md)
