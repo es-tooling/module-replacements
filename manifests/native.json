@@ -242,6 +242,22 @@
     },
     {
       "type": "native",
+      "moduleName": "global",
+      "nodeVersion": "12.0.0",
+      "replacement": "globalThis",
+      "mdnPath": "Global_Objects/globalThis",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "globalthis",
+      "nodeVersion": "12.0.0",
+      "replacement": "globalThis",
+      "mdnPath": "Global_Objects/globalThis",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "math.acosh",
       "nodeVersion": "0.10.0",
       "replacement": "Math.acosh",
