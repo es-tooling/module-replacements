@@ -62,6 +62,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "is-core-module",
+      "docPath": "is-builtin-module",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "jquery",
       "docPath": "jquery",
       "category": "preferred"

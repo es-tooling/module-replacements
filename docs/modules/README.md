@@ -13,6 +13,7 @@ ESLint plugin.
 ## List of modules
 
 - [`bluebird`](./bluebird.md)
+- [`builtin-modules`](./is-builtin-module.md)
 - [`cpx`](./cpx.md)
 - [`deep-equal`](./deep-equal.md)
 - [`eslint-plugin-es`](./eslint-plugin-es.md)
@@ -21,6 +22,7 @@ ESLint plugin.
 - [`eslint-plugin-node`](./eslint-plugin-node.md)
 - [`eslint-plugin-react`](./eslint-plugin-react.md)
 - [`is-builtin-module`](./is-builtin-module.md)
+- [`is-core-module`]('./is-builtin-module.md')
 - [`jQuery`](./jquery.md)
 - [`lodash`, `underscore` and related](./lodash-underscore.md)
 - [`MaterializeCSS`](./materialize-css.md)
