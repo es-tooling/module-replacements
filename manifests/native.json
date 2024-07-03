@@ -250,6 +250,14 @@
     },
     {
       "type": "native",
+      "moduleName": "get-symbol-description",
+      "nodeVersion": "11.0.0",
+      "replacement": "Symbol.prototype.description",
+      "mdnPath": "Global_Objects/Symbol/description",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "globalthis",
       "nodeVersion": "12.0.0",
       "replacement": "globalThis",
