@@ -242,6 +242,14 @@
     },
     {
       "type": "native",
+      "moduleName": "es-define-property",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.defineProperty",
+      "mdnPath": "Global_Objects/Object/defineProperty",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "global",
       "nodeVersion": "12.0.0",
       "replacement": "globalThis",
