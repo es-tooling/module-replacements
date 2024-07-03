@@ -258,6 +258,14 @@
     },
     {
       "type": "native",
+      "moduleName": "gopd",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.getOwnPropertyDescriptor",
+      "mdnPath": "Global_Objects/Object/getOwnPropertyDescriptor",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "math.acosh",
       "nodeVersion": "0.10.0",
       "replacement": "Math.acosh",
