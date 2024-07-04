@@ -442,6 +442,14 @@
     },
     {
       "type": "native",
+      "moduleName": "object-assign",
+      "nodeVersion": "4.0.0",
+      "replacement": "Object.assign",
+      "mdnPath": "Global_Objects/Object/assign",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "object.defineproperties",
       "nodeVersion": "0.10.0",
       "replacement": "Object.defineProperties",
@@ -491,6 +499,14 @@
     {
       "type": "native",
       "moduleName": "object-keys",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.keys(obj)",
+      "mdnPath": "Global_Objects/Object/keys",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "object.keys",
       "nodeVersion": "0.10.0",
       "replacement": "Object.keys(obj)",
       "mdnPath": "Global_Objects/Object/keys",
