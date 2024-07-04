@@ -3,7 +3,7 @@
     {
       "type": "documented",
       "moduleName": "bluebird",
-      "docPath": "bluebird",
+      "docPath": "bluebird-q",
       "category": "preferred"
     },
     {
@@ -2038,6 +2038,12 @@
       "type": "documented",
       "moduleName": "moment",
       "docPath": "momentjs",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "q",
+      "docPath": "bluebird-q",
       "category": "preferred"
     },
     {

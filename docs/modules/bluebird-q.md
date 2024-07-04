@@ -1,6 +1,6 @@
-# bluebird
+# `bluebird` / `q`
 
-`bluebird` [recommends that you switch away from it to native promises](https://github.com/petkaantonov/bluebird?tab=readme-ov-file#%EF%B8%8Fnote%EF%B8%8F).
+[`bluebird`](https://github.com/petkaantonov/bluebird?tab=readme-ov-file#%EF%B8%8Fnote%EF%B8%8F) and [`q`](https://github.com/kriskowal/q#note) recommends that you switch away from them to native promises.
 
 # Alternatives
 
