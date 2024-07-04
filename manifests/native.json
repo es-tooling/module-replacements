@@ -18,6 +18,22 @@
     },
     {
       "type": "native",
+      "moduleName": "iterate-iterator",
+      "nodeVersion": "0.12.0",
+      "replacement": "for...of",
+      "mdnPath": "Statements/for...of",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "iterate-value",
+      "nodeVersion": "0.12.0",
+      "replacement": "for...of",
+      "mdnPath": "Statements/for...of",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "array-includes",
       "nodeVersion": "6.0.0",
       "replacement": "Array.prototype.includes",
@@ -234,6 +250,46 @@
     },
     {
       "type": "native",
+      "moduleName": "array-buffer-byte-length",
+      "nodeVersion": "0.10.0",
+      "replacement": "ArrayBuffer.prototype.byteLength",
+      "mdnPath": "Global_Objects/ArrayBuffer/byteLength",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "arraybuffer.prototype.slice",
+      "nodeVersion": "0.12.0",
+      "replacement": "ArrayBuffer.prototype.slice",
+      "mdnPath": "Global_Objects/ArrayBuffer/slice",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "data-view-buffer",
+      "nodeVersion": "0.10.0",
+      "replacement": "DataView.prototype.buffer",
+      "mdnPath": "Global_Objects/DataView/buffer",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "data-view-byte-length",
+      "nodeVersion": "0.10.0",
+      "replacement": "DataView.prototype.byteLength",
+      "mdnPath": "Global_Objects/DataView/byteLength",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "data-view-byte-offset",
+      "nodeVersion": "0.10.0",
+      "replacement": "DataView.prototype.byteOffset",
+      "mdnPath": "Global_Objects/DataView/byteOffset",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "define-accessor-property",
       "nodeVersion": "0.10.0",
       "replacement": "Object.defineProperty",
@@ -258,10 +314,50 @@
     },
     {
       "type": "native",
+      "moduleName": "error-cause",
+      "nodeVersion": "16.9.0",
+      "replacement": "Use errors `.cause` property and second `Error` constructors argument to define it",
+      "mdnPath": "Global_Objects/Error/cause",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "es-create-array-iterator",
+      "nodeVersion": "0.12.0",
+      "replacement": "Array.prototype.{ entries, keys, values, [Symbol.iterator] }",
+      "mdnPath": "Global_Objects/Array/entries",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "es-define-property",
       "nodeVersion": "0.10.0",
       "replacement": "Object.defineProperty",
       "mdnPath": "Global_Objects/Object/defineProperty",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "es-shim-unscopables",
+      "nodeVersion": "0.12.0",
+      "replacement": "Array.prototype[Symbol.unscopables]",
+      "mdnPath": "Global_Objects/Array/@@unscopables",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "es-string-html-methods",
+      "nodeVersion": "0.10.0",
+      "replacement": "String.prototype.{ anchor, big, blink, bold, fixed, fontcolor, fontsize, italics, link, small, strike, sub, sup }",
+      "mdnPath": "Global_Objects/String#html_wrapper_methods",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "function.prototype.name",
+      "nodeVersion": "0.10.0",
+      "replacement": "Use functions `.name` property",
+      "mdnPath": "Global_Objects/Function/name",
       "category": "native"
     },
     {
@@ -538,6 +634,14 @@
     },
     {
       "type": "native",
+      "moduleName": "parseint",
+      "nodeVersion": "0.10.0",
+      "replacement": "parseInt",
+      "mdnPath": "Global_Objects/parseInt",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "promise.allsettled",
       "nodeVersion": "12.9.0",
       "replacement": "Promise.allSettled",
@@ -558,6 +662,22 @@
       "nodeVersion": "10.0.0",
       "replacement": "Promise.prototype.finally",
       "mdnPath": "Global_Objects/Promise/finally",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "reflect.getprototypeof",
+      "nodeVersion": "6.0.0",
+      "replacement": "Reflect.getPrototypeOf",
+      "mdnPath": "Global_Objects/Reflect/getPrototypeOf",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "reflect.ownkeys",
+      "nodeVersion": "6.0.0",
+      "replacement": "Reflect.ownKeys",
+      "mdnPath": "Global_Objects/Reflect/ownKeys",
       "category": "native"
     },
     {
@@ -587,6 +707,22 @@
     {
       "type": "native",
       "moduleName": "string.prototype.padend",
+      "nodeVersion": "8.0.0",
+      "replacement": "String.prototype.padEnd",
+      "mdnPath": "Global_Objects/String/padEnd",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.prototype.padleft",
+      "nodeVersion": "8.0.0",
+      "replacement": "String.prototype.padStart",
+      "mdnPath": "Global_Objects/String/padStart",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.prototype.padright",
       "nodeVersion": "8.0.0",
       "replacement": "String.prototype.padEnd",
       "mdnPath": "Global_Objects/String/padEnd",
@@ -670,6 +806,54 @@
       "nodeVersion": "4.0.0",
       "replacement": "String.raw",
       "mdnPath": "Global_Objects/String/raw",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "symbol.prototype.description",
+      "nodeVersion": "11.0.0",
+      "replacement": "Symbol.prototype.description",
+      "mdnPath": "Global_Objects/Symbol/description",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "typed-array-buffer",
+      "nodeVersion": "0.10.0",
+      "replacement": "%TypedArray%.prototype.buffer",
+      "mdnPath": "Global_Objects/TypedArray/buffer",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "typed-array-byte-length",
+      "nodeVersion": "0.10.0",
+      "replacement": "%TypedArray%.prototype.byteLength",
+      "mdnPath": "Global_Objects/TypedArray/byteLength",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "typed-array-byte-offset",
+      "nodeVersion": "0.10.0",
+      "replacement": "%TypedArray%.prototype.byteOffset",
+      "mdnPath": "Global_Objects/TypedArray/byteOffset",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "typed-array-length",
+      "nodeVersion": "0.10.0",
+      "replacement": "%TypedArray%.prototype.length",
+      "mdnPath": "Global_Objects/TypedArray/length",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "typedarray.prototype.slice",
+      "nodeVersion": "4.0.0",
+      "replacement": "%TypedArray%.prototype.slice",
+      "mdnPath": "Global_Objects/TypedArray/slice",
       "category": "native"
     },
     {
