@@ -29,6 +29,7 @@ ESLint plugin.
 - [`moment.js`](./momentjs.md)
 - [`npm-run-all`](./npm-run-all.md)
 - [`qs`](./qs.md)
+- [`readable-stream`](./readable-stream.md)
 - [`rimraf`](./rimraf.md)
 - [`sort-object`](./sort-object.md)
 - [`tempy`](./tempy.md)

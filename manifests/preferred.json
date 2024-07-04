@@ -2063,6 +2063,12 @@
       "moduleName": "uri-js",
       "docPath": "uri-js",
       "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "readable-stream",
+      "docPath": "readable-stream",
+      "category": "preferred"
     }
   ]
 }
