@@ -234,6 +234,14 @@
     },
     {
       "type": "native",
+      "moduleName": "define-data-property",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.defineProperty",
+      "mdnPath": "Global_Objects/Object/defineProperty",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "es-aggregate-error",
       "nodeVersion": "15.0.0",
       "replacement": "AggregateError",
