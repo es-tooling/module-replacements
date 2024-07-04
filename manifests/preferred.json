@@ -2030,6 +2030,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "make-dir",
+      "docPath": "mkdirp",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "mkdirp",
       "docPath": "mkdirp",
       "category": "preferred"

@@ -1,6 +1,6 @@
-# mkdirp
+# mkdirp / make-dir
 
-`mkdirp` can often be replaced with built-in Node APIs.
+[`mkdirp`](https://www.npmjs.com/package/mkdirp) and [`make-dir`](https://www.npmjs.com/package/make-dir) can often be replaced with built-in Node APIs.
 
 # Alternatives
 
