@@ -20,6 +20,24 @@
     },
     {
       "type": "simple",
+      "moduleName": "is-array-buffer",
+      "replacement": "Use v instanceof ArrayBuffer, or if cross-realm, use Object.prototype.toString.call(v) === \"[object ArrayBuffer]\"",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-boolean-object",
+      "replacement": "Use Object.prototype.toString.call(v) === \"[object Boolean]\"",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-date-object",
+      "replacement": "Use v instanceof Date, or if cross-realm, use Object.prototype.toString.call(v) === \"[object Date]\"",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
       "moduleName": "is-negative-zero",
       "replacement": "Use Object.is(v, -0)",
       "category": "micro-utilities"
@@ -27,7 +45,13 @@
     {
       "type": "simple",
       "moduleName": "is-number",
-      "replacement": "Use typeof v === \"number\"",
+      "replacement": "Use typeof v === \"number\" || (typeof v === \"string\" && Number.isFinite(+v))",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-number-object",
+      "replacement": "Use Object.prototype.toString.call(v) === \"[object Number]\"",
       "category": "micro-utilities"
     },
     {
@@ -46,6 +70,12 @@
       "type": "simple",
       "moduleName": "is-regexp",
       "replacement": "Use v instanceof RegExp, or if cross-realm, use Object.prototype.toString.call(v) === \"[object RegExp]\"",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-string",
+      "replacement": "Use Object.prototype.toString.call(v) === \"[object String]\"",
       "category": "micro-utilities"
     },
     {

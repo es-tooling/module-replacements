@@ -274,6 +274,14 @@
     },
     {
       "type": "native",
+      "moduleName": "concat-map",
+      "nodeVersion": "11.0.0",
+      "replacement": "Array.prototype.flatMap",
+      "mdnPath": "Global_Objects/Array/flatMap",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "data-view-byte-length",
       "nodeVersion": "0.10.0",
       "replacement": "DataView.prototype.byteLength",
@@ -338,6 +346,14 @@
     },
     {
       "type": "native",
+      "moduleName": "es-errors",
+      "nodeVersion": "0.10.0",
+      "replacement": "Error / EvalError / RangeError / ReferenceError / SyntaxError / TypeError / URIError",
+      "mdnPath": "Global_Objects/Error",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "es-shim-unscopables",
       "nodeVersion": "0.12.0",
       "replacement": "Array.prototype[Symbol.unscopables]",
@@ -350,6 +366,14 @@
       "nodeVersion": "0.10.0",
       "replacement": "String.prototype.{ anchor, big, blink, bold, fixed, fontcolor, fontsize, italics, link, small, strike, sub, sup }",
       "mdnPath": "Global_Objects/String#html_wrapper_methods",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "functions-have-names",
+      "nodeVersion": "0.10.0",
+      "replacement": "Always `true`",
+      "mdnPath": "Global_Objects/Function/name",
       "category": "native"
     },
     {
@@ -390,6 +414,30 @@
       "nodeVersion": "0.10.0",
       "replacement": "Object.getOwnPropertyDescriptor",
       "mdnPath": "Global_Objects/Object/getOwnPropertyDescriptor",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "has-proto",
+      "nodeVersion": "0.10.0",
+      "replacement": "Always `true`",
+      "mdnPath": "Operators/Object_initializer#prototype_setter",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "has-symbols",
+      "nodeVersion": "0.12.0",
+      "replacement": "Always `true`",
+      "mdnPath": "Global_Objects/Symbol",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "has-tostringtag",
+      "nodeVersion": "6.0.0",
+      "replacement": "Always `true`",
+      "mdnPath": "Global_Objects/Symbol/toStringTag",
       "category": "native"
     },
     {
