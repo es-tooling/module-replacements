@@ -1047,6 +1047,14 @@
       "replacement": "Array.prototype.lastIndexOf",
       "mdnPath": "Global_Objects/Array/lastIndexOf",
       "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "inherits",
+      "nodeVersion": "2.0.4  ",
+      "replacement": "Use native class syntax",
+      "mdnPath": "Classes/extends",
+      "category": "native"
     }
   ]
 }
