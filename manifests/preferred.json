@@ -2075,6 +2075,12 @@
       "moduleName": "readable-stream",
       "docPath": "readable-stream",
       "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "traverse",
+      "docPath": "traverse",
+      "category": "preferred"
     }
   ]
 }
