@@ -842,7 +842,7 @@
     },
     {
       "type": "native",
-      "moduleName": "string.prototype.trimStart",
+      "moduleName": "string.prototype.trimstart",
       "nodeVersion": "10.0.0",
       "replacement": "String.prototype.trimStart",
       "mdnPath": "Global_Objects/String/trimStart",
