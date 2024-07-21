@@ -62,7 +62,7 @@
     },
     {
       "type": "simple",
-      "moduleName": "is-primitve",
+      "moduleName": "is-primitive",
       "replacement": "Use v === null || (typeof v !== \"function\" && typeof v !== \"object\")",
       "category": "micro-utilities"
     },
