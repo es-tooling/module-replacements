@@ -578,7 +578,7 @@
     },
     {
       "type": "native",
-      "moduleName": "number.prototype.exponential",
+      "moduleName": "number.prototype.toexponential",
       "nodeVersion": "0.10.0",
       "replacement": "Number.prototype.toExponential",
       "mdnPath": "Global_Objects/Number/toExponential",
