@@ -57,7 +57,7 @@
     {
       "type": "simple",
       "moduleName": "is-plain-object",
-      "replacement": "Use typeof v === \"object\" && v !== null && v.constructor === Object",
+      "replacement": "Use v && typeof v === \"object\" && (Object.getPrototypeOf(v) === null || Object.getPrototypeOf(v) === Object.prototype)",
       "category": "micro-utilities"
     },
     {
