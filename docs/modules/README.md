@@ -20,6 +20,7 @@ ESLint plugin.
 - [`eslint-plugin-import`](./eslint-plugin-import.md)
 - [`eslint-plugin-node`](./eslint-plugin-node.md)
 - [`eslint-plugin-react`](./eslint-plugin-react.md)
+- [`globby`](./globby.md)
 - [`is-builtin-module`](./is-builtin-module.md)
 - [`jQuery`](./jquery.md)
 - [`lodash`, `underscore` and related](./lodash-underscore.md)
