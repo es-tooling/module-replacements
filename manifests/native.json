@@ -522,14 +522,6 @@
     },
     {
       "type": "native",
-      "moduleName": "math.sinh",
-      "nodeVersion": "0.10.0",
-      "replacement": "Math.sinh",
-      "mdnPath": "Global_Objects/Math/sinh",
-      "category": "native"
-    },
-    {
-      "type": "native",
       "moduleName": "number.isfinite",
       "nodeVersion": "0.10.0",
       "replacement": "Number.isFinite",
