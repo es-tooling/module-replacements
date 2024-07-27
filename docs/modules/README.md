@@ -34,3 +34,4 @@ ESLint plugin.
 - [`sort-object`](./sort-object.md)
 - [`tempy`](./tempy.md)
 - [`uri-js`](./uri-js.md)
+- [`classnames`](./classnames.md)
