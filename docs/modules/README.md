@@ -13,6 +13,7 @@ ESLint plugin.
 ## List of modules
 
 - [`bluebird` / `q`](./bluebird-q.md)
+- [`classnames`](./classnames.md)
 - [`cpx`](./cpx.md)
 - [`deep-equal`](./deep-equal.md)
 - [`eslint-plugin-es`](./eslint-plugin-es.md)
@@ -34,4 +35,3 @@ ESLint plugin.
 - [`sort-object`](./sort-object.md)
 - [`tempy`](./tempy.md)
 - [`uri-js`](./uri-js.md)
-- [`classnames`](./classnames.md)
