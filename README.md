@@ -72,7 +72,7 @@ This is a very opinionated list of modules with preferred replacements. Often
 these replacements are much lighter or more modern than the modules they are
 replacing.
 
-Sometimes these may also be forks of older packages which are actively
+Sometimes these may also be forks of older packages which aren't actively
 maintained (unlike the source module).
 
 # Contributing
