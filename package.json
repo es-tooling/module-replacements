@@ -11,9 +11,8 @@
     "format": "prettier --write \"./src/**/*.ts\" \"./manifests/**/*.json\"",
     "generate-schema": "node scripts/generate-schema.js",
     "prepare": "tshy && npm run build:update-manifest-paths",
-    "test:validate": "npm run validate-manifests && npm run validate-module-list",
-    "validate-manifests": "node scripts/validate-manifests.js",
-    "validate-module-list": "node scripts/validate-module-list.js"
+    "test:validate": "node scripts/validate-modules.js",
+    "sort-manifests": "node scripts/sort-manifests.js"
   },
   "tshy": {
     "exports": {

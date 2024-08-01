@@ -8,6 +8,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "builtin-modules",
+      "docPath": "is-builtin-module",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "cpx",
       "docPath": "cpx",
       "category": "preferred"
@@ -22,12 +28,6 @@
       "type": "documented",
       "moduleName": "eslint-plugin-es",
       "docPath": "eslint-plugin-es",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "eslint-plugin-react",
-      "docPath": "eslint-plugin-react",
       "category": "preferred"
     },
     {
@@ -50,13 +50,13 @@
     },
     {
       "type": "documented",
-      "moduleName": "is-builtin-module",
-      "docPath": "is-builtin-module",
+      "moduleName": "eslint-plugin-react",
+      "docPath": "eslint-plugin-react",
       "category": "preferred"
     },
     {
       "type": "documented",
-      "moduleName": "builtin-modules",
+      "moduleName": "is-builtin-module",
       "docPath": "is-builtin-module",
       "category": "preferred"
     },
@@ -69,6 +69,36 @@
     {
       "type": "documented",
       "moduleName": "lodash",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash-amd",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash-compat",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash-es",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash-fp",
+      "docPath": "lodash-underscore",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "lodash-node",
       "docPath": "lodash-underscore",
       "category": "preferred"
     },
@@ -314,13 +344,13 @@
     },
     {
       "type": "documented",
-      "moduleName": "lodash.defaultto",
+      "moduleName": "lodash.defaultsdeep",
       "docPath": "lodash-underscore",
       "category": "preferred"
     },
     {
       "type": "documented",
-      "moduleName": "lodash.defaultsdeep",
+      "moduleName": "lodash.defaultto",
       "docPath": "lodash-underscore",
       "category": "preferred"
     },
@@ -500,13 +530,13 @@
     },
     {
       "type": "documented",
-      "moduleName": "lodash.flattendepth",
+      "moduleName": "lodash.flattendeep",
       "docPath": "lodash-underscore",
       "category": "preferred"
     },
     {
       "type": "documented",
-      "moduleName": "lodash.flattendeep",
+      "moduleName": "lodash.flattendepth",
       "docPath": "lodash-underscore",
       "category": "preferred"
     },
@@ -542,13 +572,13 @@
     },
     {
       "type": "documented",
-      "moduleName": "lodash.forin",
+      "moduleName": "lodash.foreachright",
       "docPath": "lodash-underscore",
       "category": "preferred"
     },
     {
       "type": "documented",
-      "moduleName": "lodash.foreachright",
+      "moduleName": "lodash.forin",
       "docPath": "lodash-underscore",
       "category": "preferred"
     },
@@ -1304,13 +1334,13 @@
     },
     {
       "type": "documented",
-      "moduleName": "lodash.pullby",
+      "moduleName": "lodash.pullat",
       "docPath": "lodash-underscore",
       "category": "preferred"
     },
     {
       "type": "documented",
-      "moduleName": "lodash.pullat",
+      "moduleName": "lodash.pullby",
       "docPath": "lodash-underscore",
       "category": "preferred"
     },
@@ -1958,12 +1988,6 @@
     },
     {
       "type": "documented",
-      "moduleName": "lodash.zipwith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
       "moduleName": "lodash.zipobject",
       "docPath": "lodash-underscore",
       "category": "preferred"
@@ -1976,56 +2000,8 @@
     },
     {
       "type": "documented",
-      "moduleName": "lodash-amd",
+      "moduleName": "lodash.zipwith",
       "docPath": "lodash-underscore",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "lodash-compat",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "lodash-es",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "lodash-fp",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "lodash-node",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "npm-run-all",
-      "docPath": "npm-run-all",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "qs",
-      "docPath": "qs",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "tempy",
-      "docPath": "tempy",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "rimraf",
-      "docPath": "rimraf",
       "category": "preferred"
     },
     {
@@ -2048,14 +2024,44 @@
     },
     {
       "type": "documented",
+      "moduleName": "npm-run-all",
+      "docPath": "npm-run-all",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "q",
       "docPath": "bluebird-q",
       "category": "preferred"
     },
     {
       "type": "documented",
+      "moduleName": "qs",
+      "docPath": "qs",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "readable-stream",
+      "docPath": "readable-stream",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "rimraf",
+      "docPath": "rimraf",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "sort-object",
       "docPath": "sort-object",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "tempy",
+      "docPath": "tempy",
       "category": "preferred"
     },
     {
@@ -2068,18 +2074,6 @@
       "type": "documented",
       "moduleName": "uri-js",
       "docPath": "uri-js",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "readable-stream",
-      "docPath": "readable-stream",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "md5",
-      "docPath": "md5",
       "category": "preferred"
     }
   ]
