@@ -1,5 +1,7 @@
 # md5
 
+If you're using the `md5` package, you should consider using a more secure algorithm if possible, if not you can find a native Node.js alternative in the example blow.
+
 # Alternatives
 
 ## NodeJS
