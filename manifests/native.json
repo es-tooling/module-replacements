@@ -1039,6 +1039,94 @@
       "replacement": "Array.prototype.lastIndexOf",
       "mdnPath": "Global_Objects/Array/lastIndexOf",
       "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "abort-controller",
+      "nodeVersion": "0.10.0",
+      "replacement": "AbortController",
+      "mdnPath": "Global_Objects/AbortController",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.findlast",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.findLast",
+      "mdnPath": "Global_Objects/Array/findLast",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.findlastindex",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.findLastIndex",
+      "mdnPath": "Global_Objects/Array/findLastIndex",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.toreversed",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.toReversed",
+      "mdnPath": "Global_Objects/Array/toReversed",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.tosorted",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.toSorted",
+      "mdnPath": "Global_Objects/Array/toSorted",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.tospliced",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.toSpliced",
+      "mdnPath": "Global_Objects/Array/toSpliced",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.prototype.with",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.with",
+      "mdnPath": "Global_Objects/Array/with",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "string.prototype.repeat",
+      "nodeVersion": "0.10.0",
+      "replacement": "String.prototype.repeat",
+      "mdnPath": "Global_Objects/String/repeat",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "is-builtin-module",
+      "nodeVersion": "0.10.0",
+      "replacement": "Use `isBuiltin` from 'node:module'",
+      "mdnPath": "",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "md5",
+      "nodeVersion": "0.10.0",
+      "replacement": "Use `crypto.createHash('md5').update('message').digest('hex')` from 'node:crypto'",
+      "mdnPath": "",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "setprototypeof",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.setPrototypeOf",
+      "mdnPath": "Global_Objects/Object/setPrototypeOf",
+      "category": "native"
     }
   ]
 }
