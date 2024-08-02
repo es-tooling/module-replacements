@@ -14,6 +14,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "classnames",
+      "docPath": "classnames",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "cpx",
       "docPath": "cpx",
       "category": "preferred"
@@ -2086,12 +2092,6 @@
       "type": "documented",
       "moduleName": "uri-js",
       "docPath": "uri-js",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "classnames",
-      "docPath": "classnames",
       "category": "preferred"
     }
   ]
