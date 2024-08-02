@@ -16,7 +16,11 @@
   },
   "tshy": {
     "exports": {
-      ".": "./src/main.ts"
+      ".": "./src/main.ts",
+      "./package.json": "./package.json",
+      "./manifests/micro-utilities.json": "./manifests/micro-utilities.json",
+      "./manifests/native.json": "./manifests/native.json",
+      "./manifests/preferred.json": "./manifests/preferred.json"
     }
   },
   "files": [
