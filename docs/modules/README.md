@@ -26,6 +26,7 @@ ESLint plugin.
 - [`lodash`, `underscore` and related](./lodash-underscore.md)
 - [`MaterializeCSS`](./materialize-css.md)
 - [`make-dir`](./mkdirp.md)
+- [`md5`](./md5.md)
 - [`mkdirp`](./mkdirp.md)
 - [`moment.js`](./momentjs.md)
 - [`npm-run-all`](./npm-run-all.md)
