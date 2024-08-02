@@ -2012,6 +2012,18 @@
     },
     {
       "type": "documented",
+      "moduleName": "materialize-css",
+      "docPath": "materialize-css",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "md5",
+      "docPath": "md5",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "mkdirp",
       "docPath": "mkdirp",
       "category": "preferred"
