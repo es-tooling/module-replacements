@@ -5,6 +5,7 @@ import {readFile, readdir} from 'node:fs/promises';
 const scriptDir = fileURLToPath(new URL('.', import.meta.url));
 const moduleListDir = path.resolve(scriptDir, '..', 'docs', 'modules');
 const moduleListReadmePath = path.resolve(moduleListDir, 'README.md');
+const manifestsDir = path.resolve(scriptDir, '../manifests');
 
 export async function validateModuleList() {
   console.log('Validating README contains all documented modules...');
@@ -13,6 +14,22 @@ export async function validateModuleList() {
   });
   const listOfDocumentedModules =
     moduleListReadme.split('## List of modules')[1];
+  const allDocPaths = [];
+
+  const manifests = await readdir(manifestsDir);
+
+  for (const manifestName of manifests) {
+    const manifestPath = path.join(manifestsDir, manifestName);
+    const manifestObj = JSON.parse(
+      await readFile(manifestPath, {encoding: 'utf8'})
+    );
+
+    for (const mod of manifestObj.moduleReplacements) {
+      if (mod.type === 'documented') {
+        allDocPaths.push(mod.docPath);
+      }
+    }
+  }
 
   const files = await readdir(moduleListDir);
   for (const file of files) {
@@ -20,12 +37,20 @@ export async function validateModuleList() {
       continue;
     }
 
+    const docName = file.slice(0, -3);
+
     if (!listOfDocumentedModules.includes(file)) {
       throw new Error(
         `Module ${file} is not listed in the README.md but was found in modules documentation.
         Please add
-          - [\`${file.slice(0, -3)}\`](./${file})
+          - [\`${docName}\`](./${file})
         to ./docs/modules/README.md`
+      );
+    }
+
+    if (!allDocPaths.includes(docName)) {
+      throw new Error(
+        `Module ${docName} has documentation but does not exist in any manifest`
       );
     }
   }
