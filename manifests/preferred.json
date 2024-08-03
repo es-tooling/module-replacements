@@ -56,6 +56,24 @@
     },
     {
       "type": "documented",
+      "moduleName": "fast-glob",
+      "docPath": "glob",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "glob",
+      "docPath": "glob",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "globby",
+      "docPath": "glob",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "is-builtin-module",
       "docPath": "is-builtin-module",
       "category": "preferred"
