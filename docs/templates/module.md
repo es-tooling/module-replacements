@@ -10,4 +10,4 @@
 
 [Project Page](https://github.com)
 
-[NPM](https://npmjs.com)
+[npm](https://npmjs.com)

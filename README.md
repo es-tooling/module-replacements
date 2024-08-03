@@ -24,7 +24,7 @@ Some tools consume the lists of modules in this repository:
 
 ## Manifests
 
-The manifests can be used via the `module-replacements` NPM package.
+The manifests can be used via the `module-replacements` npm package.
 
 We provide three manifests:
 
@@ -35,7 +35,7 @@ We provide three manifests:
 
 ### Usage
 
-You can install this package via NPM:
+You can install this package via npm:
 
 ```sh
 npm i -S module-replacements
