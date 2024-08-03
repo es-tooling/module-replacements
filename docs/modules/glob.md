@@ -1,6 +1,6 @@
 # Globbing
 
-Most globbing libraries are bloated and have lighter and faster alternatives.
+Many glob libraries are bloated and have lighter and faster alternatives.
 
 # Alternatives
 
@@ -24,7 +24,7 @@ function. Although it's (currently) experimental, it works as a zero-dependency 
 `tinyglobby` can be used as an alternative to `globby` and `fast-glob`. It uses `fdir` and `picomatch`
 under the hood.
 
-`fast-glob` is a globbing library that presents a custom behavior of negated patterns no other globbing libraries have.
+`fast-glob` is a library that presents a custom behavior of negated patterns no other glob libraries have.
 
 `globby` wraps around it to add even more [default behaviors](https://github.com/sindresorhus/globby#features)
 that are not straightforward to replace.
