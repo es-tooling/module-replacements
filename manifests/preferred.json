@@ -56,8 +56,20 @@
     },
     {
       "type": "documented",
+      "moduleName": "fast-glob",
+      "docPath": "glob",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "glob",
+      "docPath": "glob",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "globby",
-      "docPath": "globby",
+      "docPath": "glob",
       "category": "preferred"
     },
     {
