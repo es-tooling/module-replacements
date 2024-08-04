@@ -2105,6 +2105,12 @@
       "moduleName": "uri-js",
       "docPath": "uri-js",
       "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "shortid",
+      "docPath": "shortid",
+      "category": "preferred"
     }
   ]
 }
