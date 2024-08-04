@@ -23,6 +23,7 @@ ESLint plugin.
 - [`fast-glob`](./glob.md)
 - [`glob`](./glob.md)
 - [`globby`](./glob.md)
+- [`ìnvariant`](./invariant.md)
 - [`is-builtin-module`](./is-builtin-module.md)
 - [`jQuery`](./jquery.md)
 - [`lodash`, `underscore` and related](./lodash-underscore.md)
