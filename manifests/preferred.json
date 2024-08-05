@@ -74,6 +74,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "invariant",
+      "docPath": "invariant",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "is-builtin-module",
       "docPath": "is-builtin-module",
       "category": "preferred"
