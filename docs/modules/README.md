@@ -36,6 +36,7 @@ ESLint plugin.
 - [`qs`](./qs.md)
 - [`readable-stream`](./readable-stream.md)
 - [`rimraf`](./rimraf.md)
+- [`shortid`](./shortid.md)
 - [`sort-object`](./sort-object.md)
 - [`tempy`](./tempy.md)
 - [`uri-js`](./uri-js.md)

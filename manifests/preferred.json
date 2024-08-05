@@ -2090,6 +2090,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "shortid",
+      "docPath": "shortid",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "sort-object",
       "docPath": "sort-object",
       "category": "preferred"
