@@ -74,6 +74,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "invariant",
+      "docPath": "invariant",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "is-builtin-module",
       "docPath": "is-builtin-module",
       "category": "preferred"
@@ -2104,12 +2110,6 @@
       "type": "documented",
       "moduleName": "uri-js",
       "docPath": "uri-js",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "invariant",
-      "docPath": "invariant",
       "category": "preferred"
     }
   ]
