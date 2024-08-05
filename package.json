@@ -11,13 +11,16 @@
     "format": "prettier --write \"./src/**/*.ts\" \"./manifests/**/*.json\"",
     "generate-schema": "node scripts/generate-schema.js",
     "prepare": "tshy && npm run build:update-manifest-paths",
-    "test:validate": "npm run validate-manifests && npm run validate-module-list",
-    "validate-manifests": "node scripts/validate-manifests.js",
-    "validate-module-list": "node scripts/validate-module-list.js"
+    "test:validate": "node scripts/validate-modules.js",
+    "sort-manifests": "node scripts/sort-manifests.js"
   },
   "tshy": {
     "exports": {
-      ".": "./src/main.ts"
+      ".": "./src/main.ts",
+      "./package.json": "./package.json",
+      "./manifests/micro-utilities.json": "./manifests/micro-utilities.json",
+      "./manifests/native.json": "./manifests/native.json",
+      "./manifests/preferred.json": "./manifests/preferred.json"
     }
   },
   "files": [
@@ -52,7 +55,11 @@
         "types": "./dist/commonjs/main.d.ts",
         "default": "./dist/commonjs/main.js"
       }
-    }
+    },
+    "./package.json": "./package.json",
+    "./manifests/micro-utilities.json": "./manifests/micro-utilities.json",
+    "./manifests/native.json": "./manifests/native.json",
+    "./manifests/preferred.json": "./manifests/preferred.json"
   },
   "types": "./dist/commonjs/main.d.ts",
   "type": "module"

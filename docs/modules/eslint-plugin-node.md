@@ -10,4 +10,4 @@ exist.
 Direct fork which is actively maintained. It has new features, bugfixes and updated dependencies.
 
 [Project Page](https://github.com/eslint-community/eslint-plugin-n)
-[NPM](https://www.npmjs.com/package/eslint-plugin-n)
+[npm](https://www.npmjs.com/package/eslint-plugin-n)

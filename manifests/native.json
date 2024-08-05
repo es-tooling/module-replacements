@@ -2,34 +2,18 @@
   "moduleReplacements": [
     {
       "type": "native",
-      "moduleName": "date",
+      "moduleName": "array-buffer-byte-length",
       "nodeVersion": "0.10.0",
-      "replacement": "Date",
-      "mdnPath": "Global_Objects/Date",
+      "replacement": "ArrayBuffer.prototype.byteLength",
+      "mdnPath": "Global_Objects/ArrayBuffer/byteLength",
       "category": "native"
     },
     {
       "type": "native",
-      "moduleName": "for-each",
-      "nodeVersion": "0.12.0",
-      "replacement": "for...of (using \"Object.entries\" if dealing with objects)",
-      "mdnPath": "Statements/for...of",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "iterate-iterator",
-      "nodeVersion": "0.12.0",
-      "replacement": "for...of",
-      "mdnPath": "Statements/for...of",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "iterate-value",
-      "nodeVersion": "0.12.0",
-      "replacement": "for...of",
-      "mdnPath": "Statements/for...of",
+      "moduleName": "array-every",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.every",
+      "mdnPath": "Global_Objects/Array/every",
       "category": "native"
     },
     {
@@ -38,6 +22,30 @@
       "nodeVersion": "6.0.0",
       "replacement": "Array.prototype.includes",
       "mdnPath": "Global_Objects/Array/includes",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array-map",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.map",
+      "mdnPath": "Global_Objects/Array/map",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.from",
+      "nodeVersion": "4.0.0",
+      "replacement": "Array.from",
+      "mdnPath": "Global_Objects/Array/from",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "array.of",
+      "nodeVersion": "4.0.0",
+      "replacement": "Array.of",
+      "mdnPath": "Global_Objects/Array/of",
       "category": "native"
     },
     {
@@ -130,14 +138,6 @@
     },
     {
       "type": "native",
-      "moduleName": "array.from",
-      "nodeVersion": "4.0.0",
-      "replacement": "Array.from",
-      "mdnPath": "Global_Objects/Array/from",
-      "category": "native"
-    },
-    {
-      "type": "native",
       "moduleName": "array.prototype.indexof",
       "nodeVersion": "0.10.0",
       "replacement": "Array.prototype.indexOf",
@@ -174,14 +174,6 @@
       "nodeVersion": "0.10.0",
       "replacement": "Array.prototype.map",
       "mdnPath": "Global_Objects/Array/map",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "array.of",
-      "nodeVersion": "4.0.0",
-      "replacement": "Array.of",
-      "mdnPath": "Global_Objects/Array/of",
       "category": "native"
     },
     {
@@ -250,14 +242,6 @@
     },
     {
       "type": "native",
-      "moduleName": "array-buffer-byte-length",
-      "nodeVersion": "0.10.0",
-      "replacement": "ArrayBuffer.prototype.byteLength",
-      "mdnPath": "Global_Objects/ArrayBuffer/byteLength",
-      "category": "native"
-    },
-    {
-      "type": "native",
       "moduleName": "arraybuffer.prototype.slice",
       "nodeVersion": "0.12.0",
       "replacement": "ArrayBuffer.prototype.slice",
@@ -266,18 +250,18 @@
     },
     {
       "type": "native",
-      "moduleName": "data-view-buffer",
-      "nodeVersion": "0.10.0",
-      "replacement": "DataView.prototype.buffer",
-      "mdnPath": "Global_Objects/DataView/buffer",
-      "category": "native"
-    },
-    {
-      "type": "native",
       "moduleName": "concat-map",
       "nodeVersion": "11.0.0",
       "replacement": "Array.prototype.flatMap",
       "mdnPath": "Global_Objects/Array/flatMap",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "data-view-buffer",
+      "nodeVersion": "0.10.0",
+      "replacement": "DataView.prototype.buffer",
+      "mdnPath": "Global_Objects/DataView/buffer",
       "category": "native"
     },
     {
@@ -298,6 +282,22 @@
     },
     {
       "type": "native",
+      "moduleName": "date",
+      "nodeVersion": "0.10.0",
+      "replacement": "Date",
+      "mdnPath": "Global_Objects/Date",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "defaults",
+      "nodeVersion": "4.0.0",
+      "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
+      "mdnPath": "Global_Objects/Object/assign",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "define-accessor-property",
       "nodeVersion": "0.10.0",
       "replacement": "Object.defineProperty",
@@ -314,10 +314,10 @@
     },
     {
       "type": "native",
-      "moduleName": "es-aggregate-error",
-      "nodeVersion": "15.0.0",
-      "replacement": "AggregateError",
-      "mdnPath": "Global_Objects/AggregateError",
+      "moduleName": "define-properties",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.defineProperties",
+      "mdnPath": "Global_Objects/Object/defineProperties",
       "category": "native"
     },
     {
@@ -326,6 +326,14 @@
       "nodeVersion": "16.9.0",
       "replacement": "Use errors `.cause` property and second `Error` constructors argument to define it",
       "mdnPath": "Global_Objects/Error/cause",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "es-aggregate-error",
+      "nodeVersion": "15.0.0",
+      "replacement": "AggregateError",
+      "mdnPath": "Global_Objects/AggregateError",
       "category": "native"
     },
     {
@@ -370,10 +378,34 @@
     },
     {
       "type": "native",
-      "moduleName": "functions-have-names",
+      "moduleName": "extend-shallow",
+      "nodeVersion": "4.0.0",
+      "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
+      "mdnPath": "Global_Objects/Object/assign",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "filter-array",
       "nodeVersion": "0.10.0",
-      "replacement": "Always `true`",
-      "mdnPath": "Global_Objects/Function/name",
+      "replacement": "Array.prototype.filter",
+      "mdnPath": "Global_Objects/Array/filter",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "for-each",
+      "nodeVersion": "0.12.0",
+      "replacement": "for...of (using \"Object.entries\" if dealing with objects)",
+      "mdnPath": "Statements/for...of",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "function-bind",
+      "nodeVersion": "0.10.0",
+      "replacement": "Function.prototype.bind",
+      "mdnPath": "Global_Objects/Function/bind",
       "category": "native"
     },
     {
@@ -386,10 +418,10 @@
     },
     {
       "type": "native",
-      "moduleName": "global",
-      "nodeVersion": "12.0.0",
-      "replacement": "globalThis",
-      "mdnPath": "Global_Objects/globalThis",
+      "moduleName": "functions-have-names",
+      "nodeVersion": "0.10.0",
+      "replacement": "Always `true`",
+      "mdnPath": "Global_Objects/Function/name",
       "category": "native"
     },
     {
@@ -398,6 +430,14 @@
       "nodeVersion": "11.0.0",
       "replacement": "Symbol.prototype.description",
       "mdnPath": "Global_Objects/Symbol/description",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "global",
+      "nodeVersion": "12.0.0",
+      "replacement": "globalThis",
+      "mdnPath": "Global_Objects/globalThis",
       "category": "native"
     },
     {
@@ -414,6 +454,22 @@
       "nodeVersion": "0.10.0",
       "replacement": "Object.getOwnPropertyDescriptor",
       "mdnPath": "Global_Objects/Object/getOwnPropertyDescriptor",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "has",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
+      "mdnPath": "Global_Objects/Object/hasOwnProperty",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "has-own-prop",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
+      "mdnPath": "Global_Objects/Object/hasOwnProperty",
       "category": "native"
     },
     {
@@ -438,6 +494,70 @@
       "nodeVersion": "6.0.0",
       "replacement": "Always `true`",
       "mdnPath": "Global_Objects/Symbol/toStringTag",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "hasown",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
+      "mdnPath": "Global_Objects/Object/hasOwnProperty",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "index-of",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.indexOf",
+      "mdnPath": "Global_Objects/Array/indexOf",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "inherits",
+      "nodeVersion": "6.0.0",
+      "replacement": "Use native class syntax",
+      "mdnPath": "Classes/extends",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "is-nan",
+      "nodeVersion": "0.10.0",
+      "replacement": "Number.isNaN",
+      "mdnPath": "Global_Objects/Number/isNaN",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "iterate-iterator",
+      "nodeVersion": "0.12.0",
+      "replacement": "for...of",
+      "mdnPath": "Statements/for...of",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "iterate-value",
+      "nodeVersion": "0.12.0",
+      "replacement": "for...of",
+      "mdnPath": "Statements/for...of",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "last-index-of",
+      "nodeVersion": "0.10.0",
+      "replacement": "Array.prototype.lastIndexOf",
+      "mdnPath": "Global_Objects/Array/lastIndexOf",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "left-pad",
+      "nodeVersion": "8.0.0",
+      "replacement": "String.prototype.padStart",
+      "mdnPath": "Global_Objects/String/padStart",
       "category": "native"
     },
     {
@@ -522,10 +642,10 @@
     },
     {
       "type": "native",
-      "moduleName": "math.sinh",
-      "nodeVersion": "0.10.0",
-      "replacement": "Math.sinh",
-      "mdnPath": "Global_Objects/Math/sinh",
+      "moduleName": "node.extend",
+      "nodeVersion": "4.0.0",
+      "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
+      "mdnPath": "Global_Objects/Object/assign",
       "category": "native"
     },
     {
@@ -578,10 +698,18 @@
     },
     {
       "type": "native",
-      "moduleName": "number.prototype.exponential",
+      "moduleName": "number.prototype.toexponential",
       "nodeVersion": "0.10.0",
       "replacement": "Number.prototype.toExponential",
       "mdnPath": "Global_Objects/Number/toExponential",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "object-assign",
+      "nodeVersion": "4.0.0",
+      "replacement": "Object.assign",
+      "mdnPath": "Global_Objects/Object/assign",
       "category": "native"
     },
     {
@@ -594,15 +722,15 @@
     },
     {
       "type": "native",
-      "moduleName": "object.assign",
-      "nodeVersion": "4.0.0",
-      "replacement": "Object.assign",
-      "mdnPath": "Global_Objects/Object/assign",
+      "moduleName": "object-keys",
+      "nodeVersion": "0.10.0",
+      "replacement": "Object.keys(obj)",
+      "mdnPath": "Global_Objects/Object/keys",
       "category": "native"
     },
     {
       "type": "native",
-      "moduleName": "object-assign",
+      "moduleName": "object.assign",
       "nodeVersion": "4.0.0",
       "replacement": "Object.assign",
       "mdnPath": "Global_Objects/Object/assign",
@@ -658,14 +786,6 @@
     },
     {
       "type": "native",
-      "moduleName": "object-keys",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.keys(obj)",
-      "mdnPath": "Global_Objects/Object/keys",
-      "category": "native"
-    },
-    {
-      "type": "native",
       "moduleName": "object.keys",
       "nodeVersion": "0.10.0",
       "replacement": "Object.keys(obj)",
@@ -678,6 +798,14 @@
       "nodeVersion": "7.0.0",
       "replacement": "Object.values",
       "mdnPath": "Global_Objects/Object/values",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "pad-left",
+      "nodeVersion": "8.0.0",
+      "replacement": "String.prototype.padStart",
+      "mdnPath": "Global_Objects/String/padStart",
       "category": "native"
     },
     {
@@ -726,6 +854,14 @@
       "nodeVersion": "6.0.0",
       "replacement": "Reflect.ownKeys",
       "mdnPath": "Global_Objects/Reflect/ownKeys",
+      "category": "native"
+    },
+    {
+      "type": "native",
+      "moduleName": "regexp.prototype.flags",
+      "nodeVersion": "6.0.0",
+      "replacement": "RegExp.prototype.flags (e.g. \"/foo/g.flags\")",
+      "mdnPath": "Global_Objects/RegExp/flags",
       "category": "native"
     },
     {
@@ -842,7 +978,7 @@
     },
     {
       "type": "native",
-      "moduleName": "string.prototype.trimStart",
+      "moduleName": "string.prototype.trimstart",
       "nodeVersion": "10.0.0",
       "replacement": "String.prototype.trimStart",
       "mdnPath": "Global_Objects/String/trimStart",
@@ -906,154 +1042,10 @@
     },
     {
       "type": "native",
-      "moduleName": "has",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
-      "mdnPath": "Global_Objects/Object/hasOwnProperty",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "hasown",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
-      "mdnPath": "Global_Objects/Object/hasOwnProperty",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "has-own-prop",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
-      "mdnPath": "Global_Objects/Object/hasOwnProperty",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "array-map",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.map",
-      "mdnPath": "Global_Objects/Array/map",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "is-nan",
-      "nodeVersion": "0.10.0",
-      "replacement": "Number.isNaN",
-      "mdnPath": "Global_Objects/Number/isNaN",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "node.extend",
-      "nodeVersion": "4.0.0",
-      "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
-      "mdnPath": "Global_Objects/Object/assign",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "extend-shallow",
-      "nodeVersion": "4.0.0",
-      "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
-      "mdnPath": "Global_Objects/Object/assign",
-      "category": "native"
-    },
-    {
-      "type": "native",
       "moduleName": "xtend",
       "nodeVersion": "4.0.0",
       "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
       "mdnPath": "Global_Objects/Object/assign",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "defaults",
-      "nodeVersion": "4.0.0",
-      "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
-      "mdnPath": "Global_Objects/Object/assign",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "function-bind",
-      "nodeVersion": "0.10.0",
-      "replacement": "Function.prototype.bind",
-      "mdnPath": "Global_Objects/Function/bind",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "regexp.prototype.flags",
-      "nodeVersion": "6.0.0",
-      "replacement": "RegExp.prototype.flags (e.g. \"/foo/g.flags\")",
-      "mdnPath": "Global_Objects/RegExp/flags",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "define-properties",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.defineProperties",
-      "mdnPath": "Global_Objects/Object/defineProperties",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "left-pad",
-      "nodeVersion": "8.0.0",
-      "replacement": "String.prototype.padStart",
-      "mdnPath": "Global_Objects/String/padStart",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "pad-left",
-      "nodeVersion": "8.0.0",
-      "replacement": "String.prototype.padStart",
-      "mdnPath": "Global_Objects/String/padStart",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "filter-array",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.filter",
-      "mdnPath": "Global_Objects/Array/filter",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "array-every",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.every",
-      "mdnPath": "Global_Objects/Array/every",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "index-of",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.indexOf",
-      "mdnPath": "Global_Objects/Array/indexOf",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "last-index-of",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.lastIndexOf",
-      "mdnPath": "Global_Objects/Array/lastIndexOf",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "inherits",
-      "nodeVersion": "6.0.0",
-      "replacement": "Use native class syntax",
-      "mdnPath": "Classes/extends",
       "category": "native"
     }
   ]

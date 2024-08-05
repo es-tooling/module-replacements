@@ -8,6 +8,12 @@
     },
     {
       "type": "simple",
+      "moduleName": "clone-regexp",
+      "replacement": "Use new RegExp(regexpToCopy)",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
       "moduleName": "es-get-iterator",
       "replacement": "Use v[Symbol.iterator]?.()",
       "category": "micro-utilities"
@@ -38,8 +44,20 @@
     },
     {
       "type": "simple",
+      "moduleName": "is-even",
+      "replacement": "Use (n % 2) === 0",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
       "moduleName": "is-negative-zero",
       "replacement": "Use Object.is(v, -0)",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-npm",
+      "replacement": "Use process.env.npm_config_user_agent?.startsWith(\"npm\")",
       "category": "micro-utilities"
     },
     {
@@ -56,13 +74,19 @@
     },
     {
       "type": "simple",
-      "moduleName": "is-plain-object",
-      "replacement": "Use typeof v === \"object\" && v !== null && v.constructor === Object",
+      "moduleName": "is-odd",
+      "replacement": "Use (n % 2) === 1",
       "category": "micro-utilities"
     },
     {
       "type": "simple",
-      "moduleName": "is-primitve",
+      "moduleName": "is-plain-object",
+      "replacement": "Use v && typeof v === \"object\" && (Object.getPrototypeOf(v) === null || Object.getPrototypeOf(v) === Object.prototype)",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-primitive",
       "replacement": "Use v === null || (typeof v !== \"function\" && typeof v !== \"object\")",
       "category": "micro-utilities"
     },
@@ -75,7 +99,7 @@
     {
       "type": "simple",
       "moduleName": "is-string",
-      "replacement": "Use Object.prototype.toString.call(v) === \"[object String]\"",
+      "replacement": "Use typeof str === \"string\"",
       "category": "micro-utilities"
     },
     {
@@ -86,20 +110,8 @@
     },
     {
       "type": "simple",
-      "moduleName": "is-npm",
-      "replacement": "Use process.env.npm_config_user_agent?.startsWith(\"npm\")",
-      "category": "micro-utilities"
-    },
-    {
-      "type": "simple",
-      "moduleName": "clone-regexp",
-      "replacement": "Use new RegExp(regexpToCopy)",
-      "category": "micro-utilities"
-    },
-    {
-      "type": "simple",
-      "moduleName": "split-lines",
-      "replacement": "Use str.split(/\\r?\\n/)",
+      "moduleName": "is-whitespace",
+      "replacement": "Use str.trim() === \"\" or /^\\s*$/.test(str)",
       "category": "micro-utilities"
     },
     {
@@ -110,26 +122,8 @@
     },
     {
       "type": "simple",
-      "moduleName": "is-whitespace",
-      "replacement": "Use str.trim() === \"\" or /^\\s*$/.test(str)",
-      "category": "micro-utilities"
-    },
-    {
-      "type": "simple",
-      "moduleName": "is-string",
-      "replacement": "Use typeof str === \"string\"",
-      "category": "micro-utilities"
-    },
-    {
-      "type": "simple",
-      "moduleName": "is-odd",
-      "replacement": "Use (n % 2) === 1",
-      "category": "micro-utilities"
-    },
-    {
-      "type": "simple",
-      "moduleName": "is-even",
-      "replacement": "Use (n % 2) === 0",
+      "moduleName": "split-lines",
+      "replacement": "Use str.split(/\\r?\\n/)",
       "category": "micro-utilities"
     }
   ]
