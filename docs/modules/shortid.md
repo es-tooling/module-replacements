@@ -16,4 +16,4 @@ model.id = nanoid() //=> "V1StGXR8_Z5jdHi6B-myT"
 ```
 
 [Project Page](https://github.com/ai/nanoid/)
-[NPM](https://www.npmjs.com/package/nanoid)
+[npm](https://www.npmjs.com/package/nanoid)
