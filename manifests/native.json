@@ -514,6 +514,14 @@
     },
     {
       "type": "native",
+      "moduleName": "inherits",
+      "nodeVersion": "6.0.0",
+      "replacement": "Use native class syntax",
+      "mdnPath": "Classes/extends",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "is-nan",
       "nodeVersion": "0.10.0",
       "replacement": "Number.isNaN",
