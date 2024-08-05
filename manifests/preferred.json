@@ -2084,6 +2084,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "shortid",
+      "docPath": "shortid",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "sort-object",
       "docPath": "sort-object",
       "category": "preferred"
@@ -2104,12 +2110,6 @@
       "type": "documented",
       "moduleName": "uri-js",
       "docPath": "uri-js",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "shortid",
-      "docPath": "shortid",
       "category": "preferred"
     }
   ]
