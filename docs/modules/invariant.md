@@ -17,4 +17,4 @@ invariant(falsyValue, 'This will throw!');
 ```
 
 [Project Page](https://github.com/alexreardon/tiny-invariant)
-[NPM](https://www.npmjs.com/package/tiny-invariant)
+[npm](https://www.npmjs.com/package/tiny-invariant)
