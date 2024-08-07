@@ -15,4 +15,4 @@ For most cases, native JavaScript `Promise` is enough.
 Ultralight native `Promise` extension compatible with `bluebird` if you need some helpers missed in native JavaScript `Promise`.
 
 [Project Page](https://github.com/doodlewind/nativebird)
-[NPM](https://www.npmjs.com/package/nativebird)
+[npm](https://www.npmjs.com/package/nativebird)

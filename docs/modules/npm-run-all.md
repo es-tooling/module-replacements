@@ -11,7 +11,7 @@ Provides a clean way to manage your npm scripts, offering parallelisation,
 file watching, and more.
 
 [Project Page](https://github.com/google/wireit)
-[NPM](https://www.npmjs.com/package/wireit)
+[npm](https://www.npmjs.com/package/wireit)
 
 ## npm-run-all2
 
@@ -21,11 +21,11 @@ It can be used as a drop-in replacement as it provides the exact same binaries
 as the original.
 
 [Project Page](https://github.com/bcomnes/npm-run-all2)
-[NPM](https://www.npmjs.com/package/npm-run-all2)
+[npm](https://www.npmjs.com/package/npm-run-all2)
 
 ## concurrently
 
 Very similar concept to `npm-run-all` which is actively maintained.
 
 [Project Page](https://github.com/open-cli-tools/concurrently)
-[NPM](https://www.npmjs.com/package/concurrently)
+[npm](https://www.npmjs.com/package/concurrently)

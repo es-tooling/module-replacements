@@ -9,7 +9,7 @@
 Direct fork with a much smaller footprint and modernisation.
 
 [Project Page](https://github.com/un-ts/eslint-plugin-import-x)
-[NPM](https://www.npmjs.com/package/eslint-plugin-import-x)
+[npm](https://www.npmjs.com/package/eslint-plugin-import-x)
 
 ## TypeScript
 

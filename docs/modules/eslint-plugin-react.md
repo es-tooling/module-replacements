@@ -9,4 +9,4 @@
 Feature rich alternative with many of the same rules.
 
 [Project Page](https://github.com/Rel1cx/eslint-react)
-[NPM](https://www.npmjs.com/package/@eslint-react/eslint-plugin)
+[npm](https://www.npmjs.com/package/@eslint-react/eslint-plugin)
