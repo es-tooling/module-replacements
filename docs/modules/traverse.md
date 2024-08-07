@@ -1,6 +1,6 @@
 # traverse
 
-traverse has 66 total transitive dependencies, is CJS-only and is projected to get bigger over time.
+traverse has many transitive dependencies, is CommonJS-only and is projected to get bigger over time.
 
 # Alternatives
 
