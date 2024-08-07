@@ -2108,6 +2108,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "traverse",
+      "docPath": "traverse",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "underscore",
       "docPath": "lodash-underscore",
       "category": "preferred"

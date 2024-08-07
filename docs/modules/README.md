@@ -39,4 +39,5 @@ ESLint plugin.
 - [`shortid`](./shortid.md)
 - [`sort-object`](./sort-object.md)
 - [`tempy`](./tempy.md)
+- [`traverse`](./traverse.md)
 - [`uri-js`](./uri-js.md)
