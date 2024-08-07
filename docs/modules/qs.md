@@ -12,9 +12,18 @@
 
 [fast-querystring](https://www.npmjs.com/package/fast-querystring) can be used when you need arrays but not nesting.
 
+[Project Page](https://github.com/anonrig/fast-querystring)
+[npm](https://www.npmjs.com/package/fast-querystring)
+
 ## picoquery
 
 [picoquery](https://www.npmjs.com/package/picoquery) can be used when you need nesting and arrays.
+
+- `v2.x` and above are ESM only.
+- `v1.x` is compatible with CommonJS and will be maintained with non-breaking changes.
+
+[Project Page](https://github.com/43081j/picoquery)
+[npm](https://www.npmjs.com/package/picoquery)
 
 ## qs-esm
 
@@ -22,6 +31,9 @@
 
 - No polyfills for legacy Node versions, making this package dependency-free and reducing bundle-size.
 - Includes TypeScript types, eliminating the need to install a separate @types/ package.
+
+[Project Page](https://github.com/payloadcms/qs-esm)
+[npm](https://www.npmjs.com/package/qs-esm)
 
 ## neoqs
 
@@ -31,3 +43,6 @@
 - Includes TypeScript types, eliminating the need to install a separate @types/ package.
 - ESM and CommonJS builds are provided.
 - Legacy mode supporting ES5.
+
+[Project Page](https://github.com/puruvj/neoqs)
+[npm](https://www.npmjs.com/package/neoqs)
