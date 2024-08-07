@@ -21,3 +21,11 @@
 
 - No polyfills for legacy Node versions, making this package dependency-free and reducing bundle-size.
 - Includes TypeScript types, eliminating the need to install a separate @types/ package.
+
+## neoqs
+[neoqs](https://www.npmjs.com/package/neoqs) is a fork of `qs` with the following core differences:
+
+- No polyfills for legacy Node versions, making this package dependency-free and reducing bundle-size.
+- Includes TypeScript types, eliminating the need to install a separate @types/ package.
+- ESM and CommonJS builds are provided.
+- Legacy mode supporting ES5.
