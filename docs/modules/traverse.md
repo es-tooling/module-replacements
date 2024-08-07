@@ -10,4 +10,4 @@ neotraverse is a fork and TypeScript rewrite of [traverse](https://github.com/lj
 
 [Project Page](https://github.com/puruvj/neotraverse)
 
-[NPM](https://npmjs.com/package/neotraverse)
+[npm](https://npmjs.com/package/neotraverse)
