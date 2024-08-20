@@ -57,7 +57,7 @@
     {
       "type": "documented",
       "moduleName": "execa",
-      "docPath": "process-exec",
+      "docPath": "execa",
       "category": "preferred"
     },
     {
@@ -2128,12 +2128,6 @@
       "type": "documented",
       "moduleName": "uri-js",
       "docPath": "uri-js",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "zx",
-      "docPath": "process-exec",
       "category": "preferred"
     }
   ]
