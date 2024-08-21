@@ -1,8 +1,6 @@
 # Execa
 
-Execa is process execution library that simplifies command execution by providing programmatic API on top of `node:child_process`.
-
-Execa provides the following important features compared to the standard library:
+As a process execution library, `execa` provides the following important features:
 
 1. [String templating](https://github.com/sindresorhus/execa/blob/main/docs/execution.md#template-string-syntax)
 2. [Full Windows Compatibility](https://github.com/sindresorhus/execa/blob/main/docs/windows.md)
