@@ -57,7 +57,7 @@
     {
       "type": "documented",
       "moduleName": "execa",
-      "docPath": "execa",
+      "docPath": "process-exec",
       "category": "preferred"
     },
     {
