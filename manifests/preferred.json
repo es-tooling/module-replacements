@@ -2066,6 +2066,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "ora",
+      "docPath": "ora",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "q",
       "docPath": "bluebird-q",
       "category": "preferred"

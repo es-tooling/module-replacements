@@ -33,6 +33,7 @@ ESLint plugin.
 - [`mkdirp`](./mkdirp.md)
 - [`moment.js`](./momentjs.md)
 - [`npm-run-all`](./npm-run-all.md)
+- [`ora`](./ora.md)
 - [`qs`](./qs.md)
 - [`readable-stream`](./readable-stream.md)
 - [`rimraf`](./rimraf.md)
