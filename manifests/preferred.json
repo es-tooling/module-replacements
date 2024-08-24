@@ -56,6 +56,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "execa",
+      "docPath": "process-exec",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "fast-glob",
       "docPath": "glob",
       "category": "preferred"

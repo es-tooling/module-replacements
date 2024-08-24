@@ -20,6 +20,7 @@ ESLint plugin.
 - [`eslint-plugin-import`](./eslint-plugin-import.md)
 - [`eslint-plugin-node`](./eslint-plugin-node.md)
 - [`eslint-plugin-react`](./eslint-plugin-react.md)
+- [`execa`](./process-exec.md)
 - [`fast-glob`](./glob.md)
 - [`glob`](./glob.md)
 - [`globby`](./glob.md)
