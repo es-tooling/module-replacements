@@ -2078,6 +2078,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "path-exists",
+      "docPath": "path-exists",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "q",
       "docPath": "bluebird-q",
       "category": "preferred"
