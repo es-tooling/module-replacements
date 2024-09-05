@@ -12,6 +12,7 @@ ESLint plugin.
 
 ## List of modules
 
+- [`@jsdevtools/ez-spawn`](./process-exec.md)
 - [`bluebird` / `q`](./bluebird-q.md)
 - [`cpx`](./cpx.md)
 - [`deep-equal`](./deep-equal.md)
@@ -21,6 +22,7 @@ ESLint plugin.
 - [`eslint-plugin-node`](./eslint-plugin-node.md)
 - [`eslint-plugin-react`](./eslint-plugin-react.md)
 - [`execa`](./process-exec.md)
+- [`ezspawn`](./process-exec.md)
 - [`fast-glob`](./glob.md)
 - [`glob`](./glob.md)
 - [`globby`](./glob.md)
