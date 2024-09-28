@@ -14,8 +14,8 @@
     },
     {
       "type": "documented",
-      "moduleName": "bodyparser",
-      "docPath": "bodyparser",
+      "moduleName": "body-parser",
+      "docPath": "body-parser",
       "category": "preferred"
     },
     {
