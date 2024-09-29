@@ -1,6 +1,6 @@
 # Body-parser
 
-`body-parser` can be replaced with more modern alternatives which is both lighter and faster.
+`body-parser` can be replaced with more modern alternatives which are both lighter and faster.
 
 # Alternatives
 
