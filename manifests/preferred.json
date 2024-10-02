@@ -2132,6 +2132,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "strip-ansi",
+      "docPath": "strip-ansi",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "tempy",
       "docPath": "tempy",
       "category": "preferred"

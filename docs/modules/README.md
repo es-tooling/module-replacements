@@ -43,6 +43,7 @@ ESLint plugin.
 - [`rimraf`](./rimraf.md)
 - [`shortid`](./shortid.md)
 - [`sort-object`](./sort-object.md)
+- [`strip-ansi`](./strip-ansi.md)
 - [`tempy`](./tempy.md)
 - [`traverse`](./traverse.md)
 - [`uri-js`](./uri-js.md)
