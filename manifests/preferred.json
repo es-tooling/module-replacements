@@ -2171,6 +2171,12 @@
       "moduleName": "uri-js",
       "docPath": "uri-js",
       "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "xmldom",
+      "docPath": "xmldom",
+      "category": "preferred"
     }
   ]
 }

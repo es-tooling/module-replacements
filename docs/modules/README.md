@@ -49,3 +49,4 @@ ESLint plugin.
 - [`tempy`](./tempy.md)
 - [`traverse`](./traverse.md)
 - [`uri-js`](./uri-js.md)
+- [`xmldom`](./xmldom.md)
