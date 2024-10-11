@@ -24,6 +24,7 @@ ESLint plugin.
 - [`eslint-plugin-vitest`](./eslint-plugin-vitest.md)
 - [`execa`](./process-exec.md)
 - [`ezspawn`](./process-exec.md)
+- [`faker`](./faker.md)
 - [`fast-glob`](./glob.md)
 - [`glob`](./glob.md)
 - [`globby`](./glob.md)

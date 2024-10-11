@@ -80,6 +80,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "faker",
+      "docPath": "faker",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "fast-glob",
       "docPath": "glob",
       "category": "preferred"
