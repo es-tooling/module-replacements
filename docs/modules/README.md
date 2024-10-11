@@ -21,6 +21,7 @@ ESLint plugin.
 - [`eslint-plugin-import`](./eslint-plugin-import.md)
 - [`eslint-plugin-node`](./eslint-plugin-node.md)
 - [`eslint-plugin-react`](./eslint-plugin-react.md)
+- [`eslint-plugin-vitest`](./eslint-plugin-vitest.md)
 - [`execa`](./process-exec.md)
 - [`ezspawn`](./process-exec.md)
 - [`fast-glob`](./glob.md)
