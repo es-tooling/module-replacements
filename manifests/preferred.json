@@ -62,6 +62,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "eslint-plugin-vitest",
+      "docPath": "eslint-plugin-vitest",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "execa",
       "docPath": "process-exec",
       "category": "preferred"
@@ -70,6 +76,12 @@
       "type": "documented",
       "moduleName": "ezspawn",
       "docPath": "process-exec",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "faker",
+      "docPath": "faker",
       "category": "preferred"
     },
     {
@@ -2158,6 +2170,12 @@
       "type": "documented",
       "moduleName": "uri-js",
       "docPath": "uri-js",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "xmldom",
+      "docPath": "xmldom",
       "category": "preferred"
     }
   ]
