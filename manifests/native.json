@@ -250,6 +250,14 @@
     },
     {
       "type": "native",
+      "moduleName": "buffer-equal",
+      "nodeVersion": "0.11.13",
+      "replacement": "Buffer.prototype.equals",
+      "mdnPath": "Global_Objects/Buffer/equals",
+      "category": "native"
+    },
+    {
+      "type": "native",
       "moduleName": "concat-map",
       "nodeVersion": "11.0.0",
       "replacement": "Array.prototype.flatMap",
