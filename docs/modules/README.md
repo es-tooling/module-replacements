@@ -26,6 +26,7 @@ ESLint plugin.
 - [`ezspawn`](./process-exec.md)
 - [`faker`](./faker.md)
 - [`fast-glob`](./glob.md)
+- [`fs-extra`](./fs-extra.md)
 - [`glob`](./glob.md)
 - [`globby`](./glob.md)
 - [`ìnvariant`](./invariant.md)

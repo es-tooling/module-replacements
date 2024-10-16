@@ -92,6 +92,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "fs-extra",
+      "docPath": "fs-extra",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "glob",
       "docPath": "glob",
       "category": "preferred"
