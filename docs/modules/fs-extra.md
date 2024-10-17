@@ -20,7 +20,7 @@ import * as fs from 'node:fs/promises';
 To use the callback and sync APIs:
 
 ```js
-import * as fs from 'node:fs/promises';
+import * as fs from 'node:fs';
 ```
 
 ### Equivalent Methods
