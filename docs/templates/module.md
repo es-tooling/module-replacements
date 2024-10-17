@@ -2,9 +2,9 @@
 
 {Optional description}
 
-# Alternatives
+## Alternatives
 
-## {Alternative package name}
+### {Alternative package name}
 
 {Description of alternative package}
 
