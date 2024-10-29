@@ -39,6 +39,8 @@ import * as fs from 'node:fs';
 
 #### Methods that need migrating or more than one `node:fs` method
 
+For all other methods, a combination of fs methods may be needed rather than there being a one-to-one replacement. See the docs [here](https://nodejs.org/docs/latest/api/fs.html)
+
 ##### `emptyDir(dir[, callback])`
 
 ##### `emptyDirSync(dir)`
