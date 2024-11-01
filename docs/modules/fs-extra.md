@@ -40,37 +40,3 @@ import * as fs from 'node:fs';
 #### Methods that need migrating or more than one `node:fs` method
 
 For all other methods, a combination of fs methods may be needed rather than there being a one-to-one replacement. See the docs [here](https://nodejs.org/docs/latest/api/fs.html)
-
-##### `emptyDir(dir[, callback])`
-
-##### `emptyDirSync(dir)`
-
-##### `ensureFile(file[, callback])`
-
-##### `ensureFileSync(file)`
-
-##### `ensureLink(srcPath, destPath[, callback])`
-
-##### `ensureLinkSync(srcPath, destPath)`
-
-##### `ensureSymlink(srcPath, destPath[, type][, callback])`
-
-##### `ensureSymlinkSync(srcPath, destPath[, type])`
-
-##### `outputFile(file, data[, options][, callback])`
-
-##### `outputFileSync(file, data[, options])`
-
-##### `outputJson(file, object[, options][, callback])`
-
-##### `outputJsonSync(file, object[, options])`
-
-##### `pathExists(file[, callback])`
-
-##### `readJson(file[, options][, callback])`
-
-##### `readJsonSync(file[, options])`
-
-##### `writeJson(file, object[, options][, callback])`
-
-##### `writeJsonSync(file, object[, options])`
