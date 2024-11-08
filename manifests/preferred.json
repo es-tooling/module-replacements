@@ -32,6 +32,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "dotenv",
+      "docPath": "dotenv",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "eslint-plugin-es",
       "docPath": "eslint-plugin-es",
       "category": "preferred"
