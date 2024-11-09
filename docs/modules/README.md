@@ -16,6 +16,7 @@ ESLint plugin.
 - [`bluebird` / `q`](./bluebird-q.md)
 - [`cpx`](./cpx.md)
 - [`deep-equal`](./deep-equal.md)
+- [`dotenv`](./dotenv.md)
 - [`eslint-plugin-es`](./eslint-plugin-es.md)
 - [`eslint-plugin-eslint-comments`](./eslint-plugin-eslint-comments.md)
 - [`eslint-plugin-import`](./eslint-plugin-import.md)
