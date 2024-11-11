@@ -116,6 +116,18 @@
     },
     {
       "type": "documented",
+      "moduleName": "grapheme-splitter",
+      "docPath": "grapheme",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "graphemer",
+      "docPath": "grapheme",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "invariant",
       "docPath": "invariant",
       "category": "preferred"
