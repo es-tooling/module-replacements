@@ -14,6 +14,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "buf-compare",
+      "docPath": "buf-compare",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "buffer-equal",
       "docPath": "buffer-equal",
       "category": "preferred"
