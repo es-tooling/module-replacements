@@ -20,6 +20,24 @@
     },
     {
       "type": "documented",
+      "moduleName": "buf-compare",
+      "docPath": "buf-compare",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "buffer-equal",
+      "docPath": "buffer-equal",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "buffer-equals",
+      "docPath": "buffer-equal",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "builtin-modules",
       "docPath": "is-builtin-module",
       "category": "preferred"
@@ -34,6 +52,12 @@
       "type": "documented",
       "moduleName": "deep-equal",
       "docPath": "deep-equal",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "dotenv",
+      "docPath": "dotenv",
       "category": "preferred"
     },
     {
@@ -68,6 +92,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "eslint-plugin-vitest",
+      "docPath": "eslint-plugin-vitest",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "execa",
       "docPath": "process-exec",
       "category": "preferred"
@@ -80,8 +110,20 @@
     },
     {
       "type": "documented",
+      "moduleName": "faker",
+      "docPath": "faker",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "fast-glob",
       "docPath": "glob",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "fs-extra",
+      "docPath": "fs-extra",
       "category": "preferred"
     },
     {
@@ -2138,6 +2180,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "strip-ansi",
+      "docPath": "strip-ansi",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "tempy",
       "docPath": "tempy",
       "category": "preferred"
@@ -2158,6 +2206,12 @@
       "type": "documented",
       "moduleName": "uri-js",
       "docPath": "uri-js",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "xmldom",
+      "docPath": "xmldom",
       "category": "preferred"
     }
   ]
