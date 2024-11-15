@@ -33,6 +33,7 @@ ESLint plugin.
 - [`fs-extra`](./fs-extra.md)
 - [`glob`](./glob.md)
 - [`globby`](./glob.md)
+- [`grapheme`](./grapheme.md)
 - [`ìnvariant`](./invariant.md)
 - [`is-builtin-module`](./is-builtin-module.md)
 - [`jQuery`](./jquery.md)
