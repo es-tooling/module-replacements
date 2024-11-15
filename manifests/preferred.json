@@ -14,6 +14,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "body-parser",
+      "docPath": "body-parser",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "buf-compare",
       "docPath": "buf-compare",
       "category": "preferred"

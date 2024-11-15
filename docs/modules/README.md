@@ -14,6 +14,7 @@ ESLint plugin.
 
 - [`@jsdevtools/ez-spawn`](./process-exec.md)
 - [`bluebird` / `q`](./bluebird-q.md)
+- [`body-parser`](./body-parser.md)
 - [`buf-compare`](./buf-compare.md)
 - [`buffer-equal` / `buffer-equals`](./buffer-equal.md)
 - [`cpx`](./cpx.md)
