@@ -6,6 +6,6 @@
 
 ## nano-staged
 
-[nano-staged](https://github.com/usmanyunusov/nano-staged) offers the same API while being 142x smaller and slighty faster
+[nano-staged](https://github.com/usmanyunusov/nano-staged) offers the same API while being much smaller and slighty faster
 
 [Project Page](https://github.com/usmanyunusov/nano-staged)
