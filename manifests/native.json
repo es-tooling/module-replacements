@@ -1047,22 +1047,6 @@
       "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
       "mdnPath": "Global_Objects/Object/assign",
       "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "grapheme-splitter",
-      "nodeVersion": "16.0.0",
-      "replacement": "Intl.Segmenter",
-      "mdnPath": "Global_Objects/Intl/Segmenter",
-      "category": "native"
-    },
-    {
-      "type": "native",
-      "moduleName": "graphemer",
-      "nodeVersion": "16.0.0",
-      "replacement": "Intl.Segmenter",
-      "mdnPath": "Global_Objects/Intl/Segmenter",
-      "category": "native"
     }
   ]
 }
