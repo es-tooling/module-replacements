@@ -8,4 +8,4 @@
 
 [nano-staged](https://github.com/usmanyunusov/nano-staged) offers the same API while being much smaller and slighty faster
 
-[Project Page](https://github.com/usmanyunusov/nano-staged)
+[Project Page](https://github.com/usmanyunusov/nano-staged)[npm](https://www.npmjs.com/package/nano-staged)
