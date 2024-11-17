@@ -170,6 +170,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "lint-staged",
+      "docPath": "lint-staged",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "lodash",
       "docPath": "lodash-underscore",
       "category": "preferred"
