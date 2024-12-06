@@ -17,6 +17,7 @@ ESLint plugin.
 - [`body-parser`](./body-parser.md)
 - [`buf-compare`](./buf-compare.md)
 - [`buffer-equal` / `buffer-equals`](./buffer-equal.md)
+- [`chalk`](./chalk.md)
 - [`cpx`](./cpx.md)
 - [`deep-equal`](./deep-equal.md)
 - [`dotenv`](./dotenv.md)
