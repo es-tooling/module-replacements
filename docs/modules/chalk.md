@@ -26,7 +26,7 @@ Node itself has a `styleText` function in the built-in `util` library.
 
 You can use it like so:
 
-```ts
+```js
 import { styleText } from 'node:util';
 
 styleText('green', 'Success!')
