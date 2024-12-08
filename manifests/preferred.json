@@ -44,6 +44,18 @@
     },
     {
       "type": "documented",
+      "moduleName": "chalk",
+      "docPath": "chalk",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "cli-color",
+      "docPath": "chalk",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "cpx",
       "docPath": "cpx",
       "category": "preferred"
