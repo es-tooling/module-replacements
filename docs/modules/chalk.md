@@ -1,6 +1,6 @@
 # chalk
 
-`chalk` and similar libraries have various alternatives which are lighter and faster.
+`chalk`, `cli-color`, and similar libraries have various alternatives which are lighter and faster.
 
 # Alternatives
 
