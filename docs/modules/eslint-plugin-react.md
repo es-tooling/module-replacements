@@ -41,18 +41,16 @@ The following stylistic rules in `eslint-plugin-react` can be replaced by the sa
 
 ## TypeScript
 
-The following correctness rules in `eslint-plugin-react` can be enforced by TypeScript with proper `tsconfig.json` settings:
+The following correctness rules in `eslint-plugin-react` can be enforced by TypeScript with appropriate `tsconfig.json` settings:
 
 - `react/jsx-no-duplicate-props`
 - `react/jsx-no-undef`
 - `react/jsx-uses-react`
 - `react/jsx-uses-vars`
 - `react/no-invalid-html-attribute`
-- `react/no-this-in-sfc`
 - `react/no-unescaped-entities` -> No need when using `@typescript-eslint/parser`
 - `react/no-unknown-property`
 - `react/style-prop-object`
-- `react/prop-types`
 - `react/react-in-jsx-scope`
 - `react/require-render-return`
 
