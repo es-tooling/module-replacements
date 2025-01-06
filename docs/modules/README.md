@@ -35,7 +35,7 @@ ESLint plugin.
 - [`glob`](./glob.md)
 - [`globby`](./glob.md)
 - [`grapheme`](./grapheme.md)
-- [`ìnvariant`](./invariant.md)
+- [`invariant`](./invariant.md)
 - [`is-builtin-module`](./is-builtin-module.md)
 - [`jQuery`](./jquery.md)
 - [`lint-staged`](./lint-staged.md)
