@@ -27,3 +27,11 @@ If you don't need to customize CLI spinners, `ora` can be replaced with leaner a
 [Project Page](https://github.com/fabiospampinato/tiny-spinner)
 
 [npm](https://www.npmjs.com/package/tiny-spinner)
+
+## yocto-spinner
+
+`yocto-spinner` is a tiny terminal spinner for NodeJS by the same author as `ora`
+
+[Project Page](https://github.com/sindresorhus/yocto-spinner)
+
+[npm](https://www.npmjs.com/package/yocto-spinner)
