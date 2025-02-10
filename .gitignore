@@ -4,3 +4,5 @@
 /main.js
 *.swp
 /.idea
+package-lock.json
+pnpm-lock.yaml

@@ -4,14 +4,14 @@
   "version": "1.0.0",
   "main": "./dist/commonjs/main.js",
   "scripts": {
-    "build": "npm run clean && npm run build:types",
+    "build": "pnpm clean && pnpm build:types",
     "build:types": "tsc --noEmit",
     "build:update-manifest-paths": "node scripts/update-manifests-dist-path.js",
     "clean": "node -e \"fs.rmSync('./dist', {force: true, recursive: true})\"",
     "format": "prettier --write \"./src/**/*.ts\" \"./manifests/**/*.json\"",
     "generate-schema": "node scripts/generate-schema.js",
-    "prepare": "tshy && npm run build:update-manifest-paths",
-    "test:validate": "npm run validate-manifests && npm run validate-module-list",
+    "prepare": "tshy && pnpm build:update-manifest-paths",
+    "test:validate": "pnpm validate-manifests && pnpm validate-module-list",
     "validate-manifests": "node scripts/validate-manifests.js",
     "validate-module-list": "node scripts/validate-module-list.js"
   },
@@ -39,7 +39,7 @@
     "ajv": "^8.16.0",
     "prettier": "^3.2.4",
     "ts-json-schema-generator": "^2.3.0",
-    "tshy": "^1.11.0",
+    "tshy": "^3.0.2",
     "typescript": "^5.3.3"
   },
   "exports": {
@@ -52,12 +52,10 @@
         "types": "./dist/commonjs/main.d.ts",
         "default": "./dist/commonjs/main.js"
       }
-    },
-    "./package.json": "./package.json",
-    "./manifests/micro-utilities.json": "./manifests/micro-utilities.json",
-    "./manifests/native.json": "./manifests/native.json",
-    "./manifests/preferred.json": "./manifests/preferred.json"
+    }
   },
   "types": "./dist/commonjs/main.d.ts",
-  "type": "module"
+  "type": "module",
+  "packageManager": "pnpm@10.1.0+sha512.c89847b0667ddab50396bbbd008a2a43cf3b581efd59cf5d9aa8923ea1fb4b8106c041d540d08acb095037594d73ebc51e1ec89ee40c88b30b8a66c0fae0ac1b",
+  "module": "./dist/esm/main.js"
 }

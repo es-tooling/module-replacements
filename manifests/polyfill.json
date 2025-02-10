@@ -1,0 +1,60 @@
+{
+    "moduleReplacements": [
+        {
+            "type": "polyfill",
+            "moduleName": "abort-controller",
+            "mdnPath": "AbortController",
+            "nodeVersion": "14.17.0",
+            "replacement": "AbortController",
+            "category": "native"
+        },
+        {
+            "type": "polyfill",
+            "moduleName": "node-abort-controller",
+            "mdnPath": "AbortController",
+            "nodeVersion": "14.17.0",
+            "replacement": "AbortController",
+            "category": "native"
+        },
+        {
+            "type": "polyfill",
+            "moduleName": "abortcontroller-polyfill",
+            "mdnPath": "AbortController",
+            "nodeVersion": "14.17.0",
+            "replacement": "AbortController",
+            "category": "native"
+        },
+        {
+            "type": "fetch",
+            "moduleName": "node-fetch",
+            "mdnPath": "Window/fetch",
+            "nodeVersion": "18.0.0",
+            "replacement": "fetch",
+            "category": "native"
+        },
+        {
+            "type": "cross-fetch",
+            "moduleName": "node-fetch",
+            "mdnPath": "Window/fetch",
+            "nodeVersion": "18.0.0",
+            "replacement": "fetch",
+            "category": "native"
+        },
+        {
+            "type": "unfetch",
+            "moduleName": "node-fetch",
+            "mdnPath": "Window/fetch",
+            "nodeVersion": "18.0.0",
+            "replacement": "fetch",
+            "category": "native"
+        },
+        {
+            "type": "isomorphic-unfetch",
+            "moduleName": "node-fetch",
+            "mdnPath": "Window/fetch",
+            "nodeVersion": "18.0.0",
+            "replacement": "fetch",
+            "category": "native"
+        }
+    ]
+}

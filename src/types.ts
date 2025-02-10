@@ -16,6 +16,13 @@ export interface NativeModuleReplacement extends ModuleReplacementLike {
   replacement: string;
 }
 
+export interface PolyfillModuleReplacement extends ModuleReplacementLike {
+  type: 'polyfill';
+  mdnPath: string;
+  nodeVersion: string;
+  replacement: string;
+}
+
 export interface SimpleModuleReplacement extends ModuleReplacementLike {
   type: 'simple';
   replacement: string;
