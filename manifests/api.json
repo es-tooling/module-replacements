@@ -1,60 +1,52 @@
 {
     "moduleReplacements": [
         {
-            "type": "polyfill",
+            "type": "native",
             "moduleName": "abort-controller",
             "mdnPath": "AbortController",
             "nodeVersion": "14.17.0",
             "replacement": "AbortController",
-            "category": "native"
+            "category": "api"
         },
         {
-            "type": "polyfill",
+            "type": "native",
             "moduleName": "node-abort-controller",
             "mdnPath": "AbortController",
             "nodeVersion": "14.17.0",
             "replacement": "AbortController",
-            "category": "native"
+            "category": "api"
         },
         {
-            "type": "polyfill",
+            "type": "native",
             "moduleName": "abortcontroller-polyfill",
             "mdnPath": "AbortController",
             "nodeVersion": "14.17.0",
             "replacement": "AbortController",
-            "category": "native"
+            "category": "api"
         },
         {
-            "type": "fetch",
+            "type": "native",
             "moduleName": "node-fetch",
             "mdnPath": "Window/fetch",
             "nodeVersion": "18.0.0",
             "replacement": "fetch",
-            "category": "native"
+            "category": "api"
         },
         {
-            "type": "cross-fetch",
-            "moduleName": "node-fetch",
+            "type": "native",
+            "moduleName": "unfetch",
             "mdnPath": "Window/fetch",
             "nodeVersion": "18.0.0",
             "replacement": "fetch",
-            "category": "native"
+            "category": "api"
         },
         {
-            "type": "unfetch",
-            "moduleName": "node-fetch",
+            "type": "native",
+            "moduleName": "isomorphic-unfetch",
             "mdnPath": "Window/fetch",
             "nodeVersion": "18.0.0",
             "replacement": "fetch",
-            "category": "native"
-        },
-        {
-            "type": "isomorphic-unfetch",
-            "moduleName": "node-fetch",
-            "mdnPath": "Window/fetch",
-            "nodeVersion": "18.0.0",
-            "replacement": "fetch",
-            "category": "native"
+            "category": "api"
         }
     ]
 }
