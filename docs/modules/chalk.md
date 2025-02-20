@@ -36,7 +36,7 @@ styleText('green', 'Success!')
 
 ## node-style-text (Node 20.x and above)
 
-A tiny wrapper (<300 B) on `styleText` from `node:util`, provide chainable syntax.
+A tiny wrapper (<300 B) on `styleText` from `node:util`, provides chainable syntax.
 
 [Project Page](https://github.com/fisker/node-style-text)
 
