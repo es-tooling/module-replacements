@@ -33,3 +33,11 @@ styleText('green', 'Success!')
 ```
 
 [Project Page](https://nodejs.org/api/util.html#utilstyletextformat-text-options)
+
+## node-style-text (Node 20.x and above)
+
+A tiny wrapper (<300 B) on `styleText` from `node:util`, provides chainable syntax.
+
+[Project Page](https://github.com/fisker/node-style-text)
+
+[npm](https://npmjs.com/package/node-style-text)
