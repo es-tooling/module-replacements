@@ -182,6 +182,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "js-yaml",
+      "docPath": "js-yaml",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "lint-staged",
       "docPath": "lint-staged",
       "category": "preferred"
