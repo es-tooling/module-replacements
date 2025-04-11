@@ -68,6 +68,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "depcheck",
+      "docPath": "depcheck",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "dotenv",
       "docPath": "dotenv",
       "category": "preferred"
