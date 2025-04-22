@@ -80,6 +80,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "emoji-regex",
+      "docPath": "emoji-regex",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "eslint-plugin-es",
       "docPath": "eslint-plugin-es",
       "category": "preferred"
