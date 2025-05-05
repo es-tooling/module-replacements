@@ -110,6 +110,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "eslint-plugin-unicorn",
+      "docPath": "eslint-plugin-unicorn",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "eslint-plugin-vitest",
       "docPath": "eslint-plugin-vitest",
       "category": "preferred"
