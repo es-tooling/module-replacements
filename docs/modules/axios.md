@@ -27,7 +27,7 @@ const response = await fetch('https://api.example.com/data', {
 
 ## ky
 
-`ky` is a tiny and elegant HTTP client based on the Fetch API. It provides a more convenient API than raw fetch while being much smaller than axios.
+`ky` is a tiny and elegant HTTP client based on the Fetch API. It provides a more convenient API than raw fetch while being much smaller than axios. Also, includes `hooks` (interceptors) for request/response modification.
 
 [Project Page](https://github.com/sindresorhus/ky)
 [npm](https://www.npmjs.com/package/ky)
