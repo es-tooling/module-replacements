@@ -13,6 +13,7 @@ ESLint plugin.
 ## List of modules
 
 - [`@jsdevtools/ez-spawn`](./process-exec.md)
+- [`axios`](./axios.md)
 - [`bluebird` / `q`](./bluebird-q.md)
 - [`body-parser`](./body-parser.md)
 - [`buf-compare`](./buf-compare.md)

@@ -8,6 +8,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "axios",
+      "docPath": "axios",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "bluebird",
       "docPath": "bluebird-q",
       "category": "preferred"
