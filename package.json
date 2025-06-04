@@ -12,7 +12,8 @@
     "generate-schema": "node scripts/generate-schema.js",
     "prepare": "tshy && npm run build:update-manifest-paths",
     "test:validate": "node scripts/validate-modules.js",
-    "sort-manifests": "node scripts/sort-manifests.js"
+    "sort-manifests": "node scripts/sort-manifests.js",
+    "lint": "eslint ."
   },
   "tshy": {
     "exports": {
