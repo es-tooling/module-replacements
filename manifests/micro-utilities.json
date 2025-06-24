@@ -50,6 +50,12 @@
     },
     {
       "type": "simple",
+      "moduleName": "is-negative",
+      "replacement": "Use (n) => n < 0",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
       "moduleName": "is-negative-zero",
       "replacement": "Use Object.is(v, -0)",
       "category": "micro-utilities"
