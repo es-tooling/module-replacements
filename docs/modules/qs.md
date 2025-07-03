@@ -22,6 +22,8 @@
 - `v2.x` and above are ESM only.
 - `v1.x` is compatible with CommonJS and will be maintained with non-breaking changes.
 
+`nestingSyntax: 'js'` offers the highest level of compatibility with `qs`. However, you may be able to use an alternative `nestingSyntax` value for increased performance.
+
 [Project Page](https://github.com/43081j/picoquery)
 [npm](https://www.npmjs.com/package/picoquery)
 
