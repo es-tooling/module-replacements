@@ -4,13 +4,6 @@ Although dotenv is reliable, it may not be necessary or may lack certain feature
 
 ## Alternatives
 
-### dotenvx
-
-Modern and secure alternative by the same author. It supports encryption, and multi-environment configs.
-
-[Project Page](https://github.com/dotenvx/dotenvx)
-[npm](https://www.npmjs.com/package/@dotenvx/dotenvx)
-
 ### Node.js --env-file / --env-file-if-exists
 
 Built into Node.js since v20.6.0 (v22.9.0 for `--env-file-if-exists`). Zero dependencies, good for simple use cases.
