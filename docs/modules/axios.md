@@ -29,12 +29,22 @@ const response = await fetch('https://api.example.com/data', {
 
 `ky` is a tiny and elegant HTTP client based on the Fetch API. It provides a more convenient API than raw fetch while being much smaller than axios. Also, includes `hooks` (interceptors) for request/response modification.
 
-[Project Page](https://github.com/sindresorhus/ky)
-[npm](https://www.npmjs.com/package/ky)
+[Project Page](https://github.com/sindresorhus/ky) | [npm](https://www.npmjs.com/package/ky)
 
 ## ofetch
 
 `ofetch` is a better fetch API with automatic response parsing, request/response interceptors, and retry functionality.
 
-[Project Page](https://github.com/unjs/ofetch)
-[npm](https://www.npmjs.com/package/ofetch)
+[Project Page](https://github.com/unjs/ofetch) | [npm](https://www.npmjs.com/package/ofetch)
+
+## up-fetch
+
+`up-fetch` is an advanced fetch client builder with standard schema validation, automatic response parsing, smart defaults, and more. It's designed to make data fetching type-safe and developer-friendly while keeping the familiar fetch API.
+
+[Project Page](https://github.com/unjs/ofetchhttps://github.com/L-Blondy/up-fetch) | [npm](https://www.npmjs.com/package/up-fetch)
+
+## better-fetch
+
+`better-fetch` is an advanced, TypeScript-based fetch wrapper with standard schema validations (using Zod, Valibot, etc.), pre-defined routes, callbacks, plugins, and more.
+
+[Project Page](https://better-fetch.vercel.app) | [npm](https://www.npmjs.com/package/@better-fetch/fetch)
