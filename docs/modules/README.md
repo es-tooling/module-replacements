@@ -23,6 +23,7 @@ ESLint plugin.
 - [`deep-equal`](./deep-equal.md)
 - [`depcheck`](./depcheck.md)
 - [`dotenv`](./dotenv.md)
+- [`dot-prop`](./dot-prop.md)
 - [`emoji-regex`](./emoji-regex.md)
 - [`eslint-plugin-es`](./eslint-plugin-es.md)
 - [`eslint-plugin-eslint-comments`](./eslint-plugin-eslint-comments.md)
