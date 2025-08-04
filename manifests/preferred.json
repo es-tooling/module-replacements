@@ -2294,6 +2294,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "string-width",
+      "docPath": "string-width",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "strip-ansi",
       "docPath": "strip-ansi",
       "category": "preferred"
