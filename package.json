@@ -62,8 +62,5 @@
     "./manifests/preferred.json": "./manifests/preferred.json"
   },
   "types": "./dist/commonjs/main.d.ts",
-  "type": "module",
-  "volta": {
-    "node": "22.9.0"
-  }
+  "type": "module"
 }
