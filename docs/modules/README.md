@@ -13,6 +13,7 @@ ESLint plugin.
 ## List of modules
 
 - [`@jsdevtools/ez-spawn`](./process-exec.md)
+- [`axios`](./axios.md)
 - [`bluebird` / `q`](./bluebird-q.md)
 - [`body-parser`](./body-parser.md)
 - [`buf-compare`](./buf-compare.md)
@@ -22,6 +23,7 @@ ESLint plugin.
 - [`deep-equal`](./deep-equal.md)
 - [`depcheck`](./depcheck.md)
 - [`dotenv`](./dotenv.md)
+- [`dot-prop`](./dot-prop.md)
 - [`emoji-regex`](./emoji-regex.md)
 - [`eslint-plugin-es`](./eslint-plugin-es.md)
 - [`eslint-plugin-eslint-comments`](./eslint-plugin-eslint-comments.md)
@@ -33,6 +35,7 @@ ESLint plugin.
 - [`ezspawn`](./process-exec.md)
 - [`faker`](./faker.md)
 - [`fast-glob`](./glob.md)
+- [`find-up` and related](./find-up.md)
 - [`fs-extra`](./fs-extra.md)
 - [`glob`](./glob.md)
 - [`globby`](./glob.md)

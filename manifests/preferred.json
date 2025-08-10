@@ -8,6 +8,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "axios",
+      "docPath": "axios",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "bluebird",
       "docPath": "bluebird-q",
       "category": "preferred"
@@ -70,6 +76,12 @@
       "type": "documented",
       "moduleName": "depcheck",
       "docPath": "depcheck",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "dot-prop",
+      "docPath": "dot-prop",
       "category": "preferred"
     },
     {
@@ -142,6 +154,30 @@
       "type": "documented",
       "moduleName": "fast-glob",
       "docPath": "glob",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "find-cache-dir",
+      "docPath": "find-up",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "find-cache-directory",
+      "docPath": "find-up",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "find-file-up",
+      "docPath": "find-up",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "find-up",
+      "docPath": "find-up",
       "category": "preferred"
     },
     {
@@ -2186,8 +2222,20 @@
     },
     {
       "type": "documented",
+      "moduleName": "package-up",
+      "docPath": "find-up",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "path-exists",
       "docPath": "path-exists",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "pkg-up",
+      "docPath": "find-up",
       "category": "preferred"
     },
     {
@@ -2200,6 +2248,24 @@
       "type": "documented",
       "moduleName": "qs",
       "docPath": "qs",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "read-package-up",
+      "docPath": "find-up",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "read-pkg",
+      "docPath": "find-up",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "read-pkg-up",
+      "docPath": "find-up",
       "category": "preferred"
     },
     {
