@@ -7,7 +7,7 @@ built-in node module.
 
 # Alternatives
 
-## NodeJS (since 16.x)
+## Node.js (since 16.x)
 
 For determining if a module is built-in or not, you can use
 [isBuiltIn](https://nodejs.org/api/module.html#moduleisbuiltinmodulename):
@@ -18,7 +18,7 @@ import {isBuiltin} from 'node:module';
 isBuiltin('fs'); // true
 ```
 
-## NodeJS (6.x to 15.x)
+## Node.js (6.x to 15.x)
 
 Before Node.js 16.x, `isBuiltin` was not available, so you need to implement your own check using [builtinModules](https://nodejs.org/api/module.html#modulebuiltinmodules):
 
