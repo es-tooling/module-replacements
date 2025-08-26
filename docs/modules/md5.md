@@ -4,7 +4,7 @@ If you're using the `md5` package, you should consider using a more secure algor
 
 # Alternatives
 
-## NodeJS
+## Node.js
 
 ```js
 import crypto from 'node:crypto';

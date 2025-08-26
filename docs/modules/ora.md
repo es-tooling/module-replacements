@@ -6,7 +6,7 @@ If you don't need to customize CLI spinners, `ora` can be replaced with leaner a
 
 ## nanospinner
 
-`nanospinner` is a simple and tiny terminal spinner library for NodeJS
+`nanospinner` is a simple and tiny terminal spinner library for Node.js
 
 [Project Page](https://github.com/usmanyunusov/nanospinner)
 
@@ -14,7 +14,7 @@ If you don't need to customize CLI spinners, `ora` can be replaced with leaner a
 
 ## picospinner
 
-`picospinner` is another tiny terminal spinner library for NodeJS, maintained by the [tinylibs](https://github.com/tinylibs) folks.
+`picospinner` is another tiny terminal spinner library for Node.js, maintained by the [tinylibs](https://github.com/tinylibs) folks.
 
 [Project Page](https://github.com/tinylibs/picospinner)
 
@@ -22,7 +22,7 @@ If you don't need to customize CLI spinners, `ora` can be replaced with leaner a
 
 ## tiny-spinner
 
-`tiny-spinner` is another tiny terminal spinner library for NodeJS
+`tiny-spinner` is another tiny terminal spinner library for Node.js
 
 [Project Page](https://github.com/fabiospampinato/tiny-spinner)
 
@@ -30,7 +30,7 @@ If you don't need to customize CLI spinners, `ora` can be replaced with leaner a
 
 ## yocto-spinner
 
-`yocto-spinner` is a tiny terminal spinner for NodeJS by the same author as `ora`
+`yocto-spinner` is a tiny terminal spinner for Node.js by the same author as `ora`
 
 [Project Page](https://github.com/sindresorhus/yocto-spinner)
 

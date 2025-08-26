@@ -4,7 +4,7 @@
 
 # Alternatives
 
-## NodeJS
+## Node.js
 
 ```js
 import {Buffer} from 'node:buffer';
