@@ -5,7 +5,7 @@ built-in Node APIs.
 
 # Alternatives
 
-## NodeJS (since v12.x / v14.x)
+## Node.js (since v12.x / v14.x)
 
 Node.js v14.14 and up supports [the `fs.rm`
 function](https://nodejs.org/api/fs.html#fspromisesrmpath-options), which allows

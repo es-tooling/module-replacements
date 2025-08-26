@@ -4,7 +4,7 @@
 
 # Alternatives
 
-## NodeJS (since v10.x)
+## Node.js (since v10.x)
 
 Node.js v10.0 and up supports the `recursive` option in [the `fs.mkdir`
 function](https://nodejs.org/api/fs.html#fspromisesmkdirpath-options), which

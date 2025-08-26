@@ -8,4 +8,4 @@
 
 For most cases, native Node.js `Buffer.prototype.equals` is enough.
 
-[NodeJS Docs](https://nodejs.org/api/buffer.html#bufequalsotherbuffer)
+[Node.js Docs](https://nodejs.org/api/buffer.html#bufequalsotherbuffer)

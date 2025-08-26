@@ -4,7 +4,7 @@
 
 # Alternatives
 
-## NodeJS (since v14.x)
+## Node.js (since v14.x)
 
 Node.js has the `fs.mkdtemp` function for creating a unique temporary directory.
 The [promise-based
@@ -37,6 +37,6 @@ try {
 ```
 
 # See also
-- [Secure tempfiles in NodeJS without
+- [Secure tempfiles in Node.js without
   dependencies](https://advancedweb.hu/secure-tempfiles-in-nodejs-without-dependencies/)
   (Advanced Web Machinery)
