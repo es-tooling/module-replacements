@@ -16,6 +16,9 @@ console.log(stripVTControlCharacters('\u001B[4me18e\u001B[0m')); // returns 'e18
 
 [Documentation](https://nodejs.org/api/util.html#utilstripvtcontrolcharactersstr)
 
+> [!NOTE]
+> Due to [a bug](https://github.com/nodejs/node/issues/53697), this utility doesn't strip control characters from ANSI hyperlinks correctly. This behavior has been fixed as of NodeJS v22.10.
+
 ## Deno
 
 Deno implements the Node `util` API, and also provides [`util.stripVTControlCharacters`](https://docs.deno.com/api/node/util/~/stripVTControlCharacters). The usage is identical:
