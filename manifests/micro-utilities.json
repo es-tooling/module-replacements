@@ -69,7 +69,7 @@
     {
       "type": "simple",
       "moduleName": "is-number",
-      "replacement": "Use typeof v === \"number\" || (typeof v === \"string\" && Number.isFinite(+v))",
+      "replacement": "Use typeof n === 'number' || !isNaN(n)",
       "category": "micro-utilities"
     },
     {
