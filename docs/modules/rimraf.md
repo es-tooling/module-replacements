@@ -43,7 +43,7 @@ rmdirSync(path, { recursive: true });
 
 For command-line usage, such as npm scripts, you can run Node in eval mode:
 ```bash
-node -e "fs.rmSync('./foo', { recursive: true, force: true })"
+node -e "require('fs').rmSync('./foo', { recursive: true, force: true, maxRetries: process.platform === 'win32' ? 10 : 0 })"
 ```
 
 ## premove (Node 8.x and up)
