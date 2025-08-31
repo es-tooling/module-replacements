@@ -1514,12 +1514,6 @@
     },
     {
       "type": "documented",
-      "moduleName": "lodash.pullby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
       "moduleName": "lodash.random",
       "docPath": "lodash-underscore",
       "category": "preferred"
@@ -2037,12 +2031,6 @@
     {
       "type": "documented",
       "moduleName": "lodash.uniqby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
-    },
-    {
-      "type": "documented",
-      "moduleName": "lodash.unique",
       "docPath": "lodash-underscore",
       "category": "preferred"
     },
