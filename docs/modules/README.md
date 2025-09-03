@@ -44,6 +44,7 @@ ESLint plugin.
 - [`is-builtin-module`](./is-builtin-module.md)
 - [`jQuery`](./jquery.md)
 - [`js-yaml`](./js-yaml.md)
+- [`jsx-ast-utils`](./jsx-ast-utils.md)
 - [`lint-staged`](./lint-staged.md)
 - [`lodash`, `underscore` and related](./lodash-underscore.md)
 - [`MaterializeCSS`](./materialize-css.md)

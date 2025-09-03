@@ -236,6 +236,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "jsx-ast-utils",
+      "docPath": "jsx-ast-utils",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "lint-staged",
       "docPath": "lint-staged",
       "category": "preferred"
