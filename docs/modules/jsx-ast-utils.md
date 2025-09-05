@@ -6,7 +6,7 @@
 
 ## `jsx-ast-utils-x`
 
-Practically offers similar API while having zero dependency, compared to [92 dependencies from `jsx-ast-utils`](https://npmgraph.js.org/?q=jsx-ast-utils).
+Practically offers similar API while having zero dependency and being much smaller.
 
 Sample [migration PR](https://github.com/SonarSource/SonarJS/pull/5625) from `eslint-plugin-sonarjs` for reference.
 
