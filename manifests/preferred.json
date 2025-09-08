@@ -189,7 +189,7 @@
     {
       "type": "documented",
       "moduleName": "get-value",
-      "docPath": "get-value",
+      "docPath": "dot-prop",
       "category": "preferred"
     },
     {
@@ -2217,7 +2217,7 @@
     {
       "type": "documented",
       "moduleName": "object-path",
-      "docPath": "object-path",
+      "docPath": "dot-prop",
       "category": "preferred"
     },
     {
@@ -2289,7 +2289,7 @@
     {
       "type": "documented",
       "moduleName": "set-value",
-      "docPath": "set-value",
+      "docPath": "dot-prop",
       "category": "preferred"
     },
     {
