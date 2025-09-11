@@ -3,7 +3,7 @@
     {
       "type": "simple",
       "moduleName": "arr-diff",
-      "replacement": "Use a.filter(x => !new Set(b).has(x))",
+      "replacement": "Use a.filter((item) => !b.includes(item))",
       "category": "micro-utilities"
     },
     {
