@@ -9,7 +9,7 @@
     {
       "type": "simple",
       "moduleName": "array-last",
-      "replacement": "Use arr.at(-1) (Node ≥ 16.6) or arr[arr.length - 1]",
+      "replacement": "Use arr.at(-1) or arr[arr.length - 1]",
       "category": "micro-utilities"
     },
     {
