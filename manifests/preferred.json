@@ -2216,6 +2216,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "object-hash",
+      "docPath": "object-hash",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "object-path",
       "docPath": "dot-prop",
       "category": "preferred"
