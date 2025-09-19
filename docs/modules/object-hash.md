@@ -12,7 +12,7 @@ Actively maintained utilities for hashing, serialization, equality, and diffs. U
 
 [npm](https://www.npmjs.com/package/ohash)
 
-### `Web Crypto`
+### Web Crypto
 
 Use the standard [`SubtleCrypto.digest`](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest) API available in the runtimes. Pair it with a stable serializer (e.g., [`safe-stable-stringify`](https://github.com/BridgeAR/safe-stable-stringify)) to deterministically hash objects.
 
