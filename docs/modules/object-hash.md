@@ -21,4 +21,4 @@ Use the standard [`SubtleCrypto.digest`](https://developer.mozilla.org/en-US/doc
 
 Bun’s native incremental hasher (e.g., sha256). Combine with a stable serializer for object hashing. For fast non-crypto fingerprints, see [`Bun.hash`](https://bun.com/reference/bun/hash).
 
-[Project Page](https://bun.com/reference/bun/CryptoHasher)
+[Documentation Page](https://bun.com/reference/bun/CryptoHasher)
