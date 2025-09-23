@@ -8,4 +8,4 @@ Legacy Node v0.12-era helpers for util.is* type checks. Unnecessary on modern No
 
 Official, cross‑realm type checks for built-in objects to fully replace core-util-is.
 
-[Project Page](https://nodejs.org/api/util.html#utiltypes)
+[Documentation Page](https://nodejs.org/api/util.html#utiltypes)
