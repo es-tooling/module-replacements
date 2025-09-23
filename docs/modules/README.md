@@ -20,6 +20,7 @@ ESLint plugin.
 - [`buffer-equal` / `buffer-equals`](./buffer-equal.md)
 - [`chalk`](./chalk.md)
 - [`cpx`](./cpx.md)
+- [`crypto-js`](./crypto-js.md)
 - [`deep-equal`](./deep-equal.md)
 - [`depcheck`](./depcheck.md)
 - [`dot-prop`](./dot-prop.md)
