@@ -2348,6 +2348,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "utf8",
+      "docPath": "utf8",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "xmldom",
       "docPath": "xmldom",
       "category": "preferred"
