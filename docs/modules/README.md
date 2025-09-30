@@ -19,6 +19,7 @@ ESLint plugin.
 - [`buf-compare`](./buf-compare.md)
 - [`buffer-equal` / `buffer-equals`](./buffer-equal.md)
 - [`chalk`](./chalk.md)
+- [`core-util-is`](./core-util-is.md)
 - [`cpx`](./cpx.md)
 - [`deep-equal`](./deep-equal.md)
 - [`depcheck`](./depcheck.md)
