@@ -6,7 +6,7 @@
 
 ### `yaml`
 
-`yaml` is a better JavaScript YAML parser. It’s maintained, follows the YAML spec more closely, and has support for more features, such a modifying YAML content.
+`yaml` is a better JavaScript YAML parser. It’s maintained, follows the YAML spec more closely, and has support for more features, such as modifying YAML content.
 
 [Project Page](https://eemeli.org/yaml/)
 
