@@ -74,6 +74,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "crypto-js",
+      "docPath": "crypto-js",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "deep-equal",
       "docPath": "deep-equal",
       "category": "preferred"
