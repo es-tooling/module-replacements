@@ -1,19 +1,43 @@
-# mkdirp / make-dir
+<!--
+---
+description: Modern alternatives to the mkdirp and make-dir packages for recursively creating directories in Node.js
+---
+-->
 
-[`mkdirp`](https://www.npmjs.com/package/mkdirp) and [`make-dir`](https://www.npmjs.com/package/make-dir) can often be replaced with built-in Node APIs.
+# Replacements for `mkdirp` / `make-dir`
 
-# Alternatives
+## Node.js (since v10.12.0)
 
-## Node.js (since v10.x)
+Node.js v10.12.0 and up supports the `recursive` option in the [`fs.mkdir`](https://nodejs.org/api/fs.html#fsmkdirpath-options-callback) function, which allows parent directories to be created automatically.
 
-Node.js v10.0 and up supports the `recursive` option in [the `fs.mkdir`
-function](https://nodejs.org/api/fs.html#fspromisesmkdirpath-options), which
-allows parent directories to be created automatically:
+Example migration from [`mkdirp`](https://github.com/isaacs/node-mkdirp):
 
-```js
-import {mkdir} from 'node:fs/promises';
-import {mkdirSync} from 'node:fs';
+```diff
+- import { mkdirp } from 'mkdirp'
++ import { mkdir, mkdirSync } from 'node:fs'
++ import { mkdir as mkdirAsync } from 'node:fs/promises'
 
-await mkdir('some/nested/path', {recursive: true});
-mkdirSync('some/nested/path', {recursive: true});
+// Async
+- await mkdirp('/tmp/foo/bar/baz')
++ await mkdirAsync('/tmp/foo/bar/baz', { recursive: true })
+
+// Sync
+- mkdirp.sync('/tmp/foo/bar/baz')
++ mkdirSync('/tmp/foo/bar/baz', { recursive: true })
+```
+
+Example migration from [`make-dir`](https://github.com/sindresorhus/make-dir):
+
+```diff
+- import { makeDirectory, makeDirectorySync } from 'make-dir'
++ import { mkdir, mkdirSync } from 'node:fs'
++ import { mkdir as mkdirAsync } from 'node:fs/promises'
+
+// Async
+- await makeDirectory('/tmp/foo/bar/baz')
++ await mkdirAsync('/tmp/foo/bar/baz', { recursive: true })
+
+// Sync
+- makeDirectorySync('/tmp/foo/bar/baz')
++ mkdirSync('/tmp/foo/bar/baz', { recursive: true })
 ```

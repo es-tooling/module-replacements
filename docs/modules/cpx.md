@@ -1,16 +1,30 @@
-# cpx
+<!--
+---
+description: Modern alternatives to the cpx package for copying file globs with watch mode
+---
+-->
 
-`cpx` is no longer maintained. A maintenance fork is actively maintained.
+# Replacements for `cpx`
 
-# Alternatives
+## `cpx2`
 
-## cpx2
+[`cpx`](https://github.com/mysticatea/cpx) is unmaintained. [`cpx2`](https://github.com/bcomnes/cpx2) is an actively maintained fork that keeps the same CLI bin name (`cpx`), so it works as a drop-in replacement for CLI usage. For the Node API, switch your import to `cpx2`.
 
-Copy file globs, watching for changes.
+```diff
+- npm i -D cpx
++ npm i -D cpx2
 
-This module provides a CLI tool like cp, but with watching.
+# CLI stays the same (bin name is still "cpx")
+cpx "src/**/*.{html,png,jpg}" app --watch
+```
 
-This is a maintained fork of [mysticatea/cpx](https://github.com/mysticatea/cpx). It retains the `cpx` bin name, so it can act as a drop-in replacement.
+Node API replacement:
 
-[Project Page](https://github.com/bcomnes/cpx2)
-[npm](https://www.npmjs.com/package/cpx2)
+```diff
+- const cpx = require('cpx')
++ const cpx = require('cpx2')
+
+cpx.copy("src/**/*.js", "dist", err => {
+  if (err) throw err
+})
+```

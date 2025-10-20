@@ -1,50 +1,78 @@
-# qs
+<!--
+---
+description: Modern alternatives to the qs package for parsing and serializing query strings
+---
+-->
 
-`qs` can typically be replaced with platform-provided APIs. When you need more functionality, there are other alternatives.
+# Replacements for `qs`
 
-# Alternatives
+## `URLSearchParams`
 
-## URLSearchParams
+[`URLSearchParams`](https://developer.mozilla.org/docs/Web/API/URLSearchParams) is built into browsers and Node.js (>= 10). Use it when you don’t need nested objects or automatic array parsing. It preserves multiple values via `getAll`, and `toString()` gives you a URL-safe query string.
 
-[URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams) is available starting in Node 10 and can be used when you don't need nesting or arrays
+Example:
 
-## fast-querystring
+```diff
+- import qs from 'qs'
 
-[fast-querystring](https://www.npmjs.com/package/fast-querystring) can be used when you need arrays but not nesting.
+const query = 'a=1&a=2&b=3'
 
-[Project Page](https://github.com/anonrig/fast-querystring)
-[npm](https://www.npmjs.com/package/fast-querystring)
+- const obj = qs.parse(query)
++ const sp = new URLSearchParams(query)
++ const obj = Object.fromEntries(sp)
++ const a = sp.getAll('a')
+```
 
-## picoquery
+## `fast-querystring`
 
-[picoquery](https://www.npmjs.com/package/picoquery) can be used when you need nesting and arrays.
+[`fast-querystring`](https://www.npmjs.com/package/fast-querystring) is tiny and very fast. It handles flat key/value pairs and repeated keys as arrays; it does not support nested objects. Use it when you need arrays but not nesting.
 
-- `v2.x` and above are ESM only.
-- `v1.x` is compatible with CommonJS and will be maintained with non-breaking changes.
+Example:
 
-`nestingSyntax: 'js'` offers the highest level of compatibility with `qs`. However, you may be able to use an alternative `nestingSyntax` value for increased performance.
+```diff
+- import qs from 'qs'
++ import fqs from 'fast-querystring'
 
-[Project Page](https://github.com/43081j/picoquery)
-[npm](https://www.npmjs.com/package/picoquery)
+- const obj = qs.parse('tag=a&tag=b')
++ const obj = fqs.parse('tag=a&tag=b')
 
-## qs-esm
+- const str = qs.stringify({ tag: ['a', 'b'], q: 'x y' })
++ const str = fqs.stringify({ tag: ['a', 'b'], q: 'x y' })
+```
 
-[qs-esm](https://www.npmjs.com/package/qs-esm) is an esm-only fork of `qs` with the following core differences:
+## `picoquery`
 
-- No polyfills for legacy Node versions, making this package dependency-free and reducing bundle-size.
-- Includes TypeScript types, eliminating the need to install a separate @types/ package.
+[`picoquery`](https://www.npmjs.com/package/picoquery) supports nesting and arrays with a fast single‑pass parser and configurable syntax. v2.x and above are ESM‑only; v1.x is CommonJS and will be maintained with non‑breaking changes. `nestingSyntax: 'js'` offers the highest compatibility with `qs`, though you can pick other syntaxes for performance.
 
-[Project Page](https://github.com/payloadcms/qs-esm)
-[npm](https://www.npmjs.com/package/qs-esm)
+Example:
 
-## neoqs
+```diff
+- import qs from 'qs'
++ import { parse, stringify } from 'picoquery'
 
-[neoqs](https://www.npmjs.com/package/neoqs) is a fork of `qs` with the following core differences:
++ const opts = {
++  nestingSyntax: 'js',
++  arrayRepeat: true,
++  arrayRepeatSyntax: 'bracket'
++ }
 
-- No polyfills for legacy Node versions, making this package dependency-free and reducing bundle-size.
-- Includes TypeScript types, eliminating the need to install a separate @types/ package.
-- ESM and CommonJS builds are provided.
-- Legacy mode supporting ES5.
+- const obj = qs.parse('user[name]=foo&tags[]=bar&tags[]=baz')
++ const obj = parse('user[name]=foo&tags[]=bar&tags[]=baz', opts)
 
-[Project Page](https://github.com/puruvj/neoqs)
-[npm](https://www.npmjs.com/package/neoqs)
+- const str = qs.stringify({ user: { name: 'foo' }, tags: ['bar', 'baz'] }, { arrayFormat: 'brackets' })
++ const str = stringify({ user: { name: 'foo' }, tags: ['bar', 'baz'] }, opts)
+```
+
+## `neoqs`
+
+[`neoqs`](https://www.npmjs.com/package/neoqs) is a fork of `qs` without legacy polyfills, with TypeScript types included, and with both ESM and CommonJS builds (plus a legacy ES5 mode). Choose it when you want `qs`‑level compatibility with modern packaging options.
+
+Example:
+
+```diff
+- import qs from 'qs'
++ import * as qs from 'neoqs'
+
+const obj = qs.parse('a[b][c]=1&arr[]=2&arr[]=3')
+const str = qs.stringify(obj, { arrayFormat: 'brackets' })
+```

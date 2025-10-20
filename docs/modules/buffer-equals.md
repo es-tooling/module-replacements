@@ -1,10 +1,10 @@
 <!--
 ---
-description: Native Node.js alternatives to the buffer-equal package for buffer equality checks
+description: Native Node.js alternatives to the buffer-equals package for buffer equality checks
 ---
 -->
 
-# Replacements for `buffer-equal`
+# Replacements for `buffer-equals`
 
 ## `Buffer#equals` (native)
 
@@ -14,11 +14,11 @@ Example:
 
 ```diff
 import { Buffer } from 'node:buffer'
-- import bufferEqual from 'buffer-equal'
+- import bufferEquals from 'buffer-equals'
 
 const buf1 = Buffer.from('303')
 const buf2 = Buffer.from('303')
 
-- bufferEqual(buf1, buf2)
+- bufferEquals(buf1, buf2)
 + buf1.equals(buf2)
 ```

@@ -1,23 +1,55 @@
-# object-hash
+<!--
+---
+description: Modern alternatives to object-hash for hashing objects and values
+---
+-->
 
-Generate hashes from objects and values in Node and the browser. Note: the project is largely unmaintained.
+# Replacements for `object-hash`
 
-## Alternatives
+## `ohash`
 
-### `ohash`
+[`ohash`](https://github.com/unjs/ohash) is actively maintained and provides hashing, stable serialization, equality checks, and diffs. It uses stable serialization + SHA-256, returning Base64URL by default. Its serializer was originally based on `object-hash`.
 
-Actively maintained utilities for hashing, serialization, equality, and diffs. Uses stable serialization plus SHA-256 (Base64URL). Serialization was originally based on object-hash.
+Example:
 
-[Project Page](https://github.com/unjs/ohash)
+```diff
+- import objectHash from 'object-hash'
++ import { hash } from 'ohash'
 
-[npm](https://www.npmjs.com/package/ohash)
+- const h = objectHash(obj)
++ const h = hash(obj)
+```
 
-### Web Crypto
+## Web Crypto
 
-Use the standard [`SubtleCrypto.digest`](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest) API available in the runtimes. Pair it with a stable serializer (e.g., [`safe-stable-stringify`](https://github.com/BridgeAR/safe-stable-stringify)) to deterministically hash objects.
+Use the standard `SubtleCrypto.digest` available in modern runtimes. Pair it with a stable serializer (e.g., [`safe-stable-stringify`](https://github.com/BridgeAR/safe-stable-stringify)) to ensure deterministic key ordering.
 
-### `Bun.CryptoHasher` (built-in)
+Example:
 
-Bun’s native incremental hasher (e.g., sha256). Combine with a stable serializer for object hashing. For fast non-crypto fingerprints, see [`Bun.hash`](https://bun.com/reference/bun/hash).
+```diff
+- import objectHash from 'object-hash'
++ import stringify from 'safe-stable-stringify'
 
-[Documentation Page](https://bun.com/reference/bun/CryptoHasher)
+- const h = objectHash(obj, { algorithm: 'sha256' })
++ const data = new TextEncoder().encode(stringify(obj))
++ const buf = await crypto.subtle.digest('SHA-256', data)
++ const h = Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('')
+```
+
+## Bun `CryptoHasher`
+
+Bun provides a native incremental hasher (e.g., SHA-256). Combine it with a stable serializer for object hashing. For fast non-crypto fingerprints, see [`Bun.hash`](https://bun.com/reference/bun/hash).
+
+Docs: https://bun.com/reference/bun/CryptoHasher
+
+Example:
+
+```ts
+- import objectHash from 'object-hash'
++ import stringify from 'safe-stable-stringify'
+
+- const h = objectHash(obj, { algorithm: 'sha256' })
++ const hasher = new CryptoHasher('sha256')
++ hasher.update(stringify(obj))
++ const h = hasher.digest('hex')
+```

@@ -1,20 +1,31 @@
-# invariant
+<!--
+---
+description: Modern alternatives to the invariant package for runtime assertions
+---
+-->
 
-`invariant` can be replaced by lighter alternatives.
+# Replacements for `invariant`
 
-# Alternatives
+## `tiny-invariant`
 
-## tiny-invariant
+[`tiny-invariant`](https://github.com/alexreardon/tiny-invariant) provides a similar API with zero dependencies.
 
-`tiny-invariant` is a tiny, widely-supported, zero-dependency alternative to `invariant`.
+For example:
 
-```ts
-import invariant from 'tiny-invariant';
+```diff
+- import invariant from 'invariant'
++ import invariant from 'tiny-invariant'
 
-invariant(truthyValue, 'This should not throw!');
-
-invariant(falsyValue, 'This will throw!');
+- invariant(ok, 'Hello %s, code %d', name, code)
++ invariant(ok, `Hello ${name}, code ${code}`)
 ```
 
-[Project Page](https://github.com/alexreardon/tiny-invariant)
-[npm](https://www.npmjs.com/package/tiny-invariant)
+Similarly, you can lazily compute messages to avoid unnecessary work:
+
+```diff
+- import invariant from 'invariant'
++ import invariant from 'tiny-invariant'
+
+- invariant(value, getExpensiveMessage())
++ invariant(value, () => getExpensiveMessage())
+```

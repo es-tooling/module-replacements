@@ -1,13 +1,24 @@
-# traverse
+<!--
+---
+description: Modern alternative to the traverse package to traverse and transform objects by visiting every node on a recursive walk
+---
+-->
 
-traverse has many transitive dependencies, is CommonJS-only and is projected to get bigger over time.
+# Replacements for `traverse`
 
-# Alternatives
+## `neotraverse`
 
-## neotraverse
+[`neotraverse`](https://github.com/puruvj/neotraverse) is a TypeScript rewrite of [`traverse`](https://github.com/ljharb/js-traverse) with no dependencies. It offers a drop‑in compatible build as well as a modern API.
 
-neotraverse is a fork and TypeScript rewrite of [traverse](https://github.com/ljharb/js-traverse) with 0 dependencies, major improvements, works in the browser and will be 0-dependencies forever.
+```diff
+- import traverse from 'traverse'
++ import traverse from 'neotraverse'
 
-[Project Page](https://github.com/puruvj/neotraverse)
+const obj = [5, 6, -3, [7, 8, -2, 1], { f: 10, g: -13 }]
 
-[npm](https://npmjs.com/package/neotraverse)
+traverse(obj).forEach(function (x) {
+  if (x < 0) this.update(x + 128)
+})
+
+console.log(obj)
+```

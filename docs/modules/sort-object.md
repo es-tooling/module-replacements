@@ -1,26 +1,68 @@
-# sort-object
+<!--
+---
+description: Modern alternatives to the sort-object package for sorting object keys
+---
+-->
 
-`sort-object` brings in many dependencies that are no longer needed for more modern Node versions. It can typically be replaced with platform-provided APIs. When you need more functionality, there are other alternatives.
+# Replacements for `sort-object`
 
-# Alternatives
+## JavaScript APIs (`Object.keys` + `Array.sort`)
 
-## JS APIs with Object.keys() + Object.sort()
+For simple cases:
 
-For simple cases, you can use `Object.keys()` and `Array.prototype.sort()` to sort an object's keys.
+```diff
+- import sortObj from 'sort-object'
 
-```js
-Object.keys(object)
-  .sort()
-  .reduce((obj, key) => {
-    obj[key] = object[key];
-    return obj;
-  }, {});
+- const sorted = sortObj(object)
+
++ const sorted = Object.fromEntries(
++  Object.entries(object).sort((a, b) => a[0].localeCompare(b[0]))
++ )
 ```
 
-## sort-object-keys
+Replicating `sortBy` (function returns an ordered key list):
 
-[`sort-object-keys`](https://www.npmjs.com/package/sort-object-keys) is a 0 dependency package that can replace the functionality of `sort-object`. This is useful for more complex cases, such as if you have a custom sort for your object keys.
+```diff
+- import sortObj from 'sort-object'
 
-## sortobject
+- const sorted = sortObj(object, { sortBy: (obj) => {
+-  const arr = []
+-  Object.keys(obj).forEach((k) => {
+-    if (obj[k].startsWith('a'))
+-      arr.push(k)
+-  })
+-  return arr.reverse()
+- } })
 
-[`sortobject`](https://www.npmjs.com/package/sortobject) is a 0 dependency package that can replace the functionality of `sort-object`. This library should be used over `sort-object-keys` if you need to deeply sort nested objects.
++ const sortBy = obj => Object.keys(obj).filter(k => obj[k].startsWith('a')).reverse()
++ const sorted = Object.fromEntries(
++  sortBy(object).map(k => [k, object[k]])
++ )
+```
+
+## `sort-object-keys`
+
+[`sort-object-keys`](https://www.npmjs.com/package/sort-object-keys) is zero‑dependency and matches common `sort-object` use cases (custom order array or comparator).
+
+```diff
+- import sortObj from 'sort-object'
++ import sortObjectKeys from 'sort-object-keys'
+
+- const sorted = sortObj(object)
++ const sorted = sortObjectKeys(object)
+
+- const sortedByCmp = sortObj(object, { sort: (a, b) => a.localeCompare(b) })
++ const sortedByCmp = sortObjectKeys(object, (a, b) => a.localeCompare(b))
+```
+
+## `sortobject`
+
+[`sortobject`](https://www.npmjs.com/package/sortobject) is zero‑dependency and deeply sorts nested objects.
+
+```diff
+- import sortObj from 'sort-object'
++ import sortobject from 'sortobject'
+
+- const sorted = sortObj(object)
++ const sorted = sortobject(object)
+```

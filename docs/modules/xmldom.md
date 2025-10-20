@@ -1,12 +1,28 @@
-# xmldom
+<!--
+---
+description: Modern alternatives to the xmldom package for XML DOM parsing and serialization
+---
+-->
 
-`xmldom` is no longer maintained. Actively maintained alternatives exist.
-
-# Alternatives
+# Replacements for `xmldom`
 
 ## `@xmldom/xmldom`
 
-Direct fork which is actively maintained. It has new features, bugfixes and updated dependencies.
+[`@xmldom/xmldom`](https://github.com/xmldom/xmldom) is the maintained fork of the original `xmldom`.
 
-[Project Page](https://github.com/xmldom/xmldom)
-[npm](https://www.npmjs.com/package/@xmldom/xmldom)
+For example:
+
+```diff
+- import { DOMParser, XMLSerializer } from 'xmldom'
++ import { DOMParser, XMLSerializer } from '@xmldom/xmldom'
+
+const doc = new DOMParser().parseFromString(source, 'text/xml')
+const xml = new XMLSerializer().serializeToString(doc)
+```
+
+CommonJS:
+
+```diff
+- const { DOMParser, XMLSerializer } = require('xmldom')
++ const { DOMParser, XMLSerializer } = require('@xmldom/xmldom')
+```

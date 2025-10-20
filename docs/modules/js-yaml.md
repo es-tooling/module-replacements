@@ -1,28 +1,56 @@
-# `js-yaml`
+<!--
+---
+description: Modern alternatives to js-yaml for YAML parsing and stringifying
+---
+-->
 
-`js-yaml` appears to be no longer maintained. It also parses some YAML incorrectly.
+# Replacements for `js-yaml`
 
-## Alternatives
+## `yaml`
 
-### `yaml`
+[`yaml`](https://github.com/eemeli/yaml) is a well maintained YAML 1.2/1.1 parser/stringifier with better spec compliance, comment/AST support, and no deps.
 
-`yaml` is a better JavaScript YAML parser. It’s maintained, follows the YAML spec more closely, and has support for more features, such a modifying YAML content.
+Parse (load):
 
-[Project Page](https://eemeli.org/yaml/)
+```diff
+- import yaml from 'js-yaml'
++ import { parse } from 'yaml'
 
-[npm](https://www.npmjs.com/package/yaml)
+- const obj = yaml.load(src)
++ const obj = parse(src)
+```
 
-### Bun API
+Stringify (dump):
 
-[Since Bun v1.2.21, YAML parsing is built in](https://bun.com/blog/release-notes/bun-v1.2.21#native-yaml-support) via the `YAML` namespace:
+```diff
+- import yaml from 'js-yaml'
++ import { stringify } from 'yaml'
 
-```js
-import { YAML } from "bun";
+- const text = yaml.dump(obj)
++ const text = stringify(obj)
+```
 
-console.log(YAML.parse("123"));        // 123
-console.log(YAML.parse("null"));       // null
-console.log(YAML.parse("false"));      // false
-console.log(YAML.parse("abc"));        // "abc"
-console.log(YAML.parse("- abc"));      // [ "abc" ]
-console.log(YAML.parse("abc: def"));   // { "abc": "def" }
+Multi-document:
+
+```diff
+- import yaml from 'js-yaml'
++ import { parseAllDocuments } from 'yaml'
+
+- const out: any[] = []
+- yaml.loadAll(src, d => out.push(d))
++ const out = parseAllDocuments(src).map(d => d.toJSON())
+```
+
+## Bun `YAML` API
+
+[Native YAML parsing](https://bun.com/blog/release-notes/bun-v1.2.21#native-yaml-support) is supported in Bun since v1.2.21.
+
+Example:
+
+```diff
+- import yaml from 'js-yaml'
++ import { YAML } from 'bun'
+
+- yaml.load(src)
++ YAML.parse(src)
 ```

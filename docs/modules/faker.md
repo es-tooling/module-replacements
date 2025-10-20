@@ -1,12 +1,20 @@
-# faker
+<!--
+---
+description: Modern  replacements for the unmaintained faker package generating massive amounts of fake (but realistic) data
+---
+-->
 
-`faker` is [no longer maintained](https://fakerjs.dev/about/announcements/2022-01-14.html#i-heard-something-happened-what-s-the-tldr). Actively maintained alternatives exist.
-
-# Alternatives
+# Replacements for `faker`
 
 ## `@faker-js/faker`
 
-Direct fork which is actively maintained. It has new features, bugfixes and updated dependencies.
+[`@faker-js/faker`](https://github.com/faker-js/faker) is a direct, community‑maintained fork of `faker` with new features, bugfixes, modern ESM/CJS builds, and updated data/locales.
 
-[Project Page](https://github.com/faker-js/faker)
-[npm](https://www.npmjs.com/package/@faker-js/faker)
+```diff
+- const faker = require('faker')
++ const { faker } = require('@faker-js/faker')
+
+faker.datatype.boolean()
+
+faker.image.avatar()
+```

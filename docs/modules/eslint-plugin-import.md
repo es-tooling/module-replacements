@@ -1,16 +1,62 @@
-# eslint-plugin-import
+<!--
+---
+description: Modern alternative to eslint-plugin-import, which helps with linting of ES6+ import/export syntax
+---
+-->
 
-`eslint-plugin-import` has a large footprint, lighter alternatives exist.
-
-# Alternatives
+# Replacements for `eslint-plugin-import`
 
 ## `eslint-plugin-import-x`
 
-Direct fork with a much smaller footprint and modernisation.
+[`eslint-plugin-import-x`](https://github.com/un-ts/eslint-plugin-import-x) is a modern fork of [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import). `import-x` focuses on faster module resolution via a Rust-based resolver, a smaller dependency footprint
 
-[Project Page](https://github.com/un-ts/eslint-plugin-import-x)
-[npm](https://www.npmjs.com/package/eslint-plugin-import-x)
+If you're using Flat config:
 
-## TypeScript
+```diff
+- import importPlugin from 'eslint-plugin-import'
++ import { createNodeResolver, importX } from 'eslint-plugin-import-x'
++ import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
 
-TypeScript catches the vast majority of errors that `eslint-plugin-import` would identify.
+export default [
+-  importPlugin.flatConfigs.recommended,
++  importX.flatConfigs.recommended,
+  {
+    settings: {
+-      'import/resolver': { typescript: true },
++      'import-x/resolver-next': [createTypeScriptImportResolver(), createNodeResolver()],
+    },
+    rules: {
+-      'import/no-unresolved': 'error',
++      'import-x/no-unresolved': 'error',
+-      'import/no-nodejs-modules': 'warn',
++      'import-x/no-nodejs-modules': 'warn',
+    }
+  }
+]
+```
+
+If you're using legacy config:
+
+```diff
+module.exports = {
+  extends: [
+    'eslint:recommended',
+-    'plugin:import/recommended',
++    'plugin:import-x/recommended',
+-    'plugin:import/typescript',
++    'plugin:import-x/typescript'
+  ],
+  plugins: [
+-    'import',
++    'import-x'
+  ],
+  settings: {
+-    'import/resolver': { typescript: true },
++    'import-x/resolver': { typescript: true }
+  },
+  rules: {
+-    'import/no-unresolved': 'error',
++    'import-x/no-unresolved': 'error'
+  }
+}
+```

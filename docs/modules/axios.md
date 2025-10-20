@@ -1,40 +1,60 @@
-# axios
+<!--
+---
+description: Modern alternatives to the axios package for making HTTP requests in browsers and Node.js
+---
+-->
 
-`axios` is a popular HTTP client library, but modern JavaScript and Node.js provide native alternatives that can often replace it for many use cases.
-
-# Alternatives
+# Replacements for `axios`
 
 ## Native `fetch` API
 
-The native `fetch` API is now available in Node.js (since v18.x) and all modern browsers. For most HTTP requests, it can replace axios without additional dependencies.
+The native [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) API is available in Node.js (since v18.x) and all modern browsers. For most HTTP requests, it can replace `axios` without extra dependencies.
 
-```js
-// GET request
-const response = await fetch('https://api.example.com/data');
-const data = await response.json();
+Example:
 
-// POST request with JSON
-const response = await fetch('https://api.example.com/data', {
+```ts
+// GET
+const res = await fetch('https://api.example.com/data')
+const data = await res.json()
+
+// POST
+await fetch('https://api.example.com/data', {
   method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
+  headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ key: 'value' })
-});
+})
 ```
 
-[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+## `ky`
 
-## ky
+[`ky`](https://github.com/sindresorhus/ky) is a lightweight HTTP client based on the Fetch API with timeout support, hooks (interceptors) and other helpers.
 
-`ky` is a tiny and elegant HTTP client based on the Fetch API. It provides a more convenient API than raw fetch while being much smaller than axios. Also, includes `hooks` (interceptors) for request/response modification.
+Example:
 
-[Project Page](https://github.com/sindresorhus/ky)
-[npm](https://www.npmjs.com/package/ky)
+```ts
+import ky from 'ky'
 
-## ofetch
+const api = ky.create({
+  prefixUrl: 'https://api.example.com',
+  timeout: 5000, // ms
+})
 
-`ofetch` is a better fetch API with automatic response parsing, request/response interceptors, and retry functionality.
+const data = await api.get('users').json()
+```
 
-[Project Page](https://github.com/unjs/ofetch)
-[npm](https://www.npmjs.com/package/ofetch)
+## `ofetch`
+
+[`ofetch`](https://github.com/unjs/ofetch) s a fetch wrapper with automatic JSON parsing, request/response interceptors, and retries.
+
+Example:
+
+```ts
+import { ofetch } from 'ofetch'
+
+const api = ofetch.create({
+  baseURL: 'https://api.example.com',
+})
+
+const data = await api('/user', { query: { id: 123 } })
+const created = await api('/items', { method: 'POST', body: { name: 'A' } })
+```

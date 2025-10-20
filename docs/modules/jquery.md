@@ -1,17 +1,15 @@
-# jQuery
+<!--
+---
+description: Modern alternatives to the jQuery library for DOM traversal, events, and AJAX
+---
+-->
 
-jQuery is a great project that at one time greatly simplified the life of web developers. However, now almost all features from this project can be easily replaced with native JavaScript methods so it makes little sense to load a dependency this large to provide them.
-
-# Replacements
+# Replacements for `jQuery`
 
 ## You might not need jQuery
 
-Here you could read how to replace jQuery in your project.
-
-[Project Page](https://youmightnotneedjquery.com/)
+[You might not need jQuery](https://youmightnotneedjquery.com/) is a side‑by‑side catalog of native JavaScript equivalents for common jQuery patterns (selectors, traversal, manipulation, events, AJAX), with concise before/after examples.
 
 ## You (Might) Don't Need jQuery
 
-Here you could read how to replace jQuery in your project.
-
-[Project Page](https://github.com/camsong/You-Dont-Need-jQuery)
+[You‑Dont‑Need‑jQuery](https://github.com/camsong/You-Dont-Need-jQuery) is a community‑maintained guide that shows how to handle querying, styling, DOM manipulation, AJAX, and events with plain JavaScript.

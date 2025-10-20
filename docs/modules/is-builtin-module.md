@@ -1,50 +1,39 @@
-# is-builtin-module
+<!--
+---
+description: Native Node.js alternatives to the is-builtin-module package for checking built-in modules
+---
+-->
 
-`is-builtin-module` has equivalent functionality built in to node itself.
-
-You may not need an alternative if your runtime does not have access to the
-built-in node module.
-
-# Alternatives
+# Replacements for `is-builtin-module`
 
 ## Node.js (since 16.x)
 
-For determining if a module is built-in or not, you can use
-[isBuiltIn](https://nodejs.org/api/module.html#moduleisbuiltinmodulename):
+For determining if a module is built-in or not, you can use [isBuiltin](https://nodejs.org/api/module.html#moduleisbuiltinmodulename):
 
-```ts
-import {isBuiltin} from 'node:module';
+```diff
++ import { isBuiltin } from 'node:module'
+- import isBuiltinModule from 'is-builtin-module'
 
-isBuiltin('fs'); // true
++ isBuiltin('fs')
+- isBuiltinModule('fs')
 ```
 
-## Node.js (6.x to 15.x)
+## Node.js 6.x to 15.x
 
 Before Node.js 16.x, `isBuiltin` was not available, so you need to implement your own check using [builtinModules](https://nodejs.org/api/module.html#modulebuiltinmodules):
 
-```ts
-import {builtinModules} from 'node:module';
+```diff
++ import { builtinModules } from 'node:module'
+- import isBuiltinModule from 'is-builtin-module'
 
-function isBuiltin(moduleName) {
-  const name = moduleName.startsWith('node:')
-    ? moduleName.slice(5)
-    : moduleName;
++ function isBuiltin(moduleName) {
++  const name = moduleName.startsWith('node:')
++    ? moduleName.slice(5)
++    : moduleName
 
-  return builtinModules.includes(name);
-}
++  return builtinModules.includes(name)
++ }
 
-isBuiltin('fs'); // true
-```
-
-## Getting all built-in modules
-
-For a full list of built-in modules (available since Node.js 6.x), you can use
-[builtinModules](https://nodejs.org/api/module.html#modulebuiltinmodules):
-
-```ts
-import {builtinModules} from 'node:module';
-
-for (const name of builtinModules) {
-  console.log(name);
-}
++ isBuiltin('fs')
+- isBuiltinModule('fs')
 ```

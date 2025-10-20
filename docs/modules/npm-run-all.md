@@ -1,31 +1,64 @@
-# npm-run-all
+<!--
+---
+description: Modern alternatives to the npm-run-all package for running multiple npm scripts
+---
+-->
 
-`npm-run-all` is no longer maintained. Lighter, actively maintained alternatives
-exist.
+# Replacements for `npm-run-all`
 
-# Alternatives
+## `npm-run-all2`
 
-## wireit
+[npm-run-all2](https://github.com/bcomnes/npm-run-all2) is an actively maintained fork with important fixes, dependency updates.
 
-Provides a clean way to manage your npm scripts, offering parallelisation,
-file watching, and more.
+```json
+{
+  "scripts": {
+    "build": "npm-run-all clean lint compile"
+  }
+}
+```
 
-[Project Page](https://github.com/google/wireit)
-[npm](https://www.npmjs.com/package/wireit)
+The commands remain the same: `npm-run-all`, `run-s`, and `run-p`.
 
-## npm-run-all2
+## `concurrently`
 
-A direct fork of `npm-run-all` with much of the dependency tree cleaned up.
+Another option is [concurrently](https://github.com/open-cli-tools/concurrently), which focuses on running scripts in parallel with colored output and process control. It uses a slightly different syntax but works well for replacing the `--parallel` use case.
 
-It can be used as a drop-in replacement as it provides the exact same binaries
-as the original.
+```diff
+{
+  "scripts": {
+-    "dev": "npm-run-all --parallel \"watch-*\" start",
++    "dev": "concurrently \"npm:watch-*\" \"npm:start\""
+  }
+}
+```
 
-[Project Page](https://github.com/bcomnes/npm-run-all2)
-[npm](https://www.npmjs.com/package/npm-run-all2)
+## `Wireit`
 
-## concurrently
+For more advanced workflows, consider [Wireit](https://github.com/google/wireit). It integrates directly into `package.json` to add caching, dependency graphs, watch mode, and incremental builds. Unlike `npm-run-all`, Wireit upgrades your existing `npm run` experience instead of providing a separate CLI.
 
-Very similar concept to `npm-run-all` which is actively maintained.
-
-[Project Page](https://github.com/open-cli-tools/concurrently)
-[npm](https://www.npmjs.com/package/concurrently)
+```json
+{
+  "scripts": {
+    "build": "wireit",
+    "compile": "wireit",
+    "bundle": "wireit"
+  },
+  "wireit": {
+    "build": {
+      "dependencies": ["compile", "bundle"]
+    },
+    "compile": {
+      "command": "tsc",
+      "files": ["src/**/*.ts"],
+      "output": ["lib/**"]
+    },
+    "bundle": {
+      "command": "rollup -c",
+      "dependencies": ["compile"],
+      "files": ["rollup.config.js"],
+      "output": ["dist/**"]
+    }
+  }
+}
+```
