@@ -11,11 +11,11 @@ description: Modern alternatives to the cpx package for copying file globs with 
 [`cpx`](https://github.com/mysticatea/cpx) is unmaintained. [`cpx2`](https://github.com/bcomnes/cpx2) is an actively maintained fork that keeps the same CLI bin name (`cpx`), so it works as a drop-in replacement for CLI usage. For the Node API, switch your import to `cpx2`.
 
 ```diff
-- npm i -D cpx
-+ npm i -D cpx2
+- $ npm i -D cpx
++ $ npm i -D cpx2
 
 # CLI stays the same (bin name is still "cpx")
-cpx "src/**/*.{html,png,jpg}" app --watch
+$ cpx "src/**/*.{html,png,jpg}" app --watch
 ```
 
 Node API replacement:
