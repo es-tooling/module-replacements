@@ -70,6 +70,6 @@ This option is replaced by `last`:
 + find.file(
   'package.json',
 -   { stopAt: '/some/dir' },
-+  { last: '/some/dir' },
++   { last: '/some/dir' },
 )
 ```
