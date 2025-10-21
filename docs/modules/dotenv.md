@@ -14,7 +14,7 @@ Built into Node.js (v20.6.0+; v22.9.0 for `--env-file-if-exists`). Zero dependen
 
 [`--env-file`](https://nodejs.org/dist/latest-v20.x/docs/api/cli.html#--env-fileconfig) throws if the file is missing. If the file may be absent, use [`--env-file-if-exists`](https://nodejs.org/docs/latest-v22.x/api/cli.html#--env-file-if-existsconfig).
 
-```sh
+```bash
 node --env-file=.env index.js
 ```
 
