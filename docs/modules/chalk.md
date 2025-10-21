@@ -13,8 +13,8 @@ Since Node 20.x, you can use the [`styleText`](https://nodejs.org/api/util.html#
 Example:
 
 ```diff
-+ import { styleText } from 'node:util'
 - import chalk from 'chalk'
++ import { styleText } from 'node:util'
 
 - console.log(`Hello ${chalk.blue('blue')} world!`)
 + console.log(`Hello ${styleText('blue', 'blue')} world!`)
@@ -51,8 +51,8 @@ Example:
 - import chalk from 'chalk'
 + import ansis from 'ansis'
 
-console.log(`Hello ${chalk.blue('blue')} world!`)
-console.log(`Hello ${ansis.blue('blue')} world!`)
+- console.log(`Hello ${chalk.blue('blue')} world!`)
++ console.log(`Hello ${ansis.blue('blue')} world!`)
 ```
 
 When using multiple styles, you can chain them just like in chalk:
@@ -64,7 +64,7 @@ When using multiple styles, you can chain them just like in chalk:
 
 Similarly, you can use RGB and hex colors:
 
-```ts
+```diff
 - console.log(chalk.rgb(239, 239, 239)('Hello world!'))
 + console.log(ansis.rgb(239, 239, 239)('Hello world!'))
 ```
