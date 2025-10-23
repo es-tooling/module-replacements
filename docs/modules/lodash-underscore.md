@@ -1,3 +1,7 @@
+---
+description: Modern alternatives for Lodash for array/object manipulation and common programming tasks
+---
+
 # `lodash` / `underscore`
 
 `lodash` and `underscore` have not been updated for many years and almost all methods can be replaced with modern JavaScript built-in methods, the rest - with simple helpers.
