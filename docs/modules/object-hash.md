@@ -42,7 +42,7 @@ Docs: https://bun.com/reference/bun/CryptoHasher
 
 Example:
 
-```ts
+```diff
 - import objectHash from 'object-hash'
 + import stringify from 'safe-stable-stringify'
 
