@@ -14,30 +14,31 @@ description: Modern, secure alternatives to the shortid package for generating U
 - `shortid.seed()`/`shortid.worker()`: not needed and not provided by `nanoid` (it uses a secure random source). Avoid seeded/deterministic IDs for security.
 :::
 
-Example:
+### Basic migration
 
-```diff
-- import shortid from 'shortid'
-+ import { nanoid } from 'nanoid'
+```ts
+import shortid from 'shortid' // [!code --]
+import { nanoid } from 'nanoid' // [!code ++]
 
-- const id = shortid.generate()
-+ const id = nanoid()
+const id = shortid.generate() // [!code --]
+const id = nanoid() // [!code ++] => "V1StGXR8_Z5jdHi6B-myT"
 ```
 
-Control length example:
+### Control length
 
 ```ts
 // shortid produced ~7-14 chars; with nanoid you pick the size explicitly:
 nanoid(10) // e.g., "NG3oYbq9qE"
 ```
 
-Custom alphabet (replacement for `shortid.characters`) example:
+### Custom alphabet (replacement for `shortid.characters`)
 
-```diff
-- shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@')
-+ import { customAlphabet } from 'nanoid'
+<!-- eslint-skip -->
+```ts
+shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@') // [!code --]
+import { customAlphabet } from 'nanoid' // [!code ++]
 
-+ const alphabet = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@'
-+ const makeId = customAlphabet(alphabet, 12)
-+ const id = makeId()
+const alphabet = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@' // [!code ++]
+const makeId = customAlphabet(alphabet, 12) // [!code ++]
+const id = makeId() // [!code ++]
 ```

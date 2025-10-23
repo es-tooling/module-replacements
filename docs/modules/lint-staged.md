@@ -10,10 +10,11 @@ description: Modern alternatives to lint-staged for running commands on staged G
 
 package.json config:
 
-```diff
+<!-- eslint-skip -->
+```json
 {
--  "lint-staged": {
-+  "nano-staged": {
+  "lint-staged": { // [!code --]
+  "nano-staged": { // [!code ++]
     "*.{js,ts}": ["prettier --write"]
   },
 }

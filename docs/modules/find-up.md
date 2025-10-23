@@ -12,24 +12,24 @@ The main difference is that `empathic` is _synchronous_, so you should no longer
 
 Example:
 
-```diff
-- import { findUp } from 'find-up'
-+ import * as find from 'empathic/find'
+```ts
+import * as find from 'empathic/find' // [!code ++]
+import { findUp } from 'find-up' // [!code --]
 
-- await findUp('package.json')
-+ find.up('package.json')
+await findUp('package.json') // [!code --]
+find.up('package.json') // [!code ++]
 ```
 
 ### `findUpMultiple`
 
 When finding multiple files, you can use `find.any`:
 
-```diff
-- import { findUpMultiple } from 'find-up'
-+ import * as find from 'empathic/find'
+```ts
+import * as find from 'empathic/find' // [!code ++]
+import { findUpMultiple } from 'find-up' // [!code --]
 
-- const files = await findUpMultiple(['package.json', 'tsconfig.json'])
-+ const files = find.any(['package.json', 'tsconfig.json'])
+const files = await findUpMultiple(['package.json', 'tsconfig.json']) // [!code --]
+const files = find.any(['package.json', 'tsconfig.json']) // [!code ++]
 ```
 
 ### Options
@@ -40,12 +40,12 @@ The `type` option can be replaced by using the equivalent function.
 
 For example, finding a file:
 
-```diff
-- import { findUp } from 'find-up'
-+ import * as find from 'empathic/find'
+```ts
+import * as find from 'empathic/find' // [!code ++]
+import { findUp } from 'find-up' // [!code --]
 
-- await findUp('package.json', { type: 'file' })
-+ find.file('package.json')
+await findUp('package.json', { type: 'file' }) // [!code --]
+find.file('package.json') // [!code ++]
 ```
 
 #### `cwd`
@@ -60,14 +60,15 @@ find.file('package.json', { cwd })
 
 This option is replaced by `last`:
 
-```diff
-- import { findUp } from 'find-up'
-+ import * as find from 'empathic/find'
+<!-- eslint-skip -->
+```ts
+import { findUp } from 'find-up' // [!code --]
+import * as find from 'empathic/find' // [!code ++]
 
-- await findUp(
-+ find.file(
+await findUp( // [!code --]
+find.file( // [!code ++]
   'package.json',
--   { stopAt: '/some/dir' },
-+   { last: '/some/dir' },
+  { stopAt: '/some/dir' }, // [!code --]
+  { last: '/some/dir' }, // [!code ++]
 )
 ```

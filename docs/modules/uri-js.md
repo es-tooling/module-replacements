@@ -4,6 +4,8 @@ description: Modern alternatives to uri-js for RFC 3986 URI parsing, resolving, 
 
 # Replacements for `uri-js`
 
+[`uri-js`](https://github.com/garycourt/uri-js) is unmaintained and triggers deprecation warnings on modern Node.js ([due to `punycode`](https://github.com/garycourt/uri-js/pull/95)).
+
 ## Native `URL`
 
 Good for standard web URLs (http/https/ws/wss/file/mailto, etc.).
@@ -13,11 +15,11 @@ Good for standard web URLs (http/https/ws/wss/file/mailto, etc.).
 
 Example:
 
-```diff
-- import * as URI from 'uri-js'
+```ts
+import * as URI from 'uri-js' // [!code --]
 
-- URI.resolve('https://a/b/c/d?q', '../../g')
-+ new URL('../../g', 'https://a/b/c/d?q').href
+URI.resolve('https://a/b/c/d?q', '../../g') // [!code --]
+new URL('../../g', 'https://a/b/c/d?q').href // [!code ++]
 ```
 
 > [!NOTE]
@@ -27,9 +29,9 @@ Example:
 
 [`uri-js-replace`](https://github.com/andreinwald/uri-js-replace) is a drop-in, zero-dependency replacement for `uri-js` with the same API and no deprecation warnings.
 
-```diff
-- import * as URI from 'uri-js'
-+ import * as URI from 'uri-js-replace'
+```ts
+import * as URI from 'uri-js' // [!code --]
+import * as URI from 'uri-js-replace' // [!code ++]
 
 const parsed = URI.parse('uri://user:pass@example.com:123/one/two?q=a#f')
 const out = URI.serialize({ scheme: 'http', host: 'example.com', fragment: 'footer' })
@@ -40,9 +42,9 @@ const norm = URI.normalize('URI://www.example.org/red%09ros\xE9#red')
 
 [`fast-uri`](https://github.com/fastify/fast-uri) is a zero-dependency, high-performance RFC 3986 URI toolbox (parse/serialize/resolve/equal) with options similar to `uri-js`.
 
-```diff
-- import * as uri from 'uri-js'
-+ import * as uri from 'fast-uri'
+```ts
+import * as uri from 'uri-js' // [!code --]
+import * as uri from 'fast-uri' // [!code ++]
 
 uri.parse('uri://user:pass@example.com:123/one/two.three?q1=a1#a')
 uri.serialize({ scheme: 'http', host: 'example.com', fragment: 'footer' })

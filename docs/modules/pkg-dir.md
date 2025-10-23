@@ -12,11 +12,11 @@ The main difference is that `empathic` is _synchronous_, so you should no longer
 
 Example:
 
-```diff
-+ import { dirname } from 'node:path'
-+ import * as pkg from 'empathic/package'
-- import { packageDirectory } from 'pkg-dir'
+```ts
+import { dirname } from 'node:path' // [!code ++]
+import * as pkg from 'empathic/package' // [!code ++]
+import { packageDirectory } from 'pkg-dir' // [!code --]
 
-- const dir = await packageDirectory()
-+ const dir = dirname(pkg.up())
+const dir = await packageDirectory() // [!code --]
+const dir = dirname(pkg.up()) // [!code ++]
 ```

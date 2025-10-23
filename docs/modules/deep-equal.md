@@ -10,15 +10,15 @@ description: Modern alternatives to the deep-equal package for deep object compa
 
 Example:
 
-```diff
-- import equal from 'deep-equal'
-+ import dequal from 'dequal'
+```ts
+import equal from 'deep-equal' // [!code --]
+import dequal from 'dequal' // [!code ++]
 
 const a = { foo: 'bar' }
 const b = { foo: 'bar' }
 
-- equal(a, b)
-+ dequal(a, b)
+equal(a, b) // true [!code --]
+dequal(a, b) // true [!code ++]
 ```
 
 ## `fast-deep-equal`
@@ -27,15 +27,15 @@ const b = { foo: 'bar' }
 
 Example:
 
-```diff
-- import deepEqual from 'deep-equal'
-+ import fastDeepEqual from 'fast-deep-equal'
+```ts
+import deepEqual from 'deep-equal' // [!code --]
+import fastDeepEqual from 'fast-deep-equal' // [!code ++]
 
 const a = { foo: 'bar' }
 const b = { foo: 'bar' }
 
-- deepEqual(a, b)
-+ fastDeepEqual(a, b)
+deepEqual(a, b) // true [!code --]
+fastDeepEqual(a, b) // true [!code ++]
 ```
 
 > [!NOTE]

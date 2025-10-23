@@ -10,9 +10,9 @@ description: Modern alternatives to the glob package for file pattern matching a
 
 Example:
 
-```diff
-- import { glob } from 'glob'
-+ import { glob } from 'tinyglobby'
+```ts
+import { glob } from 'glob' // [!code --]
+import { glob } from 'tinyglobby' // [!code ++]
 
 const files = await glob('**/*.ts')
 ```
@@ -25,15 +25,16 @@ Most options available to `glob` are available in `tinyglobby`, read more at the
 
 Example:
 
-```diff
-- import { glob } from 'glob'
-+ import { glob } from 'node:fs/promises'
+<!-- eslint-skip -->
+```ts
+import { glob } from 'glob' // [!code --]
+import { glob } from 'node:fs/promises' // [!code ++]
 
-- const files = await glob('src/**/*.ts', {
-+ const files = await Array.fromAsync(glob('src/**/*.ts', {
+const files = await glob('src/**/*.ts', { // [!code --]
+const files = await Array.fromAsync(glob('src/**/*.ts', { // [!code ++]
   cwd,
-- })
-+ }))
+}) // [!code --]
+})) // [!code ++]
 ```
 
 You can also iterate over the results asynchronously:
@@ -51,17 +52,18 @@ for await (const result of glob('src/**/*.ts', { cwd })) {
 
 Example:
 
-```diff
-+ import { fdir } from 'fdir'
-- import { glob } from 'glob'
+<!-- eslint-skip -->
+```ts
+import { fdir } from 'fdir' // [!code ++]
+import { glob } from 'glob' // [!code --]
 
-+ const files = new fdir()
-+  .withBasePath()
-+  .glob('src/**/*.ts')
-+  .crawl(cwd)
-+  .withPromise()
-- const files = await glob('src/**/*.ts', {
--   cwd,
--   maxDepth: 6
-- })
+const files = new fdir() // [!code ++]
+  .withBasePath() // [!code ++]
+  .glob('src/**/*.ts') // [!code ++]
+  .crawl(cwd) // [!code ++]
+  .withPromise() // [!code ++]
+const files = await glob('src/**/*.ts', { // [!code --]
+  cwd, // [!code --]
+  maxDepth: 6 // [!code --]
+}) // [!code --]
 ```

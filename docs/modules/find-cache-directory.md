@@ -10,10 +10,10 @@ description: Modern alternatives to the find-cache-directory package for locatin
 
 Example:
 
-```diff
-- import findCacheDirectory from 'find-cache-directory'
-+ import * as pkg from 'empathic'
+```ts
+import * as pkg from 'empathic' // [!code ++]
+import findCacheDirectory from 'find-cache-directory' // [!code --]
 
-- findCacheDirectory({ name: 'foo' })
-+ pkg.cache('foo')
+findCacheDirectory({ name: 'foo' }) // [!code --]
+pkg.cache('foo') // [!code ++]
 ```

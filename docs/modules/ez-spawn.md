@@ -10,22 +10,22 @@ description: Modern alternatives to the ez-spawn package for spawning child proc
 
 For example:
 
-```diff
-- import ezSpawn from '@jsdevtools/ez-spawn'
-+ import { x } from 'tinyexec'
+```ts
+import ezSpawn from '@jsdevtools/ez-spawn' // [!code --]
+import { x } from 'tinyexec' // [!code ++]
 
-- await ezSpawn.async('ls -l')
-+ await x('ls', ['-l'])
+await ezSpawn.async('ls -l') // [!code --]
+await x('ls', ['-l']) // [!code ++]
 ```
 
 Alternatively, you can use [`args-tokenizer`](https://github.com/TrySound/args-tokenizer/) to convert a shell string to a command and arguments:
 
-```diff
-- import ezSpawn from '@jsdevtools/ez-spawn'
-+ import { tokenizeArgs } from 'args-tokenizer'
-+ import { x } from 'tinyexec'
+```ts
+import ezSpawn from '@jsdevtools/ez-spawn' // [!code --]
+import { tokenizeArgs } from 'args-tokenizer' // [!code ++]
+import { x } from 'tinyexec' // [!code ++]
 
-- await ezSpawn.async('ls -l')
-+ const [command, ...args] = tokenizeArgs('ls -l')
-+ await x(command, args)
+const [command, ...args] = tokenizeArgs('ls -l') // [!code ++]
+await ezSpawn.async('ls -l') // [!code --]
+await x(command, args) // [!code ++]
 ```

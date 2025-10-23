@@ -8,31 +8,31 @@ description: Modern alternatives to the ora package for displaying elegant termi
 
 [`nanospinner`](https://github.com/usmanyunusov/nanospinner) provides simple start/success/error/warning methods with one dependency (`picocolors`).
 
-```diff
-- import ora from 'ora'
-+ import { createSpinner } from 'nanospinner'
+```ts
+import ora from 'ora' // [!code --]
+import { createSpinner } from 'nanospinner' // [!code ++]
 
-- const spinner = ora('Loading...').start()
-+ const spinner = createSpinner('Loading...').start()
+const spinner = ora('Loading...').start() // [!code --]
+const spinner = createSpinner('Loading...').start() // [!code ++]
 
-- spinner.succeed('Done!')
-+ spinner.success('Done!')
+spinner.succeed('Done!') // [!code --]
+spinner.success('Done!') // [!code ++]
 
-- spinner.fail('Error!')
-+ spinner.error('Error!')
+spinner.fail('Error!') // [!code --]
+spinner.error('Error!') // [!code ++]
 ```
 
 ## `picospinner`
 
 [`picospinner`](https://github.com/tinylibs/picospinner) has zero dependencies with support for custom symbols, frames, and colors through Node.js built-in styling.
 
-```diff
-- import ora from 'ora'
-+ import { Spinner } from 'picospinner'
+```ts
+import ora from 'ora' // [!code --]
+import { Spinner } from 'picospinner' // [!code ++]
 
-- const spinner = ora('Loading...').start()
-+ const spinner = new Spinner('Loading...')
-+ spinner.start()
+const spinner = ora('Loading...').start() // [!code --]
+const spinner = new Spinner('Loading...') // [!code ++]
+spinner.start() // [!code ++]
 ```
 
 If you want to customize the color of the spinner, you can specify this when creating an instance:

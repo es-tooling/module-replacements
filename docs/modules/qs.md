@@ -10,15 +10,15 @@ description: Modern alternatives to the qs package for parsing and serializing q
 
 Example:
 
-```diff
-- import qs from 'qs'
+```ts
+import qs from 'qs' // [!code --]
 
 const query = 'a=1&a=2&b=3'
 
-- const obj = qs.parse(query)
-+ const sp = new URLSearchParams(query)
-+ const obj = Object.fromEntries(sp)
-+ const a = sp.getAll('a')
+const obj = qs.parse(query) // [!code --]
+const sp = new URLSearchParams(query) // [!code ++]
+const obj = Object.fromEntries(sp) // [!code ++]
+const a = sp.getAll('a') // [!code ++]
 ```
 
 ## `fast-querystring`
@@ -27,15 +27,15 @@ const query = 'a=1&a=2&b=3'
 
 Example:
 
-```diff
-- import qs from 'qs'
-+ import fqs from 'fast-querystring'
+```ts
+import qs from 'qs' // [!code --]
+import fqs from 'fast-querystring' // [!code ++]
 
-- const obj = qs.parse('tag=a&tag=b')
-+ const obj = fqs.parse('tag=a&tag=b')
+const obj = qs.parse('tag=a&tag=b') // [!code --]
+const obj = fqs.parse('tag=a&tag=b') // [!code ++]
 
-- const str = qs.stringify({ tag: ['a', 'b'], q: 'x y' })
-+ const str = fqs.stringify({ tag: ['a', 'b'], q: 'x y' })
+const str = qs.stringify({ tag: ['a', 'b'], q: 'x y' }) // [!code --]
+const str = fqs.stringify({ tag: ['a', 'b'], q: 'x y' }) // [!code ++]
 ```
 
 ## `picoquery`
@@ -44,21 +44,21 @@ Example:
 
 Example:
 
-```diff
-- import qs from 'qs'
-+ import { parse, stringify } from 'picoquery'
+```ts
+import qs from 'qs' // [!code --]
+import { parse, stringify } from 'picoquery' // [!code ++]
 
-+ const opts = {
-+  nestingSyntax: 'js',
-+  arrayRepeat: true,
-+  arrayRepeatSyntax: 'bracket'
-+ }
+const opts = { // [!code ++]
+  nestingSyntax: 'js', // [!code ++]
+  arrayRepeat: true, // [!code ++]
+  arrayRepeatSyntax: 'bracket' // [!code ++]
+} // [!code ++]
 
-- const obj = qs.parse('user[name]=foo&tags[]=bar&tags[]=baz')
-+ const obj = parse('user[name]=foo&tags[]=bar&tags[]=baz', opts)
+const obj = qs.parse('user[name]=foo&tags[]=bar&tags[]=baz') // [!code --]
+const obj = parse('user[name]=foo&tags[]=bar&tags[]=baz', opts) // [!code ++]
 
-- const str = qs.stringify({ user: { name: 'foo' }, tags: ['bar', 'baz'] }, { arrayFormat: 'brackets' })
-+ const str = stringify({ user: { name: 'foo' }, tags: ['bar', 'baz'] }, opts)
+const str = qs.stringify({ user: { name: 'foo' }, tags: ['bar', 'baz'] }, { arrayFormat: 'brackets' }) // [!code --]
+const str = stringify({ user: { name: 'foo' }, tags: ['bar', 'baz'] }, opts) // [!code ++]
 ```
 
 ## `neoqs`
@@ -67,9 +67,9 @@ Example:
 
 Example:
 
-```diff
-- import qs from 'qs'
-+ import * as qs from 'neoqs'
+```ts
+import qs from 'qs' // [!code --]
+import * as qs from 'neoqs' // [!code ++]
 
 const obj = qs.parse('a[b][c]=1&arr[]=2&arr[]=3')
 const str = qs.stringify(obj, { arrayFormat: 'brackets' })

@@ -10,15 +10,16 @@ description: Modern alternatives to the fast-glob package for fast file system p
 
 Example:
 
-```diff
-- import fg from 'fast-glob'
-+ import { glob } from 'tinyglobby'
+<!-- eslint-skip -->
+```ts
+import fg from 'fast-glob' // [!code --]
+import { glob } from 'tinyglobby' // [!code ++]
 
-- const files = await fg('**/*.ts', {
-+ const files = await glob('**/*.ts', {
+const files = await fg('**/*.ts', { // [!code --]
+const files = await glob('**/*.ts', { // [!code ++]
   cwd: process.cwd(),
   ignore: ['**/node_modules/**'],
-+  expandDirectories: false
+  expandDirectories: false // [!code ++]
 })
 ```
 

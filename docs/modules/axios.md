@@ -10,7 +10,7 @@ The native [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
 Example:
 
-```ts
+```js
 // GET
 const res = await fetch('https://api.example.com/data')
 const data = await res.json()
@@ -29,7 +29,7 @@ await fetch('https://api.example.com/data', {
 
 Example:
 
-```ts
+```js
 import ky from 'ky'
 
 const api = ky.create({
@@ -46,7 +46,7 @@ const data = await api.get('users').json()
 
 Example:
 
-```ts
+```js
 import { ofetch } from 'ofetch'
 
 const api = ofetch.create({

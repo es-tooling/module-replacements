@@ -8,53 +8,53 @@ description: Modern alternative to eslint-plugin-import, which helps with lintin
 
 [`eslint-plugin-import-x`](https://github.com/un-ts/eslint-plugin-import-x) is a modern fork of [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import). `import-x` focuses on faster module resolution via a Rust-based resolver, a smaller dependency footprint
 
-If you're using Flat config:
+### Flat config
 
-```diff
-- import importPlugin from 'eslint-plugin-import'
-+ import { createNodeResolver, importX } from 'eslint-plugin-import-x'
-+ import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
+```js
+import importPlugin from 'eslint-plugin-import' // [!code --]
+import { createNodeResolver, importX } from 'eslint-plugin-import-x' // [!code ++]
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript' // [!code ++]
 
 export default [
--  importPlugin.flatConfigs.recommended,
-+  importX.flatConfigs.recommended,
+  importPlugin.flatConfigs.recommended, // [!code --]
+  importX.flatConfigs.recommended, // [!code ++]
   {
     settings: {
--      'import/resolver': { typescript: true },
-+      'import-x/resolver-next': [createTypeScriptImportResolver(), createNodeResolver()],
+      'import/resolver': { typescript: true }, // [!code --]
+      'import-x/resolver-next': [createTypeScriptImportResolver(), createNodeResolver()], // [!code ++]
     },
     rules: {
--      'import/no-unresolved': 'error',
-+      'import-x/no-unresolved': 'error',
--      'import/no-nodejs-modules': 'warn',
-+      'import-x/no-nodejs-modules': 'warn',
+      'import/no-unresolved': 'error', // [!code --]
+      'import-x/no-unresolved': 'error', // [!code ++]
+      'import/no-nodejs-modules': 'warn', // [!code --]
+      'import-x/no-nodejs-modules': 'warn', // [!code ++]
     }
   }
 ]
 ```
 
-If you're using legacy config:
+### Legacy config
 
-```diff
+```js
 module.exports = {
   extends: [
     'eslint:recommended',
--    'plugin:import/recommended',
-+    'plugin:import-x/recommended',
--    'plugin:import/typescript',
-+    'plugin:import-x/typescript'
+    'plugin:import/recommended', // [!code --]
+    'plugin:import-x/recommended', // [!code ++]
+    'plugin:import/typescript', // [!code --]
+    'plugin:import-x/typescript' // [!code ++]
   ],
   plugins: [
--    'import',
-+    'import-x'
+    'import', // [!code --]
+    'import-x' // [!code ++]
   ],
   settings: {
--    'import/resolver': { typescript: true },
-+    'import-x/resolver': { typescript: true }
+    'import/resolver': { typescript: true }, // [!code --]
+    'import-x/resolver': { typescript: true } // [!code ++]
   },
   rules: {
--    'import/no-unresolved': 'error',
-+    'import-x/no-unresolved': 'error'
+    'import/no-unresolved': 'error', // [!code --]
+    'import-x/no-unresolved': 'error' // [!code ++]
   }
 }
 ```

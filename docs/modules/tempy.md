@@ -10,34 +10,34 @@ Node.js has the [`fs.mkdtemp`](https://nodejs.org/api/fs.html#fsmkdtempprefix-op
 
 Example:
 
-```diff
-- import { temporaryDirectory } from 'tempy'
-+ import { mkdtemp, realpath } from 'node:fs/promises'
-+ import { join } from 'node:path'
-+ import { tmpdir } from 'node:os'
+```ts
+import { temporaryDirectory } from 'tempy' // [!code --]
+import { mkdtemp, realpath } from 'node:fs/promises' // [!code ++]
+import { join } from 'node:path' // [!code ++]
+import { tmpdir } from 'node:os' // [!code ++]
 
-- const tempDir = temporaryDirectory()
-+ const tempDir = await mkdtemp(join(await realpath(tmpdir()), 'foo-'))
+const tempDir = temporaryDirectory() // [!code --]
+const tempDir = await mkdtemp(join(await realpath(tmpdir()), 'foo-')) // [!code ++]
 ```
 
 ## Deno
 
 Deno provides built-in [`Deno.makeTempDir`](https://docs.deno.com/api/deno/~/Deno.makeTempDir) and [`Deno.makeTempFile`](https://docs.deno.com/api/deno/~/Deno.makeTempFile) for creating unique temporary directories and files in the system temp directory (or a custom `dir`). You can also set `prefix` and `suffix`. Both return the full path and require `--allow-write`.
 
-```diff
-- import { temporaryDirectory } from 'tempy'
+```ts
+import { temporaryDirectory } from 'tempy' // [!code --]
 
-- const tempDir = temporaryDirectory({ prefix: 'foo-' })
+const tempDir = temporaryDirectory({ prefix: 'foo-' }) // [!code --]
 
-+ const tempDir = await Deno.makeTempDir({ prefix: 'foo-' })
+const tempDir = await Deno.makeTempDir({ prefix: 'foo-' }) // [!code ++]
 ```
 
-```diff
-- import { temporaryFile } from 'tempy'
+```ts
+import { temporaryFile } from 'tempy' // [!code --]
 
-- const tempFile = temporaryFile({ extension: 'txt' })
+const tempFile = temporaryFile({ extension: 'txt' }) // [!code --]
 
-+ const tempFile = await Deno.makeTempFile({ suffix: '.txt' })
+const tempFile = await Deno.makeTempFile({ suffix: '.txt' }) // [!code ++]
 ```
 
 > [!NOTE]

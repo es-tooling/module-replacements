@@ -8,24 +8,24 @@ description: Modern alternatives to the path-exists package for checking if a pa
 
 Use [`fs/promises.access`](https://nodejs.org/docs/latest/api/fs.html#fspromisesaccesspath-mode) and return a boolean.
 
-```diff
-- import pathExists from 'path-exists'
-+ import { access } from 'node:fs/promises'
+```ts
+import pathExists from 'path-exists' // [!code --]
+import { access } from 'node:fs/promises' // [!code ++]
 
-- const exists = await pathExists('/etc/passwd')
-+ const exists = await access('/etc/passwd').then(() => true, () => false)
+const exists = await pathExists('/etc/passwd') // [!code --]
+const exists = await access('/etc/passwd').then(() => true, () => false) // [!code ++]
 ```
 
 ## Node.js (sync)
 
 Added in v0.1.21: synchronous path/file existence check via [`fs.existsSync`](https://nodejs.org/docs/latest/api/fs.html#fsexistssyncpath).
 
-```diff
-- import pathExists from 'path-exists'
-+ import { existsSync } from 'node:fs'
+```ts
+import pathExists from 'path-exists' // [!code --]
+import { existsSync } from 'node:fs' // [!code ++]
 
-- if (await pathExists('/etc/passwd'))
-+ if (existsSync('/etc/passwd'))
+if (await pathExists('/etc/passwd')) // [!code --]
+if (existsSync('/etc/passwd')) // [!code ++]
   console.log('The path exists.')
 ```
 
@@ -33,11 +33,11 @@ Added in v0.1.21: synchronous path/file existence check via [`fs.existsSync`](ht
 
 [`Bun.file()`](https://bun.sh/reference/bun/BunFile) returns a BunFile with an `.exists()` method.
 
-```diff
-- import pathExists from 'path-exists'
+```ts
+import pathExists from 'path-exists' // [!code --]
 
 const path = '/path/to/package.json'
-- const exists = await pathExists(path)
-+ const file = Bun.file(path)
-+ const exists = await file.exists()
+const exists = await pathExists(path) // [!code --]
+const file = Bun.file(path) // [!code ++]
+const exists = await file.exists() // boolean [!code ++]
 ```

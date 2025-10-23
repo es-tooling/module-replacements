@@ -24,27 +24,27 @@ Also supported by:
 
 Remove dotenv preload:
 
-```diff
-- import 'dotenv/config'
+```ts
+import 'dotenv/config' // [!code --]
 // No import needed when using --env-file
 ```
 
 Remove explicit dotenv config:
 
-```diff
-- import dotenv from 'dotenv'
+```ts
+import dotenv from 'dotenv' // [!code --]
 
-- dotenv.config({ path: '.env' })
+dotenv.config({ path: '.env' }) // [!code --]
 // No runtime configuration needed
 ```
 
 In package.json scripts:
 
-```diff
+```json
 {
   "scripts": {
--    "start": "node index.js",
-+    "start": "node --env-file=.env index.js"
+    "start": "node index.js", // [!code --]
+    "start": "node --env-file=.env index.js" // [!code ++]
   }
 }
 ```

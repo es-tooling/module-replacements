@@ -8,9 +8,9 @@ description: Modern  replacements for the unmaintained faker package generating 
 
 [`@faker-js/faker`](https://github.com/faker-js/faker) is a direct, community‑maintained fork of `faker` with new features, bugfixes, modern ESM/CJS builds, and updated data/locales.
 
-```diff
-- const faker = require('faker')
-+ const { faker } = require('@faker-js/faker')
+```ts
+const faker = require('faker') // [!code --]
+const { faker } = require('@faker-js/faker') // [!code ++]
 
 faker.datatype.boolean()
 

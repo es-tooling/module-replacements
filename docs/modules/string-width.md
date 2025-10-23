@@ -8,9 +8,9 @@ description: Modern alternatives to the string-width package for measuring the v
 
 [`fast-string-width`](https://github.com/fabiospampinato/fast-string-width) is a drop‑in replacement for `string-width` that’s faster and smaller.
 
-```diff
-- import stringWidth from 'string-width'
-+ import stringWidth from 'fast-string-width'
+```ts
+import stringWidth from 'string-width' // [!code --]
+import stringWidth from 'fast-string-width' // [!code ++]
 
 console.log(stringWidth('abc')) // 3
 console.log(stringWidth('👩‍👩‍👧‍👦')) // 1
@@ -21,9 +21,9 @@ console.log(stringWidth('\u001B[31mhello\u001B[39m')) // 5
 
 If you’re on Bun ≥ 1.0.29, you can use the built‑in [`stringWidth`](https://bun.com/reference/bun/stringWidth):
 
-```diff
-- import stringWidth from 'string-width'
-+ import { stringWidth } from 'bun'
+```ts
+import stringWidth from 'string-width' // [!code --]
+import { stringWidth } from 'bun' // [!code ++]
 
 console.log(stringWidth('abc')) // 3
 console.log(stringWidth('👩‍👩‍👧‍👦')) // 1

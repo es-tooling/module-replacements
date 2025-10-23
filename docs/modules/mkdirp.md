@@ -10,32 +10,32 @@ Node.js v10.12.0 and up supports the `recursive` option in the [`fs.mkdir`](http
 
 Example migration from [`mkdirp`](https://github.com/isaacs/node-mkdirp):
 
-```diff
-- import { mkdirp } from 'mkdirp'
-+ import { mkdir, mkdirSync } from 'node:fs'
-+ import { mkdir as mkdirAsync } from 'node:fs/promises'
+```js
+import { mkdirp } from 'mkdirp' // [!code --]
+import { mkdir, mkdirSync } from 'node:fs' // [!code ++]
+import { mkdir as mkdirAsync } from 'node:fs/promises' // [!code ++]
 
 // Async
-- await mkdirp('/tmp/foo/bar/baz')
-+ await mkdirAsync('/tmp/foo/bar/baz', { recursive: true })
+await mkdirp('/tmp/foo/bar/baz') // [!code --]
+await mkdirAsync('/tmp/foo/bar/baz', { recursive: true }) // [!code ++]
 
 // Sync
-- mkdirp.sync('/tmp/foo/bar/baz')
-+ mkdirSync('/tmp/foo/bar/baz', { recursive: true })
+mkdirp.sync('/tmp/foo/bar/baz') // [!code --]
+mkdirSync('/tmp/foo/bar/baz', { recursive: true }) // [!code ++]
 ```
 
 Example migration from [`make-dir`](https://github.com/sindresorhus/make-dir):
 
-```diff
-- import { makeDirectory, makeDirectorySync } from 'make-dir'
-+ import { mkdir, mkdirSync } from 'node:fs'
-+ import { mkdir as mkdirAsync } from 'node:fs/promises'
+```js
+import { makeDirectory, makeDirectorySync } from 'make-dir' // [!code --]
+import { mkdir, mkdirSync } from 'node:fs' // [!code ++]
+import { mkdir as mkdirAsync } from 'node:fs/promises' // [!code ++]
 
 // Async
-- await makeDirectory('/tmp/foo/bar/baz')
-+ await mkdirAsync('/tmp/foo/bar/baz', { recursive: true })
+await makeDirectory('/tmp/foo/bar/baz') // [!code --]
+await mkdirAsync('/tmp/foo/bar/baz', { recursive: true }) // [!code ++]
 
 // Sync
-- makeDirectorySync('/tmp/foo/bar/baz')
-+ mkdirSync('/tmp/foo/bar/baz', { recursive: true })
+makeDirectorySync('/tmp/foo/bar/baz') // [!code --]
+mkdirSync('/tmp/foo/bar/baz', { recursive: true }) // [!code ++]
 ```

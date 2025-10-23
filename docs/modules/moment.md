@@ -10,15 +10,15 @@ description: Modern alternatives to moment.js for date manipulation and formatti
 
 Example:
 
-```diff
-- import moment from 'moment'
-+ import dayjs from 'dayjs'
+```ts
+import moment from 'moment' // [!code --]
+import dayjs from 'dayjs' // [!code ++]
 
-- const now = moment()
-+ const now = dayjs()
+const now = moment() // [!code --]
+const now = dayjs() // [!code ++]
 
-- const formatted = moment().format('YYYY-MM-DD')
-+ const formatted = dayjs().format('YYYY-MM-DD')
+const formatted = moment().format('YYYY-MM-DD') // [!code --]
+const formatted = dayjs().format('YYYY-MM-DD') // [!code ++]
 ```
 
 ## `date-fns`
@@ -27,18 +27,18 @@ Example:
 
 Example:
 
-```diff
-- import moment from 'moment'
-+ import { addDays, format, subWeeks } from 'date-fns'
+```ts
+import moment from 'moment' // [!code --]
+import { addDays, format, subWeeks } from 'date-fns' // [!code ++]
 
-- const formatted = moment().format('YYYY-MM-DD')
-+ const formatted = format(new Date(), 'yyyy-MM-dd')
+const formatted = moment().format('YYYY-MM-DD') // [!code --]
+const formatted = format(new Date(), 'yyyy-MM-dd') // [!code ++]
 
-- const tomorrow = moment().add(1, 'day')
-+ const tomorrow = addDays(new Date(), 1)
+const tomorrow = moment().add(1, 'day') // [!code --]
+const tomorrow = addDays(new Date(), 1) // [!code ++]
 
-- const lastWeek = moment().subtract(1, 'week')
-+ const lastWeek = subWeeks(new Date(), 1)
+const lastWeek = moment().subtract(1, 'week') // [!code --]
+const lastWeek = subWeeks(new Date(), 1) // [!code ++]
 ```
 
 ## `Luxon`
@@ -47,34 +47,34 @@ Example:
 
 Example:
 
-```diff
-- import moment from 'moment'
-+ import { DateTime } from 'luxon'
+```ts
+import moment from 'moment' // [!code --]
+import { DateTime } from 'luxon' // [!code ++]
 
-- const now = moment()
-+ const now = DateTime.now()
+const now = moment() // [!code --]
+const now = DateTime.now() // [!code ++]
 
-- const formatted = moment().format('YYYY-MM-DD')
-+ const formatted = DateTime.now().toFormat('yyyy-MM-dd')
+const formatted = moment().format('YYYY-MM-DD') // [!code --]
+const formatted = DateTime.now().toFormat('yyyy-MM-dd') // [!code ++]
 
-- const tomorrow = moment().add(1, 'day')
-+ const tomorrow = DateTime.now().plus({ days: 1 })
+const tomorrow = moment().add(1, 'day') // [!code --]
+const tomorrow = DateTime.now().plus({ days: 1 }) // [!code ++]
 ```
 
 ## Native JavaScript `Date`
 
 For simple use cases, native JavaScript [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) and [`Intl`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) APIs may be sufficient:
 
-```diff
-- import moment from 'moment'
+```ts
+import moment from 'moment' // [!code --]
 
-- const formatted = moment().format('YYYY-MM-DD')
-+ const formatted = new Date().toISOString().split('T')[0]
+const formatted = moment().format('YYYY-MM-DD') // [!code --]
+const formatted = new Date().toISOString().split('T')[0] // [!code ++]
 
-- const localized = moment().format('MMMM Do YYYY')
-+ const localized = new Intl.DateTimeFormat('en-US', {
-+  year: 'numeric',
-+  month: 'long',
-+  day: 'numeric'
-+ }).format(new Date())
+const localized = moment().format('MMMM Do YYYY') // [!code --]
+const localized = new Intl.DateTimeFormat('en-US', { // [!code ++]
+  year: 'numeric', // [!code ++]
+  month: 'long', // [!code ++]
+  day: 'numeric' // [!code ++]
+}).format(new Date()) // [!code ++]
 ```

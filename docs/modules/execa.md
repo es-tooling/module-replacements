@@ -10,12 +10,12 @@ description: Modern alternatives to the execa package for running child processe
 
 Example:
 
-```diff
-- import { execa } from 'execa'
-+ import { x } from 'tinyexec'
+```ts
+import { execa } from 'execa' // [!code --]
+import { x } from 'tinyexec' // [!code ++]
 
-- const { stdout } = await execa('ls', ['-l'])
-+ const { stdout } = await x('ls', ['-l'], { throwOnError: true })
+const { stdout } = await execa('ls', ['-l']) // [!code --]
+const { stdout } = await x('ls', ['-l'], { throwOnError: true }) // [!code ++]
 ```
 
 ## `nanoexec`
@@ -24,13 +24,13 @@ If you prefer a very thin wrapper over `child_process.spawn` (including full spa
 
 Example:
 
-```diff
-- import { execa } from 'execa'
-+ import exec from 'nanoexec'
+```ts
+import { execa } from 'execa' // [!code --]
+import exec from 'nanoexec' // [!code ++]
 
-- const { stdout } = await execa('echo', ['example'])
-+ const res = await exec('echo', ['example'])
-+ const stdout = res.stdout.toString('utf8')
+const { stdout } = await execa('echo', ['example']) // [!code --]
+const res = await exec('echo', ['example']) // [!code ++]
+const stdout = res.stdout.toString('utf8') // [!code ++]
 ```
 
 ## Bun
@@ -39,10 +39,10 @@ If you’re on Bun, its built-in [`$`](https://bun.com/reference/bun/$) template
 
 Example:
 
-```diff
-- import { $ } from 'execa'
-+ import { $ } from 'bun'
+```ts
+import { $ } from 'execa' // [!code --]
+import { $ } from 'bun' // [!code ++]
 
-- const { stdout } = await $`echo "Hello"`
-+ const stdout = await $`echo "Hello"`.text()
+const { stdout } = await $`echo "Hello"` // [!code --]
+const stdout = await $`echo "Hello"`.text() // [!code ++]
 ```

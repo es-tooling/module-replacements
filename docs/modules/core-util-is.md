@@ -10,10 +10,10 @@ description: Native Node.js alternatives to the core-util-is package
 
 Example:
 
-```diff
-- import * as cui from 'core-util-is'
-+ import { types } from 'node:util'
+```ts
+import * as cui from 'core-util-is' // [!code --]
+import { types } from 'node:util' // [!code ++]
 
-- const isDate = cui.isDate(value)
-+ const isDate = types.isDate(value)
+const isDate = cui.isDate(value) // [!code --]
+const isDate = types.isDate(value) // [!code ++]
 ```
