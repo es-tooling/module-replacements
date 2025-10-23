@@ -40,7 +40,7 @@ dotenv.config({ path: '.env' }) // [!code --]
 
 In package.json scripts:
 
-```tson
+```json
 {
   "scripts": {
     "start": "node index.js", // [!code --]
