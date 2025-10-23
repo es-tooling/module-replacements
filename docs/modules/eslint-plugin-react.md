@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to the eslint-plugin-react package for React/JSX-specific linting rules
 ---
+
 # Replacements for `eslint-plugin-react`
 
 ## `@eslint-react/eslint-plugin`

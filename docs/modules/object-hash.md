@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to object-hash for hashing objects and values
 ---
+
 # Replacements for `object-hash`
 
 ## `ohash`

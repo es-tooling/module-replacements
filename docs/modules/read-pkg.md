@@ -1,6 +1,7 @@
 ---
 description: Native Node.js alternatives to the read-pkg package for reading package.json files
 ---
+
 # Replacements for `read-pkg`
 
 ## `pkg-types`

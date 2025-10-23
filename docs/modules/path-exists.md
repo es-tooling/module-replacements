@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to the path-exists package for checking if a path exists
 ---
+
 # Replacements for `path-exists`
 
 ## Node.js (async)

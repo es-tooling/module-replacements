@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to the chalk package for terminal string styling and colors, with notes on browser console support
 ---
+
 # Replacements for `chalk`
 
 ## `styleText` (native)

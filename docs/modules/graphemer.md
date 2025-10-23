@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to the grapheme-splitter and graphemer packages for splitting strings into Unicode grapheme clusters
 ---
+
 # Replacements for `grapheme-splitter` / `graphemer`
 
 ## `Intl.Segmenter` (native)

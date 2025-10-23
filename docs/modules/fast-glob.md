@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to the fast-glob package for fast file system pattern matching
 ---
+
 # Replacements for `fast-glob`
 
 ## `tinyglobby`

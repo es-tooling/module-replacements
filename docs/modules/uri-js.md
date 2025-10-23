@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to uri-js for RFC 3986 URI parsing, resolving, and normalization
 ---
+
 # Replacements for `uri-js`
 
 ## Native `URL`

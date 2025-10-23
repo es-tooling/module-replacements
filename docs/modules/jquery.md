@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to the jQuery library for DOM traversal, events, and AJAX
 ---
+
 # Replacements for `jQuery`
 
 ## You might not need jQuery

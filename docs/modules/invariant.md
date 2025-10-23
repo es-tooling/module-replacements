@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to the invariant package for runtime assertions
 ---
+
 # Replacements for `invariant`
 
 ## `tiny-invariant`

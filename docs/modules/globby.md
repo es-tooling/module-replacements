@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to the globby package for globbing and .gitignore support
 ---
+
 # Replacements for `globby`
 
 ## `tinyglobby`

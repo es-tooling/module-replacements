@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to the ora package for displaying elegant terminal spinners with status indicators
 ---
+
 # Replacements for `ora`
 
 ## `nanospinner`

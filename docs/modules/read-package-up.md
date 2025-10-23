@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to the read-package-up package for reading package.json files up the directory tree
 ---
+
 # Replacements for `read-package-up`
 
 ## `pkg-types`

@@ -1,6 +1,7 @@
 ---
 description: Native Node.js alternatives to the strip-ansi package for removing ANSI escape codes from strings
 ---
+
 # Replacements for `strip-ansi`
 
 ## Node.js

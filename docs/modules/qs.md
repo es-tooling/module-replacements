@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to the qs package for parsing and serializing query strings
 ---
+
 # Replacements for `qs`
 
 ## `URLSearchParams`

@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to the find-pkg package for finding package.json files
 ---
+
 # Replacements for `find-pkg`
 
 ## `empathic`

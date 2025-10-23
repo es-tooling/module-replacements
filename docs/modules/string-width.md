@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to the string-width package for measuring the visual width of a string
 ---
+
 # Replacements for `string-width`
 
 ## `fast-string-width`

@@ -1,6 +1,7 @@
 ---
 description: Modern alternatives to the pkg-dir package for finding package root directories
 ---
+
 # Replacements for `pkg-dir`
 
 ## `empathic`
