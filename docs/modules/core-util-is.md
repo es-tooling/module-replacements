@@ -1,9 +1,6 @@
-<!--
 ---
 description: Native Node.js alternatives to the core-util-is package
 ---
--->
-
 # Replacements for `core-util-is`
 
 ## Node.js util

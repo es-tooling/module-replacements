@@ -1,8 +1,6 @@
-<!--
 ---
 description: Native Node.js alternatives to the builtin-modules package for listing built-in modules
 ---
--->
 
 # Replacements for `builtin-modules`
 

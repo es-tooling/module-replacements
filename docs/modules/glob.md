@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to the glob package for file pattern matching and globbing
 ---
--->
-
 # Replacements for `glob`
 
 ## `tinyglobby`

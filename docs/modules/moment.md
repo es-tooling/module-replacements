@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to moment.js for date manipulation and formatting
 ---
--->
-
 # Replacements for `Moment.js`
 
 ## `Day.js`

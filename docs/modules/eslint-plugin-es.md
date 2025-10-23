@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to the eslint-plugin-es package for ECMAScript feature linting
 ---
--->
-
 # Replacements for `eslint-plugin-es`
 
 ## `eslint-plugin-es-x`

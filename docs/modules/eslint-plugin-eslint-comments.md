@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to the eslint-plugin-eslint-comments package for ESLint comment linting
 ---
--->
-
 # Replacements for `eslint-plugin-eslint-comments`
 
 ## `@eslint-community/eslint-plugin-eslint-comments`

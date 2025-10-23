@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternative to the traverse package to traverse and transform objects by visiting every node on a recursive walk
 ---
--->
-
 # Replacements for `traverse`
 
 ## `neotraverse`

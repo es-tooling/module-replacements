@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern, secure alternatives to the shortid package for generating URL‑friendly unique IDs
 ---
--->
-
 # Replacements for `shortid`
 
 ## `nanoid`

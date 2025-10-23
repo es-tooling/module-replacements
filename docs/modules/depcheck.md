@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to depcheck for analyzing project dependencies and unused code
 ---
--->
-
 # Replacements for `depcheck`
 
 ## `knip`

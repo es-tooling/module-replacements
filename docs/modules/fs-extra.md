@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to the fs-extra package for working with the file system
 ---
--->
-
 # Replacements for `fs-extra`
 
 ## Node.js

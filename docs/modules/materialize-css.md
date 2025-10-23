@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to materialize-css (Materialize) and modern Material Design UI libraries
 ---
--->
-
 # Replacements for `materialize-css`
 
 ## `@materializecss/materialize`

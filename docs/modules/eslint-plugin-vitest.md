@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to the eslint-plugin-vitest package for Vitest-specific linting rules
 ---
--->
-
 # Replacements for `eslint-plugin-vitest`
 
 ## `@vitest/eslint-plugin`

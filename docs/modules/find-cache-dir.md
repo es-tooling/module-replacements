@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to the find-cache-dir package for locating cache directories
 ---
--->
-
 # Replacements for `find-cache-dir`
 
 ## `empathic`

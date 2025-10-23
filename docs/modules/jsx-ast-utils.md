@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to the jsx-ast-utils package for statically analyzing JSX ASTs
 ---
--->
-
 # Replacements for `jsx-ast-utils`
 
 ## `jsx-ast-utils-x`

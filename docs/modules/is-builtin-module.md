@@ -1,9 +1,6 @@
-<!--
 ---
 description: Native Node.js alternatives to the is-builtin-module package for checking built-in modules
 ---
--->
-
 # Replacements for `is-builtin-module`
 
 ## Node.js (since 16.x)

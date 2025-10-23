@@ -1,8 +1,6 @@
-<!--
 ---
 description: Modern alternatives to the axios package for making HTTP requests in browsers and Node.js
 ---
--->
 
 # Replacements for `axios`
 

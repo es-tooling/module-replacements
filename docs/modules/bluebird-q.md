@@ -1,8 +1,6 @@
-<!--
 ---
 description: Modern alternatives to the Bluebird and Q Promise libraries for async control flow in JavaScript
 ---
--->
 
 # Replacements for `bluebird` / `q`
 

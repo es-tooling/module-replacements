@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to the eslint-plugin-node package for Node.js-specific linting rules
 ---
--->
-
 # Replacements for `eslint-plugin-node`
 
 ## `eslint-plugin-n`

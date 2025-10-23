@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to the find-file-up package for finding files by walking up parent directories
 ---
--->
-
 # Replacements for `find-file-up`
 
 ## `empathic`

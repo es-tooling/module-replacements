@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to the ez-spawn package for spawning child processes
 ---
--->
-
 # Replacements for `@jsdevtools/ez-spawn`
 
 ## `tinyexec`

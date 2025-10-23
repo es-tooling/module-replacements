@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to the sort-object package for sorting object keys
 ---
--->
-
 # Replacements for `sort-object`
 
 ## JavaScript APIs (`Object.keys` + `Array.sort`)

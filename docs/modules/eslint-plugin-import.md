@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternative to eslint-plugin-import, which helps with linting of ES6+ import/export syntax
 ---
--->
-
 # Replacements for `eslint-plugin-import`
 
 ## `eslint-plugin-import-x`

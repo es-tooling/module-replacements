@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to lint-staged for running commands on staged Git files
 ---
--->
-
 # Replacements for `lint-staged`
 
 ## `nano-staged`

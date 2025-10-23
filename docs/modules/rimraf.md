@@ -1,9 +1,6 @@
-<!--
 ---
 description: Native Node.js alternatives to the rimraf package for recursive directory removal
 ---
--->
-
 # Replacements for `rimraf`
 
 ## Node.js

@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to the mkdirp and make-dir packages for recursively creating directories in Node.js
 ---
--->
-
 # Replacements for `mkdirp` / `make-dir`
 
 ## Node.js (since v10.12.0)

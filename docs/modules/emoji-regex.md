@@ -1,9 +1,6 @@
-<!--
 ---
 description: Modern alternatives to the emoji-regex package for emoji detection and matching
 ---
--->
-
 # Replacements for `emoji-regex`
 
 ## `emoji-regex-xs`
