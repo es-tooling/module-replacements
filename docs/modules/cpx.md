@@ -19,7 +19,7 @@ cpx "src/**/*.{html,png,jpg}" app --watch
 Node API replacement:
 
 <!-- eslint-skip -->
-```js
+```ts
 const cpx = require('cpx')   // [!code --]
 const cpx = require('cpx2')  // [!code ++]
 

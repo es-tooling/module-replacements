@@ -81,7 +81,7 @@ While these libraries are primarily designed for terminal output, some projects 
 
 Following [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/API/console#styling_console_output), the native approach is `%c` directive in `console.log`:
 
-```js
+```ts
 console.log(
   'Hello %ce%c1%c8%ce',
   'color: #ec8f5e;',

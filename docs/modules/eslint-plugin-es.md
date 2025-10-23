@@ -8,7 +8,7 @@ description: Modern alternatives to the eslint-plugin-es package for ECMAScript 
 
 [eslint-plugin-es-x](https://github.com/eslint-community/eslint-plugin-es-x) is a direct fork which is actively maintained. It has new features, bugfixes and updated dependencies.
 
-```js
+```ts
 import { FlatCompat } from '@eslint/eslintrc' // [!code --]
 import pluginES from 'eslint-plugin-es' // [!code --]
 import pluginESx from 'eslint-plugin-es-x' // [!code ++]
@@ -38,7 +38,7 @@ export default [
 
 If you're using a legacy config format:
 
-```js
+```ts
 module.exports = {
   extends: [
     'eslint:recommended',

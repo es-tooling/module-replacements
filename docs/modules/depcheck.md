@@ -10,7 +10,7 @@ description: Modern alternatives to depcheck for analyzing project dependencies 
 
 Example:
 
-```json
+```tson
 {
   "$schema": "https://unpkg.com/knip@5/schema.json",
   "ignoreDependencies": ["@types/*", "eslint-*"]

@@ -10,7 +10,7 @@ description: Modern alternative to eslint-plugin-import, which helps with lintin
 
 ### Flat config
 
-```js
+```ts
 import importPlugin from 'eslint-plugin-import' // [!code --]
 import { createNodeResolver, importX } from 'eslint-plugin-import-x' // [!code ++]
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript' // [!code ++]
@@ -35,7 +35,7 @@ export default [
 
 ### Legacy config
 
-```js
+```ts
 module.exports = {
   extends: [
     'eslint:recommended',

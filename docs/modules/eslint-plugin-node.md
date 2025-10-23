@@ -8,7 +8,7 @@ description: Modern alternatives to the eslint-plugin-node package for Node.js-s
 
 [`eslint-plugin-n`](https://github.com/eslint-community/eslint-plugin-n) is a direct fork which is actively maintained. It has new features, bugfixes and updated dependencies.
 
-```js
+```ts
 import nPlugin from 'eslint-plugin-n' // [!code ++]
 import nodePlugin from 'eslint-plugin-node' // [!code --]
 
@@ -31,7 +31,7 @@ export default [
 
 If you're using a legacy config format:
 
-```js
+```ts
 module.exports = {
   extends: [
     'eslint:recommended',
