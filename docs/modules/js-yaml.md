@@ -8,6 +8,8 @@ description: Modern alternatives to js-yaml for YAML parsing and stringifying
 
 [`yaml`](https://github.com/eemeli/yaml) is a well maintained YAML 1.2/1.1 parser/stringifier with better spec compliance, comment/AST support, and no deps.
 
+Parse (load):
+
 ```diff
 - import yaml from 'js-yaml'
 + import { parse } from 'yaml'
