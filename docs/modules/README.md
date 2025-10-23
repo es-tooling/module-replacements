@@ -21,7 +21,7 @@ ESLint plugin.
 - [`buffer-equals`](./buffer-equals.md)
 - [`builtin-modules`](./builtin-modules.md)
 - [`chalk`](./chalk.md)
-| [`core-util-is`](./core-util-is.md) | :x: |
+| [`core-util-is`](./core-util-is.md)
 - [`cpx`](./cpx.md)
 - [`deep-equal`](./deep-equal.md)
 - [`depcheck`](./depcheck.md)
