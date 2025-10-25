@@ -72,3 +72,17 @@ find.file( // [!code ++]
   { last: '/some/dir' }, // [!code ++]
 )
 ```
+
+## `pkg-types`
+
+[`pkg-types`](https://github.com/unjs/pkg-types) provides utilities for reading and writing package.json, tsconfig.json, and other configuration files with TypeScript support.
+
+```ts
+import { findUp } from 'find-up' // [!code --]
+import { readPackage } from 'read-pkg' // [!code --]
+import { readPackageJSON } from 'pkg-types' // [!code ++]
+
+const packagePath = await findUp('package.json') // [!code --]
+const packageJson = await readPackage({ cwd: packagePath }) // [!code --]
+const packageJson = await readPackageJSON() // [!code ++]
+```
