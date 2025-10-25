@@ -35,7 +35,6 @@ const tempDir = await Deno.makeTempDir({ prefix: 'foo-' }) // [!code ++]
 import { temporaryFile } from 'tempy' // [!code --]
 
 const tempFile = temporaryFile({ extension: 'txt' }) // [!code --]
-
 const tempFile = await Deno.makeTempFile({ suffix: '.txt' }) // [!code ++]
 ```
 
