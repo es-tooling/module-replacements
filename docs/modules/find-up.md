@@ -79,10 +79,8 @@ find.file( // [!code ++]
 
 ```ts
 import { findUp } from 'find-up' // [!code --]
-import { readPackage } from 'read-pkg' // [!code --]
 import { readPackageJSON } from 'pkg-types' // [!code ++]
 
 const packagePath = await findUp('package.json') // [!code --]
-const packageJson = await readPackage({ cwd: packagePath }) // [!code --]
 const packageJson = await readPackageJSON() // [!code ++]
 ```
