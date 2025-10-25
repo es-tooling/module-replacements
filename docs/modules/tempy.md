@@ -28,7 +28,6 @@ Deno provides built-in [`Deno.makeTempDir`](https://docs.deno.com/api/deno/~/Den
 import { temporaryDirectory } from 'tempy' // [!code --]
 
 const tempDir = temporaryDirectory({ prefix: 'foo-' }) // [!code --]
-
 const tempDir = await Deno.makeTempDir({ prefix: 'foo-' }) // [!code ++]
 ```
 
