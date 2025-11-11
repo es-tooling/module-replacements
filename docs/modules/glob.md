@@ -1,37 +1,69 @@
-# Globbing
+---
+description: Modern alternatives to the glob package for file pattern matching and globbing
+---
 
-Many glob libraries are bloated and have lighter and faster alternatives.
+# Replacements for `glob`
 
-# Alternatives
+## `tinyglobby`
 
-## fdir
+[`tinyglobby`](https://github.com/SuperchupuDev/tinyglobby) provides a similar API.
 
-`fdir` is a very fast directory crawler that can achieve the same goals, despite having
-a vastly different API. If you don't use user-provided glob patterns, you probably don't
-even need to use globs with this package. It can be combined with `picomatch` if you do need them.
+Example:
 
-[Project Page](https://github.com/thecodrr/fdir)
+```ts
+import { glob } from 'glob' // [!code --]
+import { glob } from 'tinyglobby' // [!code ++]
 
-[npm](https://npmjs.com/package/fdir)
+const files = await glob('**/*.ts')
+```
 
-## Node.js (since v22.x)
+Most options available to `glob` are available in `tinyglobby`, read more at the [tinyglobby documentation](https://superchupu.dev/tinyglobby/documentation).
 
-Node.js v22 and up supports the [`fs.glob`](https://nodejs.org/api/fs.html#fspromisesglobpattern-options)
-function. It works as a zero-dependency solution.
+## `fs.glob` (native, since Node 22.x)
 
-## tinyglobby
+[`fs.glob`](https://nodejs.org/api/fs.html#fspromisesglobpattern-options) is built into modern versions of Node.
 
-`tinyglobby` can be used as an alternative to `globby` and `fast-glob`. It uses `fdir` and `picomatch`
-under the hood.
+Example:
 
-`fast-glob` is a library that presents custom behavior of negated patterns no other glob libraries have.
+<!-- eslint-skip -->
+```ts
+import { glob } from 'glob' // [!code --]
+import { glob } from 'node:fs/promises' // [!code ++]
 
-`globby` wraps around it to add even more [default behaviors](https://github.com/sindresorhus/globby#features)
-that are not straightforward to replace.
+const files = await glob('src/**/*.ts', { // [!code --]
+const files = await Array.fromAsync(glob('src/**/*.ts', { // [!code ++]
+  cwd,
+}) // [!code --]
+})) // [!code ++]
+```
 
-`tinyglobby` doesn't have all options but it's a good replacement if you rely on these behaviors,
-or you want to continue using a similar API to existing libraries.
+You can also iterate over the results asynchronously:
 
-[Project Page](https://github.com/SuperchupuDev/tinyglobby)
+```ts
+for await (const result of glob('src/**/*.ts', { cwd })) {
+  // result is an individual path
+  console.log(result)
+}
+```
 
-[npm](https://npmjs.com/package/tinyglobby)
+## `fdir`
+
+[`fdir`](https://github.com/thecodrr/fdir/) offers similar functionality but through a different API (and `tinyglobby` is actually built on top of it).
+
+Example:
+
+<!-- eslint-skip -->
+```ts
+import { fdir } from 'fdir' // [!code ++]
+import { glob } from 'glob' // [!code --]
+
+const files = new fdir() // [!code ++]
+  .withBasePath() // [!code ++]
+  .glob('src/**/*.ts') // [!code ++]
+  .crawl(cwd) // [!code ++]
+  .withPromise() // [!code ++]
+const files = await glob('src/**/*.ts', { // [!code --]
+  cwd, // [!code --]
+  maxDepth: 6 // [!code --]
+}) // [!code --]
+```

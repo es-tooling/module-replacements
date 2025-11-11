@@ -3,7 +3,7 @@
     {
       "type": "documented",
       "moduleName": "@jsdevtools/ez-spawn",
-      "docPath": "process-exec",
+      "docPath": "ez-spawn",
       "category": "preferred"
     },
     {
@@ -39,13 +39,13 @@
     {
       "type": "documented",
       "moduleName": "buffer-equals",
-      "docPath": "buffer-equal",
+      "docPath": "buffer-equals",
       "category": "preferred"
     },
     {
       "type": "documented",
       "moduleName": "builtin-modules",
-      "docPath": "is-builtin-module",
+      "docPath": "builtin-modules",
       "category": "preferred"
     },
     {
@@ -58,6 +58,12 @@
       "type": "documented",
       "moduleName": "cli-color",
       "docPath": "chalk",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "core-util-is",
+      "docPath": "core-util-is",
       "category": "preferred"
     },
     {
@@ -141,7 +147,13 @@
     {
       "type": "documented",
       "moduleName": "execa",
-      "docPath": "process-exec",
+      "docPath": "execa",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "ez-spawn",
+      "docPath": "ez-spawn",
       "category": "preferred"
     },
     {
@@ -159,25 +171,31 @@
     {
       "type": "documented",
       "moduleName": "fast-glob",
-      "docPath": "glob",
+      "docPath": "fast-glob",
       "category": "preferred"
     },
     {
       "type": "documented",
       "moduleName": "find-cache-dir",
-      "docPath": "find-up",
+      "docPath": "find-cache-dir",
       "category": "preferred"
     },
     {
       "type": "documented",
       "moduleName": "find-cache-directory",
-      "docPath": "find-up",
+      "docPath": "find-cache-directory",
       "category": "preferred"
     },
     {
       "type": "documented",
       "moduleName": "find-file-up",
-      "docPath": "find-up",
+      "docPath": "find-file-up",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "find-pkg",
+      "docPath": "find-pkg",
       "category": "preferred"
     },
     {
@@ -207,7 +225,7 @@
     {
       "type": "documented",
       "moduleName": "globby",
-      "docPath": "glob",
+      "docPath": "globby",
       "category": "preferred"
     },
     {
@@ -219,7 +237,7 @@
     {
       "type": "documented",
       "moduleName": "graphemer",
-      "docPath": "grapheme",
+      "docPath": "graphemer",
       "category": "preferred"
     },
     {
@@ -2211,7 +2229,7 @@
     {
       "type": "documented",
       "moduleName": "moment",
-      "docPath": "momentjs",
+      "docPath": "moment",
       "category": "preferred"
     },
     {
@@ -2252,6 +2270,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "pkg-dir",
+      "docPath": "pkg-dir",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "pkg-up",
       "docPath": "find-up",
       "category": "preferred"
@@ -2271,19 +2295,19 @@
     {
       "type": "documented",
       "moduleName": "read-package-up",
-      "docPath": "find-up",
+      "docPath": "read-package-up",
       "category": "preferred"
     },
     {
       "type": "documented",
       "moduleName": "read-pkg",
-      "docPath": "find-up",
+      "docPath": "read-pkg",
       "category": "preferred"
     },
     {
       "type": "documented",
       "moduleName": "read-pkg-up",
-      "docPath": "find-up",
+      "docPath": "read-pkg-up",
       "category": "preferred"
     },
     {

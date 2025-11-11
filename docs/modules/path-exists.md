@@ -1,31 +1,43 @@
-# path-exists
+---
+description: Modern alternatives to the path-exists package for checking if a path exists
+---
 
-`path-exists` is a simple utility that can be replaced with platform-provided APIs.
+# Replacements for `path-exists`
 
-# Alternatives
+## Node.js (async)
 
-## Node.js
+Use [`fs/promises.access`](https://nodejs.org/docs/latest/api/fs.html#fspromisesaccesspath-mode) and return a boolean.
 
-Added in v0.1.21, `fs.existsSync` can be used to check if a path exists. It is synchronous and returns a boolean.
+```ts
+import pathExists from 'path-exists' // [!code --]
+import { access } from 'node:fs/promises' // [!code ++]
 
-```js
-import { existsSync } from 'node:fs';
-
-if (existsSync('/etc/passwd'))
-  console.log('The path exists.');
+const exists = await pathExists('/etc/passwd') // [!code --]
+const exists = await access('/etc/passwd').then(() => true, () => false) // [!code ++]
 ```
 
-[documentation](https://nodejs.org/docs/latest/api/fs.html#fsexistssyncpath)
+## Node.js (sync)
+
+Added in v0.1.21: synchronous path/file existence check via [`fs.existsSync`](https://nodejs.org/docs/latest/api/fs.html#fsexistssyncpath).
+
+```ts
+import pathExists from 'path-exists' // [!code --]
+import { existsSync } from 'node:fs' // [!code ++]
+
+if (await pathExists('/etc/passwd')) // [!code --]
+if (existsSync('/etc/passwd')) // [!code ++]
+  console.log('The path exists.')
+```
 
 ## Bun
 
-The `Bun.file()` function accepts a path and returns a BunFile instance.
+[`Bun.file()`](https://bun.sh/reference/bun/BunFile) returns a BunFile with an `.exists()` method.
 
-````ts
-const path = "/path/to/package.json";
-const file = Bun.file(path);
+```ts
+import pathExists from 'path-exists' // [!code --]
 
-await file.exists(); // boolean;
-````
-
-[documentation](https://bun.sh/guides/read-file/exists)
+const path = '/path/to/package.json'
+const exists = await pathExists(path) // [!code --]
+const file = Bun.file(path) // [!code ++]
+const exists = await file.exists() // boolean [!code ++]
+```

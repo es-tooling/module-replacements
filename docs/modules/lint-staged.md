@@ -1,11 +1,26 @@
-# lint-staged
+---
+description: Modern alternatives to lint-staged for running commands on staged Git files
+---
 
-[lint-staged](https://github.com/lint-staged/lint-staged) can be replaced with smaller and faster alternatives
+# Replacements for `lint-staged`
 
-# Replacements
+## `nano-staged`
 
-## nano-staged
+[`nano-staged`](https://www.npmjs.com/package/nano-staged) is a tiny pre-commit runner for staged (and more) files; much smaller and faster than `lint-staged`, with a simple config.
 
-[nano-staged](https://github.com/usmanyunusov/nano-staged) offers the same API while being much smaller and slighty faster
+package.json config:
 
-[Project Page](https://github.com/usmanyunusov/nano-staged)[npm](https://www.npmjs.com/package/nano-staged)
+<!-- eslint-skip -->
+```json
+{
+  "lint-staged": { // [!code --]
+  "nano-staged": { // [!code ++]
+    "*.{js,ts}": ["prettier --write"]
+  },
+}
+```
+
+> [!NOTE]
+> Differences to be aware of:
+> - `lint-staged` has advanced features like backup stashing, partial-staging handling, per-directory configs in monorepos, and detailed concurrency controls.
+> - `nano-staged` focuses on simplicity and speed. If you rely on `lint-staged`’s stash/partial-staging features, keep using `lint-staged`.
