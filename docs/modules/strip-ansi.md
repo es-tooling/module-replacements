@@ -16,6 +16,9 @@ console.log(stripAnsi('\u001B[4me18e\u001B[0m')) // [!code --]
 console.log(stripVTControlCharacters('\u001B[4me18e\u001B[0m')) // [!code ++]
 ```
 
+> [!NOTE]
+> Due to [a bug](https://github.com/nodejs/node/issues/53697), in older Node versions this utility doesn't handle ANSI hyperlinks correctly. This behavior has been fixed as of NodeJS v22.10.
+
 ## Deno
 
 Deno implements the Node `util` API, and also provides [`util.stripVTControlCharacters`](https://docs.deno.com/api/node/util/~/stripVTControlCharacters). The usage is identical:
