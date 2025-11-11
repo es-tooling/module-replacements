@@ -1,42 +1,42 @@
-# tempy
+---
+description: Modern alternatives to the tempy package for creating temporary files and directories
+---
 
-`tempy` can often be replaced with built-in Node APIs.
+# Replacements for `tempy`
 
-# Alternatives
+## Node.js (since v14.x)
 
-## NodeJS (since v14.x)
+Node.js has the [`fs.mkdtemp`](https://nodejs.org/api/fs.html#fsmkdtempprefix-options-callback) function for creating a unique temporary directory. Directory cleanup can be done by passing `{recursive: true}` to [`fs.rm`](https://nodejs.org/api/fs.html#fsrmpath-options-callback), available in v14.14.0 and up.
 
-Node.js has the `fs.mkdtemp` function for creating a unique temporary directory.
-The [promise-based
-API](https://nodejs.org/api/fs.html#fspromisesmkdtempprefix-options), shown
-below, is available in Node v10.x and up, and can be used in conjunction with
-`os.tmpdir`:
+Example:
 
-```js
-import {mkdtemp, realpath} from 'node:fs/promises';
-import {join} from 'node:path';
-import {tmpdir} from 'node:os';
+```ts
+import { temporaryDirectory } from 'tempy' // [!code --]
+import { mkdtemp, realpath } from 'node:fs/promises' // [!code ++]
+import { join } from 'node:path' // [!code ++]
+import { tmpdir } from 'node:os' // [!code ++]
 
-// MacOS and possibly some other platforms return a symlink from `os.tmpdir`.
-// For some applications, this can cause problems; thus, we use `realpath`.
-const tempDir = await mkdtemp(join(await realpath(tmpdir()), 'foo-'));
+const tempDir = temporaryDirectory() // [!code --]
+const tempDir = await mkdtemp(join(await realpath(tmpdir()), 'foo-')) // [!code ++]
 ```
 
-Directory cleanup can be done by passing `{recursive: true}` to `fs.rm`,
-available in v14.14.0 and up:
+## Deno
 
-```js
-import {rm, writeFile} from 'node:fs/promises';
+Deno provides built-in [`Deno.makeTempDir`](https://docs.deno.com/api/deno/~/Deno.makeTempDir) and [`Deno.makeTempFile`](https://docs.deno.com/api/deno/~/Deno.makeTempFile) for creating unique temporary directories and files in the system temp directory (or a custom `dir`). You can also set `prefix` and `suffix`. Both return the full path and require `--allow-write`.
 
-try {
-    await writeFile(join(tempDir, 'bar.txt'), 'Hello, world!', {encoding: 'utf-8'});
-    await writeFile(join(tempDir, 'baz.txt'), '...', {encoding: 'utf-8'});
-} finally {
-    await rm(tempDir, {recursive: true});
-}
+```ts
+import { temporaryDirectory } from 'tempy' // [!code --]
+
+const tempDir = temporaryDirectory({ prefix: 'foo-' }) // [!code --]
+const tempDir = await Deno.makeTempDir({ prefix: 'foo-' }) // [!code ++]
 ```
 
-# See also
-- [Secure tempfiles in NodeJS without
-  dependencies](https://advancedweb.hu/secure-tempfiles-in-nodejs-without-dependencies/)
-  (Advanced Web Machinery)
+```ts
+import { temporaryFile } from 'tempy' // [!code --]
+
+const tempFile = temporaryFile({ extension: 'txt' }) // [!code --]
+const tempFile = await Deno.makeTempFile({ suffix: '.txt' }) // [!code ++]
+```
+
+> [!NOTE]
+> See also: secure tempfiles in Node.js without dependencies (Advanced Web Machinery): https://advancedweb.hu/secure-tempfiles-in-nodejs-without-dependencies/

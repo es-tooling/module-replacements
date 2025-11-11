@@ -2,6 +2,42 @@
   "moduleReplacements": [
     {
       "type": "simple",
+      "moduleName": "arr-diff",
+      "replacement": "Use a.filter((item) => !b.includes(item))",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "array-last",
+      "replacement": "Use arr.at(-1) or arr[arr.length - 1]",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "array-union",
+      "replacement": "Use [...new Set([...a, ...b])]",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "array-uniq",
+      "replacement": "Use [...new Set(arr)]",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "array-unique",
+      "replacement": "Use [...new Set(arr)]",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "arrify",
+      "replacement": "Use (v == null ? [] : Array.isArray(v) ? v : [v])",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
       "moduleName": "call-bind",
       "replacement": "Use Function.call.bind(v)",
       "category": "micro-utilities"
@@ -26,6 +62,18 @@
     },
     {
       "type": "simple",
+      "moduleName": "filter-obj",
+      "replacement": "Use Object.fromEntries(Object.entries(obj).filter(fn))",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "has-flag",
+      "replacement": "Use process.argv.includes('--flag')",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
       "moduleName": "is-array-buffer",
       "replacement": "Use v instanceof ArrayBuffer, or if cross-realm, use Object.prototype.toString.call(v) === \"[object ArrayBuffer]\"",
       "category": "micro-utilities"
@@ -38,6 +86,12 @@
     },
     {
       "type": "simple",
+      "moduleName": "is-ci",
+      "replacement": "Use Boolean(process.env.CI)",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
       "moduleName": "is-date-object",
       "replacement": "Use v instanceof Date, or if cross-realm, use Object.prototype.toString.call(v) === \"[object Date]\"",
       "category": "micro-utilities"
@@ -46,6 +100,12 @@
       "type": "simple",
       "moduleName": "is-even",
       "replacement": "Use (n % 2) === 0",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "is-finite",
+      "replacement": "Use Number.isFinite(v)",
       "category": "micro-utilities"
     },
     {
@@ -128,8 +188,44 @@
     },
     {
       "type": "simple",
+      "moduleName": "kind-of",
+      "replacement": "Use typeof v, or Object.prototype.toString.call(v) to get the internal [[Class]]",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "lower-case",
+      "replacement": "Use str.toLocaleLowerCase() or str.toLowerCase()",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "repeat-string",
+      "replacement": "Use str.repeat(n)",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "slash",
+      "replacement": "Use path.startsWith('\\\\?\\') ? path : path.replace(/\\/g, '/')",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
       "moduleName": "split-lines",
       "replacement": "Use str.split(/\\r?\\n/)",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "uniq",
+      "replacement": "Use [...new Set(arr)]",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
+      "moduleName": "upper-case",
+      "replacement": "Use str.toLocaleUpperCase() or str.toUpperCase()",
       "category": "micro-utilities"
     }
   ]

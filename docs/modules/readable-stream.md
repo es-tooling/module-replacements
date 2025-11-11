@@ -1,17 +1,32 @@
-# readable-stream
+---
+description: Modern alternatives to the readable-stream package for working with streaming data in Node.js
+---
 
-[`readable-stream`](https://www.npmjs.com/package/readable-stream) is a mirror of the NodeJS `stream` module which also works in the browser.
+# Replacements for `readable-stream`
 
-# Alternatives
+[`readable-stream`](https://www.npmjs.com/package/readable-stream) mirrors Node’s core streams and works in browsers. In most cases, prefer native options.
 
-## NodeJS (since v0.9.4)
+## Node.js (since v0.9.4)
 
-If your NodeJS version is recent it is better to directly use [`stream`](https://nodejs.org/api/stream.html).
+Use the built-in `stream` module ([Node Streams docs](https://nodejs.org/api/stream.html)).
 
-## Streams API (Browsers and NodeJS 16.5.0)
+```ts
+import { Duplex, Readable, Transform, Writable } from 'readable-stream' // [!code --]
+import { Duplex, Readable, Transform, Writable } from 'node:stream' // [!code ++]
+```
 
-The [Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API) is a way to have Readable, Writable and Transform streams natively in your browser.
+## Streams API (Browsers and Node.js 16.5.0+)
 
-On NodeJS this API is available as a global since NodeJS 18.0.0, it needed to be imported from `stream/web` before.
+Use the [Web Streams API (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API) in browsers and modern Node. It’s global in Node 18+ ([Node Web Streams docs](https://nodejs.org/api/webstreams.html)); on 16.5–17.x import from `stream/web` ([details](https://nodejs.org/api/webstreams.html#streamweb-the-web-streams-api)). Interop with Node streams is available via [Readable.toWeb](https://nodejs.org/api/stream.html#streamreadabletowebstreamreadable-options) and [Writable.fromWeb](https://nodejs.org/api/stream.html#streamwritablefromwebwritablestream-options).
 
-WebStreams are (experimentally) interoperable with NodeJS streams using [`stream.Readable.toWeb`](https://nodejs.org/api/stream.html#streamreadabletowebstreamreadable-options), [`stream.Writable.fromWeb`](https://nodejs.org/api/stream.html#streamwritablefromwebwritablestream-options), and [`stream.Writable.toWeb`](https://nodejs.org/api/stream.html#streamwritabletowebstreamwritable)
+Example: convert a Web ReadableStream (from fetch) to a Node stream and pipe it to a file.
+
+```ts
+import { Readable } from 'node:stream'
+import { pipeline } from 'node:stream/promises'
+import { createWriteStream } from 'node:fs'
+
+const res = await fetch('https://example.com/data.txt') // Web ReadableStream
+const nodeReadable = Readable.fromWeb(res.body)
+await pipeline(nodeReadable, createWriteStream('data.txt'))
+```

@@ -1,21 +1,22 @@
-# buf-compare
+---
+description: Native Node.js alternatives to the buf-compare package for buffer comparison
+---
 
-[`buf-compare`](https://github.com/sindresorhus/buf-compare) recommends that you switch to native `Buffer.compare()` which has been available since Node.js v0.12.0
+# Replacements for `buf-compare`
 
-# Alternatives
+## `Buffer.compare` (native)
 
-## NodeJS
+`Buffer.compare` is a native method which achieves the same result as `buf-compare`, available since Node v0.11.13.
 
-```js
-import {Buffer} from 'node:buffer';
+Example:
 
-const buf1 = Buffer.from('1234');
-const buf2 = Buffer.from('0123');
-const arr = [buf1, buf2];
+```ts
+import { Buffer } from 'node:buffer'
+import bufCompare from 'buf-compare' // [!code --]
 
-console.log(arr.sort(Buffer.compare));
-// Prints: [ <Buffer 30 31 32 33>, <Buffer 31 32 33 34> ]
-// (This result is equal to: [buf2, buf1].)
+const buf1 = Buffer.from('303')
+const buf2 = Buffer.from('808')
+
+bufCompare(buf1, buf2) // [!code --]
+Buffer.compare(buf1, buf2) // [!code ++]
 ```
-
-[Node.js Docs](https://nodejs.org/api/buffer.html#static-method-buffercomparebuf1-buf2)

@@ -1,37 +1,42 @@
-# ora
+---
+description: Modern alternatives to the ora package for displaying elegant terminal spinners with status indicators
+---
 
-If you don't need to customize CLI spinners, `ora` can be replaced with leaner alternatives.
+# Replacements for `ora`
 
-# Alternatives
+## `nanospinner`
 
-## nanospinner
+[`nanospinner`](https://github.com/usmanyunusov/nanospinner) provides simple start/success/error/warning methods with one dependency (`picocolors`).
 
-`nanospinner` is a simple and tiny terminal spinner library for NodeJS
+```ts
+import ora from 'ora' // [!code --]
+import { createSpinner } from 'nanospinner' // [!code ++]
 
-[Project Page](https://github.com/usmanyunusov/nanospinner)
+const spinner = ora('Loading...').start() // [!code --]
+const spinner = createSpinner('Loading...').start() // [!code ++]
 
-[npm](https://www.npmjs.com/package/nanospinner)
+spinner.succeed('Done!') // [!code --]
+spinner.success('Done!') // [!code ++]
 
-## picospinner
+spinner.fail('Error!') // [!code --]
+spinner.error('Error!') // [!code ++]
+```
 
-`picospinner` is another tiny terminal spinner library for NodeJS, maintained by the [tinylibs](https://github.com/tinylibs) folks.
+## `picospinner`
 
-[Project Page](https://github.com/tinylibs/picospinner)
+[`picospinner`](https://github.com/tinylibs/picospinner) has zero dependencies with support for custom symbols, frames, and colors through Node.js built-in styling.
 
-[npm](https://www.npmjs.com/package/picospinner)
+```ts
+import ora from 'ora' // [!code --]
+import { Spinner } from 'picospinner' // [!code ++]
 
-## tiny-spinner
+const spinner = ora('Loading...').start() // [!code --]
+const spinner = new Spinner('Loading...') // [!code ++]
+spinner.start() // [!code ++]
+```
 
-`tiny-spinner` is another tiny terminal spinner library for NodeJS
+If you want to customize the color of the spinner, you can specify this when creating an instance:
 
-[Project Page](https://github.com/fabiospampinato/tiny-spinner)
-
-[npm](https://www.npmjs.com/package/tiny-spinner)
-
-## yocto-spinner
-
-`yocto-spinner` is a tiny terminal spinner for NodeJS by the same author as `ora`
-
-[Project Page](https://github.com/sindresorhus/yocto-spinner)
-
-[npm](https://www.npmjs.com/package/yocto-spinner)
+```ts
+const spinner = new Spinner('Loading...', { colors: { spinner: 'yellow' } })
+```

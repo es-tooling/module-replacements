@@ -1,55 +1,50 @@
-# rimraf
+---
+description: Native Node.js alternatives to the rimraf package for recursive directory removal
+---
 
-`rimraf` pulls in many transitive dependencies, and can often be replaced with
-built-in Node APIs.
+# Replacements for `rimraf`
 
-# Alternatives
+## Node.js
 
-## NodeJS (since v12.x / v14.x)
+Node.js v14.14.0 and above provide a native alternative: [`fs.rm`](https://nodejs.org/api/fs.html#fspromisesrmpath-options). It supports recursive deletion and works as a direct replacement.
 
-Node.js v14.14 and up supports [the `fs.rm`
-function](https://nodejs.org/api/fs.html#fspromisesrmpath-options), which allows
-files and directories to be deleted recursively:
+```ts
+import rimraf from 'rimraf' // [!code --]
+import { rm } from 'node:fs/promises' // [!code ++]
 
-```js
-import { rm } from 'node:fs/promises';
-import { rmSync } from 'node:fs';
-
-// This will throw an error if the path does not exist.
-await rm(path, { recursive: true });
-rmSync(path, { recursive: true });
-
-// This will do nothing if the path does not exist.
-await rm(path, { recursive: true, force: true });
-rmSync(path, { recursive: true, force: true });
+await rimraf('./dist') // [!code --]
+await rm('./dist', { recursive: true, force: true }) // [!code ++]
 ```
 
-If you need to support Node 12, you can [use
-`fs.rmdir`](https://nodejs.org/api/fs.html#fspromisesrmdirpath-options), which
-also has the `recursive` option available since Node v12.10, although it will
-print a deprecation message in Node v14 and up:
+## Node.js (before v14.14.0)
 
-```js
-const { rmdir } = require('fs').promises;
-const { rmdirSync } = require('fs');
+If you need to support Node.js 12 up to 14.13, you can use [`fs.rmdir`](https://nodejs.org/api/fs.html#fsrmdirpath-options-callback) with the recursive option. This was added in Node v12.10.0, though it’s deprecated as of Node v14.
 
-async function main() {
-    await rmdir(path, { recursive: true });
+```ts
+import rimraf from 'rimraf' // [!code --]
+import { rmdir } from 'node:fs/promises' // [!code ++]
+
+await rimraf('./dist') // [!code --]
+await rmdir('./dist', { recursive: true }) // [!code ++]
+```
+
+## CLI usage
+
+To replace `rimraf` inside npm scripts, you can run Node directly in eval mode:
+
+```sh
+node -e "require('fs').rmSync('./dist', { recursive: true, force: true, maxRetries: process.platform === 'win32' ? 10 : 0 })"
+```
+
+## `premove`
+
+If you are on an older Node.js version (before v12.10) or you specifically need a CLI replacement, you can use [`premove`](https://github.com/lukeed/premove). It provides both an API and a CLI and works on Node.js v8 and newer.
+
+```json
+{
+  "scripts": {
+    "clean": "rimraf lib", // [!code --]
+    "clean": "premove lib" // [!code ++]
+  }
 }
-
-rmdirSync(path, { recursive: true });
-
 ```
-
-For command-line usage, such as npm scripts, you can run Node in eval mode:
-```bash
-node -e "fs.rmSync('./foo', { recursive: true, force: true })"
-```
-
-## premove (Node 8.x and up)
-
-For command-line usage across runtimes (to support developers who use
-alternative runtimes and may not have the `node` command available), the
-[`premove`](https://www.npmjs.com/package/premove) package includes a CLI.
-
-`premove` also supports older versions of Node (v8.x and up) than `fs.rm` does.

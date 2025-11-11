@@ -1,11 +1,22 @@
-# `buffer-equal`/`buffer-equals`
+---
+description: Native Node.js alternatives to the buffer-equal package for buffer equality checks
+---
 
-[`buffer-equal`](https://www.npmjs.com/package/buffer-equal) and [`buffer-equals`](https://www.npmjs.com/package/buffer-equals) recommends that you switch away from them to native `Buffer.prototype.equals` which has been available since Node.js v0.11.13
+# Replacements for `buffer-equal`
 
-# Alternative(s)
+## `Buffer#equals` (native)
 
-## Native `Buffer.prototype.equals`
+Buffers have an `equals` method since Node 0.12.
 
-For most cases, native Node.js `Buffer.prototype.equals` is enough.
+Example:
 
-[NodeJS Docs](https://nodejs.org/api/buffer.html#bufequalsotherbuffer)
+```ts
+import { Buffer } from 'node:buffer'
+import bufferEqual from 'buffer-equal' // [!code --]
+
+const buf1 = Buffer.from('303')
+const buf2 = Buffer.from('303')
+
+bufferEqual(buf1, buf2) // [!code --]
+buf1.equals(buf2) // [!code ++]
+```

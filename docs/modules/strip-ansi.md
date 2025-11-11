@@ -1,38 +1,58 @@
-# `strip-ansi`
+---
+description: Native Node.js alternatives to the strip-ansi package for removing ANSI escape codes from strings
+---
 
-[`strip-ansi`](https://www.npmjs.com/package/strip-ansi) is a simple utility function that can be replaced with native APIs.
-
-# Alternatives
+# Replacements for `strip-ansi`
 
 ## Node.js
 
-Added in v16.11.0, `util.stripVTControlCharacters` can be used to strip ANSI escape codes from a string.
+Added in v16.11.0, [util.stripVTControlCharacters](https://nodejs.org/api/util.html#utilstripvtcontrolcharactersstr) can be used to strip ANSI escape codes from a string.
 
-```js
-import { stripVTControlCharacters } from 'node:util';
+```ts
+import stripAnsi from 'strip-ansi' // [!code --]
+import { stripVTControlCharacters } from 'node:util' // [!code ++]
 
-console.log(stripVTControlCharacters('\u001B[4me18e\u001B[0m')); // returns 'e18e'
+console.log(stripAnsi('\u001B[4me18e\u001B[0m')) // [!code --]
+console.log(stripVTControlCharacters('\u001B[4me18e\u001B[0m')) // [!code ++]
 ```
 
-[Documentation](https://nodejs.org/api/util.html#utilstripvtcontrolcharactersstr)
-
 > [!NOTE]
-> Due to [a bug](https://github.com/nodejs/node/issues/53697), this utility doesn't strip control characters from ANSI hyperlinks correctly. This behavior has been fixed as of NodeJS v22.10.
+> Due to [a bug](https://github.com/nodejs/node/issues/53697), in older Node versions this utility doesn't handle ANSI hyperlinks correctly. This behavior has been fixed as of NodeJS v22.10.
 
 ## Deno
 
-Added as a part of Node API, `util.stripVTControlCharacters` can be used to strip ANSI escape codes from a string.
+Deno implements the Node `util` API, and also provides [`util.stripVTControlCharacters`](https://docs.deno.com/api/node/util/~/stripVTControlCharacters). The usage is identical:
 
-```js
-import { stripVTControlCharacters } from 'node:util';
+```ts
+import stripAnsi from 'strip-ansi' // [!code --]
+import { stripVTControlCharacters } from 'node:util' // [!code ++]
 
-console.log(stripVTControlCharacters('\u001B[4me18e\u001B[0m')); // returns 'e18e'
+console.log(stripAnsi('\u001B[4me18e\u001B[0m')) // [!code --]
+console.log(stripVTControlCharacters('\u001B[4me18e\u001B[0m')) // [!code ++]
 ```
-
-[Documentation](https://docs.deno.com/api/node/util/~/stripVTControlCharacters)
 
 ## Bun
 
-Currently, Bun doesn't have a native API for `stripVTControlCharacters` yet.
+### Using Node‑compatible API
 
-[Documentation](https://bun.sh/docs/runtime/nodejs-apis#node-util)
+Bun also implements Node’s [`util.stripVTControlCharacters`](https://bun.sh/reference/node/util/stripVTControlCharacters) through its Node compat layer:
+
+```ts
+import stripAnsi from 'strip-ansi' // [!code --]
+import { stripVTControlCharacters } from 'node:util' // [!code ++]
+
+console.log(stripAnsi('\u001B[1mHello\u001B[0m')) // [!code --]
+console.log(stripVTControlCharacters('\u001B[1mHello\u001B[0m')) // [!code ++]
+```
+
+### Using Bun's native API (>=1.2.21)
+
+Since Bun v1.2.21, you can use the built-in [`Bun.stripANSI`](https://bun.com/blog/release-notes/bun-v1.2.21#bun-stripansi-simd-accelerated-ansi-escape-removal) method.
+
+```ts
+import stripAnsi from 'strip-ansi' // [!code --]
+import { stripANSI } from 'bun' // [!code ++]
+
+console.log(stripAnsi('\u001B[31mHello World\u001B[0m')) // [!code --]
+console.log(Bun.stripANSI('\u001B[31mHello World\u001B[0m')) // [!code ++]
+```

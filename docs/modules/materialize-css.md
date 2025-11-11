@@ -1,19 +1,18 @@
-# materialize-css
+---
+description: Modern alternatives to materialize-css (Materialize) and modern Material Design UI libraries
+---
 
-[Dogfalo/materialize](https://github.com/Dogfalo/materialize) is no longer maintained, but a community fork and other UI library alternatives exist.
+# Replacements for `materialize-css`
 
-# Alternatives
+## `@materializecss/materialize`
 
-## @materializecss/materialize
+[`@materializecss/materialize`](https://github.com/materializecss/materialize) is a community-maintained fork of [`Materialize`](https://github.com/Dogfalo/materialize). Acts as a practical replacement for the original materialize-css package.
 
-[materializecss/materialize](https://github.com/materializecss/materialize) is a community fork which is actively maintained.
+## `@material/web`
 
-[Project Page](https://github.com/materializecss/materialize)
-[npm](https://www.npmjs.com/package/@materializecss/materialize)
+> [!NOTE]
+> The project is currently in maintenance mode pending new maintainers.
 
-## material-web
-
-[Material-web](https://github.com/material-components/material-web) is a modern [web-component](https://developer.mozilla.org/en-US/docs/Web/Web_Components) based library. It uses [Material 3](https://m3.material.io/), the latest version of Google's open-source design system.
+Modern Web Components implementing Material Design 3.
 
 [Project Page](https://github.com/material-components/material-web)
-[npm](https://www.npmjs.com/package/@material/web)
