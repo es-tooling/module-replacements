@@ -1,23 +1,37 @@
-# crypto-js
+---
+description: Modern alternatives to the `crypto-js` package for cryptographic operations
+---
 
-Discontinued JavaScript crypto library; migrate to native runtime crypto APIs.
+# Replacements for `crypto-js`
 
-# Alternatives
+`crypto-js` is no longer actively maintained and has been discontinued since engines now come with this functionality built-in.
 
-## node:crypto (built-in)
+## Node `node:crypto` (built-in)
 
-Node’s official cryptography module; supports hashes/HMAC, AES-GCM, PBKDF2/scrypt, RSA/ECDSA/Ed25519, and secure RNG.
+Node provides a [`node:crypto`](https://nodejs.org/api/crypto.html) module as part of its standard library.
 
-[Documentation Page](https://nodejs.org/api/crypto.html)
+This supports hashes/HMAC, AES-GCM, PBKDF2/scrypt, RSA/ECDSA/Ed25519, and secure RNG.
 
-## Web Crypto API (built-in)
+```ts
+import sha256 from 'crypto-js/sha256'; // [!code --]
+import { createHash } from 'node:crypto'; // [!code ++]
 
-Standards-based cryptography in browsers and modern Node (via crypto.webcrypto); async APIs for AES-GCM, HMAC, PBKDF2/HKDF, RSA/ECDSA, and secure RNG. Notable gaps: no streaming APIs, no MD5/RIPEMD160/SHA‑3, no RC4/3DES/ECB, no scrypt/Argon2 (PBKDF2/HKDF only), limited curves (P‑256/384/521; no Ed25519/Ed448 in browsers).
+const secret = 'abcdefg';
+const hash = sha256(secret).toString(); // [!code --]
+const hash = createHash('sha256') // [!code ++]
+               .update(secret) // [!code ++]
+               .digest('hex'); // [!code ++]
+```
 
-[Documentation Page](https://developer.mozilla.org/docs/Web/API/Web_Crypto_API)
+## Web Crypto API (native)
 
-## Bun built-ins
+The [Web Crypto API](https://developer.mozilla.org/docs/Web/API/Web_Crypto_API) provides native functionality for cryptographic operations in both web browsers and Node.
 
-Bun’s native crypto: Web Crypto-compatible APIs plus streaming hashing via `Bun.CryptoHasher`. Notable gaps: same algorithm surface as Web Crypto (no legacy ciphers; no MD5/RIPEMD160/SHA‑3), use CryptoHasher for streaming digests.
+> [!NOTE]
+> A few legacy algorithms are intentionally omitted for security reasons (e.g. MD5).
 
-[Project Page](https://bun.sh/docs/api/hashing)
+## Bun (built-in)
+
+Bun supports the Web Crypto API natively, and also provides support for streaming hashing via [`Bun.CryptoHasher`](https://bun.sh/docs/api/hashing).
+
+As with the Web Crypto API, many legacy algorithms are intentionally omitted for security reasons (e.g. MD5).
