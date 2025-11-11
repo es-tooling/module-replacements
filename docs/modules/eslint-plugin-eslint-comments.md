@@ -1,13 +1,43 @@
-# eslint-plugin-eslint-comments
+---
+description: Modern alternatives to the eslint-plugin-eslint-comments package for ESLint comment linting
+---
 
-`eslint-plugin-eslint-comments` is no longer maintained. Actively maintained alternatives
-exist.
-
-# Alternatives
+# Replacements for `eslint-plugin-eslint-comments`
 
 ## `@eslint-community/eslint-plugin-eslint-comments`
 
-Direct fork which is actively maintained. It has new features, bugfixes and updated dependencies.
+[`@eslint-community/eslint-plugin-eslint-comments`](https://github.com/eslint-community/eslint-plugin-eslint-comments) is the actively maintained successor with updated dependencies, flat config support, and continued development.
 
-[Project Page](https://github.com/eslint-community/eslint-plugin-eslint-comments)
-[npm](https://www.npmjs.com/package/@eslint-community/eslint-plugin-eslint-comments)
+```ts
+import eslintComments from 'eslint-plugin-eslint-comments' // [!code --]
+import commentsCommunity from '@eslint-community/eslint-plugin-eslint-comments/configs' // [!code ++]
+
+export default [
+  commentsCommunity.recommended, // [!code ++]
+  {
+    plugins: {
+      'eslint-comments': eslintComments, // [!code --]
+    },
+    rules: {
+      'eslint-comments/no-unused-disable': 'error', // [!code --]
+      '@eslint-community/eslint-comments/no-unused-disable': 'error', // [!code ++]
+    }
+  }
+]
+```
+
+If you're using a legacy config format:
+
+```ts
+module.exports = {
+  extends: [
+    'eslint:recommended',
+    'plugin:eslint-comments/recommended', // [!code --]
+    'plugin:@eslint-community/eslint-comments/recommended' // [!code ++]
+  ],
+  rules: {
+    'eslint-comments/no-unused-disable': 'error', // [!code --]
+    '@eslint-community/eslint-comments/no-unused-disable': 'error' // [!code ++]
+  }
+}
+```

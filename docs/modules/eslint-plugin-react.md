@@ -1,40 +1,36 @@
-# eslint-plugin-react
+---
+description: Modern alternatives to the eslint-plugin-react package for React/JSX-specific linting rules
+---
 
-`eslint-plugin-react` has a large footprint, lighter alternatives exist.
-
-# Alternatives
+# Replacements for `eslint-plugin-react`
 
 ## `@eslint-react/eslint-plugin`
 
-Not a drop-in replacement but a feature rich alternative with many of the same rules.
+[`@eslint-react/eslint-plugin`](https://github.com/Rel1cx/eslint-react) is not a drop-in replacement, but a feature‑rich alternative that covers many of the same (and additional) rules.
 
-[Project Page](https://github.com/Rel1cx/eslint-react)
-[npm](https://www.npmjs.com/package/@eslint-react/eslint-plugin)
+Flat config example:
 
-## `@stylistic/eslint-plugin-jsx`
+```ts
+import eslintReact from '@eslint-react/eslint-plugin' // [!code ++]
+import reactPlugin from 'eslint-plugin-react' // [!code --]
 
-The following stylistic rules in `eslint-plugin-react` can be replaced by the same rules in `@stylistic/eslint-plugin-jsx`:
+export default [
+  {
+    files: ['**/*.{jsx,tsx}'],
+    plugins: {
+      'react': reactPlugin, // [!code --]
+      '@eslint-react': eslintReact, // [!code ++]
+    },
+    rules: {
+      ...reactPlugin.configs.recommended.rules, // [!code --]
+      ...eslintReact.configs.recommended.rules, // [!code ++]
 
-- `react/jsx-child-element-spacing`
-- `react/jsx-closing-bracket-location`
-- `react/jsx-closing-tag-location`
-- `react/jsx-curly-brace-presence`
-- `react/jsx-curly-newline`
-- `react/jsx-curly-spacing`
-- `react/jsx-equals-spacing`
-- `react/jsx-first-prop-new-line`
-- `react/jsx-indent-props`
-- `react/jsx-indent`
-- `react/jsx-max-props-per-line`
-- `react/jsx-newline`
-- `react/jsx-one-expression-per-line`
-- `react/jsx-pascal-case`
-- `react/jsx-props-no-multi-spaces`
-- `react/jsx-sort-default-props`
-- `react/jsx-sort-props`
-- `react/jsx-space-before-closing`
-- `react/jsx-tag-spacing`
-- `react/jsx-wrap-multilines`
+      'react/no-unknown-property': 'error', // [!code --]
+      '@eslint-react/dom/no-unknown-property': 'error', // [!code ++]
+    },
+  },
+]
+```
 
-[Project Page](https://eslint.style/packages/jsx)
-[npm](https://www.npmjs.com/package/@stylistic/eslint-plugin-jsx)
+> [!NOTE]
+> `@eslint-react/eslint-plugin` is not a drop‑in replacement. Use [their migration guide](https://eslint-react.xyz/docs/migration) to map rules/options and automate changes where possible.

@@ -1,15 +1,26 @@
-# jsx-ast-utils
+---
+description: Modern alternatives to the jsx-ast-utils package for statically analyzing JSX ASTs
+---
 
-[`jsx-ast-utils`](https://github.com/jsx-eslint/jsx-ast-utils) can be replaced with lightweight alternatives
-
-# Alternatives
+# Replacements for `jsx-ast-utils`
 
 ## `jsx-ast-utils-x`
 
-Practically offers similar API while having zero dependency and being much smaller.
+[`jsx-ast-utils-x`](https://github.com/eslinter/jsx-ast-utils-x) is a zero‑dependency alternative to [`jsx-ast-utils`](https://github.com/jsx-eslint/jsx-ast-utils) that aims to maintain API compatibility while reducing package size.
 
-Sample [migration PR](https://github.com/SonarSource/SonarJS/pull/5625) from `eslint-plugin-sonarjs` for reference.
+```ts
+import { hasProp } from 'jsx-ast-utils' // [!code --]
+import { hasProp } from 'jsx-ast-utils-x' // [!code ++]
 
-[Project Page](https://github.com/eslinter/jsx-ast-utils-x)
+import hasProp from 'jsx-ast-utils/hasProp' // [!code --]
+import hasProp from 'jsx-ast-utils-x/hasProp' // [!code ++]
 
-[npm](https://www.npmjs.com/package/jsx-ast-utils-x)
+module.exports = context => ({
+  JSXOpeningElement: (node) => {
+    const onChange = hasProp(node.attributes, 'onChange')
+    if (onChange) {
+      context.report({ node, message: 'No onChange!' })
+    }
+  },
+})
+```
