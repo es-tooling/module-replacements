@@ -1,25 +1,86 @@
-# find-up, read-package-up, read-package, etc.
+---
+description: Modern alternatives to the find-up package for finding files by walking up parent directories
+---
 
-Many of these upwards traversal libraries are overly granular and non-generic.
+# Replacements for `find-up`
 
-We can replace most of them with one upwards traversal library and, sometimes, one file reading library.
+## `empathic`
 
-# Alternatives
+[`empathic`](https://github.com/lukeed/empathic) provides a more generic way to find files and directories upwards.
 
-## empathic
+The main difference is that `empathic` is _synchronous_, so you should no longer `await` the result.
 
-`empathic` can be used to find _any_ file or directory upwards in the file system. It is very fast and very small.
+Example:
 
-[Project Page](https://github.com/lukeed/empathic)
+```ts
+import * as find from 'empathic/find' // [!code ++]
+import { findUp } from 'find-up' // [!code --]
 
-[npm](https://www.npmjs.com/package/empathic)
+await findUp('package.json') // [!code --]
+find.up('package.json') // [!code ++]
+```
 
-## pkg-types
+### `findUpMultiple`
 
-If you need to _read_ a `package.json` into a strong type, you can combine an upwards traversal library with `pkg-types`.
+When finding multiple files, you can use `find.any`:
 
-This library contains functions for reading `package.json` files and returning them as a strong type.
+```ts
+import * as find from 'empathic/find' // [!code ++]
+import { findUpMultiple } from 'find-up' // [!code --]
 
-[Project Page](https://github.com/unjs/pkg-types/)
+const files = await findUpMultiple(['package.json', 'tsconfig.json']) // [!code --]
+const files = find.any(['package.json', 'tsconfig.json']) // [!code ++]
+```
 
-[npm](https://www.npmjs.com/package/pkg-types)
+### Options
+
+#### `type`
+
+The `type` option can be replaced by using the equivalent function.
+
+For example, finding a file:
+
+```ts
+import * as find from 'empathic/find' // [!code ++]
+import { findUp } from 'find-up' // [!code --]
+
+await findUp('package.json', { type: 'file' }) // [!code --]
+find.file('package.json') // [!code ++]
+```
+
+#### `cwd`
+
+This option is supported just the same:
+
+```ts
+find.file('package.json', { cwd })
+```
+
+#### `stopAt`
+
+This option is replaced by `last`:
+
+<!-- eslint-skip -->
+```ts
+import { findUp } from 'find-up' // [!code --]
+import * as find from 'empathic/find' // [!code ++]
+
+await findUp( // [!code --]
+find.file( // [!code ++]
+  'package.json',
+  { stopAt: '/some/dir' }, // [!code --]
+  { last: '/some/dir' }, // [!code ++]
+)
+```
+
+## `pkg-types`
+
+[`pkg-types`](https://github.com/unjs/pkg-types) provides utilities for reading and writing package.json, tsconfig.json, and other configuration files with TypeScript support.
+
+```ts
+import { findUp } from 'find-up' // [!code --]
+import { readPackageJSON } from 'pkg-types' // [!code ++]
+
+const packagePath = await findUp('package.json') // [!code --]
+const packageJson = await readPackageJSON() // [!code ++]
+```

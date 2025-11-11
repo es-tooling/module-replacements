@@ -1,51 +1,27 @@
-# Body-parser
+---
+description: Modern alternatives to the body-parser package for parsing HTTP request bodies in Node.js servers
+---
 
-`body-parser` can be replaced with more modern alternatives which are both lighter and faster.
+# Replacements for `body-parser`
 
-# Alternatives
+## `milliparsec`
 
-## Native Implementation
+[`milliparsec`](https://github.com/tinyhttp/milliparsec) is a lightweight alternative to [`body-parser`](https://github.com/expressjs/body-parser) with a smaller footprint.
 
-For simple use cases, you can implement a minimal body parser in vanilla JavaScript:
+Example:
 
-```js
-const sizeLimit = 10 * 1024; // limit body size to 10kB
-req.body = {};
+```ts
+import bodyParser from 'body-parser' // [!code --]
+import { json, urlencoded } from 'milliparsec' // [!code ++]
+import express from 'express'
 
-await new Promise(function(res, rej) {
-  let buffers = [];
-  let size = 0;
+const app = express()
 
-  // parse each chunk and append them into Buffer array
-  req.on('data', chunk => {
-    size += chunk.length;
-    if (size > sizeLimit) {
-      return rej(new Error('Size limit'));
-    }
+app.use(bodyParser.json()) // [!code --]
+app.use(bodyParser.urlencoded({ extended: true })) // [!code --]
 
-    buffers.push(chunk);
-  });
-
-  req.on('end', () => res(buffers));
-})
-.then(function(buffers) {
-  if (!buffers.length) return;
-
-  try {
-    req.body = JSON.parse(Buffer.concat(buffers).toString());
-  } catch (err) {
-    return Promise.reject(new Error('Invalid JSON: ' + err.message));
-  }
-});
+app.use(json()) // [!code ++]
+app.use(urlencoded()) // [!code ++]
 ```
 
-Do note that the above implementation lacks sophisticated features such as better error handling, timeouts, flexible size limits, etc.
-
-
-## milliparsec
-
-`milliparsec` a modern `body-parser` alternative that supports `async / await`, lighter (8 kB vs 62.6 kB for `body-parser`), and [30% faster](https://github.com/tinyhttp/milliparsec/blob/master/bench/index.md)
-
-[Project Page](https://github.com/tinyhttp/milliparsec)
-[npm](https://www.npmjs.com/package/milliparsec)
-
+For API differences and feature comparison, see the [migration.md](https://github.com/tinyhttp/milliparsec/blob/master/migration.md).

@@ -1,30 +1,34 @@
-# string-width
+---
+description: Modern alternatives to the string-width package for measuring the visual width of a string
+---
 
-`string-width` can be replaced with more modern alternatives which also come with performance and size improvements.
+# Replacements for `string-width`
 
-# Alternatives
+## `fast-string-width`
 
-## fast-string-width
+[`fast-string-width`](https://github.com/fabiospampinato/fast-string-width) is a drop‑in replacement for `string-width` that’s faster and smaller.
 
-Originally a fork of `string-width`, but much faster and smaller.
+```ts
+import stringWidth from 'string-width' // [!code --]
+import stringWidth from 'fast-string-width' // [!code ++]
 
-[Project Page](https://github.com/fabiospampinato/fast-string-width)
-[npm](https://www.npmjs.com/package/fast-string-width)
-
-## Bun API
-
-Since Bun v1.0.29, `stringWidth` is available as a built‑in API:
-
-```js
-import { stringWidth } from "bun";
-
-console.log(stringWidth("abc")); // 3
-console.log(stringWidth("👩‍👩‍👧‍👦")); // 1
-console.log(stringWidth("\u001b[31mhello\u001b[39m")); // 5
-console.log(
-  stringWidth("\u001b[31mhello\u001b[39m", { countAnsiEscapeCodes: false })
-); // 5
+console.log(stringWidth('abc')) // 3
+console.log(stringWidth('👩‍👩‍👧‍👦')) // 1
+console.log(stringWidth('\u001B[31mhello\u001B[39m')) // 5
 ```
 
-[Bun blog announcement](https://bun.com/blog/bun-v1.0.29#bun-stringwidth-6-756x-faster-string-width-replacement)
-[Docs](https://bun.com/reference/bun/stringWidth)
+## Bun API (native)
+
+If you’re on Bun ≥ 1.0.29, you can use the built‑in [`stringWidth`](https://bun.com/reference/bun/stringWidth):
+
+```ts
+import stringWidth from 'string-width' // [!code --]
+import { stringWidth } from 'bun' // [!code ++]
+
+console.log(stringWidth('abc')) // 3
+console.log(stringWidth('👩‍👩‍👧‍👦')) // 1
+console.log(stringWidth('\u001B[31mhello\u001B[39m')) // 5
+console.log(
+  stringWidth('\u001B[31mhello\u001B[39m', { countAnsiEscapeCodes: false })
+) // 5
+```

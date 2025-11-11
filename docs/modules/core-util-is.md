@@ -1,11 +1,19 @@
-# core-util-is
+---
+description: Native Node.js alternatives to the core-util-is package
+---
 
-Legacy Node v0.12-era helpers for util.is* type checks. Unnecessary on modern Node.js.
+# Replacements for `core-util-is`
 
-# Alternatives
+## Node.js util
 
-## node:util types
+[`util.types`](https://nodejs.org/api/util.html#utiltypes) is an official, cross‑realm type checks for built-in objects (Date, RegExp, Error, typed arrays, etc.)
 
-Official, cross‑realm type checks for built-in objects to fully replace core-util-is.
+Example:
 
-[Documentation Page](https://nodejs.org/api/util.html#utiltypes)
+```ts
+import * as cui from 'core-util-is' // [!code --]
+import { types } from 'node:util' // [!code ++]
+
+const isDate = cui.isDate(value) // [!code --]
+const isDate = types.isDate(value) // [!code ++]
+```

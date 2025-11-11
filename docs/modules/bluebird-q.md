@@ -1,18 +1,13 @@
-# `bluebird` / `q`
+---
+description: Modern alternatives to the Bluebird and Q Promise libraries for async control flow in JavaScript
+---
 
-[`bluebird`](https://github.com/petkaantonov/bluebird?tab=readme-ov-file#%EF%B8%8Fnote%EF%B8%8F) and [`q`](https://github.com/kriskowal/q#note) recommends that you switch away from them to native promises.
+# Replacements for `bluebird` / `q`
 
-# Alternatives
+## `Promise` (native)
 
-## Native JavaScript `Promise`
-
-For most cases, native JavaScript `Promise` is enough.
-
-[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+[`bluebird`](https://github.com/petkaantonov/bluebird?tab=readme-ov-file#%EF%B8%8Fnote%EF%B8%8F) and [`q`](https://github.com/kriskowal/q#note) recommend switching away from them to native promises.
 
 ## NativeBird
 
-Ultralight native `Promise` extension compatible with `bluebird` if you need some helpers missed in native JavaScript `Promise`.
-
-[Project Page](https://github.com/doodlewind/nativebird)
-[npm](https://www.npmjs.com/package/nativebird)
+[`NativeBird`](https://github.com/doodlewind/nativebird) is an ultralight native `Promise` extension that provides Bluebird-like helpers if you miss a few conveniences from Bluebird.
