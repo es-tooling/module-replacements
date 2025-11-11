@@ -23,6 +23,7 @@ ESLint plugin.
 - [`chalk`](./chalk.md)
 | [`core-util-is`](./core-util-is.md)
 - [`cpx`](./cpx.md)
+- [`crypto-js`](./crypto-js.md)
 - [`deep-equal`](./deep-equal.md)
 - [`depcheck`](./depcheck.md)
 - [`dot-prop`](./dot-prop.md)
