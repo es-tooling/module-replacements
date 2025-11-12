@@ -11,11 +11,11 @@ description: Modern alternatives to the read-pkg-up package for reading package.
 For example:
 
 ```ts
-import { readPackageJSON } from 'pkg-types' // [!code ++]
 import { readPackageUp } from 'read-pkg-up' // [!code --]
+import { readPackageJSON } from 'pkg-types' // [!code ++]
 
-const packageJson = await readPackageUp() // [!code --]
 const packageJson = await readPackageJSON() // [!code ++]
+const packageJson = await readPackageUp() // [!code --]
 ```
 
 Similarly, you can get hold of the path via `resolvePackageJSON`:
@@ -33,9 +33,9 @@ const packageJsonPath = await resolvePackageJSON()
 It can be combined with `node:fs` to read `package.json` files:
 
 ```ts
+import { readPackageUp } from 'read-pkg-up' // [!code --]
 import fs from 'node:fs/promises' // [!code ++]
 import * as pkg from 'empathic' // [!code ++]
-import { readPackageUp } from 'read-pkg-up' // [!code --]
 
 const packageJson = await readPackageUp() // [!code --]
 const packageJsonPath = pkg.up() // [!code ++]
