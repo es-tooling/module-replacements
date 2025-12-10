@@ -15,6 +15,6 @@ const generator = tsj.createGenerator({
   topRef: false
 });
 
-const schema = generator.createSchema();
+const schema = generator.createSchema('ManifestModule');
 
 await writeFile(schemaPath, JSON.stringify(schema, null, 2));

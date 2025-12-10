@@ -2,117 +2,218 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "moduleReplacements": {
+    "replacements": {
       "type": "array",
       "items": {
-        "anyOf": [
-          {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "const": "documented"
-              },
-              "moduleName": {
-                "type": "string"
-              },
-              "category": {
-                "type": "string"
-              },
-              "docPath": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "docPath",
-              "moduleName",
-              "type"
-            ],
-            "additionalProperties": false
-          },
-          {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "const": "native"
-              },
-              "moduleName": {
-                "type": "string"
-              },
-              "category": {
-                "type": "string"
-              },
-              "mdnPath": {
-                "type": "string"
-              },
-              "nodeVersion": {
-                "type": "string"
-              },
-              "replacement": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "mdnPath",
-              "moduleName",
-              "nodeVersion",
-              "replacement",
-              "type"
-            ],
-            "additionalProperties": false
-          },
-          {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "const": "simple"
-              },
-              "moduleName": {
-                "type": "string"
-              },
-              "category": {
-                "type": "string"
-              },
-              "replacement": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "moduleName",
-              "replacement",
-              "type"
-            ],
-            "additionalProperties": false
-          },
-          {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "const": "none"
-              },
-              "moduleName": {
-                "type": "string"
-              },
-              "category": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "moduleName",
-              "type"
-            ],
-            "additionalProperties": false
-          }
-        ]
+        "$ref": "#/definitions/ModuleReplacement"
       }
     }
   },
   "required": [
-    "moduleReplacements"
+    "replacements"
   ],
   "additionalProperties": false,
-  "definitions": {}
+  "definitions": {
+    "ModuleReplacement": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "module"
+        },
+        "moduleName": {
+          "type": "string"
+        },
+        "replacements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ModuleReplacementDescriptor"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "moduleName",
+        "replacements"
+      ],
+      "additionalProperties": false
+    },
+    "ModuleReplacementDescriptor": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/DocumentedModuleReplacement"
+        },
+        {
+          "$ref": "#/definitions/NativeModuleReplacement"
+        },
+        {
+          "$ref": "#/definitions/SimpleModuleReplacement"
+        },
+        {
+          "$ref": "#/definitions/NoModuleReplacement"
+        }
+      ]
+    },
+    "DocumentedModuleReplacement": {
+      "type": "object",
+      "properties": {
+        "engines": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EngineConstraint"
+          }
+        },
+        "preferred": {
+          "type": "boolean"
+        },
+        "type": {
+          "type": "string",
+          "const": "documented"
+        },
+        "url": {
+          "$ref": "#/definitions/KnownUrl"
+        },
+        "replacementModule": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "engines",
+        "replacementModule",
+        "type",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "EngineConstraint": {
+      "type": "object",
+      "properties": {
+        "engine": {
+          "type": "string"
+        },
+        "minVersion": {
+          "type": "string"
+        },
+        "maxVersion": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "engine"
+      ],
+      "additionalProperties": false
+    },
+    "KnownUrl": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/KnownUrlDescriptor"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "KnownUrlDescriptor": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "mdn",
+            "node",
+            "e18e"
+          ]
+        },
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "NativeModuleReplacement": {
+      "type": "object",
+      "properties": {
+        "engines": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EngineConstraint"
+          }
+        },
+        "preferred": {
+          "type": "boolean"
+        },
+        "type": {
+          "type": "string",
+          "const": "native"
+        },
+        "url": {
+          "$ref": "#/definitions/KnownUrl"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description",
+        "engines",
+        "type",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "SimpleModuleReplacement": {
+      "type": "object",
+      "properties": {
+        "engines": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EngineConstraint"
+          }
+        },
+        "preferred": {
+          "type": "boolean"
+        },
+        "type": {
+          "type": "string",
+          "const": "simple"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description",
+        "engines",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "NoModuleReplacement": {
+      "type": "object",
+      "properties": {
+        "engines": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EngineConstraint"
+          }
+        },
+        "preferred": {
+          "type": "boolean"
+        },
+        "type": {
+          "type": "string",
+          "const": "none"
+        }
+      },
+      "required": [
+        "engines",
+        "type"
+      ],
+      "additionalProperties": false
+    }
+  }
 }
