@@ -78,10 +78,9 @@
         }
       },
       "required": [
-        "engines",
-        "replacementModule",
         "type",
-        "url"
+        "url",
+        "replacementModule"
       ],
       "additionalProperties": false
     },
@@ -158,10 +157,9 @@
         }
       },
       "required": [
-        "description",
-        "engines",
         "type",
-        "url"
+        "url",
+        "description"
       ],
       "additionalProperties": false
     },
@@ -183,12 +181,14 @@
         },
         "description": {
           "type": "string"
+        },
+        "url": {
+          "$ref": "#/definitions/KnownUrl"
         }
       },
       "required": [
-        "description",
-        "engines",
-        "type"
+        "type",
+        "description"
       ],
       "additionalProperties": false
     },
@@ -207,10 +207,12 @@
         "type": {
           "type": "string",
           "const": "none"
+        },
+        "url": {
+          "$ref": "#/definitions/KnownUrl"
         }
       },
       "required": [
-        "engines",
         "type"
       ],
       "additionalProperties": false

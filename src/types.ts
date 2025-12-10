@@ -5,7 +5,7 @@ export interface EngineConstraint {
 }
 
 interface ModuleReplacementLike {
-  engines: EngineConstraint[];
+  engines?: EngineConstraint[];
   preferred?: boolean;
 }
 
@@ -31,10 +31,12 @@ export interface NativeModuleReplacement extends ModuleReplacementLike {
 export interface SimpleModuleReplacement extends ModuleReplacementLike {
   type: 'simple';
   description: string;
+  url?: KnownUrl;
 }
 
 export interface NoModuleReplacement extends ModuleReplacementLike {
   type: 'none';
+  url?: KnownUrl;
 }
 
 export type ModuleReplacementDescriptor =
