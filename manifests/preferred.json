@@ -21,7 +21,37 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "webFeatureId": "fetch",
+          "engines": [
+            {
+              "engine": "chrome",
+              "minVersion": "42"
+            },
+            {
+              "engine": "chrome_android",
+              "minVersion": "42"
+            },
+            {
+              "engine": "edge",
+              "minVersion": "14"
+            },
+            {
+              "engine": "firefox",
+              "minVersion": "39"
+            },
+            {
+              "engine": "firefox_android",
+              "minVersion": "39"
+            },
+            {
+              "engine": "safari",
+              "minVersion": "10.1"
+            },
+            {
+              "engine": "safari_ios",
+              "minVersion": "10.3"
+            }
+          ],
           "url": {
             "type": "mdn",
             "id": "Web/API/Fetch_API"
@@ -54,7 +84,37 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "webFeatureId": "promise",
+          "engines": [
+            {
+              "engine": "chrome",
+              "minVersion": "32"
+            },
+            {
+              "engine": "chrome_android",
+              "minVersion": "32"
+            },
+            {
+              "engine": "edge",
+              "minVersion": "12"
+            },
+            {
+              "engine": "firefox",
+              "minVersion": "29"
+            },
+            {
+              "engine": "firefox_android",
+              "minVersion": "29"
+            },
+            {
+              "engine": "safari",
+              "minVersion": "8"
+            },
+            {
+              "engine": "safari_ios",
+              "minVersion": "8"
+            }
+          ],
           "url": {
             "type": "e18e",
             "id": "bluebird-q"
@@ -62,13 +122,14 @@
           "description": "Use native Promise"
         },
         {
-          "type": "native",
+          "type": "documented",
           "engines": [],
           "url": {
             "type": "e18e",
             "id": "bluebird-q"
           },
-          "description": "Use native NativeBird"
+          "description": "Use NativeBird",
+          "replacementModule": "nativebird"
         }
       ]
     },
@@ -258,7 +319,37 @@
         },
         {
           "type": "native",
-          "engines": [],
+          "webFeatureId": "web-cryptography",
+          "engines": [
+            {
+              "engine": "chrome",
+              "minVersion": "37"
+            },
+            {
+              "engine": "chrome_android",
+              "minVersion": "37"
+            },
+            {
+              "engine": "edge",
+              "minVersion": "12"
+            },
+            {
+              "engine": "firefox",
+              "minVersion": "34"
+            },
+            {
+              "engine": "firefox_android",
+              "minVersion": "34"
+            },
+            {
+              "engine": "safari",
+              "minVersion": "11"
+            },
+            {
+              "engine": "safari_ios",
+              "minVersion": "11"
+            }
+          ],
           "url": {
             "type": "mdn",
             "id": "Web_Crypto_API"
@@ -428,13 +519,14 @@
       "moduleName": "eslint-plugin-node",
       "replacements": [
         {
-          "type": "native",
+          "type": "documented",
           "engines": [],
           "url": {
             "type": "e18e",
             "id": "eslint-plugin-node"
           },
-          "description": "Use native eslint-plugin-n"
+          "description": "Use eslint-plugin-n",
+          "replacementModule": "eslint-plugin-n"
         }
       ]
     },
@@ -724,13 +816,14 @@
       "moduleName": "globby",
       "replacements": [
         {
-          "type": "native",
+          "type": "documented",
           "engines": [],
           "url": {
             "type": "e18e",
             "id": "globby"
           },
-          "description": "Use native tinyglobby"
+          "description": "Use tinyglobby",
+          "replacementModule": "tinyglobby"
         }
       ]
     },
@@ -755,7 +848,37 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "webFeatureId": "intl-segmenter",
+          "engines": [
+            {
+              "engine": "chrome",
+              "minVersion": "87"
+            },
+            {
+              "engine": "chrome_android",
+              "minVersion": "87"
+            },
+            {
+              "engine": "edge",
+              "minVersion": "87"
+            },
+            {
+              "engine": "firefox",
+              "minVersion": "125"
+            },
+            {
+              "engine": "firefox_android",
+              "minVersion": "125"
+            },
+            {
+              "engine": "safari",
+              "minVersion": "14.1"
+            },
+            {
+              "engine": "safari_ios",
+              "minVersion": "14.5"
+            }
+          ],
           "url": {
             "type": "e18e",
             "id": "graphemer"
@@ -8371,7 +8494,37 @@
         },
         {
           "type": "native",
-          "engines": [],
+          "webFeatureId": "date",
+          "engines": [
+            {
+              "engine": "chrome",
+              "minVersion": "1"
+            },
+            {
+              "engine": "chrome_android",
+              "minVersion": "18"
+            },
+            {
+              "engine": "edge",
+              "minVersion": "12"
+            },
+            {
+              "engine": "firefox",
+              "minVersion": "1"
+            },
+            {
+              "engine": "firefox_android",
+              "minVersion": "4"
+            },
+            {
+              "engine": "safari",
+              "minVersion": "1"
+            },
+            {
+              "engine": "safari_ios",
+              "minVersion": "1"
+            }
+          ],
           "url": {
             "type": "e18e",
             "id": "moment"
@@ -8428,7 +8581,37 @@
         },
         {
           "type": "native",
-          "engines": [],
+          "webFeatureId": "web-cryptography",
+          "engines": [
+            {
+              "engine": "chrome",
+              "minVersion": "37"
+            },
+            {
+              "engine": "chrome_android",
+              "minVersion": "37"
+            },
+            {
+              "engine": "edge",
+              "minVersion": "12"
+            },
+            {
+              "engine": "firefox",
+              "minVersion": "34"
+            },
+            {
+              "engine": "firefox_android",
+              "minVersion": "34"
+            },
+            {
+              "engine": "safari",
+              "minVersion": "11"
+            },
+            {
+              "engine": "safari_ios",
+              "minVersion": "11"
+            }
+          ],
           "url": {
             "type": "e18e",
             "id": "object-hash"
@@ -8597,7 +8780,37 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "webFeatureId": "promise",
+          "engines": [
+            {
+              "engine": "chrome",
+              "minVersion": "32"
+            },
+            {
+              "engine": "chrome_android",
+              "minVersion": "32"
+            },
+            {
+              "engine": "edge",
+              "minVersion": "12"
+            },
+            {
+              "engine": "firefox",
+              "minVersion": "29"
+            },
+            {
+              "engine": "firefox_android",
+              "minVersion": "29"
+            },
+            {
+              "engine": "safari",
+              "minVersion": "8"
+            },
+            {
+              "engine": "safari_ios",
+              "minVersion": "8"
+            }
+          ],
           "url": {
             "type": "e18e",
             "id": "bluebird-q"
@@ -8621,7 +8834,37 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "webFeatureId": "url",
+          "engines": [
+            {
+              "engine": "chrome",
+              "minVersion": "32"
+            },
+            {
+              "engine": "chrome_android",
+              "minVersion": "32"
+            },
+            {
+              "engine": "edge",
+              "minVersion": "12"
+            },
+            {
+              "engine": "firefox",
+              "minVersion": "19"
+            },
+            {
+              "engine": "firefox_android",
+              "minVersion": "19"
+            },
+            {
+              "engine": "safari",
+              "minVersion": "7"
+            },
+            {
+              "engine": "safari_ios",
+              "minVersion": "7"
+            }
+          ],
           "url": {
             "type": "mdn",
             "id": "URLSearchParams"
@@ -8744,7 +8987,37 @@
         },
         {
           "type": "native",
-          "engines": [],
+          "webFeatureId": "streams",
+          "engines": [
+            {
+              "engine": "chrome",
+              "minVersion": "67"
+            },
+            {
+              "engine": "chrome_android",
+              "minVersion": "67"
+            },
+            {
+              "engine": "edge",
+              "minVersion": "79"
+            },
+            {
+              "engine": "firefox",
+              "minVersion": "102"
+            },
+            {
+              "engine": "firefox_android",
+              "minVersion": "102"
+            },
+            {
+              "engine": "safari",
+              "minVersion": "14.1"
+            },
+            {
+              "engine": "safari_ios",
+              "minVersion": "14.5"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "webstreams.html"
@@ -8831,7 +9104,37 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "webFeatureId": "object-object",
+          "engines": [
+            {
+              "engine": "chrome",
+              "minVersion": "1"
+            },
+            {
+              "engine": "chrome_android",
+              "minVersion": "18"
+            },
+            {
+              "engine": "edge",
+              "minVersion": "12"
+            },
+            {
+              "engine": "firefox",
+              "minVersion": "1"
+            },
+            {
+              "engine": "firefox_android",
+              "minVersion": "4"
+            },
+            {
+              "engine": "safari",
+              "minVersion": "1"
+            },
+            {
+              "engine": "safari_ios",
+              "minVersion": "1"
+            }
+          ],
           "url": {
             "type": "e18e",
             "id": "sort-object"
@@ -8989,7 +9292,37 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "webFeatureId": "url",
+          "engines": [
+            {
+              "engine": "chrome",
+              "minVersion": "32"
+            },
+            {
+              "engine": "chrome_android",
+              "minVersion": "32"
+            },
+            {
+              "engine": "edge",
+              "minVersion": "12"
+            },
+            {
+              "engine": "firefox",
+              "minVersion": "19"
+            },
+            {
+              "engine": "firefox_android",
+              "minVersion": "19"
+            },
+            {
+              "engine": "safari",
+              "minVersion": "7"
+            },
+            {
+              "engine": "safari_ios",
+              "minVersion": "7"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "url.html#class-url"
@@ -9022,7 +9355,37 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "webFeatureId": "text-encoding",
+          "engines": [
+            {
+              "engine": "chrome",
+              "minVersion": "38"
+            },
+            {
+              "engine": "chrome_android",
+              "minVersion": "38"
+            },
+            {
+              "engine": "edge",
+              "minVersion": "79"
+            },
+            {
+              "engine": "firefox",
+              "minVersion": "19"
+            },
+            {
+              "engine": "firefox_android",
+              "minVersion": "19"
+            },
+            {
+              "engine": "safari",
+              "minVersion": "10.1"
+            },
+            {
+              "engine": "safari_ios",
+              "minVersion": "10.3"
+            }
+          ],
           "url": {
             "type": "mdn",
             "id": "TextEncoder"

@@ -26,6 +26,7 @@ export interface NativeModuleReplacement extends ModuleReplacementLike {
   type: 'native';
   url: KnownUrl;
   description: string;
+  webFeatureId?: string;
 }
 
 export interface SimpleModuleReplacement extends ModuleReplacementLike {
