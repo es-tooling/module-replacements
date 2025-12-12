@@ -157,6 +157,21 @@
         },
         "webFeatureId": {
           "type": "string"
+        },
+        "nodeFeatureId": {
+          "type": "object",
+          "properties": {
+            "moduleName": {
+              "type": "string"
+            },
+            "exportName": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "moduleName"
+          ],
+          "additionalProperties": false
         }
       },
       "required": [

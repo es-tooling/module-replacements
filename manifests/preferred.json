@@ -154,7 +154,28 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:buffer",
+            "exportName": "Buffer"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "vercel",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "e18e",
             "id": "buf-compare"
@@ -169,7 +190,28 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:buffer",
+            "exportName": "Buffer"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "vercel",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "e18e",
             "id": "buffer-equal"
@@ -184,7 +226,28 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:buffer",
+            "exportName": "Buffer"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "vercel",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "e18e",
             "id": "buffer-equals"
@@ -199,7 +262,24 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:module",
+            "exportName": "builtinModules"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "module.html#modulebuiltinmodules"
@@ -214,7 +294,24 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:util",
+            "exportName": "styleText"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "util.html#utilstyletextformat-text-options"
@@ -247,7 +344,24 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:util",
+            "exportName": "styleText"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "util.html#utilstyletextformat-text-options"
@@ -280,7 +394,28 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:util",
+            "exportName": "types"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "vercel",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "util.html#utiltypes"
@@ -310,7 +445,23 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:crypto"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "crypto.html"
@@ -745,7 +896,24 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:fs",
+            "exportName": "cp"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "fs.html#fspromisescpsrc-dest-options"
@@ -793,7 +961,16 @@
         },
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:fs",
+            "exportName": "glob"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "fs.html#fspromisesglobpattern-options"
@@ -917,7 +1094,24 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:module",
+            "exportName": "isBuiltin"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "module.html#moduleisbuiltinmodulename"
@@ -926,7 +1120,24 @@
         },
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:module",
+            "exportName": "builtinModules"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "module.html#modulebuiltinmodules"
@@ -8437,7 +8648,23 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:crypto"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "e18e",
             "id": "md5"
@@ -8712,7 +8939,24 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:fs/promises",
+            "exportName": "access"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "e18e",
             "id": "path-exists"
@@ -8978,7 +9222,24 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:stream",
+            "exportName": "Readable"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "stream.html"
@@ -9032,7 +9293,24 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:fs/promises",
+            "exportName": "rm"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "fs.html#fspromisesrmpath-options"
@@ -9041,7 +9319,24 @@
         },
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:fs",
+            "exportName": "rmdir"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "fs.html#fsrmdirpath-options-callback"
@@ -9196,7 +9491,28 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:util",
+            "exportName": "stripVTControlCharacters"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "vercel",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "util.html#utilstripvtcontrolcharactersstr"
@@ -9225,7 +9541,24 @@
       "replacements": [
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:fs",
+            "exportName": "mkdtemp"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "fs.html#fsmkdtempprefix-options-callback"
@@ -9394,7 +9727,28 @@
         },
         {
           "type": "native",
-          "engines": [],
+          "nodeFeatureId": {
+            "moduleName": "node:buffer",
+            "exportName": "Buffer"
+          },
+          "engines": [
+            {
+              "engine": "cloudflare",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "deno",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "vercel",
+              "minVersion": "24.9.0"
+            },
+            {
+              "engine": "netlify",
+              "minVersion": "24.9.0"
+            }
+          ],
           "url": {
             "type": "node",
             "id": "buffer.html"

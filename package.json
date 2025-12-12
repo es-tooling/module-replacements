@@ -13,7 +13,8 @@
     "prepare": "tshy && npm run build:update-manifest-paths",
     "test:validate": "node scripts/validate-modules.js",
     "sort-manifests": "node scripts/sort-manifests.js",
-    "update-engines:web": "node scripts/update-engines-web.ts"
+    "update-engines:web": "node scripts/update-engines-web.ts",
+    "update-engines:runtimes": "node scripts/update-engines-runtimes.ts"
   },
   "tshy": {
     "exports": {
