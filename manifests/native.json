@@ -1,1052 +1,2624 @@
 {
-  "moduleReplacements": [
+  "replacements": [
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array-buffer-byte-length",
-      "nodeVersion": "0.10.0",
-      "replacement": "ArrayBuffer.prototype.byteLength",
-      "mdnPath": "Global_Objects/ArrayBuffer/byteLength",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/ArrayBuffer/byteLength"
+          },
+          "description": "ArrayBuffer.prototype.byteLength"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array-every",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.every",
-      "mdnPath": "Global_Objects/Array/every",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/every"
+          },
+          "description": "Array.prototype.every"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array-includes",
-      "nodeVersion": "6.0.0",
-      "replacement": "Array.prototype.includes",
-      "mdnPath": "Global_Objects/Array/includes",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "6.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/includes"
+          },
+          "description": "Array.prototype.includes"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array-map",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.map",
-      "mdnPath": "Global_Objects/Array/map",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/map"
+          },
+          "description": "Array.prototype.map"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.from",
-      "nodeVersion": "4.0.0",
-      "replacement": "Array.from",
-      "mdnPath": "Global_Objects/Array/from",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "4.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/from"
+          },
+          "description": "Array.from"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.of",
-      "nodeVersion": "4.0.0",
-      "replacement": "Array.of",
-      "mdnPath": "Global_Objects/Array/of",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "4.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/of"
+          },
+          "description": "Array.of"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.at",
-      "nodeVersion": "16.6.0",
-      "replacement": "Array.prototype.at",
-      "mdnPath": "Global_Objects/Array/at",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "16.6.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/at"
+          },
+          "description": "Array.prototype.at"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.concat",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.concat",
-      "mdnPath": "Global_Objects/Array/concat",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/concat"
+          },
+          "description": "Array.prototype.concat"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.copywithin",
-      "nodeVersion": "4.0.0",
-      "replacement": "Array.prototype.copyWithin",
-      "mdnPath": "Global_Objects/Array/copyWithin",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "4.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/copyWithin"
+          },
+          "description": "Array.prototype.copyWithin"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.entries",
-      "nodeVersion": "0.12.0",
-      "replacement": "Array.prototype.entries",
-      "mdnPath": "Global_Objects/Array/entries",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.12.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/entries"
+          },
+          "description": "Array.prototype.entries"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.every",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.every",
-      "mdnPath": "Global_Objects/Array/every",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/every"
+          },
+          "description": "Array.prototype.every"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.filter",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.filter",
-      "mdnPath": "Global_Objects/Array/filter",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/filter"
+          },
+          "description": "Array.prototype.filter"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.find",
-      "nodeVersion": "4.0.0",
-      "replacement": "Array.prototype.find",
-      "mdnPath": "Global_Objects/Array/find",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "4.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/find"
+          },
+          "description": "Array.prototype.find"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.findindex",
-      "nodeVersion": "4.0.0",
-      "replacement": "Array.prototype.findIndex",
-      "mdnPath": "Global_Objects/Array/findIndex",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "4.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/findIndex"
+          },
+          "description": "Array.prototype.findIndex"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.flat",
-      "nodeVersion": "11.0.0",
-      "replacement": "Array.prototype.flat",
-      "mdnPath": "Global_Objects/Array/flat",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "11.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/flat"
+          },
+          "description": "Array.prototype.flat"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.flatmap",
-      "nodeVersion": "11.0.0",
-      "replacement": "Array.prototype.flatMap",
-      "mdnPath": "Global_Objects/Array/flatMap",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "11.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/flatMap"
+          },
+          "description": "Array.prototype.flatMap"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.foreach",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.forEach",
-      "mdnPath": "Global_Objects/Array/forEach",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/forEach"
+          },
+          "description": "Array.prototype.forEach"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.indexof",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.indexOf",
-      "mdnPath": "Global_Objects/Array/indexOf",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/indexOf"
+          },
+          "description": "Array.prototype.indexOf"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.join",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.join",
-      "mdnPath": "Global_Objects/Array/join",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/join"
+          },
+          "description": "Array.prototype.join"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.keys",
-      "nodeVersion": "0.12.0",
-      "replacement": "Array.prototype.keys",
-      "mdnPath": "Global_Objects/Array/keys",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.12.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/keys"
+          },
+          "description": "Array.prototype.keys"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.lastindexof",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.lastIndexOf",
-      "mdnPath": "Global_Objects/Array/lastIndexOf",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"
+          },
+          "description": "Array.prototype.lastIndexOf"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.map",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.map",
-      "mdnPath": "Global_Objects/Array/map",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/map"
+          },
+          "description": "Array.prototype.map"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.push",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.push",
-      "mdnPath": "Global_Objects/Array/push",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/push"
+          },
+          "description": "Array.prototype.push"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.reduce",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.reduce",
-      "mdnPath": "Global_Objects/Array/reduce",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/reduce"
+          },
+          "description": "Array.prototype.reduce"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.reduceright",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.reduceRight",
-      "mdnPath": "Global_Objects/Array/reduceRight",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/reduceRight"
+          },
+          "description": "Array.prototype.reduceRight"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.slice",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.slice",
-      "mdnPath": "Global_Objects/Array/slice",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/slice"
+          },
+          "description": "Array.prototype.slice"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.some",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.some",
-      "mdnPath": "Global_Objects/Array/some",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/some"
+          },
+          "description": "Array.prototype.some"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.splice",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.splice",
-      "mdnPath": "Global_Objects/Array/splice",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/splice"
+          },
+          "description": "Array.prototype.splice"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.unshift",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.unshift",
-      "mdnPath": "Global_Objects/Array/unshift",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/unshift"
+          },
+          "description": "Array.prototype.unshift"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "array.prototype.values",
-      "nodeVersion": "10.9.0",
-      "replacement": "Array.prototype.values",
-      "mdnPath": "Global_Objects/Array/values",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "10.9.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/values"
+          },
+          "description": "Array.prototype.values"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "arraybuffer.prototype.slice",
-      "nodeVersion": "0.12.0",
-      "replacement": "ArrayBuffer.prototype.slice",
-      "mdnPath": "Global_Objects/ArrayBuffer/slice",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.12.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/ArrayBuffer/slice"
+          },
+          "description": "ArrayBuffer.prototype.slice"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "concat-map",
-      "nodeVersion": "11.0.0",
-      "replacement": "Array.prototype.flatMap",
-      "mdnPath": "Global_Objects/Array/flatMap",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "11.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/flatMap"
+          },
+          "description": "Array.prototype.flatMap"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "data-view-buffer",
-      "nodeVersion": "0.10.0",
-      "replacement": "DataView.prototype.buffer",
-      "mdnPath": "Global_Objects/DataView/buffer",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/DataView/buffer"
+          },
+          "description": "DataView.prototype.buffer"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "data-view-byte-length",
-      "nodeVersion": "0.10.0",
-      "replacement": "DataView.prototype.byteLength",
-      "mdnPath": "Global_Objects/DataView/byteLength",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/DataView/byteLength"
+          },
+          "description": "DataView.prototype.byteLength"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "data-view-byte-offset",
-      "nodeVersion": "0.10.0",
-      "replacement": "DataView.prototype.byteOffset",
-      "mdnPath": "Global_Objects/DataView/byteOffset",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/DataView/byteOffset"
+          },
+          "description": "DataView.prototype.byteOffset"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "date",
-      "nodeVersion": "0.10.0",
-      "replacement": "Date",
-      "mdnPath": "Global_Objects/Date",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Date"
+          },
+          "description": "Date"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "defaults",
-      "nodeVersion": "4.0.0",
-      "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
-      "mdnPath": "Global_Objects/Object/assign",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "4.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/assign"
+          },
+          "description": "Object.assign, or if deep clones are needed, use structuredClone"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "define-accessor-property",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.defineProperty",
-      "mdnPath": "Global_Objects/Object/defineProperty",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/defineProperty"
+          },
+          "description": "Object.defineProperty"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "define-data-property",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.defineProperty",
-      "mdnPath": "Global_Objects/Object/defineProperty",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/defineProperty"
+          },
+          "description": "Object.defineProperty"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "define-properties",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.defineProperties",
-      "mdnPath": "Global_Objects/Object/defineProperties",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/defineProperties"
+          },
+          "description": "Object.defineProperties"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "error-cause",
-      "nodeVersion": "16.9.0",
-      "replacement": "Use errors `.cause` property and second `Error` constructors argument to define it",
-      "mdnPath": "Global_Objects/Error/cause",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "16.9.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Error/cause"
+          },
+          "description": "Use errors `.cause` property and second `Error` constructors argument to define it"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "es-aggregate-error",
-      "nodeVersion": "15.0.0",
-      "replacement": "AggregateError",
-      "mdnPath": "Global_Objects/AggregateError",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "15.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/AggregateError"
+          },
+          "description": "AggregateError"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "es-create-array-iterator",
-      "nodeVersion": "0.12.0",
-      "replacement": "Array.prototype.{ entries, keys, values, [Symbol.iterator] }",
-      "mdnPath": "Global_Objects/Array/entries",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.12.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/entries"
+          },
+          "description": "Array.prototype.{ entries, keys, values, [Symbol.iterator] }"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "es-define-property",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.defineProperty",
-      "mdnPath": "Global_Objects/Object/defineProperty",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/defineProperty"
+          },
+          "description": "Object.defineProperty"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "es-errors",
-      "nodeVersion": "0.10.0",
-      "replacement": "Error / EvalError / RangeError / ReferenceError / SyntaxError / TypeError / URIError",
-      "mdnPath": "Global_Objects/Error",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Error"
+          },
+          "description": "Error / EvalError / RangeError / ReferenceError / SyntaxError / TypeError / URIError"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "es-shim-unscopables",
-      "nodeVersion": "0.12.0",
-      "replacement": "Array.prototype[Symbol.unscopables]",
-      "mdnPath": "Global_Objects/Array/@@unscopables",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.12.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/@@unscopables"
+          },
+          "description": "Array.prototype[Symbol.unscopables]"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "es-string-html-methods",
-      "nodeVersion": "0.10.0",
-      "replacement": "String.prototype.{ anchor, big, blink, bold, fixed, fontcolor, fontsize, italics, link, small, strike, sub, sup }",
-      "mdnPath": "Global_Objects/String#html_wrapper_methods",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String#html_wrapper_methods"
+          },
+          "description": "String.prototype.{ anchor, big, blink, bold, fixed, fontcolor, fontsize, italics, link, small, strike, sub, sup }"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "extend-shallow",
-      "nodeVersion": "4.0.0",
-      "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
-      "mdnPath": "Global_Objects/Object/assign",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "4.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/assign"
+          },
+          "description": "Object.assign, or if deep clones are needed, use structuredClone"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "filter-array",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.filter",
-      "mdnPath": "Global_Objects/Array/filter",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/filter"
+          },
+          "description": "Array.prototype.filter"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "for-each",
-      "nodeVersion": "0.12.0",
-      "replacement": "for...of (using \"Object.entries\" if dealing with objects)",
-      "mdnPath": "Statements/for...of",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.12.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Statements/for...of"
+          },
+          "description": "for...of (using \"Object.entries\" if dealing with objects)"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "function-bind",
-      "nodeVersion": "0.10.0",
-      "replacement": "Function.prototype.bind",
-      "mdnPath": "Global_Objects/Function/bind",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Function/bind"
+          },
+          "description": "Function.prototype.bind"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "function.prototype.name",
-      "nodeVersion": "0.10.0",
-      "replacement": "Use functions `.name` property",
-      "mdnPath": "Global_Objects/Function/name",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Function/name"
+          },
+          "description": "Use functions `.name` property"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "functions-have-names",
-      "nodeVersion": "0.10.0",
-      "replacement": "Always `true`",
-      "mdnPath": "Global_Objects/Function/name",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Function/name"
+          },
+          "description": "Always `true`"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "get-symbol-description",
-      "nodeVersion": "11.0.0",
-      "replacement": "Symbol.prototype.description",
-      "mdnPath": "Global_Objects/Symbol/description",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "11.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Symbol/description"
+          },
+          "description": "Symbol.prototype.description"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "global",
-      "nodeVersion": "12.0.0",
-      "replacement": "globalThis",
-      "mdnPath": "Global_Objects/globalThis",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "12.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/globalThis"
+          },
+          "description": "globalThis"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "globalthis",
-      "nodeVersion": "12.0.0",
-      "replacement": "globalThis",
-      "mdnPath": "Global_Objects/globalThis",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "12.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/globalThis"
+          },
+          "description": "globalThis"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "gopd",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.getOwnPropertyDescriptor",
-      "mdnPath": "Global_Objects/Object/getOwnPropertyDescriptor",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor"
+          },
+          "description": "Object.getOwnPropertyDescriptor"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "has",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
-      "mdnPath": "Global_Objects/Object/hasOwnProperty",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty"
+          },
+          "description": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "has-own-prop",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
-      "mdnPath": "Global_Objects/Object/hasOwnProperty",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty"
+          },
+          "description": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "has-proto",
-      "nodeVersion": "0.10.0",
-      "replacement": "Always `true`",
-      "mdnPath": "Operators/Object_initializer#prototype_setter",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Operators/Object_initializer#prototype_setter"
+          },
+          "description": "Always `true`"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "has-symbols",
-      "nodeVersion": "0.12.0",
-      "replacement": "Always `true`",
-      "mdnPath": "Global_Objects/Symbol",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.12.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Symbol"
+          },
+          "description": "Always `true`"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "has-tostringtag",
-      "nodeVersion": "6.0.0",
-      "replacement": "Always `true`",
-      "mdnPath": "Global_Objects/Symbol/toStringTag",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "6.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag"
+          },
+          "description": "Always `true`"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "hasown",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")",
-      "mdnPath": "Global_Objects/Object/hasOwnProperty",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty"
+          },
+          "description": "Object.prototype.hasOwnProperty.call(obj, prop) (or in later versions of node, \"Object.hasOwn(obj, prop)\")"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "index-of",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.indexOf",
-      "mdnPath": "Global_Objects/Array/indexOf",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/indexOf"
+          },
+          "description": "Array.prototype.indexOf"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "inherits",
-      "nodeVersion": "6.0.0",
-      "replacement": "Use native class syntax",
-      "mdnPath": "Classes/extends",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "6.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Classes/extends"
+          },
+          "description": "Use native class syntax"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "is-nan",
-      "nodeVersion": "0.10.0",
-      "replacement": "Number.isNaN",
-      "mdnPath": "Global_Objects/Number/isNaN",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Number/isNaN"
+          },
+          "description": "Number.isNaN"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "iterate-iterator",
-      "nodeVersion": "0.12.0",
-      "replacement": "for...of",
-      "mdnPath": "Statements/for...of",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.12.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Statements/for...of"
+          },
+          "description": "for...of"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "iterate-value",
-      "nodeVersion": "0.12.0",
-      "replacement": "for...of",
-      "mdnPath": "Statements/for...of",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.12.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Statements/for...of"
+          },
+          "description": "for...of"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "last-index-of",
-      "nodeVersion": "0.10.0",
-      "replacement": "Array.prototype.lastIndexOf",
-      "mdnPath": "Global_Objects/Array/lastIndexOf",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"
+          },
+          "description": "Array.prototype.lastIndexOf"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "left-pad",
-      "nodeVersion": "8.0.0",
-      "replacement": "String.prototype.padStart",
-      "mdnPath": "Global_Objects/String/padStart",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "8.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/padStart"
+          },
+          "description": "String.prototype.padStart"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "math.acosh",
-      "nodeVersion": "0.10.0",
-      "replacement": "Math.acosh",
-      "mdnPath": "Global_Objects/Math/acosh",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Math/acosh"
+          },
+          "description": "Math.acosh"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "math.atanh",
-      "nodeVersion": "0.10.0",
-      "replacement": "Math.atanh",
-      "mdnPath": "Global_Objects/Math/atanh",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Math/atanh"
+          },
+          "description": "Math.atanh"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "math.cbrt",
-      "nodeVersion": "0.10.0",
-      "replacement": "Math.cbrt",
-      "mdnPath": "Global_Objects/Math/cbrt",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Math/cbrt"
+          },
+          "description": "Math.cbrt"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "math.clz32",
-      "nodeVersion": "0.10.0",
-      "replacement": "Math.clz32",
-      "mdnPath": "Global_Objects/Math/clz32",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Math/clz32"
+          },
+          "description": "Math.clz32"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "math.f16round",
-      "nodeVersion": "0.10.0",
-      "replacement": "Math.f16round",
-      "mdnPath": "Global_Objects/Math/f16round",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Math/f16round"
+          },
+          "description": "Math.f16round"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "math.fround",
-      "nodeVersion": "0.10.0",
-      "replacement": "Math.fround",
-      "mdnPath": "Global_Objects/Math/fround",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Math/fround"
+          },
+          "description": "Math.fround"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "math.imul",
-      "nodeVersion": "0.10.0",
-      "replacement": "Math.imul",
-      "mdnPath": "Global_Objects/Math/imul",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Math/imul"
+          },
+          "description": "Math.imul"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "math.log10",
-      "nodeVersion": "0.10.0",
-      "replacement": "Math.log10",
-      "mdnPath": "Global_Objects/Math/log10",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Math/log10"
+          },
+          "description": "Math.log10"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "math.log1p",
-      "nodeVersion": "0.10.0",
-      "replacement": "Math.log1p",
-      "mdnPath": "Global_Objects/Math/log1p",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Math/log1p"
+          },
+          "description": "Math.log1p"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "math.sign",
-      "nodeVersion": "0.10.0",
-      "replacement": "Math.sign",
-      "mdnPath": "Global_Objects/Math/sign",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Math/sign"
+          },
+          "description": "Math.sign"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "node.extend",
-      "nodeVersion": "4.0.0",
-      "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
-      "mdnPath": "Global_Objects/Object/assign",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "4.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/assign"
+          },
+          "description": "Object.assign, or if deep clones are needed, use structuredClone"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "number.isfinite",
-      "nodeVersion": "0.10.0",
-      "replacement": "Number.isFinite",
-      "mdnPath": "Global_Objects/Number/isFinite",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Number/isFinite"
+          },
+          "description": "Number.isFinite"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "number.isinteger",
-      "nodeVersion": "0.10.0",
-      "replacement": "Number.isInteger",
-      "mdnPath": "Global_Objects/Number/isInteger",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Number/isInteger"
+          },
+          "description": "Number.isInteger"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "number.isnan",
-      "nodeVersion": "0.10.0",
-      "replacement": "Number.isNaN",
-      "mdnPath": "Global_Objects/Number/isNaN",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Number/isNaN"
+          },
+          "description": "Number.isNaN"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "number.issafeinteger",
-      "nodeVersion": "0.10.0",
-      "replacement": "Number.isSafeInteger",
-      "mdnPath": "Global_Objects/Number/isSafeInteger",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger"
+          },
+          "description": "Number.isSafeInteger"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "number.parsefloat",
-      "nodeVersion": "0.10.0",
-      "replacement": "Number.parseFloat",
-      "mdnPath": "Global_Objects/Number/parseFloat",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Number/parseFloat"
+          },
+          "description": "Number.parseFloat"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "number.parseint",
-      "nodeVersion": "0.10.0",
-      "replacement": "Number.parseInt",
-      "mdnPath": "Global_Objects/Number/parseInt",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Number/parseInt"
+          },
+          "description": "Number.parseInt"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "number.prototype.toexponential",
-      "nodeVersion": "0.10.0",
-      "replacement": "Number.prototype.toExponential",
-      "mdnPath": "Global_Objects/Number/toExponential",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Number/toExponential"
+          },
+          "description": "Number.prototype.toExponential"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "object-assign",
-      "nodeVersion": "4.0.0",
-      "replacement": "Object.assign",
-      "mdnPath": "Global_Objects/Object/assign",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "4.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/assign"
+          },
+          "description": "Object.assign"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "object-is",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.is",
-      "mdnPath": "Global_Objects/Object/is",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/is"
+          },
+          "description": "Object.is"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "object-keys",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.keys(obj)",
-      "mdnPath": "Global_Objects/Object/keys",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/keys"
+          },
+          "description": "Object.keys(obj)"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "object.assign",
-      "nodeVersion": "4.0.0",
-      "replacement": "Object.assign",
-      "mdnPath": "Global_Objects/Object/assign",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "4.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/assign"
+          },
+          "description": "Object.assign"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "object.defineproperties",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.defineProperties",
-      "mdnPath": "Global_Objects/Object/defineProperties",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/defineProperties"
+          },
+          "description": "Object.defineProperties"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "object.entries",
-      "nodeVersion": "7.0.0",
-      "replacement": "Object.entries",
-      "mdnPath": "Global_Objects/Object/entries",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "7.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/entries"
+          },
+          "description": "Object.entries"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "object.fromentries",
-      "nodeVersion": "12.0.0",
-      "replacement": "Object.fromEntries",
-      "mdnPath": "Global_Objects/Object/fromEntries",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "12.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/fromEntries"
+          },
+          "description": "Object.fromEntries"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "object.getownpropertydescriptors",
-      "nodeVersion": "7.0.0",
-      "replacement": "Object.getOwnPropertyDescriptors",
-      "mdnPath": "Global_Objects/Object/getOwnPropertyDescriptors",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "7.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors"
+          },
+          "description": "Object.getOwnPropertyDescriptors"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "object.getprototypeof",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.getPrototypeOf",
-      "mdnPath": "Global_Objects/Object/getPrototypeOf",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf"
+          },
+          "description": "Object.getPrototypeOf"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "object.hasown",
-      "nodeVersion": "16.9.0",
-      "replacement": "Object.hasOwn",
-      "mdnPath": "Global_Objects/Object/hasOwn",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "16.9.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/hasOwn"
+          },
+          "description": "Object.hasOwn"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "object.keys",
-      "nodeVersion": "0.10.0",
-      "replacement": "Object.keys(obj)",
-      "mdnPath": "Global_Objects/Object/keys",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/keys"
+          },
+          "description": "Object.keys(obj)"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "object.values",
-      "nodeVersion": "7.0.0",
-      "replacement": "Object.values",
-      "mdnPath": "Global_Objects/Object/values",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "7.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/values"
+          },
+          "description": "Object.values"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "pad-left",
-      "nodeVersion": "8.0.0",
-      "replacement": "String.prototype.padStart",
-      "mdnPath": "Global_Objects/String/padStart",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "8.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/padStart"
+          },
+          "description": "String.prototype.padStart"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "parseint",
-      "nodeVersion": "0.10.0",
-      "replacement": "parseInt",
-      "mdnPath": "Global_Objects/parseInt",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/parseInt"
+          },
+          "description": "parseInt"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "promise.allsettled",
-      "nodeVersion": "12.9.0",
-      "replacement": "Promise.allSettled",
-      "mdnPath": "Global_Objects/Promise/allSettled",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "12.9.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Promise/allSettled"
+          },
+          "description": "Promise.allSettled"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "promise.any",
-      "nodeVersion": "15.0.0",
-      "replacement": "Promise.any",
-      "mdnPath": "Global_Objects/Promise/any",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "15.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Promise/any"
+          },
+          "description": "Promise.any"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "promise.prototype.finally",
-      "nodeVersion": "10.0.0",
-      "replacement": "Promise.prototype.finally",
-      "mdnPath": "Global_Objects/Promise/finally",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "10.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Promise/finally"
+          },
+          "description": "Promise.prototype.finally"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "reflect.getprototypeof",
-      "nodeVersion": "6.0.0",
-      "replacement": "Reflect.getPrototypeOf",
-      "mdnPath": "Global_Objects/Reflect/getPrototypeOf",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "6.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Reflect/getPrototypeOf"
+          },
+          "description": "Reflect.getPrototypeOf"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "reflect.ownkeys",
-      "nodeVersion": "6.0.0",
-      "replacement": "Reflect.ownKeys",
-      "mdnPath": "Global_Objects/Reflect/ownKeys",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "6.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Reflect/ownKeys"
+          },
+          "description": "Reflect.ownKeys"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "regexp.prototype.flags",
-      "nodeVersion": "6.0.0",
-      "replacement": "RegExp.prototype.flags (e.g. \"/foo/g.flags\")",
-      "mdnPath": "Global_Objects/RegExp/flags",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "6.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/RegExp/flags"
+          },
+          "description": "RegExp.prototype.flags (e.g. \"/foo/g.flags\")"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.prototype.at",
-      "nodeVersion": "16.6.0",
-      "replacement": "String.prototype.at",
-      "mdnPath": "Global_Objects/String/at",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "16.6.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/at"
+          },
+          "description": "String.prototype.at"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.prototype.lastindexof",
-      "nodeVersion": "0.10.0",
-      "replacement": "String.prototype.lastIndexOf",
-      "mdnPath": "Global_Objects/String/lastIndexOf",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/lastIndexOf"
+          },
+          "description": "String.prototype.lastIndexOf"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.prototype.matchall",
-      "nodeVersion": "12.0.0",
-      "replacement": "String.prototype.matchAll",
-      "mdnPath": "Global_Objects/String/matchAll",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "12.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/matchAll"
+          },
+          "description": "String.prototype.matchAll"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.prototype.padend",
-      "nodeVersion": "8.0.0",
-      "replacement": "String.prototype.padEnd",
-      "mdnPath": "Global_Objects/String/padEnd",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "8.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/padEnd"
+          },
+          "description": "String.prototype.padEnd"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.prototype.padleft",
-      "nodeVersion": "8.0.0",
-      "replacement": "String.prototype.padStart",
-      "mdnPath": "Global_Objects/String/padStart",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "8.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/padStart"
+          },
+          "description": "String.prototype.padStart"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.prototype.padright",
-      "nodeVersion": "8.0.0",
-      "replacement": "String.prototype.padEnd",
-      "mdnPath": "Global_Objects/String/padEnd",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "8.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/padEnd"
+          },
+          "description": "String.prototype.padEnd"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.prototype.padstart",
-      "nodeVersion": "8.0.0",
-      "replacement": "String.prototype.padStart",
-      "mdnPath": "Global_Objects/String/padStart",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "8.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/padStart"
+          },
+          "description": "String.prototype.padStart"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.prototype.replaceall",
-      "nodeVersion": "15.0.0",
-      "replacement": "String.prototype.replaceAll",
-      "mdnPath": "Global_Objects/String/replaceAll",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "15.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/replaceAll"
+          },
+          "description": "String.prototype.replaceAll"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.prototype.split",
-      "nodeVersion": "0.10.0",
-      "replacement": "String.prototype.split",
-      "mdnPath": "Global_Objects/String/split",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/split"
+          },
+          "description": "String.prototype.split"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.prototype.substr",
-      "nodeVersion": "0.10.0",
-      "replacement": "String.prototype.substr",
-      "mdnPath": "Global_Objects/String/substr",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/substr"
+          },
+          "description": "String.prototype.substr"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.prototype.trim",
-      "nodeVersion": "0.10.0",
-      "replacement": "String.prototype.trim",
-      "mdnPath": "Global_Objects/String/trim",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/trim"
+          },
+          "description": "String.prototype.trim"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.prototype.trimend",
-      "nodeVersion": "10.0.0",
-      "replacement": "String.prototype.trimEnd",
-      "mdnPath": "Global_Objects/String/trimEnd",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "10.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/trimEnd"
+          },
+          "description": "String.prototype.trimEnd"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.prototype.trimleft",
-      "nodeVersion": "10.0.0",
-      "replacement": "String.prototype.trimLeft",
-      "mdnPath": "Global_Objects/String/trimLeft",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "10.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/trimLeft"
+          },
+          "description": "String.prototype.trimLeft"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.prototype.trimright",
-      "nodeVersion": "10.0.0",
-      "replacement": "String.prototype.trimRight",
-      "mdnPath": "Global_Objects/String/trimRight",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "10.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/trimRight"
+          },
+          "description": "String.prototype.trimRight"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.prototype.trimstart",
-      "nodeVersion": "10.0.0",
-      "replacement": "String.prototype.trimStart",
-      "mdnPath": "Global_Objects/String/trimStart",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "10.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/trimStart"
+          },
+          "description": "String.prototype.trimStart"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "string.raw",
-      "nodeVersion": "4.0.0",
-      "replacement": "String.raw",
-      "mdnPath": "Global_Objects/String/raw",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "4.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/String/raw"
+          },
+          "description": "String.raw"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "symbol.prototype.description",
-      "nodeVersion": "11.0.0",
-      "replacement": "Symbol.prototype.description",
-      "mdnPath": "Global_Objects/Symbol/description",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "11.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Symbol/description"
+          },
+          "description": "Symbol.prototype.description"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "typed-array-buffer",
-      "nodeVersion": "0.10.0",
-      "replacement": "%TypedArray%.prototype.buffer",
-      "mdnPath": "Global_Objects/TypedArray/buffer",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/buffer"
+          },
+          "description": "%TypedArray%.prototype.buffer"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "typed-array-byte-length",
-      "nodeVersion": "0.10.0",
-      "replacement": "%TypedArray%.prototype.byteLength",
-      "mdnPath": "Global_Objects/TypedArray/byteLength",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/byteLength"
+          },
+          "description": "%TypedArray%.prototype.byteLength"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "typed-array-byte-offset",
-      "nodeVersion": "0.10.0",
-      "replacement": "%TypedArray%.prototype.byteOffset",
-      "mdnPath": "Global_Objects/TypedArray/byteOffset",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/byteOffset"
+          },
+          "description": "%TypedArray%.prototype.byteOffset"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "typed-array-length",
-      "nodeVersion": "0.10.0",
-      "replacement": "%TypedArray%.prototype.length",
-      "mdnPath": "Global_Objects/TypedArray/length",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "0.10.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/length"
+          },
+          "description": "%TypedArray%.prototype.length"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "typedarray.prototype.slice",
-      "nodeVersion": "4.0.0",
-      "replacement": "%TypedArray%.prototype.slice",
-      "mdnPath": "Global_Objects/TypedArray/slice",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "4.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/slice"
+          },
+          "description": "%TypedArray%.prototype.slice"
+        }
+      ]
     },
     {
-      "type": "native",
+      "type": "module",
       "moduleName": "xtend",
-      "nodeVersion": "4.0.0",
-      "replacement": "Object.assign, or if deep clones are needed, use structuredClone",
-      "mdnPath": "Global_Objects/Object/assign",
-      "category": "native"
+      "replacements": [
+        {
+          "type": "native",
+          "engines": [
+            {
+              "engine": "node",
+              "minVersion": "4.0.0"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/JavaScript/Reference/Global_Objects/Object/assign"
+          },
+          "description": "Object.assign, or if deep clones are needed, use structuredClone"
+        }
+      ]
     }
   ]
 }
