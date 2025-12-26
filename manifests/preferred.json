@@ -74,6 +74,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "cross-fetch",
+      "docPath": "cross-fetch",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "crypto-js",
       "docPath": "crypto-js",
       "category": "preferred"
@@ -2236,6 +2242,12 @@
       "type": "documented",
       "moduleName": "npm-run-all",
       "docPath": "npm-run-all",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "node-fetch",
+      "docPath": "node-fetch",
       "category": "preferred"
     },
     {
