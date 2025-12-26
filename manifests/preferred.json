@@ -2270,6 +2270,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "portal-vue",
+      "docPath": "portal-vue",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "pkg-dir",
       "docPath": "pkg-dir",
       "category": "preferred"

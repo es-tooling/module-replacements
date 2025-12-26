@@ -63,6 +63,7 @@ ESLint plugin.
 - [`object-hash`](./object-hash.md)
 - [`ora`](./ora.md)
 - [`path-exists`](./path-exists.md)
+- [`portal-vue`](./portal-vue.md)
 - [`pkg-dir`](./pkg-dir.md)
 - [`qs`](./qs.md)
 - [`read-pkg`](./read-pkg.md)
