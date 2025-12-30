@@ -9,7 +9,7 @@
     {
       "type": "documented",
       "moduleName": "axios",
-      "docPath": "axios",
+      "docPath": "fetch",
       "category": "preferred"
     },
     {
@@ -75,7 +75,7 @@
     {
       "type": "documented",
       "moduleName": "cross-fetch",
-      "docPath": "cross-fetch",
+      "docPath": "fetch",
       "category": "preferred"
     },
     {
@@ -2247,7 +2247,7 @@
     {
       "type": "documented",
       "moduleName": "node-fetch",
-      "docPath": "node-fetch",
+      "docPath": "fetch",
       "category": "preferred"
     },
     {

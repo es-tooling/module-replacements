@@ -13,7 +13,7 @@ ESLint plugin.
 ## List of modules
 
 - [`@jsdevtools/ezspawn`](./ez-spawn.md)
-- [`axios`](./axios.md)
+- [`axios`](./fetch.md)
 - [`bluebird`](./bluebird-q.md)
 - [`body-parser`](./body-parser.md)
 - [`buf-compare`](./buf-compare.md)
@@ -23,7 +23,7 @@ ESLint plugin.
 - [`chalk`](./chalk.md)
 - [`core-util-is`](./core-util-is.md)
 - [`cpx`](./cpx.md)
-- [`cross-fetch`](.cross-fetch.md)
+- [`cross-fetch`](.fetch.md)
 - [`crypto-js`](./crypto-js.md)
 - [`deep-equal`](./deep-equal.md)
 - [`depcheck`](./depcheck.md)
@@ -61,7 +61,7 @@ ESLint plugin.
 - [`mkdirp`](./mkdirp.md)
 - [`moment.js`](./moment.md)
 - [`npm-run-all`](./npm-run-all.md)
-- [`node-fetch`](.node-fetch.md)
+- [`node-fetch`](.fetch.md)
 - [`object-hash`](./object-hash.md)
 - [`ora`](./ora.md)
 - [`path-exists`](./path-exists.md)
