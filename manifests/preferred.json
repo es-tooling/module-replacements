@@ -9,7 +9,7 @@
     {
       "type": "documented",
       "moduleName": "axios",
-      "docPath": "axios",
+      "docPath": "fetch",
       "category": "preferred"
     },
     {
@@ -75,7 +75,7 @@
     {
       "type": "documented",
       "moduleName": "cross-fetch",
-      "docPath": "cross-fetch",
+      "docPath": "fetch",
       "category": "preferred"
     },
     {
@@ -2240,14 +2240,14 @@
     },
     {
       "type": "documented",
-      "moduleName": "npm-run-all",
-      "docPath": "npm-run-all",
+      "moduleName": "node-fetch",
+      "docPath": "fetch",
       "category": "preferred"
     },
     {
       "type": "documented",
-      "moduleName": "node-fetch",
-      "docPath": "node-fetch",
+      "moduleName": "npm-run-all",
+      "docPath": "npm-run-all",
       "category": "preferred"
     },
     {
