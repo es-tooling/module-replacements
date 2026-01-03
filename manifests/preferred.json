@@ -2282,6 +2282,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "portal-vue",
+      "docPath": "portal-vue",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "q",
       "docPath": "bluebird-q",
       "category": "preferred"
