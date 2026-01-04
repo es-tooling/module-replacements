@@ -9,7 +9,7 @@
     {
       "type": "documented",
       "moduleName": "axios",
-      "docPath": "axios",
+      "docPath": "fetch",
       "category": "preferred"
     },
     {
@@ -70,6 +70,12 @@
       "type": "documented",
       "moduleName": "cpx",
       "docPath": "cpx",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "cross-fetch",
+      "docPath": "fetch",
       "category": "preferred"
     },
     {
@@ -2230,6 +2236,12 @@
       "type": "documented",
       "moduleName": "moment",
       "docPath": "moment",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "node-fetch",
+      "docPath": "fetch",
       "category": "preferred"
     },
     {
