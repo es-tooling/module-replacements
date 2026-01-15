@@ -1,232 +1,384 @@
 {
-  "moduleReplacements": [
+  "replacements": [
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "arr-diff",
-      "replacement": "Use a.filter((item) => !b.includes(item))",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use a.filter((item) => !b.includes(item))"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "array-last",
-      "replacement": "Use arr.at(-1) or arr[arr.length - 1]",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use arr.at(-1) or arr[arr.length - 1]"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "array-union",
-      "replacement": "Use [...new Set([...a, ...b])]",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use [...new Set([...a, ...b])]"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "array-uniq",
-      "replacement": "Use [...new Set(arr)]",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use [...new Set(arr)]"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "array-unique",
-      "replacement": "Use [...new Set(arr)]",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use [...new Set(arr)]"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "arrify",
-      "replacement": "Use (v == null ? [] : Array.isArray(v) ? v : [v])",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use (v == null ? [] : Array.isArray(v) ? v : [v])"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "call-bind",
-      "replacement": "Use Function.call.bind(v)",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use Function.call.bind(v)"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "clone-regexp",
-      "replacement": "Use new RegExp(regexpToCopy)",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use new RegExp(regexpToCopy)"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "es-get-iterator",
-      "replacement": "Use v[Symbol.iterator]?.()",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use v[Symbol.iterator]?.()"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "es-set-tostringtag",
-      "replacement": "Use Object.defineProperty(target, Symbol.toStringTag, { value, configurable: true })",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use Object.defineProperty(target, Symbol.toStringTag, { value, configurable: true })"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "filter-obj",
-      "replacement": "Use Object.fromEntries(Object.entries(obj).filter(fn))",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use Object.fromEntries(Object.entries(obj).filter(fn))"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "has-flag",
-      "replacement": "Use process.argv.includes('--flag')",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use process.argv.includes('--flag')"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-array-buffer",
-      "replacement": "Use v instanceof ArrayBuffer, or if cross-realm, use Object.prototype.toString.call(v) === \"[object ArrayBuffer]\"",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use v instanceof ArrayBuffer, or if cross-realm, use Object.prototype.toString.call(v) === \"[object ArrayBuffer]\""
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-boolean-object",
-      "replacement": "Use Object.prototype.toString.call(v) === \"[object Boolean]\"",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use Object.prototype.toString.call(v) === \"[object Boolean]\""
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-ci",
-      "replacement": "Use Boolean(process.env.CI)",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use Boolean(process.env.CI)"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-date-object",
-      "replacement": "Use v instanceof Date, or if cross-realm, use Object.prototype.toString.call(v) === \"[object Date]\"",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use v instanceof Date, or if cross-realm, use Object.prototype.toString.call(v) === \"[object Date]\""
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-even",
-      "replacement": "Use (n % 2) === 0",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use (n % 2) === 0"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-finite",
-      "replacement": "Use Number.isFinite(v)",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use Number.isFinite(v)"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-negative",
-      "replacement": "Use (n) => n < 0",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use (n) => n < 0"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-negative-zero",
-      "replacement": "Use Object.is(v, -0)",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use Object.is(v, -0)"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-npm",
-      "replacement": "Use process.env.npm_config_user_agent?.startsWith(\"npm\")",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use process.env.npm_config_user_agent?.startsWith(\"npm\")"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-number",
-      "replacement": "Use typeof v === \"number\" || (typeof v === \"string\" && Number.isFinite(+v))",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use typeof v === \"number\" || (typeof v === \"string\" && Number.isFinite(+v))"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-number-object",
-      "replacement": "Use Object.prototype.toString.call(v) === \"[object Number]\"",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use Object.prototype.toString.call(v) === \"[object Number]\""
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-odd",
-      "replacement": "Use (n % 2) === 1",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use (n % 2) === 1"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-plain-object",
-      "replacement": "Use v && typeof v === \"object\" && (Object.getPrototypeOf(v) === null || Object.getPrototypeOf(v) === Object.prototype)",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use v && typeof v === \"object\" && (Object.getPrototypeOf(v) === null || Object.getPrototypeOf(v) === Object.prototype)"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-primitive",
-      "replacement": "Use v === null || (typeof v !== \"function\" && typeof v !== \"object\")",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use v === null || (typeof v !== \"function\" && typeof v !== \"object\")"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-regexp",
-      "replacement": "Use v instanceof RegExp, or if cross-realm, use Object.prototype.toString.call(v) === \"[object RegExp]\"",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use v instanceof RegExp, or if cross-realm, use Object.prototype.toString.call(v) === \"[object RegExp]\""
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-string",
-      "replacement": "Use typeof str === \"string\"",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use typeof str === \"string\""
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-travis",
-      "replacement": "Use (\"TRAVIS\" in process.env)",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use (\"TRAVIS\" in process.env)"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-whitespace",
-      "replacement": "Use str.trim() === \"\" or /^\\s*$/.test(str)",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use str.trim() === \"\" or /^\\s*$/.test(str)"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "is-windows",
-      "replacement": "Use process.platform === \"win32\"",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use process.platform === \"win32\""
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "kind-of",
-      "replacement": "Use typeof v, or Object.prototype.toString.call(v) to get the internal [[Class]]",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use typeof v, or Object.prototype.toString.call(v) to get the internal [[Class]]"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "lower-case",
-      "replacement": "Use str.toLocaleLowerCase() or str.toLowerCase()",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use str.toLocaleLowerCase() or str.toLowerCase()"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "repeat-string",
-      "replacement": "Use str.repeat(n)",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use str.repeat(n)"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "slash",
-      "replacement": "Use path.startsWith('\\\\?\\') ? path : path.replace(/\\/g, '/')",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use path.startsWith('\\\\?\\') ? path : path.replace(/\\/g, '/')"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "split-lines",
-      "replacement": "Use str.split(/\\r?\\n/)",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use str.split(/\\r?\\n/)"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "uniq",
-      "replacement": "Use [...new Set(arr)]",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use [...new Set(arr)]"
+        }
+      ]
     },
     {
-      "type": "simple",
+      "type": "module",
       "moduleName": "upper-case",
-      "replacement": "Use str.toLocaleUpperCase() or str.toUpperCase()",
-      "category": "micro-utilities"
+      "replacements": [
+        {
+          "type": "simple",
+          "description": "Use str.toLocaleUpperCase() or str.toUpperCase()"
+        }
+      ]
     }
   ]
 }
