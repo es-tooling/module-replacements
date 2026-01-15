@@ -13,7 +13,7 @@ for (const manifestName of manifests) {
 
   const manifestPath = path.join(manifestsDir, manifestName);
   const manifest = JSON.parse(await readFile(manifestPath, {encoding: 'utf8'}));
-  manifest.moduleReplacements.sort((a, b) => {
+  manifest.replacements.sort((a, b) => {
     if (a.moduleName === b.moduleName) {
       return 0;
     }

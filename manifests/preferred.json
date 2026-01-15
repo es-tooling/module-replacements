@@ -80,132 +80,6 @@
     },
     {
       "type": "module",
-      "moduleName": "cross-fetch",
-      "replacements": [
-        {
-          "type": "native",
-          "webFeatureId": "fetch",
-          "engines": [
-            {
-              "engine": "chrome",
-              "minVersion": "42"
-            },
-            {
-              "engine": "chrome_android",
-              "minVersion": "42"
-            },
-            {
-              "engine": "edge",
-              "minVersion": "14"
-            },
-            {
-              "engine": "firefox",
-              "minVersion": "39"
-            },
-            {
-              "engine": "firefox_android",
-              "minVersion": "39"
-            },
-            {
-              "engine": "safari",
-              "minVersion": "10.1"
-            },
-            {
-              "engine": "safari_ios",
-              "minVersion": "10.3"
-            }
-          ],
-          "url": {
-            "type": "mdn",
-            "id": "Web/API/Fetch_API"
-          },
-          "description": "Use native fetch"
-        },
-        {
-          "type": "documented",
-          "engines": [],
-          "url": {
-            "type": "e18e",
-            "id": "fetch"
-          },
-          "replacementModule": "ky"
-        },
-        {
-          "type": "documented",
-          "engines": [],
-          "url": {
-            "type": "e18e",
-            "id": "fetch"
-          },
-          "replacementModule": "ofetch"
-        }
-      ]
-    },
-    {
-      "type": "module",
-      "moduleName": "node-fetch",
-      "replacements": [
-        {
-          "type": "native",
-          "webFeatureId": "fetch",
-          "engines": [
-            {
-              "engine": "chrome",
-              "minVersion": "42"
-            },
-            {
-              "engine": "chrome_android",
-              "minVersion": "42"
-            },
-            {
-              "engine": "edge",
-              "minVersion": "14"
-            },
-            {
-              "engine": "firefox",
-              "minVersion": "39"
-            },
-            {
-              "engine": "firefox_android",
-              "minVersion": "39"
-            },
-            {
-              "engine": "safari",
-              "minVersion": "10.1"
-            },
-            {
-              "engine": "safari_ios",
-              "minVersion": "10.3"
-            }
-          ],
-          "url": {
-            "type": "mdn",
-            "id": "Web/API/Fetch_API"
-          },
-          "description": "Use native fetch"
-        },
-        {
-          "type": "documented",
-          "engines": [],
-          "url": {
-            "type": "e18e",
-            "id": "fetch"
-          },
-          "replacementModule": "ky"
-        },
-        {
-          "type": "documented",
-          "engines": [],
-          "url": {
-            "type": "e18e",
-            "id": "fetch"
-          },
-          "replacementModule": "ofetch"
-        }
-      ]
-    },
-    {
-      "type": "module",
       "moduleName": "bluebird",
       "replacements": [
         {
@@ -562,6 +436,69 @@
             "id": "cpx"
           },
           "replacementModule": "cpx2"
+        }
+      ]
+    },
+    {
+      "type": "module",
+      "moduleName": "cross-fetch",
+      "replacements": [
+        {
+          "type": "native",
+          "webFeatureId": "fetch",
+          "engines": [
+            {
+              "engine": "chrome",
+              "minVersion": "42"
+            },
+            {
+              "engine": "chrome_android",
+              "minVersion": "42"
+            },
+            {
+              "engine": "edge",
+              "minVersion": "14"
+            },
+            {
+              "engine": "firefox",
+              "minVersion": "39"
+            },
+            {
+              "engine": "firefox_android",
+              "minVersion": "39"
+            },
+            {
+              "engine": "safari",
+              "minVersion": "10.1"
+            },
+            {
+              "engine": "safari_ios",
+              "minVersion": "10.3"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/API/Fetch_API"
+          },
+          "description": "Use native fetch"
+        },
+        {
+          "type": "documented",
+          "engines": [],
+          "url": {
+            "type": "e18e",
+            "id": "fetch"
+          },
+          "replacementModule": "ky"
+        },
+        {
+          "type": "documented",
+          "engines": [],
+          "url": {
+            "type": "e18e",
+            "id": "fetch"
+          },
+          "replacementModule": "ofetch"
         }
       ]
     },
@@ -8888,6 +8825,69 @@
     },
     {
       "type": "module",
+      "moduleName": "node-fetch",
+      "replacements": [
+        {
+          "type": "native",
+          "webFeatureId": "fetch",
+          "engines": [
+            {
+              "engine": "chrome",
+              "minVersion": "42"
+            },
+            {
+              "engine": "chrome_android",
+              "minVersion": "42"
+            },
+            {
+              "engine": "edge",
+              "minVersion": "14"
+            },
+            {
+              "engine": "firefox",
+              "minVersion": "39"
+            },
+            {
+              "engine": "firefox_android",
+              "minVersion": "39"
+            },
+            {
+              "engine": "safari",
+              "minVersion": "10.1"
+            },
+            {
+              "engine": "safari_ios",
+              "minVersion": "10.3"
+            }
+          ],
+          "url": {
+            "type": "mdn",
+            "id": "Web/API/Fetch_API"
+          },
+          "description": "Use native fetch"
+        },
+        {
+          "type": "documented",
+          "engines": [],
+          "url": {
+            "type": "e18e",
+            "id": "fetch"
+          },
+          "replacementModule": "ky"
+        },
+        {
+          "type": "documented",
+          "engines": [],
+          "url": {
+            "type": "e18e",
+            "id": "fetch"
+          },
+          "replacementModule": "ofetch"
+        }
+      ]
+    },
+    {
+      "type": "module",
       "moduleName": "npm-run-all",
       "replacements": [
         {
@@ -9146,6 +9146,20 @@
     },
     {
       "type": "module",
+      "moduleName": "portal-vue",
+      "replacements": [
+        {
+          "type": "none",
+          "engines": [],
+          "url": {
+            "type": "e18e",
+            "id": "portal-vue"
+          }
+        }
+      ]
+    },
+    {
+      "type": "module",
       "moduleName": "q",
       "replacements": [
         {
@@ -9197,20 +9211,6 @@
           "replacementModule": "nativebird"
         }
       ]
-    },
-    {
-      "type": "module",
-      "moduleName": "portal-vue",
-      "replacements": [
-        {
-          "type": "none",
-          "engines": [],
-          "url": {
-            "type": "e18e",
-            "id": "portal-vue"
-          }
-        },
-      ],
     },
     {
       "type": "module",
