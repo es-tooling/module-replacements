@@ -8,6 +8,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "arg",
+      "docPath": "parseargs",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "axios",
       "docPath": "fetch",
       "category": "preferred"
@@ -58,6 +64,12 @@
       "type": "documented",
       "moduleName": "cli-color",
       "docPath": "chalk",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "commander",
+      "docPath": "parseargs",
       "category": "preferred"
     },
     {
@@ -2216,6 +2228,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "meow",
+      "docPath": "parseargs",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "materialize-css",
       "docPath": "materialize-css",
       "category": "preferred"
@@ -2228,6 +2246,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "minimist",
+      "docPath": "parseargs",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "mkdirp",
       "docPath": "mkdirp",
       "category": "preferred"
@@ -2236,6 +2260,12 @@
       "type": "documented",
       "moduleName": "moment",
       "docPath": "moment",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "mri",
+      "docPath": "parseargs",
       "category": "preferred"
     },
     {
@@ -2342,6 +2372,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "sade",
+      "docPath": "parseargs",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "set-value",
       "docPath": "dot-prop",
       "category": "preferred"
@@ -2404,6 +2440,18 @@
       "type": "documented",
       "moduleName": "xmldom",
       "docPath": "xmldom",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "yargs",
+      "docPath": "parseargs",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "yargs-parser",
+      "docPath": "parseargs",
       "category": "preferred"
     }
   ]
