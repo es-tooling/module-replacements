@@ -27,6 +27,7 @@ ESLint plugin.
 - [`crypto-js`](./crypto-js.md)
 - [`deep-equal`](./deep-equal.md)
 - [`depcheck`](./depcheck.md)
+- [`detect-package-manager`](./detect-package-manager.md)
 - [`dot-prop`](./dot-prop.md)
 - [`dotenv`](./dotenv.md)
 - [`emoji-regex`](./emoji-regex.md)
