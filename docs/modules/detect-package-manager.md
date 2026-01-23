@@ -11,7 +11,7 @@ description: Lightweight alternative to detect-package-manager for detecting the
 ### Key differences
 
 - **Zero subdependencies** compared to 16 in `detect-package-manager`
-- **Actively maintained** while `detect-package-manager` hasn't been updated in over a year and a half
+- **ESM-only**, while `detect-package-manager` is primarily CJS (with ESM support)
 - **Smaller bundle size** due to the lack of dependencies
 
 ### Migration example
