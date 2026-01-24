@@ -98,6 +98,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "detect-package-manager",
+      "docPath": "detect-package-manager",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "dot-prop",
       "docPath": "dot-prop",
       "category": "preferred"
