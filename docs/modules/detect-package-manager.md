@@ -25,6 +25,7 @@ const result = await detect() // [!code ++]
 const pm = result?.name // [!code ++]
 ```
 
-Note: `package-manager-detector` returns an object with `name` and `agent` properties, while `detect-package-manager` returns a string directly.
+> [!NOTE]
+> `package-manager-detector` returns an object with `name` and `agent` properties, while `detect-package-manager` returns a string directly.
 
 Both packages can detect npm, yarn, pnpm, and bun package managers in your project by analyzing lock files. Additionally, `package-manager-detector` also supports deno.
