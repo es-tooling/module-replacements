@@ -4,17 +4,19 @@ export interface EngineConstraint {
   maxVersion?: string;
 }
 
-interface ModuleReplacementLike {
-  engines?: EngineConstraint[];
-  preferred?: boolean;
-}
-
 export interface KnownUrlDescriptor {
   type: 'mdn' | 'node' | 'e18e';
   id: string;
 }
 
 export type KnownUrl = KnownUrlDescriptor | string;
+
+interface ModuleReplacementLike {
+  id: string;
+  engines?: EngineConstraint[];
+  preferred?: boolean;
+  url?: KnownUrl;
+}
 
 export interface DocumentedModuleReplacement extends ModuleReplacementLike {
   type: 'documented';
@@ -36,26 +38,26 @@ export interface NativeModuleReplacement extends ModuleReplacementLike {
 export interface SimpleModuleReplacement extends ModuleReplacementLike {
   type: 'simple';
   description: string;
-  url?: KnownUrl;
 }
 
-export interface NoModuleReplacement extends ModuleReplacementLike {
-  type: 'none';
-  url?: KnownUrl;
+export interface RemovalReplacement extends ModuleReplacementLike {
+  type: 'removal';
+  description: string;
 }
 
-export type ModuleReplacementDescriptor =
+export type ModuleReplacement =
   | DocumentedModuleReplacement
   | NativeModuleReplacement
   | SimpleModuleReplacement
-  | NoModuleReplacement;
+  | RemovalReplacement;
 
-export interface ModuleReplacement {
+export interface ModuleReplacementMapping {
   type: 'module';
   moduleName: string;
-  replacements: ModuleReplacementDescriptor[];
+  replacements: string[];
 }
 
 export interface ManifestModule {
-  replacements: ModuleReplacement[];
+  mappings: Record<string, ModuleReplacementMapping>;
+  replacements: Record<string, ModuleReplacement>;
 }
