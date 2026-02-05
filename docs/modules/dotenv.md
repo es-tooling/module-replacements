@@ -10,7 +10,7 @@ Although dotenv is reliable, it may not be necessary or may lack certain feature
 
 Built into Node.js (v20.6.0+; v22.9.0 for `--env-file-if-exists`). Zero dependencies—perfect for most apps that just need to load a `.env` at startup.
 
-[`--env-file`](https://nodejs.org/dist/latest-v20.x/docs/api/cli.html#--env-fileconfig) throws if the file is missing. If the file may be absent, use [`--env-file-if-exists`](https://nodejs.org/docs/latest-v22.x/api/cli.html#--env-file-if-existsconfig).
+[`--env-file`](https://nodejs.org/dist/latest-v20.x/docs/api/cli.html#--env-fileconfig) throws if the file is missing. If the file may be absent, use [`--env-file-if-exists`](https://nodejs.org/docs/latest-v22.x/api/cli.html#--env-file-if-existsfile).
 
 ```bash
 node --env-file=.env index.js
