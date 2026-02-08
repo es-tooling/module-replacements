@@ -254,6 +254,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "gzip-size",
+      "docPath": "gzip-size",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "invariant",
       "docPath": "invariant",
       "category": "preferred"
