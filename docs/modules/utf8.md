@@ -26,6 +26,8 @@ const decodedText = decoder.decode(utf8Bytes); // "€"
 Node's built-in [`Buffer`](https://nodejs.org/api/buffer.html) provides both `Buffer.from(str, 'utf8')` and `buf.toString('utf8')` methods for UTF-8 encoding and decoding.
 
 ```ts
+import { Buffer } from 'node:buffer';
+
 const text = "€";
 const utf8Buffer = Buffer.from(text, 'utf8'); // Buffer of UTF-8 bytes
 ```
