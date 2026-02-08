@@ -4,6 +4,23 @@ description: Modern alternatives to the deep-equal package for deep object compa
 
 # Replacements for `deep-equal`
 
+## Node.js
+
+Node.js has a builtin function [`isDeepStrictEqual`](https://nodejs.org/api/util.html#utilisdeepstrictequalval1-val2-options). Consider using that if you don’t need browser support.
+
+Example:
+
+```ts
+import equal from 'deep-equal' // [!code --]
+import { isDeepStrictEqual } from 'node:util' // [!code ++]
+
+const a = { foo: 'bar' }
+const b = { foo: 'bar' }
+
+equal(a, b) // true [!code --]
+isDeepStrictEqual(a, b) // true [!code ++]
+```
+
 ## `dequal`
 
 [`dequal`](https://www.npmjs.com/package/dequal) has the same simple API as deep equal.
