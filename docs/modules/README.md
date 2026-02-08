@@ -50,6 +50,7 @@ ESLint plugin.
 - [`glob`](./glob.md)
 - [`globby`](./globby.md)
 - [`graphemer`](./graphemer.md)
+- [`gzip-size`](./gzip-size.md)
 - [`invariant`](./invariant.md)
 - [`is-builtin-module`](./is-builtin-module.md)
 - [`jQuery`](./jquery.md)
