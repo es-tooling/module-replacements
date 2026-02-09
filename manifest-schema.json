@@ -23,7 +23,11 @@
                 "type": "string"
               }
             },
-            "required": ["docPath", "moduleName", "type"],
+            "required": [
+              "docPath",
+              "moduleName",
+              "type"
+            ],
             "additionalProperties": false
           },
           {
@@ -75,7 +79,11 @@
                 "type": "string"
               }
             },
-            "required": ["moduleName", "replacement", "type"],
+            "required": [
+              "moduleName",
+              "replacement",
+              "type"
+            ],
             "additionalProperties": false
           },
           {
@@ -92,14 +100,19 @@
                 "type": "string"
               }
             },
-            "required": ["moduleName", "type"],
+            "required": [
+              "moduleName",
+              "type"
+            ],
             "additionalProperties": false
           }
         ]
       }
     }
   },
-  "required": ["moduleReplacements"],
+  "required": [
+    "moduleReplacements"
+  ],
   "additionalProperties": false,
   "definitions": {}
 }

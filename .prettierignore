@@ -2,3 +2,4 @@
 /.tshy
 /dist
 /package-lock.json
+/manifest-schema.json
