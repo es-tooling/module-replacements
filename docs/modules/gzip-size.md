@@ -45,6 +45,6 @@ import { gzipSizeFromFileSync } from 'gzip-size'; // [!code --]
 
 const path = '/path/to/file';
 
-console.log(gzipSync(readFileSync(path))); // [!code ++]
+console.log(gzipSync(readFileSync(path)).length); // [!code ++]
 console.log(gzipSizeFromFileSync(path)); // [!code --]
 ```
