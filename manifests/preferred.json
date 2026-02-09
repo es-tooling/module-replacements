@@ -2372,6 +2372,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "stream-buffers",
+      "docPath": "stream-buffers",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "string-width",
       "docPath": "string-width",
       "category": "preferred"
