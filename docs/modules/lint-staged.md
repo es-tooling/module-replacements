@@ -11,6 +11,7 @@ description: Modern alternatives to lint-staged for running commands on staged G
 package.json config:
 
 <!-- eslint-skip -->
+
 ```json
 {
   "lint-staged": { // [!code --]
@@ -22,5 +23,6 @@ package.json config:
 
 > [!NOTE]
 > Differences to be aware of:
+>
 > - `lint-staged` has advanced features like backup stashing, partial-staging handling, per-directory configs in monorepos, and detailed concurrency controls.
 > - `nano-staged` focuses on simplicity and speed. If you rely on `lint-staged`’s stash/partial-staging features, keep using `lint-staged`.

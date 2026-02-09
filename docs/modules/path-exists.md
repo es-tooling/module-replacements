@@ -8,12 +8,16 @@ description: Modern alternatives to the path-exists package for checking if a pa
 
 Use [`fs/promises.access`](https://nodejs.org/docs/latest/api/fs.html#fspromisesaccesspath-mode) and return a boolean.
 
+<!-- prettier-ignore -->
 ```ts
 import pathExists from 'path-exists' // [!code --]
 import { access } from 'node:fs/promises' // [!code ++]
 
 const exists = await pathExists('/etc/passwd') // [!code --]
-const exists = await access('/etc/passwd').then(() => true, () => false) // [!code ++]
+const exists = await access('/etc/passwd').then( // [!code ++]
+  () => true, // [!code ++]
+  () => false // [!code ++]
+) // [!code ++]
 ```
 
 ## Node.js (sync)
@@ -24,9 +28,8 @@ Added in v0.1.21: synchronous path/file existence check via [`fs.existsSync`](ht
 import pathExists from 'path-exists' // [!code --]
 import { existsSync } from 'node:fs' // [!code ++]
 
-if (await pathExists('/etc/passwd')) // [!code --]
-if (existsSync('/etc/passwd')) // [!code ++]
-  console.log('The path exists.')
+const exists = await pathExists('/etc/passwd') // [!code --]
+const exists = existsSync('/etc/passwd') // [!code ++]
 ```
 
 ## Bun

@@ -9,9 +9,11 @@ description: Modern, secure alternatives to the shortid package for generating U
 [`nanoid`](https://github.com/ai/nanoid) is a tiny, secure, URL‑friendly, unique string ID generator. It’s also faster than [`shortid`](https://github.com/dylang/shortid).
 
 :::info Good to know before migration
+
 - `shortid.isValid(id)`: there’s no direct equivalent. Validate with a regex that matches your chosen alphabet and length, e.g. `/^[A-Za-z0-9_-]{21}$/`.
 
 - `shortid.seed()`/`shortid.worker()`: not needed and not provided by `nanoid` (it uses a secure random source). Avoid seeded/deterministic IDs for security.
+
 :::
 
 ### Basic migration
@@ -34,6 +36,7 @@ nanoid(10) // e.g., "NG3oYbq9qE"
 ### Custom alphabet (replacement for `shortid.characters`)
 
 <!-- eslint-skip -->
+<!-- prettier-ignore -->
 ```ts
 shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@') // [!code --]
 import { customAlphabet } from 'nanoid' // [!code ++]

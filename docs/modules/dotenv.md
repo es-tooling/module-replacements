@@ -55,7 +55,7 @@ In package.json scripts:
 import { parse } from 'dotenv' // [!code --]
 import { parseEnv } from 'node:util' // [!code ++]
 
-const envContent = '...';
+const envContent = '...'
 
 const env = parse(envContent) // [!code --]
 const env = parseEnv(envContent) // [!code ++]

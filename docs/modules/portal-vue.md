@@ -22,7 +22,7 @@ Since Vue 3, the [Teleport](https://vuejs.org/guide/built-ins/teleport.html) com
 
 ```html
 <!-- MyModal.vue -->
-  <Teleport to="body">
-    <p>The content inside of Teleport will render in html body</p>
-  </Teleport>
+<Teleport to="body">
+  <p>The content inside of Teleport will render in html body</p>
+</Teleport>
 ```

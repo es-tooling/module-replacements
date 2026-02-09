@@ -16,11 +16,11 @@ export default [
   commentsCommunity.recommended, // [!code ++]
   {
     plugins: {
-      'eslint-comments': eslintComments, // [!code --]
+      'eslint-comments': eslintComments // [!code --]
     },
     rules: {
       'eslint-comments/no-unused-disable': 'error', // [!code --]
-      '@eslint-community/eslint-comments/no-unused-disable': 'error', // [!code ++]
+      '@eslint-community/eslint-comments/no-unused-disable': 'error' // [!code ++]
     }
   }
 ]

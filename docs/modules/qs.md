@@ -44,6 +44,7 @@ const str = fqs.stringify({ tag: ['a', 'b'], q: 'x y' }) // [!code ++]
 
 Example:
 
+<!-- prettier-ignore -->
 ```ts
 import qs from 'qs' // [!code --]
 import { parse, stringify } from 'picoquery' // [!code ++]
@@ -57,7 +58,10 @@ const opts = { // [!code ++]
 const obj = qs.parse('user[name]=foo&tags[]=bar&tags[]=baz') // [!code --]
 const obj = parse('user[name]=foo&tags[]=bar&tags[]=baz', opts) // [!code ++]
 
-const str = qs.stringify({ user: { name: 'foo' }, tags: ['bar', 'baz'] }, { arrayFormat: 'brackets' }) // [!code --]
+const str = qs.stringify( // [!code --]
+  { user: { name: 'foo' }, tags: ['bar', 'baz'] }, // [!code --]
+  { arrayFormat: 'brackets' } // [!code --]
+) // [!code --]
 const str = stringify({ user: { name: 'foo' }, tags: ['bar', 'baz'] }, opts) // [!code ++]
 ```
 

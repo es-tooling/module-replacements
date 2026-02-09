@@ -18,17 +18,17 @@ export default [
   {
     files: ['**/*.{jsx,tsx}'],
     plugins: {
-      'react': reactPlugin, // [!code --]
-      '@eslint-react': eslintReact, // [!code ++]
+      react: reactPlugin, // [!code --]
+      '@eslint-react': eslintReact // [!code ++]
     },
     rules: {
       ...reactPlugin.configs.recommended.rules, // [!code --]
       ...eslintReact.configs.recommended.rules, // [!code ++]
 
       'react/no-unknown-property': 'error', // [!code --]
-      '@eslint-react/dom/no-unknown-property': 'error', // [!code ++]
-    },
-  },
+      '@eslint-react/dom/no-unknown-property': 'error' // [!code ++]
+    }
+  }
 ]
 ```
 

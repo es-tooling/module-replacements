@@ -34,6 +34,6 @@ jobs:
         env:
           TAG_NAME: ${{ github.ref_name }}
       - run: npm publish --provenance --access public --tag next
-        if: "github.event.release.prerelease"
+        if: 'github.event.release.prerelease'
       - run: npm publish --provenance --access public
-        if: "!github.event.release.prerelease"
+        if: '!github.event.release.prerelease'

@@ -5,6 +5,7 @@ provides a collection of module replacements (i.e. possible alternative
 packages).
 
 We provide two things:
+
 - Manifests (mappings of modules to their possible replacements)
 - Documentation for more complex replacements
 
@@ -17,10 +18,9 @@ You can find a list of replacements in the
 
 Some tools consume the lists of modules in this repository:
 
-| Name | Description |
-| -- | -- |
+| Name                                                                       | Description                                   |
+| -------------------------------------------------------------------------- | --------------------------------------------- |
 | [eslint-plugin-depend](https://github.com/es-tooling/eslint-plugin-depend) | ESLint plugin to detect possible replacements |
-
 
 ## Manifests
 
