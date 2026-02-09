@@ -11,40 +11,39 @@ To calculate the gzipped size of a string or an `ArrayBuffer`, you can use [gzip
 ### Synchronous
 
 ```ts
-import { gzipSync } from 'node:zlib'; // [!code ++]
 import { gzipSizeSync } from 'gzip-size'; // [!code --]
+import { gzipSync } from 'node:zlib'; // [!code ++]
 
 const text = 'Lorem ipsum dolor sil amet';
 
-console.log(gzipSync(text).length); // [!code ++]
 console.log(gzipSizeSync(text)); // [!code --]
+console.log(gzipSync(text).length); // [!code ++]
 ```
 
 ### Asynchronous
 
 ```ts
-import { gzipSync } from 'node:zlib'; // [!code ++]
 import { gzipSize } from 'gzip-size'; // [!code --]
-
+import { gzipSync } from 'node:zlib'; // [!code ++]
 import { promisify } from 'node:util'; // [!code ++]
 
 const gzipAsync = promisify(gzip); // [!code ++]
 
 const text = 'Lorem ipsum dolor sil amet';
 
-console.log((await gzipAsync(text)).length); // [!code ++]
 console.log(await gzipSize(text)); // [!code --]
+console.log((await gzipAsync(text)).length); // [!code ++]
 ```
 
 ### Calculating from a file
 
 ```ts
+import { gzipSizeFromFileSync } from 'gzip-size'; // [!code --]
 import { gzipSync } from 'node:zlib'; // [!code ++]
 import { readFileSync } from 'node:fs'; // [!code ++]
-import { gzipSizeFromFileSync } from 'gzip-size'; // [!code --]
 
 const path = '/path/to/file';
 
-console.log(gzipSync(readFileSync(path))); // [!code ++]
 console.log(gzipSizeFromFileSync(path)); // [!code --]
+console.log(gzipSync(readFileSync(path)).length); // [!code ++]
 ```
