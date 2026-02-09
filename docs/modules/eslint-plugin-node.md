@@ -17,15 +17,15 @@ export default [
     files: ['**/*.js'], // or any other pattern
     plugins: {
       node: nodePlugin, // [!code --]
-      n: nPlugin, // [!code ++]
+      n: nPlugin // [!code ++]
     },
     rules: {
       ...nodePlugin.configs['recommended-script'].rules, // [!code --]
       ...nPlugin.configs['recommended-script'].rules, // [!code ++]
       'node/exports-style': ['error', 'module.exports'], // [!code --]
-      'n/exports-style': ['error', 'module.exports'], // [!code ++]
-    },
-  },
+      'n/exports-style': ['error', 'module.exports'] // [!code ++]
+    }
+  }
 ]
 ```
 
@@ -36,7 +36,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:node/recommended', // [!code --]
-    'plugin:n/recommended', // [!code ++]
-  ],
+    'plugin:n/recommended' // [!code ++]
+  ]
 }
 ```

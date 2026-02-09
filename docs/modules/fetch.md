@@ -14,15 +14,15 @@ Example:
 
 ```ts
 // GET
-const res = await fetch('https://api.example.com/data');
-const data = await res.json();
+const res = await fetch('https://api.example.com/data')
+const data = await res.json()
 
 // POST
 await fetch('https://api.example.com/data', {
   method: 'POST',
-  headers: {'Content-Type': 'application/json'},
-  body: JSON.stringify({key: 'value'})
-});
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ key: 'value' })
+})
 ```
 
 ## `ky`
@@ -32,14 +32,14 @@ await fetch('https://api.example.com/data', {
 Example:
 
 ```ts
-import ky from 'ky';
+import ky from 'ky'
 
 const api = ky.create({
   prefixUrl: 'https://api.example.com',
   timeout: 5000 // ms
-});
+})
 
-const data = await api.get('users').json();
+const data = await api.get('users').json()
 ```
 
 ## `ofetch`
@@ -49,10 +49,10 @@ const data = await api.get('users').json();
 Example:
 
 ```ts
-import {ofetch} from 'ofetch';
+import { ofetch } from 'ofetch'
 
-const api = ofetch.create({baseURL: 'https://api.example.com'});
+const api = ofetch.create({ baseURL: 'https://api.example.com' })
 
-const data = await api('/user', {query: {id: 123}});
-const created = await api('/items', {method: 'POST', body: {name: 'A'}});
+const data = await api('/user', { query: { id: 123 } })
+const created = await api('/items', { method: 'POST', body: { name: 'A' } })
 ```

@@ -93,6 +93,7 @@ console.log(
 ```
 
 Library support:
+
 - [`ansis`](https://github.com/webdiscus/ansis#browser-compatibility-for-ansi-codes) - colors are supported in _Chromium_ browsers
 - `picocolors` - strips colors in browser environments
 - `node:util` - is not available in browsers

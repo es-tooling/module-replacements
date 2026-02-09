@@ -13,14 +13,14 @@ Node provides a [`node:crypto`](https://nodejs.org/api/crypto.html) module as pa
 This supports hashes/HMAC, AES-GCM, PBKDF2/scrypt, RSA/ECDSA/Ed25519, and secure RNG.
 
 ```ts
-import sha256 from 'crypto-js/sha256'; // [!code --]
-import { createHash } from 'node:crypto'; // [!code ++]
+import sha256 from 'crypto-js/sha256' // [!code --]
+import { createHash } from 'node:crypto' // [!code ++]
 
-const secret = 'abcdefg';
-const hash = sha256(secret).toString(); // [!code --]
+const secret = 'abcdefg'
+const hash = sha256(secret).toString() // [!code --]
 const hash = createHash('sha256') // [!code ++]
-               .update(secret) // [!code ++]
-               .digest('hex'); // [!code ++]
+  .update(secret) // [!code ++]
+  .digest('hex') // [!code ++]
 ```
 
 ## Web Crypto API (native)

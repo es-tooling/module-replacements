@@ -1,0 +1,4 @@
+/node_modules
+/.tshy
+/dist
+/package-lock.json

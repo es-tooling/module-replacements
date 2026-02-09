@@ -19,11 +19,12 @@ cpx "src/**/*.{html,png,jpg}" app --watch
 Node API replacement:
 
 <!-- eslint-skip -->
-```ts
-const cpx = require('cpx')   // [!code --]
-const cpx = require('cpx2')  // [!code ++]
 
-cpx.copy("src/**/*.js", "dist", err => {
+```ts
+const cpx = require('cpx') // [!code --]
+const cpx = require('cpx2') // [!code ++]
+
+cpx.copy('src/**/*.js', 'dist', (err) => {
   if (err) throw err
 })
 ```

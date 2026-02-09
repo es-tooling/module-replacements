@@ -15,12 +15,12 @@ import { hasProp } from 'jsx-ast-utils-x' // [!code ++]
 import hasProp from 'jsx-ast-utils/hasProp' // [!code --]
 import hasProp from 'jsx-ast-utils-x/hasProp' // [!code ++]
 
-module.exports = context => ({
+module.exports = (context) => ({
   JSXOpeningElement: (node) => {
     const onChange = hasProp(node.attributes, 'onChange')
     if (onChange) {
       context.report({ node, message: 'No onChange!' })
     }
-  },
+  }
 })
 ```

@@ -20,5 +20,9 @@ for (const manifestName of manifests) {
     return a.moduleName > b.moduleName ? 1 : -1;
   });
 
-  await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + '\n', 'utf8');
+  await writeFile(
+    manifestPath,
+    JSON.stringify(manifest, null, 2) + '\n',
+    'utf8'
+  );
 }

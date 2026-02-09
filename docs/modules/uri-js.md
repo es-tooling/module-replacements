@@ -34,7 +34,11 @@ import * as URI from 'uri-js' // [!code --]
 import * as URI from 'uri-js-replace' // [!code ++]
 
 const parsed = URI.parse('uri://user:pass@example.com:123/one/two?q=a#f')
-const out = URI.serialize({ scheme: 'http', host: 'example.com', fragment: 'footer' })
+const out = URI.serialize({
+  scheme: 'http',
+  host: 'example.com',
+  fragment: 'footer'
+})
 const norm = URI.normalize('URI://www.example.org/red%09ros\xE9#red')
 ```
 
