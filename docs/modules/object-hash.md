@@ -31,7 +31,9 @@ import stringify from 'safe-stable-stringify' // [!code ++]
 const h = objectHash(obj, { algorithm: 'sha256' }) // [!code --]
 const data = new TextEncoder().encode(stringify(obj)) // [!code ++]
 const buf = await crypto.subtle.digest('SHA-256', data) // [!code ++]
-const h = Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('') // [!code ++]
+const h = Array.from(new Uint8Array(buf)) // [!code ++]
+  .map((b) => b.toString(16).padStart(2, '0')) // [!code ++]
+  .join('') // [!code ++]
 ```
 
 ## Bun `CryptoHasher`
