@@ -1,9 +1,10 @@
-import {readdir, readFile} from 'node:fs/promises';
+import {readdir, readFile, access} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import * as path from 'node:path';
 
 const scriptDir = fileURLToPath(new URL('.', import.meta.url));
 const manifestsDir = path.resolve(scriptDir, '../manifests');
+const docsDir = path.resolve(scriptDir, '../docs/modules');
 const seenModules = new Set();
 
 async function checkManifestForDuplicates(name, manifest) {
@@ -60,6 +61,24 @@ export async function checkManifestsForProblems() {
 
     await checkManifestForDuplicates(manifestName, manifest);
     checkManifestIsSorted(manifestName, manifest);
+    await checkDocPathsExist(manifestName, manifest);
   }
   console.log('OK');
+}
+
+async function checkDocPathsExist(name, manifest) {
+  for (const mod of manifest.moduleReplacements) {
+    if (!mod.docPath) {
+      continue;
+    }
+
+    const docFile = path.join(docsDir, `${mod.docPath}.md`);
+    try {
+      await access(docFile);
+    } catch {
+      throw new Error(
+        `Module ${mod.moduleName} in ${name} has docPath "${mod.docPath}" but ${mod.docPath}.md does not exist in docs/modules/`
+      );
+    }
+  }
 }
