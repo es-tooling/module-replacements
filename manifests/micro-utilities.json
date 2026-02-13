@@ -170,6 +170,12 @@
     },
     {
       "type": "simple",
+      "moduleName": "is-stream",
+      "replacement": "Use `isReadable(stream) || isWritable(stream)` from `node:stream`.",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
       "moduleName": "is-string",
       "replacement": "Use typeof str === \"string\"",
       "category": "micro-utilities"
