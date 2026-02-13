@@ -146,6 +146,12 @@
     },
     {
       "type": "simple",
+      "moduleName": "is-plain-obj",
+      "replacement": "Use v && typeof v === \"object\" && (Object.getPrototypeOf(v) === null || Object.getPrototypeOf(v) === Object.prototype)",
+      "category": "micro-utilities"
+    },
+    {
+      "type": "simple",
       "moduleName": "is-plain-object",
       "replacement": "Use v && typeof v === \"object\" && (Object.getPrototypeOf(v) === null || Object.getPrototypeOf(v) === Object.prototype)",
       "category": "micro-utilities"
