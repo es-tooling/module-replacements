@@ -2,19 +2,26 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
+    "mappings": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/ModuleReplacementMapping"
+      }
+    },
     "replacements": {
-      "type": "array",
-      "items": {
+      "type": "object",
+      "additionalProperties": {
         "$ref": "#/definitions/ModuleReplacement"
       }
     }
   },
   "required": [
+    "mappings",
     "replacements"
   ],
   "additionalProperties": false,
   "definitions": {
-    "ModuleReplacement": {
+    "ModuleReplacementMapping": {
       "type": "object",
       "properties": {
         "type": {
@@ -27,7 +34,7 @@
         "replacements": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ModuleReplacementDescriptor"
+            "type": "string"
           }
         }
       },
@@ -38,7 +45,7 @@
       ],
       "additionalProperties": false
     },
-    "ModuleReplacementDescriptor": {
+    "ModuleReplacement": {
       "anyOf": [
         {
           "$ref": "#/definitions/DocumentedModuleReplacement"
@@ -50,13 +57,16 @@
           "$ref": "#/definitions/SimpleModuleReplacement"
         },
         {
-          "$ref": "#/definitions/NoModuleReplacement"
+          "$ref": "#/definitions/RemovalReplacement"
         }
       ]
     },
     "DocumentedModuleReplacement": {
       "type": "object",
       "properties": {
+        "id": {
+          "type": "string"
+        },
         "engines": {
           "type": "array",
           "items": {
@@ -66,21 +76,22 @@
         "preferred": {
           "type": "boolean"
         },
+        "url": {
+          "$ref": "#/definitions/KnownUrl"
+        },
         "type": {
           "type": "string",
           "const": "documented"
-        },
-        "url": {
-          "$ref": "#/definitions/KnownUrl"
         },
         "replacementModule": {
           "type": "string"
         }
       },
       "required": [
+        "id",
+        "replacementModule",
         "type",
-        "url",
-        "replacementModule"
+        "url"
       ],
       "additionalProperties": false
     },
@@ -136,6 +147,9 @@
     "NativeModuleReplacement": {
       "type": "object",
       "properties": {
+        "id": {
+          "type": "string"
+        },
         "engines": {
           "type": "array",
           "items": {
@@ -145,12 +159,12 @@
         "preferred": {
           "type": "boolean"
         },
+        "url": {
+          "$ref": "#/definitions/KnownUrl"
+        },
         "type": {
           "type": "string",
           "const": "native"
-        },
-        "url": {
-          "$ref": "#/definitions/KnownUrl"
         },
         "description": {
           "type": "string"
@@ -175,15 +189,19 @@
         }
       },
       "required": [
+        "description",
+        "id",
         "type",
-        "url",
-        "description"
+        "url"
       ],
       "additionalProperties": false
     },
     "SimpleModuleReplacement": {
       "type": "object",
       "properties": {
+        "id": {
+          "type": "string"
+        },
         "engines": {
           "type": "array",
           "items": {
@@ -192,6 +210,9 @@
         },
         "preferred": {
           "type": "boolean"
+        },
+        "url": {
+          "$ref": "#/definitions/KnownUrl"
         },
         "type": {
           "type": "string",
@@ -199,20 +220,21 @@
         },
         "description": {
           "type": "string"
-        },
-        "url": {
-          "$ref": "#/definitions/KnownUrl"
         }
       },
       "required": [
-        "type",
-        "description"
+        "description",
+        "id",
+        "type"
       ],
       "additionalProperties": false
     },
-    "NoModuleReplacement": {
+    "RemovalReplacement": {
       "type": "object",
       "properties": {
+        "id": {
+          "type": "string"
+        },
         "engines": {
           "type": "array",
           "items": {
@@ -222,15 +244,20 @@
         "preferred": {
           "type": "boolean"
         },
-        "type": {
-          "type": "string",
-          "const": "none"
-        },
         "url": {
           "$ref": "#/definitions/KnownUrl"
+        },
+        "type": {
+          "type": "string",
+          "const": "removal"
+        },
+        "description": {
+          "type": "string"
         }
       },
       "required": [
+        "description",
+        "id",
         "type"
       ],
       "additionalProperties": false

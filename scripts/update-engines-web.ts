@@ -4,8 +4,7 @@ import * as path from 'node:path';
 import {features} from 'web-features';
 import type {
   ManifestModule,
-  ModuleReplacementDescriptor,
-  NativeModuleReplacement,
+  ModuleReplacement,
   EngineConstraint
 } from '../src/types.js';
 
@@ -42,8 +41,8 @@ function extractEngines(support: Support): EngineConstraint[] {
  * Update engines for a single replacement based on its webFeatureId
  */
 function updateReplacementEngines(
-  replacement: ModuleReplacementDescriptor
-): ModuleReplacementDescriptor {
+  replacement: ModuleReplacement
+): ModuleReplacement {
   if (replacement.type !== 'native' || !replacement.webFeatureId) {
     return replacement;
   }
@@ -106,12 +105,14 @@ async function main() {
     const manifestContent = await readFile(manifestPath, {encoding: 'utf8'});
     const manifest: ManifestModule = JSON.parse(manifestContent);
 
-    const updatedManifest = {
+    const updatedManifest: ManifestModule = {
       ...manifest,
-      replacements: manifest.replacements.map((module) => ({
-        ...module,
-        replacements: module.replacements.map(updateReplacementEngines)
-      }))
+      replacements: Object.fromEntries(
+        Object.entries(manifest.replacements).map(([id, replacement]) => [
+          id,
+          updateReplacementEngines(replacement)
+        ])
+      )
     };
 
     await writeFile(

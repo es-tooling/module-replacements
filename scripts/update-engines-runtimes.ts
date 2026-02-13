@@ -3,7 +3,7 @@ import {fileURLToPath} from 'node:url';
 import * as path from 'node:path';
 import type {
   ManifestModule,
-  ModuleReplacementDescriptor,
+  ModuleReplacement,
   EngineConstraint
 } from '../src/types.js';
 
@@ -114,9 +114,9 @@ function extractRuntimeEngines(
  * Update engines for a single replacement based on its nodeFeatureId
  */
 function updateReplacementEngines(
-  replacement: ModuleReplacementDescriptor,
+  replacement: ModuleReplacement,
   allRuntimeData: Map<RuntimeName, RuntimeData>
-): ModuleReplacementDescriptor {
+): ModuleReplacement {
   if (replacement.type !== 'native' || !replacement.nodeFeatureId) {
     return replacement;
   }
@@ -194,14 +194,14 @@ async function main() {
     const manifestContent = await readFile(manifestPath, {encoding: 'utf8'});
     const manifest: ManifestModule = JSON.parse(manifestContent);
 
-    const updatedManifest = {
+    const updatedManifest: ManifestModule = {
       ...manifest,
-      replacements: manifest.replacements.map((module) => ({
-        ...module,
-        replacements: module.replacements.map((replacement) =>
+      replacements: Object.fromEntries(
+        Object.entries(manifest.replacements).map(([id, replacement]) => [
+          id,
           updateReplacementEngines(replacement, allRuntimeData)
-        )
-      }))
+        ])
+      )
     };
 
     await writeFile(

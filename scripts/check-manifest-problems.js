@@ -7,38 +7,32 @@ const manifestsDir = path.resolve(scriptDir, '../manifests');
 const seenModules = new Set();
 
 async function checkManifestForDuplicates(name, manifest) {
-  const seenInThisManifest = new Set();
-
-  for (const mod of manifest.moduleReplacements) {
-    if (seenInThisManifest.has(mod.moduleName)) {
+  for (const moduleName of Object.keys(manifest.mappings)) {
+    if (seenModules.has(moduleName)) {
       throw new Error(
-        `Module ${mod.moduleName} was found multiple times in ${name}`
+        `Module ${moduleName} was found in multiple manifests`
       );
     }
-    if (seenModules.has(mod.moduleName)) {
-      throw new Error(
-        `Module ${mod.moduleName} was found in multiple manifests`
-      );
-    }
-    seenInThisManifest.add(mod.moduleName);
-    seenModules.add(mod.moduleName);
+    seenModules.add(moduleName);
   }
 }
 
 function checkManifestIsSorted(name, manifest) {
-  const sorted = [...manifest.moduleReplacements].sort((a, b) => {
-    if (a.moduleName === b.moduleName) {
-      return 0;
-    }
-    return a.moduleName > b.moduleName ? 1 : -1;
-  });
+  const keys = Object.keys(manifest.mappings);
+  const sorted = [...keys].sort();
 
   for (let i = 0; i < sorted.length; i++) {
-    const mod = sorted[i];
-    const unsortedMod = manifest.moduleReplacements[i];
+    if (keys[i] !== sorted[i]) {
+      throw new Error(`Manifest ${name} mappings should be sorted by module name (a-z)`);
+    }
+  }
 
-    if (mod !== unsortedMod) {
-      throw new Error(`Manifest ${name} should be sorted by module name (a-z)`);
+  const replacementKeys = Object.keys(manifest.replacements);
+  const sortedReplacementKeys = [...replacementKeys].sort();
+
+  for (let i = 0; i < sortedReplacementKeys.length; i++) {
+    if (replacementKeys[i] !== sortedReplacementKeys[i]) {
+      throw new Error(`Manifest ${name} replacements should be sorted by id (a-z)`);
     }
   }
 }
