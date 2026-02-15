@@ -406,7 +406,7 @@
       "type": "module",
       "moduleName": "fs-extra",
       "replacements": [
-        "fs-extra"
+        "fs"
       ],
       "url": {
         "type": "e18e",
@@ -5319,13 +5319,13 @@
       "description": "Bun.Shell",
       "url": "https://bun.com/docs/runtime/shell"
     },
-    "fs-extra": {
-      "id": "fs-extra",
-      "type": "removal",
-      "description": "fs-extra can be replaced with native fs functionality.",
+    "fs": {
+      "id": "fs",
+      "type": "native",
+      "description": "Node file system module",
       "url": {
-        "type": "e18e",
-        "id": "fs-extra"
+        "type": "node",
+        "id": "api/fs.html"
       }
     },
     "fs.glob": {
