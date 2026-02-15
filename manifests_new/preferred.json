@@ -1,0 +1,4040 @@
+{
+  "mappings": {
+    "@jsdevtools/ez-spawn": {
+      "type": "module",
+      "moduleName": "@jsdevtools/ez-spawn",
+      "replacements": [
+        "tinyexec"
+      ]
+    },
+    "axios": {
+      "type": "module",
+      "moduleName": "axios",
+      "replacements": [
+        "fetch",
+        "ky",
+        "ofetch"
+      ]
+    },
+    "bluebird": {
+      "type": "module",
+      "moduleName": "bluebird",
+      "replacements": [
+        "Promise",
+        "nativebird"
+      ]
+    },
+    "body-parser": {
+      "type": "module",
+      "moduleName": "body-parser",
+      "replacements": [
+        "milliparsec"
+      ]
+    },
+    "buf-compare": {
+      "type": "module",
+      "moduleName": "buf-compare",
+      "replacements": [
+        "Buffer.compare"
+      ]
+    },
+    "buffer-equal": {
+      "type": "module",
+      "moduleName": "buffer-equal",
+      "replacements": [
+        "Buffer.prototype.equals"
+      ]
+    },
+    "buffer-equals": {
+      "type": "module",
+      "moduleName": "buffer-equals",
+      "replacements": [
+        "Buffer.prototype.equals"
+      ]
+    },
+    "builtin-modules": {
+      "type": "module",
+      "moduleName": "builtin-modules",
+      "replacements": [
+        "builtinModules"
+      ]
+    },
+    "chalk": {
+      "type": "module",
+      "moduleName": "chalk",
+      "replacements": [
+        "util.styleText",
+        "picocolors",
+        "ansis"
+      ]
+    },
+    "cli-color": {
+      "type": "module",
+      "moduleName": "cli-color",
+      "replacements": [
+        "util.styleText",
+        "picocolors",
+        "ansis"
+      ]
+    },
+    "core-util-is": {
+      "type": "module",
+      "moduleName": "core-util-is",
+      "replacements": [
+        "util.types"
+      ]
+    },
+    "cpx": {
+      "type": "module",
+      "moduleName": "cpx",
+      "replacements": [
+        "cpx2"
+      ]
+    },
+    "cross-fetch": {
+      "type": "module",
+      "moduleName": "cross-fetch",
+      "replacements": [
+        "fetch",
+        "ky",
+        "ofetch"
+      ]
+    },
+    "crypto-js": {
+      "type": "module",
+      "moduleName": "crypto-js",
+      "replacements": [
+        "node:crypto",
+        "crypto",
+        "Bun.CryptoHasher"
+      ]
+    },
+    "deep-equal": {
+      "type": "module",
+      "moduleName": "deep-equal",
+      "replacements": [
+        "dequal",
+        "fast-deep-equal"
+      ]
+    },
+    "depcheck": {
+      "type": "module",
+      "moduleName": "depcheck",
+      "replacements": [
+        "knip"
+      ]
+    },
+    "dot-prop": {
+      "type": "module",
+      "moduleName": "dot-prop",
+      "replacements": [
+        "dlv",
+        "object-path"
+      ]
+    },
+    "dotenv": {
+      "type": "module",
+      "moduleName": "dotenv",
+      "replacements": [
+        "--env-file"
+      ]
+    },
+    "emoji-regex": {
+      "type": "module",
+      "moduleName": "emoji-regex",
+      "replacements": [
+        "emoji-regex-xs",
+        "unicodeClassEscape"
+      ]
+    },
+    "eslint-plugin-es": {
+      "type": "module",
+      "moduleName": "eslint-plugin-es",
+      "replacements": [
+        "eslint-plugin-es-x"
+      ]
+    },
+    "eslint-plugin-eslint-comments": {
+      "type": "module",
+      "moduleName": "eslint-plugin-eslint-comments",
+      "replacements": [
+        "@eslint-community/eslint-plugin-eslint-comments"
+      ]
+    },
+    "eslint-plugin-import": {
+      "type": "module",
+      "moduleName": "eslint-plugin-import",
+      "replacements": [
+        "eslint-plugin-import-x"
+      ]
+    },
+    "eslint-plugin-node": {
+      "type": "module",
+      "moduleName": "eslint-plugin-node",
+      "replacements": [
+        "eslint-plugin-n"
+      ]
+    },
+    "eslint-plugin-react": {
+      "type": "module",
+      "moduleName": "eslint-plugin-react",
+      "replacements": [
+        "@eslint-react/eslint-plugin"
+      ]
+    },
+    "eslint-plugin-vitest": {
+      "type": "module",
+      "moduleName": "eslint-plugin-vitest",
+      "replacements": [
+        "@vitest/eslint-plugin"
+      ]
+    },
+    "execa": {
+      "type": "module",
+      "moduleName": "execa",
+      "replacements": [
+        "tinyexec",
+        "nanoexec",
+        "Bun.Shell"
+      ]
+    },
+    "ez-spawn": {
+      "type": "module",
+      "moduleName": "ez-spawn",
+      "replacements": [
+        "tinyexec"
+      ]
+    },
+    "ezspawn": {
+      "type": "module",
+      "moduleName": "ezspawn",
+      "replacements": [
+        "tinyexec"
+      ]
+    },
+    "faker": {
+      "type": "module",
+      "moduleName": "faker",
+      "replacements": [
+        "@faker-js/faker"
+      ]
+    },
+    "fast-glob": {
+      "type": "module",
+      "moduleName": "fast-glob",
+      "replacements": [
+        "tinyglobby"
+      ]
+    },
+    "find-cache-dir": {
+      "type": "module",
+      "moduleName": "find-cache-dir",
+      "replacements": [
+        "empathic"
+      ]
+    },
+    "find-cache-directory": {
+      "type": "module",
+      "moduleName": "find-cache-directory",
+      "replacements": [
+        "empathic"
+      ]
+    },
+    "find-file-up": {
+      "type": "module",
+      "moduleName": "find-file-up",
+      "replacements": [
+        "empathic"
+      ]
+    },
+    "find-pkg": {
+      "type": "module",
+      "moduleName": "find-pkg",
+      "replacements": [
+        "empathic"
+      ]
+    },
+    "find-up": {
+      "type": "module",
+      "moduleName": "find-up",
+      "replacements": [
+        "empathic",
+        "pkg-types"
+      ]
+    },
+    "fs-extra": {
+      "type": "module",
+      "moduleName": "fs-extra",
+      "replacements": [
+        "fs-extra"
+      ]
+    },
+    "get-value": {
+      "type": "module",
+      "moduleName": "get-value",
+      "replacements": [
+        "dlv",
+        "object-path"
+      ]
+    },
+    "glob": {
+      "type": "module",
+      "moduleName": "glob",
+      "replacements": [
+        "tinyglobby",
+        "fs.glob",
+        "fdir"
+      ]
+    },
+    "globby": {
+      "type": "module",
+      "moduleName": "globby",
+      "replacements": [
+        "tinyglobby"
+      ]
+    },
+    "grapheme-splitter": {
+      "type": "module",
+      "moduleName": "grapheme-splitter",
+      "replacements": [
+        "Intl.Segmenter",
+        "unicode-segmenter"
+      ]
+    },
+    "graphemer": {
+      "type": "module",
+      "moduleName": "graphemer",
+      "replacements": [
+        "Intl.Segmenter",
+        "unicode-segmenter"
+      ]
+    },
+    "invariant": {
+      "type": "module",
+      "moduleName": "invariant",
+      "replacements": [
+        "tiny-invariant"
+      ]
+    },
+    "is-builtin-module": {
+      "type": "module",
+      "moduleName": "is-builtin-module",
+      "replacements": [
+        "isBuiltin",
+        "builtinModules"
+      ]
+    },
+    "jquery": {
+      "type": "module",
+      "moduleName": "jquery",
+      "replacements": [
+        "jquery"
+      ]
+    },
+    "js-yaml": {
+      "type": "module",
+      "moduleName": "js-yaml",
+      "replacements": [
+        "yaml",
+        "YAML"
+      ]
+    },
+    "jsx-ast-utils": {
+      "type": "module",
+      "moduleName": "jsx-ast-utils",
+      "replacements": [
+        "jsx-ast-utils-x"
+      ]
+    },
+    "lint-staged": {
+      "type": "module",
+      "moduleName": "lint-staged",
+      "replacements": [
+        "nano-staged"
+      ]
+    },
+    "lodash": {
+      "type": "module",
+      "moduleName": "lodash",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash-amd": {
+      "type": "module",
+      "moduleName": "lodash-amd",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash-compat": {
+      "type": "module",
+      "moduleName": "lodash-compat",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash-es": {
+      "type": "module",
+      "moduleName": "lodash-es",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash-fp": {
+      "type": "module",
+      "moduleName": "lodash-fp",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash-node": {
+      "type": "module",
+      "moduleName": "lodash-node",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.add": {
+      "type": "module",
+      "moduleName": "lodash.add",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.after": {
+      "type": "module",
+      "moduleName": "lodash.after",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.ary": {
+      "type": "module",
+      "moduleName": "lodash.ary",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.assign": {
+      "type": "module",
+      "moduleName": "lodash.assign",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.assignin": {
+      "type": "module",
+      "moduleName": "lodash.assignin",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.assigninwith": {
+      "type": "module",
+      "moduleName": "lodash.assigninwith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.assignwith": {
+      "type": "module",
+      "moduleName": "lodash.assignwith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.at": {
+      "type": "module",
+      "moduleName": "lodash.at",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.attempt": {
+      "type": "module",
+      "moduleName": "lodash.attempt",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.before": {
+      "type": "module",
+      "moduleName": "lodash.before",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.bind": {
+      "type": "module",
+      "moduleName": "lodash.bind",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.bindall": {
+      "type": "module",
+      "moduleName": "lodash.bindall",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.bindkey": {
+      "type": "module",
+      "moduleName": "lodash.bindkey",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.callback": {
+      "type": "module",
+      "moduleName": "lodash.callback",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.camelcase": {
+      "type": "module",
+      "moduleName": "lodash.camelcase",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.capitalize": {
+      "type": "module",
+      "moduleName": "lodash.capitalize",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.castarray": {
+      "type": "module",
+      "moduleName": "lodash.castarray",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.ceil": {
+      "type": "module",
+      "moduleName": "lodash.ceil",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.chunk": {
+      "type": "module",
+      "moduleName": "lodash.chunk",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.clamp": {
+      "type": "module",
+      "moduleName": "lodash.clamp",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.clone": {
+      "type": "module",
+      "moduleName": "lodash.clone",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.clonedeep": {
+      "type": "module",
+      "moduleName": "lodash.clonedeep",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.clonedeepwith": {
+      "type": "module",
+      "moduleName": "lodash.clonedeepwith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.clonewith": {
+      "type": "module",
+      "moduleName": "lodash.clonewith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.compact": {
+      "type": "module",
+      "moduleName": "lodash.compact",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.compose": {
+      "type": "module",
+      "moduleName": "lodash.compose",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.concat": {
+      "type": "module",
+      "moduleName": "lodash.concat",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.cond": {
+      "type": "module",
+      "moduleName": "lodash.cond",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.conforms": {
+      "type": "module",
+      "moduleName": "lodash.conforms",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.conformsto": {
+      "type": "module",
+      "moduleName": "lodash.conformsto",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.constant": {
+      "type": "module",
+      "moduleName": "lodash.constant",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.contains": {
+      "type": "module",
+      "moduleName": "lodash.contains",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.countby": {
+      "type": "module",
+      "moduleName": "lodash.countby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.create": {
+      "type": "module",
+      "moduleName": "lodash.create",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.createcallback": {
+      "type": "module",
+      "moduleName": "lodash.createcallback",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.curry": {
+      "type": "module",
+      "moduleName": "lodash.curry",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.curryright": {
+      "type": "module",
+      "moduleName": "lodash.curryright",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.debounce": {
+      "type": "module",
+      "moduleName": "lodash.debounce",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.deburr": {
+      "type": "module",
+      "moduleName": "lodash.deburr",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.defaults": {
+      "type": "module",
+      "moduleName": "lodash.defaults",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.defaultsdeep": {
+      "type": "module",
+      "moduleName": "lodash.defaultsdeep",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.defaultto": {
+      "type": "module",
+      "moduleName": "lodash.defaultto",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.defer": {
+      "type": "module",
+      "moduleName": "lodash.defer",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.delay": {
+      "type": "module",
+      "moduleName": "lodash.delay",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.difference": {
+      "type": "module",
+      "moduleName": "lodash.difference",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.differenceby": {
+      "type": "module",
+      "moduleName": "lodash.differenceby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.differencewith": {
+      "type": "module",
+      "moduleName": "lodash.differencewith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.divide": {
+      "type": "module",
+      "moduleName": "lodash.divide",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.drop": {
+      "type": "module",
+      "moduleName": "lodash.drop",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.dropright": {
+      "type": "module",
+      "moduleName": "lodash.dropright",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.droprightwhile": {
+      "type": "module",
+      "moduleName": "lodash.droprightwhile",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.dropwhile": {
+      "type": "module",
+      "moduleName": "lodash.dropwhile",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.endswith": {
+      "type": "module",
+      "moduleName": "lodash.endswith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.eq": {
+      "type": "module",
+      "moduleName": "lodash.eq",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.escape": {
+      "type": "module",
+      "moduleName": "lodash.escape",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.escaperegexp": {
+      "type": "module",
+      "moduleName": "lodash.escaperegexp",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.every": {
+      "type": "module",
+      "moduleName": "lodash.every",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.fill": {
+      "type": "module",
+      "moduleName": "lodash.fill",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.filter": {
+      "type": "module",
+      "moduleName": "lodash.filter",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.find": {
+      "type": "module",
+      "moduleName": "lodash.find",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.findindex": {
+      "type": "module",
+      "moduleName": "lodash.findindex",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.findkey": {
+      "type": "module",
+      "moduleName": "lodash.findkey",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.findlast": {
+      "type": "module",
+      "moduleName": "lodash.findlast",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.findlastindex": {
+      "type": "module",
+      "moduleName": "lodash.findlastindex",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.findlastkey": {
+      "type": "module",
+      "moduleName": "lodash.findlastkey",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.findwhere": {
+      "type": "module",
+      "moduleName": "lodash.findwhere",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.first": {
+      "type": "module",
+      "moduleName": "lodash.first",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.flatmap": {
+      "type": "module",
+      "moduleName": "lodash.flatmap",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.flatmapdeep": {
+      "type": "module",
+      "moduleName": "lodash.flatmapdeep",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.flatmapdepth": {
+      "type": "module",
+      "moduleName": "lodash.flatmapdepth",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.flatten": {
+      "type": "module",
+      "moduleName": "lodash.flatten",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.flattendeep": {
+      "type": "module",
+      "moduleName": "lodash.flattendeep",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.flattendepth": {
+      "type": "module",
+      "moduleName": "lodash.flattendepth",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.flip": {
+      "type": "module",
+      "moduleName": "lodash.flip",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.floor": {
+      "type": "module",
+      "moduleName": "lodash.floor",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.flow": {
+      "type": "module",
+      "moduleName": "lodash.flow",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.flowright": {
+      "type": "module",
+      "moduleName": "lodash.flowright",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.foreach": {
+      "type": "module",
+      "moduleName": "lodash.foreach",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.foreachright": {
+      "type": "module",
+      "moduleName": "lodash.foreachright",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.forin": {
+      "type": "module",
+      "moduleName": "lodash.forin",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.forinright": {
+      "type": "module",
+      "moduleName": "lodash.forinright",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.forown": {
+      "type": "module",
+      "moduleName": "lodash.forown",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.forownright": {
+      "type": "module",
+      "moduleName": "lodash.forownright",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.frompairs": {
+      "type": "module",
+      "moduleName": "lodash.frompairs",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.functions": {
+      "type": "module",
+      "moduleName": "lodash.functions",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.functionsin": {
+      "type": "module",
+      "moduleName": "lodash.functionsin",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.get": {
+      "type": "module",
+      "moduleName": "lodash.get",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.groupby": {
+      "type": "module",
+      "moduleName": "lodash.groupby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.gt": {
+      "type": "module",
+      "moduleName": "lodash.gt",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.gte": {
+      "type": "module",
+      "moduleName": "lodash.gte",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.has": {
+      "type": "module",
+      "moduleName": "lodash.has",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.hasin": {
+      "type": "module",
+      "moduleName": "lodash.hasin",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.head": {
+      "type": "module",
+      "moduleName": "lodash.head",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.identity": {
+      "type": "module",
+      "moduleName": "lodash.identity",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.includes": {
+      "type": "module",
+      "moduleName": "lodash.includes",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.indexby": {
+      "type": "module",
+      "moduleName": "lodash.indexby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.indexof": {
+      "type": "module",
+      "moduleName": "lodash.indexof",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.initial": {
+      "type": "module",
+      "moduleName": "lodash.initial",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.inrange": {
+      "type": "module",
+      "moduleName": "lodash.inrange",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.intersection": {
+      "type": "module",
+      "moduleName": "lodash.intersection",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.intersectionby": {
+      "type": "module",
+      "moduleName": "lodash.intersectionby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.intersectionwith": {
+      "type": "module",
+      "moduleName": "lodash.intersectionwith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.invert": {
+      "type": "module",
+      "moduleName": "lodash.invert",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.invertby": {
+      "type": "module",
+      "moduleName": "lodash.invertby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.invoke": {
+      "type": "module",
+      "moduleName": "lodash.invoke",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.invokemap": {
+      "type": "module",
+      "moduleName": "lodash.invokemap",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isarguments": {
+      "type": "module",
+      "moduleName": "lodash.isarguments",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isarray": {
+      "type": "module",
+      "moduleName": "lodash.isarray",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isarraybuffer": {
+      "type": "module",
+      "moduleName": "lodash.isarraybuffer",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isarraylike": {
+      "type": "module",
+      "moduleName": "lodash.isarraylike",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isarraylikeobject": {
+      "type": "module",
+      "moduleName": "lodash.isarraylikeobject",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isboolean": {
+      "type": "module",
+      "moduleName": "lodash.isboolean",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isbuffer": {
+      "type": "module",
+      "moduleName": "lodash.isbuffer",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isdate": {
+      "type": "module",
+      "moduleName": "lodash.isdate",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.iselement": {
+      "type": "module",
+      "moduleName": "lodash.iselement",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isempty": {
+      "type": "module",
+      "moduleName": "lodash.isempty",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isequal": {
+      "type": "module",
+      "moduleName": "lodash.isequal",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isequalwith": {
+      "type": "module",
+      "moduleName": "lodash.isequalwith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.iserror": {
+      "type": "module",
+      "moduleName": "lodash.iserror",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isfinite": {
+      "type": "module",
+      "moduleName": "lodash.isfinite",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isfunction": {
+      "type": "module",
+      "moduleName": "lodash.isfunction",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isinteger": {
+      "type": "module",
+      "moduleName": "lodash.isinteger",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.islength": {
+      "type": "module",
+      "moduleName": "lodash.islength",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.ismap": {
+      "type": "module",
+      "moduleName": "lodash.ismap",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.ismatch": {
+      "type": "module",
+      "moduleName": "lodash.ismatch",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.ismatchwith": {
+      "type": "module",
+      "moduleName": "lodash.ismatchwith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isnan": {
+      "type": "module",
+      "moduleName": "lodash.isnan",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isnative": {
+      "type": "module",
+      "moduleName": "lodash.isnative",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isnil": {
+      "type": "module",
+      "moduleName": "lodash.isnil",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isnull": {
+      "type": "module",
+      "moduleName": "lodash.isnull",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isnumber": {
+      "type": "module",
+      "moduleName": "lodash.isnumber",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isobject": {
+      "type": "module",
+      "moduleName": "lodash.isobject",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isobjectlike": {
+      "type": "module",
+      "moduleName": "lodash.isobjectlike",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isplainobject": {
+      "type": "module",
+      "moduleName": "lodash.isplainobject",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isregexp": {
+      "type": "module",
+      "moduleName": "lodash.isregexp",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.issafeinteger": {
+      "type": "module",
+      "moduleName": "lodash.issafeinteger",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isset": {
+      "type": "module",
+      "moduleName": "lodash.isset",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isstring": {
+      "type": "module",
+      "moduleName": "lodash.isstring",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.issymbol": {
+      "type": "module",
+      "moduleName": "lodash.issymbol",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.istypedarray": {
+      "type": "module",
+      "moduleName": "lodash.istypedarray",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isundefined": {
+      "type": "module",
+      "moduleName": "lodash.isundefined",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isweakmap": {
+      "type": "module",
+      "moduleName": "lodash.isweakmap",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.isweakset": {
+      "type": "module",
+      "moduleName": "lodash.isweakset",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.iteratee": {
+      "type": "module",
+      "moduleName": "lodash.iteratee",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.join": {
+      "type": "module",
+      "moduleName": "lodash.join",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.kebabcase": {
+      "type": "module",
+      "moduleName": "lodash.kebabcase",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.keyby": {
+      "type": "module",
+      "moduleName": "lodash.keyby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.keys": {
+      "type": "module",
+      "moduleName": "lodash.keys",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.keysin": {
+      "type": "module",
+      "moduleName": "lodash.keysin",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.last": {
+      "type": "module",
+      "moduleName": "lodash.last",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.lastindexof": {
+      "type": "module",
+      "moduleName": "lodash.lastindexof",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.lowercase": {
+      "type": "module",
+      "moduleName": "lodash.lowercase",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.lowerfirst": {
+      "type": "module",
+      "moduleName": "lodash.lowerfirst",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.lt": {
+      "type": "module",
+      "moduleName": "lodash.lt",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.lte": {
+      "type": "module",
+      "moduleName": "lodash.lte",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.map": {
+      "type": "module",
+      "moduleName": "lodash.map",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.mapkeys": {
+      "type": "module",
+      "moduleName": "lodash.mapkeys",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.mapvalues": {
+      "type": "module",
+      "moduleName": "lodash.mapvalues",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.matches": {
+      "type": "module",
+      "moduleName": "lodash.matches",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.matchesproperty": {
+      "type": "module",
+      "moduleName": "lodash.matchesproperty",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.max": {
+      "type": "module",
+      "moduleName": "lodash.max",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.maxby": {
+      "type": "module",
+      "moduleName": "lodash.maxby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.mean": {
+      "type": "module",
+      "moduleName": "lodash.mean",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.meanby": {
+      "type": "module",
+      "moduleName": "lodash.meanby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.memoize": {
+      "type": "module",
+      "moduleName": "lodash.memoize",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.merge": {
+      "type": "module",
+      "moduleName": "lodash.merge",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.mergewith": {
+      "type": "module",
+      "moduleName": "lodash.mergewith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.method": {
+      "type": "module",
+      "moduleName": "lodash.method",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.methodof": {
+      "type": "module",
+      "moduleName": "lodash.methodof",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.min": {
+      "type": "module",
+      "moduleName": "lodash.min",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.minby": {
+      "type": "module",
+      "moduleName": "lodash.minby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.mixin": {
+      "type": "module",
+      "moduleName": "lodash.mixin",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.modargs": {
+      "type": "module",
+      "moduleName": "lodash.modargs",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.multiply": {
+      "type": "module",
+      "moduleName": "lodash.multiply",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.negate": {
+      "type": "module",
+      "moduleName": "lodash.negate",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.noop": {
+      "type": "module",
+      "moduleName": "lodash.noop",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.now": {
+      "type": "module",
+      "moduleName": "lodash.now",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.nth": {
+      "type": "module",
+      "moduleName": "lodash.nth",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.ntharg": {
+      "type": "module",
+      "moduleName": "lodash.ntharg",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.omit": {
+      "type": "module",
+      "moduleName": "lodash.omit",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.omitby": {
+      "type": "module",
+      "moduleName": "lodash.omitby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.once": {
+      "type": "module",
+      "moduleName": "lodash.once",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.orderby": {
+      "type": "module",
+      "moduleName": "lodash.orderby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.over": {
+      "type": "module",
+      "moduleName": "lodash.over",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.overargs": {
+      "type": "module",
+      "moduleName": "lodash.overargs",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.overevery": {
+      "type": "module",
+      "moduleName": "lodash.overevery",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.oversome": {
+      "type": "module",
+      "moduleName": "lodash.oversome",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.pad": {
+      "type": "module",
+      "moduleName": "lodash.pad",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.padend": {
+      "type": "module",
+      "moduleName": "lodash.padend",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.padleft": {
+      "type": "module",
+      "moduleName": "lodash.padleft",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.padright": {
+      "type": "module",
+      "moduleName": "lodash.padright",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.padstart": {
+      "type": "module",
+      "moduleName": "lodash.padstart",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.pairs": {
+      "type": "module",
+      "moduleName": "lodash.pairs",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.parseint": {
+      "type": "module",
+      "moduleName": "lodash.parseint",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.partial": {
+      "type": "module",
+      "moduleName": "lodash.partial",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.partialright": {
+      "type": "module",
+      "moduleName": "lodash.partialright",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.partition": {
+      "type": "module",
+      "moduleName": "lodash.partition",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.pick": {
+      "type": "module",
+      "moduleName": "lodash.pick",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.pickby": {
+      "type": "module",
+      "moduleName": "lodash.pickby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.pluck": {
+      "type": "module",
+      "moduleName": "lodash.pluck",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.property": {
+      "type": "module",
+      "moduleName": "lodash.property",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.propertyof": {
+      "type": "module",
+      "moduleName": "lodash.propertyof",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.pull": {
+      "type": "module",
+      "moduleName": "lodash.pull",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.pullall": {
+      "type": "module",
+      "moduleName": "lodash.pullall",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.pullallwith": {
+      "type": "module",
+      "moduleName": "lodash.pullallwith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.pullat": {
+      "type": "module",
+      "moduleName": "lodash.pullat",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.random": {
+      "type": "module",
+      "moduleName": "lodash.random",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.range": {
+      "type": "module",
+      "moduleName": "lodash.range",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.rangeright": {
+      "type": "module",
+      "moduleName": "lodash.rangeright",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.rearg": {
+      "type": "module",
+      "moduleName": "lodash.rearg",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.reduce": {
+      "type": "module",
+      "moduleName": "lodash.reduce",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.reduceright": {
+      "type": "module",
+      "moduleName": "lodash.reduceright",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.reescape": {
+      "type": "module",
+      "moduleName": "lodash.reescape",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.reevaluate": {
+      "type": "module",
+      "moduleName": "lodash.reevaluate",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.reinterpolate": {
+      "type": "module",
+      "moduleName": "lodash.reinterpolate",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.reject": {
+      "type": "module",
+      "moduleName": "lodash.reject",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.remove": {
+      "type": "module",
+      "moduleName": "lodash.remove",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.repeat": {
+      "type": "module",
+      "moduleName": "lodash.repeat",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.replace": {
+      "type": "module",
+      "moduleName": "lodash.replace",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.rest": {
+      "type": "module",
+      "moduleName": "lodash.rest",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.restparam": {
+      "type": "module",
+      "moduleName": "lodash.restparam",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.result": {
+      "type": "module",
+      "moduleName": "lodash.result",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.reverse": {
+      "type": "module",
+      "moduleName": "lodash.reverse",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.round": {
+      "type": "module",
+      "moduleName": "lodash.round",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.sample": {
+      "type": "module",
+      "moduleName": "lodash.sample",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.samplesize": {
+      "type": "module",
+      "moduleName": "lodash.samplesize",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.set": {
+      "type": "module",
+      "moduleName": "lodash.set",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.setwith": {
+      "type": "module",
+      "moduleName": "lodash.setwith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.shuffle": {
+      "type": "module",
+      "moduleName": "lodash.shuffle",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.size": {
+      "type": "module",
+      "moduleName": "lodash.size",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.slice": {
+      "type": "module",
+      "moduleName": "lodash.slice",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.snakecase": {
+      "type": "module",
+      "moduleName": "lodash.snakecase",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.some": {
+      "type": "module",
+      "moduleName": "lodash.some",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.sortby": {
+      "type": "module",
+      "moduleName": "lodash.sortby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.sortbyall": {
+      "type": "module",
+      "moduleName": "lodash.sortbyall",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.sortbyorder": {
+      "type": "module",
+      "moduleName": "lodash.sortbyorder",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.sortedindex": {
+      "type": "module",
+      "moduleName": "lodash.sortedindex",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.sortedindexby": {
+      "type": "module",
+      "moduleName": "lodash.sortedindexby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.sortedindexof": {
+      "type": "module",
+      "moduleName": "lodash.sortedindexof",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.sortedlastindex": {
+      "type": "module",
+      "moduleName": "lodash.sortedlastindex",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.sortedlastindexby": {
+      "type": "module",
+      "moduleName": "lodash.sortedlastindexby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.sortedlastindexof": {
+      "type": "module",
+      "moduleName": "lodash.sortedlastindexof",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.sorteduniq": {
+      "type": "module",
+      "moduleName": "lodash.sorteduniq",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.sorteduniqby": {
+      "type": "module",
+      "moduleName": "lodash.sorteduniqby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.split": {
+      "type": "module",
+      "moduleName": "lodash.split",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.spread": {
+      "type": "module",
+      "moduleName": "lodash.spread",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.startcase": {
+      "type": "module",
+      "moduleName": "lodash.startcase",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.startswith": {
+      "type": "module",
+      "moduleName": "lodash.startswith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.stubarray": {
+      "type": "module",
+      "moduleName": "lodash.stubarray",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.stubfalse": {
+      "type": "module",
+      "moduleName": "lodash.stubfalse",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.stubobject": {
+      "type": "module",
+      "moduleName": "lodash.stubobject",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.stubstring": {
+      "type": "module",
+      "moduleName": "lodash.stubstring",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.stubtrue": {
+      "type": "module",
+      "moduleName": "lodash.stubtrue",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.subtract": {
+      "type": "module",
+      "moduleName": "lodash.subtract",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.sum": {
+      "type": "module",
+      "moduleName": "lodash.sum",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.sumby": {
+      "type": "module",
+      "moduleName": "lodash.sumby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.support": {
+      "type": "module",
+      "moduleName": "lodash.support",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.tail": {
+      "type": "module",
+      "moduleName": "lodash.tail",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.take": {
+      "type": "module",
+      "moduleName": "lodash.take",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.takeright": {
+      "type": "module",
+      "moduleName": "lodash.takeright",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.takerightwhile": {
+      "type": "module",
+      "moduleName": "lodash.takerightwhile",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.takewhile": {
+      "type": "module",
+      "moduleName": "lodash.takewhile",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.template": {
+      "type": "module",
+      "moduleName": "lodash.template",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.templatesettings": {
+      "type": "module",
+      "moduleName": "lodash.templatesettings",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.throttle": {
+      "type": "module",
+      "moduleName": "lodash.throttle",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.times": {
+      "type": "module",
+      "moduleName": "lodash.times",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.toarray": {
+      "type": "module",
+      "moduleName": "lodash.toarray",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.tofinite": {
+      "type": "module",
+      "moduleName": "lodash.tofinite",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.tointeger": {
+      "type": "module",
+      "moduleName": "lodash.tointeger",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.tolength": {
+      "type": "module",
+      "moduleName": "lodash.tolength",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.tolower": {
+      "type": "module",
+      "moduleName": "lodash.tolower",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.tonumber": {
+      "type": "module",
+      "moduleName": "lodash.tonumber",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.topairs": {
+      "type": "module",
+      "moduleName": "lodash.topairs",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.topairsin": {
+      "type": "module",
+      "moduleName": "lodash.topairsin",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.topath": {
+      "type": "module",
+      "moduleName": "lodash.topath",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.toplainobject": {
+      "type": "module",
+      "moduleName": "lodash.toplainobject",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.tosafeinteger": {
+      "type": "module",
+      "moduleName": "lodash.tosafeinteger",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.tostring": {
+      "type": "module",
+      "moduleName": "lodash.tostring",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.toupper": {
+      "type": "module",
+      "moduleName": "lodash.toupper",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.transform": {
+      "type": "module",
+      "moduleName": "lodash.transform",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.trim": {
+      "type": "module",
+      "moduleName": "lodash.trim",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.trimend": {
+      "type": "module",
+      "moduleName": "lodash.trimend",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.trimleft": {
+      "type": "module",
+      "moduleName": "lodash.trimleft",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.trimright": {
+      "type": "module",
+      "moduleName": "lodash.trimright",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.trimstart": {
+      "type": "module",
+      "moduleName": "lodash.trimstart",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.trunc": {
+      "type": "module",
+      "moduleName": "lodash.trunc",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.truncate": {
+      "type": "module",
+      "moduleName": "lodash.truncate",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.unary": {
+      "type": "module",
+      "moduleName": "lodash.unary",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.unescape": {
+      "type": "module",
+      "moduleName": "lodash.unescape",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.union": {
+      "type": "module",
+      "moduleName": "lodash.union",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.unionby": {
+      "type": "module",
+      "moduleName": "lodash.unionby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.unionwith": {
+      "type": "module",
+      "moduleName": "lodash.unionwith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.uniqby": {
+      "type": "module",
+      "moduleName": "lodash.uniqby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.uniqueid": {
+      "type": "module",
+      "moduleName": "lodash.uniqueid",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.uniqwith": {
+      "type": "module",
+      "moduleName": "lodash.uniqwith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.unset": {
+      "type": "module",
+      "moduleName": "lodash.unset",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.unzip": {
+      "type": "module",
+      "moduleName": "lodash.unzip",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.unzipwith": {
+      "type": "module",
+      "moduleName": "lodash.unzipwith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.update": {
+      "type": "module",
+      "moduleName": "lodash.update",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.updatewith": {
+      "type": "module",
+      "moduleName": "lodash.updatewith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.uppercase": {
+      "type": "module",
+      "moduleName": "lodash.uppercase",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.upperfirst": {
+      "type": "module",
+      "moduleName": "lodash.upperfirst",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.values": {
+      "type": "module",
+      "moduleName": "lodash.values",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.valuesin": {
+      "type": "module",
+      "moduleName": "lodash.valuesin",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.where": {
+      "type": "module",
+      "moduleName": "lodash.where",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.without": {
+      "type": "module",
+      "moduleName": "lodash.without",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.words": {
+      "type": "module",
+      "moduleName": "lodash.words",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.wrap": {
+      "type": "module",
+      "moduleName": "lodash.wrap",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.xor": {
+      "type": "module",
+      "moduleName": "lodash.xor",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.xorby": {
+      "type": "module",
+      "moduleName": "lodash.xorby",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.xorwith": {
+      "type": "module",
+      "moduleName": "lodash.xorwith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.zip": {
+      "type": "module",
+      "moduleName": "lodash.zip",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.zipobject": {
+      "type": "module",
+      "moduleName": "lodash.zipobject",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.zipobjectdeep": {
+      "type": "module",
+      "moduleName": "lodash.zipobjectdeep",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "lodash.zipwith": {
+      "type": "module",
+      "moduleName": "lodash.zipwith",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "make-dir": {
+      "type": "module",
+      "moduleName": "make-dir",
+      "replacements": [
+        "fs.mkdir"
+      ]
+    },
+    "materialize-css": {
+      "type": "module",
+      "moduleName": "materialize-css",
+      "replacements": [
+        "@materializecss/materialize",
+        "@material/web"
+      ]
+    },
+    "md5": {
+      "type": "module",
+      "moduleName": "md5",
+      "replacements": [
+        "node:crypto"
+      ]
+    },
+    "mkdirp": {
+      "type": "module",
+      "moduleName": "mkdirp",
+      "replacements": [
+        "fs.mkdir"
+      ]
+    },
+    "moment": {
+      "type": "module",
+      "moduleName": "moment",
+      "replacements": [
+        "day.js",
+        "date-fns",
+        "luxon",
+        "Date"
+      ]
+    },
+    "node-fetch": {
+      "type": "module",
+      "moduleName": "node-fetch",
+      "replacements": [
+        "fetch",
+        "ky",
+        "ofetch"
+      ]
+    },
+    "npm-run-all": {
+      "type": "module",
+      "moduleName": "npm-run-all",
+      "replacements": [
+        "npm-run-all2",
+        "concurrently",
+        "wireit"
+      ]
+    },
+    "object-hash": {
+      "type": "module",
+      "moduleName": "object-hash",
+      "replacements": [
+        "ohash",
+        "crypto",
+        "Bun.CryptoHasher"
+      ]
+    },
+    "object-path": {
+      "type": "module",
+      "moduleName": "object-path",
+      "replacements": [
+        "dlv",
+        "object-path"
+      ]
+    },
+    "ora": {
+      "type": "module",
+      "moduleName": "ora",
+      "replacements": [
+        "nanospinner",
+        "picospinner"
+      ]
+    },
+    "package-up": {
+      "type": "module",
+      "moduleName": "package-up",
+      "replacements": [
+        "empathic",
+        "pkg-types"
+      ]
+    },
+    "path-exists": {
+      "type": "module",
+      "moduleName": "path-exists",
+      "replacements": [
+        "fs.access",
+        "fs.existsSync",
+        "Bun.file"
+      ]
+    },
+    "pkg-dir": {
+      "type": "module",
+      "moduleName": "pkg-dir",
+      "replacements": [
+        "empathic"
+      ]
+    },
+    "pkg-up": {
+      "type": "module",
+      "moduleName": "pkg-up",
+      "replacements": [
+        "empathic",
+        "pkg-types"
+      ]
+    },
+    "portal-vue": {
+      "type": "module",
+      "moduleName": "portal-vue",
+      "replacements": [
+        "Teleport"
+      ]
+    },
+    "q": {
+      "type": "module",
+      "moduleName": "q",
+      "replacements": [
+        "Promise",
+        "nativebird"
+      ]
+    },
+    "qs": {
+      "type": "module",
+      "moduleName": "qs",
+      "replacements": [
+        "URLSearchParams",
+        "fast-querystring",
+        "picoquery",
+        "neoqs"
+      ]
+    },
+    "read-package-up": {
+      "type": "module",
+      "moduleName": "read-package-up",
+      "replacements": [
+        "pkg-types",
+        "empathic"
+      ]
+    },
+    "read-pkg": {
+      "type": "module",
+      "moduleName": "read-pkg",
+      "replacements": [
+        "pkg-types",
+        "node:fs"
+      ]
+    },
+    "read-pkg-up": {
+      "type": "module",
+      "moduleName": "read-pkg-up",
+      "replacements": [
+        "pkg-types",
+        "empathic"
+      ]
+    },
+    "readable-stream": {
+      "type": "module",
+      "moduleName": "readable-stream",
+      "replacements": [
+        "node:stream",
+        "streams"
+      ]
+    },
+    "rimraf": {
+      "type": "module",
+      "moduleName": "rimraf",
+      "replacements": [
+        "fs.rm",
+        "fs.rmdir",
+        "premove"
+      ]
+    },
+    "set-value": {
+      "type": "module",
+      "moduleName": "set-value",
+      "replacements": [
+        "dlv",
+        "object-path"
+      ]
+    },
+    "shortid": {
+      "type": "module",
+      "moduleName": "shortid",
+      "replacements": [
+        "nanoid"
+      ]
+    },
+    "sort-object": {
+      "type": "module",
+      "moduleName": "sort-object",
+      "replacements": [
+        "sort-object",
+        "sort-object-keys",
+        "sortobject"
+      ]
+    },
+    "string-width": {
+      "type": "module",
+      "moduleName": "string-width",
+      "replacements": [
+        "fast-string-width",
+        "Bun.stringWidth"
+      ]
+    },
+    "strip-ansi": {
+      "type": "module",
+      "moduleName": "strip-ansi",
+      "replacements": [
+        "util.stripVTControlCharacters",
+        "Bun.stripANSI"
+      ]
+    },
+    "tempy": {
+      "type": "module",
+      "moduleName": "tempy",
+      "replacements": [
+        "fs.mkdtemp",
+        "Deno.makeTempDir"
+      ]
+    },
+    "traverse": {
+      "type": "module",
+      "moduleName": "traverse",
+      "replacements": [
+        "neotraverse"
+      ]
+    },
+    "underscore": {
+      "type": "module",
+      "moduleName": "underscore",
+      "replacements": [
+        "lodash-underscore",
+        "es-toolkit"
+      ]
+    },
+    "uri-js": {
+      "type": "module",
+      "moduleName": "uri-js",
+      "replacements": [
+        "URL",
+        "uri-js-replace",
+        "fast-uri"
+      ]
+    },
+    "utf8": {
+      "type": "module",
+      "moduleName": "utf8",
+      "replacements": [
+        "TextEncoder",
+        "Buffer.prototype.toString"
+      ]
+    },
+    "xmldom": {
+      "type": "module",
+      "moduleName": "xmldom",
+      "replacements": [
+        "@xmldom/xmldom"
+      ]
+    }
+  },
+  "replacements": {
+    "@eslint-community/eslint-plugin-eslint-comments": {
+      "id": "@eslint-community/eslint-plugin-eslint-comments",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "eslint-plugin-eslint-comments"
+      },
+      "replacementModule": "@eslint-community/eslint-plugin-eslint-comments"
+    },
+    "@eslint-react/eslint-plugin": {
+      "id": "@eslint-react/eslint-plugin",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "eslint-plugin-react"
+      },
+      "replacementModule": "@eslint-react/eslint-plugin"
+    },
+    "@faker-js/faker": {
+      "id": "@faker-js/faker",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "faker"
+      },
+      "replacementModule": "@faker-js/faker"
+    },
+    "@material/web": {
+      "id": "@material/web",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "materialize-css"
+      },
+      "replacementModule": "@material/web"
+    },
+    "@materializecss/materialize": {
+      "id": "@materializecss/materialize",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "materialize-css"
+      },
+      "replacementModule": "@materializecss/materialize"
+    },
+    "@vitest/eslint-plugin": {
+      "id": "@vitest/eslint-plugin",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "eslint-plugin-vitest"
+      },
+      "replacementModule": "@vitest/eslint-plugin"
+    },
+    "@xmldom/xmldom": {
+      "id": "@xmldom/xmldom",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "xmldom"
+      },
+      "replacementModule": "@xmldom/xmldom"
+    },
+    "ansis": {
+      "id": "ansis",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "chalk"
+      },
+      "replacementModule": "ansis"
+    },
+    "concurrently": {
+      "id": "concurrently",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "npm-run-all"
+      },
+      "replacementModule": "concurrently"
+    },
+    "cpx2": {
+      "id": "cpx2",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "cpx"
+      },
+      "replacementModule": "cpx2"
+    },
+    "date-fns": {
+      "id": "date-fns",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "moment"
+      },
+      "replacementModule": "date-fns"
+    },
+    "day.js": {
+      "id": "day.js",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "moment"
+      },
+      "replacementModule": "day.js"
+    },
+    "dequal": {
+      "id": "dequal",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "deep-equal"
+      },
+      "replacementModule": "dequal"
+    },
+    "dlv": {
+      "id": "dlv",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "dot-prop"
+      },
+      "replacementModule": "dlv"
+    },
+    "emoji-regex-xs": {
+      "id": "emoji-regex-xs",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "emoji-regex"
+      },
+      "replacementModule": "emoji-regex-xs"
+    },
+    "empathic": {
+      "id": "empathic",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "find-cache-dir"
+      },
+      "replacementModule": "empathic"
+    },
+    "eslint-plugin-es-x": {
+      "id": "eslint-plugin-es-x",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "eslint-plugin-es"
+      },
+      "replacementModule": "eslint-plugin-es-x"
+    },
+    "eslint-plugin-import-x": {
+      "id": "eslint-plugin-import-x",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "eslint-plugin-import"
+      },
+      "replacementModule": "eslint-plugin-import-x"
+    },
+    "eslint-plugin-n": {
+      "id": "eslint-plugin-n",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "eslint-plugin-node"
+      },
+      "replacementModule": "eslint-plugin-n"
+    },
+    "fast-deep-equal": {
+      "id": "fast-deep-equal",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "deep-equal"
+      },
+      "replacementModule": "fast-deep-equal"
+    },
+    "fast-querystring": {
+      "id": "fast-querystring",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "qs"
+      },
+      "replacementModule": "fast-querystring"
+    },
+    "fast-string-width": {
+      "id": "fast-string-width",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "string-width"
+      },
+      "replacementModule": "fast-string-width"
+    },
+    "fast-uri": {
+      "id": "fast-uri",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "uri-js"
+      },
+      "replacementModule": "fast-uri"
+    },
+    "fdir": {
+      "id": "fdir",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "glob"
+      },
+      "replacementModule": "fdir"
+    },
+    "jsx-ast-utils-x": {
+      "id": "jsx-ast-utils-x",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "jsx-ast-utils"
+      },
+      "replacementModule": "jsx-ast-utils-x"
+    },
+    "knip": {
+      "id": "knip",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "depcheck"
+      },
+      "replacementModule": "knip"
+    },
+    "ky": {
+      "id": "ky",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "fetch"
+      },
+      "replacementModule": "ky"
+    },
+    "luxon": {
+      "id": "luxon",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "moment"
+      },
+      "replacementModule": "luxon"
+    },
+    "milliparsec": {
+      "id": "milliparsec",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "body-parser"
+      },
+      "replacementModule": "milliparsec"
+    },
+    "nano-staged": {
+      "id": "nano-staged",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "lint-staged"
+      },
+      "replacementModule": "nano-staged"
+    },
+    "nanoexec": {
+      "id": "nanoexec",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "execa"
+      },
+      "replacementModule": "nanoexec"
+    },
+    "nanoid": {
+      "id": "nanoid",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "shortid"
+      },
+      "replacementModule": "nanoid"
+    },
+    "nanospinner": {
+      "id": "nanospinner",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "ora"
+      },
+      "replacementModule": "nanospinner"
+    },
+    "nativebird": {
+      "id": "nativebird",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "bluebird-q"
+      },
+      "replacementModule": "nativebird"
+    },
+    "neoqs": {
+      "id": "neoqs",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "qs"
+      },
+      "replacementModule": "neoqs"
+    },
+    "neotraverse": {
+      "id": "neotraverse",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "traverse"
+      },
+      "replacementModule": "neotraverse"
+    },
+    "node:fs": {
+      "id": "node:fs",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "read-pkg"
+      },
+      "replacementModule": "node:fs"
+    },
+    "npm-run-all2": {
+      "id": "npm-run-all2",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "npm-run-all"
+      },
+      "replacementModule": "npm-run-all2"
+    },
+    "object-path": {
+      "id": "object-path",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "dot-prop"
+      },
+      "replacementModule": "object-path"
+    },
+    "ofetch": {
+      "id": "ofetch",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "fetch"
+      },
+      "replacementModule": "ofetch"
+    },
+    "ohash": {
+      "id": "ohash",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "object-hash"
+      },
+      "replacementModule": "ohash"
+    },
+    "picocolors": {
+      "id": "picocolors",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "chalk"
+      },
+      "replacementModule": "picocolors"
+    },
+    "picoquery": {
+      "id": "picoquery",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "qs"
+      },
+      "replacementModule": "picoquery"
+    },
+    "picospinner": {
+      "id": "picospinner",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "ora"
+      },
+      "replacementModule": "picospinner"
+    },
+    "pkg-types": {
+      "id": "pkg-types",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "find-up"
+      },
+      "replacementModule": "pkg-types"
+    },
+    "premove": {
+      "id": "premove",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "rimraf"
+      },
+      "replacementModule": "premove"
+    },
+    "sort-object-keys": {
+      "id": "sort-object-keys",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "sort-object"
+      },
+      "replacementModule": "sort-object-keys"
+    },
+    "sortobject": {
+      "id": "sortobject",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "sort-object"
+      },
+      "replacementModule": "sortobject"
+    },
+    "Teleport": {
+      "id": "Teleport",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "portal-vue"
+      },
+      "replacementModule": "Teleport"
+    },
+    "tiny-invariant": {
+      "id": "tiny-invariant",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "invariant"
+      },
+      "replacementModule": "tiny-invariant"
+    },
+    "tinyexec": {
+      "id": "tinyexec",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "execa"
+      },
+      "replacementModule": "tinyexec"
+    },
+    "tinyglobby": {
+      "id": "tinyglobby",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "fast-glob"
+      },
+      "replacementModule": "tinyglobby"
+    },
+    "fetch": {
+      "id": "fetch",
+      "type": "native",
+      "description": "fetch API",
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/Fetch_API"
+      }
+    },
+    "Bun.CryptoHasher": {
+      "id": "Bun.CryptoHasher",
+      "type": "native",
+      "description": "Bun.CryptoHasher",
+      "url": "https://bun.com/docs/runtime/hashing"
+    },
+    "node:crypto": {
+      "id": "node:crypto",
+      "type": "native",
+      "description": "node:crypto",
+      "url": {
+        "type": "node",
+        "id": "api/crypto.html"
+      }
+    },
+    "crypto": {
+      "id": "crypto",
+      "type": "native",
+      "description": "crypto",
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/Web_Crypto_API"
+      }
+    },
+    "--env-file": {
+      "id": "--env-file",
+      "type": "native",
+      "description": "--env-file",
+      "url": {
+        "type": "node",
+        "id": "api/cli.html#--env-filefile"
+      }
+    },
+    "unicodeClassEscape": {
+      "id": "unicodeClassEscape",
+      "type": "native",
+      "description": "unicodeClassEscape",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape"
+      }
+    },
+    "Bun.Shell": {
+      "id": "Bun.Shell",
+      "type": "native",
+      "description": "Bun.Shell",
+      "url": "https://bun.com/docs/runtime/shell"
+    },
+    "fs-extra": {
+      "id": "fs-extra",
+      "type": "removal",
+      "description": "fs-extra can be replaced with native fs functionality.",
+      "url": {
+        "type": "e18e",
+        "id": "fs-extra"
+      }
+    },
+    "fs.glob": {
+      "id": "fs.glob",
+      "type": "native",
+      "description": "fs.glob",
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fspromisesglobpattern-options"
+      }
+    },
+    "Promise": {
+      "id": "Promise",
+      "type": "native",
+      "description": "Promise",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Promise"
+      }
+    },
+    "Intl.Segmenter": {
+      "id": "Intl.Segmenter",
+      "type": "native",
+      "description": "Intl.Segmenter",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Intl/Segmenter"
+      }
+    },
+    "isBuiltin": {
+      "id": "isBuiltin",
+      "type": "native",
+      "description": "isBuiltin",
+      "url": {
+        "type": "node",
+        "id": "api/module.html#moduleisbuiltinmodulename"
+      }
+    },
+    "builtinModules": {
+      "id": "builtinModules",
+      "type": "native",
+      "description": "builtinModules",
+      "url": {
+        "type": "node",
+        "id": "api/module.html#modulebuiltinmodules"
+      }
+    },
+    "jquery": {
+      "id": "jquery",
+      "type": "removal",
+      "url": {
+        "type": "e18e",
+        "id": "jquery"
+      },
+      "description": "jQuery can be replaced with native DOM and Web APIs"
+    },
+    "lodash-underscore": {
+      "id": "lodash-underscore",
+      "type": "removal",
+      "url": {
+        "type": "e18e",
+        "id": "lodash-underscore"
+      },
+      "description": "lodash and Underscore can be replaced with native JavaScript APIs"
+    },
+    "es-toolkit": {
+      "id": "es-toolkit",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "lodash-underscore"
+      },
+      "replacementModule": "es-toolkit"
+    },
+    "fs.mkdir": {
+      "id": "fs.mkdir",
+      "type": "native",
+      "description": "fs.mkdir",
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fspromisesmkdirpath-options"
+      }
+    },
+    "Date": {
+      "id": "Date",
+      "type": "native",
+      "description": "Date",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Date"
+      }
+    },
+    "Buffer.compare": {
+      "id": "Buffer.compare",
+      "type": "native",
+      "description": "Buffer.compare",
+      "url": {
+        "type": "node",
+        "id": "api/buffer.html#static-method-buffercomparebuf1-buf2"
+      }
+    },
+    "Bun.file": {
+      "id": "Bun.file",
+      "type": "native",
+      "description": "Bun.file",
+      "url": "https://bun.com/reference/bun/file"
+    },
+    "fs.access": {
+      "id": "fs.access",
+      "type": "native",
+      "description": "fs.access",
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fspromisesaccesspath-mode"
+      }
+    },
+    "fs.existsSync": {
+      "id": "fs.existsSync",
+      "type": "native",
+      "description": "fs.existsSync",
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fsexistssyncpath"
+      }
+    },
+    "URLSearchParams": {
+      "id": "URLSearchParams",
+      "type": "native",
+      "description": "URLSearchParams",
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/URLSearchParams"
+      }
+    },
+    "node:stream": {
+      "id": "node:stream",
+      "type": "native",
+      "description": "node:stream",
+      "url": {
+        "type": "node",
+        "id": "api/stream.html"
+      }
+    },
+    "streams": {
+      "id": "streams",
+      "type": "native",
+      "description": "streams",
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/Streams_API"
+      }
+    },
+    "fs.rm": {
+      "id": "fs.rm",
+      "type": "native",
+      "description": "fs.rm",
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fspromisesrmpath-options"
+      }
+    },
+    "fs.rmdir": {
+      "id": "fs.rmdir",
+      "type": "native",
+      "description": "fs.rmdir",
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fspromisesrmdirpath-options"
+      }
+    },
+    "Buffer.prototype.equals": {
+      "id": "Buffer.prototype.equals",
+      "type": "native",
+      "description": "Buffer.prototype.equals",
+      "url": {
+        "type": "node",
+        "id": "api/buffer.html#bufequalsotherbuffer"
+      }
+    },
+    "sort-object": {
+      "id": "sort-object",
+      "type": "removal",
+      "description": "Object.entries and Array.prototype.sort can be used to sort object keys.",
+      "url": {
+        "type": "e18e",
+        "id": "sort-object"
+      }
+    },
+    "Bun.stringWidth": {
+      "id": "Bun.stringWidth",
+      "type": "native",
+      "description": "Bun.stringWidth",
+      "url": "https://bun.com/reference/bun/stringWidth"
+    },
+    "Bun.stripANSI": {
+      "id": "Bun.stripANSI",
+      "type": "native",
+      "description": "Bun.stripANSI",
+      "url": "https://bun.com/reference/bun/stripANSI"
+    },
+    "util.stripVTControlCharacters": {
+      "id": "util.stripVTControlCharacters",
+      "type": "native",
+      "description": "util.stripVTControlCharacters",
+      "url": {
+        "type": "node",
+        "id": "api/util.html#utilstripvtcontrolcharactersstr"
+      }
+    },
+    "Deno.makeTempDir": {
+      "id": "Deno.makeTempDir",
+      "type": "native",
+      "description": "Deno.makeTempDir",
+      "url": "https://docs.deno.com/api/deno/~/Deno.makeTempDir"
+    },
+    "fs.mkdtemp": {
+      "id": "fs.mkdtemp",
+      "type": "native",
+      "description": "fs.mkdtemp",
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fspromisesmkdtempprefix-options"
+      }
+    },
+    "URL": {
+      "id": "URL",
+      "type": "native",
+      "description": "URL",
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/URL"
+      }
+    },
+    "TextEncoder": {
+      "id": "TextEncoder",
+      "type": "native",
+      "description": "TextEncoder",
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/TextEncoder"
+      }
+    },
+    "Buffer.prototype.toString": {
+      "id": "Buffer.prototype.toString",
+      "type": "native",
+      "description": "Buffer.prototype.toString",
+      "url": {
+        "type": "node",
+        "id": "api/buffer.html#buftostringencoding-start-end"
+      }
+    },
+    "util.styleText": {
+      "id": "util.styleText",
+      "type": "native",
+      "description": "util.styleText",
+      "url": {
+        "type": "node",
+        "id": "api/util.html#utilstyletextformat-text-options"
+      }
+    },
+    "util.types": {
+      "id": "util.types",
+      "type": "native",
+      "description": "util.types",
+      "url": {
+        "type": "node",
+        "id": "api/util.html#utiltypes"
+      }
+    },
+    "unicode-segmenter": {
+      "id": "unicode-segmenter",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "graphemer"
+      },
+      "replacementModule": "unicode-segmenter"
+    },
+    "uri-js-replace": {
+      "id": "uri-js-replace",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "uri-js"
+      },
+      "replacementModule": "uri-js-replace"
+    },
+    "wireit": {
+      "id": "wireit",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "npm-run-all"
+      },
+      "replacementModule": "wireit"
+    },
+    "yaml": {
+      "id": "yaml",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "js-yaml"
+      },
+      "replacementModule": "yaml"
+    },
+    "YAML": {
+      "id": "YAML",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "js-yaml"
+      },
+      "replacementModule": "YAML"
+    }
+  }
+}
