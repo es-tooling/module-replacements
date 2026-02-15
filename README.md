@@ -82,3 +82,11 @@ open an issue where this can be discussed.
 
 Keep in mind, very newly available native features are unlikely to join the
 list since they are not widely available yet.
+
+## Sponsors
+
+<p align="center">
+  <a href="https://github.com/sponsors/e18e">
+    <img src="https://e18e.dev/sponsors.svg" alt="e18e community sponsors" />
+  </a>
+</p>
