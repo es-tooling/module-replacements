@@ -55,6 +55,7 @@ export interface ModuleReplacementMapping {
   type: 'module';
   moduleName: string;
   replacements: string[];
+  url?: KnownUrl;
 }
 
 export interface ManifestModule {

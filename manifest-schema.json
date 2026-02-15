@@ -36,12 +36,46 @@
           "items": {
             "type": "string"
           }
+        },
+        "url": {
+          "$ref": "#/definitions/KnownUrl"
         }
       },
       "required": [
         "type",
         "moduleName",
         "replacements"
+      ],
+      "additionalProperties": false
+    },
+    "KnownUrl": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/KnownUrlDescriptor"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "KnownUrlDescriptor": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "mdn",
+            "node",
+            "e18e"
+          ]
+        },
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "id"
       ],
       "additionalProperties": false
     },
@@ -110,37 +144,6 @@
       },
       "required": [
         "engine"
-      ],
-      "additionalProperties": false
-    },
-    "KnownUrl": {
-      "anyOf": [
-        {
-          "$ref": "#/definitions/KnownUrlDescriptor"
-        },
-        {
-          "type": "string"
-        }
-      ]
-    },
-    "KnownUrlDescriptor": {
-      "type": "object",
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "mdn",
-            "node",
-            "e18e"
-          ]
-        },
-        "id": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "type",
-        "id"
       ],
       "additionalProperties": false
     },
