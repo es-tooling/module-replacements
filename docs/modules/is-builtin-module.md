@@ -4,7 +4,7 @@ description: Native Node.js alternatives to the is-builtin-module package for ch
 
 # Replacements for `is-builtin-module`
 
-## Node.js (since 16.x)
+## `isBuiltin` (native, since Node.js 16.x)
 
 For determining if a module is built-in or not, you can use [isBuiltin](https://nodejs.org/api/module.html#moduleisbuiltinmodulename):
 
@@ -16,7 +16,7 @@ isBuiltin('fs') // true [!code ++]
 isBuiltinModule('fs') // true [!code --]
 ```
 
-## Node.js 6.x to 15.x
+## `builtInModules` (native, since Node.js 6.x and 15.x)
 
 Before Node.js 16.x, `isBuiltin` was not available, so you need to implement your own check using [builtinModules](https://nodejs.org/api/module.html#modulebuiltinmodules):
 

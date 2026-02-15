@@ -4,7 +4,7 @@ description: Modern alternatives to the dot-prop package for getting, setting, a
 
 # Replacements for `dot-prop`
 
-## `dlv` + `dset`
+## `dlv` and `dset`
 
 [`dlv`](https://github.com/developit/dlv) gets nested values with default fallbacks and [`dset`](https://github.com/lukeed/dset) sets nested values with automatic intermediate object creation.
 

@@ -6,7 +6,7 @@ description: Modern alternatives to the dotenv package for loading and managing 
 
 Although dotenv is reliable, it may not be necessary or may lack certain features.
 
-## Node.js --env-file / --env-file-if-exists
+## `--env-file` / `--env-file-if-exists` (native, Node.js)
 
 Built into Node.js (v20.6.0+; v22.9.0 for `--env-file-if-exists`). Zero dependencies—perfect for most apps that just need to load a `.env` at startup.
 

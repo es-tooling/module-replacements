@@ -6,7 +6,7 @@ description: Modern alternatives to the `crypto-js` package for cryptographic op
 
 `crypto-js` is no longer actively maintained and has been discontinued since engines now come with this functionality built-in.
 
-## Node `node:crypto` (built-in)
+## `node:crypto` (native, Node.js built-in)
 
 Node provides a [`node:crypto`](https://nodejs.org/api/crypto.html) module as part of its standard library.
 

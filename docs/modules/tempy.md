@@ -4,7 +4,7 @@ description: Modern alternatives to the tempy package for creating temporary fil
 
 # Replacements for `tempy`
 
-## Node.js (since v14.x)
+## `fs.mkdtemp` (native, since Node.js v14.x)
 
 Node.js has the [`fs.mkdtemp`](https://nodejs.org/api/fs.html#fsmkdtempprefix-options-callback) function for creating a unique temporary directory. Directory cleanup can be done by passing `{recursive: true}` to [`fs.rm`](https://nodejs.org/api/fs.html#fsrmpath-options-callback), available in v14.14.0 and up.
 

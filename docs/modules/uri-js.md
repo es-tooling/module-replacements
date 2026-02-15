@@ -6,7 +6,7 @@ description: Modern alternatives to uri-js for RFC 3986 URI parsing, resolving, 
 
 [`uri-js`](https://github.com/garycourt/uri-js) is unmaintained and triggers deprecation warnings on modern Node.js ([due to `punycode`](https://github.com/garycourt/uri-js/pull/95)).
 
-## Native `URL`
+## `URL` (native)
 
 Good for standard web URLs (http/https/ws/wss/file/mailto, etc.).
 

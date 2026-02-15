@@ -4,7 +4,7 @@ description: Native Node.js alternatives to the builtin-modules package for list
 
 # Replacements for `builtin-modules`
 
-## Node.js (since 6.x)
+## `builtinModules` (native, since Node.js 6.x)
 
 For getting the list of built-in modules, you can use [builtinModules](https://nodejs.org/api/module.html#modulebuiltinmodules):
 

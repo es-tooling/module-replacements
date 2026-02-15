@@ -31,7 +31,7 @@ Another option is [concurrently](https://github.com/open-cli-tools/concurrently)
 }
 ```
 
-## `Wireit`
+## `wireit`
 
 For more advanced workflows, consider [Wireit](https://github.com/google/wireit). It integrates directly into `package.json` to add caching, dependency graphs, watch mode, and incremental builds. Unlike `npm-run-all`, Wireit upgrades your existing `npm run` experience instead of providing a separate CLI.
 

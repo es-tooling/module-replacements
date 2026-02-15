@@ -6,7 +6,7 @@ description: Shared alternatives and examples for fetch based HTTP clients used 
 
 This page contains the common, recommended alternatives and examples for fetch based HTTP clients used by `axios`, `node-fetch`, and `cross-fetch` replacement docs.
 
-## Native `fetch` API
+## `fetch` API (native)
 
 The native [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) API is available in Node.js (since v18.x) and all modern browsers. For many use cases it replaces `axios`/`node-fetch`/`cross-fetch` without adding dependencies.
 

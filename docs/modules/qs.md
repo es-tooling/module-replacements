@@ -4,7 +4,7 @@ description: Modern alternatives to the qs package for parsing and serializing q
 
 # Replacements for `qs`
 
-## `URLSearchParams`
+## `URLSearchParams` (native)
 
 [`URLSearchParams`](https://developer.mozilla.org/docs/Web/API/URLSearchParams) is built into browsers and Node.js (>= 10). Use it when you don’t need nested objects or automatic array parsing. It preserves multiple values via `getAll`, and `toString()` gives you a URL-safe query string.
 
