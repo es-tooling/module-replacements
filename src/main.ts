@@ -17,9 +17,14 @@ export * from './types.js';
 export {nativeReplacements, microUtilsReplacements, preferredReplacements};
 
 export const all: ManifestModule = {
-  replacements: [
+  replacements: {
     ...nativeReplacements.replacements,
     ...microUtilsReplacements.replacements,
     ...preferredReplacements.replacements
-  ]
+  },
+  mappings: {
+    ...nativeReplacements.mappings,
+    ...microUtilsReplacements.mappings,
+    ...preferredReplacements.mappings
+  }
 };
