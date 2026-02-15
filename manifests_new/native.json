@@ -1,0 +1,1850 @@
+{
+  "replacements": {
+    "%TypedArray%.prototype.buffer": {
+      "id": "%TypedArray%.prototype.buffer",
+      "type": "native",
+      "description": "%TypedArray%.prototype.buffer",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/buffer"
+      }
+    },
+    "%TypedArray%.prototype.byteLength": {
+      "id": "%TypedArray%.prototype.byteLength",
+      "type": "native",
+      "description": "%TypedArray%.prototype.byteLength",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/byteLength"
+      }
+    },
+    "%TypedArray%.prototype.byteOffset": {
+      "id": "%TypedArray%.prototype.byteOffset",
+      "type": "native",
+      "description": "%TypedArray%.prototype.byteOffset",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/byteOffset"
+      }
+    },
+    "%TypedArray%.prototype.length": {
+      "id": "%TypedArray%.prototype.length",
+      "type": "native",
+      "description": "%TypedArray%.prototype.length",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/length"
+      }
+    },
+    "%TypedArray%.prototype.slice": {
+      "id": "%TypedArray%.prototype.slice",
+      "type": "native",
+      "description": "%TypedArray%.prototype.slice",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/slice"
+      }
+    },
+    "AggregateError": {
+      "id": "AggregateError",
+      "type": "native",
+      "description": "AggregateError",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/AggregateError"
+      }
+    },
+    "Array.from": {
+      "id": "Array.from",
+      "type": "native",
+      "description": "Array.from",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/from"
+      }
+    },
+    "Array.of": {
+      "id": "Array.of",
+      "type": "native",
+      "description": "Array.of",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/of"
+      }
+    },
+    "Array.prototype.at": {
+      "id": "Array.prototype.at",
+      "type": "native",
+      "description": "Array.prototype.at",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/at"
+      }
+    },
+    "Array.prototype.concat": {
+      "id": "Array.prototype.concat",
+      "type": "native",
+      "description": "Array.prototype.concat",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/concat"
+      }
+    },
+    "Array.prototype.copyWithin": {
+      "id": "Array.prototype.copyWithin",
+      "type": "native",
+      "description": "Array.prototype.copyWithin",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/copyWithin"
+      }
+    },
+    "Array.prototype.entries": {
+      "id": "Array.prototype.entries",
+      "type": "native",
+      "description": "Array.prototype.entries",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/entries"
+      }
+    },
+    "Array.prototype.every": {
+      "id": "Array.prototype.every",
+      "type": "native",
+      "description": "Array.prototype.every",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/every"
+      }
+    },
+    "Array.prototype.filter": {
+      "id": "Array.prototype.filter",
+      "type": "native",
+      "description": "Array.prototype.filter",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/filter"
+      }
+    },
+    "Array.prototype.find": {
+      "id": "Array.prototype.find",
+      "type": "native",
+      "description": "Array.prototype.find",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/find"
+      }
+    },
+    "Array.prototype.findIndex": {
+      "id": "Array.prototype.findIndex",
+      "type": "native",
+      "description": "Array.prototype.findIndex",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/findIndex"
+      }
+    },
+    "Array.prototype.flat": {
+      "id": "Array.prototype.flat",
+      "type": "native",
+      "description": "Array.prototype.flat",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/flat"
+      }
+    },
+    "Array.prototype.flatMap": {
+      "id": "Array.prototype.flatMap",
+      "type": "native",
+      "description": "Array.prototype.flatMap",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/flatMap"
+      }
+    },
+    "Array.prototype.forEach": {
+      "id": "Array.prototype.forEach",
+      "type": "native",
+      "description": "Array.prototype.forEach",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/forEach"
+      }
+    },
+    "Array.prototype.includes": {
+      "id": "Array.prototype.includes",
+      "type": "native",
+      "description": "Array.prototype.includes",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/includes"
+      }
+    },
+    "Array.prototype.indexOf": {
+      "id": "Array.prototype.indexOf",
+      "type": "native",
+      "description": "Array.prototype.indexOf",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/indexOf"
+      }
+    },
+    "Array.prototype.join": {
+      "id": "Array.prototype.join",
+      "type": "native",
+      "description": "Array.prototype.join",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/join"
+      }
+    },
+    "Array.prototype.keys": {
+      "id": "Array.prototype.keys",
+      "type": "native",
+      "description": "Array.prototype.keys",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/keys"
+      }
+    },
+    "Array.prototype.lastIndexOf": {
+      "id": "Array.prototype.lastIndexOf",
+      "type": "native",
+      "description": "Array.prototype.lastIndexOf",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"
+      }
+    },
+    "Array.prototype.map": {
+      "id": "Array.prototype.map",
+      "type": "native",
+      "description": "Array.prototype.map",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/map"
+      }
+    },
+    "Array.prototype.push": {
+      "id": "Array.prototype.push",
+      "type": "native",
+      "description": "Array.prototype.push",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/push"
+      }
+    },
+    "Array.prototype.reduce": {
+      "id": "Array.prototype.reduce",
+      "type": "native",
+      "description": "Array.prototype.reduce",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/reduce"
+      }
+    },
+    "Array.prototype.reduceRight": {
+      "id": "Array.prototype.reduceRight",
+      "type": "native",
+      "description": "Array.prototype.reduceRight",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/reduceRight"
+      }
+    },
+    "Array.prototype.slice": {
+      "id": "Array.prototype.slice",
+      "type": "native",
+      "description": "Array.prototype.slice",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/slice"
+      }
+    },
+    "Array.prototype.some": {
+      "id": "Array.prototype.some",
+      "type": "native",
+      "description": "Array.prototype.some",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/some"
+      }
+    },
+    "Array.prototype.splice": {
+      "id": "Array.prototype.splice",
+      "type": "native",
+      "description": "Array.prototype.splice",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/splice"
+      }
+    },
+    "Array.prototype.unshift": {
+      "id": "Array.prototype.unshift",
+      "type": "native",
+      "description": "Array.prototype.unshift",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/unshift"
+      }
+    },
+    "Array.prototype.values": {
+      "id": "Array.prototype.values",
+      "type": "native",
+      "description": "Array.prototype.values",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/values"
+      }
+    },
+    "Array.prototype[Symbol.unscopables]": {
+      "id": "Array.prototype[Symbol.unscopables]",
+      "type": "native",
+      "description": "Array.prototype[Symbol.unscopables]",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/@@unscopables"
+      }
+    },
+    "ArrayBuffer.prototype.byteLength": {
+      "id": "ArrayBuffer.prototype.byteLength",
+      "type": "native",
+      "description": "ArrayBuffer.prototype.byteLength",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/ArrayBuffer/byteLength"
+      }
+    },
+    "ArrayBuffer.prototype.slice": {
+      "id": "ArrayBuffer.prototype.slice",
+      "type": "native",
+      "description": "ArrayBuffer.prototype.slice",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/ArrayBuffer/slice"
+      }
+    },
+    "DataView.prototype.buffer": {
+      "id": "DataView.prototype.buffer",
+      "type": "native",
+      "description": "DataView.prototype.buffer",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/DataView/buffer"
+      }
+    },
+    "DataView.prototype.byteLength": {
+      "id": "DataView.prototype.byteLength",
+      "type": "native",
+      "description": "DataView.prototype.byteLength",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/DataView/byteLength"
+      }
+    },
+    "DataView.prototype.byteOffset": {
+      "id": "DataView.prototype.byteOffset",
+      "type": "native",
+      "description": "DataView.prototype.byteOffset",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/DataView/byteOffset"
+      }
+    },
+    "Date": {
+      "id": "Date",
+      "type": "native",
+      "description": "Date",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Date"
+      }
+    },
+    "for...of": {
+      "id": "for...of",
+      "type": "native",
+      "description": "for...of (using \"Object.entries\" if dealing with objects)",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Statements/for...of"
+      }
+    },
+    "Function.prototype.bind": {
+      "id": "Function.prototype.bind",
+      "type": "native",
+      "description": "Function.prototype.bind",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Function/bind"
+      }
+    },
+    "globalThis": {
+      "id": "globalThis",
+      "type": "native",
+      "description": "globalThis",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/globalThis"
+      }
+    },
+    "Math.acosh": {
+      "id": "Math.acosh",
+      "type": "native",
+      "description": "Math.acosh",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Math/acosh"
+      }
+    },
+    "Math.atanh": {
+      "id": "Math.atanh",
+      "type": "native",
+      "description": "Math.atanh",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Math/atanh"
+      }
+    },
+    "Math.cbrt": {
+      "id": "Math.cbrt",
+      "type": "native",
+      "description": "Math.cbrt",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Math/cbrt"
+      }
+    },
+    "Math.clz32": {
+      "id": "Math.clz32",
+      "type": "native",
+      "description": "Math.clz32",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Math/clz32"
+      }
+    },
+    "Math.f16round": {
+      "id": "Math.f16round",
+      "type": "native",
+      "description": "Math.f16round",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Math/f16round"
+      }
+    },
+    "Math.fround": {
+      "id": "Math.fround",
+      "type": "native",
+      "description": "Math.fround",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Math/fround"
+      }
+    },
+    "Math.imul": {
+      "id": "Math.imul",
+      "type": "native",
+      "description": "Math.imul",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Math/imul"
+      }
+    },
+    "Math.log10": {
+      "id": "Math.log10",
+      "type": "native",
+      "description": "Math.log10",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Math/log10"
+      }
+    },
+    "Math.log1p": {
+      "id": "Math.log1p",
+      "type": "native",
+      "description": "Math.log1p",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Math/log1p"
+      }
+    },
+    "Math.sign": {
+      "id": "Math.sign",
+      "type": "native",
+      "description": "Math.sign",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Math/sign"
+      }
+    },
+    "Number.isFinite": {
+      "id": "Number.isFinite",
+      "type": "native",
+      "description": "Number.isFinite",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Number/isFinite"
+      }
+    },
+    "Number.isInteger": {
+      "id": "Number.isInteger",
+      "type": "native",
+      "description": "Number.isInteger",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Number/isInteger"
+      }
+    },
+    "Number.isNaN": {
+      "id": "Number.isNaN",
+      "type": "native",
+      "description": "Number.isNaN",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Number/isNaN"
+      }
+    },
+    "Number.isSafeInteger": {
+      "id": "Number.isSafeInteger",
+      "type": "native",
+      "description": "Number.isSafeInteger",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger"
+      }
+    },
+    "Number.parseFloat": {
+      "id": "Number.parseFloat",
+      "type": "native",
+      "description": "Number.parseFloat",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Number/parseFloat"
+      }
+    },
+    "Number.parseInt": {
+      "id": "Number.parseInt",
+      "type": "native",
+      "description": "Number.parseInt",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Number/parseInt"
+      }
+    },
+    "Number.prototype.toExponential": {
+      "id": "Number.prototype.toExponential",
+      "type": "native",
+      "description": "Number.prototype.toExponential",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Number/toExponential"
+      }
+    },
+    "Object.assign": {
+      "id": "Object.assign",
+      "type": "native",
+      "description": "Object.assign, or if deep clones are needed, use structuredClone",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/assign"
+      }
+    },
+    "Object.defineProperties": {
+      "id": "Object.defineProperties",
+      "type": "native",
+      "description": "Object.defineProperties",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/defineProperties"
+      }
+    },
+    "Object.defineProperty": {
+      "id": "Object.defineProperty",
+      "type": "native",
+      "description": "Object.defineProperty",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/defineProperty"
+      }
+    },
+    "Object.entries": {
+      "id": "Object.entries",
+      "type": "native",
+      "description": "Object.entries",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/entries"
+      }
+    },
+    "Object.fromEntries": {
+      "id": "Object.fromEntries",
+      "type": "native",
+      "description": "Object.fromEntries",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/fromEntries"
+      }
+    },
+    "Object.getOwnPropertyDescriptor": {
+      "id": "Object.getOwnPropertyDescriptor",
+      "type": "native",
+      "description": "Object.getOwnPropertyDescriptor",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor"
+      }
+    },
+    "Object.getOwnPropertyDescriptors": {
+      "id": "Object.getOwnPropertyDescriptors",
+      "type": "native",
+      "description": "Object.getOwnPropertyDescriptors",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors"
+      }
+    },
+    "Object.getPrototypeOf": {
+      "id": "Object.getPrototypeOf",
+      "type": "native",
+      "description": "Object.getPrototypeOf",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf"
+      }
+    },
+    "Object.hasOwn": {
+      "id": "Object.hasOwn",
+      "type": "native",
+      "description": "Object.hasOwn",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/hasOwn"
+      }
+    },
+    "Object.is": {
+      "id": "Object.is",
+      "type": "native",
+      "description": "Object.is",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/is"
+      }
+    },
+    "Object.keys": {
+      "id": "Object.keys",
+      "type": "native",
+      "description": "Object.keys(obj)",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/keys"
+      }
+    },
+    "Object.values": {
+      "id": "Object.values",
+      "type": "native",
+      "description": "Object.values",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/values"
+      }
+    },
+    "parseInt": {
+      "id": "parseInt",
+      "type": "native",
+      "description": "parseInt",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/parseInt"
+      }
+    },
+    "Promise.allSettled": {
+      "id": "Promise.allSettled",
+      "type": "native",
+      "description": "Promise.allSettled",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Promise/allSettled"
+      }
+    },
+    "Promise.any": {
+      "id": "Promise.any",
+      "type": "native",
+      "description": "Promise.any",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Promise/any"
+      }
+    },
+    "Promise.prototype.finally": {
+      "id": "Promise.prototype.finally",
+      "type": "native",
+      "description": "Promise.prototype.finally",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Promise/finally"
+      }
+    },
+    "Reflect.getPrototypeOf": {
+      "id": "Reflect.getPrototypeOf",
+      "type": "native",
+      "description": "Reflect.getPrototypeOf",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Reflect/getPrototypeOf"
+      }
+    },
+    "Reflect.ownKeys": {
+      "id": "Reflect.ownKeys",
+      "type": "native",
+      "description": "Reflect.ownKeys",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Reflect/ownKeys"
+      }
+    },
+    "String.prototype.at": {
+      "id": "String.prototype.at",
+      "type": "native",
+      "description": "String.prototype.at",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/at"
+      }
+    },
+    "String.prototype.lastIndexOf": {
+      "id": "String.prototype.lastIndexOf",
+      "type": "native",
+      "description": "String.prototype.lastIndexOf",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/lastIndexOf"
+      }
+    },
+    "String.prototype.matchAll": {
+      "id": "String.prototype.matchAll",
+      "type": "native",
+      "description": "String.prototype.matchAll",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/matchAll"
+      }
+    },
+    "String.prototype.padEnd": {
+      "id": "String.prototype.padEnd",
+      "type": "native",
+      "description": "String.prototype.padEnd",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/padEnd"
+      }
+    },
+    "String.prototype.padStart": {
+      "id": "String.prototype.padStart",
+      "type": "native",
+      "description": "String.prototype.padStart",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/padStart"
+      }
+    },
+    "String.prototype.replaceAll": {
+      "id": "String.prototype.replaceAll",
+      "type": "native",
+      "description": "String.prototype.replaceAll",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/replaceAll"
+      }
+    },
+    "String.prototype.split": {
+      "id": "String.prototype.split",
+      "type": "native",
+      "description": "String.prototype.split",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/split"
+      }
+    },
+    "String.prototype.substr": {
+      "id": "String.prototype.substr",
+      "type": "native",
+      "description": "String.prototype.substr",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/substr"
+      }
+    },
+    "String.prototype.trim": {
+      "id": "String.prototype.trim",
+      "type": "native",
+      "description": "String.prototype.trim",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/trim"
+      }
+    },
+    "String.prototype.trimEnd": {
+      "id": "String.prototype.trimEnd",
+      "type": "native",
+      "description": "String.prototype.trimEnd",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/trimEnd"
+      }
+    },
+    "String.prototype.trimLeft": {
+      "id": "String.prototype.trimLeft",
+      "type": "native",
+      "description": "String.prototype.trimLeft",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/trimLeft"
+      }
+    },
+    "String.prototype.trimRight": {
+      "id": "String.prototype.trimRight",
+      "type": "native",
+      "description": "String.prototype.trimRight",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/trimRight"
+      }
+    },
+    "String.prototype.trimStart": {
+      "id": "String.prototype.trimStart",
+      "type": "native",
+      "description": "String.prototype.trimStart",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/trimStart"
+      }
+    },
+    "String.raw": {
+      "id": "String.raw",
+      "type": "native",
+      "description": "String.raw",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/raw"
+      }
+    },
+    "Symbol.prototype.description": {
+      "id": "Symbol.prototype.description",
+      "type": "native",
+      "description": "Symbol.prototype.description",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Symbol/description"
+      }
+    },
+    "always::Object.prototype": {
+      "id": "always::Object.prototype",
+      "type": "native",
+      "description": "Always `true`",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Operators/Object_initializer#prototype_setter"
+      }
+    },
+    "always::Symbol": {
+      "id": "always::Symbol",
+      "type": "native",
+      "description": "Always `true`",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Symbol"
+      }
+    },
+    "always::Symbol.toStringTag": {
+      "id": "always::Symbol.toStringTag",
+      "type": "native",
+      "description": "Always `true`",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag"
+      }
+    },
+    "always::extends": {
+      "id": "always::extends",
+      "type": "native",
+      "description": "Use native class syntax",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Classes/extends"
+      }
+    },
+    "always::RegExp.prototype.flags": {
+      "id": "always::RegExp.prototype.flags",
+      "type": "native",
+      "description": "RegExp.prototype.flags (e.g. \"/foo/g.flags\")",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/RegExp/flags"
+      }
+    },
+    "always::Error.prototype.cause": {
+      "id": "always::Error.prototype.cause",
+      "type": "native",
+      "description": "Use errors `.cause` property and second `Error` constructors argument to define it",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Error/cause"
+      }
+    },
+    "always::Error": {
+      "id": "always::Error",
+      "type": "native",
+      "description": "Error / EvalError / RangeError / ReferenceError / SyntaxError / TypeError / URIError",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Error"
+      }
+    },
+    "always::String.prototype": {
+      "id": "always::String.prototype",
+      "type": "native",
+      "description": "String.prototype.{ anchor, big, blink, bold, fixed, fontcolor, fontsize, italics, link, small, strike, sub, sup }",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String#html_wrapper_methods"
+      }
+    },
+    "Function.prototype.name": {
+      "id": "Function.prototype.name",
+      "type": "native",
+      "description": "Use functions `.name` property",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Function/name"
+      }
+    },
+    "Object.prototype.hasOwnProperty": {
+      "id": "Object.prototype.hasOwnProperty",
+      "type": "native",
+      "description": "Object.prototype.hasOwnProperty.call(obj, prop)",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty"
+      }
+    }
+  },
+  "mappings": {
+    "array-buffer-byte-length": {
+      "type": "module",
+      "moduleName": "array-buffer-byte-length",
+      "replacements": [
+        "ArrayBuffer.prototype.byteLength"
+      ]
+    },
+    "array-every": {
+      "type": "module",
+      "moduleName": "array-every",
+      "replacements": [
+        "Array.prototype.every"
+      ]
+    },
+    "array-includes": {
+      "type": "module",
+      "moduleName": "array-includes",
+      "replacements": [
+        "Array.prototype.includes"
+      ]
+    },
+    "array-map": {
+      "type": "module",
+      "moduleName": "array-map",
+      "replacements": [
+        "Array.prototype.map"
+      ]
+    },
+    "array.from": {
+      "type": "module",
+      "moduleName": "array.from",
+      "replacements": [
+        "Array.from"
+      ]
+    },
+    "array.of": {
+      "type": "module",
+      "moduleName": "array.of",
+      "replacements": [
+        "Array.of"
+      ]
+    },
+    "array.prototype.at": {
+      "type": "module",
+      "moduleName": "array.prototype.at",
+      "replacements": [
+        "Array.prototype.at"
+      ]
+    },
+    "array.prototype.concat": {
+      "type": "module",
+      "moduleName": "array.prototype.concat",
+      "replacements": [
+        "Array.prototype.concat"
+      ]
+    },
+    "array.prototype.copywithin": {
+      "type": "module",
+      "moduleName": "array.prototype.copywithin",
+      "replacements": [
+        "Array.prototype.copyWithin"
+      ]
+    },
+    "array.prototype.entries": {
+      "type": "module",
+      "moduleName": "array.prototype.entries",
+      "replacements": [
+        "Array.prototype.entries"
+      ]
+    },
+    "array.prototype.every": {
+      "type": "module",
+      "moduleName": "array.prototype.every",
+      "replacements": [
+        "Array.prototype.every"
+      ]
+    },
+    "array.prototype.filter": {
+      "type": "module",
+      "moduleName": "array.prototype.filter",
+      "replacements": [
+        "Array.prototype.filter"
+      ]
+    },
+    "array.prototype.find": {
+      "type": "module",
+      "moduleName": "array.prototype.find",
+      "replacements": [
+        "Array.prototype.find"
+      ]
+    },
+    "array.prototype.findindex": {
+      "type": "module",
+      "moduleName": "array.prototype.findindex",
+      "replacements": [
+        "Array.prototype.findIndex"
+      ]
+    },
+    "array.prototype.flat": {
+      "type": "module",
+      "moduleName": "array.prototype.flat",
+      "replacements": [
+        "Array.prototype.flat"
+      ]
+    },
+    "array.prototype.flatmap": {
+      "type": "module",
+      "moduleName": "array.prototype.flatmap",
+      "replacements": [
+        "Array.prototype.flatMap"
+      ]
+    },
+    "array.prototype.foreach": {
+      "type": "module",
+      "moduleName": "array.prototype.foreach",
+      "replacements": [
+        "Array.prototype.forEach"
+      ]
+    },
+    "array.prototype.indexof": {
+      "type": "module",
+      "moduleName": "array.prototype.indexof",
+      "replacements": [
+        "Array.prototype.indexOf"
+      ]
+    },
+    "array.prototype.join": {
+      "type": "module",
+      "moduleName": "array.prototype.join",
+      "replacements": [
+        "Array.prototype.join"
+      ]
+    },
+    "array.prototype.keys": {
+      "type": "module",
+      "moduleName": "array.prototype.keys",
+      "replacements": [
+        "Array.prototype.keys"
+      ]
+    },
+    "array.prototype.lastindexof": {
+      "type": "module",
+      "moduleName": "array.prototype.lastindexof",
+      "replacements": [
+        "Array.prototype.lastIndexOf"
+      ]
+    },
+    "array.prototype.map": {
+      "type": "module",
+      "moduleName": "array.prototype.map",
+      "replacements": [
+        "Array.prototype.map"
+      ]
+    },
+    "array.prototype.push": {
+      "type": "module",
+      "moduleName": "array.prototype.push",
+      "replacements": [
+        "Array.prototype.push"
+      ]
+    },
+    "array.prototype.reduce": {
+      "type": "module",
+      "moduleName": "array.prototype.reduce",
+      "replacements": [
+        "Array.prototype.reduce"
+      ]
+    },
+    "array.prototype.reduceright": {
+      "type": "module",
+      "moduleName": "array.prototype.reduceright",
+      "replacements": [
+        "Array.prototype.reduceRight"
+      ]
+    },
+    "array.prototype.slice": {
+      "type": "module",
+      "moduleName": "array.prototype.slice",
+      "replacements": [
+        "Array.prototype.slice"
+      ]
+    },
+    "array.prototype.some": {
+      "type": "module",
+      "moduleName": "array.prototype.some",
+      "replacements": [
+        "Array.prototype.some"
+      ]
+    },
+    "array.prototype.splice": {
+      "type": "module",
+      "moduleName": "array.prototype.splice",
+      "replacements": [
+        "Array.prototype.splice"
+      ]
+    },
+    "array.prototype.unshift": {
+      "type": "module",
+      "moduleName": "array.prototype.unshift",
+      "replacements": [
+        "Array.prototype.unshift"
+      ]
+    },
+    "array.prototype.values": {
+      "type": "module",
+      "moduleName": "array.prototype.values",
+      "replacements": [
+        "Array.prototype.values"
+      ]
+    },
+    "arraybuffer.prototype.slice": {
+      "type": "module",
+      "moduleName": "arraybuffer.prototype.slice",
+      "replacements": [
+        "ArrayBuffer.prototype.slice"
+      ]
+    },
+    "concat-map": {
+      "type": "module",
+      "moduleName": "concat-map",
+      "replacements": [
+        "Array.prototype.flatMap"
+      ]
+    },
+    "data-view-buffer": {
+      "type": "module",
+      "moduleName": "data-view-buffer",
+      "replacements": [
+        "DataView.prototype.buffer"
+      ]
+    },
+    "data-view-byte-length": {
+      "type": "module",
+      "moduleName": "data-view-byte-length",
+      "replacements": [
+        "DataView.prototype.byteLength"
+      ]
+    },
+    "data-view-byte-offset": {
+      "type": "module",
+      "moduleName": "data-view-byte-offset",
+      "replacements": [
+        "DataView.prototype.byteOffset"
+      ]
+    },
+    "date": {
+      "type": "module",
+      "moduleName": "date",
+      "replacements": [
+        "Date"
+      ]
+    },
+    "defaults": {
+      "type": "module",
+      "moduleName": "defaults",
+      "replacements": [
+        "Object.assign"
+      ]
+    },
+    "define-accessor-property": {
+      "type": "module",
+      "moduleName": "define-accessor-property",
+      "replacements": [
+        "Object.defineProperty"
+      ]
+    },
+    "define-data-property": {
+      "type": "module",
+      "moduleName": "define-data-property",
+      "replacements": [
+        "Object.defineProperty"
+      ]
+    },
+    "define-properties": {
+      "type": "module",
+      "moduleName": "define-properties",
+      "replacements": [
+        "Object.defineProperties"
+      ]
+    },
+    "error-cause": {
+      "type": "module",
+      "moduleName": "error-cause",
+      "replacements": [
+        "always::Error.prototype.cause"
+      ]
+    },
+    "es-aggregate-error": {
+      "type": "module",
+      "moduleName": "es-aggregate-error",
+      "replacements": [
+        "AggregateError"
+      ]
+    },
+    "es-create-array-iterator": {
+      "type": "module",
+      "moduleName": "es-create-array-iterator",
+      "replacements": [
+        "Array.prototype.entries"
+      ]
+    },
+    "es-define-property": {
+      "type": "module",
+      "moduleName": "es-define-property",
+      "replacements": [
+        "Object.defineProperty"
+      ]
+    },
+    "es-errors": {
+      "type": "module",
+      "moduleName": "es-errors",
+      "replacements": [
+        "always::Error"
+      ]
+    },
+    "es-shim-unscopables": {
+      "type": "module",
+      "moduleName": "es-shim-unscopables",
+      "replacements": [
+        "Array.prototype[Symbol.unscopables]"
+      ]
+    },
+    "es-string-html-methods": {
+      "type": "module",
+      "moduleName": "es-string-html-methods",
+      "replacements": [
+        "always::String.prototype"
+      ]
+    },
+    "extend-shallow": {
+      "type": "module",
+      "moduleName": "extend-shallow",
+      "replacements": [
+        "Object.assign"
+      ]
+    },
+    "filter-array": {
+      "type": "module",
+      "moduleName": "filter-array",
+      "replacements": [
+        "Array.prototype.filter"
+      ]
+    },
+    "for-each": {
+      "type": "module",
+      "moduleName": "for-each",
+      "replacements": [
+        "for...of"
+      ]
+    },
+    "function-bind": {
+      "type": "module",
+      "moduleName": "function-bind",
+      "replacements": [
+        "Function.prototype.bind"
+      ]
+    },
+    "function.prototype.name": {
+      "type": "module",
+      "moduleName": "function.prototype.name",
+      "replacements": [
+        "Function.prototype.name"
+      ]
+    },
+    "functions-have-names": {
+      "type": "module",
+      "moduleName": "functions-have-names",
+      "replacements": [
+        "Function.prototype.name"
+      ]
+    },
+    "get-symbol-description": {
+      "type": "module",
+      "moduleName": "get-symbol-description",
+      "replacements": [
+        "Symbol.prototype.description"
+      ]
+    },
+    "global": {
+      "type": "module",
+      "moduleName": "global",
+      "replacements": [
+        "globalThis"
+      ]
+    },
+    "globalthis": {
+      "type": "module",
+      "moduleName": "globalthis",
+      "replacements": [
+        "globalThis"
+      ]
+    },
+    "gopd": {
+      "type": "module",
+      "moduleName": "gopd",
+      "replacements": [
+        "Object.getOwnPropertyDescriptor"
+      ]
+    },
+    "has": {
+      "type": "module",
+      "moduleName": "has",
+      "replacements": [
+        "Object.prototype.hasOwnProperty"
+      ]
+    },
+    "has-own-prop": {
+      "type": "module",
+      "moduleName": "has-own-prop",
+      "replacements": [
+        "Object.prototype.hasOwnProperty"
+      ]
+    },
+    "has-proto": {
+      "type": "module",
+      "moduleName": "has-proto",
+      "replacements": [
+        "always::Object.prototype"
+      ]
+    },
+    "has-symbols": {
+      "type": "module",
+      "moduleName": "has-symbols",
+      "replacements": [
+        "always::Symbol"
+      ]
+    },
+    "has-tostringtag": {
+      "type": "module",
+      "moduleName": "has-tostringtag",
+      "replacements": [
+        "always::Symbol.toStringTag"
+      ]
+    },
+    "hasown": {
+      "type": "module",
+      "moduleName": "hasown",
+      "replacements": [
+        "Object.prototype.hasOwnProperty"
+      ]
+    },
+    "index-of": {
+      "type": "module",
+      "moduleName": "index-of",
+      "replacements": [
+        "Array.prototype.indexOf"
+      ]
+    },
+    "inherits": {
+      "type": "module",
+      "moduleName": "inherits",
+      "replacements": [
+        "always::extends"
+      ]
+    },
+    "is-nan": {
+      "type": "module",
+      "moduleName": "is-nan",
+      "replacements": [
+        "Number.isNaN"
+      ]
+    },
+    "iterate-iterator": {
+      "type": "module",
+      "moduleName": "iterate-iterator",
+      "replacements": [
+        "for...of"
+      ]
+    },
+    "iterate-value": {
+      "type": "module",
+      "moduleName": "iterate-value",
+      "replacements": [
+        "for...of"
+      ]
+    },
+    "last-index-of": {
+      "type": "module",
+      "moduleName": "last-index-of",
+      "replacements": [
+        "Array.prototype.lastIndexOf"
+      ]
+    },
+    "left-pad": {
+      "type": "module",
+      "moduleName": "left-pad",
+      "replacements": [
+        "String.prototype.padStart"
+      ]
+    },
+    "math.acosh": {
+      "type": "module",
+      "moduleName": "math.acosh",
+      "replacements": [
+        "Math.acosh"
+      ]
+    },
+    "math.atanh": {
+      "type": "module",
+      "moduleName": "math.atanh",
+      "replacements": [
+        "Math.atanh"
+      ]
+    },
+    "math.cbrt": {
+      "type": "module",
+      "moduleName": "math.cbrt",
+      "replacements": [
+        "Math.cbrt"
+      ]
+    },
+    "math.clz32": {
+      "type": "module",
+      "moduleName": "math.clz32",
+      "replacements": [
+        "Math.clz32"
+      ]
+    },
+    "math.f16round": {
+      "type": "module",
+      "moduleName": "math.f16round",
+      "replacements": [
+        "Math.f16round"
+      ]
+    },
+    "math.fround": {
+      "type": "module",
+      "moduleName": "math.fround",
+      "replacements": [
+        "Math.fround"
+      ]
+    },
+    "math.imul": {
+      "type": "module",
+      "moduleName": "math.imul",
+      "replacements": [
+        "Math.imul"
+      ]
+    },
+    "math.log10": {
+      "type": "module",
+      "moduleName": "math.log10",
+      "replacements": [
+        "Math.log10"
+      ]
+    },
+    "math.log1p": {
+      "type": "module",
+      "moduleName": "math.log1p",
+      "replacements": [
+        "Math.log1p"
+      ]
+    },
+    "math.sign": {
+      "type": "module",
+      "moduleName": "math.sign",
+      "replacements": [
+        "Math.sign"
+      ]
+    },
+    "node.extend": {
+      "type": "module",
+      "moduleName": "node.extend",
+      "replacements": [
+        "Object.assign"
+      ]
+    },
+    "number.isfinite": {
+      "type": "module",
+      "moduleName": "number.isfinite",
+      "replacements": [
+        "Number.isFinite"
+      ]
+    },
+    "number.isinteger": {
+      "type": "module",
+      "moduleName": "number.isinteger",
+      "replacements": [
+        "Number.isInteger"
+      ]
+    },
+    "number.isnan": {
+      "type": "module",
+      "moduleName": "number.isnan",
+      "replacements": [
+        "Number.isNaN"
+      ]
+    },
+    "number.issafeinteger": {
+      "type": "module",
+      "moduleName": "number.issafeinteger",
+      "replacements": [
+        "Number.isSafeInteger"
+      ]
+    },
+    "number.parsefloat": {
+      "type": "module",
+      "moduleName": "number.parsefloat",
+      "replacements": [
+        "Number.parseFloat"
+      ]
+    },
+    "number.parseint": {
+      "type": "module",
+      "moduleName": "number.parseint",
+      "replacements": [
+        "Number.parseInt"
+      ]
+    },
+    "number.prototype.toexponential": {
+      "type": "module",
+      "moduleName": "number.prototype.toexponential",
+      "replacements": [
+        "Number.prototype.toExponential"
+      ]
+    },
+    "object-assign": {
+      "type": "module",
+      "moduleName": "object-assign",
+      "replacements": [
+        "Object.assign"
+      ]
+    },
+    "object-is": {
+      "type": "module",
+      "moduleName": "object-is",
+      "replacements": [
+        "Object.is"
+      ]
+    },
+    "object-keys": {
+      "type": "module",
+      "moduleName": "object-keys",
+      "replacements": [
+        "Object.keys"
+      ]
+    },
+    "object.assign": {
+      "type": "module",
+      "moduleName": "object.assign",
+      "replacements": [
+        "Object.assign"
+      ]
+    },
+    "object.defineproperties": {
+      "type": "module",
+      "moduleName": "object.defineproperties",
+      "replacements": [
+        "Object.defineProperties"
+      ]
+    },
+    "object.entries": {
+      "type": "module",
+      "moduleName": "object.entries",
+      "replacements": [
+        "Object.entries"
+      ]
+    },
+    "object.fromentries": {
+      "type": "module",
+      "moduleName": "object.fromentries",
+      "replacements": [
+        "Object.fromEntries"
+      ]
+    },
+    "object.getownpropertydescriptors": {
+      "type": "module",
+      "moduleName": "object.getownpropertydescriptors",
+      "replacements": [
+        "Object.getOwnPropertyDescriptors"
+      ]
+    },
+    "object.getprototypeof": {
+      "type": "module",
+      "moduleName": "object.getprototypeof",
+      "replacements": [
+        "Object.getPrototypeOf"
+      ]
+    },
+    "object.hasown": {
+      "type": "module",
+      "moduleName": "object.hasown",
+      "replacements": [
+        "Object.hasOwn"
+      ]
+    },
+    "object.keys": {
+      "type": "module",
+      "moduleName": "object.keys",
+      "replacements": [
+        "Object.keys"
+      ]
+    },
+    "object.values": {
+      "type": "module",
+      "moduleName": "object.values",
+      "replacements": [
+        "Object.values"
+      ]
+    },
+    "pad-left": {
+      "type": "module",
+      "moduleName": "pad-left",
+      "replacements": [
+        "String.prototype.padStart"
+      ]
+    },
+    "parseint": {
+      "type": "module",
+      "moduleName": "parseint",
+      "replacements": [
+        "parseInt"
+      ]
+    },
+    "promise.allsettled": {
+      "type": "module",
+      "moduleName": "promise.allsettled",
+      "replacements": [
+        "Promise.allSettled"
+      ]
+    },
+    "promise.any": {
+      "type": "module",
+      "moduleName": "promise.any",
+      "replacements": [
+        "Promise.any"
+      ]
+    },
+    "promise.prototype.finally": {
+      "type": "module",
+      "moduleName": "promise.prototype.finally",
+      "replacements": [
+        "Promise.prototype.finally"
+      ]
+    },
+    "reflect.getprototypeof": {
+      "type": "module",
+      "moduleName": "reflect.getprototypeof",
+      "replacements": [
+        "Reflect.getPrototypeOf"
+      ]
+    },
+    "reflect.ownkeys": {
+      "type": "module",
+      "moduleName": "reflect.ownkeys",
+      "replacements": [
+        "Reflect.ownKeys"
+      ]
+    },
+    "regexp.prototype.flags": {
+      "type": "module",
+      "moduleName": "regexp.prototype.flags",
+      "replacements": [
+        "always::RegExp.prototype.flags"
+      ]
+    },
+    "string.prototype.at": {
+      "type": "module",
+      "moduleName": "string.prototype.at",
+      "replacements": [
+        "String.prototype.at"
+      ]
+    },
+    "string.prototype.lastindexof": {
+      "type": "module",
+      "moduleName": "string.prototype.lastindexof",
+      "replacements": [
+        "String.prototype.lastIndexOf"
+      ]
+    },
+    "string.prototype.matchall": {
+      "type": "module",
+      "moduleName": "string.prototype.matchall",
+      "replacements": [
+        "String.prototype.matchAll"
+      ]
+    },
+    "string.prototype.padend": {
+      "type": "module",
+      "moduleName": "string.prototype.padend",
+      "replacements": [
+        "String.prototype.padEnd"
+      ]
+    },
+    "string.prototype.padleft": {
+      "type": "module",
+      "moduleName": "string.prototype.padleft",
+      "replacements": [
+        "String.prototype.padStart"
+      ]
+    },
+    "string.prototype.padright": {
+      "type": "module",
+      "moduleName": "string.prototype.padright",
+      "replacements": [
+        "String.prototype.padEnd"
+      ]
+    },
+    "string.prototype.padstart": {
+      "type": "module",
+      "moduleName": "string.prototype.padstart",
+      "replacements": [
+        "String.prototype.padStart"
+      ]
+    },
+    "string.prototype.replaceall": {
+      "type": "module",
+      "moduleName": "string.prototype.replaceall",
+      "replacements": [
+        "String.prototype.replaceAll"
+      ]
+    },
+    "string.prototype.split": {
+      "type": "module",
+      "moduleName": "string.prototype.split",
+      "replacements": [
+        "String.prototype.split"
+      ]
+    },
+    "string.prototype.substr": {
+      "type": "module",
+      "moduleName": "string.prototype.substr",
+      "replacements": [
+        "String.prototype.substr"
+      ]
+    },
+    "string.prototype.trim": {
+      "type": "module",
+      "moduleName": "string.prototype.trim",
+      "replacements": [
+        "String.prototype.trim"
+      ]
+    },
+    "string.prototype.trimend": {
+      "type": "module",
+      "moduleName": "string.prototype.trimend",
+      "replacements": [
+        "String.prototype.trimEnd"
+      ]
+    },
+    "string.prototype.trimleft": {
+      "type": "module",
+      "moduleName": "string.prototype.trimleft",
+      "replacements": [
+        "String.prototype.trimLeft"
+      ]
+    },
+    "string.prototype.trimright": {
+      "type": "module",
+      "moduleName": "string.prototype.trimright",
+      "replacements": [
+        "String.prototype.trimRight"
+      ]
+    },
+    "string.prototype.trimstart": {
+      "type": "module",
+      "moduleName": "string.prototype.trimstart",
+      "replacements": [
+        "String.prototype.trimStart"
+      ]
+    },
+    "string.raw": {
+      "type": "module",
+      "moduleName": "string.raw",
+      "replacements": [
+        "String.raw"
+      ]
+    },
+    "symbol.prototype.description": {
+      "type": "module",
+      "moduleName": "symbol.prototype.description",
+      "replacements": [
+        "Symbol.prototype.description"
+      ]
+    },
+    "typed-array-buffer": {
+      "type": "module",
+      "moduleName": "typed-array-buffer",
+      "replacements": [
+        "%TypedArray%.prototype.buffer"
+      ]
+    },
+    "typed-array-byte-length": {
+      "type": "module",
+      "moduleName": "typed-array-byte-length",
+      "replacements": [
+        "%TypedArray%.prototype.byteLength"
+      ]
+    },
+    "typed-array-byte-offset": {
+      "type": "module",
+      "moduleName": "typed-array-byte-offset",
+      "replacements": [
+        "%TypedArray%.prototype.byteOffset"
+      ]
+    },
+    "typed-array-length": {
+      "type": "module",
+      "moduleName": "typed-array-length",
+      "replacements": [
+        "%TypedArray%.prototype.length"
+      ]
+    },
+    "typedarray.prototype.slice": {
+      "type": "module",
+      "moduleName": "typedarray.prototype.slice",
+      "replacements": [
+        "%TypedArray%.prototype.slice"
+      ]
+    },
+    "xtend": {
+      "type": "module",
+      "moduleName": "xtend",
+      "replacements": [
+        "Object.assign"
+      ]
+    }
+  }
+}
