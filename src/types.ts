@@ -28,7 +28,10 @@ export interface NativeModuleReplacement extends ModuleReplacementLike {
   type: 'native';
   url: KnownUrl;
   description: string;
-  webFeatureId?: string;
+  webFeatureId?: {
+    featureId: string;
+    compatKey?: string;
+  };
   nodeFeatureId?: {
     moduleName: string;
     exportName?: string;

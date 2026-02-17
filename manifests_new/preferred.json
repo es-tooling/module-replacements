@@ -5266,6 +5266,9 @@
       "id": "fetch",
       "type": "native",
       "description": "fetch API",
+      "webFeatureId": {
+        "featureId": "fetch"
+      },
       "url": {
         "type": "mdn",
         "id": "Web/API/Fetch_API"
@@ -5281,6 +5284,9 @@
       "id": "node:crypto",
       "type": "native",
       "description": "node:crypto",
+      "nodeFeatureId": {
+        "moduleName": "node:crypto"
+      },
       "url": {
         "type": "node",
         "id": "api/crypto.html"
@@ -5290,6 +5296,9 @@
       "id": "crypto",
       "type": "native",
       "description": "crypto",
+      "webFeatureId": {
+        "featureId": "web-cryptography"
+      },
       "url": {
         "type": "mdn",
         "id": "Web/API/Web_Crypto_API"
@@ -5323,6 +5332,9 @@
       "id": "fs",
       "type": "native",
       "description": "Node file system module",
+      "nodeFeatureId": {
+        "moduleName": "node:fs"
+      },
       "url": {
         "type": "node",
         "id": "api/fs.html"
@@ -5332,6 +5344,10 @@
       "id": "fs.glob",
       "type": "native",
       "description": "fs.glob",
+      "nodeFeatureId": {
+        "moduleName": "node:fs",
+        "exportName": "glob"
+      },
       "url": {
         "type": "node",
         "id": "api/fs.html#fspromisesglobpattern-options"
@@ -5341,6 +5357,9 @@
       "id": "Promise",
       "type": "native",
       "description": "Promise",
+      "webFeatureId": {
+        "featureId": "promise"
+      },
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Promise"
@@ -5350,6 +5369,9 @@
       "id": "Intl.Segmenter",
       "type": "native",
       "description": "Intl.Segmenter",
+      "webFeatureId": {
+        "featureId": "intl-segmenter"
+      },
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Intl/Segmenter"
@@ -5359,6 +5381,10 @@
       "id": "isBuiltin",
       "type": "native",
       "description": "isBuiltin",
+      "nodeFeatureId": {
+        "moduleName": "node:module",
+        "exportName": "isBuiltin"
+      },
       "url": {
         "type": "node",
         "id": "api/module.html#moduleisbuiltinmodulename"
@@ -5368,6 +5394,10 @@
       "id": "builtinModules",
       "type": "native",
       "description": "builtinModules",
+      "nodeFeatureId": {
+        "moduleName": "node:module",
+        "exportName": "builtinModules"
+      },
       "url": {
         "type": "node",
         "id": "api/module.html#modulebuiltinmodules"
@@ -5404,6 +5434,10 @@
       "id": "fs.mkdir",
       "type": "native",
       "description": "fs.mkdir",
+      "nodeFeatureId": {
+        "moduleName": "node:fs",
+        "exportName": "mkdir"
+      },
       "url": {
         "type": "node",
         "id": "api/fs.html#fspromisesmkdirpath-options"
@@ -5413,6 +5447,9 @@
       "id": "Date",
       "type": "native",
       "description": "Date",
+      "webFeatureId": {
+        "featureId": "date"
+      },
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Date"
@@ -5422,6 +5459,10 @@
       "id": "Buffer.compare",
       "type": "native",
       "description": "Buffer.compare",
+      "nodeFeatureId": {
+        "moduleName": "node:buffer",
+        "exportName": "Buffer"
+      },
       "url": {
         "type": "node",
         "id": "api/buffer.html#static-method-buffercomparebuf1-buf2"
@@ -5437,6 +5478,10 @@
       "id": "fs.access",
       "type": "native",
       "description": "fs.access",
+      "nodeFeatureId": {
+        "moduleName": "node:fs/promises",
+        "exportName": "access"
+      },
       "url": {
         "type": "node",
         "id": "api/fs.html#fspromisesaccesspath-mode"
@@ -5446,6 +5491,10 @@
       "id": "fs.existsSync",
       "type": "native",
       "description": "fs.existsSync",
+      "nodeFeatureId": {
+        "moduleName": "node:fs",
+        "exportName": "existsSync"
+      },
       "url": {
         "type": "node",
         "id": "api/fs.html#fsexistssyncpath"
@@ -5455,6 +5504,10 @@
       "id": "URLSearchParams",
       "type": "native",
       "description": "URLSearchParams",
+      "webFeatureId": {
+        "featureId": "url",
+        "compatKey": "api.URLSearchParams"
+      },
       "url": {
         "type": "mdn",
         "id": "Web/API/URLSearchParams"
@@ -5464,6 +5517,9 @@
       "id": "node:stream",
       "type": "native",
       "description": "node:stream",
+      "nodeFeatureId": {
+        "moduleName": "node:stream"
+      },
       "url": {
         "type": "node",
         "id": "api/stream.html"
@@ -5473,6 +5529,9 @@
       "id": "streams",
       "type": "native",
       "description": "streams",
+      "webFeatureId": {
+        "featureId": "streams"
+      },
       "url": {
         "type": "mdn",
         "id": "Web/API/Streams_API"
@@ -5482,6 +5541,10 @@
       "id": "fs.rm",
       "type": "native",
       "description": "fs.rm",
+      "nodeFeatureId": {
+        "moduleName": "node:fs/promises",
+        "exportName": "rm"
+      },
       "url": {
         "type": "node",
         "id": "api/fs.html#fspromisesrmpath-options"
@@ -5491,6 +5554,10 @@
       "id": "fs.rmdir",
       "type": "native",
       "description": "fs.rmdir",
+      "nodeFeatureId": {
+        "moduleName": "node:fs/promises",
+        "exportName": "rmdir"
+      },
       "url": {
         "type": "node",
         "id": "api/fs.html#fspromisesrmdirpath-options"
@@ -5500,6 +5567,10 @@
       "id": "Buffer.prototype.equals",
       "type": "native",
       "description": "Buffer.prototype.equals",
+      "nodeFeatureId": {
+        "moduleName": "node:buffer",
+        "exportName": "Buffer"
+      },
       "url": {
         "type": "node",
         "id": "api/buffer.html#bufequalsotherbuffer"
@@ -5530,6 +5601,10 @@
       "id": "util.stripVTControlCharacters",
       "type": "native",
       "description": "util.stripVTControlCharacters",
+      "nodeFeatureId": {
+        "moduleName": "node:util",
+        "exportName": "stripVTControlCharacters"
+      },
       "url": {
         "type": "node",
         "id": "api/util.html#utilstripvtcontrolcharactersstr"
@@ -5545,6 +5620,10 @@
       "id": "fs.mkdtemp",
       "type": "native",
       "description": "fs.mkdtemp",
+      "nodeFeatureId": {
+        "moduleName": "node:fs/promises",
+        "exportName": "mkdtemp"
+      },
       "url": {
         "type": "node",
         "id": "api/fs.html#fspromisesmkdtempprefix-options"
@@ -5554,6 +5633,9 @@
       "id": "URL",
       "type": "native",
       "description": "URL",
+      "webFeatureId": {
+        "featureId": "url"
+      },
       "url": {
         "type": "mdn",
         "id": "Web/API/URL"
@@ -5563,6 +5645,9 @@
       "id": "TextEncoder",
       "type": "native",
       "description": "TextEncoder",
+      "webFeatureId": {
+        "featureId": "text-encoding"
+      },
       "url": {
         "type": "mdn",
         "id": "Web/API/TextEncoder"
@@ -5572,6 +5657,10 @@
       "id": "Buffer.prototype.toString",
       "type": "native",
       "description": "Buffer.prototype.toString",
+      "nodeFeatureId": {
+        "moduleName": "node:buffer",
+        "exportName": "Buffer"
+      },
       "url": {
         "type": "node",
         "id": "api/buffer.html#buftostringencoding-start-end"
@@ -5581,6 +5670,10 @@
       "id": "util.styleText",
       "type": "native",
       "description": "util.styleText",
+      "nodeFeatureId": {
+        "moduleName": "node:util",
+        "exportName": "styleText"
+      },
       "url": {
         "type": "node",
         "id": "api/util.html#utilstyletextformat-text-options"
@@ -5590,6 +5683,10 @@
       "id": "util.types",
       "type": "native",
       "description": "util.types",
+      "nodeFeatureId": {
+        "moduleName": "node:util",
+        "exportName": "types"
+      },
       "url": {
         "type": "node",
         "id": "api/util.html#utiltypes"

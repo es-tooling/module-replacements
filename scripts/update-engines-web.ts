@@ -47,27 +47,40 @@ function updateReplacementEngines(
     return replacement;
   }
 
-  const {webFeatureId} = replacement;
-  const feature = features[webFeatureId];
+  const {featureId, compatKey} = replacement.webFeatureId;
+  const feature = features[featureId];
 
   if (!feature) {
-    console.warn(`Warning: Web feature '${webFeatureId}' not found`);
+    console.warn(`Warning: Web feature '${featureId}' not found`);
     return replacement;
   }
 
   if (feature.kind !== 'feature') {
     console.warn(
-      `Warning: Web feature '${webFeatureId}' is not of kind 'feature'`
+      `Warning: Web feature '${featureId}' is not of kind 'feature'`
     );
     return replacement;
   }
 
   const support = feature.status.support;
-  const engines = extractEngines(support);
+  let engines: EngineConstraint[];
+
+  if (compatKey) {
+    const compatSupport = feature.status.by_compat_key?.[compatKey];
+    if (!compatSupport) {
+      console.warn(
+        `Warning: Compat key '${compatKey}' not found for web feature '${featureId}'`
+      );
+      return replacement;
+    }
+    engines = extractEngines(compatSupport.support);
+  } else {
+    engines = extractEngines(support);
+  }
 
   if (engines.length === 0) {
     console.warn(
-      `Warning: No compatible engines found for web feature '${webFeatureId}'`
+      `Warning: No compatible engines found for web feature '${featureId} and compat key '${compatKey}'`
     );
     return replacement;
   }
@@ -75,10 +88,6 @@ function updateReplacementEngines(
   if (engines.every((e) => replacement.engines?.some((re) => re.engine === e.engine && re.minVersion === e.minVersion))) {
     return replacement;
   }
-
-  console.log(
-    `  Updated engines for webFeatureId '${webFeatureId}': ${engines.map((e) => `${e.engine}@${e.minVersion}`).join(', ')}`
-  );
 
   return {
     ...replacement,

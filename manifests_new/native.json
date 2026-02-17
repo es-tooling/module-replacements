@@ -7,6 +7,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/buffer"
+      },
+      "webFeatureId": {
+        "featureId": "typed-arrays",
+        "compatKey": "javascript.builtins.TypedArray.buffer"
       }
     },
     "%TypedArray%.prototype.byteLength": {
@@ -16,6 +20,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/byteLength"
+      },
+      "webFeatureId": {
+        "featureId": "typed-arrays",
+        "compatKey": "javascript.builtins.TypedArray.byteLength"
       }
     },
     "%TypedArray%.prototype.byteOffset": {
@@ -25,6 +33,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/byteOffset"
+      },
+      "webFeatureId": {
+        "featureId": "typed-arrays",
+        "compatKey": "javascript.builtins.TypedArray.byteOffset"
       }
     },
     "%TypedArray%.prototype.length": {
@@ -34,6 +46,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/length"
+      },
+      "webFeatureId": {
+        "featureId": "typed-arrays",
+        "compatKey": "javascript.builtins.TypedArray.length"
       }
     },
     "%TypedArray%.prototype.slice": {
@@ -43,6 +59,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/slice"
+      },
+      "webFeatureId": {
+        "featureId": "typed-arrays",
+        "compatKey": "javascript.builtins.TypedArray.slice"
       }
     },
     "AggregateError": {
@@ -52,6 +72,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/AggregateError"
+      },
+      "webFeatureId": {
+        "featureId": "promise-any",
+        "compatKey": "javascript.builtins.AggregateError"
       }
     },
     "Array.from": {
@@ -61,6 +85,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/from"
+      },
+      "webFeatureId": {
+        "featureId": "array-from",
+        "compatKey": "javascript.builtins.Array.from"
       }
     },
     "Array.of": {
@@ -70,6 +98,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/of"
+      },
+      "webFeatureId": {
+        "featureId": "array-of",
+        "compatKey": "javascript.builtins.Array.of"
       }
     },
     "Array.prototype.at": {
@@ -79,6 +111,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/at"
+      },
+      "webFeatureId": {
+        "featureId": "array-at",
+        "compatKey": "javascript.builtins.Array.at"
       }
     },
     "Array.prototype.concat": {
@@ -88,6 +124,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/concat"
+      },
+      "webFeatureId": {
+        "featureId": "array",
+        "compatKey": "javascript.builtins.Array.concat"
       }
     },
     "Array.prototype.copyWithin": {
@@ -97,6 +137,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/copyWithin"
+      },
+      "webFeatureId": {
+        "featureId": "array-copywithin",
+        "compatKey": "javascript.builtins.Array.copyWithin"
       }
     },
     "Array.prototype.entries": {
@@ -106,6 +150,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/entries"
+      },
+      "webFeatureId": {
+        "featureId": "array-iterators",
+        "compatKey": "javascript.builtins.Array.entries"
       }
     },
     "Array.prototype.every": {
@@ -115,6 +163,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/every"
+      },
+      "webFeatureId": {
+        "featureId": "array-iteration-methods",
+        "compatKey": "javascript.builtins.Array.every"
       }
     },
     "Array.prototype.filter": {
@@ -124,6 +176,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/filter"
+      },
+      "webFeatureId": {
+        "featureId": "array-iteration-methods",
+        "compatKey": "javascript.builtins.Array.filter"
       }
     },
     "Array.prototype.find": {
@@ -133,6 +189,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/find"
+      },
+      "webFeatureId": {
+        "featureId": "array-find",
+        "compatKey": "javascript.builtins.Array.find"
       }
     },
     "Array.prototype.findIndex": {
@@ -142,6 +202,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/findIndex"
+      },
+      "webFeatureId": {
+        "featureId": "array-find",
+        "compatKey": "javascript.builtins.Array.findIndex"
       }
     },
     "Array.prototype.flat": {
@@ -151,6 +215,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/flat"
+      },
+      "webFeatureId": {
+        "featureId": "array-flat",
+        "compatKey": "javascript.builtins.Array.flat"
       }
     },
     "Array.prototype.flatMap": {
@@ -160,6 +228,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/flatMap"
+      },
+      "webFeatureId": {
+        "featureId": "array-flat",
+        "compatKey": "javascript.builtins.Array.flatMap"
       }
     },
     "Array.prototype.forEach": {
@@ -169,6 +241,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/forEach"
+      },
+      "webFeatureId": {
+        "featureId": "array-iteration-methods",
+        "compatKey": "javascript.builtins.Array.forEach"
       }
     },
     "Array.prototype.includes": {
@@ -178,6 +254,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/includes"
+      },
+      "webFeatureId": {
+        "featureId": "array-includes",
+        "compatKey": "javascript.builtins.Array.includes"
       }
     },
     "Array.prototype.indexOf": {
@@ -187,6 +267,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/indexOf"
+      },
+      "webFeatureId": {
+        "featureId": "array-iteration-methods",
+        "compatKey": "javascript.builtins.Array.indexOf"
       }
     },
     "Array.prototype.join": {
@@ -196,6 +280,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/join"
+      },
+      "webFeatureId": {
+        "featureId": "array",
+        "compatKey": "javascript.builtins.Array.join"
       }
     },
     "Array.prototype.keys": {
@@ -205,6 +293,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/keys"
+      },
+      "webFeatureId": {
+        "featureId": "array-iterators",
+        "compatKey": "javascript.builtins.Array.keys"
       }
     },
     "Array.prototype.lastIndexOf": {
@@ -214,6 +306,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"
+      },
+      "webFeatureId": {
+        "featureId": "array-iteration-methods",
+        "compatKey": "javascript.builtins.Array.lastIndexOf"
       }
     },
     "Array.prototype.map": {
@@ -223,6 +319,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/map"
+      },
+      "webFeatureId": {
+        "featureId": "array-iteration-methods",
+        "compatKey": "javascript.builtins.Array.map"
       }
     },
     "Array.prototype.push": {
@@ -232,6 +332,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/push"
+      },
+      "webFeatureId": {
+        "featureId": "array",
+        "compatKey": "javascript.builtins.Array.push"
       }
     },
     "Array.prototype.reduce": {
@@ -241,6 +345,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/reduce"
+      },
+      "webFeatureId": {
+        "featureId": "array-iteration-methods",
+        "compatKey": "javascript.builtins.Array.reduce"
       }
     },
     "Array.prototype.reduceRight": {
@@ -250,6 +358,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/reduceRight"
+      },
+      "webFeatureId": {
+        "featureId": "array-iteration-methods",
+        "compatKey": "javascript.builtins.Array.reduceRight"
       }
     },
     "Array.prototype.slice": {
@@ -259,6 +371,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/slice"
+      },
+      "webFeatureId": {
+        "featureId": "array",
+        "compatKey": "javascript.builtins.Array.slice"
       }
     },
     "Array.prototype.some": {
@@ -268,6 +384,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/some"
+      },
+      "webFeatureId": {
+        "featureId": "array-iteration-methods",
+        "compatKey": "javascript.builtins.Array.some"
       }
     },
     "Array.prototype.splice": {
@@ -277,6 +397,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/splice"
+      },
+      "webFeatureId": {
+        "featureId": "array-splice",
+        "compatKey": "javascript.builtins.Array.splice"
       }
     },
     "Array.prototype.unshift": {
@@ -286,6 +410,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/unshift"
+      },
+      "webFeatureId": {
+        "featureId": "array",
+        "compatKey": "javascript.builtins.Array.unshift"
       }
     },
     "Array.prototype.values": {
@@ -295,6 +423,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/values"
+      },
+      "webFeatureId": {
+        "featureId": "array-iterators",
+        "compatKey": "javascript.builtins.Array.values"
       }
     },
     "Array.prototype[Symbol.unscopables]": {
@@ -304,6 +436,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/@@unscopables"
+      },
+      "webFeatureId": {
+        "featureId": "with",
+        "compatKey": "javascript.builtins.Array.@@unscopables"
       }
     },
     "ArrayBuffer.prototype.byteLength": {
@@ -313,6 +449,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/ArrayBuffer/byteLength"
+      },
+      "webFeatureId": {
+        "featureId": "typed-arrays",
+        "compatKey": "javascript.builtins.ArrayBuffer.byteLength"
       }
     },
     "ArrayBuffer.prototype.slice": {
@@ -322,6 +462,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/ArrayBuffer/slice"
+      },
+      "webFeatureId": {
+        "featureId": "typed-arrays",
+        "compatKey": "javascript.builtins.ArrayBuffer.slice"
       }
     },
     "DataView.prototype.buffer": {
@@ -331,6 +475,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/DataView/buffer"
+      },
+      "webFeatureId": {
+        "featureId": "typed-arrays",
+        "compatKey": "javascript.builtins.DataView.buffer"
       }
     },
     "DataView.prototype.byteLength": {
@@ -340,6 +488,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/DataView/byteLength"
+      },
+      "webFeatureId": {
+        "featureId": "typed-arrays",
+        "compatKey": "javascript.builtins.DataView.byteLength"
       }
     },
     "DataView.prototype.byteOffset": {
@@ -349,6 +501,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/DataView/byteOffset"
+      },
+      "webFeatureId": {
+        "featureId": "typed-arrays",
+        "compatKey": "javascript.builtins.DataView.byteOffset"
       }
     },
     "Date": {
@@ -358,6 +514,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Date"
+      },
+      "webFeatureId": {
+        "featureId": "date",
+        "compatKey": "javascript.builtins.Date"
       }
     },
     "for...of": {
@@ -367,6 +527,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Statements/for...of"
+      },
+      "webFeatureId": {
+        "featureId": "iterators",
+        "compatKey": "javascript.statements.for_of"
       }
     },
     "Function.prototype.bind": {
@@ -376,6 +540,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Function/bind"
+      },
+      "webFeatureId": {
+        "featureId": "functions",
+        "compatKey": "javascript.builtins.Function.bind"
       }
     },
     "globalThis": {
@@ -385,6 +553,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/globalThis"
+      },
+      "webFeatureId": {
+        "featureId": "globalthis",
+        "compatKey": "javascript.builtins.globalThis"
       }
     },
     "Math.acosh": {
@@ -394,6 +566,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/acosh"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Math.acosh"
       }
     },
     "Math.atanh": {
@@ -403,6 +579,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/atanh"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Math.atanh"
       }
     },
     "Math.cbrt": {
@@ -412,6 +592,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/cbrt"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Math.cbrt"
       }
     },
     "Math.clz32": {
@@ -421,6 +605,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/clz32"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Math.clz32"
       }
     },
     "Math.f16round": {
@@ -430,6 +618,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/f16round"
+      },
+      "webFeatureId": {
+        "featureId": "float16array",
+        "compatKey": "javascript.builtins.Math.f16round"
       }
     },
     "Math.fround": {
@@ -439,6 +631,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/fround"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Math.fround"
       }
     },
     "Math.imul": {
@@ -448,6 +644,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/imul"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Math.imul"
       }
     },
     "Math.log10": {
@@ -457,6 +657,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/log10"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Math.log10"
       }
     },
     "Math.log1p": {
@@ -466,6 +670,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/log1p"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Math.log1p"
       }
     },
     "Math.sign": {
@@ -475,6 +683,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/sign"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Math.sign"
       }
     },
     "Number.isFinite": {
@@ -484,6 +696,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/isFinite"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Number.isFinite"
       }
     },
     "Number.isInteger": {
@@ -493,6 +709,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/isInteger"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Number.isInteger"
       }
     },
     "Number.isNaN": {
@@ -502,6 +722,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/isNaN"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Number.isNaN"
       }
     },
     "Number.isSafeInteger": {
@@ -511,6 +735,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Number.isSafeInteger"
       }
     },
     "Number.parseFloat": {
@@ -520,6 +748,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/parseFloat"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Number.parseFloat"
       }
     },
     "Number.parseInt": {
@@ -529,6 +761,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/parseInt"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Number.parseInt"
       }
     },
     "Number.prototype.toExponential": {
@@ -538,6 +774,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/toExponential"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Number.toExponential"
       }
     },
     "Object.assign": {
@@ -547,6 +787,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/assign"
+      },
+      "webFeatureId": {
+        "featureId": "object-object",
+        "compatKey": "javascript.builtins.Object.assign"
       }
     },
     "Object.defineProperties": {
@@ -556,6 +800,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/defineProperties"
+      },
+      "webFeatureId": {
+        "featureId": "object-object",
+        "compatKey": "javascript.builtins.Object.defineProperties"
       }
     },
     "Object.defineProperty": {
@@ -565,6 +813,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/defineProperty"
+      },
+      "webFeatureId": {
+        "featureId": "object-object",
+        "compatKey": "javascript.builtins.Object.defineProperty"
       }
     },
     "Object.entries": {
@@ -574,6 +826,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/entries"
+      },
+      "webFeatureId": {
+        "featureId": "object-object",
+        "compatKey": "javascript.builtins.Object.entries"
       }
     },
     "Object.fromEntries": {
@@ -583,6 +839,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/fromEntries"
+      },
+      "webFeatureId": {
+        "featureId": "object-object",
+        "compatKey": "javascript.builtins.Object.fromEntries"
       }
     },
     "Object.getOwnPropertyDescriptor": {
@@ -592,6 +852,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor"
+      },
+      "webFeatureId": {
+        "featureId": "object-object",
+        "compatKey": "javascript.builtins.Object.getOwnPropertyDescriptor"
       }
     },
     "Object.getOwnPropertyDescriptors": {
@@ -601,6 +865,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors"
+      },
+      "webFeatureId": {
+        "featureId": "object-object",
+        "compatKey": "javascript.builtins.Object.getOwnPropertyDescriptors"
       }
     },
     "Object.getPrototypeOf": {
@@ -610,6 +878,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf"
+      },
+      "webFeatureId": {
+        "featureId": "object-object",
+        "compatKey": "javascript.builtins.Object.getPrototypeOf"
       }
     },
     "Object.hasOwn": {
@@ -619,6 +891,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/hasOwn"
+      },
+      "webFeatureId": {
+        "featureId": "object-hasown",
+        "compatKey": "javascript.builtins.Object.hasOwn"
       }
     },
     "Object.is": {
@@ -628,6 +904,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/is"
+      },
+      "webFeatureId": {
+        "featureId": "object-object",
+        "compatKey": "javascript.builtins.Object.is"
       }
     },
     "Object.keys": {
@@ -637,6 +917,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/keys"
+      },
+      "webFeatureId": {
+        "featureId": "object-object",
+        "compatKey": "javascript.builtins.Object.keys"
       }
     },
     "Object.values": {
@@ -646,6 +930,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/values"
+      },
+      "webFeatureId": {
+        "featureId": "object-object",
+        "compatKey": "javascript.builtins.Object.values"
       }
     },
     "parseInt": {
@@ -655,6 +943,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/parseInt"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.parseInt"
       }
     },
     "Promise.allSettled": {
@@ -664,6 +956,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Promise/allSettled"
+      },
+      "webFeatureId": {
+        "featureId": "promise-allsettled",
+        "compatKey": "javascript.builtins.Promise.allSettled"
       }
     },
     "Promise.any": {
@@ -673,6 +969,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Promise/any"
+      },
+      "webFeatureId": {
+        "featureId": "promise-any",
+        "compatKey": "javascript.builtins.Promise.any"
       }
     },
     "Promise.prototype.finally": {
@@ -682,6 +982,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Promise/finally"
+      },
+      "webFeatureId": {
+        "featureId": "promise-finally",
+        "compatKey": "javascript.builtins.Promise.finally"
       }
     },
     "Reflect.getPrototypeOf": {
@@ -691,6 +995,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Reflect/getPrototypeOf"
+      },
+      "webFeatureId": {
+        "featureId": "proxy-reflect",
+        "compatKey": "javascript.builtins.Reflect.getPrototypeOf"
       }
     },
     "Reflect.ownKeys": {
@@ -700,6 +1008,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Reflect/ownKeys"
+      },
+      "webFeatureId": {
+        "featureId": "proxy-reflect",
+        "compatKey": "javascript.builtins.Reflect.ownKeys"
       }
     },
     "String.prototype.at": {
@@ -709,6 +1021,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/at"
+      },
+      "webFeatureId": {
+        "featureId": "string-at",
+        "compatKey": "javascript.builtins.String.at"
       }
     },
     "String.prototype.lastIndexOf": {
@@ -718,6 +1034,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/lastIndexOf"
+      },
+      "webFeatureId": {
+        "featureId": "strings",
+        "compatKey": "javascript.builtins.String.lastIndexOf"
       }
     },
     "String.prototype.matchAll": {
@@ -727,6 +1047,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/matchAll"
+      },
+      "webFeatureId": {
+        "featureId": "string-matchall",
+        "compatKey": "javascript.builtins.String.matchAll"
       }
     },
     "String.prototype.padEnd": {
@@ -736,6 +1060,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/padEnd"
+      },
+      "webFeatureId": {
+        "featureId": "string-pad",
+        "compatKey": "javascript.builtins.String.padEnd"
       }
     },
     "String.prototype.padStart": {
@@ -745,6 +1073,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/padStart"
+      },
+      "webFeatureId": {
+        "featureId": "string-pad",
+        "compatKey": "javascript.builtins.String.padStart"
       }
     },
     "String.prototype.replaceAll": {
@@ -754,6 +1086,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/replaceAll"
+      },
+      "webFeatureId": {
+        "featureId": "string-replaceall",
+        "compatKey": "javascript.builtins.String.replaceAll"
       }
     },
     "String.prototype.split": {
@@ -763,6 +1099,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/split"
+      },
+      "webFeatureId": {
+        "featureId": "strings",
+        "compatKey": "javascript.builtins.String.split"
       }
     },
     "String.prototype.substr": {
@@ -772,6 +1112,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/substr"
+      },
+      "webFeatureId": {
+        "featureId": "html-wrapper-methods",
+        "compatKey": "javascript.builtins.String.substr"
       }
     },
     "String.prototype.trim": {
@@ -781,6 +1125,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/trim"
+      },
+      "webFeatureId": {
+        "featureId": "strings",
+        "compatKey": "javascript.builtins.String.trim"
       }
     },
     "String.prototype.trimEnd": {
@@ -790,24 +1138,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/trimEnd"
-      }
-    },
-    "String.prototype.trimLeft": {
-      "id": "String.prototype.trimLeft",
-      "type": "native",
-      "description": "String.prototype.trimLeft",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/String/trimLeft"
-      }
-    },
-    "String.prototype.trimRight": {
-      "id": "String.prototype.trimRight",
-      "type": "native",
-      "description": "String.prototype.trimRight",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/String/trimRight"
+      },
+      "webFeatureId": {
+        "featureId": "string-trim-startend",
+        "compatKey": "javascript.builtins.String.trimEnd"
       }
     },
     "String.prototype.trimStart": {
@@ -817,6 +1151,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/trimStart"
+      },
+      "webFeatureId": {
+        "featureId": "string-trim-startend",
+        "compatKey": "javascript.builtins.String.trimStart"
       }
     },
     "String.raw": {
@@ -826,6 +1164,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/raw"
+      },
+      "webFeatureId": {
+        "featureId": "string-raw",
+        "compatKey": "javascript.builtins.String.raw"
       }
     },
     "Symbol.prototype.description": {
@@ -835,6 +1177,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol/description"
+      },
+      "webFeatureId": {
+        "featureId": "symbol",
+        "compatKey": "javascript.builtins.Symbol.description"
       }
     },
     "always::Object.prototype": {
@@ -853,6 +1199,9 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol"
+      },
+      "webFeatureId": {
+        "featureId": "symbol"
       }
     },
     "always::Symbol.toStringTag": {
@@ -862,6 +1211,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag"
+      },
+      "webFeatureId": {
+        "featureId": "symbol",
+        "compatKey": "javascript.builtins.Symbol.toStringTag"
       }
     },
     "always::extends": {
@@ -871,6 +1224,9 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Classes/extends"
+      },
+      "webFeatureId": {
+        "featureId": "class-syntax"
       }
     },
     "always::RegExp.prototype.flags": {
@@ -880,6 +1236,9 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/RegExp/flags"
+      },
+      "webFeatureId": {
+        "featureId": "regexp"
       }
     },
     "always::Error.prototype.cause": {
@@ -889,6 +1248,9 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Error/cause"
+      },
+      "webFeatureId": {
+        "featureId": "error-cause"
       }
     },
     "always::Error": {
@@ -916,6 +1278,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Function/name"
+      },
+      "webFeatureId": {
+        "featureId": "functions",
+        "compatKey": "javascript.builtins.Function.name"
       }
     },
     "Object.prototype.hasOwnProperty": {
@@ -925,6 +1291,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty"
+      },
+      "webFeatureId": {
+        "featureId": "object-object",
+        "compatKey": "javascript.builtins.Object.hasOwnProperty"
       }
     }
   },
@@ -1773,14 +2143,14 @@
       "type": "module",
       "moduleName": "string.prototype.trimleft",
       "replacements": [
-        "String.prototype.trimLeft"
+        "String.prototype.trimStart"
       ]
     },
     "string.prototype.trimright": {
       "type": "module",
       "moduleName": "string.prototype.trimright",
       "replacements": [
-        "String.prototype.trimRight"
+        "String.prototype.trimEnd"
       ]
     },
     "string.prototype.trimstart": {

@@ -172,6 +172,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/isFinite"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Number.isFinite"
       }
     },
     "String.prototype.repeat": {
@@ -181,12 +185,10 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/repeat"
+      },
+      "webFeatureId": {
+        "featureId": "string-repeat"
       }
-    },
-    "String.prototype.repeat": {
-      "id": "String.prototype.repeat",
-      "type": "simple",
-      "description": "Use str.repeat(n)"
     }
   },
   "mappings": {
