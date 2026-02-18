@@ -165,10 +165,6 @@ function updateReplacementEngines(
 
   const updatedEngines = [...nonRuntimeEngines, ...runtimeEngines];
 
-  console.log(
-    `  Updated engines for ${moduleName}${exportName ? `.${exportName}` : ''}: ${runtimeEngines.map((e) => `${e.engine}@${e.minVersion}`).join(', ')}`
-  );
-
   return {
     ...replacement,
     engines: updatedEngines
