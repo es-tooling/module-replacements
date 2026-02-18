@@ -176,7 +176,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Number.isFinite"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "19"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "25"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "16"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "16"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "String.prototype.repeat": {
       "id": "String.prototype.repeat",
@@ -188,7 +218,37 @@
       },
       "webFeatureId": {
         "featureId": "string-repeat"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "41"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "36"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "24"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "24"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     }
   },
   "mappings": {

@@ -11,7 +11,37 @@
       "webFeatureId": {
         "featureId": "typed-arrays",
         "compatKey": "javascript.builtins.TypedArray.buffer"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "7"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "4"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "4.2"
+        }
+      ]
     },
     "%TypedArray%.prototype.byteLength": {
       "id": "%TypedArray%.prototype.byteLength",
@@ -24,7 +54,37 @@
       "webFeatureId": {
         "featureId": "typed-arrays",
         "compatKey": "javascript.builtins.TypedArray.byteLength"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "7"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "4"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "4.2"
+        }
+      ]
     },
     "%TypedArray%.prototype.byteOffset": {
       "id": "%TypedArray%.prototype.byteOffset",
@@ -37,7 +97,37 @@
       "webFeatureId": {
         "featureId": "typed-arrays",
         "compatKey": "javascript.builtins.TypedArray.byteOffset"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "7"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "4"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "4.2"
+        }
+      ]
     },
     "%TypedArray%.prototype.length": {
       "id": "%TypedArray%.prototype.length",
@@ -50,7 +140,37 @@
       "webFeatureId": {
         "featureId": "typed-arrays",
         "compatKey": "javascript.builtins.TypedArray.length"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "7"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "4"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "4.2"
+        }
+      ]
     },
     "%TypedArray%.prototype.slice": {
       "id": "%TypedArray%.prototype.slice",
@@ -63,7 +183,37 @@
       "webFeatureId": {
         "featureId": "typed-arrays",
         "compatKey": "javascript.builtins.TypedArray.slice"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "45"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "45"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "38"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "10"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "10"
+        }
+      ]
     },
     "AggregateError": {
       "id": "AggregateError",
@@ -76,7 +226,37 @@
       "webFeatureId": {
         "featureId": "promise-any",
         "compatKey": "javascript.builtins.AggregateError"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "85"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "85"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "85"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "79"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "14"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "14"
+        }
+      ]
     },
     "Array.from": {
       "id": "Array.from",
@@ -89,7 +269,37 @@
       "webFeatureId": {
         "featureId": "array-from",
         "compatKey": "javascript.builtins.Array.from"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "45"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "45"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "32"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "32"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "Array.of": {
       "id": "Array.of",
@@ -102,7 +312,37 @@
       "webFeatureId": {
         "featureId": "array-of",
         "compatKey": "javascript.builtins.Array.of"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "45"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "39"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "25"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "25"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "Array.prototype.at": {
       "id": "Array.prototype.at",
@@ -115,7 +355,37 @@
       "webFeatureId": {
         "featureId": "array-at",
         "compatKey": "javascript.builtins.Array.at"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "92"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "92"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "92"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "90"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "90"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "15.4"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "15.4"
+        }
+      ]
     },
     "Array.prototype.concat": {
       "id": "Array.prototype.concat",
@@ -128,7 +398,37 @@
       "webFeatureId": {
         "featureId": "array",
         "compatKey": "javascript.builtins.Array.concat"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Array.prototype.copyWithin": {
       "id": "Array.prototype.copyWithin",
@@ -141,7 +441,37 @@
       "webFeatureId": {
         "featureId": "array-copywithin",
         "compatKey": "javascript.builtins.Array.copyWithin"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "45"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "45"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "32"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "32"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "Array.prototype.entries": {
       "id": "Array.prototype.entries",
@@ -154,7 +484,37 @@
       "webFeatureId": {
         "featureId": "array-iterators",
         "compatKey": "javascript.builtins.Array.entries"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "38"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "28"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "28"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "8"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "8"
+        }
+      ]
     },
     "Array.prototype.every": {
       "id": "Array.prototype.every",
@@ -167,7 +527,37 @@
       "webFeatureId": {
         "featureId": "array-iteration-methods",
         "compatKey": "javascript.builtins.Array.every"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1.5"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "3"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Array.prototype.filter": {
       "id": "Array.prototype.filter",
@@ -180,7 +570,37 @@
       "webFeatureId": {
         "featureId": "array-iteration-methods",
         "compatKey": "javascript.builtins.Array.filter"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1.5"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "3"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Array.prototype.find": {
       "id": "Array.prototype.find",
@@ -193,7 +613,37 @@
       "webFeatureId": {
         "featureId": "array-find",
         "compatKey": "javascript.builtins.Array.find"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "45"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "45"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "25"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "8"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "8"
+        }
+      ]
     },
     "Array.prototype.findIndex": {
       "id": "Array.prototype.findIndex",
@@ -206,7 +656,37 @@
       "webFeatureId": {
         "featureId": "array-find",
         "compatKey": "javascript.builtins.Array.findIndex"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "45"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "45"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "25"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "8"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "8"
+        }
+      ]
     },
     "Array.prototype.flat": {
       "id": "Array.prototype.flat",
@@ -219,7 +699,37 @@
       "webFeatureId": {
         "featureId": "array-flat",
         "compatKey": "javascript.builtins.Array.flat"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "69"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "69"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "62"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "62"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "12"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "12"
+        }
+      ]
     },
     "Array.prototype.flatMap": {
       "id": "Array.prototype.flatMap",
@@ -232,7 +742,37 @@
       "webFeatureId": {
         "featureId": "array-flat",
         "compatKey": "javascript.builtins.Array.flatMap"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "69"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "69"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "62"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "62"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "12"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "12"
+        }
+      ]
     },
     "Array.prototype.forEach": {
       "id": "Array.prototype.forEach",
@@ -245,7 +785,37 @@
       "webFeatureId": {
         "featureId": "array-iteration-methods",
         "compatKey": "javascript.builtins.Array.forEach"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1.5"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "3"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Array.prototype.includes": {
       "id": "Array.prototype.includes",
@@ -258,7 +828,37 @@
       "webFeatureId": {
         "featureId": "array-includes",
         "compatKey": "javascript.builtins.Array.includes"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "47"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "47"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "14"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "43"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "43"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "Array.prototype.indexOf": {
       "id": "Array.prototype.indexOf",
@@ -271,7 +871,37 @@
       "webFeatureId": {
         "featureId": "array-iteration-methods",
         "compatKey": "javascript.builtins.Array.indexOf"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1.5"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "3"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Array.prototype.join": {
       "id": "Array.prototype.join",
@@ -284,7 +914,37 @@
       "webFeatureId": {
         "featureId": "array",
         "compatKey": "javascript.builtins.Array.join"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Array.prototype.keys": {
       "id": "Array.prototype.keys",
@@ -297,7 +957,37 @@
       "webFeatureId": {
         "featureId": "array-iterators",
         "compatKey": "javascript.builtins.Array.keys"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "38"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "28"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "28"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "8"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "8"
+        }
+      ]
     },
     "Array.prototype.lastIndexOf": {
       "id": "Array.prototype.lastIndexOf",
@@ -310,7 +1000,37 @@
       "webFeatureId": {
         "featureId": "array-iteration-methods",
         "compatKey": "javascript.builtins.Array.lastIndexOf"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1.5"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "3"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Array.prototype.map": {
       "id": "Array.prototype.map",
@@ -323,7 +1043,37 @@
       "webFeatureId": {
         "featureId": "array-iteration-methods",
         "compatKey": "javascript.builtins.Array.map"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1.5"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "3"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Array.prototype.push": {
       "id": "Array.prototype.push",
@@ -336,7 +1086,37 @@
       "webFeatureId": {
         "featureId": "array",
         "compatKey": "javascript.builtins.Array.push"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Array.prototype.reduce": {
       "id": "Array.prototype.reduce",
@@ -349,7 +1129,37 @@
       "webFeatureId": {
         "featureId": "array-iteration-methods",
         "compatKey": "javascript.builtins.Array.reduce"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "3"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "3"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "3.2"
+        }
+      ]
     },
     "Array.prototype.reduceRight": {
       "id": "Array.prototype.reduceRight",
@@ -362,7 +1172,37 @@
       "webFeatureId": {
         "featureId": "array-iteration-methods",
         "compatKey": "javascript.builtins.Array.reduceRight"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "3"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "3"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "3.2"
+        }
+      ]
     },
     "Array.prototype.slice": {
       "id": "Array.prototype.slice",
@@ -375,7 +1215,37 @@
       "webFeatureId": {
         "featureId": "array",
         "compatKey": "javascript.builtins.Array.slice"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Array.prototype.some": {
       "id": "Array.prototype.some",
@@ -388,7 +1258,37 @@
       "webFeatureId": {
         "featureId": "array-iteration-methods",
         "compatKey": "javascript.builtins.Array.some"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1.5"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "3"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Array.prototype.splice": {
       "id": "Array.prototype.splice",
@@ -401,7 +1301,37 @@
       "webFeatureId": {
         "featureId": "array-splice",
         "compatKey": "javascript.builtins.Array.splice"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Array.prototype.unshift": {
       "id": "Array.prototype.unshift",
@@ -414,7 +1344,37 @@
       "webFeatureId": {
         "featureId": "array",
         "compatKey": "javascript.builtins.Array.unshift"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Array.prototype.values": {
       "id": "Array.prototype.values",
@@ -427,7 +1387,37 @@
       "webFeatureId": {
         "featureId": "array-iterators",
         "compatKey": "javascript.builtins.Array.values"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "66"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "66"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "14"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "60"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "60"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "Array.prototype[Symbol.unscopables]": {
       "id": "Array.prototype[Symbol.unscopables]",
@@ -440,7 +1430,37 @@
       "webFeatureId": {
         "featureId": "with",
         "compatKey": "javascript.builtins.Array.@@unscopables"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "38"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "48"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "48"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "10"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "10"
+        }
+      ]
     },
     "ArrayBuffer.prototype.byteLength": {
       "id": "ArrayBuffer.prototype.byteLength",
@@ -453,7 +1473,37 @@
       "webFeatureId": {
         "featureId": "typed-arrays",
         "compatKey": "javascript.builtins.ArrayBuffer.byteLength"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "7"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "4"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "4.2"
+        }
+      ]
     },
     "ArrayBuffer.prototype.slice": {
       "id": "ArrayBuffer.prototype.slice",
@@ -466,7 +1516,37 @@
       "webFeatureId": {
         "featureId": "typed-arrays",
         "compatKey": "javascript.builtins.ArrayBuffer.slice"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "17"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "14"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "6"
+        }
+      ]
     },
     "DataView.prototype.buffer": {
       "id": "DataView.prototype.buffer",
@@ -479,7 +1559,37 @@
       "webFeatureId": {
         "featureId": "typed-arrays",
         "compatKey": "javascript.builtins.DataView.buffer"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "9"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "15"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "15"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "5"
+        }
+      ]
     },
     "DataView.prototype.byteLength": {
       "id": "DataView.prototype.byteLength",
@@ -492,7 +1602,37 @@
       "webFeatureId": {
         "featureId": "typed-arrays",
         "compatKey": "javascript.builtins.DataView.byteLength"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "9"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "15"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "15"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "5"
+        }
+      ]
     },
     "DataView.prototype.byteOffset": {
       "id": "DataView.prototype.byteOffset",
@@ -505,7 +1645,37 @@
       "webFeatureId": {
         "featureId": "typed-arrays",
         "compatKey": "javascript.builtins.DataView.byteOffset"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "9"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "15"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "15"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "5"
+        }
+      ]
     },
     "Date": {
       "id": "Date",
@@ -518,7 +1688,37 @@
       "webFeatureId": {
         "featureId": "date",
         "compatKey": "javascript.builtins.Date"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "for...of": {
       "id": "for...of",
@@ -531,7 +1731,37 @@
       "webFeatureId": {
         "featureId": "iterators",
         "compatKey": "javascript.statements.for_of"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "38"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "13"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "14"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "7"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "7"
+        }
+      ]
     },
     "Function.prototype.bind": {
       "id": "Function.prototype.bind",
@@ -544,7 +1774,37 @@
       "webFeatureId": {
         "featureId": "functions",
         "compatKey": "javascript.builtins.Function.bind"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "7"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "4"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "6"
+        }
+      ]
     },
     "globalThis": {
       "id": "globalThis",
@@ -557,7 +1817,37 @@
       "webFeatureId": {
         "featureId": "globalthis",
         "compatKey": "javascript.builtins.globalThis"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "71"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "71"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "65"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "65"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "12.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "12.2"
+        }
+      ]
     },
     "Math.acosh": {
       "id": "Math.acosh",
@@ -570,7 +1860,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Math.acosh"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "38"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "25"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "25"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "8"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "8"
+        }
+      ]
     },
     "Math.atanh": {
       "id": "Math.atanh",
@@ -583,7 +1903,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Math.atanh"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "38"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "25"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "25"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "8"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "8"
+        }
+      ]
     },
     "Math.cbrt": {
       "id": "Math.cbrt",
@@ -596,7 +1946,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Math.cbrt"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "38"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "25"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "25"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "8"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "8"
+        }
+      ]
     },
     "Math.clz32": {
       "id": "Math.clz32",
@@ -609,7 +1989,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Math.clz32"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "38"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "31"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "31"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "7"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "7"
+        }
+      ]
     },
     "Math.f16round": {
       "id": "Math.f16round",
@@ -622,7 +2032,37 @@
       "webFeatureId": {
         "featureId": "float16array",
         "compatKey": "javascript.builtins.Math.f16round"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "135"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "135"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "135"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "129"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "129"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "18.2"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "18.2"
+        }
+      ]
     },
     "Math.fround": {
       "id": "Math.fround",
@@ -635,7 +2075,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Math.fround"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "38"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "26"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "26"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "8"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "8"
+        }
+      ]
     },
     "Math.imul": {
       "id": "Math.imul",
@@ -648,7 +2118,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Math.imul"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "28"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "28"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "20"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "20"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "7"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "7"
+        }
+      ]
     },
     "Math.log10": {
       "id": "Math.log10",
@@ -661,7 +2161,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Math.log10"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "38"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "25"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "25"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "8"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "8"
+        }
+      ]
     },
     "Math.log1p": {
       "id": "Math.log1p",
@@ -674,7 +2204,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Math.log1p"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "38"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "25"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "25"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "8"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "8"
+        }
+      ]
     },
     "Math.sign": {
       "id": "Math.sign",
@@ -687,7 +2247,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Math.sign"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "38"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "25"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "25"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "Number.isFinite": {
       "id": "Number.isFinite",
@@ -700,7 +2290,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Number.isFinite"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "19"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "25"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "16"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "16"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "Number.isInteger": {
       "id": "Number.isInteger",
@@ -713,7 +2333,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Number.isInteger"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "34"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "34"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "16"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "16"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "Number.isNaN": {
       "id": "Number.isNaN",
@@ -726,7 +2376,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Number.isNaN"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "25"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "25"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "15"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "15"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "Number.isSafeInteger": {
       "id": "Number.isSafeInteger",
@@ -739,7 +2419,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Number.isSafeInteger"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "34"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "34"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "32"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "32"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "Number.parseFloat": {
       "id": "Number.parseFloat",
@@ -752,7 +2462,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Number.parseFloat"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "34"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "34"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "25"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "25"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "Number.parseInt": {
       "id": "Number.parseInt",
@@ -765,7 +2505,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Number.parseInt"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "34"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "34"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "25"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "25"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "Number.prototype.toExponential": {
       "id": "Number.prototype.toExponential",
@@ -778,7 +2548,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Number.toExponential"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "2"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Object.assign": {
       "id": "Object.assign",
@@ -791,7 +2591,37 @@
       "webFeatureId": {
         "featureId": "object-object",
         "compatKey": "javascript.builtins.Object.assign"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "45"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "45"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "34"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "34"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "Object.defineProperties": {
       "id": "Object.defineProperties",
@@ -804,7 +2634,37 @@
       "webFeatureId": {
         "featureId": "object-object",
         "compatKey": "javascript.builtins.Object.defineProperties"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "5"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "4"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "5"
+        }
+      ]
     },
     "Object.defineProperty": {
       "id": "Object.defineProperty",
@@ -817,7 +2677,37 @@
       "webFeatureId": {
         "featureId": "object-object",
         "compatKey": "javascript.builtins.Object.defineProperty"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "5"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "4"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "6"
+        }
+      ]
     },
     "Object.entries": {
       "id": "Object.entries",
@@ -830,7 +2720,37 @@
       "webFeatureId": {
         "featureId": "object-object",
         "compatKey": "javascript.builtins.Object.entries"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "54"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "54"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "14"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "47"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "47"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "10.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "10.3"
+        }
+      ]
     },
     "Object.fromEntries": {
       "id": "Object.fromEntries",
@@ -843,7 +2763,37 @@
       "webFeatureId": {
         "featureId": "object-object",
         "compatKey": "javascript.builtins.Object.fromEntries"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "73"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "73"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "63"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "63"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "12.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "12.2"
+        }
+      ]
     },
     "Object.getOwnPropertyDescriptor": {
       "id": "Object.getOwnPropertyDescriptor",
@@ -856,7 +2806,37 @@
       "webFeatureId": {
         "featureId": "object-object",
         "compatKey": "javascript.builtins.Object.getOwnPropertyDescriptor"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "5"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "4"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "5"
+        }
+      ]
     },
     "Object.getOwnPropertyDescriptors": {
       "id": "Object.getOwnPropertyDescriptors",
@@ -869,7 +2849,37 @@
       "webFeatureId": {
         "featureId": "object-object",
         "compatKey": "javascript.builtins.Object.getOwnPropertyDescriptors"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "54"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "54"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "15"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "50"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "50"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "10"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "10"
+        }
+      ]
     },
     "Object.getPrototypeOf": {
       "id": "Object.getPrototypeOf",
@@ -882,7 +2892,37 @@
       "webFeatureId": {
         "featureId": "object-object",
         "compatKey": "javascript.builtins.Object.getPrototypeOf"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "5"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "3.5"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "5"
+        }
+      ]
     },
     "Object.hasOwn": {
       "id": "Object.hasOwn",
@@ -895,7 +2935,37 @@
       "webFeatureId": {
         "featureId": "object-hasown",
         "compatKey": "javascript.builtins.Object.hasOwn"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "93"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "93"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "93"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "92"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "92"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "15.4"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "15.4"
+        }
+      ]
     },
     "Object.is": {
       "id": "Object.is",
@@ -908,7 +2978,37 @@
       "webFeatureId": {
         "featureId": "object-object",
         "compatKey": "javascript.builtins.Object.is"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "19"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "25"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "22"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "22"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "Object.keys": {
       "id": "Object.keys",
@@ -921,7 +3021,37 @@
       "webFeatureId": {
         "featureId": "object-object",
         "compatKey": "javascript.builtins.Object.keys"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "5"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "4"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "5"
+        }
+      ]
     },
     "Object.values": {
       "id": "Object.values",
@@ -934,7 +3064,37 @@
       "webFeatureId": {
         "featureId": "object-object",
         "compatKey": "javascript.builtins.Object.values"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "54"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "54"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "14"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "47"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "47"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "10.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "10.3"
+        }
+      ]
     },
     "parseInt": {
       "id": "parseInt",
@@ -947,7 +3107,37 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.parseInt"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Promise.allSettled": {
       "id": "Promise.allSettled",
@@ -960,7 +3150,37 @@
       "webFeatureId": {
         "featureId": "promise-allsettled",
         "compatKey": "javascript.builtins.Promise.allSettled"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "76"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "76"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "71"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "79"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "13"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "13"
+        }
+      ]
     },
     "Promise.any": {
       "id": "Promise.any",
@@ -973,7 +3193,37 @@
       "webFeatureId": {
         "featureId": "promise-any",
         "compatKey": "javascript.builtins.Promise.any"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "85"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "85"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "85"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "79"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "14"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "14"
+        }
+      ]
     },
     "Promise.prototype.finally": {
       "id": "Promise.prototype.finally",
@@ -986,7 +3236,37 @@
       "webFeatureId": {
         "featureId": "promise-finally",
         "compatKey": "javascript.builtins.Promise.finally"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "63"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "63"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "18"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "58"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "58"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "11.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "11.3"
+        }
+      ]
     },
     "Reflect.getPrototypeOf": {
       "id": "Reflect.getPrototypeOf",
@@ -999,7 +3279,37 @@
       "webFeatureId": {
         "featureId": "proxy-reflect",
         "compatKey": "javascript.builtins.Reflect.getPrototypeOf"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "49"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "49"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "42"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "42"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "10"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "10"
+        }
+      ]
     },
     "Reflect.ownKeys": {
       "id": "Reflect.ownKeys",
@@ -1012,7 +3322,37 @@
       "webFeatureId": {
         "featureId": "proxy-reflect",
         "compatKey": "javascript.builtins.Reflect.ownKeys"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "49"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "49"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "42"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "42"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "10"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "10"
+        }
+      ]
     },
     "String.prototype.at": {
       "id": "String.prototype.at",
@@ -1025,7 +3365,37 @@
       "webFeatureId": {
         "featureId": "string-at",
         "compatKey": "javascript.builtins.String.at"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "92"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "92"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "92"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "90"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "90"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "15.4"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "15.4"
+        }
+      ]
     },
     "String.prototype.lastIndexOf": {
       "id": "String.prototype.lastIndexOf",
@@ -1038,7 +3408,37 @@
       "webFeatureId": {
         "featureId": "strings",
         "compatKey": "javascript.builtins.String.lastIndexOf"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "String.prototype.matchAll": {
       "id": "String.prototype.matchAll",
@@ -1051,7 +3451,37 @@
       "webFeatureId": {
         "featureId": "string-matchall",
         "compatKey": "javascript.builtins.String.matchAll"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "73"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "73"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "67"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "67"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "13"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "13"
+        }
+      ]
     },
     "String.prototype.padEnd": {
       "id": "String.prototype.padEnd",
@@ -1064,7 +3494,37 @@
       "webFeatureId": {
         "featureId": "string-pad",
         "compatKey": "javascript.builtins.String.padEnd"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "57"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "57"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "15"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "48"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "48"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "10"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "10"
+        }
+      ]
     },
     "String.prototype.padStart": {
       "id": "String.prototype.padStart",
@@ -1077,7 +3537,37 @@
       "webFeatureId": {
         "featureId": "string-pad",
         "compatKey": "javascript.builtins.String.padStart"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "57"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "57"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "15"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "48"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "48"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "10"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "10"
+        }
+      ]
     },
     "String.prototype.replaceAll": {
       "id": "String.prototype.replaceAll",
@@ -1090,7 +3580,37 @@
       "webFeatureId": {
         "featureId": "string-replaceall",
         "compatKey": "javascript.builtins.String.replaceAll"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "85"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "85"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "85"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "77"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "79"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "13.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "13.4"
+        }
+      ]
     },
     "String.prototype.split": {
       "id": "String.prototype.split",
@@ -1103,7 +3623,37 @@
       "webFeatureId": {
         "featureId": "strings",
         "compatKey": "javascript.builtins.String.split"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "String.prototype.substr": {
       "id": "String.prototype.substr",
@@ -1116,7 +3666,37 @@
       "webFeatureId": {
         "featureId": "html-wrapper-methods",
         "compatKey": "javascript.builtins.String.substr"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "String.prototype.trim": {
       "id": "String.prototype.trim",
@@ -1129,7 +3709,37 @@
       "webFeatureId": {
         "featureId": "strings",
         "compatKey": "javascript.builtins.String.trim"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "4"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "3.5"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "5"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "5"
+        }
+      ]
     },
     "String.prototype.trimEnd": {
       "id": "String.prototype.trimEnd",
@@ -1142,7 +3752,37 @@
       "webFeatureId": {
         "featureId": "string-trim-startend",
         "compatKey": "javascript.builtins.String.trimEnd"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "66"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "66"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "61"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "61"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "12"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "12"
+        }
+      ]
     },
     "String.prototype.trimStart": {
       "id": "String.prototype.trimStart",
@@ -1155,7 +3795,37 @@
       "webFeatureId": {
         "featureId": "string-trim-startend",
         "compatKey": "javascript.builtins.String.trimStart"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "66"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "66"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "61"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "61"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "12"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "12"
+        }
+      ]
     },
     "String.raw": {
       "id": "String.raw",
@@ -1168,7 +3838,37 @@
       "webFeatureId": {
         "featureId": "string-raw",
         "compatKey": "javascript.builtins.String.raw"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "41"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "41"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "34"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "34"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "Symbol.prototype.description": {
       "id": "Symbol.prototype.description",
@@ -1181,7 +3881,37 @@
       "webFeatureId": {
         "featureId": "symbol",
         "compatKey": "javascript.builtins.Symbol.description"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "70"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "70"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "63"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "63"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "12.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "12.2"
+        }
+      ]
     },
     "always::Object.prototype": {
       "id": "always::Object.prototype",
@@ -1202,7 +3932,37 @@
       },
       "webFeatureId": {
         "featureId": "symbol"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "38"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "36"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "36"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "always::Symbol.toStringTag": {
       "id": "always::Symbol.toStringTag",
@@ -1215,7 +3975,37 @@
       "webFeatureId": {
         "featureId": "symbol",
         "compatKey": "javascript.builtins.Symbol.toStringTag"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "49"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "49"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "15"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "51"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "51"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "10"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "10"
+        }
+      ]
     },
     "always::extends": {
       "id": "always::extends",
@@ -1227,7 +4017,37 @@
       },
       "webFeatureId": {
         "featureId": "class-syntax"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "42"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "42"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "13"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "45"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "45"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "9"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "9"
+        }
+      ]
     },
     "always::RegExp.prototype.flags": {
       "id": "always::RegExp.prototype.flags",
@@ -1239,7 +4059,37 @@
       },
       "webFeatureId": {
         "featureId": "regexp"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "always::Error.prototype.cause": {
       "id": "always::Error.prototype.cause",
@@ -1251,7 +4101,37 @@
       },
       "webFeatureId": {
         "featureId": "error-cause"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "93"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "93"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "93"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "91"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "91"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "15"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "15"
+        }
+      ]
     },
     "always::Error": {
       "id": "always::Error",
@@ -1282,7 +4162,37 @@
       "webFeatureId": {
         "featureId": "functions",
         "compatKey": "javascript.builtins.Function.name"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "15"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "14"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "6"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "6"
+        }
+      ]
     },
     "Object.prototype.hasOwnProperty": {
       "id": "Object.prototype.hasOwnProperty",
@@ -1295,7 +4205,37 @@
       "webFeatureId": {
         "featureId": "object-object",
         "compatKey": "javascript.builtins.Object.hasOwnProperty"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "3"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     }
   },
   "mappings": {

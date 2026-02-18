@@ -5272,7 +5272,37 @@
       "url": {
         "type": "mdn",
         "id": "Web/API/Fetch_API"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "42"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "42"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "14"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "39"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "39"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "10.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "10.3"
+        }
+      ]
     },
     "Bun.CryptoHasher": {
       "id": "Bun.CryptoHasher",
@@ -5316,7 +5346,37 @@
       "url": {
         "type": "mdn",
         "id": "Web/API/Web_Crypto_API"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "37"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "37"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "34"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "34"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "11"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "11"
+        }
+      ]
     },
     "--env-file": {
       "id": "--env-file",
@@ -5397,7 +5457,37 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Promise"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "32"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "32"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "29"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "29"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "8"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "8"
+        }
+      ]
     },
     "Intl.Segmenter": {
       "id": "Intl.Segmenter",
@@ -5409,7 +5499,37 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Intl/Segmenter"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "87"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "87"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "87"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "125"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "125"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "14.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "14.5"
+        }
+      ]
     },
     "isBuiltin": {
       "id": "isBuiltin",
@@ -5529,7 +5649,37 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Date"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        }
+      ]
     },
     "Buffer.compare": {
       "id": "Buffer.compare",
@@ -5633,7 +5783,37 @@
       "url": {
         "type": "mdn",
         "id": "Web/API/URLSearchParams"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "49"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "49"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "17"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "29"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "29"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "10.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "10.3"
+        }
+      ]
     },
     "node:stream": {
       "id": "node:stream",
@@ -5671,7 +5851,37 @@
       "url": {
         "type": "mdn",
         "id": "Web/API/Streams_API"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "67"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "67"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "102"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "102"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "14.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "14.5"
+        }
+      ]
     },
     "fs.rm": {
       "id": "fs.rm",
@@ -5853,7 +6063,37 @@
       "url": {
         "type": "mdn",
         "id": "Web/API/URL"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "32"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "32"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "19"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "19"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "7"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "7"
+        }
+      ]
     },
     "TextEncoder": {
       "id": "TextEncoder",
@@ -5865,7 +6105,37 @@
       "url": {
         "type": "mdn",
         "id": "Web/API/TextEncoder"
-      }
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "38"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "19"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "19"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "10.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "10.3"
+        }
+      ]
     },
     "Buffer.prototype.toString": {
       "id": "Buffer.prototype.toString",
