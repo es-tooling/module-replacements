@@ -10,6 +10,7 @@ description: Modern alternative to eslint-plugin-import, which helps with lintin
 
 ### Flat config
 
+<!-- prettier-ignore -->
 ```ts
 import importPlugin from 'eslint-plugin-import' // [!code --]
 import { createNodeResolver, importX } from 'eslint-plugin-import-x' // [!code ++]
@@ -21,13 +22,16 @@ export default [
   {
     settings: {
       'import/resolver': { typescript: true }, // [!code --]
-      'import-x/resolver-next': [createTypeScriptImportResolver(), createNodeResolver()], // [!code ++]
+      'import-x/resolver-next': [ // [!code ++]
+        createTypeScriptImportResolver(), // [!code ++]
+        createNodeResolver() // [!code ++]
+      ] // [!code ++]
     },
     rules: {
       'import/no-unresolved': 'error', // [!code --]
       'import-x/no-unresolved': 'error', // [!code ++]
       'import/no-nodejs-modules': 'warn', // [!code --]
-      'import-x/no-nodejs-modules': 'warn', // [!code ++]
+      'import-x/no-nodejs-modules': 'warn' // [!code ++]
     }
   }
 ]

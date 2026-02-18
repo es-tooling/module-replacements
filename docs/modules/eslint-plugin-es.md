@@ -19,20 +19,20 @@ export default [
   {
     files: ['**/*.js'],
     languageOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: 2020
     },
     plugins: {
-      'es': pluginES, // [!code --]
-      'es-x': pluginESx, // [!code ++]
+      es: pluginES, // [!code --]
+      'es-x': pluginESx // [!code ++]
     },
     rules: {
       'es/no-regexp-lookbehind-assertions': 'error', // [!code --]
       'es-x/no-regexp-lookbehind-assertions': 'error' // [!code ++]
-    },
+    }
   },
 
   ...compat.extends('plugin:es/restrict-to-es2018'), // [!code --]
-  pluginESx.configs['flat/restrict-to-es2018'], // [!code ++]
+  pluginESx.configs['flat/restrict-to-es2018'] // [!code ++]
 ]
 ```
 
@@ -43,7 +43,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:es/restrict-to-es2018', // [!code --]
-    'plugin:es-x/restrict-to-es2018', // [!code ++]
+    'plugin:es-x/restrict-to-es2018' // [!code ++]
   ],
   plugins: [
     'es', // [!code --]
@@ -51,7 +51,7 @@ module.exports = {
   ],
   rules: {
     'es/no-regexp-lookbehind-assertions': 'error', // [!code --]
-    'es-x/no-regexp-lookbehind-assertions': 'error', // [!code ++]
+    'es-x/no-regexp-lookbehind-assertions': 'error' // [!code ++]
   }
 }
 ```

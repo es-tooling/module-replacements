@@ -61,6 +61,7 @@ find.file('package.json', { cwd })
 This option is replaced by `last`:
 
 <!-- eslint-skip -->
+
 ```ts
 import { findUp } from 'find-up' // [!code --]
 import * as find from 'empathic/find' // [!code ++]

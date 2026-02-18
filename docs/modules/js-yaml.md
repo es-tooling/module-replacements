@@ -37,8 +37,8 @@ import yaml from 'js-yaml' // [!code --]
 import { parseAllDocuments } from 'yaml' // [!code ++]
 
 const out: any[] = [] // [!code --]
-yaml.loadAll(src, d => out.push(d)) // [!code --]
-const out = parseAllDocuments(src).map(d => d.toJSON()) // [!code ++]
+yaml.loadAll(src, (d) => out.push(d)) // [!code --]
+const out = parseAllDocuments(src).map((d) => d.toJSON()) // [!code ++]
 ```
 
 ## Bun `YAML` API

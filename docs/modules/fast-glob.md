@@ -11,6 +11,7 @@ description: Modern alternatives to the fast-glob package for fast file system p
 Example:
 
 <!-- eslint-skip -->
+
 ```ts
 import fg from 'fast-glob' // [!code --]
 import { glob } from 'tinyglobby' // [!code ++]

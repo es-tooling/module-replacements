@@ -80,6 +80,11 @@
       "type": "simple",
       "description": "Use v && typeof v === \"object\" && (Object.getPrototypeOf(v) === null || Object.getPrototypeOf(v) === Object.prototype)"
     },
+    "snippet::is-stream": {
+      "id": "snippet::is-stream",
+      "type": "simple",
+      "description": "Use `isReadable(stream) || isWritable(stream)` from `node:stream`"
+    },
     "snippet::is-odd": {
       "id": "snippet::is-odd",
       "type": "simple",
@@ -498,6 +503,20 @@
       "moduleName": "is-plain-object",
       "replacements": [
         "snippet::is-object"
+      ]
+    },
+    "is-plain-obj": {
+      "type": "module",
+      "moduleName": "is-plain-obj",
+      "replacements": [
+        "snippet::is-object"
+      ]
+    },
+    "is-stream": {
+      "type": "module",
+      "moduleName": "is-stream",
+      "replacements": [
+        "snippet::is-stream"
       ]
     },
     "is-primitive": {

@@ -98,6 +98,12 @@
     },
     {
       "type": "documented",
+      "moduleName": "detect-package-manager",
+      "docPath": "detect-package-manager",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
       "moduleName": "dot-prop",
       "docPath": "dot-prop",
       "category": "preferred"
@@ -165,7 +171,7 @@
     {
       "type": "documented",
       "moduleName": "ezspawn",
-      "docPath": "process-exec",
+      "docPath": "ez-spawn",
       "category": "preferred"
     },
     {
@@ -237,13 +243,19 @@
     {
       "type": "documented",
       "moduleName": "grapheme-splitter",
-      "docPath": "grapheme",
+      "docPath": "graphemer",
       "category": "preferred"
     },
     {
       "type": "documented",
       "moduleName": "graphemer",
       "docPath": "graphemer",
+      "category": "preferred"
+    },
+    {
+      "type": "documented",
+      "moduleName": "gzip-size",
+      "docPath": "gzip-size",
       "category": "preferred"
     },
     {

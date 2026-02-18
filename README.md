@@ -5,6 +5,7 @@ provides a collection of module replacements (i.e. possible alternative
 packages).
 
 We provide two things:
+
 - Manifests (mappings of modules to their possible replacements)
 - Documentation for more complex replacements
 
@@ -17,10 +18,9 @@ You can find a list of replacements in the
 
 Some tools consume the lists of modules in this repository:
 
-| Name | Description |
-| -- | -- |
+| Name                                                                       | Description                                   |
+| -------------------------------------------------------------------------- | --------------------------------------------- |
 | [eslint-plugin-depend](https://github.com/es-tooling/eslint-plugin-depend) | ESLint plugin to detect possible replacements |
-
 
 ## Manifests
 
@@ -82,3 +82,11 @@ open an issue where this can be discussed.
 
 Keep in mind, very newly available native features are unlikely to join the
 list since they are not widely available yet.
+
+## Sponsors
+
+<p align="center">
+  <a href="https://github.com/sponsors/e18e">
+    <img src="https://e18e.dev/sponsors.svg" alt="e18e community sponsors" />
+  </a>
+</p>

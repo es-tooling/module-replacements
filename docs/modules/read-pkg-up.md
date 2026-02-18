@@ -39,7 +39,9 @@ import * as pkg from 'empathic' // [!code ++]
 
 const packageJson = await readPackageUp() // [!code --]
 const packageJsonPath = pkg.up() // [!code ++]
-const packageJson = packageJsonPath ? JSON.parse(await readFile(packageJsonPath, 'utf8')) : undefined // [!code ++]
+const packageJson = packageJsonPath // [!code ++]
+  ? JSON.parse(await readFile(packageJsonPath, 'utf8')) // [!code ++]
+  : undefined // [!code ++]
 ```
 
 > [!NOTE]

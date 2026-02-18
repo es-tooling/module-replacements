@@ -8,6 +8,7 @@ description: Modern alternatives to the sort-object package for sorting object k
 
 For simple cases:
 
+<!-- prettier-ignore -->
 ```ts
 import sortObj from 'sort-object' // [!code --]
 
@@ -21,21 +22,27 @@ const sorted = Object.fromEntries( // [!code ++]
 
 Replicating `sortBy` (function returns an ordered key list):
 
+<!-- prettier-ignore -->
 ```ts
 import sortObj from 'sort-object' // [!code --]
 
-const sorted = sortObj(object, { sortBy: (obj) => { // [!code --]
-  const arr = [] // [!code --]
-  Object.keys(obj).forEach((k) => { // [!code --]
-    if (obj[k].startsWith('a')) // [!code --]
-      arr.push(k) // [!code --]
-  }) // [!code --]
-  return arr.reverse() // [!code --]
-} }) // [!code --]
+const sorted = sortObj(object, { // [!code --]
+  sortBy: (obj) => { // [!code --]
+    const arr = [] // [!code --]
+    Object.keys(obj).forEach((k) => { // [!code --]
+      if (obj[k].startsWith('a')) // [!code --]
+        arr.push(k) // [!code --]
+    }) // [!code --]
+    return arr.reverse() // [!code --]
+  } // [!code --]
+}) // [!code --]
 
-const sortBy = obj => Object.keys(obj).filter(k => obj[k].startsWith('a')).reverse() // [!code ++]
+const sortBy = (obj) => // [!code ++]
+  Object.keys(obj) // [!code ++]
+    .filter((k) => obj[k].startsWith('a')) // [!code ++]
+    .reverse() // [!code ++]
 const sorted = Object.fromEntries( // [!code ++]
-  sortBy(object).map(k => [k, object[k]]) // [!code ++]
+  sortBy(object).map((k) => [k, object[k]]) // [!code ++]
 ) // [!code ++]
 ```
 

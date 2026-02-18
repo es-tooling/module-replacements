@@ -15,7 +15,7 @@ const splitter = new GraphemeSplitter() // [!code --]
 const segmenter = new Intl.Segmenter() // [!code ++]
 
 const graphemes = splitter.splitGraphemes(text) // [!code --]
-const graphemes = [...segmenter.segment(text)].map(s => s.segment) // [!code ++]
+const graphemes = [...segmenter.segment(text)].map((s) => s.segment) // [!code ++]
 
 const count = splitter.countGraphemes(text) // [!code --]
 const count = [...segmenter.segment(text)].length // [!code ++]
@@ -44,5 +44,5 @@ You can also use it as an `Intl.Segmenter` polyfill:
 import 'unicode-segmenter/intl-polyfill'
 
 const segmenter = new Intl.Segmenter()
-const graphemes = [...segmenter.segment(text)].map(s => s.segment)
+const graphemes = [...segmenter.segment(text)].map((s) => s.segment)
 ```

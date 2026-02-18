@@ -1,16 +1,14 @@
 ---
-description: Modern alternatives to the dotenv package for loading and managing .env files in Node.js
+description: Native Node.js alternatives to the dotenv package for loading and managing .env files in Node.js
 ---
 
 # Replacements for `dotenv`
 
-Although dotenv is reliable, it may not be necessary or may lack certain features.
-
 ## `--env-file` / `--env-file-if-exists` (native, Node.js)
 
-Built into Node.js (v20.6.0+; v22.9.0 for `--env-file-if-exists`). Zero dependencies—perfect for most apps that just need to load a `.env` at startup.
+[`--env-file`](https://nodejs.org/dist/latest-v20.x/docs/api/cli.html#--env-fileconfig) (Node.js v20.6.0+) and [`--env-file-if-exists`](https://nodejs.org/docs/latest-v22.x/api/cli.html#--env-file-if-existsfile) (Node.js v22.9.0+) can be passed as command-line flags to load environment variables from a specified file.
 
-[`--env-file`](https://nodejs.org/dist/latest-v20.x/docs/api/cli.html#--env-fileconfig) throws if the file is missing. If the file may be absent, use [`--env-file-if-exists`](https://nodejs.org/docs/latest-v22.x/api/cli.html#--env-file-if-existsconfig).
+`--env-file` throws if the file is missing. If the file may be absent, use `--env-file-if-exists`.
 
 ```bash
 node --env-file=.env index.js
@@ -48,3 +46,19 @@ In package.json scripts:
   }
 }
 ```
+
+## Node.js `parseEnv`
+
+[`parseEnv`](https://nodejs.org/docs/latest-v22.x/api/util.html#utilparseenvcontent) (Node.js v20.12.0+) can be used to parse a `.env` string into an object without loading it into `process.env`.
+
+```ts
+import { parse } from 'dotenv' // [!code --]
+import { parseEnv } from 'node:util' // [!code ++]
+
+const envContent = '...'
+
+const env = parse(envContent) // [!code --]
+const env = parseEnv(envContent) // [!code ++]
+```
+
+If the `.env` is a Node.js Buffer, convert it to a string first with `.toString()`.

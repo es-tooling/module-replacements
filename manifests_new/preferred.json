@@ -1,5 +1,16 @@
 {
   "mappings": {
+    "gzip-size": {
+      "type": "module",
+      "moduleName": "gzip-size",
+      "replacements": [
+        "zlib.gzipSync",
+      ],
+      "url": {
+        "type": "e18e",
+        "id": "gzip-size"
+      }
+    },
     "@jsdevtools/ez-spawn": {
       "type": "module",
       "moduleName": "@jsdevtools/ez-spawn",
@@ -4791,9 +4802,29 @@
         "type": "e18e",
         "id": "xmldom"
       }
+    },
+    "detect-package-manager": {
+      "type": "module",
+      "moduleName": "detect-package-manager",
+      "replacements": [
+        "package-manager-detector"
+      ],
+      "url": {
+        "type": "e18e",
+        "id": "detect-package-manager"
+      }
     }
   },
   "replacements": {
+    "package-manager-detector": {
+      "id": "package-manager-detector",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "detect-package-manager"
+      },
+      "replacementModule": "package-manager-detector"
+    },
     "@eslint-community/eslint-plugin-eslint-comments": {
       "id": "@eslint-community/eslint-plugin-eslint-comments",
       "type": "documented",
@@ -5504,6 +5535,21 @@
           "engine": "netlify",
           "minVersion": "24.9.0"
         }
+      ]
+    },
+    "zlib.gzipSync": {
+      "id": "zlib.gzipSync",
+      "type": "native",
+      "description": "zlib.gzipSync",
+      "nodeFeatureId": {
+        "moduleName": "node:zlib",
+        "exportName": "gzipSync"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/zlib.html#zlibgzipsyncbuffer-options"
+      },
+      "engines": [
       ]
     },
     "fs.glob": {
