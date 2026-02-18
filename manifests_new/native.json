@@ -3260,85 +3260,6 @@
         }
       ]
     },
-    "for...of": {
-      "id": "for...of",
-      "type": "native",
-      "description": "for...of (using \"Object.entries\" if dealing with objects)",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Statements/for...of"
-      },
-      "webFeatureId": {
-        "featureId": "iterators",
-        "compatKey": "javascript.statements.for_of"
-      },
-      "engines": [
-        {
-          "engine": "chrome",
-          "minVersion": "38"
-        },
-        {
-          "engine": "chrome_android",
-          "minVersion": "38"
-        },
-        {
-          "engine": "edge",
-          "minVersion": "12"
-        },
-        {
-          "engine": "firefox",
-          "minVersion": "13"
-        },
-        {
-          "engine": "firefox_android",
-          "minVersion": "14"
-        },
-        {
-          "engine": "safari",
-          "minVersion": "7"
-        },
-        {
-          "engine": "safari_ios",
-          "minVersion": "7"
-        },
-        {
-          "engine": "bun",
-          "minVersion": "1.0.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "1.0"
-        },
-        {
-          "engine": "nodejs",
-          "minVersion": "0.12.0"
-        },
-        {
-          "engine": "oculus",
-          "minVersion": "5.0"
-        },
-        {
-          "engine": "opera",
-          "minVersion": "25"
-        },
-        {
-          "engine": "opera_android",
-          "minVersion": "25"
-        },
-        {
-          "engine": "samsunginternet_android",
-          "minVersion": "3.0"
-        },
-        {
-          "engine": "webview_android",
-          "minVersion": "38"
-        },
-        {
-          "engine": "webview_ios",
-          "minVersion": "7"
-        }
-      ]
-    },
     "Function.prototype.bind": {
       "id": "Function.prototype.bind",
       "type": "native",
@@ -3422,46 +3343,46 @@
         }
       ]
     },
-    "globalThis": {
-      "id": "globalThis",
+    "Function.prototype.name": {
+      "id": "Function.prototype.name",
       "type": "native",
-      "description": "globalThis",
+      "description": "Use functions `.name` property",
       "url": {
         "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/globalThis"
+        "id": "Web/JavaScript/Reference/Global_Objects/Function/name"
       },
       "webFeatureId": {
-        "featureId": "globalthis",
-        "compatKey": "javascript.builtins.globalThis"
+        "featureId": "functions",
+        "compatKey": "javascript.builtins.Function.name"
       },
       "engines": [
         {
           "engine": "chrome",
-          "minVersion": "71"
+          "minVersion": "15"
         },
         {
           "engine": "chrome_android",
-          "minVersion": "71"
+          "minVersion": "18"
         },
         {
           "engine": "edge",
-          "minVersion": "79"
+          "minVersion": "14"
         },
         {
           "engine": "firefox",
-          "minVersion": "65"
+          "minVersion": "1"
         },
         {
           "engine": "firefox_android",
-          "minVersion": "65"
+          "minVersion": "4"
         },
         {
           "engine": "safari",
-          "minVersion": "12.1"
+          "minVersion": "6"
         },
         {
           "engine": "safari_ios",
-          "minVersion": "12.2"
+          "minVersion": "6"
         },
         {
           "engine": "bun",
@@ -3473,31 +3394,31 @@
         },
         {
           "engine": "nodejs",
-          "minVersion": "12.0.0"
+          "minVersion": "0.10.0"
         },
         {
           "engine": "oculus",
-          "minVersion": "6.0"
+          "minVersion": "5.0"
         },
         {
           "engine": "opera",
-          "minVersion": "58"
+          "minVersion": "10.5"
         },
         {
           "engine": "opera_android",
-          "minVersion": "50"
+          "minVersion": "11"
         },
         {
           "engine": "samsunginternet_android",
-          "minVersion": "10.0"
+          "minVersion": "1.0"
         },
         {
           "engine": "webview_android",
-          "minVersion": "71"
+          "minVersion": "4.4"
         },
         {
           "engine": "webview_ios",
-          "minVersion": "12.2"
+          "minVersion": "6"
         }
       ]
     },
@@ -5733,6 +5654,89 @@
         }
       ]
     },
+    "Object.prototype.hasOwnProperty": {
+      "id": "Object.prototype.hasOwnProperty",
+      "type": "native",
+      "description": "Object.prototype.hasOwnProperty.call(obj, prop)",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty"
+      },
+      "webFeatureId": {
+        "featureId": "object-object",
+        "compatKey": "javascript.builtins.Object.hasOwnProperty"
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "3"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        },
+        {
+          "engine": "bun",
+          "minVersion": "1.0.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "1.0"
+        },
+        {
+          "engine": "ie",
+          "minVersion": "5.5"
+        },
+        {
+          "engine": "nodejs",
+          "minVersion": "0.10.0"
+        },
+        {
+          "engine": "oculus",
+          "minVersion": "5.0"
+        },
+        {
+          "engine": "opera",
+          "minVersion": "5"
+        },
+        {
+          "engine": "opera_android",
+          "minVersion": "10.1"
+        },
+        {
+          "engine": "samsunginternet_android",
+          "minVersion": "1.0"
+        },
+        {
+          "engine": "webview_android",
+          "minVersion": "1"
+        },
+        {
+          "engine": "webview_ios",
+          "minVersion": "1"
+        }
+      ]
+    },
     "Object.values": {
       "id": "Object.values",
       "type": "native",
@@ -5809,89 +5813,6 @@
         {
           "engine": "webview_ios",
           "minVersion": "10.3"
-        }
-      ]
-    },
-    "parseInt": {
-      "id": "parseInt",
-      "type": "native",
-      "description": "parseInt",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/parseInt"
-      },
-      "webFeatureId": {
-        "featureId": "number",
-        "compatKey": "javascript.builtins.parseInt"
-      },
-      "engines": [
-        {
-          "engine": "chrome",
-          "minVersion": "1"
-        },
-        {
-          "engine": "chrome_android",
-          "minVersion": "18"
-        },
-        {
-          "engine": "edge",
-          "minVersion": "12"
-        },
-        {
-          "engine": "firefox",
-          "minVersion": "1"
-        },
-        {
-          "engine": "firefox_android",
-          "minVersion": "4"
-        },
-        {
-          "engine": "safari",
-          "minVersion": "1"
-        },
-        {
-          "engine": "safari_ios",
-          "minVersion": "1"
-        },
-        {
-          "engine": "bun",
-          "minVersion": "1.0.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "1.0"
-        },
-        {
-          "engine": "ie",
-          "minVersion": "3"
-        },
-        {
-          "engine": "nodejs",
-          "minVersion": "0.10.0"
-        },
-        {
-          "engine": "oculus",
-          "minVersion": "5.0"
-        },
-        {
-          "engine": "opera",
-          "minVersion": "3"
-        },
-        {
-          "engine": "opera_android",
-          "minVersion": "10.1"
-        },
-        {
-          "engine": "samsunginternet_android",
-          "minVersion": "1.0"
-        },
-        {
-          "engine": "webview_android",
-          "minVersion": "4.4"
-        },
-        {
-          "engine": "webview_ios",
-          "minVersion": "1"
         }
       ]
     },
@@ -7333,6 +7254,94 @@
         }
       ]
     },
+    "always::Error": {
+      "id": "always::Error",
+      "type": "native",
+      "description": "Error / EvalError / RangeError / ReferenceError / SyntaxError / TypeError / URIError",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Error"
+      }
+    },
+    "always::Error.prototype.cause": {
+      "id": "always::Error.prototype.cause",
+      "type": "native",
+      "description": "Use errors `.cause` property and second `Error` constructors argument to define it",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Error/cause"
+      },
+      "webFeatureId": {
+        "featureId": "error-cause",
+        "compatKey": "javascript.builtins.Error.cause"
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "93"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "93"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "93"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "91"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "91"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "15"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "15"
+        },
+        {
+          "engine": "bun",
+          "minVersion": "1.0.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "1.13"
+        },
+        {
+          "engine": "nodejs",
+          "minVersion": "16.9.0"
+        },
+        {
+          "engine": "oculus",
+          "minVersion": "17.0"
+        },
+        {
+          "engine": "opera",
+          "minVersion": "79"
+        },
+        {
+          "engine": "opera_android",
+          "minVersion": "66"
+        },
+        {
+          "engine": "samsunginternet_android",
+          "minVersion": "17.0"
+        },
+        {
+          "engine": "webview_android",
+          "minVersion": "93"
+        },
+        {
+          "engine": "webview_ios",
+          "minVersion": "15"
+        }
+      ]
+    },
     "always::Object.prototype": {
       "id": "always::Object.prototype",
       "type": "native",
@@ -7340,6 +7349,94 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Operators/Object_initializer#prototype_setter"
+      }
+    },
+    "always::RegExp.prototype.flags": {
+      "id": "always::RegExp.prototype.flags",
+      "type": "native",
+      "description": "RegExp.prototype.flags (e.g. \"/foo/g.flags\")",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/RegExp/flags"
+      },
+      "webFeatureId": {
+        "featureId": "regexp",
+        "compatKey": "javascript.builtins.RegExp.flags"
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "1"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "18"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "1"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "4"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "1"
+        },
+        {
+          "engine": "bun",
+          "minVersion": "1.0.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "1.0"
+        },
+        {
+          "engine": "nodejs",
+          "minVersion": "6.0.0"
+        },
+        {
+          "engine": "oculus",
+          "minVersion": "5.0"
+        },
+        {
+          "engine": "opera",
+          "minVersion": "39"
+        },
+        {
+          "engine": "opera_android",
+          "minVersion": "41"
+        },
+        {
+          "engine": "samsunginternet_android",
+          "minVersion": "5.0"
+        },
+        {
+          "engine": "webview_android",
+          "minVersion": "49"
+        },
+        {
+          "engine": "webview_ios",
+          "minVersion": "9"
+        }
+      ]
+    },
+    "always::String.prototype": {
+      "id": "always::String.prototype",
+      "type": "native",
+      "description": "String.prototype.{ anchor, big, blink, bold, fixed, fontcolor, fontsize, italics, link, small, strike, sub, sup }",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String#html_wrapper_methods"
       }
     },
     "always::Symbol": {
@@ -7579,26 +7676,26 @@
         }
       ]
     },
-    "always::RegExp.prototype.flags": {
-      "id": "always::RegExp.prototype.flags",
+    "for...of": {
+      "id": "for...of",
       "type": "native",
-      "description": "RegExp.prototype.flags (e.g. \"/foo/g.flags\")",
+      "description": "for...of (using \"Object.entries\" if dealing with objects)",
       "url": {
         "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/RegExp/flags"
+        "id": "Web/JavaScript/Reference/Statements/for...of"
       },
       "webFeatureId": {
-        "featureId": "regexp",
-        "compatKey": "javascript.builtins.RegExp.flags"
+        "featureId": "iterators",
+        "compatKey": "javascript.statements.for_of"
       },
       "engines": [
         {
           "engine": "chrome",
-          "minVersion": "1"
+          "minVersion": "38"
         },
         {
           "engine": "chrome_android",
-          "minVersion": "18"
+          "minVersion": "38"
         },
         {
           "engine": "edge",
@@ -7606,195 +7703,19 @@
         },
         {
           "engine": "firefox",
-          "minVersion": "1"
+          "minVersion": "13"
         },
         {
           "engine": "firefox_android",
-          "minVersion": "4"
-        },
-        {
-          "engine": "safari",
-          "minVersion": "1"
-        },
-        {
-          "engine": "safari_ios",
-          "minVersion": "1"
-        },
-        {
-          "engine": "bun",
-          "minVersion": "1.0.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "1.0"
-        },
-        {
-          "engine": "nodejs",
-          "minVersion": "6.0.0"
-        },
-        {
-          "engine": "oculus",
-          "minVersion": "5.0"
-        },
-        {
-          "engine": "opera",
-          "minVersion": "39"
-        },
-        {
-          "engine": "opera_android",
-          "minVersion": "41"
-        },
-        {
-          "engine": "samsunginternet_android",
-          "minVersion": "5.0"
-        },
-        {
-          "engine": "webview_android",
-          "minVersion": "49"
-        },
-        {
-          "engine": "webview_ios",
-          "minVersion": "9"
-        }
-      ]
-    },
-    "always::Error.prototype.cause": {
-      "id": "always::Error.prototype.cause",
-      "type": "native",
-      "description": "Use errors `.cause` property and second `Error` constructors argument to define it",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/Error/cause"
-      },
-      "webFeatureId": {
-        "featureId": "error-cause",
-        "compatKey": "javascript.builtins.Error.cause"
-      },
-      "engines": [
-        {
-          "engine": "chrome",
-          "minVersion": "93"
-        },
-        {
-          "engine": "chrome_android",
-          "minVersion": "93"
-        },
-        {
-          "engine": "edge",
-          "minVersion": "93"
-        },
-        {
-          "engine": "firefox",
-          "minVersion": "91"
-        },
-        {
-          "engine": "firefox_android",
-          "minVersion": "91"
-        },
-        {
-          "engine": "safari",
-          "minVersion": "15"
-        },
-        {
-          "engine": "safari_ios",
-          "minVersion": "15"
-        },
-        {
-          "engine": "bun",
-          "minVersion": "1.0.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "1.13"
-        },
-        {
-          "engine": "nodejs",
-          "minVersion": "16.9.0"
-        },
-        {
-          "engine": "oculus",
-          "minVersion": "17.0"
-        },
-        {
-          "engine": "opera",
-          "minVersion": "79"
-        },
-        {
-          "engine": "opera_android",
-          "minVersion": "66"
-        },
-        {
-          "engine": "samsunginternet_android",
-          "minVersion": "17.0"
-        },
-        {
-          "engine": "webview_android",
-          "minVersion": "93"
-        },
-        {
-          "engine": "webview_ios",
-          "minVersion": "15"
-        }
-      ]
-    },
-    "always::Error": {
-      "id": "always::Error",
-      "type": "native",
-      "description": "Error / EvalError / RangeError / ReferenceError / SyntaxError / TypeError / URIError",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/Error"
-      }
-    },
-    "always::String.prototype": {
-      "id": "always::String.prototype",
-      "type": "native",
-      "description": "String.prototype.{ anchor, big, blink, bold, fixed, fontcolor, fontsize, italics, link, small, strike, sub, sup }",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/String#html_wrapper_methods"
-      }
-    },
-    "Function.prototype.name": {
-      "id": "Function.prototype.name",
-      "type": "native",
-      "description": "Use functions `.name` property",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/Function/name"
-      },
-      "webFeatureId": {
-        "featureId": "functions",
-        "compatKey": "javascript.builtins.Function.name"
-      },
-      "engines": [
-        {
-          "engine": "chrome",
-          "minVersion": "15"
-        },
-        {
-          "engine": "chrome_android",
-          "minVersion": "18"
-        },
-        {
-          "engine": "edge",
           "minVersion": "14"
         },
         {
-          "engine": "firefox",
-          "minVersion": "1"
-        },
-        {
-          "engine": "firefox_android",
-          "minVersion": "4"
-        },
-        {
           "engine": "safari",
-          "minVersion": "6"
+          "minVersion": "7"
         },
         {
           "engine": "safari_ios",
-          "minVersion": "6"
+          "minVersion": "7"
         },
         {
           "engine": "bun",
@@ -7806,7 +7727,7 @@
         },
         {
           "engine": "nodejs",
-          "minVersion": "0.10.0"
+          "minVersion": "0.12.0"
         },
         {
           "engine": "oculus",
@@ -7814,37 +7735,116 @@
         },
         {
           "engine": "opera",
-          "minVersion": "10.5"
+          "minVersion": "25"
         },
         {
           "engine": "opera_android",
-          "minVersion": "11"
+          "minVersion": "25"
         },
         {
           "engine": "samsunginternet_android",
-          "minVersion": "1.0"
+          "minVersion": "3.0"
         },
         {
           "engine": "webview_android",
-          "minVersion": "4.4"
+          "minVersion": "38"
         },
         {
           "engine": "webview_ios",
-          "minVersion": "6"
+          "minVersion": "7"
         }
       ]
     },
-    "Object.prototype.hasOwnProperty": {
-      "id": "Object.prototype.hasOwnProperty",
+    "globalThis": {
+      "id": "globalThis",
       "type": "native",
-      "description": "Object.prototype.hasOwnProperty.call(obj, prop)",
+      "description": "globalThis",
       "url": {
         "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty"
+        "id": "Web/JavaScript/Reference/Global_Objects/globalThis"
       },
       "webFeatureId": {
-        "featureId": "object-object",
-        "compatKey": "javascript.builtins.Object.hasOwnProperty"
+        "featureId": "globalthis",
+        "compatKey": "javascript.builtins.globalThis"
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "71"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "71"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "65"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "65"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "12.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "12.2"
+        },
+        {
+          "engine": "bun",
+          "minVersion": "1.0.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "1.0"
+        },
+        {
+          "engine": "nodejs",
+          "minVersion": "12.0.0"
+        },
+        {
+          "engine": "oculus",
+          "minVersion": "6.0"
+        },
+        {
+          "engine": "opera",
+          "minVersion": "58"
+        },
+        {
+          "engine": "opera_android",
+          "minVersion": "50"
+        },
+        {
+          "engine": "samsunginternet_android",
+          "minVersion": "10.0"
+        },
+        {
+          "engine": "webview_android",
+          "minVersion": "71"
+        },
+        {
+          "engine": "webview_ios",
+          "minVersion": "12.2"
+        }
+      ]
+    },
+    "parseInt": {
+      "id": "parseInt",
+      "type": "native",
+      "description": "parseInt",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/parseInt"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.parseInt"
       },
       "engines": [
         {
@@ -7869,7 +7869,7 @@
         },
         {
           "engine": "safari",
-          "minVersion": "3"
+          "minVersion": "1"
         },
         {
           "engine": "safari_ios",
@@ -7885,7 +7885,7 @@
         },
         {
           "engine": "ie",
-          "minVersion": "5.5"
+          "minVersion": "3"
         },
         {
           "engine": "nodejs",
@@ -7897,7 +7897,7 @@
         },
         {
           "engine": "opera",
-          "minVersion": "5"
+          "minVersion": "3"
         },
         {
           "engine": "opera_android",
@@ -7909,7 +7909,7 @@
         },
         {
           "engine": "webview_android",
-          "minVersion": "1"
+          "minVersion": "4.4"
         },
         {
           "engine": "webview_ios",

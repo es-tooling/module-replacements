@@ -1,175 +1,5 @@
 {
   "replacements": {
-    "snippet::array-coerce": {
-      "id": "snippet::array-coerce",
-      "type": "simple",
-      "description": "Use (v == null ? [] : Array.isArray(v) ? v : [v])"
-    },
-    "snippet::array-difference": {
-      "id": "snippet::array-difference",
-      "type": "simple",
-      "description": "Use a.filter((item) => !b.includes(item))"
-    },
-    "snippet::array-last": {
-      "id": "snippet::array-last",
-      "type": "simple",
-      "description": "Use arr.at(-1) or arr[arr.length - 1]"
-    },
-    "snippet::array-union": {
-      "id": "snippet::array-union",
-      "type": "simple",
-      "description": "Use [...new Set([...a, ...b])]"
-    },
-    "snippet::array-unique": {
-      "id": "snippet::array-unique",
-      "type": "simple",
-      "description": "Use [...new Set(arr)]"
-    },
-    "snippet::get-iterator": {
-      "id": "snippet::get-iterator",
-      "type": "simple",
-      "description": "Use v[Symbol.iterator]?.()"
-    },
-    "snippet::has-argv": {
-      "id": "snippet::has-argv",
-      "type": "simple",
-      "description": "Use process.argv.includes('--flag')"
-    },
-    "snippet::is-arraybuffer": {
-      "id": "snippet::is-arraybuffer",
-      "type": "simple",
-      "description": "Use v instanceof ArrayBuffer, or if cross-realm, use Object.prototype.toString.call(v) === \"[object ArrayBuffer]\""
-    },
-    "snippet::is-boolean": {
-      "id": "snippet::is-boolean",
-      "type": "simple",
-      "description": "Use Object.prototype.toString.call(v) === \"[object Boolean]\""
-    },
-    "snippet::is-ci": {
-      "id": "snippet::is-ci",
-      "type": "simple",
-      "description": "Use Boolean(process.env.CI)"
-    },
-    "snippet::is-date": {
-      "id": "snippet::is-date",
-      "type": "simple",
-      "description": "Use v instanceof Date, or if cross-realm, use Object.prototype.toString.call(v) === \"[object Date]\""
-    },
-    "snippet::is-even": {
-      "id": "snippet::is-even",
-      "type": "simple",
-      "description": "Use (n % 2) === 0"
-    },
-    "snippet::is-negative": {
-      "id": "snippet::is-negative",
-      "type": "simple",
-      "description": "Use (n) => n < 0"
-    },
-    "snippet::is-negative-zero": {
-      "id": "snippet::is-negative-zero",
-      "type": "simple",
-      "description": "Use Object.is(v, -0)"
-    },
-    "snippet::is-npm": {
-      "id": "snippet::is-npm",
-      "type": "simple",
-      "description": "Use process.env.npm_config_user_agent?.startsWith(\"npm\")"
-    },
-    "snippet::is-object": {
-      "id": "snippet::is-object",
-      "type": "simple",
-      "description": "Use v && typeof v === \"object\" && (Object.getPrototypeOf(v) === null || Object.getPrototypeOf(v) === Object.prototype)"
-    },
-    "snippet::is-stream": {
-      "id": "snippet::is-stream",
-      "type": "simple",
-      "description": "Use `isReadable(stream) || isWritable(stream)` from `node:stream`"
-    },
-    "snippet::is-odd": {
-      "id": "snippet::is-odd",
-      "type": "simple",
-      "description": "Use (n % 2) === 1"
-    },
-    "snippet::is-primitve": {
-      "id": "snippet::is-primitve",
-      "type": "simple",
-      "description": "Use v === null || (typeof v !== \"function\" && typeof v !== \"object\")"
-    },
-    "snippet::is-regexp": {
-      "id": "snippet::is-regexp",
-      "type": "simple",
-      "description": "Use v instanceof RegExp, or if cross-realm, use Object.prototype.toString.call(v) === \"[object RegExp]\""
-    },
-    "snippet::is-string": {
-      "id": "snippet::is-string",
-      "type": "simple",
-      "description": "Use typeof str === \"string\""
-    },
-    "snippet::is-travis": {
-      "id": "snippet::is-travis",
-      "type": "simple",
-      "description": "Use (\"TRAVIS\" in process.env)"
-    },
-    "snippet::is-whitespace": {
-      "id": "snippet::is-whitespace",
-      "type": "simple",
-      "description": "Use str.trim() === \"\" or /^\\s*$/.test(str)"
-    },
-    "snippet::is-windows": {
-      "id": "snippet::is-windows",
-      "type": "simple",
-      "description": "Use process.platform === \"win32\""
-    },
-    "snippet::object-filter": {
-      "id": "snippet::object-filter",
-      "type": "simple",
-      "description": "Use Object.fromEntries(Object.entries(obj).filter(fn))"
-    },
-    "snippet::regexp-copy": {
-      "id": "snippet::regexp-copy",
-      "type": "simple",
-      "description": "Use new RegExp(regexpToCopy)"
-    },
-    "snippet::set-tostringtag": {
-      "id": "snippet::set-tostringtag",
-      "type": "simple",
-      "description": "Use Object.defineProperty(target, Symbol.toStringTag, { value, configurable: true })"
-    },
-    "snippet::split-lines": {
-      "id": "snippet::split-lines",
-      "type": "simple",
-      "description": "Use str.split(/\\r?\\n/)"
-    },
-    "snippet::to-lower": {
-      "id": "snippet::to-lower",
-      "type": "simple",
-      "description": "Use str.toLocaleLowerCase() or str.toLowerCase()"
-    },
-    "snippet::to-uppercase": {
-      "id": "snippet::to-uppercase",
-      "type": "simple",
-      "description": "Use str.toLocaleUpperCase() or str.toUpperCase()"
-    },
-    "snippet::typeof": {
-      "id": "snippet::typeof",
-      "type": "simple",
-      "description": "Use typeof v, or Object.prototype.toString.call(v) to get the internal [[Class]]"
-    },
-    "snippet::unix-paths": {
-      "id": "snippet::unix-paths",
-      "type": "simple",
-      "description": "Use path.startsWith('\\\\?\\') ? path : path.replace(/\\/g, '/')"
-    },
-    "snippet:is-number": {
-      "id": "snippet:is-number",
-      "type": "simple",
-      "description": "Use typeof v === \"number\" || (typeof v === \"string\" && Number.isFinite(+v))"
-    },
-    "snippet::call-bind": {
-      "id": "snippet::call-bind",
-      "type": "simple",
-      "description": "Use Function.call.bind(v)"
-    },
     "Number.isFinite": {
       "id": "Number.isFinite",
       "type": "native",
@@ -327,6 +157,176 @@
           "minVersion": "9"
         }
       ]
+    },
+    "snippet::array-coerce": {
+      "id": "snippet::array-coerce",
+      "type": "simple",
+      "description": "Use (v == null ? [] : Array.isArray(v) ? v : [v])"
+    },
+    "snippet::array-difference": {
+      "id": "snippet::array-difference",
+      "type": "simple",
+      "description": "Use a.filter((item) => !b.includes(item))"
+    },
+    "snippet::array-last": {
+      "id": "snippet::array-last",
+      "type": "simple",
+      "description": "Use arr.at(-1) or arr[arr.length - 1]"
+    },
+    "snippet::array-union": {
+      "id": "snippet::array-union",
+      "type": "simple",
+      "description": "Use [...new Set([...a, ...b])]"
+    },
+    "snippet::array-unique": {
+      "id": "snippet::array-unique",
+      "type": "simple",
+      "description": "Use [...new Set(arr)]"
+    },
+    "snippet::call-bind": {
+      "id": "snippet::call-bind",
+      "type": "simple",
+      "description": "Use Function.call.bind(v)"
+    },
+    "snippet::get-iterator": {
+      "id": "snippet::get-iterator",
+      "type": "simple",
+      "description": "Use v[Symbol.iterator]?.()"
+    },
+    "snippet::has-argv": {
+      "id": "snippet::has-argv",
+      "type": "simple",
+      "description": "Use process.argv.includes('--flag')"
+    },
+    "snippet::is-arraybuffer": {
+      "id": "snippet::is-arraybuffer",
+      "type": "simple",
+      "description": "Use v instanceof ArrayBuffer, or if cross-realm, use Object.prototype.toString.call(v) === \"[object ArrayBuffer]\""
+    },
+    "snippet::is-boolean": {
+      "id": "snippet::is-boolean",
+      "type": "simple",
+      "description": "Use Object.prototype.toString.call(v) === \"[object Boolean]\""
+    },
+    "snippet::is-ci": {
+      "id": "snippet::is-ci",
+      "type": "simple",
+      "description": "Use Boolean(process.env.CI)"
+    },
+    "snippet::is-date": {
+      "id": "snippet::is-date",
+      "type": "simple",
+      "description": "Use v instanceof Date, or if cross-realm, use Object.prototype.toString.call(v) === \"[object Date]\""
+    },
+    "snippet::is-even": {
+      "id": "snippet::is-even",
+      "type": "simple",
+      "description": "Use (n % 2) === 0"
+    },
+    "snippet::is-negative": {
+      "id": "snippet::is-negative",
+      "type": "simple",
+      "description": "Use (n) => n < 0"
+    },
+    "snippet::is-negative-zero": {
+      "id": "snippet::is-negative-zero",
+      "type": "simple",
+      "description": "Use Object.is(v, -0)"
+    },
+    "snippet::is-npm": {
+      "id": "snippet::is-npm",
+      "type": "simple",
+      "description": "Use process.env.npm_config_user_agent?.startsWith(\"npm\")"
+    },
+    "snippet::is-object": {
+      "id": "snippet::is-object",
+      "type": "simple",
+      "description": "Use v && typeof v === \"object\" && (Object.getPrototypeOf(v) === null || Object.getPrototypeOf(v) === Object.prototype)"
+    },
+    "snippet::is-odd": {
+      "id": "snippet::is-odd",
+      "type": "simple",
+      "description": "Use (n % 2) === 1"
+    },
+    "snippet::is-primitve": {
+      "id": "snippet::is-primitve",
+      "type": "simple",
+      "description": "Use v === null || (typeof v !== \"function\" && typeof v !== \"object\")"
+    },
+    "snippet::is-regexp": {
+      "id": "snippet::is-regexp",
+      "type": "simple",
+      "description": "Use v instanceof RegExp, or if cross-realm, use Object.prototype.toString.call(v) === \"[object RegExp]\""
+    },
+    "snippet::is-stream": {
+      "id": "snippet::is-stream",
+      "type": "simple",
+      "description": "Use `isReadable(stream) || isWritable(stream)` from `node:stream`"
+    },
+    "snippet::is-string": {
+      "id": "snippet::is-string",
+      "type": "simple",
+      "description": "Use typeof str === \"string\""
+    },
+    "snippet::is-travis": {
+      "id": "snippet::is-travis",
+      "type": "simple",
+      "description": "Use (\"TRAVIS\" in process.env)"
+    },
+    "snippet::is-whitespace": {
+      "id": "snippet::is-whitespace",
+      "type": "simple",
+      "description": "Use str.trim() === \"\" or /^\\s*$/.test(str)"
+    },
+    "snippet::is-windows": {
+      "id": "snippet::is-windows",
+      "type": "simple",
+      "description": "Use process.platform === \"win32\""
+    },
+    "snippet::object-filter": {
+      "id": "snippet::object-filter",
+      "type": "simple",
+      "description": "Use Object.fromEntries(Object.entries(obj).filter(fn))"
+    },
+    "snippet::regexp-copy": {
+      "id": "snippet::regexp-copy",
+      "type": "simple",
+      "description": "Use new RegExp(regexpToCopy)"
+    },
+    "snippet::set-tostringtag": {
+      "id": "snippet::set-tostringtag",
+      "type": "simple",
+      "description": "Use Object.defineProperty(target, Symbol.toStringTag, { value, configurable: true })"
+    },
+    "snippet::split-lines": {
+      "id": "snippet::split-lines",
+      "type": "simple",
+      "description": "Use str.split(/\\r?\\n/)"
+    },
+    "snippet::to-lower": {
+      "id": "snippet::to-lower",
+      "type": "simple",
+      "description": "Use str.toLocaleLowerCase() or str.toLowerCase()"
+    },
+    "snippet::to-uppercase": {
+      "id": "snippet::to-uppercase",
+      "type": "simple",
+      "description": "Use str.toLocaleUpperCase() or str.toUpperCase()"
+    },
+    "snippet::typeof": {
+      "id": "snippet::typeof",
+      "type": "simple",
+      "description": "Use typeof v, or Object.prototype.toString.call(v) to get the internal [[Class]]"
+    },
+    "snippet::unix-paths": {
+      "id": "snippet::unix-paths",
+      "type": "simple",
+      "description": "Use path.startsWith('\\\\?\\') ? path : path.replace(/\\/g, '/')"
+    },
+    "snippet:is-number": {
+      "id": "snippet:is-number",
+      "type": "simple",
+      "description": "Use typeof v === \"number\" || (typeof v === \"string\" && Number.isFinite(+v))"
     }
   },
   "mappings": {
@@ -498,13 +498,6 @@
         "snippet::is-odd"
       ]
     },
-    "is-plain-object": {
-      "type": "module",
-      "moduleName": "is-plain-object",
-      "replacements": [
-        "snippet::is-object"
-      ]
-    },
     "is-plain-obj": {
       "type": "module",
       "moduleName": "is-plain-obj",
@@ -512,11 +505,11 @@
         "snippet::is-object"
       ]
     },
-    "is-stream": {
+    "is-plain-object": {
       "type": "module",
-      "moduleName": "is-stream",
+      "moduleName": "is-plain-object",
       "replacements": [
-        "snippet::is-stream"
+        "snippet::is-object"
       ]
     },
     "is-primitive": {
@@ -531,6 +524,13 @@
       "moduleName": "is-regexp",
       "replacements": [
         "snippet::is-regexp"
+      ]
+    },
+    "is-stream": {
+      "type": "module",
+      "moduleName": "is-stream",
+      "replacements": [
+        "snippet::is-stream"
       ]
     },
     "is-string": {

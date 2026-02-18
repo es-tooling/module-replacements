@@ -1,16 +1,5 @@
 {
   "mappings": {
-    "gzip-size": {
-      "type": "module",
-      "moduleName": "gzip-size",
-      "replacements": [
-        "zlib.gzipSync",
-      ],
-      "url": {
-        "type": "e18e",
-        "id": "gzip-size"
-      }
-    },
     "@jsdevtools/ez-spawn": {
       "type": "module",
       "moduleName": "@jsdevtools/ez-spawn",
@@ -197,6 +186,17 @@
       "url": {
         "type": "e18e",
         "id": "depcheck"
+      }
+    },
+    "detect-package-manager": {
+      "type": "module",
+      "moduleName": "detect-package-manager",
+      "replacements": [
+        "package-manager-detector"
+      ],
+      "url": {
+        "type": "e18e",
+        "id": "detect-package-manager"
       }
     },
     "dot-prop": {
@@ -482,6 +482,17 @@
       "url": {
         "type": "e18e",
         "id": "graphemer"
+      }
+    },
+    "gzip-size": {
+      "type": "module",
+      "moduleName": "gzip-size",
+      "replacements": [
+        "zlib.gzipSync"
+      ],
+      "url": {
+        "type": "e18e",
+        "id": "gzip-size"
       }
     },
     "invariant": {
@@ -4802,28 +4813,17 @@
         "type": "e18e",
         "id": "xmldom"
       }
-    },
-    "detect-package-manager": {
-      "type": "module",
-      "moduleName": "detect-package-manager",
-      "replacements": [
-        "package-manager-detector"
-      ],
-      "url": {
-        "type": "e18e",
-        "id": "detect-package-manager"
-      }
     }
   },
   "replacements": {
-    "package-manager-detector": {
-      "id": "package-manager-detector",
-      "type": "documented",
+    "--env-file": {
+      "id": "--env-file",
+      "type": "native",
+      "description": "--env-file",
       "url": {
-        "type": "e18e",
-        "id": "detect-package-manager"
-      },
-      "replacementModule": "package-manager-detector"
+        "type": "node",
+        "id": "api/cli.html#--env-filefile"
+      }
     },
     "@eslint-community/eslint-plugin-eslint-comments": {
       "id": "@eslint-community/eslint-plugin-eslint-comments",
@@ -4888,487 +4888,96 @@
       },
       "replacementModule": "@xmldom/xmldom"
     },
-    "ansis": {
-      "id": "ansis",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "chalk"
-      },
-      "replacementModule": "ansis"
-    },
-    "concurrently": {
-      "id": "concurrently",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "npm-run-all"
-      },
-      "replacementModule": "concurrently"
-    },
-    "cpx2": {
-      "id": "cpx2",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "cpx"
-      },
-      "replacementModule": "cpx2"
-    },
-    "date-fns": {
-      "id": "date-fns",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "moment"
-      },
-      "replacementModule": "date-fns"
-    },
-    "day.js": {
-      "id": "day.js",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "moment"
-      },
-      "replacementModule": "day.js"
-    },
-    "dequal": {
-      "id": "dequal",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "deep-equal"
-      },
-      "replacementModule": "dequal"
-    },
-    "dlv": {
-      "id": "dlv",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "dot-prop"
-      },
-      "replacementModule": "dlv"
-    },
-    "emoji-regex-xs": {
-      "id": "emoji-regex-xs",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "emoji-regex"
-      },
-      "replacementModule": "emoji-regex-xs"
-    },
-    "empathic": {
-      "id": "empathic",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "find-cache-dir"
-      },
-      "replacementModule": "empathic"
-    },
-    "eslint-plugin-es-x": {
-      "id": "eslint-plugin-es-x",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "eslint-plugin-es"
-      },
-      "replacementModule": "eslint-plugin-es-x"
-    },
-    "eslint-plugin-import-x": {
-      "id": "eslint-plugin-import-x",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "eslint-plugin-import"
-      },
-      "replacementModule": "eslint-plugin-import-x"
-    },
-    "eslint-plugin-n": {
-      "id": "eslint-plugin-n",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "eslint-plugin-node"
-      },
-      "replacementModule": "eslint-plugin-n"
-    },
-    "fast-deep-equal": {
-      "id": "fast-deep-equal",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "deep-equal"
-      },
-      "replacementModule": "fast-deep-equal"
-    },
-    "fast-querystring": {
-      "id": "fast-querystring",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "qs"
-      },
-      "replacementModule": "fast-querystring"
-    },
-    "fast-string-width": {
-      "id": "fast-string-width",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "string-width"
-      },
-      "replacementModule": "fast-string-width"
-    },
-    "fast-uri": {
-      "id": "fast-uri",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "uri-js"
-      },
-      "replacementModule": "fast-uri"
-    },
-    "fdir": {
-      "id": "fdir",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "glob"
-      },
-      "replacementModule": "fdir"
-    },
-    "jsx-ast-utils-x": {
-      "id": "jsx-ast-utils-x",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "jsx-ast-utils"
-      },
-      "replacementModule": "jsx-ast-utils-x"
-    },
-    "knip": {
-      "id": "knip",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "depcheck"
-      },
-      "replacementModule": "knip"
-    },
-    "ky": {
-      "id": "ky",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "fetch"
-      },
-      "replacementModule": "ky"
-    },
-    "luxon": {
-      "id": "luxon",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "moment"
-      },
-      "replacementModule": "luxon"
-    },
-    "milliparsec": {
-      "id": "milliparsec",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "body-parser"
-      },
-      "replacementModule": "milliparsec"
-    },
-    "nano-staged": {
-      "id": "nano-staged",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "lint-staged"
-      },
-      "replacementModule": "nano-staged"
-    },
-    "nanoexec": {
-      "id": "nanoexec",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "execa"
-      },
-      "replacementModule": "nanoexec"
-    },
-    "nanoid": {
-      "id": "nanoid",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "shortid"
-      },
-      "replacementModule": "nanoid"
-    },
-    "nanospinner": {
-      "id": "nanospinner",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "ora"
-      },
-      "replacementModule": "nanospinner"
-    },
-    "nativebird": {
-      "id": "nativebird",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "bluebird-q"
-      },
-      "replacementModule": "nativebird"
-    },
-    "neoqs": {
-      "id": "neoqs",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "qs"
-      },
-      "replacementModule": "neoqs"
-    },
-    "neotraverse": {
-      "id": "neotraverse",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "traverse"
-      },
-      "replacementModule": "neotraverse"
-    },
-    "node:fs": {
-      "id": "node:fs",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "read-pkg"
-      },
-      "replacementModule": "node:fs"
-    },
-    "npm-run-all2": {
-      "id": "npm-run-all2",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "npm-run-all"
-      },
-      "replacementModule": "npm-run-all2"
-    },
-    "object-path": {
-      "id": "object-path",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "dot-prop"
-      },
-      "replacementModule": "object-path"
-    },
-    "ofetch": {
-      "id": "ofetch",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "fetch"
-      },
-      "replacementModule": "ofetch"
-    },
-    "ohash": {
-      "id": "ohash",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "object-hash"
-      },
-      "replacementModule": "ohash"
-    },
-    "picocolors": {
-      "id": "picocolors",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "chalk"
-      },
-      "replacementModule": "picocolors"
-    },
-    "picoquery": {
-      "id": "picoquery",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "qs"
-      },
-      "replacementModule": "picoquery"
-    },
-    "picospinner": {
-      "id": "picospinner",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "ora"
-      },
-      "replacementModule": "picospinner"
-    },
-    "pkg-types": {
-      "id": "pkg-types",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "find-up"
-      },
-      "replacementModule": "pkg-types"
-    },
-    "premove": {
-      "id": "premove",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "rimraf"
-      },
-      "replacementModule": "premove"
-    },
-    "sort-object-keys": {
-      "id": "sort-object-keys",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "sort-object"
-      },
-      "replacementModule": "sort-object-keys"
-    },
-    "sortobject": {
-      "id": "sortobject",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "sort-object"
-      },
-      "replacementModule": "sortobject"
-    },
-    "Teleport": {
-      "id": "Teleport",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "portal-vue"
-      },
-      "replacementModule": "Teleport"
-    },
-    "tiny-invariant": {
-      "id": "tiny-invariant",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "invariant"
-      },
-      "replacementModule": "tiny-invariant"
-    },
-    "tinyexec": {
-      "id": "tinyexec",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "execa"
-      },
-      "replacementModule": "tinyexec"
-    },
-    "tinyglobby": {
-      "id": "tinyglobby",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "fast-glob"
-      },
-      "replacementModule": "tinyglobby"
-    },
-    "fetch": {
-      "id": "fetch",
+    "Buffer.compare": {
+      "id": "Buffer.compare",
       "type": "native",
-      "description": "fetch API",
-      "webFeatureId": {
-        "featureId": "fetch",
-        "compatKey": "api.fetch"
+      "description": "Buffer.compare",
+      "nodeFeatureId": {
+        "moduleName": "node:buffer",
+        "exportName": "Buffer"
       },
       "url": {
-        "type": "mdn",
-        "id": "Web/API/Fetch_API"
+        "type": "node",
+        "id": "api/buffer.html#static-method-buffercomparebuf1-buf2"
       },
       "engines": [
         {
-          "engine": "chrome",
-          "minVersion": "42"
-        },
-        {
-          "engine": "chrome_android",
-          "minVersion": "42"
-        },
-        {
-          "engine": "edge",
-          "minVersion": "14"
-        },
-        {
-          "engine": "firefox",
-          "minVersion": "39"
-        },
-        {
-          "engine": "firefox_android",
-          "minVersion": "39"
-        },
-        {
-          "engine": "safari",
-          "minVersion": "10.1"
-        },
-        {
-          "engine": "safari_ios",
-          "minVersion": "10.3"
-        },
-        {
-          "engine": "bun",
-          "minVersion": "1.0.0"
+          "engine": "cloudflare",
+          "minVersion": "24.9.0"
         },
         {
           "engine": "deno",
-          "minVersion": "1.0"
+          "minVersion": "24.9.0"
         },
         {
-          "engine": "nodejs",
-          "minVersion": "18.0.0"
+          "engine": "vercel",
+          "minVersion": "24.9.0"
         },
         {
-          "engine": "oculus",
-          "minVersion": "5.0"
+          "engine": "netlify",
+          "minVersion": "24.9.0"
+        }
+      ]
+    },
+    "Buffer.prototype.equals": {
+      "id": "Buffer.prototype.equals",
+      "type": "native",
+      "description": "Buffer.prototype.equals",
+      "nodeFeatureId": {
+        "moduleName": "node:buffer",
+        "exportName": "Buffer"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/buffer.html#bufequalsotherbuffer"
+      },
+      "engines": [
+        {
+          "engine": "cloudflare",
+          "minVersion": "24.9.0"
         },
         {
-          "engine": "opera",
-          "minVersion": "29"
+          "engine": "deno",
+          "minVersion": "24.9.0"
         },
         {
-          "engine": "opera_android",
-          "minVersion": "29"
+          "engine": "vercel",
+          "minVersion": "24.9.0"
         },
         {
-          "engine": "samsunginternet_android",
-          "minVersion": "4.0"
+          "engine": "netlify",
+          "minVersion": "24.9.0"
+        }
+      ]
+    },
+    "Buffer.prototype.toString": {
+      "id": "Buffer.prototype.toString",
+      "type": "native",
+      "description": "Buffer.prototype.toString",
+      "nodeFeatureId": {
+        "moduleName": "node:buffer",
+        "exportName": "Buffer"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/buffer.html#buftostringencoding-start-end"
+      },
+      "engines": [
+        {
+          "engine": "cloudflare",
+          "minVersion": "24.9.0"
         },
         {
-          "engine": "webview_android",
-          "minVersion": "42"
+          "engine": "deno",
+          "minVersion": "24.9.0"
         },
         {
-          "engine": "webview_ios",
-          "minVersion": "10.3"
+          "engine": "vercel",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "netlify",
+          "minVersion": "24.9.0"
         }
       ]
     },
@@ -5378,464 +4987,29 @@
       "description": "Bun.CryptoHasher",
       "url": "https://bun.com/docs/runtime/hashing"
     },
-    "node:crypto": {
-      "id": "node:crypto",
-      "type": "native",
-      "description": "node:crypto",
-      "nodeFeatureId": {
-        "moduleName": "node:crypto"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/crypto.html"
-      },
-      "engines": [
-        {
-          "engine": "cloudflare",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "netlify",
-          "minVersion": "24.9.0"
-        }
-      ]
-    },
-    "crypto": {
-      "id": "crypto",
-      "type": "native",
-      "description": "crypto",
-      "webFeatureId": {
-        "featureId": "web-cryptography",
-        "compatKey": "api.crypto"
-      },
-      "url": {
-        "type": "mdn",
-        "id": "Web/API/Web_Crypto_API"
-      },
-      "engines": [
-        {
-          "engine": "chrome",
-          "minVersion": "37"
-        },
-        {
-          "engine": "chrome_android",
-          "minVersion": "37"
-        },
-        {
-          "engine": "edge",
-          "minVersion": "12"
-        },
-        {
-          "engine": "firefox",
-          "minVersion": "34"
-        },
-        {
-          "engine": "firefox_android",
-          "minVersion": "34"
-        },
-        {
-          "engine": "safari",
-          "minVersion": "11"
-        },
-        {
-          "engine": "safari_ios",
-          "minVersion": "11"
-        },
-        {
-          "engine": "bun",
-          "minVersion": "1.0.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "1.0"
-        },
-        {
-          "engine": "ie",
-          "minVersion": "11"
-        },
-        {
-          "engine": "nodejs",
-          "minVersion": "19.0.0"
-        },
-        {
-          "engine": "oculus",
-          "minVersion": "5.0"
-        },
-        {
-          "engine": "opera",
-          "minVersion": "24"
-        },
-        {
-          "engine": "opera_android",
-          "minVersion": "24"
-        },
-        {
-          "engine": "samsunginternet_android",
-          "minVersion": "3.0"
-        },
-        {
-          "engine": "webview_android",
-          "minVersion": "37"
-        },
-        {
-          "engine": "webview_ios",
-          "minVersion": "5"
-        }
-      ]
-    },
-    "--env-file": {
-      "id": "--env-file",
-      "type": "native",
-      "description": "--env-file",
-      "url": {
-        "type": "node",
-        "id": "api/cli.html#--env-filefile"
-      }
-    },
-    "unicodeClassEscape": {
-      "id": "unicodeClassEscape",
-      "type": "native",
-      "description": "unicodeClassEscape",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape"
-      }
-    },
     "Bun.Shell": {
       "id": "Bun.Shell",
       "type": "native",
       "description": "Bun.Shell",
       "url": "https://bun.com/docs/runtime/shell"
     },
-    "fs": {
-      "id": "fs",
+    "Bun.file": {
+      "id": "Bun.file",
       "type": "native",
-      "description": "Node file system module",
-      "nodeFeatureId": {
-        "moduleName": "node:fs"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/fs.html"
-      },
-      "engines": [
-        {
-          "engine": "cloudflare",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "netlify",
-          "minVersion": "24.9.0"
-        }
-      ]
+      "description": "Bun.file",
+      "url": "https://bun.com/reference/bun/file"
     },
-    "zlib.gzipSync": {
-      "id": "zlib.gzipSync",
+    "Bun.stringWidth": {
+      "id": "Bun.stringWidth",
       "type": "native",
-      "description": "zlib.gzipSync",
-      "nodeFeatureId": {
-        "moduleName": "node:zlib",
-        "exportName": "gzipSync"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/zlib.html#zlibgzipsyncbuffer-options"
-      },
-      "engines": [
-      ]
+      "description": "Bun.stringWidth",
+      "url": "https://bun.com/reference/bun/stringWidth"
     },
-    "fs.glob": {
-      "id": "fs.glob",
+    "Bun.stripANSI": {
+      "id": "Bun.stripANSI",
       "type": "native",
-      "description": "fs.glob",
-      "nodeFeatureId": {
-        "moduleName": "node:fs",
-        "exportName": "glob"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/fs.html#fspromisesglobpattern-options"
-      },
-      "engines": [
-        {
-          "engine": "cloudflare",
-          "minVersion": "24.9.0"
-        }
-      ]
-    },
-    "Promise": {
-      "id": "Promise",
-      "type": "native",
-      "description": "Promise",
-      "webFeatureId": {
-        "featureId": "promise",
-        "compatKey": "javascript.builtins.Promise"
-      },
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/Promise"
-      },
-      "engines": [
-        {
-          "engine": "chrome",
-          "minVersion": "32"
-        },
-        {
-          "engine": "chrome_android",
-          "minVersion": "32"
-        },
-        {
-          "engine": "edge",
-          "minVersion": "12"
-        },
-        {
-          "engine": "firefox",
-          "minVersion": "29"
-        },
-        {
-          "engine": "firefox_android",
-          "minVersion": "29"
-        },
-        {
-          "engine": "safari",
-          "minVersion": "8"
-        },
-        {
-          "engine": "safari_ios",
-          "minVersion": "8"
-        },
-        {
-          "engine": "bun",
-          "minVersion": "1.0.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "1.0"
-        },
-        {
-          "engine": "nodejs",
-          "minVersion": "0.12.0"
-        },
-        {
-          "engine": "oculus",
-          "minVersion": "5.0"
-        },
-        {
-          "engine": "opera",
-          "minVersion": "19"
-        },
-        {
-          "engine": "opera_android",
-          "minVersion": "19"
-        },
-        {
-          "engine": "samsunginternet_android",
-          "minVersion": "2.0"
-        },
-        {
-          "engine": "webview_android",
-          "minVersion": "4.4.3"
-        },
-        {
-          "engine": "webview_ios",
-          "minVersion": "8"
-        }
-      ]
-    },
-    "Intl.Segmenter": {
-      "id": "Intl.Segmenter",
-      "type": "native",
-      "description": "Intl.Segmenter",
-      "webFeatureId": {
-        "featureId": "intl-segmenter",
-        "compatKey": "javascript.builtins.Intl.Segmenter"
-      },
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/Intl/Segmenter"
-      },
-      "engines": [
-        {
-          "engine": "chrome",
-          "minVersion": "87"
-        },
-        {
-          "engine": "chrome_android",
-          "minVersion": "87"
-        },
-        {
-          "engine": "edge",
-          "minVersion": "87"
-        },
-        {
-          "engine": "firefox",
-          "minVersion": "125"
-        },
-        {
-          "engine": "firefox_android",
-          "minVersion": "125"
-        },
-        {
-          "engine": "safari",
-          "minVersion": "14.1"
-        },
-        {
-          "engine": "safari_ios",
-          "minVersion": "14.5"
-        },
-        {
-          "engine": "bun",
-          "minVersion": "1.0.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "1.8"
-        },
-        {
-          "engine": "nodejs",
-          "minVersion": "16.0.0"
-        },
-        {
-          "engine": "oculus",
-          "minVersion": "13.0"
-        },
-        {
-          "engine": "opera",
-          "minVersion": "73"
-        },
-        {
-          "engine": "opera_android",
-          "minVersion": "62"
-        },
-        {
-          "engine": "samsunginternet_android",
-          "minVersion": "14.0"
-        },
-        {
-          "engine": "webview_android",
-          "minVersion": "87"
-        },
-        {
-          "engine": "webview_ios",
-          "minVersion": "14.5"
-        }
-      ]
-    },
-    "isBuiltin": {
-      "id": "isBuiltin",
-      "type": "native",
-      "description": "isBuiltin",
-      "nodeFeatureId": {
-        "moduleName": "node:module",
-        "exportName": "isBuiltin"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/module.html#moduleisbuiltinmodulename"
-      },
-      "engines": [
-        {
-          "engine": "cloudflare",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "netlify",
-          "minVersion": "24.9.0"
-        }
-      ]
-    },
-    "builtinModules": {
-      "id": "builtinModules",
-      "type": "native",
-      "description": "builtinModules",
-      "nodeFeatureId": {
-        "moduleName": "node:module",
-        "exportName": "builtinModules"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/module.html#modulebuiltinmodules"
-      },
-      "engines": [
-        {
-          "engine": "cloudflare",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "netlify",
-          "minVersion": "24.9.0"
-        }
-      ]
-    },
-    "jquery": {
-      "id": "jquery",
-      "type": "removal",
-      "url": {
-        "type": "e18e",
-        "id": "jquery"
-      },
-      "description": "jQuery can be replaced with native DOM and Web APIs"
-    },
-    "lodash-underscore": {
-      "id": "lodash-underscore",
-      "type": "removal",
-      "url": {
-        "type": "e18e",
-        "id": "lodash-underscore"
-      },
-      "description": "lodash and Underscore can be replaced with native JavaScript APIs"
-    },
-    "es-toolkit": {
-      "id": "es-toolkit",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "lodash-underscore"
-      },
-      "replacementModule": "es-toolkit"
-    },
-    "fs.mkdir": {
-      "id": "fs.mkdir",
-      "type": "native",
-      "description": "fs.mkdir",
-      "nodeFeatureId": {
-        "moduleName": "node:fs",
-        "exportName": "mkdir"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/fs.html#fspromisesmkdirpath-options"
-      },
-      "engines": [
-        {
-          "engine": "cloudflare",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "netlify",
-          "minVersion": "24.9.0"
-        }
-      ]
+      "description": "Bun.stripANSI",
+      "url": "https://bun.com/reference/bun/stripANSI"
     },
     "Date": {
       "id": "Date",
@@ -5920,121 +5094,115 @@
         }
       ]
     },
-    "Buffer.compare": {
-      "id": "Buffer.compare",
+    "Deno.makeTempDir": {
+      "id": "Deno.makeTempDir",
       "type": "native",
-      "description": "Buffer.compare",
-      "nodeFeatureId": {
-        "moduleName": "node:buffer",
-        "exportName": "Buffer"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/buffer.html#static-method-buffercomparebuf1-buf2"
-      },
-      "engines": [
-        {
-          "engine": "cloudflare",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "vercel",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "netlify",
-          "minVersion": "24.9.0"
-        }
-      ]
+      "description": "Deno.makeTempDir",
+      "url": "https://docs.deno.com/api/deno/~/Deno.makeTempDir"
     },
-    "Bun.file": {
-      "id": "Bun.file",
+    "Intl.Segmenter": {
+      "id": "Intl.Segmenter",
       "type": "native",
-      "description": "Bun.file",
-      "url": "https://bun.com/reference/bun/file"
-    },
-    "fs.access": {
-      "id": "fs.access",
-      "type": "native",
-      "description": "fs.access",
-      "nodeFeatureId": {
-        "moduleName": "node:fs/promises",
-        "exportName": "access"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/fs.html#fspromisesaccesspath-mode"
-      },
-      "engines": [
-        {
-          "engine": "cloudflare",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "netlify",
-          "minVersion": "24.9.0"
-        }
-      ]
-    },
-    "fs.existsSync": {
-      "id": "fs.existsSync",
-      "type": "native",
-      "description": "fs.existsSync",
-      "nodeFeatureId": {
-        "moduleName": "node:fs",
-        "exportName": "existsSync"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/fs.html#fsexistssyncpath"
-      },
-      "engines": [
-        {
-          "engine": "cloudflare",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "netlify",
-          "minVersion": "24.9.0"
-        }
-      ]
-    },
-    "URLSearchParams": {
-      "id": "URLSearchParams",
-      "type": "native",
-      "description": "URLSearchParams",
+      "description": "Intl.Segmenter",
       "webFeatureId": {
-        "featureId": "url",
-        "compatKey": "api.URLSearchParams"
+        "featureId": "intl-segmenter",
+        "compatKey": "javascript.builtins.Intl.Segmenter"
       },
       "url": {
         "type": "mdn",
-        "id": "Web/API/URLSearchParams"
+        "id": "Web/JavaScript/Reference/Global_Objects/Intl/Segmenter"
       },
       "engines": [
         {
           "engine": "chrome",
-          "minVersion": "49"
+          "minVersion": "87"
         },
         {
           "engine": "chrome_android",
-          "minVersion": "49"
+          "minVersion": "87"
         },
         {
           "engine": "edge",
-          "minVersion": "17"
+          "minVersion": "87"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "125"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "125"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "14.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "14.5"
+        },
+        {
+          "engine": "bun",
+          "minVersion": "1.0.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "1.8"
+        },
+        {
+          "engine": "nodejs",
+          "minVersion": "16.0.0"
+        },
+        {
+          "engine": "oculus",
+          "minVersion": "13.0"
+        },
+        {
+          "engine": "opera",
+          "minVersion": "73"
+        },
+        {
+          "engine": "opera_android",
+          "minVersion": "62"
+        },
+        {
+          "engine": "samsunginternet_android",
+          "minVersion": "14.0"
+        },
+        {
+          "engine": "webview_android",
+          "minVersion": "87"
+        },
+        {
+          "engine": "webview_ios",
+          "minVersion": "14.5"
+        }
+      ]
+    },
+    "Promise": {
+      "id": "Promise",
+      "type": "native",
+      "description": "Promise",
+      "webFeatureId": {
+        "featureId": "promise",
+        "compatKey": "javascript.builtins.Promise"
+      },
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Promise"
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "32"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "32"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
         },
         {
           "engine": "firefox",
@@ -6043,6 +5211,94 @@
         {
           "engine": "firefox_android",
           "minVersion": "29"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "8"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "8"
+        },
+        {
+          "engine": "bun",
+          "minVersion": "1.0.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "1.0"
+        },
+        {
+          "engine": "nodejs",
+          "minVersion": "0.12.0"
+        },
+        {
+          "engine": "oculus",
+          "minVersion": "5.0"
+        },
+        {
+          "engine": "opera",
+          "minVersion": "19"
+        },
+        {
+          "engine": "opera_android",
+          "minVersion": "19"
+        },
+        {
+          "engine": "samsunginternet_android",
+          "minVersion": "2.0"
+        },
+        {
+          "engine": "webview_android",
+          "minVersion": "4.4.3"
+        },
+        {
+          "engine": "webview_ios",
+          "minVersion": "8"
+        }
+      ]
+    },
+    "Teleport": {
+      "id": "Teleport",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "portal-vue"
+      },
+      "replacementModule": "Teleport"
+    },
+    "TextEncoder": {
+      "id": "TextEncoder",
+      "type": "native",
+      "description": "TextEncoder",
+      "webFeatureId": {
+        "featureId": "text-encoding",
+        "compatKey": "api.TextEncoder"
+      },
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/TextEncoder"
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "38"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "38"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "19"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "19"
         },
         {
           "engine": "safari",
@@ -6062,7 +5318,7 @@
         },
         {
           "engine": "nodejs",
-          "minVersion": "10.0.0"
+          "minVersion": "11.0.0"
         },
         {
           "engine": "oculus",
@@ -6070,298 +5326,23 @@
         },
         {
           "engine": "opera",
-          "minVersion": "36"
+          "minVersion": "25"
         },
         {
           "engine": "opera_android",
-          "minVersion": "36"
+          "minVersion": "25"
         },
         {
           "engine": "samsunginternet_android",
-          "minVersion": "5.0"
+          "minVersion": "3.0"
         },
         {
           "engine": "webview_android",
-          "minVersion": "49"
+          "minVersion": "38"
         },
         {
           "engine": "webview_ios",
           "minVersion": "10.3"
-        }
-      ]
-    },
-    "node:stream": {
-      "id": "node:stream",
-      "type": "native",
-      "description": "node:stream",
-      "nodeFeatureId": {
-        "moduleName": "node:stream"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/stream.html"
-      },
-      "engines": [
-        {
-          "engine": "cloudflare",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "netlify",
-          "minVersion": "24.9.0"
-        }
-      ]
-    },
-    "streams": {
-      "id": "streams",
-      "type": "native",
-      "description": "streams",
-      "webFeatureId": {
-        "featureId": "streams",
-        "compatKey": "api.ReadableStream"
-      },
-      "url": {
-        "type": "mdn",
-        "id": "Web/API/Streams_API"
-      },
-      "engines": [
-        {
-          "engine": "chrome",
-          "minVersion": "67"
-        },
-        {
-          "engine": "chrome_android",
-          "minVersion": "67"
-        },
-        {
-          "engine": "edge",
-          "minVersion": "79"
-        },
-        {
-          "engine": "firefox",
-          "minVersion": "102"
-        },
-        {
-          "engine": "firefox_android",
-          "minVersion": "102"
-        },
-        {
-          "engine": "safari",
-          "minVersion": "14.1"
-        },
-        {
-          "engine": "safari_ios",
-          "minVersion": "14.5"
-        },
-        {
-          "engine": "bun",
-          "minVersion": "1.0.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "1.0"
-        },
-        {
-          "engine": "nodejs",
-          "minVersion": "18.0.0"
-        },
-        {
-          "engine": "oculus",
-          "minVersion": "5.0"
-        },
-        {
-          "engine": "opera",
-          "minVersion": "30"
-        },
-        {
-          "engine": "opera_android",
-          "minVersion": "30"
-        },
-        {
-          "engine": "samsunginternet_android",
-          "minVersion": "4.0"
-        },
-        {
-          "engine": "webview_android",
-          "minVersion": "43"
-        },
-        {
-          "engine": "webview_ios",
-          "minVersion": "10.3"
-        }
-      ]
-    },
-    "fs.rm": {
-      "id": "fs.rm",
-      "type": "native",
-      "description": "fs.rm",
-      "nodeFeatureId": {
-        "moduleName": "node:fs/promises",
-        "exportName": "rm"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/fs.html#fspromisesrmpath-options"
-      },
-      "engines": [
-        {
-          "engine": "cloudflare",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "netlify",
-          "minVersion": "24.9.0"
-        }
-      ]
-    },
-    "fs.rmdir": {
-      "id": "fs.rmdir",
-      "type": "native",
-      "description": "fs.rmdir",
-      "nodeFeatureId": {
-        "moduleName": "node:fs/promises",
-        "exportName": "rmdir"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/fs.html#fspromisesrmdirpath-options"
-      },
-      "engines": [
-        {
-          "engine": "cloudflare",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "netlify",
-          "minVersion": "24.9.0"
-        }
-      ]
-    },
-    "Buffer.prototype.equals": {
-      "id": "Buffer.prototype.equals",
-      "type": "native",
-      "description": "Buffer.prototype.equals",
-      "nodeFeatureId": {
-        "moduleName": "node:buffer",
-        "exportName": "Buffer"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/buffer.html#bufequalsotherbuffer"
-      },
-      "engines": [
-        {
-          "engine": "cloudflare",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "vercel",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "netlify",
-          "minVersion": "24.9.0"
-        }
-      ]
-    },
-    "sort-object": {
-      "id": "sort-object",
-      "type": "removal",
-      "description": "Object.entries and Array.prototype.sort can be used to sort object keys.",
-      "url": {
-        "type": "e18e",
-        "id": "sort-object"
-      }
-    },
-    "Bun.stringWidth": {
-      "id": "Bun.stringWidth",
-      "type": "native",
-      "description": "Bun.stringWidth",
-      "url": "https://bun.com/reference/bun/stringWidth"
-    },
-    "Bun.stripANSI": {
-      "id": "Bun.stripANSI",
-      "type": "native",
-      "description": "Bun.stripANSI",
-      "url": "https://bun.com/reference/bun/stripANSI"
-    },
-    "util.stripVTControlCharacters": {
-      "id": "util.stripVTControlCharacters",
-      "type": "native",
-      "description": "util.stripVTControlCharacters",
-      "nodeFeatureId": {
-        "moduleName": "node:util",
-        "exportName": "stripVTControlCharacters"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/util.html#utilstripvtcontrolcharactersstr"
-      },
-      "engines": [
-        {
-          "engine": "cloudflare",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "vercel",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "netlify",
-          "minVersion": "24.9.0"
-        }
-      ]
-    },
-    "Deno.makeTempDir": {
-      "id": "Deno.makeTempDir",
-      "type": "native",
-      "description": "Deno.makeTempDir",
-      "url": "https://docs.deno.com/api/deno/~/Deno.makeTempDir"
-    },
-    "fs.mkdtemp": {
-      "id": "fs.mkdtemp",
-      "type": "native",
-      "description": "fs.mkdtemp",
-      "nodeFeatureId": {
-        "moduleName": "node:fs/promises",
-        "exportName": "mkdtemp"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/fs.html#fspromisesmkdtempprefix-options"
-      },
-      "engines": [
-        {
-          "engine": "cloudflare",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "deno",
-          "minVersion": "24.9.0"
-        },
-        {
-          "engine": "netlify",
-          "minVersion": "24.9.0"
         }
       ]
     },
@@ -6448,38 +5429,38 @@
         }
       ]
     },
-    "TextEncoder": {
-      "id": "TextEncoder",
+    "URLSearchParams": {
+      "id": "URLSearchParams",
       "type": "native",
-      "description": "TextEncoder",
+      "description": "URLSearchParams",
       "webFeatureId": {
-        "featureId": "text-encoding",
-        "compatKey": "api.TextEncoder"
+        "featureId": "url",
+        "compatKey": "api.URLSearchParams"
       },
       "url": {
         "type": "mdn",
-        "id": "Web/API/TextEncoder"
+        "id": "Web/API/URLSearchParams"
       },
       "engines": [
         {
           "engine": "chrome",
-          "minVersion": "38"
+          "minVersion": "49"
         },
         {
           "engine": "chrome_android",
-          "minVersion": "38"
+          "minVersion": "49"
         },
         {
           "engine": "edge",
-          "minVersion": "79"
+          "minVersion": "17"
         },
         {
           "engine": "firefox",
-          "minVersion": "19"
+          "minVersion": "29"
         },
         {
           "engine": "firefox_android",
-          "minVersion": "19"
+          "minVersion": "29"
         },
         {
           "engine": "safari",
@@ -6499,7 +5480,7 @@
         },
         {
           "engine": "nodejs",
-          "minVersion": "11.0.0"
+          "minVersion": "10.0.0"
         },
         {
           "engine": "oculus",
@@ -6507,19 +5488,19 @@
         },
         {
           "engine": "opera",
-          "minVersion": "25"
+          "minVersion": "36"
         },
         {
           "engine": "opera_android",
-          "minVersion": "25"
+          "minVersion": "36"
         },
         {
           "engine": "samsunginternet_android",
-          "minVersion": "3.0"
+          "minVersion": "5.0"
         },
         {
           "engine": "webview_android",
-          "minVersion": "38"
+          "minVersion": "49"
         },
         {
           "engine": "webview_ios",
@@ -6527,17 +5508,1048 @@
         }
       ]
     },
-    "Buffer.prototype.toString": {
-      "id": "Buffer.prototype.toString",
+    "YAML": {
+      "id": "YAML",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "js-yaml"
+      },
+      "replacementModule": "YAML"
+    },
+    "ansis": {
+      "id": "ansis",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "chalk"
+      },
+      "replacementModule": "ansis"
+    },
+    "builtinModules": {
+      "id": "builtinModules",
       "type": "native",
-      "description": "Buffer.prototype.toString",
+      "description": "builtinModules",
       "nodeFeatureId": {
-        "moduleName": "node:buffer",
-        "exportName": "Buffer"
+        "moduleName": "node:module",
+        "exportName": "builtinModules"
       },
       "url": {
         "type": "node",
-        "id": "api/buffer.html#buftostringencoding-start-end"
+        "id": "api/module.html#modulebuiltinmodules"
+      },
+      "engines": [
+        {
+          "engine": "cloudflare",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "netlify",
+          "minVersion": "24.9.0"
+        }
+      ]
+    },
+    "concurrently": {
+      "id": "concurrently",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "npm-run-all"
+      },
+      "replacementModule": "concurrently"
+    },
+    "cpx2": {
+      "id": "cpx2",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "cpx"
+      },
+      "replacementModule": "cpx2"
+    },
+    "crypto": {
+      "id": "crypto",
+      "type": "native",
+      "description": "crypto",
+      "webFeatureId": {
+        "featureId": "web-cryptography",
+        "compatKey": "api.crypto"
+      },
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/Web_Crypto_API"
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "37"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "37"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "12"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "34"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "34"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "11"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "11"
+        },
+        {
+          "engine": "bun",
+          "minVersion": "1.0.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "1.0"
+        },
+        {
+          "engine": "ie",
+          "minVersion": "11"
+        },
+        {
+          "engine": "nodejs",
+          "minVersion": "19.0.0"
+        },
+        {
+          "engine": "oculus",
+          "minVersion": "5.0"
+        },
+        {
+          "engine": "opera",
+          "minVersion": "24"
+        },
+        {
+          "engine": "opera_android",
+          "minVersion": "24"
+        },
+        {
+          "engine": "samsunginternet_android",
+          "minVersion": "3.0"
+        },
+        {
+          "engine": "webview_android",
+          "minVersion": "37"
+        },
+        {
+          "engine": "webview_ios",
+          "minVersion": "5"
+        }
+      ]
+    },
+    "date-fns": {
+      "id": "date-fns",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "moment"
+      },
+      "replacementModule": "date-fns"
+    },
+    "day.js": {
+      "id": "day.js",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "moment"
+      },
+      "replacementModule": "day.js"
+    },
+    "dequal": {
+      "id": "dequal",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "deep-equal"
+      },
+      "replacementModule": "dequal"
+    },
+    "dlv": {
+      "id": "dlv",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "dot-prop"
+      },
+      "replacementModule": "dlv"
+    },
+    "emoji-regex-xs": {
+      "id": "emoji-regex-xs",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "emoji-regex"
+      },
+      "replacementModule": "emoji-regex-xs"
+    },
+    "empathic": {
+      "id": "empathic",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "find-cache-dir"
+      },
+      "replacementModule": "empathic"
+    },
+    "es-toolkit": {
+      "id": "es-toolkit",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "lodash-underscore"
+      },
+      "replacementModule": "es-toolkit"
+    },
+    "eslint-plugin-es-x": {
+      "id": "eslint-plugin-es-x",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "eslint-plugin-es"
+      },
+      "replacementModule": "eslint-plugin-es-x"
+    },
+    "eslint-plugin-import-x": {
+      "id": "eslint-plugin-import-x",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "eslint-plugin-import"
+      },
+      "replacementModule": "eslint-plugin-import-x"
+    },
+    "eslint-plugin-n": {
+      "id": "eslint-plugin-n",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "eslint-plugin-node"
+      },
+      "replacementModule": "eslint-plugin-n"
+    },
+    "fast-deep-equal": {
+      "id": "fast-deep-equal",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "deep-equal"
+      },
+      "replacementModule": "fast-deep-equal"
+    },
+    "fast-querystring": {
+      "id": "fast-querystring",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "qs"
+      },
+      "replacementModule": "fast-querystring"
+    },
+    "fast-string-width": {
+      "id": "fast-string-width",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "string-width"
+      },
+      "replacementModule": "fast-string-width"
+    },
+    "fast-uri": {
+      "id": "fast-uri",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "uri-js"
+      },
+      "replacementModule": "fast-uri"
+    },
+    "fdir": {
+      "id": "fdir",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "glob"
+      },
+      "replacementModule": "fdir"
+    },
+    "fetch": {
+      "id": "fetch",
+      "type": "native",
+      "description": "fetch API",
+      "webFeatureId": {
+        "featureId": "fetch",
+        "compatKey": "api.fetch"
+      },
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/Fetch_API"
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "42"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "42"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "14"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "39"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "39"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "10.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "10.3"
+        },
+        {
+          "engine": "bun",
+          "minVersion": "1.0.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "1.0"
+        },
+        {
+          "engine": "nodejs",
+          "minVersion": "18.0.0"
+        },
+        {
+          "engine": "oculus",
+          "minVersion": "5.0"
+        },
+        {
+          "engine": "opera",
+          "minVersion": "29"
+        },
+        {
+          "engine": "opera_android",
+          "minVersion": "29"
+        },
+        {
+          "engine": "samsunginternet_android",
+          "minVersion": "4.0"
+        },
+        {
+          "engine": "webview_android",
+          "minVersion": "42"
+        },
+        {
+          "engine": "webview_ios",
+          "minVersion": "10.3"
+        }
+      ]
+    },
+    "fs": {
+      "id": "fs",
+      "type": "native",
+      "description": "Node file system module",
+      "nodeFeatureId": {
+        "moduleName": "node:fs"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/fs.html"
+      },
+      "engines": [
+        {
+          "engine": "cloudflare",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "netlify",
+          "minVersion": "24.9.0"
+        }
+      ]
+    },
+    "fs.access": {
+      "id": "fs.access",
+      "type": "native",
+      "description": "fs.access",
+      "nodeFeatureId": {
+        "moduleName": "node:fs/promises",
+        "exportName": "access"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fspromisesaccesspath-mode"
+      },
+      "engines": [
+        {
+          "engine": "cloudflare",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "netlify",
+          "minVersion": "24.9.0"
+        }
+      ]
+    },
+    "fs.existsSync": {
+      "id": "fs.existsSync",
+      "type": "native",
+      "description": "fs.existsSync",
+      "nodeFeatureId": {
+        "moduleName": "node:fs",
+        "exportName": "existsSync"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fsexistssyncpath"
+      },
+      "engines": [
+        {
+          "engine": "cloudflare",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "netlify",
+          "minVersion": "24.9.0"
+        }
+      ]
+    },
+    "fs.glob": {
+      "id": "fs.glob",
+      "type": "native",
+      "description": "fs.glob",
+      "nodeFeatureId": {
+        "moduleName": "node:fs",
+        "exportName": "glob"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fspromisesglobpattern-options"
+      },
+      "engines": [
+        {
+          "engine": "cloudflare",
+          "minVersion": "24.9.0"
+        }
+      ]
+    },
+    "fs.mkdir": {
+      "id": "fs.mkdir",
+      "type": "native",
+      "description": "fs.mkdir",
+      "nodeFeatureId": {
+        "moduleName": "node:fs",
+        "exportName": "mkdir"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fspromisesmkdirpath-options"
+      },
+      "engines": [
+        {
+          "engine": "cloudflare",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "netlify",
+          "minVersion": "24.9.0"
+        }
+      ]
+    },
+    "fs.mkdtemp": {
+      "id": "fs.mkdtemp",
+      "type": "native",
+      "description": "fs.mkdtemp",
+      "nodeFeatureId": {
+        "moduleName": "node:fs/promises",
+        "exportName": "mkdtemp"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fspromisesmkdtempprefix-options"
+      },
+      "engines": [
+        {
+          "engine": "cloudflare",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "netlify",
+          "minVersion": "24.9.0"
+        }
+      ]
+    },
+    "fs.rm": {
+      "id": "fs.rm",
+      "type": "native",
+      "description": "fs.rm",
+      "nodeFeatureId": {
+        "moduleName": "node:fs/promises",
+        "exportName": "rm"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fspromisesrmpath-options"
+      },
+      "engines": [
+        {
+          "engine": "cloudflare",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "netlify",
+          "minVersion": "24.9.0"
+        }
+      ]
+    },
+    "fs.rmdir": {
+      "id": "fs.rmdir",
+      "type": "native",
+      "description": "fs.rmdir",
+      "nodeFeatureId": {
+        "moduleName": "node:fs/promises",
+        "exportName": "rmdir"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fspromisesrmdirpath-options"
+      },
+      "engines": [
+        {
+          "engine": "cloudflare",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "netlify",
+          "minVersion": "24.9.0"
+        }
+      ]
+    },
+    "isBuiltin": {
+      "id": "isBuiltin",
+      "type": "native",
+      "description": "isBuiltin",
+      "nodeFeatureId": {
+        "moduleName": "node:module",
+        "exportName": "isBuiltin"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/module.html#moduleisbuiltinmodulename"
+      },
+      "engines": [
+        {
+          "engine": "cloudflare",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "netlify",
+          "minVersion": "24.9.0"
+        }
+      ]
+    },
+    "jquery": {
+      "id": "jquery",
+      "type": "removal",
+      "url": {
+        "type": "e18e",
+        "id": "jquery"
+      },
+      "description": "jQuery can be replaced with native DOM and Web APIs"
+    },
+    "jsx-ast-utils-x": {
+      "id": "jsx-ast-utils-x",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "jsx-ast-utils"
+      },
+      "replacementModule": "jsx-ast-utils-x"
+    },
+    "knip": {
+      "id": "knip",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "depcheck"
+      },
+      "replacementModule": "knip"
+    },
+    "ky": {
+      "id": "ky",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "fetch"
+      },
+      "replacementModule": "ky"
+    },
+    "lodash-underscore": {
+      "id": "lodash-underscore",
+      "type": "removal",
+      "url": {
+        "type": "e18e",
+        "id": "lodash-underscore"
+      },
+      "description": "lodash and Underscore can be replaced with native JavaScript APIs"
+    },
+    "luxon": {
+      "id": "luxon",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "moment"
+      },
+      "replacementModule": "luxon"
+    },
+    "milliparsec": {
+      "id": "milliparsec",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "body-parser"
+      },
+      "replacementModule": "milliparsec"
+    },
+    "nano-staged": {
+      "id": "nano-staged",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "lint-staged"
+      },
+      "replacementModule": "nano-staged"
+    },
+    "nanoexec": {
+      "id": "nanoexec",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "execa"
+      },
+      "replacementModule": "nanoexec"
+    },
+    "nanoid": {
+      "id": "nanoid",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "shortid"
+      },
+      "replacementModule": "nanoid"
+    },
+    "nanospinner": {
+      "id": "nanospinner",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "ora"
+      },
+      "replacementModule": "nanospinner"
+    },
+    "nativebird": {
+      "id": "nativebird",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "bluebird-q"
+      },
+      "replacementModule": "nativebird"
+    },
+    "neoqs": {
+      "id": "neoqs",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "qs"
+      },
+      "replacementModule": "neoqs"
+    },
+    "neotraverse": {
+      "id": "neotraverse",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "traverse"
+      },
+      "replacementModule": "neotraverse"
+    },
+    "node:crypto": {
+      "id": "node:crypto",
+      "type": "native",
+      "description": "node:crypto",
+      "nodeFeatureId": {
+        "moduleName": "node:crypto"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/crypto.html"
+      },
+      "engines": [
+        {
+          "engine": "cloudflare",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "netlify",
+          "minVersion": "24.9.0"
+        }
+      ]
+    },
+    "node:fs": {
+      "id": "node:fs",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "read-pkg"
+      },
+      "replacementModule": "node:fs"
+    },
+    "node:stream": {
+      "id": "node:stream",
+      "type": "native",
+      "description": "node:stream",
+      "nodeFeatureId": {
+        "moduleName": "node:stream"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/stream.html"
+      },
+      "engines": [
+        {
+          "engine": "cloudflare",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "24.9.0"
+        },
+        {
+          "engine": "netlify",
+          "minVersion": "24.9.0"
+        }
+      ]
+    },
+    "npm-run-all2": {
+      "id": "npm-run-all2",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "npm-run-all"
+      },
+      "replacementModule": "npm-run-all2"
+    },
+    "object-path": {
+      "id": "object-path",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "dot-prop"
+      },
+      "replacementModule": "object-path"
+    },
+    "ofetch": {
+      "id": "ofetch",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "fetch"
+      },
+      "replacementModule": "ofetch"
+    },
+    "ohash": {
+      "id": "ohash",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "object-hash"
+      },
+      "replacementModule": "ohash"
+    },
+    "package-manager-detector": {
+      "id": "package-manager-detector",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "detect-package-manager"
+      },
+      "replacementModule": "package-manager-detector"
+    },
+    "picocolors": {
+      "id": "picocolors",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "chalk"
+      },
+      "replacementModule": "picocolors"
+    },
+    "picoquery": {
+      "id": "picoquery",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "qs"
+      },
+      "replacementModule": "picoquery"
+    },
+    "picospinner": {
+      "id": "picospinner",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "ora"
+      },
+      "replacementModule": "picospinner"
+    },
+    "pkg-types": {
+      "id": "pkg-types",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "find-up"
+      },
+      "replacementModule": "pkg-types"
+    },
+    "premove": {
+      "id": "premove",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "rimraf"
+      },
+      "replacementModule": "premove"
+    },
+    "sort-object": {
+      "id": "sort-object",
+      "type": "removal",
+      "description": "Object.entries and Array.prototype.sort can be used to sort object keys.",
+      "url": {
+        "type": "e18e",
+        "id": "sort-object"
+      }
+    },
+    "sort-object-keys": {
+      "id": "sort-object-keys",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "sort-object"
+      },
+      "replacementModule": "sort-object-keys"
+    },
+    "sortobject": {
+      "id": "sortobject",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "sort-object"
+      },
+      "replacementModule": "sortobject"
+    },
+    "streams": {
+      "id": "streams",
+      "type": "native",
+      "description": "streams",
+      "webFeatureId": {
+        "featureId": "streams",
+        "compatKey": "api.ReadableStream"
+      },
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/Streams_API"
+      },
+      "engines": [
+        {
+          "engine": "chrome",
+          "minVersion": "67"
+        },
+        {
+          "engine": "chrome_android",
+          "minVersion": "67"
+        },
+        {
+          "engine": "edge",
+          "minVersion": "79"
+        },
+        {
+          "engine": "firefox",
+          "minVersion": "102"
+        },
+        {
+          "engine": "firefox_android",
+          "minVersion": "102"
+        },
+        {
+          "engine": "safari",
+          "minVersion": "14.1"
+        },
+        {
+          "engine": "safari_ios",
+          "minVersion": "14.5"
+        },
+        {
+          "engine": "bun",
+          "minVersion": "1.0.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "1.0"
+        },
+        {
+          "engine": "nodejs",
+          "minVersion": "18.0.0"
+        },
+        {
+          "engine": "oculus",
+          "minVersion": "5.0"
+        },
+        {
+          "engine": "opera",
+          "minVersion": "30"
+        },
+        {
+          "engine": "opera_android",
+          "minVersion": "30"
+        },
+        {
+          "engine": "samsunginternet_android",
+          "minVersion": "4.0"
+        },
+        {
+          "engine": "webview_android",
+          "minVersion": "43"
+        },
+        {
+          "engine": "webview_ios",
+          "minVersion": "10.3"
+        }
+      ]
+    },
+    "tiny-invariant": {
+      "id": "tiny-invariant",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "invariant"
+      },
+      "replacementModule": "tiny-invariant"
+    },
+    "tinyexec": {
+      "id": "tinyexec",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "execa"
+      },
+      "replacementModule": "tinyexec"
+    },
+    "tinyglobby": {
+      "id": "tinyglobby",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "fast-glob"
+      },
+      "replacementModule": "tinyglobby"
+    },
+    "unicode-segmenter": {
+      "id": "unicode-segmenter",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "graphemer"
+      },
+      "replacementModule": "unicode-segmenter"
+    },
+    "unicodeClassEscape": {
+      "id": "unicodeClassEscape",
+      "type": "native",
+      "description": "unicodeClassEscape",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape"
+      }
+    },
+    "uri-js-replace": {
+      "id": "uri-js-replace",
+      "type": "documented",
+      "url": {
+        "type": "e18e",
+        "id": "uri-js"
+      },
+      "replacementModule": "uri-js-replace"
+    },
+    "util.stripVTControlCharacters": {
+      "id": "util.stripVTControlCharacters",
+      "type": "native",
+      "description": "util.stripVTControlCharacters",
+      "nodeFeatureId": {
+        "moduleName": "node:util",
+        "exportName": "stripVTControlCharacters"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/util.html#utilstripvtcontrolcharactersstr"
       },
       "engines": [
         {
@@ -6616,24 +6628,6 @@
         }
       ]
     },
-    "unicode-segmenter": {
-      "id": "unicode-segmenter",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "graphemer"
-      },
-      "replacementModule": "unicode-segmenter"
-    },
-    "uri-js-replace": {
-      "id": "uri-js-replace",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "uri-js"
-      },
-      "replacementModule": "uri-js-replace"
-    },
     "wireit": {
       "id": "wireit",
       "type": "documented",
@@ -6652,14 +6646,19 @@
       },
       "replacementModule": "yaml"
     },
-    "YAML": {
-      "id": "YAML",
-      "type": "documented",
-      "url": {
-        "type": "e18e",
-        "id": "js-yaml"
+    "zlib.gzipSync": {
+      "id": "zlib.gzipSync",
+      "type": "native",
+      "description": "zlib.gzipSync",
+      "nodeFeatureId": {
+        "moduleName": "node:zlib",
+        "exportName": "gzipSync"
       },
-      "replacementModule": "YAML"
+      "url": {
+        "type": "node",
+        "id": "api/zlib.html#zlibgzipsyncbuffer-options"
+      },
+      "engines": []
     }
   }
 }
