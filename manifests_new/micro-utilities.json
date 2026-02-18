@@ -205,6 +205,42 @@
         {
           "engine": "safari_ios",
           "minVersion": "9"
+        },
+        {
+          "engine": "bun",
+          "minVersion": "1.0.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "1.0"
+        },
+        {
+          "engine": "nodejs",
+          "minVersion": "0.10.0"
+        },
+        {
+          "engine": "oculus",
+          "minVersion": "5.0"
+        },
+        {
+          "engine": "opera",
+          "minVersion": "15"
+        },
+        {
+          "engine": "opera_android",
+          "minVersion": "14"
+        },
+        {
+          "engine": "samsunginternet_android",
+          "minVersion": "1.5"
+        },
+        {
+          "engine": "webview_android",
+          "minVersion": "4.4"
+        },
+        {
+          "engine": "webview_ios",
+          "minVersion": "9"
         }
       ]
     },
@@ -247,6 +283,42 @@
         },
         {
           "engine": "safari_ios",
+          "minVersion": "9"
+        },
+        {
+          "engine": "bun",
+          "minVersion": "1.0.0"
+        },
+        {
+          "engine": "deno",
+          "minVersion": "1.0"
+        },
+        {
+          "engine": "nodejs",
+          "minVersion": "4.0.0"
+        },
+        {
+          "engine": "oculus",
+          "minVersion": "5.0"
+        },
+        {
+          "engine": "opera",
+          "minVersion": "28"
+        },
+        {
+          "engine": "opera_android",
+          "minVersion": "28"
+        },
+        {
+          "engine": "samsunginternet_android",
+          "minVersion": "3.0"
+        },
+        {
+          "engine": "webview_android",
+          "minVersion": "41"
+        },
+        {
+          "engine": "webview_ios",
           "minVersion": "9"
         }
       ]
