@@ -217,7 +217,8 @@
         "id": "Web/JavaScript/Reference/Global_Objects/String/repeat"
       },
       "webFeatureId": {
-        "featureId": "string-repeat"
+        "featureId": "string-repeat",
+        "compatKey": "javascript.builtins.String.repeat"
       },
       "engines": [
         {

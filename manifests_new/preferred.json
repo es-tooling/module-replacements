@@ -5267,7 +5267,8 @@
       "type": "native",
       "description": "fetch API",
       "webFeatureId": {
-        "featureId": "fetch"
+        "featureId": "fetch",
+        "compatKey": "api.fetch"
       },
       "url": {
         "type": "mdn",
@@ -5341,7 +5342,8 @@
       "type": "native",
       "description": "crypto",
       "webFeatureId": {
-        "featureId": "web-cryptography"
+        "featureId": "web-cryptography",
+        "compatKey": "api.crypto"
       },
       "url": {
         "type": "mdn",
@@ -5452,7 +5454,8 @@
       "type": "native",
       "description": "Promise",
       "webFeatureId": {
-        "featureId": "promise"
+        "featureId": "promise",
+        "compatKey": "javascript.builtins.Promise"
       },
       "url": {
         "type": "mdn",
@@ -5494,7 +5497,8 @@
       "type": "native",
       "description": "Intl.Segmenter",
       "webFeatureId": {
-        "featureId": "intl-segmenter"
+        "featureId": "intl-segmenter",
+        "compatKey": "javascript.builtins.Intl.Segmenter"
       },
       "url": {
         "type": "mdn",
@@ -5644,7 +5648,8 @@
       "type": "native",
       "description": "Date",
       "webFeatureId": {
-        "featureId": "date"
+        "featureId": "date",
+        "compatKey": "javascript.builtins.Date"
       },
       "url": {
         "type": "mdn",
@@ -5846,7 +5851,8 @@
       "type": "native",
       "description": "streams",
       "webFeatureId": {
-        "featureId": "streams"
+        "featureId": "streams",
+        "compatKey": "api.ReadableStream"
       },
       "url": {
         "type": "mdn",
@@ -6058,7 +6064,8 @@
       "type": "native",
       "description": "URL",
       "webFeatureId": {
-        "featureId": "url"
+        "featureId": "url",
+        "compatKey": "api.URL"
       },
       "url": {
         "type": "mdn",
@@ -6100,7 +6107,8 @@
       "type": "native",
       "description": "TextEncoder",
       "webFeatureId": {
-        "featureId": "text-encoding"
+        "featureId": "text-encoding",
+        "compatKey": "api.TextEncoder"
       },
       "url": {
         "type": "mdn",
