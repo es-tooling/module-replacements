@@ -173,7 +173,20 @@
           "type": "string"
         },
         "webFeatureId": {
-          "type": "string"
+          "type": "object",
+          "properties": {
+            "featureId": {
+              "type": "string"
+            },
+            "compatKey": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "featureId",
+            "compatKey"
+          ],
+          "additionalProperties": false
         },
         "nodeFeatureId": {
           "type": "object",
