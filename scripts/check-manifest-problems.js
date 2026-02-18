@@ -62,19 +62,29 @@ export async function checkManifestsForProblems() {
   console.log('OK');
 }
 
-async function checkDocPathsExist(name, manifest) {
-  for (const mod of manifest.moduleReplacements) {
-    if (!mod.docPath) {
-      continue;
-    }
+async function checkDocExists(name, id, label) {
+  const docFile = path.join(docsDir, `${id}.md`);
+  try {
+    await access(docFile);
+  } catch {
+    throw new Error(
+      `${label} in ${name} has e18e url "${id}" but ${id}.md does not exist in docs/modules/`
+    );
+  }
+}
 
-    const docFile = path.join(docsDir, `${mod.docPath}.md`);
-    try {
-      await access(docFile);
-    } catch {
-      throw new Error(
-        `Module ${mod.moduleName} in ${name} has docPath "${mod.docPath}" but ${mod.docPath}.md does not exist in docs/modules/`
-      );
+async function checkDocPathsExist(name, manifest) {
+  for (const [moduleName, mapping] of Object.entries(manifest.mappings)) {
+    const url = mapping.url;
+    if (url && typeof url !== 'string' && url.type === 'e18e') {
+      await checkDocExists(name, url.id, `Module ${moduleName}`);
+    }
+  }
+
+  for (const [id, replacement] of Object.entries(manifest.replacements)) {
+    const url = replacement.url;
+    if (url && typeof url !== 'string' && url.type === 'e18e') {
+      await checkDocExists(name, url.id, `Replacement ${id}`);
     }
   }
 }
