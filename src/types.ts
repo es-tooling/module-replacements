@@ -30,7 +30,7 @@ export interface NativeModuleReplacement extends ModuleReplacementLike {
   description: string;
   webFeatureId?: {
     featureId: string;
-    compatKey?: string;
+    compatKey: string;
   };
   nodeFeatureId?: {
     moduleName: string;

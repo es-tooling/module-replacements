@@ -25,5 +25,9 @@ for (const manifestName of manifests) {
   manifest.mappings = sortObjectKeys(manifest.mappings);
   manifest.replacements = sortObjectKeys(manifest.replacements);
 
-  await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + '\n', 'utf8');
+  await writeFile(
+    manifestPath,
+    JSON.stringify(manifest, null, 2) + '\n',
+    'utf8'
+  );
 }

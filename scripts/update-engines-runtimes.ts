@@ -43,7 +43,9 @@ async function fetchRuntimeData(): Promise<Map<RuntimeName, RuntimeData>> {
       console.log(`Fetching ${name} data from ${url}...`);
       const response = await fetch(url);
       if (!response.ok) {
-        console.warn(`Warning: Failed to fetch ${name} data: ${response.statusText}`);
+        console.warn(
+          `Warning: Failed to fetch ${name} data: ${response.statusText}`
+        );
         continue;
       }
       const data = (await response.json()) as RuntimeData;
@@ -122,7 +124,11 @@ function updateReplacementEngines(
   }
 
   const {moduleName, exportName} = replacement.nodeFeatureId;
-  const runtimeEngines = extractRuntimeEngines(allRuntimeData, moduleName, exportName);
+  const runtimeEngines = extractRuntimeEngines(
+    allRuntimeData,
+    moduleName,
+    exportName
+  );
 
   if (runtimeEngines.length === 0) {
     console.warn(
@@ -132,9 +138,10 @@ function updateReplacementEngines(
   }
 
   // Check if engines have changed
-  const existingRuntimeEngines = replacement.engines?.filter((e) =>
-    Object.keys(RUNTIME_URLS).includes(e.engine)
-  ) ?? [];
+  const existingRuntimeEngines =
+    replacement.engines?.filter((e) =>
+      Object.keys(RUNTIME_URLS).includes(e.engine)
+    ) ?? [];
 
   const enginesChanged =
     existingRuntimeEngines.length !== runtimeEngines.length ||
@@ -150,9 +157,10 @@ function updateReplacementEngines(
     return replacement;
   }
 
-  const nonRuntimeEngines = replacement.engines?.filter(
-    (e) => !Object.keys(RUNTIME_URLS).includes(e.engine)
-  ) ?? [];
+  const nonRuntimeEngines =
+    replacement.engines?.filter(
+      (e) => !Object.keys(RUNTIME_URLS).includes(e.engine)
+    ) ?? [];
 
   const updatedEngines = [...nonRuntimeEngines, ...runtimeEngines];
 

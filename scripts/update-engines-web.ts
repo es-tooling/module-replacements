@@ -11,7 +11,10 @@ import type {
 const scriptDir = fileURLToPath(new URL('.', import.meta.url));
 const manifestsDir = path.resolve(scriptDir, '../manifests');
 
-type Support = Extract<(typeof features)[string], {kind: 'feature'}>['status']['support'];
+type Support = Extract<
+  (typeof features)[string],
+  {kind: 'feature'}
+>['status']['support'];
 
 /**
  * Extract engine constraints from web-features support data
@@ -62,21 +65,15 @@ function updateReplacementEngines(
     return replacement;
   }
 
-  const support = feature.status.support;
-  let engines: EngineConstraint[];
-
-  if (compatKey) {
-    const compatSupport = feature.status.by_compat_key?.[compatKey];
-    if (!compatSupport) {
-      console.warn(
-        `Warning: Compat key '${compatKey}' not found for web feature '${featureId}'`
-      );
-      return replacement;
-    }
-    engines = extractEngines(compatSupport.support);
-  } else {
-    engines = extractEngines(support);
+  const compatSupport = feature.status.by_compat_key?.[compatKey];
+  if (!compatSupport) {
+    console.warn(
+      `Warning: Compat key '${compatKey}' not found for web feature '${featureId}'`
+    );
+    return replacement;
   }
+
+  const engines = extractEngines(compatSupport.support);
 
   if (engines.length === 0) {
     console.warn(
@@ -85,13 +82,18 @@ function updateReplacementEngines(
     return replacement;
   }
 
-  if (engines.every((e) => replacement.engines?.some((re) => re.engine === e.engine && re.minVersion === e.minVersion))) {
+  const existingEngineNames = new Set(
+    replacement.engines?.map((e) => e.engine) ?? []
+  );
+  const newEngines = engines.filter((e) => !existingEngineNames.has(e.engine));
+
+  if (newEngines.length === 0) {
     return replacement;
   }
 
   return {
     ...replacement,
-    engines
+    engines: [...(replacement.engines ?? []), ...newEngines]
   };
 }
 

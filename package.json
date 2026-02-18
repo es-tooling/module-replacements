@@ -8,12 +8,13 @@
     "build:types": "tsc --noEmit",
     "build:update-manifest-paths": "node scripts/update-manifests-dist-path.js",
     "clean": "node -e \"fs.rmSync('./dist', {force: true, recursive: true})\"",
-    "format": "prettier --write \"./src/**/*.ts\" \"./manifests/**/*.json\"",
+    "format": "prettier --write \"./src/**/*.ts\" \"./manifests/**/*.json\" scripts",
     "generate-schema": "node scripts/generate-schema.js",
     "prepare": "tshy && npm run build:update-manifest-paths",
     "test:validate": "node scripts/validate-modules.js",
     "sort-manifests": "node scripts/sort-manifests.js",
     "update-engines:web": "node scripts/update-engines-web.ts",
+    "update-engines:bcd": "node scripts/update-engines-bcd.ts",
     "update-engines:runtimes": "node scripts/update-engines-runtimes.ts"
   },
   "tshy": {
@@ -40,6 +41,7 @@
   },
   "homepage": "https://github.com/es-tooling/module-replacements#readme",
   "devDependencies": {
+    "@mdn/browser-compat-data": "^7.3.2",
     "@types/node": "^24.10.2",
     "ajv": "^8.16.0",
     "prettier": "^3.2.4",

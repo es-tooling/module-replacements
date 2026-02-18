@@ -3931,7 +3931,8 @@
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol"
       },
       "webFeatureId": {
-        "featureId": "symbol"
+        "featureId": "symbol",
+        "compatKey": "javascript.builtins.Symbol"
       },
       "engines": [
         {
@@ -4016,7 +4017,8 @@
         "id": "Web/JavaScript/Reference/Classes/extends"
       },
       "webFeatureId": {
-        "featureId": "class-syntax"
+        "featureId": "class-syntax",
+        "compatKey": "javascript.classes.extends"
       },
       "engines": [
         {
@@ -4058,7 +4060,8 @@
         "id": "Web/JavaScript/Reference/Global_Objects/RegExp/flags"
       },
       "webFeatureId": {
-        "featureId": "regexp"
+        "featureId": "regexp",
+        "compatKey": "javascript.builtins.RegExp.flags"
       },
       "engines": [
         {
@@ -4100,7 +4103,8 @@
         "id": "Web/JavaScript/Reference/Global_Objects/Error/cause"
       },
       "webFeatureId": {
-        "featureId": "error-cause"
+        "featureId": "error-cause",
+        "compatKey": "javascript.builtins.Error.cause"
       },
       "engines": [
         {
