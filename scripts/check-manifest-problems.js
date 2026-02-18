@@ -40,6 +40,16 @@ function checkManifestIsSorted(name, manifest) {
   }
 }
 
+function checkNoEngines(name, manifest) {
+  for (const [id, replacement] of Object.entries(manifest.replacements)) {
+    if (replacement.engines !== undefined) {
+      throw new Error(
+        `Replacement ${id} in ${name} has engines set. Engines are populated automatically at publish time and should not be committed.`
+      );
+    }
+  }
+}
+
 export async function checkManifestsForProblems() {
   console.log('Checking for problems in manifests...');
   const manifests = await readdir(manifestsDir);
@@ -57,6 +67,7 @@ export async function checkManifestsForProblems() {
 
     await checkManifestForDuplicates(manifestName, manifest);
     checkManifestIsSorted(manifestName, manifest);
+    checkNoEngines(manifestName, manifest);
     await checkDocPathsExist(manifestName, manifest);
   }
   console.log('OK');

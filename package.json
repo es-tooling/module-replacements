@@ -13,9 +13,11 @@
     "prepare": "tshy && npm run build:update-manifest-paths",
     "test:validate": "node scripts/validate-modules.js",
     "sort-manifests": "node scripts/sort-manifests.js",
+    "update-engines": "npm run update-engines:web && npm run update-engines:bcd && npm run update-engines:runtimes",
     "update-engines:web": "node scripts/update-engines-web.ts",
     "update-engines:bcd": "node scripts/update-engines-bcd.ts",
-    "update-engines:runtimes": "node scripts/update-engines-runtimes.ts"
+    "update-engines:runtimes": "node scripts/update-engines-runtimes.ts",
+    "prepublishOnly": "npm run update-engines"
   },
   "tshy": {
     "exports": {
