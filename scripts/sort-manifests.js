@@ -1,4 +1,5 @@
 import {readdir, readFile, writeFile} from 'node:fs/promises';
+import {format} from 'prettier';
 import {fileURLToPath} from 'node:url';
 import * as path from 'node:path';
 
@@ -27,7 +28,7 @@ for (const manifestName of manifests) {
 
   await writeFile(
     manifestPath,
-    JSON.stringify(manifest, null, 2) + '\n',
+    await format(JSON.stringify(manifest), {filepath: manifestPath}),
     'utf8'
   );
 }

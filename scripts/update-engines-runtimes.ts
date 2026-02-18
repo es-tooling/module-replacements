@@ -1,4 +1,5 @@
 import {readdir, readFile, writeFile} from 'node:fs/promises';
+import {format} from 'prettier';
 import {fileURLToPath} from 'node:url';
 import * as path from 'node:path';
 import type {
@@ -214,7 +215,7 @@ async function main() {
 
     await writeFile(
       manifestPath,
-      JSON.stringify(updatedManifest, null, 2) + '\n',
+      await format(JSON.stringify(updatedManifest), {filepath: manifestPath}),
       {encoding: 'utf8'}
     );
 
