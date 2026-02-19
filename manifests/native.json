@@ -480,6 +480,18 @@
         "compatKey": "javascript.builtins.Date"
       }
     },
+    "Error.prototype.cause": {
+      "id": "Error.prototype.cause",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Error/cause"
+      },
+      "webFeatureId": {
+        "featureId": "error-cause",
+        "compatKey": "javascript.builtins.Error.cause"
+      }
+    },
     "Function.prototype.bind": {
       "id": "Function.prototype.bind",
       "type": "native",
@@ -925,6 +937,18 @@
         "compatKey": "javascript.builtins.Reflect.ownKeys"
       }
     },
+    "RegExp.prototype.flags": {
+      "id": "RegExp.prototype.flags",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/RegExp/flags"
+      },
+      "webFeatureId": {
+        "featureId": "regexp",
+        "compatKey": "javascript.builtins.RegExp.flags"
+      }
+    },
     "String.prototype.at": {
       "id": "String.prototype.at",
       "type": "native",
@@ -1081,88 +1105,22 @@
         "compatKey": "javascript.builtins.Symbol.description"
       }
     },
-    "always::Error": {
-      "id": "always::Error",
-      "type": "native",
+    "es-errors": {
+      "id": "es-errors",
+      "type": "removal",
+      "description": "TODO",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Error"
       }
     },
-    "always::Error.prototype.cause": {
-      "id": "always::Error.prototype.cause",
-      "type": "native",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/Error/cause"
-      },
-      "webFeatureId": {
-        "featureId": "error-cause",
-        "compatKey": "javascript.builtins.Error.cause"
-      }
-    },
-    "always::Object.prototype": {
-      "id": "always::Object.prototype",
-      "type": "native",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Operators/Object_initializer#prototype_setter"
-      }
-    },
-    "always::RegExp.prototype.flags": {
-      "id": "always::RegExp.prototype.flags",
-      "type": "native",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/RegExp/flags"
-      },
-      "webFeatureId": {
-        "featureId": "regexp",
-        "compatKey": "javascript.builtins.RegExp.flags"
-      }
-    },
-    "always::String.prototype": {
-      "id": "always::String.prototype",
-      "type": "native",
+    "es-string-html-methods": {
+      "id": "es-string-html-methods",
+      "type": "removal",
+      "description": "TODO",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String#html_wrapper_methods"
-      }
-    },
-    "always::Symbol": {
-      "id": "always::Symbol",
-      "type": "native",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/Symbol"
-      },
-      "webFeatureId": {
-        "featureId": "symbol",
-        "compatKey": "javascript.builtins.Symbol"
-      }
-    },
-    "always::Symbol.toStringTag": {
-      "id": "always::Symbol.toStringTag",
-      "type": "native",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag"
-      },
-      "webFeatureId": {
-        "featureId": "symbol",
-        "compatKey": "javascript.builtins.Symbol.toStringTag"
-      }
-    },
-    "always::extends": {
-      "id": "always::extends",
-      "type": "native",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Classes/extends"
-      },
-      "webFeatureId": {
-        "featureId": "class-syntax",
-        "compatKey": "javascript.classes.extends"
       }
     },
     "for...of": {
@@ -1189,6 +1147,39 @@
         "featureId": "globalthis",
         "compatKey": "javascript.builtins.globalThis"
       }
+    },
+    "has-proto": {
+      "id": "has-proto",
+      "type": "removal",
+      "description": "TODO",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Operators/Object_initializer#prototype_setter"
+      }
+    },
+    "has-symbols": {
+      "id": "has-symbols",
+      "type": "removal",
+      "description": "TODO",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Symbol"
+      }
+    },
+    "has-tostringtag": {
+      "id": "has-tostringtag",
+      "type": "removal",
+      "description": "TODO",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag"
+      }
+    },
+    "inherits": {
+      "id": "inherits",
+      "type": "removal",
+      "description": "TODO",
+      "url": { "type": "mdn", "id": "Web/JavaScript/Reference/Classes/extends" }
     },
     "parseInt": {
       "id": "parseInt",
@@ -1407,7 +1398,7 @@
     "error-cause": {
       "type": "module",
       "moduleName": "error-cause",
-      "replacements": ["always::Error.prototype.cause"]
+      "replacements": ["Error.prototype.cause"]
     },
     "es-aggregate-error": {
       "type": "module",
@@ -1427,7 +1418,7 @@
     "es-errors": {
       "type": "module",
       "moduleName": "es-errors",
-      "replacements": ["always::Error"]
+      "replacements": ["es-errors"]
     },
     "es-shim-unscopables": {
       "type": "module",
@@ -1437,7 +1428,7 @@
     "es-string-html-methods": {
       "type": "module",
       "moduleName": "es-string-html-methods",
-      "replacements": ["always::String.prototype"]
+      "replacements": ["es-string-html-methods"]
     },
     "extend-shallow": {
       "type": "module",
@@ -1502,17 +1493,17 @@
     "has-proto": {
       "type": "module",
       "moduleName": "has-proto",
-      "replacements": ["always::Object.prototype"]
+      "replacements": ["has-proto"]
     },
     "has-symbols": {
       "type": "module",
       "moduleName": "has-symbols",
-      "replacements": ["always::Symbol"]
+      "replacements": ["has-symbols"]
     },
     "has-tostringtag": {
       "type": "module",
       "moduleName": "has-tostringtag",
-      "replacements": ["always::Symbol.toStringTag"]
+      "replacements": ["has-tostringtag"]
     },
     "hasown": {
       "type": "module",
@@ -1527,7 +1518,7 @@
     "inherits": {
       "type": "module",
       "moduleName": "inherits",
-      "replacements": ["always::extends"]
+      "replacements": ["inherits"]
     },
     "is-nan": {
       "type": "module",
@@ -1742,7 +1733,7 @@
     "regexp.prototype.flags": {
       "type": "module",
       "moduleName": "regexp.prototype.flags",
-      "replacements": ["always::RegExp.prototype.flags"]
+      "replacements": ["RegExp.prototype.flags"]
     },
     "string.prototype.at": {
       "type": "module",
