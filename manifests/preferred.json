@@ -1,2422 +1,3120 @@
 {
-  "moduleReplacements": [
-    {
-      "type": "documented",
+  "mappings": {
+    "@jsdevtools/ez-spawn": {
+      "type": "module",
       "moduleName": "@jsdevtools/ez-spawn",
-      "docPath": "ez-spawn",
-      "category": "preferred"
+      "replacements": ["tinyexec"],
+      "url": { "type": "e18e", "id": "ez-spawn" }
     },
-    {
-      "type": "documented",
+    "axios": {
+      "type": "module",
       "moduleName": "axios",
-      "docPath": "fetch",
-      "category": "preferred"
+      "replacements": ["fetch", "ky", "ofetch"],
+      "url": { "type": "e18e", "id": "fetch" }
     },
-    {
-      "type": "documented",
+    "bluebird": {
+      "type": "module",
       "moduleName": "bluebird",
-      "docPath": "bluebird-q",
-      "category": "preferred"
+      "replacements": ["Promise", "nativebird"],
+      "url": { "type": "e18e", "id": "bluebird-q" }
     },
-    {
-      "type": "documented",
+    "body-parser": {
+      "type": "module",
       "moduleName": "body-parser",
-      "docPath": "body-parser",
-      "category": "preferred"
+      "replacements": ["milliparsec"],
+      "url": { "type": "e18e", "id": "body-parser" }
     },
-    {
-      "type": "documented",
+    "buf-compare": {
+      "type": "module",
       "moduleName": "buf-compare",
-      "docPath": "buf-compare",
-      "category": "preferred"
+      "replacements": ["Buffer.compare"],
+      "url": { "type": "e18e", "id": "buf-compare" }
     },
-    {
-      "type": "documented",
+    "buffer-equal": {
+      "type": "module",
       "moduleName": "buffer-equal",
-      "docPath": "buffer-equal",
-      "category": "preferred"
+      "replacements": ["Buffer.prototype.equals"],
+      "url": { "type": "e18e", "id": "buffer-equal" }
     },
-    {
-      "type": "documented",
+    "buffer-equals": {
+      "type": "module",
       "moduleName": "buffer-equals",
-      "docPath": "buffer-equals",
-      "category": "preferred"
+      "replacements": ["Buffer.prototype.equals"],
+      "url": { "type": "e18e", "id": "buffer-equals" }
     },
-    {
-      "type": "documented",
+    "builtin-modules": {
+      "type": "module",
       "moduleName": "builtin-modules",
-      "docPath": "builtin-modules",
-      "category": "preferred"
+      "replacements": ["builtinModules"],
+      "url": { "type": "e18e", "id": "builtin-modules" }
     },
-    {
-      "type": "documented",
+    "chalk": {
+      "type": "module",
       "moduleName": "chalk",
-      "docPath": "chalk",
-      "category": "preferred"
+      "replacements": ["util.styleText", "picocolors", "ansis"],
+      "url": { "type": "e18e", "id": "chalk" }
     },
-    {
-      "type": "documented",
+    "cli-color": {
+      "type": "module",
       "moduleName": "cli-color",
-      "docPath": "chalk",
-      "category": "preferred"
+      "replacements": ["util.styleText", "picocolors", "ansis"],
+      "url": { "type": "e18e", "id": "chalk" }
     },
-    {
-      "type": "documented",
+    "core-util-is": {
+      "type": "module",
       "moduleName": "core-util-is",
-      "docPath": "core-util-is",
-      "category": "preferred"
+      "replacements": ["util.types"],
+      "url": { "type": "e18e", "id": "core-util-is" }
     },
-    {
-      "type": "documented",
+    "cpx": {
+      "type": "module",
       "moduleName": "cpx",
-      "docPath": "cpx",
-      "category": "preferred"
+      "replacements": ["cpx2"],
+      "url": { "type": "e18e", "id": "cpx" }
     },
-    {
-      "type": "documented",
+    "cross-fetch": {
+      "type": "module",
       "moduleName": "cross-fetch",
-      "docPath": "fetch",
-      "category": "preferred"
+      "replacements": ["fetch", "ky", "ofetch"],
+      "url": { "type": "e18e", "id": "fetch" }
     },
-    {
-      "type": "documented",
+    "crypto-js": {
+      "type": "module",
       "moduleName": "crypto-js",
-      "docPath": "crypto-js",
-      "category": "preferred"
+      "replacements": ["node:crypto", "crypto", "Bun.CryptoHasher"],
+      "url": { "type": "e18e", "id": "crypto-js" }
     },
-    {
-      "type": "documented",
+    "deep-equal": {
+      "type": "module",
       "moduleName": "deep-equal",
-      "docPath": "deep-equal",
-      "category": "preferred"
+      "replacements": ["dequal", "fast-deep-equal"],
+      "url": { "type": "e18e", "id": "deep-equal" }
     },
-    {
-      "type": "documented",
+    "depcheck": {
+      "type": "module",
       "moduleName": "depcheck",
-      "docPath": "depcheck",
-      "category": "preferred"
+      "replacements": ["knip"],
+      "url": { "type": "e18e", "id": "depcheck" }
     },
-    {
-      "type": "documented",
+    "detect-package-manager": {
+      "type": "module",
       "moduleName": "detect-package-manager",
-      "docPath": "detect-package-manager",
-      "category": "preferred"
+      "replacements": ["package-manager-detector"],
+      "url": { "type": "e18e", "id": "detect-package-manager" }
     },
-    {
-      "type": "documented",
+    "dot-prop": {
+      "type": "module",
       "moduleName": "dot-prop",
-      "docPath": "dot-prop",
-      "category": "preferred"
+      "replacements": ["dlv", "object-path"],
+      "url": { "type": "e18e", "id": "dot-prop" }
     },
-    {
-      "type": "documented",
+    "dotenv": {
+      "type": "module",
       "moduleName": "dotenv",
-      "docPath": "dotenv",
-      "category": "preferred"
+      "replacements": ["--env-file"],
+      "url": { "type": "e18e", "id": "dotenv" }
     },
-    {
-      "type": "documented",
+    "emoji-regex": {
+      "type": "module",
       "moduleName": "emoji-regex",
-      "docPath": "emoji-regex",
-      "category": "preferred"
+      "replacements": ["emoji-regex-xs", "unicodeClassEscape"],
+      "url": { "type": "e18e", "id": "emoji-regex" }
     },
-    {
-      "type": "documented",
+    "eslint-plugin-es": {
+      "type": "module",
       "moduleName": "eslint-plugin-es",
-      "docPath": "eslint-plugin-es",
-      "category": "preferred"
+      "replacements": ["eslint-plugin-es-x"],
+      "url": { "type": "e18e", "id": "eslint-plugin-es" }
     },
-    {
-      "type": "documented",
+    "eslint-plugin-eslint-comments": {
+      "type": "module",
       "moduleName": "eslint-plugin-eslint-comments",
-      "docPath": "eslint-plugin-eslint-comments",
-      "category": "preferred"
+      "replacements": ["@eslint-community/eslint-plugin-eslint-comments"],
+      "url": { "type": "e18e", "id": "eslint-plugin-eslint-comments" }
     },
-    {
-      "type": "documented",
+    "eslint-plugin-import": {
+      "type": "module",
       "moduleName": "eslint-plugin-import",
-      "docPath": "eslint-plugin-import",
-      "category": "preferred"
+      "replacements": ["eslint-plugin-import-x"],
+      "url": { "type": "e18e", "id": "eslint-plugin-import" }
     },
-    {
-      "type": "documented",
+    "eslint-plugin-node": {
+      "type": "module",
       "moduleName": "eslint-plugin-node",
-      "docPath": "eslint-plugin-node",
-      "category": "preferred"
+      "replacements": ["eslint-plugin-n"],
+      "url": { "type": "e18e", "id": "eslint-plugin-node" }
     },
-    {
-      "type": "documented",
+    "eslint-plugin-react": {
+      "type": "module",
       "moduleName": "eslint-plugin-react",
-      "docPath": "eslint-plugin-react",
-      "category": "preferred"
+      "replacements": ["@eslint-react/eslint-plugin"],
+      "url": { "type": "e18e", "id": "eslint-plugin-react" }
     },
-    {
-      "type": "documented",
+    "eslint-plugin-vitest": {
+      "type": "module",
       "moduleName": "eslint-plugin-vitest",
-      "docPath": "eslint-plugin-vitest",
-      "category": "preferred"
+      "replacements": ["@vitest/eslint-plugin"],
+      "url": { "type": "e18e", "id": "eslint-plugin-vitest" }
     },
-    {
-      "type": "documented",
+    "execa": {
+      "type": "module",
       "moduleName": "execa",
-      "docPath": "execa",
-      "category": "preferred"
+      "replacements": ["tinyexec", "nanoexec", "Bun.Shell"],
+      "url": { "type": "e18e", "id": "execa" }
     },
-    {
-      "type": "documented",
+    "ez-spawn": {
+      "type": "module",
       "moduleName": "ez-spawn",
-      "docPath": "ez-spawn",
-      "category": "preferred"
+      "replacements": ["tinyexec"],
+      "url": { "type": "e18e", "id": "ez-spawn" }
     },
-    {
-      "type": "documented",
+    "ezspawn": {
+      "type": "module",
       "moduleName": "ezspawn",
-      "docPath": "ez-spawn",
-      "category": "preferred"
+      "replacements": ["tinyexec"],
+      "url": { "type": "e18e", "id": "ez-spawn" }
     },
-    {
-      "type": "documented",
+    "faker": {
+      "type": "module",
       "moduleName": "faker",
-      "docPath": "faker",
-      "category": "preferred"
+      "replacements": ["@faker-js/faker"],
+      "url": { "type": "e18e", "id": "faker" }
     },
-    {
-      "type": "documented",
+    "fast-glob": {
+      "type": "module",
       "moduleName": "fast-glob",
-      "docPath": "fast-glob",
-      "category": "preferred"
+      "replacements": ["tinyglobby"],
+      "url": { "type": "e18e", "id": "fast-glob" }
     },
-    {
-      "type": "documented",
+    "find-cache-dir": {
+      "type": "module",
       "moduleName": "find-cache-dir",
-      "docPath": "find-cache-dir",
-      "category": "preferred"
+      "replacements": ["empathic"],
+      "url": { "type": "e18e", "id": "find-cache-dir" }
     },
-    {
-      "type": "documented",
+    "find-cache-directory": {
+      "type": "module",
       "moduleName": "find-cache-directory",
-      "docPath": "find-cache-directory",
-      "category": "preferred"
+      "replacements": ["empathic"],
+      "url": { "type": "e18e", "id": "find-cache-directory" }
     },
-    {
-      "type": "documented",
+    "find-file-up": {
+      "type": "module",
       "moduleName": "find-file-up",
-      "docPath": "find-file-up",
-      "category": "preferred"
+      "replacements": ["empathic"],
+      "url": { "type": "e18e", "id": "find-file-up" }
     },
-    {
-      "type": "documented",
+    "find-pkg": {
+      "type": "module",
       "moduleName": "find-pkg",
-      "docPath": "find-pkg",
-      "category": "preferred"
+      "replacements": ["empathic"],
+      "url": { "type": "e18e", "id": "find-pkg" }
     },
-    {
-      "type": "documented",
+    "find-up": {
+      "type": "module",
       "moduleName": "find-up",
-      "docPath": "find-up",
-      "category": "preferred"
+      "replacements": ["empathic", "pkg-types"],
+      "url": { "type": "e18e", "id": "find-up" }
     },
-    {
-      "type": "documented",
+    "fs-extra": {
+      "type": "module",
       "moduleName": "fs-extra",
-      "docPath": "fs-extra",
-      "category": "preferred"
+      "replacements": ["fs"],
+      "url": { "type": "e18e", "id": "fs-extra" }
     },
-    {
-      "type": "documented",
+    "get-value": {
+      "type": "module",
       "moduleName": "get-value",
-      "docPath": "dot-prop",
-      "category": "preferred"
+      "replacements": ["dlv", "object-path"],
+      "url": { "type": "e18e", "id": "dot-prop" }
     },
-    {
-      "type": "documented",
+    "glob": {
+      "type": "module",
       "moduleName": "glob",
-      "docPath": "glob",
-      "category": "preferred"
+      "replacements": ["tinyglobby", "fs.glob", "fdir"],
+      "url": { "type": "e18e", "id": "glob" }
     },
-    {
-      "type": "documented",
+    "globby": {
+      "type": "module",
       "moduleName": "globby",
-      "docPath": "globby",
-      "category": "preferred"
+      "replacements": ["tinyglobby"],
+      "url": { "type": "e18e", "id": "globby" }
     },
-    {
-      "type": "documented",
+    "grapheme-splitter": {
+      "type": "module",
       "moduleName": "grapheme-splitter",
-      "docPath": "graphemer",
-      "category": "preferred"
+      "replacements": ["Intl.Segmenter", "unicode-segmenter"],
+      "url": { "type": "e18e", "id": "graphemer" }
     },
-    {
-      "type": "documented",
+    "graphemer": {
+      "type": "module",
       "moduleName": "graphemer",
-      "docPath": "graphemer",
-      "category": "preferred"
+      "replacements": ["Intl.Segmenter", "unicode-segmenter"],
+      "url": { "type": "e18e", "id": "graphemer" }
     },
-    {
-      "type": "documented",
+    "gzip-size": {
+      "type": "module",
       "moduleName": "gzip-size",
-      "docPath": "gzip-size",
-      "category": "preferred"
+      "replacements": ["zlib.gzipSync"],
+      "url": { "type": "e18e", "id": "gzip-size" }
     },
-    {
-      "type": "documented",
+    "invariant": {
+      "type": "module",
       "moduleName": "invariant",
-      "docPath": "invariant",
-      "category": "preferred"
+      "replacements": ["tiny-invariant"],
+      "url": { "type": "e18e", "id": "invariant" }
     },
-    {
-      "type": "documented",
+    "is-builtin-module": {
+      "type": "module",
       "moduleName": "is-builtin-module",
-      "docPath": "is-builtin-module",
-      "category": "preferred"
+      "replacements": ["isBuiltin", "builtinModules"],
+      "url": { "type": "e18e", "id": "is-builtin-module" }
     },
-    {
-      "type": "documented",
+    "jquery": {
+      "type": "module",
       "moduleName": "jquery",
-      "docPath": "jquery",
-      "category": "preferred"
+      "replacements": ["jquery"],
+      "url": { "type": "e18e", "id": "jquery" }
     },
-    {
-      "type": "documented",
+    "js-yaml": {
+      "type": "module",
       "moduleName": "js-yaml",
-      "docPath": "js-yaml",
-      "category": "preferred"
+      "replacements": ["yaml", "YAML"],
+      "url": { "type": "e18e", "id": "js-yaml" }
     },
-    {
-      "type": "documented",
+    "jsx-ast-utils": {
+      "type": "module",
       "moduleName": "jsx-ast-utils",
-      "docPath": "jsx-ast-utils",
-      "category": "preferred"
+      "replacements": ["jsx-ast-utils-x"],
+      "url": { "type": "e18e", "id": "jsx-ast-utils" }
     },
-    {
-      "type": "documented",
+    "lint-staged": {
+      "type": "module",
       "moduleName": "lint-staged",
-      "docPath": "lint-staged",
-      "category": "preferred"
+      "replacements": ["nano-staged"],
+      "url": { "type": "e18e", "id": "lint-staged" }
     },
-    {
-      "type": "documented",
+    "lodash": {
+      "type": "module",
       "moduleName": "lodash",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash-amd": {
+      "type": "module",
       "moduleName": "lodash-amd",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash-compat": {
+      "type": "module",
       "moduleName": "lodash-compat",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash-es": {
+      "type": "module",
       "moduleName": "lodash-es",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash-fp": {
+      "type": "module",
       "moduleName": "lodash-fp",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash-node": {
+      "type": "module",
       "moduleName": "lodash-node",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.add": {
+      "type": "module",
       "moduleName": "lodash.add",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.after": {
+      "type": "module",
       "moduleName": "lodash.after",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.ary": {
+      "type": "module",
       "moduleName": "lodash.ary",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.assign": {
+      "type": "module",
       "moduleName": "lodash.assign",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.assignin": {
+      "type": "module",
       "moduleName": "lodash.assignin",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.assigninwith": {
+      "type": "module",
       "moduleName": "lodash.assigninwith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.assignwith": {
+      "type": "module",
       "moduleName": "lodash.assignwith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.at": {
+      "type": "module",
       "moduleName": "lodash.at",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.attempt": {
+      "type": "module",
       "moduleName": "lodash.attempt",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.before": {
+      "type": "module",
       "moduleName": "lodash.before",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.bind": {
+      "type": "module",
       "moduleName": "lodash.bind",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.bindall": {
+      "type": "module",
       "moduleName": "lodash.bindall",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.bindkey": {
+      "type": "module",
       "moduleName": "lodash.bindkey",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.callback": {
+      "type": "module",
       "moduleName": "lodash.callback",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.camelcase": {
+      "type": "module",
       "moduleName": "lodash.camelcase",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.capitalize": {
+      "type": "module",
       "moduleName": "lodash.capitalize",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.castarray": {
+      "type": "module",
       "moduleName": "lodash.castarray",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.ceil": {
+      "type": "module",
       "moduleName": "lodash.ceil",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.chunk": {
+      "type": "module",
       "moduleName": "lodash.chunk",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.clamp": {
+      "type": "module",
       "moduleName": "lodash.clamp",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.clone": {
+      "type": "module",
       "moduleName": "lodash.clone",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.clonedeep": {
+      "type": "module",
       "moduleName": "lodash.clonedeep",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.clonedeepwith": {
+      "type": "module",
       "moduleName": "lodash.clonedeepwith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.clonewith": {
+      "type": "module",
       "moduleName": "lodash.clonewith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.compact": {
+      "type": "module",
       "moduleName": "lodash.compact",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.compose": {
+      "type": "module",
       "moduleName": "lodash.compose",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.concat": {
+      "type": "module",
       "moduleName": "lodash.concat",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.cond": {
+      "type": "module",
       "moduleName": "lodash.cond",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.conforms": {
+      "type": "module",
       "moduleName": "lodash.conforms",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.conformsto": {
+      "type": "module",
       "moduleName": "lodash.conformsto",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.constant": {
+      "type": "module",
       "moduleName": "lodash.constant",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.contains": {
+      "type": "module",
       "moduleName": "lodash.contains",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.countby": {
+      "type": "module",
       "moduleName": "lodash.countby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.create": {
+      "type": "module",
       "moduleName": "lodash.create",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.createcallback": {
+      "type": "module",
       "moduleName": "lodash.createcallback",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.curry": {
+      "type": "module",
       "moduleName": "lodash.curry",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.curryright": {
+      "type": "module",
       "moduleName": "lodash.curryright",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.debounce": {
+      "type": "module",
       "moduleName": "lodash.debounce",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.deburr": {
+      "type": "module",
       "moduleName": "lodash.deburr",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.defaults": {
+      "type": "module",
       "moduleName": "lodash.defaults",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.defaultsdeep": {
+      "type": "module",
       "moduleName": "lodash.defaultsdeep",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.defaultto": {
+      "type": "module",
       "moduleName": "lodash.defaultto",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.defer": {
+      "type": "module",
       "moduleName": "lodash.defer",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.delay": {
+      "type": "module",
       "moduleName": "lodash.delay",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.difference": {
+      "type": "module",
       "moduleName": "lodash.difference",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.differenceby": {
+      "type": "module",
       "moduleName": "lodash.differenceby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.differencewith": {
+      "type": "module",
       "moduleName": "lodash.differencewith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.divide": {
+      "type": "module",
       "moduleName": "lodash.divide",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.drop": {
+      "type": "module",
       "moduleName": "lodash.drop",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.dropright": {
+      "type": "module",
       "moduleName": "lodash.dropright",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.droprightwhile": {
+      "type": "module",
       "moduleName": "lodash.droprightwhile",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.dropwhile": {
+      "type": "module",
       "moduleName": "lodash.dropwhile",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.endswith": {
+      "type": "module",
       "moduleName": "lodash.endswith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.eq": {
+      "type": "module",
       "moduleName": "lodash.eq",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.escape": {
+      "type": "module",
       "moduleName": "lodash.escape",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.escaperegexp": {
+      "type": "module",
       "moduleName": "lodash.escaperegexp",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.every": {
+      "type": "module",
       "moduleName": "lodash.every",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.fill": {
+      "type": "module",
       "moduleName": "lodash.fill",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.filter": {
+      "type": "module",
       "moduleName": "lodash.filter",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.find": {
+      "type": "module",
       "moduleName": "lodash.find",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.findindex": {
+      "type": "module",
       "moduleName": "lodash.findindex",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.findkey": {
+      "type": "module",
       "moduleName": "lodash.findkey",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.findlast": {
+      "type": "module",
       "moduleName": "lodash.findlast",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.findlastindex": {
+      "type": "module",
       "moduleName": "lodash.findlastindex",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.findlastkey": {
+      "type": "module",
       "moduleName": "lodash.findlastkey",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.findwhere": {
+      "type": "module",
       "moduleName": "lodash.findwhere",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.first": {
+      "type": "module",
       "moduleName": "lodash.first",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.flatmap": {
+      "type": "module",
       "moduleName": "lodash.flatmap",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.flatmapdeep": {
+      "type": "module",
       "moduleName": "lodash.flatmapdeep",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.flatmapdepth": {
+      "type": "module",
       "moduleName": "lodash.flatmapdepth",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.flatten": {
+      "type": "module",
       "moduleName": "lodash.flatten",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.flattendeep": {
+      "type": "module",
       "moduleName": "lodash.flattendeep",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.flattendepth": {
+      "type": "module",
       "moduleName": "lodash.flattendepth",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.flip": {
+      "type": "module",
       "moduleName": "lodash.flip",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.floor": {
+      "type": "module",
       "moduleName": "lodash.floor",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.flow": {
+      "type": "module",
       "moduleName": "lodash.flow",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.flowright": {
+      "type": "module",
       "moduleName": "lodash.flowright",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.foreach": {
+      "type": "module",
       "moduleName": "lodash.foreach",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.foreachright": {
+      "type": "module",
       "moduleName": "lodash.foreachright",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.forin": {
+      "type": "module",
       "moduleName": "lodash.forin",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.forinright": {
+      "type": "module",
       "moduleName": "lodash.forinright",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.forown": {
+      "type": "module",
       "moduleName": "lodash.forown",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.forownright": {
+      "type": "module",
       "moduleName": "lodash.forownright",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.frompairs": {
+      "type": "module",
       "moduleName": "lodash.frompairs",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.functions": {
+      "type": "module",
       "moduleName": "lodash.functions",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.functionsin": {
+      "type": "module",
       "moduleName": "lodash.functionsin",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.get": {
+      "type": "module",
       "moduleName": "lodash.get",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.groupby": {
+      "type": "module",
       "moduleName": "lodash.groupby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.gt": {
+      "type": "module",
       "moduleName": "lodash.gt",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.gte": {
+      "type": "module",
       "moduleName": "lodash.gte",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.has": {
+      "type": "module",
       "moduleName": "lodash.has",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.hasin": {
+      "type": "module",
       "moduleName": "lodash.hasin",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.head": {
+      "type": "module",
       "moduleName": "lodash.head",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.identity": {
+      "type": "module",
       "moduleName": "lodash.identity",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.includes": {
+      "type": "module",
       "moduleName": "lodash.includes",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.indexby": {
+      "type": "module",
       "moduleName": "lodash.indexby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.indexof": {
+      "type": "module",
       "moduleName": "lodash.indexof",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.initial": {
+      "type": "module",
       "moduleName": "lodash.initial",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.inrange": {
+      "type": "module",
       "moduleName": "lodash.inrange",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.intersection": {
+      "type": "module",
       "moduleName": "lodash.intersection",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.intersectionby": {
+      "type": "module",
       "moduleName": "lodash.intersectionby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.intersectionwith": {
+      "type": "module",
       "moduleName": "lodash.intersectionwith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.invert": {
+      "type": "module",
       "moduleName": "lodash.invert",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.invertby": {
+      "type": "module",
       "moduleName": "lodash.invertby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.invoke": {
+      "type": "module",
       "moduleName": "lodash.invoke",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.invokemap": {
+      "type": "module",
       "moduleName": "lodash.invokemap",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isarguments": {
+      "type": "module",
       "moduleName": "lodash.isarguments",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isarray": {
+      "type": "module",
       "moduleName": "lodash.isarray",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isarraybuffer": {
+      "type": "module",
       "moduleName": "lodash.isarraybuffer",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isarraylike": {
+      "type": "module",
       "moduleName": "lodash.isarraylike",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isarraylikeobject": {
+      "type": "module",
       "moduleName": "lodash.isarraylikeobject",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isboolean": {
+      "type": "module",
       "moduleName": "lodash.isboolean",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isbuffer": {
+      "type": "module",
       "moduleName": "lodash.isbuffer",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isdate": {
+      "type": "module",
       "moduleName": "lodash.isdate",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.iselement": {
+      "type": "module",
       "moduleName": "lodash.iselement",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isempty": {
+      "type": "module",
       "moduleName": "lodash.isempty",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isequal": {
+      "type": "module",
       "moduleName": "lodash.isequal",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isequalwith": {
+      "type": "module",
       "moduleName": "lodash.isequalwith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.iserror": {
+      "type": "module",
       "moduleName": "lodash.iserror",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isfinite": {
+      "type": "module",
       "moduleName": "lodash.isfinite",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isfunction": {
+      "type": "module",
       "moduleName": "lodash.isfunction",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isinteger": {
+      "type": "module",
       "moduleName": "lodash.isinteger",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.islength": {
+      "type": "module",
       "moduleName": "lodash.islength",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.ismap": {
+      "type": "module",
       "moduleName": "lodash.ismap",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.ismatch": {
+      "type": "module",
       "moduleName": "lodash.ismatch",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.ismatchwith": {
+      "type": "module",
       "moduleName": "lodash.ismatchwith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isnan": {
+      "type": "module",
       "moduleName": "lodash.isnan",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isnative": {
+      "type": "module",
       "moduleName": "lodash.isnative",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isnil": {
+      "type": "module",
       "moduleName": "lodash.isnil",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isnull": {
+      "type": "module",
       "moduleName": "lodash.isnull",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isnumber": {
+      "type": "module",
       "moduleName": "lodash.isnumber",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isobject": {
+      "type": "module",
       "moduleName": "lodash.isobject",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isobjectlike": {
+      "type": "module",
       "moduleName": "lodash.isobjectlike",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isplainobject": {
+      "type": "module",
       "moduleName": "lodash.isplainobject",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isregexp": {
+      "type": "module",
       "moduleName": "lodash.isregexp",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.issafeinteger": {
+      "type": "module",
       "moduleName": "lodash.issafeinteger",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isset": {
+      "type": "module",
       "moduleName": "lodash.isset",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isstring": {
+      "type": "module",
       "moduleName": "lodash.isstring",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.issymbol": {
+      "type": "module",
       "moduleName": "lodash.issymbol",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.istypedarray": {
+      "type": "module",
       "moduleName": "lodash.istypedarray",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isundefined": {
+      "type": "module",
       "moduleName": "lodash.isundefined",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isweakmap": {
+      "type": "module",
       "moduleName": "lodash.isweakmap",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.isweakset": {
+      "type": "module",
       "moduleName": "lodash.isweakset",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.iteratee": {
+      "type": "module",
       "moduleName": "lodash.iteratee",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.join": {
+      "type": "module",
       "moduleName": "lodash.join",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.kebabcase": {
+      "type": "module",
       "moduleName": "lodash.kebabcase",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.keyby": {
+      "type": "module",
       "moduleName": "lodash.keyby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.keys": {
+      "type": "module",
       "moduleName": "lodash.keys",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.keysin": {
+      "type": "module",
       "moduleName": "lodash.keysin",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.last": {
+      "type": "module",
       "moduleName": "lodash.last",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.lastindexof": {
+      "type": "module",
       "moduleName": "lodash.lastindexof",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.lowercase": {
+      "type": "module",
       "moduleName": "lodash.lowercase",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.lowerfirst": {
+      "type": "module",
       "moduleName": "lodash.lowerfirst",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.lt": {
+      "type": "module",
       "moduleName": "lodash.lt",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.lte": {
+      "type": "module",
       "moduleName": "lodash.lte",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.map": {
+      "type": "module",
       "moduleName": "lodash.map",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.mapkeys": {
+      "type": "module",
       "moduleName": "lodash.mapkeys",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.mapvalues": {
+      "type": "module",
       "moduleName": "lodash.mapvalues",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.matches": {
+      "type": "module",
       "moduleName": "lodash.matches",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.matchesproperty": {
+      "type": "module",
       "moduleName": "lodash.matchesproperty",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.max": {
+      "type": "module",
       "moduleName": "lodash.max",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.maxby": {
+      "type": "module",
       "moduleName": "lodash.maxby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.mean": {
+      "type": "module",
       "moduleName": "lodash.mean",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.meanby": {
+      "type": "module",
       "moduleName": "lodash.meanby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.memoize": {
+      "type": "module",
       "moduleName": "lodash.memoize",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.merge": {
+      "type": "module",
       "moduleName": "lodash.merge",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.mergewith": {
+      "type": "module",
       "moduleName": "lodash.mergewith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.method": {
+      "type": "module",
       "moduleName": "lodash.method",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.methodof": {
+      "type": "module",
       "moduleName": "lodash.methodof",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.min": {
+      "type": "module",
       "moduleName": "lodash.min",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.minby": {
+      "type": "module",
       "moduleName": "lodash.minby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.mixin": {
+      "type": "module",
       "moduleName": "lodash.mixin",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.modargs": {
+      "type": "module",
       "moduleName": "lodash.modargs",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.multiply": {
+      "type": "module",
       "moduleName": "lodash.multiply",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.negate": {
+      "type": "module",
       "moduleName": "lodash.negate",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.noop": {
+      "type": "module",
       "moduleName": "lodash.noop",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.now": {
+      "type": "module",
       "moduleName": "lodash.now",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.nth": {
+      "type": "module",
       "moduleName": "lodash.nth",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.ntharg": {
+      "type": "module",
       "moduleName": "lodash.ntharg",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.omit": {
+      "type": "module",
       "moduleName": "lodash.omit",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.omitby": {
+      "type": "module",
       "moduleName": "lodash.omitby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.once": {
+      "type": "module",
       "moduleName": "lodash.once",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.orderby": {
+      "type": "module",
       "moduleName": "lodash.orderby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.over": {
+      "type": "module",
       "moduleName": "lodash.over",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.overargs": {
+      "type": "module",
       "moduleName": "lodash.overargs",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.overevery": {
+      "type": "module",
       "moduleName": "lodash.overevery",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.oversome": {
+      "type": "module",
       "moduleName": "lodash.oversome",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.pad": {
+      "type": "module",
       "moduleName": "lodash.pad",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.padend": {
+      "type": "module",
       "moduleName": "lodash.padend",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.padleft": {
+      "type": "module",
       "moduleName": "lodash.padleft",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.padright": {
+      "type": "module",
       "moduleName": "lodash.padright",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.padstart": {
+      "type": "module",
       "moduleName": "lodash.padstart",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.pairs": {
+      "type": "module",
       "moduleName": "lodash.pairs",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.parseint": {
+      "type": "module",
       "moduleName": "lodash.parseint",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.partial": {
+      "type": "module",
       "moduleName": "lodash.partial",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.partialright": {
+      "type": "module",
       "moduleName": "lodash.partialright",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.partition": {
+      "type": "module",
       "moduleName": "lodash.partition",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.pick": {
+      "type": "module",
       "moduleName": "lodash.pick",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.pickby": {
+      "type": "module",
       "moduleName": "lodash.pickby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.pluck": {
+      "type": "module",
       "moduleName": "lodash.pluck",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.property": {
+      "type": "module",
       "moduleName": "lodash.property",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.propertyof": {
+      "type": "module",
       "moduleName": "lodash.propertyof",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.pull": {
+      "type": "module",
       "moduleName": "lodash.pull",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.pullall": {
+      "type": "module",
       "moduleName": "lodash.pullall",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.pullallwith": {
+      "type": "module",
       "moduleName": "lodash.pullallwith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.pullat": {
+      "type": "module",
       "moduleName": "lodash.pullat",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.random": {
+      "type": "module",
       "moduleName": "lodash.random",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.range": {
+      "type": "module",
       "moduleName": "lodash.range",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.rangeright": {
+      "type": "module",
       "moduleName": "lodash.rangeright",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.rearg": {
+      "type": "module",
       "moduleName": "lodash.rearg",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.reduce": {
+      "type": "module",
       "moduleName": "lodash.reduce",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.reduceright": {
+      "type": "module",
       "moduleName": "lodash.reduceright",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.reescape": {
+      "type": "module",
       "moduleName": "lodash.reescape",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.reevaluate": {
+      "type": "module",
       "moduleName": "lodash.reevaluate",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.reinterpolate": {
+      "type": "module",
       "moduleName": "lodash.reinterpolate",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.reject": {
+      "type": "module",
       "moduleName": "lodash.reject",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.remove": {
+      "type": "module",
       "moduleName": "lodash.remove",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.repeat": {
+      "type": "module",
       "moduleName": "lodash.repeat",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.replace": {
+      "type": "module",
       "moduleName": "lodash.replace",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.rest": {
+      "type": "module",
       "moduleName": "lodash.rest",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.restparam": {
+      "type": "module",
       "moduleName": "lodash.restparam",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.result": {
+      "type": "module",
       "moduleName": "lodash.result",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.reverse": {
+      "type": "module",
       "moduleName": "lodash.reverse",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.round": {
+      "type": "module",
       "moduleName": "lodash.round",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.sample": {
+      "type": "module",
       "moduleName": "lodash.sample",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.samplesize": {
+      "type": "module",
       "moduleName": "lodash.samplesize",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.set": {
+      "type": "module",
       "moduleName": "lodash.set",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.setwith": {
+      "type": "module",
       "moduleName": "lodash.setwith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.shuffle": {
+      "type": "module",
       "moduleName": "lodash.shuffle",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.size": {
+      "type": "module",
       "moduleName": "lodash.size",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.slice": {
+      "type": "module",
       "moduleName": "lodash.slice",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.snakecase": {
+      "type": "module",
       "moduleName": "lodash.snakecase",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.some": {
+      "type": "module",
       "moduleName": "lodash.some",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.sortby": {
+      "type": "module",
       "moduleName": "lodash.sortby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.sortbyall": {
+      "type": "module",
       "moduleName": "lodash.sortbyall",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.sortbyorder": {
+      "type": "module",
       "moduleName": "lodash.sortbyorder",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.sortedindex": {
+      "type": "module",
       "moduleName": "lodash.sortedindex",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.sortedindexby": {
+      "type": "module",
       "moduleName": "lodash.sortedindexby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.sortedindexof": {
+      "type": "module",
       "moduleName": "lodash.sortedindexof",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.sortedlastindex": {
+      "type": "module",
       "moduleName": "lodash.sortedlastindex",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.sortedlastindexby": {
+      "type": "module",
       "moduleName": "lodash.sortedlastindexby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.sortedlastindexof": {
+      "type": "module",
       "moduleName": "lodash.sortedlastindexof",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.sorteduniq": {
+      "type": "module",
       "moduleName": "lodash.sorteduniq",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.sorteduniqby": {
+      "type": "module",
       "moduleName": "lodash.sorteduniqby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.split": {
+      "type": "module",
       "moduleName": "lodash.split",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.spread": {
+      "type": "module",
       "moduleName": "lodash.spread",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.startcase": {
+      "type": "module",
       "moduleName": "lodash.startcase",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.startswith": {
+      "type": "module",
       "moduleName": "lodash.startswith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.stubarray": {
+      "type": "module",
       "moduleName": "lodash.stubarray",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.stubfalse": {
+      "type": "module",
       "moduleName": "lodash.stubfalse",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.stubobject": {
+      "type": "module",
       "moduleName": "lodash.stubobject",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.stubstring": {
+      "type": "module",
       "moduleName": "lodash.stubstring",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.stubtrue": {
+      "type": "module",
       "moduleName": "lodash.stubtrue",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.subtract": {
+      "type": "module",
       "moduleName": "lodash.subtract",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.sum": {
+      "type": "module",
       "moduleName": "lodash.sum",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.sumby": {
+      "type": "module",
       "moduleName": "lodash.sumby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.support": {
+      "type": "module",
       "moduleName": "lodash.support",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.tail": {
+      "type": "module",
       "moduleName": "lodash.tail",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.take": {
+      "type": "module",
       "moduleName": "lodash.take",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.takeright": {
+      "type": "module",
       "moduleName": "lodash.takeright",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.takerightwhile": {
+      "type": "module",
       "moduleName": "lodash.takerightwhile",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.takewhile": {
+      "type": "module",
       "moduleName": "lodash.takewhile",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.template": {
+      "type": "module",
       "moduleName": "lodash.template",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.templatesettings": {
+      "type": "module",
       "moduleName": "lodash.templatesettings",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.throttle": {
+      "type": "module",
       "moduleName": "lodash.throttle",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.times": {
+      "type": "module",
       "moduleName": "lodash.times",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.toarray": {
+      "type": "module",
       "moduleName": "lodash.toarray",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.tofinite": {
+      "type": "module",
       "moduleName": "lodash.tofinite",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.tointeger": {
+      "type": "module",
       "moduleName": "lodash.tointeger",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.tolength": {
+      "type": "module",
       "moduleName": "lodash.tolength",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.tolower": {
+      "type": "module",
       "moduleName": "lodash.tolower",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.tonumber": {
+      "type": "module",
       "moduleName": "lodash.tonumber",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.topairs": {
+      "type": "module",
       "moduleName": "lodash.topairs",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.topairsin": {
+      "type": "module",
       "moduleName": "lodash.topairsin",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.topath": {
+      "type": "module",
       "moduleName": "lodash.topath",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.toplainobject": {
+      "type": "module",
       "moduleName": "lodash.toplainobject",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.tosafeinteger": {
+      "type": "module",
       "moduleName": "lodash.tosafeinteger",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.tostring": {
+      "type": "module",
       "moduleName": "lodash.tostring",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.toupper": {
+      "type": "module",
       "moduleName": "lodash.toupper",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.transform": {
+      "type": "module",
       "moduleName": "lodash.transform",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.trim": {
+      "type": "module",
       "moduleName": "lodash.trim",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.trimend": {
+      "type": "module",
       "moduleName": "lodash.trimend",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.trimleft": {
+      "type": "module",
       "moduleName": "lodash.trimleft",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.trimright": {
+      "type": "module",
       "moduleName": "lodash.trimright",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.trimstart": {
+      "type": "module",
       "moduleName": "lodash.trimstart",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.trunc": {
+      "type": "module",
       "moduleName": "lodash.trunc",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.truncate": {
+      "type": "module",
       "moduleName": "lodash.truncate",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.unary": {
+      "type": "module",
       "moduleName": "lodash.unary",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.unescape": {
+      "type": "module",
       "moduleName": "lodash.unescape",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.union": {
+      "type": "module",
       "moduleName": "lodash.union",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.unionby": {
+      "type": "module",
       "moduleName": "lodash.unionby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.unionwith": {
+      "type": "module",
       "moduleName": "lodash.unionwith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.uniqby": {
+      "type": "module",
       "moduleName": "lodash.uniqby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.uniqueid": {
+      "type": "module",
       "moduleName": "lodash.uniqueid",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.uniqwith": {
+      "type": "module",
       "moduleName": "lodash.uniqwith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.unset": {
+      "type": "module",
       "moduleName": "lodash.unset",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.unzip": {
+      "type": "module",
       "moduleName": "lodash.unzip",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.unzipwith": {
+      "type": "module",
       "moduleName": "lodash.unzipwith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.update": {
+      "type": "module",
       "moduleName": "lodash.update",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.updatewith": {
+      "type": "module",
       "moduleName": "lodash.updatewith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.uppercase": {
+      "type": "module",
       "moduleName": "lodash.uppercase",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.upperfirst": {
+      "type": "module",
       "moduleName": "lodash.upperfirst",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.values": {
+      "type": "module",
       "moduleName": "lodash.values",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.valuesin": {
+      "type": "module",
       "moduleName": "lodash.valuesin",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.where": {
+      "type": "module",
       "moduleName": "lodash.where",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.without": {
+      "type": "module",
       "moduleName": "lodash.without",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.words": {
+      "type": "module",
       "moduleName": "lodash.words",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.wrap": {
+      "type": "module",
       "moduleName": "lodash.wrap",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.xor": {
+      "type": "module",
       "moduleName": "lodash.xor",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.xorby": {
+      "type": "module",
       "moduleName": "lodash.xorby",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.xorwith": {
+      "type": "module",
       "moduleName": "lodash.xorwith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.zip": {
+      "type": "module",
       "moduleName": "lodash.zip",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.zipobject": {
+      "type": "module",
       "moduleName": "lodash.zipobject",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.zipobjectdeep": {
+      "type": "module",
       "moduleName": "lodash.zipobjectdeep",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "lodash.zipwith": {
+      "type": "module",
       "moduleName": "lodash.zipwith",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "make-dir": {
+      "type": "module",
       "moduleName": "make-dir",
-      "docPath": "mkdirp",
-      "category": "preferred"
+      "replacements": ["fs.mkdir"],
+      "url": { "type": "e18e", "id": "mkdirp" }
     },
-    {
-      "type": "documented",
+    "materialize-css": {
+      "type": "module",
       "moduleName": "materialize-css",
-      "docPath": "materialize-css",
-      "category": "preferred"
+      "replacements": ["@materializecss/materialize", "@material/web"],
+      "url": { "type": "e18e", "id": "materialize-css" }
     },
-    {
-      "type": "documented",
+    "md5": {
+      "type": "module",
       "moduleName": "md5",
-      "docPath": "md5",
-      "category": "preferred"
+      "replacements": ["node:crypto"],
+      "url": { "type": "e18e", "id": "md5" }
     },
-    {
-      "type": "documented",
+    "mkdirp": {
+      "type": "module",
       "moduleName": "mkdirp",
-      "docPath": "mkdirp",
-      "category": "preferred"
+      "replacements": ["fs.mkdir"],
+      "url": { "type": "e18e", "id": "mkdirp" }
     },
-    {
-      "type": "documented",
+    "moment": {
+      "type": "module",
       "moduleName": "moment",
-      "docPath": "moment",
-      "category": "preferred"
+      "replacements": ["day.js", "date-fns", "luxon", "Date"],
+      "url": { "type": "e18e", "id": "moment" }
     },
-    {
-      "type": "documented",
+    "node-fetch": {
+      "type": "module",
       "moduleName": "node-fetch",
-      "docPath": "fetch",
-      "category": "preferred"
+      "replacements": ["fetch", "ky", "ofetch"],
+      "url": { "type": "e18e", "id": "fetch" }
     },
-    {
-      "type": "documented",
+    "npm-run-all": {
+      "type": "module",
       "moduleName": "npm-run-all",
-      "docPath": "npm-run-all",
-      "category": "preferred"
+      "replacements": ["npm-run-all2", "concurrently", "wireit"],
+      "url": { "type": "e18e", "id": "npm-run-all" }
     },
-    {
-      "type": "documented",
+    "object-hash": {
+      "type": "module",
       "moduleName": "object-hash",
-      "docPath": "object-hash",
-      "category": "preferred"
+      "replacements": ["ohash", "crypto", "Bun.CryptoHasher"],
+      "url": { "type": "e18e", "id": "object-hash" }
     },
-    {
-      "type": "documented",
+    "object-path": {
+      "type": "module",
       "moduleName": "object-path",
-      "docPath": "dot-prop",
-      "category": "preferred"
+      "replacements": ["dlv", "object-path"],
+      "url": { "type": "e18e", "id": "dot-prop" }
     },
-    {
-      "type": "documented",
+    "ora": {
+      "type": "module",
       "moduleName": "ora",
-      "docPath": "ora",
-      "category": "preferred"
+      "replacements": ["nanospinner", "picospinner"],
+      "url": { "type": "e18e", "id": "ora" }
     },
-    {
-      "type": "documented",
+    "package-up": {
+      "type": "module",
       "moduleName": "package-up",
-      "docPath": "find-up",
-      "category": "preferred"
+      "replacements": ["empathic", "pkg-types"],
+      "url": { "type": "e18e", "id": "find-up" }
     },
-    {
-      "type": "documented",
+    "path-exists": {
+      "type": "module",
       "moduleName": "path-exists",
-      "docPath": "path-exists",
-      "category": "preferred"
+      "replacements": ["fs.access", "fs.existsSync", "Bun.file"],
+      "url": { "type": "e18e", "id": "path-exists" }
     },
-    {
-      "type": "documented",
+    "pkg-dir": {
+      "type": "module",
       "moduleName": "pkg-dir",
-      "docPath": "pkg-dir",
-      "category": "preferred"
+      "replacements": ["empathic"],
+      "url": { "type": "e18e", "id": "pkg-dir" }
     },
-    {
-      "type": "documented",
+    "pkg-up": {
+      "type": "module",
       "moduleName": "pkg-up",
-      "docPath": "find-up",
-      "category": "preferred"
+      "replacements": ["empathic", "pkg-types"],
+      "url": { "type": "e18e", "id": "find-up" }
     },
-    {
-      "type": "documented",
+    "portal-vue": {
+      "type": "module",
       "moduleName": "portal-vue",
-      "docPath": "portal-vue",
-      "category": "preferred"
+      "replacements": ["Teleport"],
+      "url": { "type": "e18e", "id": "portal-vue" }
     },
-    {
-      "type": "documented",
+    "q": {
+      "type": "module",
       "moduleName": "q",
-      "docPath": "bluebird-q",
-      "category": "preferred"
+      "replacements": ["Promise", "nativebird"],
+      "url": { "type": "e18e", "id": "bluebird-q" }
     },
-    {
-      "type": "documented",
+    "qs": {
+      "type": "module",
       "moduleName": "qs",
-      "docPath": "qs",
-      "category": "preferred"
+      "replacements": [
+        "URLSearchParams",
+        "fast-querystring",
+        "picoquery",
+        "neoqs"
+      ],
+      "url": { "type": "e18e", "id": "qs" }
     },
-    {
-      "type": "documented",
+    "read-package-up": {
+      "type": "module",
       "moduleName": "read-package-up",
-      "docPath": "read-package-up",
-      "category": "preferred"
+      "replacements": ["pkg-types", "empathic"],
+      "url": { "type": "e18e", "id": "read-package-up" }
     },
-    {
-      "type": "documented",
+    "read-pkg": {
+      "type": "module",
       "moduleName": "read-pkg",
-      "docPath": "read-pkg",
-      "category": "preferred"
+      "replacements": ["pkg-types", "node:fs"],
+      "url": { "type": "e18e", "id": "read-pkg" }
     },
-    {
-      "type": "documented",
+    "read-pkg-up": {
+      "type": "module",
       "moduleName": "read-pkg-up",
-      "docPath": "read-pkg-up",
-      "category": "preferred"
+      "replacements": ["pkg-types", "empathic"],
+      "url": { "type": "e18e", "id": "read-pkg-up" }
     },
-    {
-      "type": "documented",
+    "readable-stream": {
+      "type": "module",
       "moduleName": "readable-stream",
-      "docPath": "readable-stream",
-      "category": "preferred"
+      "replacements": ["node:stream", "streams"],
+      "url": { "type": "e18e", "id": "readable-stream" }
     },
-    {
-      "type": "documented",
+    "rimraf": {
+      "type": "module",
       "moduleName": "rimraf",
-      "docPath": "rimraf",
-      "category": "preferred"
+      "replacements": ["fs.rm", "fs.rmdir", "premove"],
+      "url": { "type": "e18e", "id": "rimraf" }
     },
-    {
-      "type": "documented",
+    "set-value": {
+      "type": "module",
       "moduleName": "set-value",
-      "docPath": "dot-prop",
-      "category": "preferred"
+      "replacements": ["dlv", "object-path"],
+      "url": { "type": "e18e", "id": "dot-prop" }
     },
-    {
-      "type": "documented",
+    "shortid": {
+      "type": "module",
       "moduleName": "shortid",
-      "docPath": "shortid",
-      "category": "preferred"
+      "replacements": ["nanoid"],
+      "url": { "type": "e18e", "id": "shortid" }
     },
-    {
-      "type": "documented",
+    "sort-object": {
+      "type": "module",
       "moduleName": "sort-object",
-      "docPath": "sort-object",
-      "category": "preferred"
+      "replacements": ["sort-object", "sort-object-keys", "sortobject"],
+      "url": { "type": "e18e", "id": "sort-object" }
     },
-    {
-      "type": "documented",
+    "string-width": {
+      "type": "module",
       "moduleName": "string-width",
-      "docPath": "string-width",
-      "category": "preferred"
+      "replacements": ["fast-string-width", "Bun.stringWidth"],
+      "url": { "type": "e18e", "id": "string-width" }
     },
-    {
-      "type": "documented",
+    "strip-ansi": {
+      "type": "module",
       "moduleName": "strip-ansi",
-      "docPath": "strip-ansi",
-      "category": "preferred"
+      "replacements": ["util.stripVTControlCharacters", "Bun.stripANSI"],
+      "url": { "type": "e18e", "id": "strip-ansi" }
     },
-    {
-      "type": "documented",
+    "tempy": {
+      "type": "module",
       "moduleName": "tempy",
-      "docPath": "tempy",
-      "category": "preferred"
+      "replacements": ["fs.mkdtemp", "Deno.makeTempDir"],
+      "url": { "type": "e18e", "id": "tempy" }
     },
-    {
-      "type": "documented",
+    "traverse": {
+      "type": "module",
       "moduleName": "traverse",
-      "docPath": "traverse",
-      "category": "preferred"
+      "replacements": ["neotraverse"],
+      "url": { "type": "e18e", "id": "traverse" }
     },
-    {
-      "type": "documented",
+    "underscore": {
+      "type": "module",
       "moduleName": "underscore",
-      "docPath": "lodash-underscore",
-      "category": "preferred"
+      "replacements": ["lodash-underscore", "es-toolkit"],
+      "url": { "type": "e18e", "id": "lodash-underscore" }
     },
-    {
-      "type": "documented",
+    "uri-js": {
+      "type": "module",
       "moduleName": "uri-js",
-      "docPath": "uri-js",
-      "category": "preferred"
+      "replacements": ["URL", "uri-js-replace", "fast-uri"],
+      "url": { "type": "e18e", "id": "uri-js" }
     },
-    {
-      "type": "documented",
+    "utf8": {
+      "type": "module",
       "moduleName": "utf8",
-      "docPath": "utf8",
-      "category": "preferred"
+      "replacements": ["TextEncoder", "Buffer.prototype.toString"],
+      "url": { "type": "e18e", "id": "utf8" }
     },
-    {
-      "type": "documented",
+    "xmldom": {
+      "type": "module",
       "moduleName": "xmldom",
-      "docPath": "xmldom",
-      "category": "preferred"
+      "replacements": ["@xmldom/xmldom"],
+      "url": { "type": "e18e", "id": "xmldom" }
     }
-  ]
+  },
+  "replacements": {
+    "--env-file": {
+      "id": "--env-file",
+      "type": "native",
+      "description": "--env-file",
+      "url": { "type": "node", "id": "api/cli.html#--env-filefile" }
+    },
+    "@eslint-community/eslint-plugin-eslint-comments": {
+      "id": "@eslint-community/eslint-plugin-eslint-comments",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "eslint-plugin-eslint-comments" },
+      "replacementModule": "@eslint-community/eslint-plugin-eslint-comments"
+    },
+    "@eslint-react/eslint-plugin": {
+      "id": "@eslint-react/eslint-plugin",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "eslint-plugin-react" },
+      "replacementModule": "@eslint-react/eslint-plugin"
+    },
+    "@faker-js/faker": {
+      "id": "@faker-js/faker",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "faker" },
+      "replacementModule": "@faker-js/faker"
+    },
+    "@material/web": {
+      "id": "@material/web",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "materialize-css" },
+      "replacementModule": "@material/web"
+    },
+    "@materializecss/materialize": {
+      "id": "@materializecss/materialize",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "materialize-css" },
+      "replacementModule": "@materializecss/materialize"
+    },
+    "@vitest/eslint-plugin": {
+      "id": "@vitest/eslint-plugin",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "eslint-plugin-vitest" },
+      "replacementModule": "@vitest/eslint-plugin"
+    },
+    "@xmldom/xmldom": {
+      "id": "@xmldom/xmldom",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "xmldom" },
+      "replacementModule": "@xmldom/xmldom"
+    },
+    "Buffer.compare": {
+      "id": "Buffer.compare",
+      "type": "native",
+      "description": "Buffer.compare",
+      "nodeFeatureId": { "moduleName": "node:buffer", "exportName": "Buffer" },
+      "url": {
+        "type": "node",
+        "id": "api/buffer.html#static-method-buffercomparebuf1-buf2"
+      }
+    },
+    "Buffer.prototype.equals": {
+      "id": "Buffer.prototype.equals",
+      "type": "native",
+      "description": "Buffer.prototype.equals",
+      "nodeFeatureId": { "moduleName": "node:buffer", "exportName": "Buffer" },
+      "url": { "type": "node", "id": "api/buffer.html#bufequalsotherbuffer" }
+    },
+    "Buffer.prototype.toString": {
+      "id": "Buffer.prototype.toString",
+      "type": "native",
+      "description": "Buffer.prototype.toString",
+      "nodeFeatureId": { "moduleName": "node:buffer", "exportName": "Buffer" },
+      "url": {
+        "type": "node",
+        "id": "api/buffer.html#buftostringencoding-start-end"
+      }
+    },
+    "Bun.CryptoHasher": {
+      "id": "Bun.CryptoHasher",
+      "type": "native",
+      "description": "Bun.CryptoHasher",
+      "url": "https://bun.com/docs/runtime/hashing"
+    },
+    "Bun.Shell": {
+      "id": "Bun.Shell",
+      "type": "native",
+      "description": "Bun.Shell",
+      "url": "https://bun.com/docs/runtime/shell"
+    },
+    "Bun.file": {
+      "id": "Bun.file",
+      "type": "native",
+      "description": "Bun.file",
+      "url": "https://bun.com/reference/bun/file"
+    },
+    "Bun.stringWidth": {
+      "id": "Bun.stringWidth",
+      "type": "native",
+      "description": "Bun.stringWidth",
+      "url": "https://bun.com/reference/bun/stringWidth"
+    },
+    "Bun.stripANSI": {
+      "id": "Bun.stripANSI",
+      "type": "native",
+      "description": "Bun.stripANSI",
+      "url": "https://bun.com/reference/bun/stripANSI"
+    },
+    "Date": {
+      "id": "Date",
+      "type": "native",
+      "description": "Date",
+      "webFeatureId": {
+        "featureId": "date",
+        "compatKey": "javascript.builtins.Date"
+      },
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Date"
+      }
+    },
+    "Deno.makeTempDir": {
+      "id": "Deno.makeTempDir",
+      "type": "native",
+      "description": "Deno.makeTempDir",
+      "url": "https://docs.deno.com/api/deno/~/Deno.makeTempDir"
+    },
+    "Intl.Segmenter": {
+      "id": "Intl.Segmenter",
+      "type": "native",
+      "description": "Intl.Segmenter",
+      "webFeatureId": {
+        "featureId": "intl-segmenter",
+        "compatKey": "javascript.builtins.Intl.Segmenter"
+      },
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Intl/Segmenter"
+      }
+    },
+    "Promise": {
+      "id": "Promise",
+      "type": "native",
+      "description": "Promise",
+      "webFeatureId": {
+        "featureId": "promise",
+        "compatKey": "javascript.builtins.Promise"
+      },
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Promise"
+      }
+    },
+    "Teleport": {
+      "id": "Teleport",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "portal-vue" },
+      "replacementModule": "Teleport"
+    },
+    "TextEncoder": {
+      "id": "TextEncoder",
+      "type": "native",
+      "description": "TextEncoder",
+      "webFeatureId": {
+        "featureId": "text-encoding",
+        "compatKey": "api.TextEncoder"
+      },
+      "url": { "type": "mdn", "id": "Web/API/TextEncoder" }
+    },
+    "URL": {
+      "id": "URL",
+      "type": "native",
+      "description": "URL",
+      "webFeatureId": { "featureId": "url", "compatKey": "api.URL" },
+      "url": { "type": "mdn", "id": "Web/API/URL" }
+    },
+    "URLSearchParams": {
+      "id": "URLSearchParams",
+      "type": "native",
+      "description": "URLSearchParams",
+      "webFeatureId": {
+        "featureId": "url",
+        "compatKey": "api.URLSearchParams"
+      },
+      "url": { "type": "mdn", "id": "Web/API/URLSearchParams" }
+    },
+    "YAML": {
+      "id": "YAML",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "js-yaml" },
+      "replacementModule": "YAML"
+    },
+    "ansis": {
+      "id": "ansis",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "chalk" },
+      "replacementModule": "ansis"
+    },
+    "builtinModules": {
+      "id": "builtinModules",
+      "type": "native",
+      "description": "builtinModules",
+      "nodeFeatureId": {
+        "moduleName": "node:module",
+        "exportName": "builtinModules"
+      },
+      "url": { "type": "node", "id": "api/module.html#modulebuiltinmodules" }
+    },
+    "concurrently": {
+      "id": "concurrently",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "npm-run-all" },
+      "replacementModule": "concurrently"
+    },
+    "cpx2": {
+      "id": "cpx2",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "cpx" },
+      "replacementModule": "cpx2"
+    },
+    "crypto": {
+      "id": "crypto",
+      "type": "native",
+      "description": "crypto",
+      "webFeatureId": {
+        "featureId": "web-cryptography",
+        "compatKey": "api.crypto"
+      },
+      "url": { "type": "mdn", "id": "Web/API/Web_Crypto_API" }
+    },
+    "date-fns": {
+      "id": "date-fns",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "moment" },
+      "replacementModule": "date-fns"
+    },
+    "day.js": {
+      "id": "day.js",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "moment" },
+      "replacementModule": "day.js"
+    },
+    "dequal": {
+      "id": "dequal",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "deep-equal" },
+      "replacementModule": "dequal"
+    },
+    "dlv": {
+      "id": "dlv",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "dot-prop" },
+      "replacementModule": "dlv"
+    },
+    "emoji-regex-xs": {
+      "id": "emoji-regex-xs",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "emoji-regex" },
+      "replacementModule": "emoji-regex-xs"
+    },
+    "empathic": {
+      "id": "empathic",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "find-cache-dir" },
+      "replacementModule": "empathic"
+    },
+    "es-toolkit": {
+      "id": "es-toolkit",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "lodash-underscore" },
+      "replacementModule": "es-toolkit"
+    },
+    "eslint-plugin-es-x": {
+      "id": "eslint-plugin-es-x",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "eslint-plugin-es" },
+      "replacementModule": "eslint-plugin-es-x"
+    },
+    "eslint-plugin-import-x": {
+      "id": "eslint-plugin-import-x",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "eslint-plugin-import" },
+      "replacementModule": "eslint-plugin-import-x"
+    },
+    "eslint-plugin-n": {
+      "id": "eslint-plugin-n",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "eslint-plugin-node" },
+      "replacementModule": "eslint-plugin-n"
+    },
+    "fast-deep-equal": {
+      "id": "fast-deep-equal",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "deep-equal" },
+      "replacementModule": "fast-deep-equal"
+    },
+    "fast-querystring": {
+      "id": "fast-querystring",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "qs" },
+      "replacementModule": "fast-querystring"
+    },
+    "fast-string-width": {
+      "id": "fast-string-width",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "string-width" },
+      "replacementModule": "fast-string-width"
+    },
+    "fast-uri": {
+      "id": "fast-uri",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "uri-js" },
+      "replacementModule": "fast-uri"
+    },
+    "fdir": {
+      "id": "fdir",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "glob" },
+      "replacementModule": "fdir"
+    },
+    "fetch": {
+      "id": "fetch",
+      "type": "native",
+      "description": "fetch API",
+      "webFeatureId": { "featureId": "fetch", "compatKey": "api.fetch" },
+      "url": { "type": "mdn", "id": "Web/API/Fetch_API" }
+    },
+    "fs": {
+      "id": "fs",
+      "type": "native",
+      "description": "Node file system module",
+      "nodeFeatureId": { "moduleName": "node:fs" },
+      "url": { "type": "node", "id": "api/fs.html" }
+    },
+    "fs.access": {
+      "id": "fs.access",
+      "type": "native",
+      "description": "fs.access",
+      "nodeFeatureId": {
+        "moduleName": "node:fs/promises",
+        "exportName": "access"
+      },
+      "url": { "type": "node", "id": "api/fs.html#fspromisesaccesspath-mode" }
+    },
+    "fs.existsSync": {
+      "id": "fs.existsSync",
+      "type": "native",
+      "description": "fs.existsSync",
+      "nodeFeatureId": { "moduleName": "node:fs", "exportName": "existsSync" },
+      "url": { "type": "node", "id": "api/fs.html#fsexistssyncpath" }
+    },
+    "fs.glob": {
+      "id": "fs.glob",
+      "type": "native",
+      "description": "fs.glob",
+      "nodeFeatureId": { "moduleName": "node:fs", "exportName": "glob" },
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fspromisesglobpattern-options"
+      }
+    },
+    "fs.mkdir": {
+      "id": "fs.mkdir",
+      "type": "native",
+      "description": "fs.mkdir",
+      "nodeFeatureId": { "moduleName": "node:fs", "exportName": "mkdir" },
+      "url": { "type": "node", "id": "api/fs.html#fspromisesmkdirpath-options" }
+    },
+    "fs.mkdtemp": {
+      "id": "fs.mkdtemp",
+      "type": "native",
+      "description": "fs.mkdtemp",
+      "nodeFeatureId": {
+        "moduleName": "node:fs/promises",
+        "exportName": "mkdtemp"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fspromisesmkdtempprefix-options"
+      }
+    },
+    "fs.rm": {
+      "id": "fs.rm",
+      "type": "native",
+      "description": "fs.rm",
+      "nodeFeatureId": { "moduleName": "node:fs/promises", "exportName": "rm" },
+      "url": { "type": "node", "id": "api/fs.html#fspromisesrmpath-options" }
+    },
+    "fs.rmdir": {
+      "id": "fs.rmdir",
+      "type": "native",
+      "description": "fs.rmdir",
+      "nodeFeatureId": {
+        "moduleName": "node:fs/promises",
+        "exportName": "rmdir"
+      },
+      "url": { "type": "node", "id": "api/fs.html#fspromisesrmdirpath-options" }
+    },
+    "isBuiltin": {
+      "id": "isBuiltin",
+      "type": "native",
+      "description": "isBuiltin",
+      "nodeFeatureId": {
+        "moduleName": "node:module",
+        "exportName": "isBuiltin"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/module.html#moduleisbuiltinmodulename"
+      }
+    },
+    "jquery": {
+      "id": "jquery",
+      "type": "removal",
+      "url": { "type": "e18e", "id": "jquery" },
+      "description": "jQuery can be replaced with native DOM and Web APIs"
+    },
+    "jsx-ast-utils-x": {
+      "id": "jsx-ast-utils-x",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "jsx-ast-utils" },
+      "replacementModule": "jsx-ast-utils-x"
+    },
+    "knip": {
+      "id": "knip",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "depcheck" },
+      "replacementModule": "knip"
+    },
+    "ky": {
+      "id": "ky",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "fetch" },
+      "replacementModule": "ky"
+    },
+    "lodash-underscore": {
+      "id": "lodash-underscore",
+      "type": "removal",
+      "url": { "type": "e18e", "id": "lodash-underscore" },
+      "description": "lodash and Underscore can be replaced with native JavaScript APIs"
+    },
+    "luxon": {
+      "id": "luxon",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "moment" },
+      "replacementModule": "luxon"
+    },
+    "milliparsec": {
+      "id": "milliparsec",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "body-parser" },
+      "replacementModule": "milliparsec"
+    },
+    "nano-staged": {
+      "id": "nano-staged",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "lint-staged" },
+      "replacementModule": "nano-staged"
+    },
+    "nanoexec": {
+      "id": "nanoexec",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "execa" },
+      "replacementModule": "nanoexec"
+    },
+    "nanoid": {
+      "id": "nanoid",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "shortid" },
+      "replacementModule": "nanoid"
+    },
+    "nanospinner": {
+      "id": "nanospinner",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "ora" },
+      "replacementModule": "nanospinner"
+    },
+    "nativebird": {
+      "id": "nativebird",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "bluebird-q" },
+      "replacementModule": "nativebird"
+    },
+    "neoqs": {
+      "id": "neoqs",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "qs" },
+      "replacementModule": "neoqs"
+    },
+    "neotraverse": {
+      "id": "neotraverse",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "traverse" },
+      "replacementModule": "neotraverse"
+    },
+    "node:crypto": {
+      "id": "node:crypto",
+      "type": "native",
+      "description": "node:crypto",
+      "nodeFeatureId": { "moduleName": "node:crypto" },
+      "url": { "type": "node", "id": "api/crypto.html" }
+    },
+    "node:fs": {
+      "id": "node:fs",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "read-pkg" },
+      "replacementModule": "node:fs"
+    },
+    "node:stream": {
+      "id": "node:stream",
+      "type": "native",
+      "description": "node:stream",
+      "nodeFeatureId": { "moduleName": "node:stream" },
+      "url": { "type": "node", "id": "api/stream.html" }
+    },
+    "npm-run-all2": {
+      "id": "npm-run-all2",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "npm-run-all" },
+      "replacementModule": "npm-run-all2"
+    },
+    "object-path": {
+      "id": "object-path",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "dot-prop" },
+      "replacementModule": "object-path"
+    },
+    "ofetch": {
+      "id": "ofetch",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "fetch" },
+      "replacementModule": "ofetch"
+    },
+    "ohash": {
+      "id": "ohash",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "object-hash" },
+      "replacementModule": "ohash"
+    },
+    "package-manager-detector": {
+      "id": "package-manager-detector",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "detect-package-manager" },
+      "replacementModule": "package-manager-detector"
+    },
+    "picocolors": {
+      "id": "picocolors",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "chalk" },
+      "replacementModule": "picocolors"
+    },
+    "picoquery": {
+      "id": "picoquery",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "qs" },
+      "replacementModule": "picoquery"
+    },
+    "picospinner": {
+      "id": "picospinner",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "ora" },
+      "replacementModule": "picospinner"
+    },
+    "pkg-types": {
+      "id": "pkg-types",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "find-up" },
+      "replacementModule": "pkg-types"
+    },
+    "premove": {
+      "id": "premove",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "rimraf" },
+      "replacementModule": "premove"
+    },
+    "sort-object": {
+      "id": "sort-object",
+      "type": "removal",
+      "description": "Object.entries and Array.prototype.sort can be used to sort object keys.",
+      "url": { "type": "e18e", "id": "sort-object" }
+    },
+    "sort-object-keys": {
+      "id": "sort-object-keys",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "sort-object" },
+      "replacementModule": "sort-object-keys"
+    },
+    "sortobject": {
+      "id": "sortobject",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "sort-object" },
+      "replacementModule": "sortobject"
+    },
+    "streams": {
+      "id": "streams",
+      "type": "native",
+      "description": "streams",
+      "webFeatureId": {
+        "featureId": "streams",
+        "compatKey": "api.ReadableStream"
+      },
+      "url": { "type": "mdn", "id": "Web/API/Streams_API" }
+    },
+    "tiny-invariant": {
+      "id": "tiny-invariant",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "invariant" },
+      "replacementModule": "tiny-invariant"
+    },
+    "tinyexec": {
+      "id": "tinyexec",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "execa" },
+      "replacementModule": "tinyexec"
+    },
+    "tinyglobby": {
+      "id": "tinyglobby",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "fast-glob" },
+      "replacementModule": "tinyglobby"
+    },
+    "unicode-segmenter": {
+      "id": "unicode-segmenter",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "graphemer" },
+      "replacementModule": "unicode-segmenter"
+    },
+    "unicodeClassEscape": {
+      "id": "unicodeClassEscape",
+      "type": "native",
+      "description": "unicodeClassEscape",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape"
+      }
+    },
+    "uri-js-replace": {
+      "id": "uri-js-replace",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "uri-js" },
+      "replacementModule": "uri-js-replace"
+    },
+    "util.stripVTControlCharacters": {
+      "id": "util.stripVTControlCharacters",
+      "type": "native",
+      "description": "util.stripVTControlCharacters",
+      "nodeFeatureId": {
+        "moduleName": "node:util",
+        "exportName": "stripVTControlCharacters"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/util.html#utilstripvtcontrolcharactersstr"
+      }
+    },
+    "util.styleText": {
+      "id": "util.styleText",
+      "type": "native",
+      "description": "util.styleText",
+      "nodeFeatureId": { "moduleName": "node:util", "exportName": "styleText" },
+      "url": {
+        "type": "node",
+        "id": "api/util.html#utilstyletextformat-text-options"
+      }
+    },
+    "util.types": {
+      "id": "util.types",
+      "type": "native",
+      "description": "util.types",
+      "nodeFeatureId": { "moduleName": "node:util", "exportName": "types" },
+      "url": { "type": "node", "id": "api/util.html#utiltypes" }
+    },
+    "wireit": {
+      "id": "wireit",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "npm-run-all" },
+      "replacementModule": "wireit"
+    },
+    "yaml": {
+      "id": "yaml",
+      "type": "documented",
+      "url": { "type": "e18e", "id": "js-yaml" },
+      "replacementModule": "yaml"
+    },
+    "zlib.gzipSync": {
+      "id": "zlib.gzipSync",
+      "type": "native",
+      "description": "zlib.gzipSync",
+      "nodeFeatureId": { "moduleName": "node:zlib", "exportName": "gzipSync" },
+      "url": {
+        "type": "node",
+        "id": "api/zlib.html#zlibgzipsyncbuffer-options"
+      }
+    }
+  }
 }

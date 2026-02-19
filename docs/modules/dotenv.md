@@ -4,7 +4,7 @@ description: Native Node.js alternatives to the dotenv package for loading and m
 
 # Replacements for `dotenv`
 
-## Node.js `--env-file` / `--env-file-if-exists`
+## `--env-file` / `--env-file-if-exists` (native, Node.js)
 
 [`--env-file`](https://nodejs.org/dist/latest-v20.x/docs/api/cli.html#--env-fileconfig) (Node.js v20.6.0+) and [`--env-file-if-exists`](https://nodejs.org/docs/latest-v22.x/api/cli.html#--env-file-if-existsfile) (Node.js v22.9.0+) can be passed as command-line flags to load environment variables from a specified file.
 

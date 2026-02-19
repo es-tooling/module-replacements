@@ -8,38 +8,44 @@ const docsDir = path.resolve(scriptDir, '../docs/modules');
 const seenModules = new Set();
 
 async function checkManifestForDuplicates(name, manifest) {
-  const seenInThisManifest = new Set();
-
-  for (const mod of manifest.moduleReplacements) {
-    if (seenInThisManifest.has(mod.moduleName)) {
-      throw new Error(
-        `Module ${mod.moduleName} was found multiple times in ${name}`
-      );
+  for (const moduleName of Object.keys(manifest.mappings)) {
+    if (seenModules.has(moduleName)) {
+      throw new Error(`Module ${moduleName} was found in multiple manifests`);
     }
-    if (seenModules.has(mod.moduleName)) {
-      throw new Error(
-        `Module ${mod.moduleName} was found in multiple manifests`
-      );
-    }
-    seenInThisManifest.add(mod.moduleName);
-    seenModules.add(mod.moduleName);
+    seenModules.add(moduleName);
   }
 }
 
 function checkManifestIsSorted(name, manifest) {
-  const sorted = [...manifest.moduleReplacements].sort((a, b) => {
-    if (a.moduleName === b.moduleName) {
-      return 0;
-    }
-    return a.moduleName > b.moduleName ? 1 : -1;
-  });
+  const keys = Object.keys(manifest.mappings);
+  const sorted = [...keys].sort();
 
   for (let i = 0; i < sorted.length; i++) {
-    const mod = sorted[i];
-    const unsortedMod = manifest.moduleReplacements[i];
+    if (keys[i] !== sorted[i]) {
+      throw new Error(
+        `Manifest ${name} mappings should be sorted by module name (a-z)`
+      );
+    }
+  }
 
-    if (mod !== unsortedMod) {
-      throw new Error(`Manifest ${name} should be sorted by module name (a-z)`);
+  const replacementKeys = Object.keys(manifest.replacements);
+  const sortedReplacementKeys = [...replacementKeys].sort();
+
+  for (let i = 0; i < sortedReplacementKeys.length; i++) {
+    if (replacementKeys[i] !== sortedReplacementKeys[i]) {
+      throw new Error(
+        `Manifest ${name} replacements should be sorted by id (a-z)`
+      );
+    }
+  }
+}
+
+function checkNoEngines(name, manifest) {
+  for (const [id, replacement] of Object.entries(manifest.replacements)) {
+    if (replacement.engines !== undefined) {
+      throw new Error(
+        `Replacement ${id} in ${name} has engines set. Engines are populated automatically at publish time and should not be committed.`
+      );
     }
   }
 }
@@ -61,24 +67,35 @@ export async function checkManifestsForProblems() {
 
     await checkManifestForDuplicates(manifestName, manifest);
     checkManifestIsSorted(manifestName, manifest);
+    checkNoEngines(manifestName, manifest);
     await checkDocPathsExist(manifestName, manifest);
   }
   console.log('OK');
 }
 
-async function checkDocPathsExist(name, manifest) {
-  for (const mod of manifest.moduleReplacements) {
-    if (!mod.docPath) {
-      continue;
-    }
+async function checkDocExists(name, id, label) {
+  const docFile = path.join(docsDir, `${id}.md`);
+  try {
+    await access(docFile);
+  } catch {
+    throw new Error(
+      `${label} in ${name} has e18e url "${id}" but ${id}.md does not exist in docs/modules/`
+    );
+  }
+}
 
-    const docFile = path.join(docsDir, `${mod.docPath}.md`);
-    try {
-      await access(docFile);
-    } catch {
-      throw new Error(
-        `Module ${mod.moduleName} in ${name} has docPath "${mod.docPath}" but ${mod.docPath}.md does not exist in docs/modules/`
-      );
+async function checkDocPathsExist(name, manifest) {
+  for (const [moduleName, mapping] of Object.entries(manifest.mappings)) {
+    const url = mapping.url;
+    if (url && typeof url !== 'string' && url.type === 'e18e') {
+      await checkDocExists(name, url.id, `Module ${moduleName}`);
+    }
+  }
+
+  for (const [id, replacement] of Object.entries(manifest.replacements)) {
+    const url = replacement.url;
+    if (url && typeof url !== 'string' && url.type === 'e18e') {
+      await checkDocExists(name, url.id, `Replacement ${id}`);
     }
   }
 }

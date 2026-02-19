@@ -4,7 +4,7 @@ description: Modern alternatives to moment.js for date manipulation and formatti
 
 # Replacements for `Moment.js`
 
-## `Day.js`
+## `day.js`
 
 [Day.js](https://github.com/iamkun/dayjs/) provides a similar API to Moment.js with a much smaller footprint.
 
@@ -41,7 +41,7 @@ const lastWeek = moment().subtract(1, 'week') // [!code --]
 const lastWeek = subWeeks(new Date(), 1) // [!code ++]
 ```
 
-## `Luxon`
+## `luxon`
 
 [Luxon](https://github.com/moment/luxon) is created by a Moment.js maintainer and offers powerful internationalization support.
 
@@ -61,7 +61,7 @@ const tomorrow = moment().add(1, 'day') // [!code --]
 const tomorrow = DateTime.now().plus({ days: 1 }) // [!code ++]
 ```
 
-## Native JavaScript `Date`
+## `Date` (native)
 
 For simple use cases, native JavaScript [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) and [`Intl`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) APIs may be sufficient:
 

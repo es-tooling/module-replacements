@@ -4,7 +4,7 @@ description: Modern alternatives to the sort-object package for sorting object k
 
 # Replacements for `sort-object`
 
-## JavaScript APIs (`Object.keys` + `Array.sort`)
+## `Object.entries` and `Array.sort` (native)
 
 For simple cases:
 

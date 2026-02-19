@@ -12,7 +12,12 @@
     "generate-schema": "node scripts/generate-schema.js",
     "prepare": "tshy && npm run build:update-manifest-paths",
     "test:validate": "node scripts/validate-modules.js",
-    "sort-manifests": "node scripts/sort-manifests.js"
+    "sort-manifests": "node scripts/sort-manifests.js",
+    "update-engines": "npm run update-engines:web && npm run update-engines:bcd && npm run update-engines:runtimes",
+    "update-engines:web": "node scripts/update-engines-web.ts",
+    "update-engines:bcd": "node scripts/update-engines-bcd.ts",
+    "update-engines:runtimes": "node scripts/update-engines-runtimes.ts",
+    "prepublishOnly": "npm run update-engines"
   },
   "tshy": {
     "exports": {
@@ -38,12 +43,14 @@
   },
   "homepage": "https://github.com/es-tooling/module-replacements#readme",
   "devDependencies": {
-    "@types/node": "^20.14.9",
+    "@mdn/browser-compat-data": "^7.3.2",
+    "@types/node": "^24.10.2",
     "ajv": "^8.16.0",
     "prettier": "^3.8.1",
-    "ts-json-schema-generator": "^2.3.0",
+    "ts-json-schema-generator": "^2.4.0",
     "tshy": "^1.11.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.9.3",
+    "web-features": "^3.11.0"
   },
   "exports": {
     ".": {

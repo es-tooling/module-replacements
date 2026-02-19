@@ -24,9 +24,9 @@ export async function validateModuleList() {
       await readFile(manifestPath, {encoding: 'utf8'})
     );
 
-    for (const mod of manifestObj.moduleReplacements) {
-      if (mod.type === 'documented') {
-        allDocPaths.push(mod.docPath);
+    for (const mapping of Object.values(manifestObj.mappings)) {
+      if (mapping.url && mapping.url.type === 'e18e') {
+        allDocPaths.push(mapping.url.id);
       }
     }
   }

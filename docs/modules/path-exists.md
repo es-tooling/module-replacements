@@ -4,7 +4,7 @@ description: Modern alternatives to the path-exists package for checking if a pa
 
 # Replacements for `path-exists`
 
-## Node.js (async)
+## Async `fs.access` (native, Node.js)
 
 Use [`fs/promises.access`](https://nodejs.org/docs/latest/api/fs.html#fspromisesaccesspath-mode) and return a boolean.
 
@@ -20,7 +20,7 @@ const exists = await access('/etc/passwd').then( // [!code ++]
 ) // [!code ++]
 ```
 
-## Node.js (sync)
+## Sync `fs.existsSync` (native, Node.js)
 
 Added in v0.1.21: synchronous path/file existence check via [`fs.existsSync`](https://nodejs.org/docs/latest/api/fs.html#fsexistssyncpath).
 
