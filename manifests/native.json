@@ -3,7 +3,6 @@
     "%TypedArray%.prototype.buffer": {
       "id": "%TypedArray%.prototype.buffer",
       "type": "native",
-      "description": "%TypedArray%.prototype.buffer",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/buffer"
@@ -16,7 +15,6 @@
     "%TypedArray%.prototype.byteLength": {
       "id": "%TypedArray%.prototype.byteLength",
       "type": "native",
-      "description": "%TypedArray%.prototype.byteLength",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/byteLength"
@@ -29,7 +27,6 @@
     "%TypedArray%.prototype.byteOffset": {
       "id": "%TypedArray%.prototype.byteOffset",
       "type": "native",
-      "description": "%TypedArray%.prototype.byteOffset",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/byteOffset"
@@ -42,7 +39,6 @@
     "%TypedArray%.prototype.length": {
       "id": "%TypedArray%.prototype.length",
       "type": "native",
-      "description": "%TypedArray%.prototype.length",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/length"
@@ -55,7 +51,6 @@
     "%TypedArray%.prototype.slice": {
       "id": "%TypedArray%.prototype.slice",
       "type": "native",
-      "description": "%TypedArray%.prototype.slice",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/TypedArray/slice"
@@ -68,7 +63,6 @@
     "AggregateError": {
       "id": "AggregateError",
       "type": "native",
-      "description": "AggregateError",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/AggregateError"
@@ -81,7 +75,6 @@
     "Array.from": {
       "id": "Array.from",
       "type": "native",
-      "description": "Array.from",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/from"
@@ -94,7 +87,6 @@
     "Array.of": {
       "id": "Array.of",
       "type": "native",
-      "description": "Array.of",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/of"
@@ -107,7 +99,6 @@
     "Array.prototype.at": {
       "id": "Array.prototype.at",
       "type": "native",
-      "description": "Array.prototype.at",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/at"
@@ -120,7 +111,6 @@
     "Array.prototype.concat": {
       "id": "Array.prototype.concat",
       "type": "native",
-      "description": "Array.prototype.concat",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/concat"
@@ -133,7 +123,6 @@
     "Array.prototype.copyWithin": {
       "id": "Array.prototype.copyWithin",
       "type": "native",
-      "description": "Array.prototype.copyWithin",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/copyWithin"
@@ -146,7 +135,6 @@
     "Array.prototype.entries": {
       "id": "Array.prototype.entries",
       "type": "native",
-      "description": "Array.prototype.entries",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/entries"
@@ -159,7 +147,6 @@
     "Array.prototype.every": {
       "id": "Array.prototype.every",
       "type": "native",
-      "description": "Array.prototype.every",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/every"
@@ -172,7 +159,6 @@
     "Array.prototype.filter": {
       "id": "Array.prototype.filter",
       "type": "native",
-      "description": "Array.prototype.filter",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/filter"
@@ -185,7 +171,6 @@
     "Array.prototype.find": {
       "id": "Array.prototype.find",
       "type": "native",
-      "description": "Array.prototype.find",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/find"
@@ -198,7 +183,6 @@
     "Array.prototype.findIndex": {
       "id": "Array.prototype.findIndex",
       "type": "native",
-      "description": "Array.prototype.findIndex",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/findIndex"
@@ -211,7 +195,6 @@
     "Array.prototype.flat": {
       "id": "Array.prototype.flat",
       "type": "native",
-      "description": "Array.prototype.flat",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/flat"
@@ -224,7 +207,6 @@
     "Array.prototype.flatMap": {
       "id": "Array.prototype.flatMap",
       "type": "native",
-      "description": "Array.prototype.flatMap",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/flatMap"
@@ -237,7 +219,6 @@
     "Array.prototype.forEach": {
       "id": "Array.prototype.forEach",
       "type": "native",
-      "description": "Array.prototype.forEach",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/forEach"
@@ -250,7 +231,6 @@
     "Array.prototype.includes": {
       "id": "Array.prototype.includes",
       "type": "native",
-      "description": "Array.prototype.includes",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/includes"
@@ -263,7 +243,6 @@
     "Array.prototype.indexOf": {
       "id": "Array.prototype.indexOf",
       "type": "native",
-      "description": "Array.prototype.indexOf",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/indexOf"
@@ -276,7 +255,6 @@
     "Array.prototype.join": {
       "id": "Array.prototype.join",
       "type": "native",
-      "description": "Array.prototype.join",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/join"
@@ -289,7 +267,6 @@
     "Array.prototype.keys": {
       "id": "Array.prototype.keys",
       "type": "native",
-      "description": "Array.prototype.keys",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/keys"
@@ -302,7 +279,6 @@
     "Array.prototype.lastIndexOf": {
       "id": "Array.prototype.lastIndexOf",
       "type": "native",
-      "description": "Array.prototype.lastIndexOf",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"
@@ -315,7 +291,6 @@
     "Array.prototype.map": {
       "id": "Array.prototype.map",
       "type": "native",
-      "description": "Array.prototype.map",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/map"
@@ -328,7 +303,6 @@
     "Array.prototype.push": {
       "id": "Array.prototype.push",
       "type": "native",
-      "description": "Array.prototype.push",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/push"
@@ -341,7 +315,6 @@
     "Array.prototype.reduce": {
       "id": "Array.prototype.reduce",
       "type": "native",
-      "description": "Array.prototype.reduce",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/reduce"
@@ -354,7 +327,6 @@
     "Array.prototype.reduceRight": {
       "id": "Array.prototype.reduceRight",
       "type": "native",
-      "description": "Array.prototype.reduceRight",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/reduceRight"
@@ -367,7 +339,6 @@
     "Array.prototype.slice": {
       "id": "Array.prototype.slice",
       "type": "native",
-      "description": "Array.prototype.slice",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/slice"
@@ -380,7 +351,6 @@
     "Array.prototype.some": {
       "id": "Array.prototype.some",
       "type": "native",
-      "description": "Array.prototype.some",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/some"
@@ -393,7 +363,6 @@
     "Array.prototype.splice": {
       "id": "Array.prototype.splice",
       "type": "native",
-      "description": "Array.prototype.splice",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/splice"
@@ -406,7 +375,6 @@
     "Array.prototype.unshift": {
       "id": "Array.prototype.unshift",
       "type": "native",
-      "description": "Array.prototype.unshift",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/unshift"
@@ -419,7 +387,6 @@
     "Array.prototype.values": {
       "id": "Array.prototype.values",
       "type": "native",
-      "description": "Array.prototype.values",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/values"
@@ -432,7 +399,6 @@
     "Array.prototype[Symbol.unscopables]": {
       "id": "Array.prototype[Symbol.unscopables]",
       "type": "native",
-      "description": "Array.prototype[Symbol.unscopables]",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Array/@@unscopables"
@@ -445,7 +411,6 @@
     "ArrayBuffer.prototype.byteLength": {
       "id": "ArrayBuffer.prototype.byteLength",
       "type": "native",
-      "description": "ArrayBuffer.prototype.byteLength",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/ArrayBuffer/byteLength"
@@ -458,7 +423,6 @@
     "ArrayBuffer.prototype.slice": {
       "id": "ArrayBuffer.prototype.slice",
       "type": "native",
-      "description": "ArrayBuffer.prototype.slice",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/ArrayBuffer/slice"
@@ -471,7 +435,6 @@
     "DataView.prototype.buffer": {
       "id": "DataView.prototype.buffer",
       "type": "native",
-      "description": "DataView.prototype.buffer",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/DataView/buffer"
@@ -484,7 +447,6 @@
     "DataView.prototype.byteLength": {
       "id": "DataView.prototype.byteLength",
       "type": "native",
-      "description": "DataView.prototype.byteLength",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/DataView/byteLength"
@@ -497,7 +459,6 @@
     "DataView.prototype.byteOffset": {
       "id": "DataView.prototype.byteOffset",
       "type": "native",
-      "description": "DataView.prototype.byteOffset",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/DataView/byteOffset"
@@ -510,7 +471,6 @@
     "Date": {
       "id": "Date",
       "type": "native",
-      "description": "Date",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Date"
@@ -523,7 +483,6 @@
     "Function.prototype.bind": {
       "id": "Function.prototype.bind",
       "type": "native",
-      "description": "Function.prototype.bind",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Function/bind"
@@ -536,7 +495,6 @@
     "Function.prototype.name": {
       "id": "Function.prototype.name",
       "type": "native",
-      "description": "Use functions `.name` property",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Function/name"
@@ -549,7 +507,6 @@
     "Math.acosh": {
       "id": "Math.acosh",
       "type": "native",
-      "description": "Math.acosh",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/acosh"
@@ -562,7 +519,6 @@
     "Math.atanh": {
       "id": "Math.atanh",
       "type": "native",
-      "description": "Math.atanh",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/atanh"
@@ -575,7 +531,6 @@
     "Math.cbrt": {
       "id": "Math.cbrt",
       "type": "native",
-      "description": "Math.cbrt",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/cbrt"
@@ -588,7 +543,6 @@
     "Math.clz32": {
       "id": "Math.clz32",
       "type": "native",
-      "description": "Math.clz32",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/clz32"
@@ -601,7 +555,6 @@
     "Math.f16round": {
       "id": "Math.f16round",
       "type": "native",
-      "description": "Math.f16round",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/f16round"
@@ -614,7 +567,6 @@
     "Math.fround": {
       "id": "Math.fround",
       "type": "native",
-      "description": "Math.fround",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/fround"
@@ -627,7 +579,6 @@
     "Math.imul": {
       "id": "Math.imul",
       "type": "native",
-      "description": "Math.imul",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/imul"
@@ -640,7 +591,6 @@
     "Math.log10": {
       "id": "Math.log10",
       "type": "native",
-      "description": "Math.log10",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/log10"
@@ -653,7 +603,6 @@
     "Math.log1p": {
       "id": "Math.log1p",
       "type": "native",
-      "description": "Math.log1p",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/log1p"
@@ -666,7 +615,6 @@
     "Math.sign": {
       "id": "Math.sign",
       "type": "native",
-      "description": "Math.sign",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Math/sign"
@@ -679,7 +627,6 @@
     "Number.isFinite": {
       "id": "Number.isFinite",
       "type": "native",
-      "description": "Number.isFinite",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/isFinite"
@@ -692,7 +639,6 @@
     "Number.isInteger": {
       "id": "Number.isInteger",
       "type": "native",
-      "description": "Number.isInteger",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/isInteger"
@@ -705,7 +651,6 @@
     "Number.isNaN": {
       "id": "Number.isNaN",
       "type": "native",
-      "description": "Number.isNaN",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/isNaN"
@@ -718,7 +663,6 @@
     "Number.isSafeInteger": {
       "id": "Number.isSafeInteger",
       "type": "native",
-      "description": "Number.isSafeInteger",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger"
@@ -731,7 +675,6 @@
     "Number.parseFloat": {
       "id": "Number.parseFloat",
       "type": "native",
-      "description": "Number.parseFloat",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/parseFloat"
@@ -744,7 +687,6 @@
     "Number.parseInt": {
       "id": "Number.parseInt",
       "type": "native",
-      "description": "Number.parseInt",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/parseInt"
@@ -757,7 +699,6 @@
     "Number.prototype.toExponential": {
       "id": "Number.prototype.toExponential",
       "type": "native",
-      "description": "Number.prototype.toExponential",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/toExponential"
@@ -783,7 +724,6 @@
     "Object.defineProperties": {
       "id": "Object.defineProperties",
       "type": "native",
-      "description": "Object.defineProperties",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/defineProperties"
@@ -796,7 +736,6 @@
     "Object.defineProperty": {
       "id": "Object.defineProperty",
       "type": "native",
-      "description": "Object.defineProperty",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/defineProperty"
@@ -809,7 +748,6 @@
     "Object.entries": {
       "id": "Object.entries",
       "type": "native",
-      "description": "Object.entries",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/entries"
@@ -822,7 +760,6 @@
     "Object.fromEntries": {
       "id": "Object.fromEntries",
       "type": "native",
-      "description": "Object.fromEntries",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/fromEntries"
@@ -835,7 +772,6 @@
     "Object.getOwnPropertyDescriptor": {
       "id": "Object.getOwnPropertyDescriptor",
       "type": "native",
-      "description": "Object.getOwnPropertyDescriptor",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor"
@@ -848,7 +784,6 @@
     "Object.getOwnPropertyDescriptors": {
       "id": "Object.getOwnPropertyDescriptors",
       "type": "native",
-      "description": "Object.getOwnPropertyDescriptors",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors"
@@ -861,7 +796,6 @@
     "Object.getPrototypeOf": {
       "id": "Object.getPrototypeOf",
       "type": "native",
-      "description": "Object.getPrototypeOf",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf"
@@ -874,7 +808,6 @@
     "Object.hasOwn": {
       "id": "Object.hasOwn",
       "type": "native",
-      "description": "Object.hasOwn",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/hasOwn"
@@ -887,7 +820,6 @@
     "Object.is": {
       "id": "Object.is",
       "type": "native",
-      "description": "Object.is",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/is"
@@ -900,7 +832,6 @@
     "Object.keys": {
       "id": "Object.keys",
       "type": "native",
-      "description": "Object.keys(obj)",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/keys"
@@ -913,7 +844,6 @@
     "Object.prototype.hasOwnProperty": {
       "id": "Object.prototype.hasOwnProperty",
       "type": "native",
-      "description": "Object.prototype.hasOwnProperty.call(obj, prop)",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty"
@@ -926,7 +856,6 @@
     "Object.values": {
       "id": "Object.values",
       "type": "native",
-      "description": "Object.values",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/values"
@@ -939,7 +868,6 @@
     "Promise.allSettled": {
       "id": "Promise.allSettled",
       "type": "native",
-      "description": "Promise.allSettled",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Promise/allSettled"
@@ -952,7 +880,6 @@
     "Promise.any": {
       "id": "Promise.any",
       "type": "native",
-      "description": "Promise.any",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Promise/any"
@@ -965,7 +892,6 @@
     "Promise.prototype.finally": {
       "id": "Promise.prototype.finally",
       "type": "native",
-      "description": "Promise.prototype.finally",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Promise/finally"
@@ -978,7 +904,6 @@
     "Reflect.getPrototypeOf": {
       "id": "Reflect.getPrototypeOf",
       "type": "native",
-      "description": "Reflect.getPrototypeOf",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Reflect/getPrototypeOf"
@@ -991,7 +916,6 @@
     "Reflect.ownKeys": {
       "id": "Reflect.ownKeys",
       "type": "native",
-      "description": "Reflect.ownKeys",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Reflect/ownKeys"
@@ -1004,7 +928,6 @@
     "String.prototype.at": {
       "id": "String.prototype.at",
       "type": "native",
-      "description": "String.prototype.at",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/at"
@@ -1017,7 +940,6 @@
     "String.prototype.lastIndexOf": {
       "id": "String.prototype.lastIndexOf",
       "type": "native",
-      "description": "String.prototype.lastIndexOf",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/lastIndexOf"
@@ -1030,7 +952,6 @@
     "String.prototype.matchAll": {
       "id": "String.prototype.matchAll",
       "type": "native",
-      "description": "String.prototype.matchAll",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/matchAll"
@@ -1043,7 +964,6 @@
     "String.prototype.padEnd": {
       "id": "String.prototype.padEnd",
       "type": "native",
-      "description": "String.prototype.padEnd",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/padEnd"
@@ -1056,7 +976,6 @@
     "String.prototype.padStart": {
       "id": "String.prototype.padStart",
       "type": "native",
-      "description": "String.prototype.padStart",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/padStart"
@@ -1069,7 +988,6 @@
     "String.prototype.replaceAll": {
       "id": "String.prototype.replaceAll",
       "type": "native",
-      "description": "String.prototype.replaceAll",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/replaceAll"
@@ -1082,7 +1000,6 @@
     "String.prototype.split": {
       "id": "String.prototype.split",
       "type": "native",
-      "description": "String.prototype.split",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/split"
@@ -1095,7 +1012,6 @@
     "String.prototype.substr": {
       "id": "String.prototype.substr",
       "type": "native",
-      "description": "String.prototype.substr",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/substr"
@@ -1108,7 +1024,6 @@
     "String.prototype.trim": {
       "id": "String.prototype.trim",
       "type": "native",
-      "description": "String.prototype.trim",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/trim"
@@ -1121,7 +1036,6 @@
     "String.prototype.trimEnd": {
       "id": "String.prototype.trimEnd",
       "type": "native",
-      "description": "String.prototype.trimEnd",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/trimEnd"
@@ -1134,7 +1048,6 @@
     "String.prototype.trimStart": {
       "id": "String.prototype.trimStart",
       "type": "native",
-      "description": "String.prototype.trimStart",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/trimStart"
@@ -1147,7 +1060,6 @@
     "String.raw": {
       "id": "String.raw",
       "type": "native",
-      "description": "String.raw",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/raw"
@@ -1160,7 +1072,6 @@
     "Symbol.prototype.description": {
       "id": "Symbol.prototype.description",
       "type": "native",
-      "description": "Symbol.prototype.description",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol/description"
@@ -1173,7 +1084,6 @@
     "always::Error": {
       "id": "always::Error",
       "type": "native",
-      "description": "Error / EvalError / RangeError / ReferenceError / SyntaxError / TypeError / URIError",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Error"
@@ -1182,7 +1092,6 @@
     "always::Error.prototype.cause": {
       "id": "always::Error.prototype.cause",
       "type": "native",
-      "description": "Use errors `.cause` property and second `Error` constructors argument to define it",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Error/cause"
@@ -1195,7 +1104,6 @@
     "always::Object.prototype": {
       "id": "always::Object.prototype",
       "type": "native",
-      "description": "Always `true`",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Operators/Object_initializer#prototype_setter"
@@ -1204,7 +1112,6 @@
     "always::RegExp.prototype.flags": {
       "id": "always::RegExp.prototype.flags",
       "type": "native",
-      "description": "RegExp.prototype.flags (e.g. \"/foo/g.flags\")",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/RegExp/flags"
@@ -1217,7 +1124,6 @@
     "always::String.prototype": {
       "id": "always::String.prototype",
       "type": "native",
-      "description": "String.prototype.{ anchor, big, blink, bold, fixed, fontcolor, fontsize, italics, link, small, strike, sub, sup }",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String#html_wrapper_methods"
@@ -1226,7 +1132,6 @@
     "always::Symbol": {
       "id": "always::Symbol",
       "type": "native",
-      "description": "Always `true`",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol"
@@ -1239,7 +1144,6 @@
     "always::Symbol.toStringTag": {
       "id": "always::Symbol.toStringTag",
       "type": "native",
-      "description": "Always `true`",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag"
@@ -1252,7 +1156,6 @@
     "always::extends": {
       "id": "always::extends",
       "type": "native",
-      "description": "Use native class syntax",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Classes/extends"
@@ -1278,7 +1181,6 @@
     "globalThis": {
       "id": "globalThis",
       "type": "native",
-      "description": "globalThis",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/globalThis"
@@ -1291,7 +1193,6 @@
     "parseInt": {
       "id": "parseInt",
       "type": "native",
-      "description": "parseInt",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/parseInt"
