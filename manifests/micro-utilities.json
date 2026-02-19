@@ -3,7 +3,6 @@
     "Number.isFinite": {
       "id": "Number.isFinite",
       "type": "native",
-      "description": "Number.isFinite",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Number/isFinite"
@@ -16,7 +15,6 @@
     "String.prototype.repeat": {
       "id": "String.prototype.repeat",
       "type": "native",
-      "description": "String.prototype.repeat",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String/repeat"

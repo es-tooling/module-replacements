@@ -205,7 +205,6 @@
         }
       },
       "required": [
-        "description",
         "id",
         "type",
         "url"

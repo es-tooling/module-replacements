@@ -27,7 +27,7 @@ export interface DocumentedModuleReplacement extends ModuleReplacementLike {
 export interface NativeModuleReplacement extends ModuleReplacementLike {
   type: 'native';
   url: KnownUrl;
-  description: string;
+  description?: string;
   webFeatureId?: {
     featureId: string;
     compatKey: string;
