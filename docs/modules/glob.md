@@ -47,7 +47,8 @@ for await (const result of glob('src/**/*.ts', { cwd })) {
 }
 ```
 
-> [!NOTE] Node's built-in `glob` is more minimal and does not support negation patterns or fine-grained options like setting a max depth out of the box.
+> [!NOTE]
+> Node's built-in `glob` is more minimal and does not support negation patterns or fine-grained options like setting a max depth out of the box.
 
 ## `fdir`
 
