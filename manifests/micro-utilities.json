@@ -51,7 +51,7 @@
     "snippet::array-unique": {
       "id": "snippet::array-unique",
       "type": "simple",
-      "description": "You can create a new Set from your array to remove duplicates and then spread it back into an array.",
+      "description": "You can convert to and from a Set to remove duplicates from an array.",
       "example": "const unique = (arr) => [...new Set(arr)]"
     },
     "snippet::call-bind": {
@@ -87,7 +87,7 @@
     "snippet::is-ci": {
       "id": "snippet::is-ci",
       "type": "simple",
-      "description": "Every major CI provider sets a unique environment variable that you can check for to detect if you're running in a CI environment.",
+      "description": "Every major CI provider sets a CI environment variable that you can use to detect if you're running in a CI environment.",
       "example": "Boolean(process.env.CI)"
     },
     "snippet::is-date": {
@@ -99,7 +99,7 @@
     "snippet::is-even": {
       "id": "snippet::is-even",
       "type": "simple",
-      "description": "You can use the module operator to check if a number is even.",
+      "description": "You can use the modulo operator to check if a number is even.",
       "example": "(n % 2) === 0"
     },
     "snippet::is-negative": {
@@ -129,7 +129,7 @@
     "snippet::is-odd": {
       "id": "snippet::is-odd",
       "type": "simple",
-      "description": "You can use the module operator to check if a number is odd.",
+      "description": "You can use the modulo operator to check if a number is odd.",
       "example": "(n % 2) === 1"
     },
     "snippet::is-primitve": {
@@ -166,7 +166,7 @@
       "id": "snippet::is-whitespace",
       "type": "simple",
       "description": "You can check if a string contains only whitespace with RegExp or by trimming it and comparing it to an empty string.",
-      "example": "const isWhitespace = (str) => str.trim() === \"\" || /^\\s*$/.test(str);"
+      "example": "const isWhitespace = (str) => /^\\s*$/.test(str);"
     },
     "snippet::is-windows": {
       "id": "snippet::is-windows",
