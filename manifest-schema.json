@@ -235,6 +235,9 @@
         },
         "description": {
           "type": "string"
+        },
+        "example": {
+          "type": "string"
         }
       },
       "required": [

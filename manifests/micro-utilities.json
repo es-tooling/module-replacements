@@ -27,172 +27,206 @@
     "snippet::array-coerce": {
       "id": "snippet::array-coerce",
       "type": "simple",
-      "description": "Use (v == null ? [] : Array.isArray(v) ? v : [v])"
+      "description": "You can use a combination of a ternary operator and Array.isArray to make sure a value, undefined, null or an array is always returned as an array.",
+      "example": "(arr == null ? [] : Array.isArray(arr) ? arr : [arr])"
     },
     "snippet::array-difference": {
       "id": "snippet::array-difference",
       "type": "simple",
-      "description": "Use a.filter((item) => !b.includes(item))"
+      "description": "You can use a combination of filter and includes to calculate the difference between two arrays.",
+      "example": "const difference = (a, b) => a.filter((item) => !b.includes(item))"
     },
     "snippet::array-last": {
       "id": "snippet::array-last",
       "type": "simple",
-      "description": "Use arr.at(-1) or arr[arr.length - 1]"
+      "description": "You can use arr.at(-1) if supported or arr[arr.length - 1] to get the last element of an array.",
+      "example": "const last = (arr) => arr.at(-1);\n// or in older environments\nconst last = (arr) => arr[arr.length - 1]"
     },
     "snippet::array-union": {
       "id": "snippet::array-union",
       "type": "simple",
-      "description": "Use [...new Set([...a, ...b])]"
+      "description": "You can use a combination of the spread operator and Set to create a union of two arrays.",
+      "example": "const union = (a, b) => [...new Set([...a, ...b])]"
     },
     "snippet::array-unique": {
       "id": "snippet::array-unique",
       "type": "simple",
-      "description": "Use [...new Set(arr)]"
+      "description": "You can convert to and from a Set to remove duplicates from an array.",
+      "example": "const unique = (arr) => [...new Set(arr)]"
     },
     "snippet::call-bind": {
       "id": "snippet::call-bind",
       "type": "simple",
-      "description": "Use Function.call.bind(v)"
+      "description": "Every modern runtime provides a way to bind to the call method of a function.",
+      "example": "const fnBound = Function.call.bind(fn)"
     },
     "snippet::get-iterator": {
       "id": "snippet::get-iterator",
       "type": "simple",
-      "description": "Use v[Symbol.iterator]?.()"
+      "description": "Every modern runtime provides a way to get the iterator function through the Symbol.iterator symbol.",
+      "example": "const iterator = obj[Symbol.iterator]?.()"
     },
     "snippet::has-argv": {
       "id": "snippet::has-argv",
       "type": "simple",
-      "description": "Use process.argv.includes('--flag')"
+      "description": "You can use the includes method on the process.argv array to check if a flag is present.",
+      "example": "process.argv.includes('--flag')"
     },
     "snippet::is-arraybuffer": {
       "id": "snippet::is-arraybuffer",
       "type": "simple",
-      "description": "Use v instanceof ArrayBuffer, or if cross-realm, use Object.prototype.toString.call(v) === \"[object ArrayBuffer]\""
+      "description": "You can use `instanceof ArrayBuffer`, or if cross-realm, use Object.prototype.toString.call(obj) === \"[object ArrayBuffer]\"",
+      "example": "const isArrayBuffer = obj instanceof ArrayBuffer;\n// for cross-realm\nconst isArrayBufferCrossRealm = Object.prototype.toString.call(obj) === \"[object ArrayBuffer]\""
     },
     "snippet::is-boolean": {
       "id": "snippet::is-boolean",
       "type": "simple",
-      "description": "Use Object.prototype.toString.call(v) === \"[object Boolean]\""
+      "description": "You can use typeof to check if a value is a boolean primitive, and Object.prototype.toString.call to check if it's a Boolean object.",
+      "example": "Object.prototype.toString.call(v) === \"[object Boolean]\""
     },
     "snippet::is-ci": {
       "id": "snippet::is-ci",
       "type": "simple",
-      "description": "Use Boolean(process.env.CI)"
+      "description": "Every major CI provider sets a CI environment variable that you can use to detect if you're running in a CI environment.",
+      "example": "Boolean(process.env.CI)"
     },
     "snippet::is-date": {
       "id": "snippet::is-date",
       "type": "simple",
-      "description": "Use v instanceof Date, or if cross-realm, use Object.prototype.toString.call(v) === \"[object Date]\""
+      "description": "You can use `instanceof Date`, or if cross-realm, use Object.prototype.toString.call(v) === \"[object Date]\"",
+      "example": "const isDate = v instanceof Date;\n// for cross-realm\nconst isDateCrossRealm = Object.prototype.toString.call(v) === \"[object Date]\""
     },
     "snippet::is-even": {
       "id": "snippet::is-even",
       "type": "simple",
-      "description": "Use (n % 2) === 0"
+      "description": "You can use the modulo operator to check if a number is even.",
+      "example": "(n % 2) === 0"
     },
     "snippet::is-negative": {
       "id": "snippet::is-negative",
       "type": "simple",
-      "description": "Use (n) => n < 0"
+      "description": "You can check if a number is less than 0 to determine if it's negative.",
+      "example": "(n) => n < 0"
     },
     "snippet::is-negative-zero": {
       "id": "snippet::is-negative-zero",
       "type": "simple",
-      "description": "Use Object.is(v, -0)"
+      "description": "You can use `Object.is` to check if a value is negative zero.",
+      "example": "Object.is(n, -0)"
     },
     "snippet::is-npm": {
       "id": "snippet::is-npm",
       "type": "simple",
-      "description": "Use process.env.npm_config_user_agent?.startsWith(\"npm\")"
+      "description": "If the current environment is npm the `npm_config_user_agent` environment variable will be set and start with \"npm\".",
+      "example": "const isNpm = process.env.npm_config_user_agent?.startsWith(\"npm\")"
     },
     "snippet::is-object": {
       "id": "snippet::is-object",
       "type": "simple",
-      "description": "Use v && typeof v === \"object\" && (Object.getPrototypeOf(v) === null || Object.getPrototypeOf(v) === Object.prototype)"
+      "description": "You can use `typeof` to check if a value is an object and `Object.getPrototypeOf` to ensure it's a plain object.",
+      "example": "const isObject = (obj) => obj && typeof obj === \"object\" && (Object.getPrototypeOf(obj) === null || Object.getPrototypeOf(obj) === Object.prototype);"
     },
     "snippet::is-odd": {
       "id": "snippet::is-odd",
       "type": "simple",
-      "description": "Use (n % 2) === 1"
+      "description": "You can use the modulo operator to check if a number is odd.",
+      "example": "(n % 2) === 1"
     },
     "snippet::is-primitve": {
       "id": "snippet::is-primitve",
       "type": "simple",
-      "description": "Use v === null || (typeof v !== \"function\" && typeof v !== \"object\")"
+      "description": "You can check `typeof` of a value to determine if it's a primitive. Note that `typeof null` is \"object\" so you need to check for null separately.",
+      "example": "const isPrimitive = (value) => value === null || (typeof value !== \"function\" && typeof value !== \"object\");"
     },
     "snippet::is-regexp": {
       "id": "snippet::is-regexp",
       "type": "simple",
-      "description": "Use v instanceof RegExp, or if cross-realm, use Object.prototype.toString.call(v) === \"[object RegExp]\""
+      "description": "You can use `instanceof RegExp` to check if a value is a regular expression, or if cross-realm, use `Object.prototype.toString.call(v) === \"[object RegExp]\"`.",
+      "example": "const isRegExp = (v) => v instanceof RegExp;\n// for cross-realm\nconst isRegExpCrossRealm = Object.prototype.toString.call(v) === \"[object RegExp]\";"
     },
     "snippet::is-stream": {
       "id": "snippet::is-stream",
       "type": "simple",
-      "description": "Use `isReadable(stream) || isWritable(stream)` from `node:stream`"
+      "description": "`node:stream` provides `isReadable` and `isWritable` methods that can be used to check if a stream is readable or writable.",
+      "example": "import { isReadable, isWritable } from 'node:stream';\nconst isStream = (stream) => isReadable(stream) || isWritable(stream);"
     },
     "snippet::is-string": {
       "id": "snippet::is-string",
       "type": "simple",
-      "description": "Use typeof str === \"string\""
+      "description": "You can use `typeof` to check if a value is a string.",
+      "example": "const isString = (value) => typeof value === \"string\";"
     },
     "snippet::is-travis": {
       "id": "snippet::is-travis",
       "type": "simple",
-      "description": "Use (\"TRAVIS\" in process.env)"
+      "description": "You can check if the current environment is Travis CI by checking if the `TRAVIS` environment variable is set.",
+      "example": "const isTravis = () => \"TRAVIS\" in process.env;"
     },
     "snippet::is-whitespace": {
       "id": "snippet::is-whitespace",
       "type": "simple",
-      "description": "Use str.trim() === \"\" or /^\\s*$/.test(str)"
+      "description": "You can check if a string contains only whitespace with RegExp or by trimming it and comparing it to an empty string.",
+      "example": "const isWhitespace = (str) => /^\\s*$/.test(str);"
     },
     "snippet::is-windows": {
       "id": "snippet::is-windows",
       "type": "simple",
-      "description": "Use process.platform === \"win32\""
+      "description": "You can check if the current environment is Windows by checking if `process.platform` is equal to \"win32\".",
+      "example": "const isWindows = () => process.platform === \"win32\";"
     },
     "snippet::object-filter": {
       "id": "snippet::object-filter",
       "type": "simple",
-      "description": "Use Object.fromEntries(Object.entries(obj).filter(fn))"
+      "description": "You can use `Object.fromEntries` with `Object.entries` and `Array.prototype.filter` to filter an object's properties.",
+      "example": "const objectFilter = (obj, fn) => Object.fromEntries(Object.entries(obj).filter(fn));"
     },
     "snippet::regexp-copy": {
       "id": "snippet::regexp-copy",
       "type": "simple",
-      "description": "Use new RegExp(regexpToCopy)"
+      "description": "You can create a copy of a regular expression using the `RegExp` constructor.",
+      "example": "const copyRegExp = (regexp) => new RegExp(regexp);"
     },
     "snippet::set-tostringtag": {
       "id": "snippet::set-tostringtag",
       "type": "simple",
-      "description": "Use Object.defineProperty(target, Symbol.toStringTag, { value, configurable: true })"
+      "description": "You can set the `toStringTag` of an object using `Object.defineProperty`.",
+      "example": "const setToStringTag = (target, value) => Object.defineProperty(target, Symbol.toStringTag, { value, configurable: true });"
     },
     "snippet::split-lines": {
       "id": "snippet::split-lines",
       "type": "simple",
-      "description": "Use str.split(/\\r?\\n/)"
+      "description": "You can split a string into lines using a regular expression.",
+      "example": "const splitLines = (str) => str.split(/\\r?\\n/);"
     },
     "snippet::to-lower": {
       "id": "snippet::to-lower",
       "type": "simple",
-      "description": "Use str.toLocaleLowerCase() or str.toLowerCase()"
+      "description": "You can convert a string to lowercase using `toLocaleLowerCase` or `toLowerCase`.",
+      "example": "const toLower = (str) => str.toLocaleLowerCase();"
     },
     "snippet::to-uppercase": {
       "id": "snippet::to-uppercase",
       "type": "simple",
-      "description": "Use str.toLocaleUpperCase() or str.toUpperCase()"
+      "description": "You can convert a string to uppercase using `toLocaleUpperCase` or `toUpperCase`.",
+      "example": "const toUpper = (str) => str.toLocaleUpperCase();"
     },
     "snippet::typeof": {
       "id": "snippet::typeof",
       "type": "simple",
-      "description": "Use typeof v, or Object.prototype.toString.call(v) to get the internal [[Class]]"
+      "description": "You can use `typeof` to get the type of a value, or `Object.prototype.toString.call` to get the internal [[Class]] of an object.",
+      "example": "const typeOf = (value) => typeof value;\n// for more specific types\nconst classOf = (value) => Object.prototype.toString.call(value);"
     },
     "snippet::unix-paths": {
       "id": "snippet::unix-paths",
       "type": "simple",
-      "description": "Use path.startsWith('\\\\?\\') ? path : path.replace(/\\/g, '/')"
+      "description": "You can check the start of a path for the Windows extended-length path prefix and if it's not present, replace backslashes with forward slashes.",
+      "example": "path.startsWith('\\\\?\\') ? path : path.replace(/\\/g, '/')"
     },
     "snippet:is-number": {
       "id": "snippet:is-number",
       "type": "simple",
-      "description": "Use typeof v === \"number\" || (typeof v === \"string\" && Number.isFinite(+v))"
+      "description": "You can check if a value is a number by using `typeof` or coercing it to a number and using `Number.isFinite`.",
+      "example": "const isNumber = (v) => typeof v === \"number\" || (typeof v === \"string\" && Number.isFinite(+v));"
     }
   },
   "mappings": {
