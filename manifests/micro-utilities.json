@@ -40,7 +40,7 @@
       "id": "snippet::array-last",
       "type": "simple",
       "description": "You can use arr.at(-1) if supported or arr[arr.length - 1] to get the last element of an array.",
-      "example": "const last = (arr) => arr.at(-1) ?? arr[arr.length - 1]"
+      "example": "const last = (arr) => arr.at(-1);\n// or in older environments\nconst last = (arr) => arr[arr.length - 1]"
     },
     "snippet::array-union": {
       "id": "snippet::array-union",
