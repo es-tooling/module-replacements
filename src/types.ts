@@ -41,6 +41,7 @@ export interface NativeModuleReplacement extends ModuleReplacementLike {
 export interface SimpleModuleReplacement extends ModuleReplacementLike {
   type: 'simple';
   description: string;
+  example?: string;
 }
 
 export interface RemovalReplacement extends ModuleReplacementLike {
