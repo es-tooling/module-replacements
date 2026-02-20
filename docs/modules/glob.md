@@ -47,6 +47,8 @@ for await (const result of glob('src/**/*.ts', { cwd })) {
 }
 ```
 
+Note that Node's built-in `glob` is more minimal and does not support negation patterns or fine-grained options like setting a max depth out of the box.
+
 ## `fdir`
 
 [`fdir`](https://github.com/thecodrr/fdir/) offers similar functionality but through a different API (and `tinyglobby` is actually built on top of it).
