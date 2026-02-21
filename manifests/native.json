@@ -1108,7 +1108,7 @@
     "es-errors": {
       "id": "es-errors",
       "type": "removal",
-      "description": "Error, EvalError, RangeError, ReferenceError, SyntaxError, TypeError or URIError that this package shim are generally available in modern environments.",
+      "description": "Error and its subclasses are natively built into all modern environments.",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Error"
