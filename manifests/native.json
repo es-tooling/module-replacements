@@ -1108,7 +1108,7 @@
     "es-errors": {
       "id": "es-errors",
       "type": "removal",
-      "description": "TODO",
+      "description": "Error and its subclasses are natively built into all modern environments.",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Error"
@@ -1117,7 +1117,7 @@
     "es-string-html-methods": {
       "id": "es-string-html-methods",
       "type": "removal",
-      "description": "TODO",
+      "description": "All the methods exported by this modules are generally available on the String prototype in modern environments.",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String#html_wrapper_methods"
@@ -1151,7 +1151,7 @@
     "has-proto": {
       "id": "has-proto",
       "type": "removal",
-      "description": "TODO",
+      "description": "Every modern environment has support for __proto__. You can just remove the check.",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Operators/Object_initializer#prototype_setter"
@@ -1160,7 +1160,7 @@
     "has-symbols": {
       "id": "has-symbols",
       "type": "removal",
-      "description": "TODO",
+      "description": "Every modern environment has support for Symbols. You can just remove the check.",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol"
@@ -1169,7 +1169,7 @@
     "has-tostringtag": {
       "id": "has-tostringtag",
       "type": "removal",
-      "description": "TODO",
+      "description": "Every modern environment has support for `Symbol.toStringTag`. You can just remove the check.",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag"
@@ -1178,8 +1178,8 @@
     "inherits": {
       "id": "inherits",
       "type": "removal",
-      "description": "TODO",
-      "url": { "type": "mdn", "id": "Web/JavaScript/Reference/Classes/extends" }
+      "description": "You can just use the `class` syntax.",
+      "url": {"type": "mdn", "id": "Web/JavaScript/Reference/Classes/extends"}
     },
     "parseInt": {
       "id": "parseInt",
