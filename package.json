@@ -6,11 +6,11 @@
   "scripts": {
     "build": "npm run clean && npm run build:types",
     "build:types": "tsc --noEmit",
-    "build:update-manifest-paths": "node scripts/update-manifests-dist-path.js",
+    "build:manifests-to-ts": "node scripts/manifests-to-ts.js",
     "clean": "node -e \"fs.rmSync('./dist', {force: true, recursive: true})\"",
     "format": "prettier --write \"./**/*.{js,ts,json,md,yml}\"",
     "generate-schema": "node scripts/generate-schema.js",
-    "prepare": "tshy && npm run build:update-manifest-paths",
+    "prepare": "npm run build:manifests-to-ts && tshy",
     "test:validate": "node scripts/validate-modules.js",
     "sort-manifests": "node scripts/sort-manifests.js",
     "update-engines": "npm run update-engines:web && npm run update-engines:bcd && npm run update-engines:runtimes",
