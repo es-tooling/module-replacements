@@ -447,7 +447,6 @@
     "Buffer.from": {
       "id": "Buffer.from",
       "type": "native",
-      "description": "Use global `Buffer.from` in Node.js",
       "url": {
         "type": "node",
         "id": "api/buffer.html#static-method-bufferfromarray"
@@ -459,7 +458,6 @@
     "Buffer.isBuffer": {
       "id": "Buffer.isBuffer",
       "type": "native",
-      "description": "Use global `Buffer.isBuffer` in Node.js",
       "url": {
         "type": "node",
         "id": "api/buffer.html#static-method-bufferisbufferobj"
