@@ -456,6 +456,18 @@
         "moduleName": "buffer"
       }
     },
+    "Buffer.isBuffer": {
+      "id": "Buffer.isBuffer",
+      "type": "native",
+      "description": "Use global `Buffer.isBuffer` in Node.js",
+      "url": {
+        "type": "node",
+        "id": "api/buffer.html#static-method-bufferisbufferobj"
+      },
+      "nodeFeatureId": {
+        "moduleName": "buffer"
+      }
+    },
     "DataView.prototype.buffer": {
       "id": "DataView.prototype.buffer",
       "type": "native",
@@ -1548,6 +1560,11 @@
       "type": "module",
       "moduleName": "inherits",
       "replacements": ["inherits"]
+    },
+    "is-buffer": {
+      "type": "module",
+      "moduleName": "is-buffer",
+      "replacements": ["Buffer.isBuffer"]
     },
     "is-nan": {
       "type": "module",
