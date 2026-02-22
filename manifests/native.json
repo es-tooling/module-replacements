@@ -444,6 +444,18 @@
         "compatKey": "javascript.builtins.ArrayBuffer.slice"
       }
     },
+    "Buffer.from": {
+      "id": "Buffer.from",
+      "type": "native",
+      "description": "Use global `Buffer.from` in Node.js",
+      "url": {
+        "type": "node",
+        "id": "api/buffer.html#static-method-bufferfromarray"
+      },
+      "nodeFeatureId": {
+        "moduleName": "buffer"
+      }
+    },
     "DataView.prototype.buffer": {
       "id": "DataView.prototype.buffer",
       "type": "native",
@@ -1362,6 +1374,11 @@
       "moduleName": "arraybuffer.prototype.slice",
       "replacements": ["ArrayBuffer.prototype.slice"]
     },
+    "buffer-from": {
+      "type": "module",
+      "moduleName": "buffer-from",
+      "replacements": ["Buffer.from"]
+    },
     "concat-map": {
       "type": "module",
       "moduleName": "concat-map",
@@ -1836,6 +1853,11 @@
       "type": "module",
       "moduleName": "symbol.prototype.description",
       "replacements": ["Symbol.prototype.description"]
+    },
+    "to-buffer": {
+      "type": "module",
+      "moduleName": "to-buffer",
+      "replacements": ["Buffer.from"]
     },
     "typed-array-buffer": {
       "type": "module",
