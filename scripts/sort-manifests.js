@@ -1,5 +1,5 @@
 import {readdir, readFile, writeFile} from 'node:fs/promises';
-import {format} from 'prettier';
+import {format, resolveConfig} from 'prettier';
 import {fileURLToPath} from 'node:url';
 import * as path from 'node:path';
 
@@ -26,9 +26,13 @@ for (const manifestName of manifests) {
   manifest.mappings = sortObjectKeys(manifest.mappings);
   manifest.replacements = sortObjectKeys(manifest.replacements);
 
+  const prettierOptions = await resolveConfig(manifestPath);
   await writeFile(
     manifestPath,
-    await format(JSON.stringify(manifest), {filepath: manifestPath}),
+    await format(JSON.stringify(manifest), {
+      ...prettierOptions,
+      filepath: manifestPath
+    }),
     'utf8'
   );
 }

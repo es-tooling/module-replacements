@@ -2,6 +2,7 @@ import ajv from 'ajv';
 import {readdir, readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import * as path from 'node:path';
+import {features as webFeatures} from 'web-features';
 
 const validator = new ajv();
 const scriptDir = fileURLToPath(new URL('.', import.meta.url));
@@ -27,6 +28,25 @@ export async function validateManifests() {
     if (!isValid) {
       console.log(validate.errors);
       throw new Error(`Validation for ${manifestPath} failed!`);
+    }
+
+    for (const [id, replacement] of Object.entries(manifest.replacements)) {
+      if (!replacement.webFeatureId) continue;
+
+      const {featureId, compatKey} = replacement.webFeatureId;
+      const feature = webFeatures[featureId];
+
+      if (!feature) {
+        throw new Error(
+          `${manifestPath}: replacement "${id}" has unknown webFeatureId.featureId "${featureId}"`
+        );
+      }
+
+      if (!feature.compat_features?.includes(compatKey)) {
+        throw new Error(
+          `${manifestPath}: replacement "${id}" has compatKey "${compatKey}" not found in web-features feature "${featureId}"`
+        );
+      }
     }
   }
   console.log('OK');
