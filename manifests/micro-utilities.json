@@ -156,6 +156,12 @@
       "description": "You can use `typeof` to check if a value is a string.",
       "example": "const isString = (value) => typeof value === \"string\";"
     },
+    "snippet::is-symbol": {
+      "id": "snippet::is-symbol",
+      "type": "simple",
+      "description": "You can use `typeof` to check if a value is a symbol.",
+      "example": "const isSymbol = (value) => typeof value === \"symbol\";"
+    },
     "snippet::is-travis": {
       "id": "snippet::is-travis",
       "type": "simple",
@@ -379,6 +385,11 @@
       "type": "module",
       "moduleName": "is-string",
       "replacements": ["snippet::is-string"]
+    },
+    "is-symbol": {
+      "type": "module",
+      "moduleName": "is-symbol",
+      "replacements": ["snippet::is-symbol"]
     },
     "is-travis": {
       "type": "module",
