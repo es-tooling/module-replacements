@@ -1220,7 +1220,7 @@
     "safe-buffer": {
       "id": "safe-buffer",
       "type": "removal",
-      "description": "You don't need this dependency anymore.",
+      "description": "All modern versions of Node have `Buffer.from` for safely creating buffers from arbitrary types.",
       "url": {"type": "node", "id": "api/buffer.html"}
     }
   },
