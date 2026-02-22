@@ -1216,6 +1216,10 @@
         "featureId": "number",
         "compatKey": "javascript.builtins.parseInt"
       }
+    },
+    "safe-buffer": {
+      "id": "safe-buffer",
+      "type": "removal"
     }
   },
   "mappings": {
