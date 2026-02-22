@@ -84,6 +84,18 @@
         "compatKey": "javascript.builtins.Array.from"
       }
     },
+    "Array.isArray": {
+      "id": "Array.isArray",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/isArray"
+      },
+      "webFeatureId": {
+        "featureId": "array-isarray",
+        "compatKey": "javascript.builtins.Array.isArray"
+      }
+    },
     "Array.of": {
       "id": "Array.of",
       "type": "native",
@@ -1524,6 +1536,11 @@
       "type": "module",
       "moduleName": "is-nan",
       "replacements": ["Number.isNaN"]
+    },
+    "isarray": {
+      "type": "module",
+      "moduleName": "isarray",
+      "replacements": ["Array.isArray"]
     },
     "iterate-iterator": {
       "type": "module",
