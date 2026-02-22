@@ -446,7 +446,15 @@
     },
     "Buffer.from": {
       "id": "Buffer.from",
-      "type": "native"
+      "type": "native",
+      "description": "Use global `Buffer.from` in Node.js",
+      "url": {
+        "type": "node",
+        "id": "api/buffer.html#static-method-bufferfromarray"
+      },
+      "nodeFeatureId": {
+        "moduleName": "buffer"
+      }
     },
     "DataView.prototype.buffer": {
       "id": "DataView.prototype.buffer",
