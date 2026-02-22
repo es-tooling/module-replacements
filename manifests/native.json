@@ -1220,6 +1220,7 @@
     "safe-buffer": {
       "id": "safe-buffer",
       "type": "removal",
+      "description": "You don't need this dependency anymore.",
       "url": {"type": "node", "id": "api/buffer.html"}
     }
   },
