@@ -1226,6 +1226,12 @@
         "featureId": "number",
         "compatKey": "javascript.builtins.parseInt"
       }
+    },
+    "safe-buffer": {
+      "id": "safe-buffer",
+      "type": "removal",
+      "description": "All modern versions of Node have `Buffer.from` for safely creating buffers from arbitrary types.",
+      "url": {"type": "node", "id": "api/buffer.html"}
     }
   },
   "mappings": {
