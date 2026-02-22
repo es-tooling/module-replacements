@@ -1,5 +1,5 @@
 import {readdir, readFile, writeFile} from 'node:fs/promises';
-import {format} from 'prettier';
+import {format, resolveConfig} from 'prettier';
 import {fileURLToPath} from 'node:url';
 import * as path from 'node:path';
 import type {
@@ -209,9 +209,13 @@ async function main() {
       )
     };
 
+    const prettierOptions = await resolveConfig(manifestPath);
     await writeFile(
       manifestPath,
-      await format(JSON.stringify(updatedManifest), {filepath: manifestPath}),
+      await format(JSON.stringify(updatedManifest), {
+        ...prettierOptions,
+        filepath: manifestPath
+      }),
       {encoding: 'utf8'}
     );
 
