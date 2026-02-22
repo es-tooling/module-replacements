@@ -447,10 +447,20 @@
     "Buffer.from": {
       "id": "Buffer.from",
       "type": "native",
-      "description": "Use global `Buffer.from` in Node.js",
       "url": {
         "type": "node",
         "id": "api/buffer.html#static-method-bufferfromarray"
+      },
+      "nodeFeatureId": {
+        "moduleName": "buffer"
+      }
+    },
+    "Buffer.isBuffer": {
+      "id": "Buffer.isBuffer",
+      "type": "native",
+      "url": {
+        "type": "node",
+        "id": "api/buffer.html#static-method-bufferisbufferobj"
       },
       "nodeFeatureId": {
         "moduleName": "buffer"
@@ -1548,6 +1558,11 @@
       "type": "module",
       "moduleName": "inherits",
       "replacements": ["inherits"]
+    },
+    "is-buffer": {
+      "type": "module",
+      "moduleName": "is-buffer",
+      "replacements": ["Buffer.isBuffer"]
     },
     "is-nan": {
       "type": "module",
