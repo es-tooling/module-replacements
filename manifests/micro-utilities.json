@@ -54,6 +54,12 @@
       "description": "You can convert to and from a Set to remove duplicates from an array.",
       "example": "const unique = (arr) => [...new Set(arr)]"
     },
+    "snippet::base64-js": {
+      "id": "snippet::base64-js",
+      "type": "simple",
+      "description": "Every modern runtime provides a way to convert byte array to and from base64.",
+      "example": "// fromByteArray\nbytes.toBase64();\n// toByteArray\nUint8Array.fromBase64(base64);"
+    },
     "snippet::call-bind": {
       "id": "snippet::call-bind",
       "type": "simple",
@@ -265,6 +271,11 @@
       "type": "module",
       "moduleName": "arrify",
       "replacements": ["snippet::array-coerce"]
+    },
+    "base64-js": {
+      "type": "module",
+      "moduleName": "base64-js",
+      "replacements": ["snippet::base64-js"]
     },
     "call-bind": {
       "type": "module",
