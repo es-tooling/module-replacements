@@ -444,6 +444,18 @@
         "compatKey": "javascript.builtins.ArrayBuffer.slice"
       }
     },
+    "BigInt": {
+      "id": "BigInt",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/BigInt"
+      },
+      "webFeatureId": {
+        "featureId": "bigint",
+        "compatKey": "javascript.builtins.BigInt"
+      }
+    },
     "Buffer.from": {
       "id": "Buffer.from",
       "type": "native",
@@ -1649,6 +1661,11 @@
       "type": "module",
       "moduleName": "math.sign",
       "replacements": ["Math.sign"]
+    },
+    "node-int64": {
+      "type": "module",
+      "moduleName": "node-int64",
+      "replacements": ["BigInt"]
     },
     "node.extend": {
       "type": "module",
