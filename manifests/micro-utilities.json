@@ -36,6 +36,12 @@
       "description": "You can use a combination of filter and includes to calculate the difference between two arrays.",
       "example": "const difference = (a, b) => a.filter((item) => !b.includes(item))"
     },
+    "snippet::array-initial": {
+      "id": "snippet::array-initial",
+      "type": "simple",
+      "description": "You can get all but the last n elements using `array.slice`",
+      "example": "array.slice(0, array.length - n)"
+    },
     "snippet::array-last": {
       "id": "snippet::array-last",
       "type": "simple",
@@ -240,6 +246,11 @@
       "type": "module",
       "moduleName": "arr-diff",
       "replacements": ["snippet::array-difference"]
+    },
+    "array-initial": {
+      "type": "module",
+      "moduleName": "array-initial",
+      "replacements": ["snippet::array-initial"]
     },
     "array-last": {
       "type": "module",
