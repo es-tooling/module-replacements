@@ -550,6 +550,18 @@
         "compatKey": "javascript.builtins.Function.name"
       }
     },
+    "Map": {
+      "id": "Map",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Map"
+      },
+      "webFeatureId": {
+        "featureId": "map",
+        "compatKey": "javascript.builtins.Map"
+      }
+    },
     "Math.acosh": {
       "id": "Math.acosh",
       "type": "native",
@@ -1464,6 +1476,11 @@
       "type": "module",
       "moduleName": "es-errors",
       "replacements": ["es-errors"]
+    },
+    "es-map": {
+      "type": "module",
+      "moduleName": "es-map",
+      "replacements": ["Map"]
     },
     "es-shim-unscopables": {
       "type": "module",
