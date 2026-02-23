@@ -1267,6 +1267,11 @@
       "moduleName": "array-map",
       "replacements": ["Array.prototype.map"]
     },
+    "array-slice": {
+      "type": "module",
+      "moduleName": "array-slice",
+      "replacements": ["Array.prototype.slice"]
+    },
     "array.from": {
       "type": "module",
       "moduleName": "array.from",
