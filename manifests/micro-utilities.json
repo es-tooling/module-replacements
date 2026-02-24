@@ -42,6 +42,12 @@
       "description": "You can use arr.at(-1) if supported or arr[arr.length - 1] to get the last element of an array.",
       "example": "const last = (arr) => arr.at(-1);\n// or in older environments\nconst last = (arr) => arr[arr.length - 1]"
     },
+    "snippet::array-slice-exclude-last-n": {
+      "id": "snippet::array-slice-exclude-last-n",
+      "type": "simple",
+      "description": "You can get all but the last n elements using `array.slice`",
+      "example": "array.slice(0, array.length - n)"
+    },
     "snippet::array-union": {
       "id": "snippet::array-union",
       "type": "simple",
@@ -246,6 +252,11 @@
       "type": "module",
       "moduleName": "arr-diff",
       "replacements": ["snippet::array-difference"]
+    },
+    "array-initial": {
+      "type": "module",
+      "moduleName": "array-initial",
+      "replacements": ["snippet::array-slice-exclude-last-n"]
     },
     "array-last": {
       "type": "module",
