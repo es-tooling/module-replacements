@@ -36,6 +36,12 @@
       "description": "You can use a combination of filter and includes to calculate the difference between two arrays.",
       "example": "const difference = (a, b) => a.filter((item) => !b.includes(item))"
     },
+    "snippet::array-from-count": {
+      "id": "snippet::array-from-count",
+      "type": "simple",
+      "description": "You can use `Array.from` to create an array of sequential integers",
+      "example": "Array.from({ length: n }, (_, i) => i);"
+    },
     "snippet::array-last": {
       "id": "snippet::array-last",
       "type": "simple",
@@ -317,6 +323,11 @@
       "type": "module",
       "moduleName": "has-flag",
       "replacements": ["snippet::has-argv"]
+    },
+    "iota-array": {
+      "type": "module",
+      "moduleName": "iota-array",
+      "replacements": ["snippet::array-from-count"]
     },
     "is-array-buffer": {
       "type": "module",
