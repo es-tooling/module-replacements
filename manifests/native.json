@@ -1043,6 +1043,18 @@
         "compatKey": "javascript.builtins.RegExp.flags"
       }
     },
+    "Set": {
+      "id": "Set",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Set"
+      },
+      "webFeatureId": {
+        "featureId": "set",
+        "compatKey": "javascript.builtins.Set"
+      }
+    },
     "String.prototype.at": {
       "id": "String.prototype.at",
       "type": "native",
@@ -1534,6 +1546,11 @@
       "type": "module",
       "moduleName": "es-map",
       "replacements": ["Map"]
+    },
+    "es-set": {
+      "type": "module",
+      "moduleName": "es-set",
+      "replacements": ["Set"]
     },
     "es-shim-unscopables": {
       "type": "module",
