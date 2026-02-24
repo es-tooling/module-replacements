@@ -466,6 +466,18 @@
         "moduleName": "buffer"
       }
     },
+    "DataView": {
+      "id": "DataView",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/DataView"
+      },
+      "webFeatureId": {
+        "featureId": "typed-arrays",
+        "compatKey": "javascript.builtins.DataView"
+      }
+    },
     "DataView.prototype.buffer": {
       "id": "DataView.prototype.buffer",
       "type": "native",
@@ -1571,6 +1583,11 @@
       "type": "module",
       "moduleName": "hasown",
       "replacements": ["Object.prototype.hasOwnProperty"]
+    },
+    "ieee754": {
+      "type": "module",
+      "moduleName": "ieee754",
+      "replacements": ["DataView"]
     },
     "index-of": {
       "type": "module",
