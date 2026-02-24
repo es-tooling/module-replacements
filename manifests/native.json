@@ -947,6 +947,18 @@
         "compatKey": "javascript.builtins.Object.values"
       }
     },
+    "Promise": {
+      "id": "Promise.allSettled",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Promise"
+      },
+      "webFeatureId": {
+        "featureId": "promise",
+        "compatKey": "javascript.builtins.Promise"
+      }
+    },
     "Promise.allSettled": {
       "id": "Promise.allSettled",
       "type": "native",
@@ -1815,6 +1827,11 @@
       "type": "module",
       "moduleName": "parseint",
       "replacements": ["parseInt"]
+    },
+    "pinkie-promise": {
+      "type": "module",
+      "moduleName": "pinkie-promise",
+      "replacements": ["Promise"]
     },
     "promise.allsettled": {
       "type": "module",
