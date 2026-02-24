@@ -72,8 +72,8 @@
       "description": "You can use the includes method on the process.argv array to check if a flag is present.",
       "example": "process.argv.includes('--flag')"
     },
-    "snippet::iota-array": {
-      "id": "snippet::iota-array",
+    "snippet::array-from-count": {
+      "id": "snippet::array-from-count",
       "type": "simple",
       "description": "You can use `Array.from` to create an array of sequential integers",
       "example": "Array.from({ length: n }, (_, i) => i);"
