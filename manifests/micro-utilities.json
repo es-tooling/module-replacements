@@ -36,6 +36,12 @@
       "description": "You can use a combination of filter and includes to calculate the difference between two arrays.",
       "example": "const difference = (a, b) => a.filter((item) => !b.includes(item))"
     },
+    "snippet::array-from-count": {
+      "id": "snippet::array-from-count",
+      "type": "simple",
+      "description": "You can use `Array.from` to create an array of sequential integers",
+      "example": "Array.from({ length: n }, (_, i) => i);"
+    },
     "snippet::array-last": {
       "id": "snippet::array-last",
       "type": "simple",
@@ -71,12 +77,6 @@
       "type": "simple",
       "description": "You can use the includes method on the process.argv array to check if a flag is present.",
       "example": "process.argv.includes('--flag')"
-    },
-    "snippet::array-from-count": {
-      "id": "snippet::array-from-count",
-      "type": "simple",
-      "description": "You can use `Array.from` to create an array of sequential integers",
-      "example": "Array.from({ length: n }, (_, i) => i);"
     },
     "snippet::is-arraybuffer": {
       "id": "snippet::is-arraybuffer",
