@@ -1633,6 +1633,11 @@
       "moduleName": "is-buffer",
       "replacements": ["Buffer.isBuffer"]
     },
+    "is-error": {
+      "type": "module",
+      "moduleName": "is-error",
+      "replacements": ["Error.isError"]
+    },
     "is-nan": {
       "type": "module",
       "moduleName": "is-nan",
@@ -1642,11 +1647,6 @@
       "type": "module",
       "moduleName": "isarray",
       "replacements": ["Array.isArray"]
-    },
-    "is-error": {
-      "type": "module",
-      "moduleName": "is-error",
-      "replacements": ["Error.isError"]
     },
     "iserror": {
       "type": "module",
