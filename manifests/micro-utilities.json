@@ -417,6 +417,11 @@
       "moduleName": "is-windows",
       "replacements": ["snippet::is-windows"]
     },
+    "isobject": {
+      "type": "module",
+      "moduleName": "isobject",
+      "replacements": ["snippet::is-object"]
+    },
     "kind-of": {
       "type": "module",
       "moduleName": "kind-of",
