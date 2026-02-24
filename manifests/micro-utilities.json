@@ -458,7 +458,7 @@
     "math-random": {
       "type": "module",
       "moduleName": "math-random",
-      "replacements": ["math-random"]
+      "replacements": ["snippet::math-random"]
     },
     "repeat-string": {
       "type": "module",
