@@ -1230,6 +1230,17 @@
         "compatKey": "javascript.statements.for_of"
       }
     },
+    "fs.rm": {
+      "id": "fs.rm",
+      "type": "native",
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fsrmpath-options-callback"
+      },
+      "nodeFeatureId": {
+        "moduleName": "fs"
+      }
+    },
     "globalThis": {
       "id": "globalThis",
       "type": "native",
@@ -1884,6 +1895,11 @@
       "type": "module",
       "moduleName": "regexp.prototype.flags",
       "replacements": ["RegExp.prototype.flags"]
+    },
+    "remove": {
+      "type": "module",
+      "moduleName": "remove",
+      "replacements": ["fs.rm"]
     },
     "string.prototype.at": {
       "type": "module",
