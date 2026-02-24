@@ -36,17 +36,17 @@
       "description": "You can use a combination of filter and includes to calculate the difference between two arrays.",
       "example": "const difference = (a, b) => a.filter((item) => !b.includes(item))"
     },
-    "snippet::array-slice-exclude-last-n": {
-      "id": "snippet::array-slice-exclude-last-n",
-      "type": "simple",
-      "description": "You can get all but the last n elements using `array.slice`",
-      "example": "array.slice(0, array.length - n)"
-    },
     "snippet::array-last": {
       "id": "snippet::array-last",
       "type": "simple",
       "description": "You can use arr.at(-1) if supported or arr[arr.length - 1] to get the last element of an array.",
       "example": "const last = (arr) => arr.at(-1);\n// or in older environments\nconst last = (arr) => arr[arr.length - 1]"
+    },
+    "snippet::array-slice-exclude-last-n": {
+      "id": "snippet::array-slice-exclude-last-n",
+      "type": "simple",
+      "description": "You can get all but the last n elements using `array.slice`",
+      "example": "array.slice(0, array.length - n)"
     },
     "snippet::array-union": {
       "id": "snippet::array-union",
