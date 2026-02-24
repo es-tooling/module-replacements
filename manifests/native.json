@@ -538,6 +538,18 @@
         "compatKey": "javascript.builtins.Date"
       }
     },
+    "Error.isError": {
+      "id": "Error.isError",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Error/isError"
+      },
+      "webFeatureId": {
+        "featureId": "error-cause",
+        "compatKey": "javascript.builtins.Error.isError"
+      }
+    },
     "Error.prototype.cause": {
       "id": "Error.prototype.cause",
       "type": "native",
@@ -1630,6 +1642,16 @@
       "type": "module",
       "moduleName": "isarray",
       "replacements": ["Array.isArray"]
+    },
+    "is-error": {
+      "type": "module",
+      "moduleName": "is-error",
+      "replacements": ["Error.isError"]
+    },
+    "iserror": {
+      "type": "module",
+      "moduleName": "iserror",
+      "replacements": ["Error.isError"]
     },
     "iterate-iterator": {
       "type": "module",
