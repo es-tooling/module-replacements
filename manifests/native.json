@@ -546,7 +546,7 @@
         "id": "Web/JavaScript/Reference/Global_Objects/Error/isError"
       },
       "webFeatureId": {
-        "featureId": "error-cause",
+        "featureId": "error-iserror",
         "compatKey": "javascript.builtins.Error.isError"
       }
     },
