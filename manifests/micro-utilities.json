@@ -250,7 +250,7 @@
     "array-initial": {
       "type": "module",
       "moduleName": "array-initial",
-      "replacements": ["snippet::array-initial"]
+      "replacements": ["snippet::array-slice-exclude-last-n"]
     },
     "array-last": {
       "type": "module",
