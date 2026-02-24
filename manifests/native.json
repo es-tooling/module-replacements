@@ -1206,6 +1206,17 @@
         "compatKey": "javascript.statements.for_of"
       }
     },
+    "fs.realpath": {
+      "id": "fs.realpath",
+      "type": "native",
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fsrealpathpath-options-callback"
+      },
+      "nodeFeatureId": {
+        "moduleName": "fs"
+      }
+    },
     "globalThis": {
       "id": "globalThis",
       "type": "native",
@@ -1535,6 +1546,11 @@
       "type": "module",
       "moduleName": "for-each",
       "replacements": ["for...of"]
+    },
+    "fs.realpath": {
+      "type": "module",
+      "moduleName": "fs.realpath",
+      "replacements": ["fs.realpath"]
     },
     "function-bind": {
       "type": "module",
