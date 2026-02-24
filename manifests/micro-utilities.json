@@ -305,7 +305,7 @@
     "iota-array": {
       "type": "module",
       "moduleName": "iota-array",
-      "replacements": ["snippet::iota-array"]
+      "replacements": ["snippet::array-from-count"]
     },
     "is-array-buffer": {
       "type": "module",
