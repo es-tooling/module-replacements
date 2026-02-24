@@ -204,6 +204,12 @@
       "description": "You can use `Object.fromEntries` with `Object.entries` and `Array.prototype.filter` to filter an object's properties.",
       "example": "const objectFilter = (obj, fn) => Object.fromEntries(Object.entries(obj).filter(fn));"
     },
+    "snippet::object-map": {
+      "id": "snippet::object-map",
+      "type": "simple",
+      "description": "You can use `Object.fromEntries` with `Object.entries` and `Array.prototype.map` to map an object's properties.",
+      "example": "const objectMap = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([k, v]) => fn(k, v)));"
+    },
     "snippet::regexp-copy": {
       "id": "snippet::regexp-copy",
       "type": "simple",
@@ -448,6 +454,11 @@
       "type": "module",
       "moduleName": "lower-case",
       "replacements": ["snippet::to-lower"]
+    },
+    "map-obj": {
+      "type": "module",
+      "moduleName": "map-obj",
+      "replacements": ["snippet::object-map"]
     },
     "repeat-string": {
       "type": "module",
