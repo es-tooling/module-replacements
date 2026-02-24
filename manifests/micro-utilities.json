@@ -367,6 +367,11 @@
       "moduleName": "is-odd",
       "replacements": ["snippet::is-odd"]
     },
+    "is-object": {
+      "type": "module",
+      "moduleName": "is-object",
+      "replacements": ["snippet::is-object"]
+    },
     "is-plain-obj": {
       "type": "module",
       "moduleName": "is-plain-obj",
