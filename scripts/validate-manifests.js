@@ -31,6 +31,12 @@ export async function validateManifests() {
     }
 
     for (const [id, replacement] of Object.entries(manifest.replacements)) {
+      if (replacement.id !== id) {
+        throw new Error(
+          `${manifestPath}: replacement key "${id}" does not match its id property "${replacement.id}"`
+        );
+      }
+
       if (!replacement.webFeatureId) continue;
 
       const {featureId, compatKey} = replacement.webFeatureId;
@@ -46,6 +52,22 @@ export async function validateManifests() {
         throw new Error(
           `${manifestPath}: replacement "${id}" has compatKey "${compatKey}" not found in web-features feature "${featureId}"`
         );
+      }
+    }
+
+    for (const [key, mapping] of Object.entries(manifest.mappings)) {
+      if (mapping.type === 'module' && mapping.moduleName !== key) {
+        throw new Error(
+          `${manifestPath}: mapping key "${key}" does not match its moduleName "${mapping.moduleName}"`
+        );
+      }
+
+      for (const replacementId of mapping.replacements) {
+        if (!manifest.replacements[replacementId]) {
+          throw new Error(
+            `${manifestPath}: mapping "${key}" references unknown replacement "${replacementId}"`
+          );
+        }
       }
     }
   }
