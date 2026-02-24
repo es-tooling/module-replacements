@@ -948,7 +948,7 @@
       }
     },
     "Promise": {
-      "id": "Promise.allSettled",
+      "id": "Promise",
       "type": "native",
       "url": {
         "type": "mdn",
