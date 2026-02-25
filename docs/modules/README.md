@@ -80,6 +80,7 @@ ESLint plugin.
 - [`string-width`](./string-width.md)
 - [`strip-ansi`](./strip-ansi.md)
 - [`tempy`](./tempy.md)
+- [`toml`](./toml.md)
 - [`traverse`](./traverse.md)
 - [`uri-js`](./uri-js.md)
 - [`utf8`](./utf8.md)
