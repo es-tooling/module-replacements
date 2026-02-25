@@ -706,6 +706,18 @@
         "compatKey": "javascript.builtins.Math.log1p"
       }
     },
+    "Math.log2": {
+      "id": "Math.log2",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Math/log2"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Math.log2"
+      }
+    },
     "Math.sign": {
       "id": "Math.sign",
       "type": "native",
@@ -1199,6 +1211,18 @@
         "compatKey": "javascript.builtins.Symbol.description"
       }
     },
+    "WeakMap": {
+      "id": "WeakMap",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/WeakMap"
+      },
+      "webFeatureId": {
+        "featureId": "weakmap",
+        "compatKey": "javascript.builtins.WeakMap"
+      }
+    },
     "es-errors": {
       "id": "es-errors",
       "type": "removal",
@@ -1240,6 +1264,15 @@
       "webFeatureId": {
         "featureId": "globalthis",
         "compatKey": "javascript.builtins.globalThis"
+      }
+    },
+    "has-bigints": {
+      "id": "has-bigints",
+      "type": "removal",
+      "description": "Every modern environment has support for BigInt. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/BigInt"
       }
     },
     "has-proto": {
@@ -1600,6 +1633,11 @@
       "moduleName": "has",
       "replacements": ["Object.prototype.hasOwnProperty"]
     },
+    "has-bigints": {
+      "type": "module",
+      "moduleName": "has-bigints",
+      "replacements": ["has-bigints"]
+    },
     "has-own-prop": {
       "type": "module",
       "moduleName": "has-own-prop",
@@ -1685,6 +1723,11 @@
       "moduleName": "left-pad",
       "replacements": ["String.prototype.padStart"]
     },
+    "math-log2": {
+      "type": "module",
+      "moduleName": "math-log2",
+      "replacements": ["Math.log2"]
+    },
     "math.acosh": {
       "type": "module",
       "moduleName": "math.acosh",
@@ -1744,6 +1787,11 @@
       "type": "module",
       "moduleName": "node.extend",
       "replacements": ["Object.assign"]
+    },
+    "number-is-integer": {
+      "type": "module",
+      "moduleName": "number-is-integer",
+      "replacements": ["Number.isInteger"]
     },
     "number.isfinite": {
       "type": "module",
@@ -1999,6 +2047,11 @@
       "type": "module",
       "moduleName": "typedarray.prototype.slice",
       "replacements": ["%TypedArray%.prototype.slice"]
+    },
+    "weak-map": {
+      "type": "module",
+      "moduleName": "weak-map",
+      "replacements": ["WeakMap"]
     },
     "xtend": {
       "type": "module",
