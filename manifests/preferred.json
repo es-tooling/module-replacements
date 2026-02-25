@@ -3009,8 +3009,8 @@
       "url": {"type": "e18e", "id": "rimraf"},
       "replacementModule": "premove"
     },
-    "toml": {
-      "id": "toml",
+    "smol-toml": {
+      "id": "smol-toml",
       "type": "documented",
       "url": {"type": "e18e", "id": "toml"},
       "replacementModule": "smol-toml"
