@@ -4,7 +4,7 @@
       "type": "module",
       "moduleName": "@iarna/toml",
       "replacements": ["smol-toml"],
-      "url": {"type": "e18e", "id": "smol-toml"}
+      "url": {"type": "e18e", "id": "toml"}
     },
     "@jsdevtools/ez-spawn": {
       "type": "module",
@@ -2403,7 +2403,7 @@
       "type": "module",
       "moduleName": "toml",
       "replacements": ["smol-toml"],
-      "url": {"type": "e18e", "id": "smol-toml"}
+      "url": {"type": "e18e", "id": "toml"}
     },
     "traverse": {
       "type": "module",
@@ -3009,8 +3009,8 @@
       "url": {"type": "e18e", "id": "rimraf"},
       "replacementModule": "premove"
     },
-    "smol-toml": {
-      "id": "smol-toml",
+    "toml": {
+      "id": "toml",
       "type": "documented",
       "url": {"type": "e18e", "id": "toml"},
       "replacementModule": "smol-toml"
