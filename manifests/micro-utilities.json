@@ -198,6 +198,12 @@
       "description": "You can check if the current environment is Windows by checking if `process.platform` is equal to \"win32\".",
       "example": "const isWindows = () => process.platform === \"win32\";"
     },
+    "snippet::math-random": {
+      "id": "snippet::math-random",
+      "type": "simple",
+      "description": "You can use `Math.random()` or `crypto.getRandomValues` if cryptographic randomness is required.",
+      "example": "crypto.getRandomValues(new Uint32Array(1))[0] / (2 ** 32);\n// or\nMath.random();"
+    },
     "snippet::object-filter": {
       "id": "snippet::object-filter",
       "type": "simple",
@@ -390,6 +396,11 @@
       "moduleName": "is-number-object",
       "replacements": ["snippet:is-number"]
     },
+    "is-object": {
+      "type": "module",
+      "moduleName": "is-object",
+      "replacements": ["snippet::is-object"]
+    },
     "is-odd": {
       "type": "module",
       "moduleName": "is-odd",
@@ -445,6 +456,11 @@
       "moduleName": "is-windows",
       "replacements": ["snippet::is-windows"]
     },
+    "isobject": {
+      "type": "module",
+      "moduleName": "isobject",
+      "replacements": ["snippet::is-object"]
+    },
     "kind-of": {
       "type": "module",
       "moduleName": "kind-of",
@@ -459,6 +475,10 @@
       "type": "module",
       "moduleName": "map-obj",
       "replacements": ["snippet::object-map"]
+    "math-random": {
+      "type": "module",
+      "moduleName": "math-random",
+      "replacements": ["snippet::math-random"]
     },
     "repeat-string": {
       "type": "module",

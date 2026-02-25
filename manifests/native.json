@@ -463,9 +463,7 @@
         "type": "node",
         "id": "api/buffer.html#static-method-bufferfromarray"
       },
-      "nodeFeatureId": {
-        "moduleName": "buffer"
-      }
+      "nodeFeatureId": {"moduleName": "buffer"}
     },
     "Buffer.isBuffer": {
       "id": "Buffer.isBuffer",
@@ -474,9 +472,7 @@
         "type": "node",
         "id": "api/buffer.html#static-method-bufferisbufferobj"
       },
-      "nodeFeatureId": {
-        "moduleName": "buffer"
-      }
+      "nodeFeatureId": {"moduleName": "buffer"}
     },
     "DataView": {
       "id": "DataView",
@@ -947,6 +943,18 @@
         "compatKey": "javascript.builtins.Object.hasOwnProperty"
       }
     },
+    "Object.setPrototypeOf": {
+      "id": "Object.setPrototypeOf",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf"
+      },
+      "webFeatureId": {
+        "featureId": "object-object",
+        "compatKey": "javascript.builtins.Object.setPrototypeOf"
+      }
+    },
     "Object.values": {
       "id": "Object.values",
       "type": "native",
@@ -1230,6 +1238,17 @@
         "compatKey": "javascript.statements.for_of"
       }
     },
+    "fs.realpath": {
+      "id": "fs.realpath",
+      "type": "native",
+      "url": {
+        "type": "node",
+        "id": "api/fs.html#fsrealpathpath-options-callback"
+      },
+      "nodeFeatureId": {
+        "moduleName": "fs"
+      }
+    },
     "globalThis": {
       "id": "globalThis",
       "type": "native",
@@ -1295,6 +1314,11 @@
     }
   },
   "mappings": {
+    "aggregate-error": {
+      "type": "module",
+      "moduleName": "aggregate-error",
+      "replacements": ["AggregateError"]
+    },
     "array-buffer-byte-length": {
       "type": "module",
       "moduleName": "array-buffer-byte-length",
@@ -1480,11 +1504,7 @@
       "moduleName": "data-view-byte-offset",
       "replacements": ["DataView.prototype.byteOffset"]
     },
-    "date": {
-      "type": "module",
-      "moduleName": "date",
-      "replacements": ["Date"]
-    },
+    "date": {"type": "module", "moduleName": "date", "replacements": ["Date"]},
     "defaults": {
       "type": "module",
       "moduleName": "defaults",
@@ -1559,6 +1579,11 @@
       "type": "module",
       "moduleName": "for-each",
       "replacements": ["for...of"]
+    },
+    "fs.realpath": {
+      "type": "module",
+      "moduleName": "fs.realpath",
+      "replacements": ["fs.realpath"]
     },
     "function-bind": {
       "type": "module",
@@ -1884,6 +1909,11 @@
       "type": "module",
       "moduleName": "regexp.prototype.flags",
       "replacements": ["RegExp.prototype.flags"]
+    },
+    "setprototypeof": {
+      "type": "module",
+      "moduleName": "setprototypeof",
+      "replacements": ["Object.setPrototypeOf"]
     },
     "string.prototype.at": {
       "type": "module",
