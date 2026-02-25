@@ -475,6 +475,7 @@
       "type": "module",
       "moduleName": "map-obj",
       "replacements": ["snippet::object-map"]
+    },
     "math-random": {
       "type": "module",
       "moduleName": "math-random",
