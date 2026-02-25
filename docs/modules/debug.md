@@ -1,5 +1,5 @@
 ---
-description: Modern alternative to the debug package
+description: Modern alternatives to the debug package
 ---
 
 # Replacements for `debug`
