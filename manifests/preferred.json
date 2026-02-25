@@ -2608,10 +2608,7 @@
       "id": "URLSearchParams",
       "type": "native",
       "description": "URLSearchParams",
-      "webFeatureId": {
-        "featureId": "url",
-        "compatKey": "api.URLSearchParams"
-      },
+      "webFeatureId": {"featureId": "url", "compatKey": "api.URLSearchParams"},
       "url": {"type": "mdn", "id": "Web/API/URLSearchParams"}
     },
     "YAML": {
@@ -2784,10 +2781,7 @@
       "type": "native",
       "description": "fs.glob",
       "nodeFeatureId": {"moduleName": "node:fs", "exportName": "glob"},
-      "url": {
-        "type": "node",
-        "id": "api/fs.html#fspromisesglobpattern-options"
-      }
+      "url": {"type": "node", "id": "api/fs.html#fspromisesglobpattern-options"}
     },
     "fs.mkdir": {
       "id": "fs.mkdir",
@@ -2830,14 +2824,8 @@
       "id": "isBuiltin",
       "type": "native",
       "description": "isBuiltin",
-      "nodeFeatureId": {
-        "moduleName": "node:module",
-        "exportName": "isBuiltin"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/module.html#moduleisbuiltinmodulename"
-      }
+      "nodeFeatureId": {"moduleName": "node:module", "exportName": "isBuiltin"},
+      "url": {"type": "node", "id": "api/module.html#moduleisbuiltinmodulename"}
     },
     "jquery": {
       "id": "jquery",
@@ -3123,10 +3111,7 @@
       "type": "native",
       "description": "zlib.gzipSync",
       "nodeFeatureId": {"moduleName": "node:zlib", "exportName": "gzipSync"},
-      "url": {
-        "type": "node",
-        "id": "api/zlib.html#zlibgzipsyncbuffer-options"
-      }
+      "url": {"type": "node", "id": "api/zlib.html#zlibgzipsyncbuffer-options"}
     }
   }
 }

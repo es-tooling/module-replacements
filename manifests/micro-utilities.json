@@ -390,6 +390,11 @@
       "moduleName": "is-number-object",
       "replacements": ["snippet:is-number"]
     },
+    "is-object": {
+      "type": "module",
+      "moduleName": "is-object",
+      "replacements": ["snippet::is-object"]
+    },
     "is-odd": {
       "type": "module",
       "moduleName": "is-odd",
@@ -444,6 +449,11 @@
       "type": "module",
       "moduleName": "is-windows",
       "replacements": ["snippet::is-windows"]
+    },
+    "isobject": {
+      "type": "module",
+      "moduleName": "isobject",
+      "replacements": ["snippet::is-object"]
     },
     "kind-of": {
       "type": "module",
