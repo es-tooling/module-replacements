@@ -25,6 +25,7 @@ ESLint plugin.
 - [`cpx`](./cpx.md)
 - [`cross-fetch`](./fetch.md)
 - [`crypto-js`](./crypto-js.md)
+- [`debug`](./debug.md)
 - [`deep-equal`](./deep-equal.md)
 - [`depcheck`](./depcheck.md)
 - [`detect-package-manager`](./detect-package-manager.md)
