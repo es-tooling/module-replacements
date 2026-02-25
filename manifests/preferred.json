@@ -2351,6 +2351,30 @@
       "replacements": ["node:stream", "streams"],
       "url": {"type": "e18e", "id": "readable-stream"}
     },
+    "remark-import": {
+      "type": "module",
+      "moduleName": "remark-import",
+      "replacements": ["@it-service-npm/remark-include"],
+      "url": {"type": "e18e", "id": "remark-import"}
+    },
+    "remark-include": {
+      "type": "module",
+      "moduleName": "remark-include",
+      "replacements": ["@it-service-npm/remark-include"],
+      "url": {"type": "e18e", "id": "remark-include"}
+    },
+    "@arcblock/remark-include": {
+      "type": "module",
+      "moduleName": "@karuga/remark-include",
+      "replacements": ["@it-service-npm/remark-include"],
+      "url": {"type": "e18e", "id": "remark-include--arcblock"}
+    },
+    "@karuga/remark-include": {
+      "type": "module",
+      "moduleName": "@karuga/remark-include",
+      "replacements": ["@it-service-npm/remark-include"],
+      "url": {"type": "e18e", "id": "remark-include--karuga"}
+    },
     "rimraf": {
       "type": "module",
       "moduleName": "rimraf",
@@ -2996,6 +3020,30 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "rimraf"},
       "replacementModule": "premove"
+    },
+   "remark-import": {
+      "id": "remark-import",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "remark-import"},
+      "replacementModule": "@it-service-npm/remark-include"
+    },
+    "remark-include": {
+      "id": "remark-include",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "remark-include"},
+      "replacementModule": "@it-service-npm/remark-include"
+    },
+    "@arcblock/remark-include": {
+      "id": "@arcblock/remark-include",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "remark-include--arcblock"},
+      "replacementModule": "@it-service-npm/remark-include"
+    },
+    "@karuga/remark-include": {
+      "id": "@karuga/remark-include",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "remark-include--karuga"},
+      "replacementModule": "@it-service-npm/remark-include"
     },
     "sort-object": {
       "id": "sort-object",
