@@ -198,6 +198,12 @@
       "description": "You can check if the current environment is Windows by checking if `process.platform` is equal to \"win32\".",
       "example": "const isWindows = () => process.platform === \"win32\";"
     },
+    "snippet::math-random": {
+      "id": "snippet::math-random",
+      "type": "simple",
+      "description": "You can use `Math.random()` or `crypto.getRandomValues` if cryptographic randomness is required.",
+      "example": "crypto.getRandomValues(new Uint32Array(1))[0] / (2 ** 32);\n// or\nMath.random();"
+    },
     "snippet::object-filter": {
       "id": "snippet::object-filter",
       "type": "simple",
@@ -448,6 +454,11 @@
       "type": "module",
       "moduleName": "lower-case",
       "replacements": ["snippet::to-lower"]
+    },
+    "math-random": {
+      "type": "module",
+      "moduleName": "math-random",
+      "replacements": ["snippet::math-random"]
     },
     "repeat-string": {
       "type": "module",
