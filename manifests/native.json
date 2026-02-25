@@ -1314,6 +1314,11 @@
     }
   },
   "mappings": {
+    "aggregate-error": {
+      "type": "module",
+      "moduleName": "aggregate-error",
+      "replacements": ["AggregateError"]
+    },
     "array-buffer-byte-length": {
       "type": "module",
       "moduleName": "array-buffer-byte-length",
