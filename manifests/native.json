@@ -943,6 +943,18 @@
         "compatKey": "javascript.builtins.Object.hasOwnProperty"
       }
     },
+    "Object.setPrototypeOf": {
+      "id": "Object.setPrototypeOf",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf"
+      },
+      "webFeatureId": {
+        "featureId": "object-object",
+        "compatKey": "javascript.builtins.Object.setPrototypeOf"
+      }
+    },
     "Object.values": {
       "id": "Object.values",
       "type": "native",
@@ -1892,6 +1904,11 @@
       "type": "module",
       "moduleName": "regexp.prototype.flags",
       "replacements": ["RegExp.prototype.flags"]
+    },
+    "setprototypeof": {
+      "type": "module",
+      "moduleName": "setprototypeof",
+      "replacements": ["Object.setPrototypeOf"]
     },
     "string.prototype.at": {
       "type": "module",
