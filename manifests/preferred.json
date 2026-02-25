@@ -84,6 +84,12 @@
       "replacements": ["node:crypto", "crypto", "Bun.CryptoHasher"],
       "url": {"type": "e18e", "id": "crypto-js"}
     },
+    "debug": {
+      "type": "module",
+      "moduleName": "debug",
+      "replacements": ["obug"],
+      "url": {"type": "e18e", "id": "debug"}
+    },
     "deep-equal": {
       "type": "module",
       "moduleName": "deep-equal",
@@ -2948,6 +2954,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "dot-prop"},
       "replacementModule": "object-path"
+    },
+    "obug": {
+      "id": "obug",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "debug"},
+      "replacementModule": "obug"
     },
     "ofetch": {
       "id": "ofetch",
