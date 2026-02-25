@@ -1,10 +1,22 @@
 {
   "mappings": {
+    "@arcblock/remark-include": {
+      "type": "module",
+      "moduleName": "@arcblock/remark-include",
+      "replacements": ["@it-service-npm/remark-include"],
+      "url": {"type": "e18e", "id": "remark-include--arcblock"}
+    },
     "@jsdevtools/ez-spawn": {
       "type": "module",
       "moduleName": "@jsdevtools/ez-spawn",
       "replacements": ["tinyexec"],
       "url": {"type": "e18e", "id": "ez-spawn"}
+    },
+    "@karuga/remark-include": {
+      "type": "module",
+      "moduleName": "@karuga/remark-include",
+      "replacements": ["@it-service-npm/remark-include"],
+      "url": {"type": "e18e", "id": "remark-include--karuga"}
     },
     "axios": {
       "type": "module",
@@ -2363,18 +2375,6 @@
       "replacements": ["@it-service-npm/remark-include"],
       "url": {"type": "e18e", "id": "remark-include"}
     },
-    "@arcblock/remark-include": {
-      "type": "module",
-      "moduleName": "@karuga/remark-include",
-      "replacements": ["@it-service-npm/remark-include"],
-      "url": {"type": "e18e", "id": "remark-include--arcblock"}
-    },
-    "@karuga/remark-include": {
-      "type": "module",
-      "moduleName": "@karuga/remark-include",
-      "replacements": ["@it-service-npm/remark-include"],
-      "url": {"type": "e18e", "id": "remark-include--karuga"}
-    },
     "rimraf": {
       "type": "module",
       "moduleName": "rimraf",
@@ -2472,6 +2472,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "faker"},
       "replacementModule": "@faker-js/faker"
+    },
+    "@it-service-npm/remark-include": {
+      "id": "@it-service-npm/remark-include",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "remark-include"},
+      "replacementModule": "@it-service-npm/remark-include"
     },
     "@material/web": {
       "id": "@material/web",
@@ -3020,30 +3026,6 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "rimraf"},
       "replacementModule": "premove"
-    },
-   "remark-import": {
-      "id": "remark-import",
-      "type": "documented",
-      "url": {"type": "e18e", "id": "remark-import"},
-      "replacementModule": "@it-service-npm/remark-include"
-    },
-    "remark-include": {
-      "id": "remark-include",
-      "type": "documented",
-      "url": {"type": "e18e", "id": "remark-include"},
-      "replacementModule": "@it-service-npm/remark-include"
-    },
-    "@arcblock/remark-include": {
-      "id": "@arcblock/remark-include",
-      "type": "documented",
-      "url": {"type": "e18e", "id": "remark-include--arcblock"},
-      "replacementModule": "@it-service-npm/remark-include"
-    },
-    "@karuga/remark-include": {
-      "id": "@karuga/remark-include",
-      "type": "documented",
-      "url": {"type": "e18e", "id": "remark-include--karuga"},
-      "replacementModule": "@it-service-npm/remark-include"
     },
     "sort-object": {
       "id": "sort-object",
