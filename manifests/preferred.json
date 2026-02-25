@@ -1,5 +1,11 @@
 {
   "mappings": {
+    "@iarna/toml": {
+      "type": "module",
+      "moduleName": "@iarna/toml",
+      "replacements": ["smol-toml"],
+      "url": {"type": "e18e", "id": "smol-toml"}
+    },
     "@jsdevtools/ez-spawn": {
       "type": "module",
       "moduleName": "@jsdevtools/ez-spawn",
@@ -2396,7 +2402,7 @@
     "toml": {
       "type": "module",
       "moduleName": "toml",
-      "replacements": ["toml"],
+      "replacements": ["smol-toml"],
       "url": {"type": "e18e", "id": "smol-toml"}
     },
     "traverse": {
