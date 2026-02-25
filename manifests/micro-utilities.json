@@ -362,15 +362,15 @@
       "moduleName": "is-number-object",
       "replacements": ["snippet:is-number"]
     },
-    "is-odd": {
-      "type": "module",
-      "moduleName": "is-odd",
-      "replacements": ["snippet::is-odd"]
-    },
     "is-object": {
       "type": "module",
       "moduleName": "is-object",
       "replacements": ["snippet::is-object"]
+    },
+    "is-odd": {
+      "type": "module",
+      "moduleName": "is-odd",
+      "replacements": ["snippet::is-odd"]
     },
     "is-plain-obj": {
       "type": "module",

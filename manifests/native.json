@@ -463,9 +463,7 @@
         "type": "node",
         "id": "api/buffer.html#static-method-bufferfromarray"
       },
-      "nodeFeatureId": {
-        "moduleName": "buffer"
-      }
+      "nodeFeatureId": {"moduleName": "buffer"}
     },
     "Buffer.isBuffer": {
       "id": "Buffer.isBuffer",
@@ -474,9 +472,7 @@
         "type": "node",
         "id": "api/buffer.html#static-method-bufferisbufferobj"
       },
-      "nodeFeatureId": {
-        "moduleName": "buffer"
-      }
+      "nodeFeatureId": {"moduleName": "buffer"}
     },
     "DataView": {
       "id": "DataView",
@@ -1456,11 +1452,7 @@
       "moduleName": "data-view-byte-offset",
       "replacements": ["DataView.prototype.byteOffset"]
     },
-    "date": {
-      "type": "module",
-      "moduleName": "date",
-      "replacements": ["Date"]
-    },
+    "date": {"type": "module", "moduleName": "date", "replacements": ["Date"]},
     "defaults": {
       "type": "module",
       "moduleName": "defaults",
