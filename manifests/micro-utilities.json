@@ -12,6 +12,18 @@
         "compatKey": "javascript.builtins.Number.isFinite"
       }
     },
+    "RegExp.escape": {
+      "id": "RegExp.escape",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/RegExp/escape"
+      },
+      "webFeatureId": {
+        "featureId": "regexp-escape",
+        "compatKey": "javascript.builtins.RegExp.escape"
+      }
+    },
     "String.prototype.repeat": {
       "id": "String.prototype.repeat",
       "type": "native",
@@ -222,6 +234,12 @@
       "description": "You can create a copy of a regular expression using the `RegExp` constructor.",
       "example": "const copyRegExp = (regexp) => new RegExp(regexp);"
     },
+    "snippet::regexp-escape": {
+      "id": "snippet::regexp-escape",
+      "type": "simple",
+      "description": "You can escape a regular expression using `String.prototype.replace`.",
+      "example": "const escapeStringRegexp = (string) => string.replace(/[|\\\\{}()[\\]^$+*?.]/g, '\\\\$&').replace(/-/g, '\\\\x2d');"
+    },
     "snippet::set-tostringtag": {
       "id": "snippet::set-tostringtag",
       "type": "simple",
@@ -325,6 +343,11 @@
       "type": "module",
       "moduleName": "es-set-tostringtag",
       "replacements": ["snippet::set-tostringtag"]
+    },
+    "escape-string-regexp": {
+      "type": "module",
+      "moduleName": "escape-string-regexp",
+      "replacements": ["RegExp.escape", "snippet::regexp-escape"]
     },
     "filter-obj": {
       "type": "module",
