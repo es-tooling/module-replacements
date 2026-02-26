@@ -6,7 +6,7 @@ description: Modern alternatives to toml for TOML parsing and stringifying
 
 `toml` appears to be unmaintained and has known spec-compliance issues.
 
-## `toml`
+## `smol-toml`
 
 [`smol-toml`](https://github.com/squirrelchat/smol-toml) is a well maintained TOML v1.1.0 parser/stringifier with full spec compliance, comment/AST support, and no deps.
 
@@ -23,12 +23,12 @@ const obj = parse(src) // [!code ++]
 Stringify:
 
 ```ts
-import { stringify } from 'smol-toml' // [!code ++]
+import { stringify } from 'smol-toml'
 
-const text = stringify(obj) // [!code ++]
+const text = stringify(obj)
 ```
 
-## Bun `TOML` API
+## Bun `TOML` API (native)
 
 [Native TOML parsing](https://bun.com/reference/bun/TOML) is supported in Bun.
 
