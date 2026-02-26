@@ -1337,6 +1337,15 @@
         "compatKey": "api.queueMicrotask"
       }
     },
+    "zlib.crc32": {
+      "id": "zlib.crc32",
+      "type": "native",
+      "url": {
+        "type": "node",
+        "id": "api/zlib.html#zlibcrc32data-value"
+      },
+      "nodeFeatureId": {"moduleName": "zlib", "exportName": "crc32"}
+    },
     "safe-buffer": {
       "id": "safe-buffer",
       "type": "removal",
@@ -1510,6 +1519,11 @@
       "moduleName": "arraybuffer.prototype.slice",
       "replacements": ["ArrayBuffer.prototype.slice"]
     },
+    "buffer-crc32": {
+      "type": "module",
+      "moduleName": "buffer-crc32",
+      "replacements": ["zlib.crc32"]
+    },
     "buffer-from": {
       "type": "module",
       "moduleName": "buffer-from",
@@ -1519,6 +1533,11 @@
       "type": "module",
       "moduleName": "concat-map",
       "replacements": ["Array.prototype.flatMap"]
+    },
+    "crc-32": {
+      "type": "module",
+      "moduleName": "crc-32",
+      "replacements": ["zlib.crc32"]
     },
     "data-view-buffer": {
       "type": "module",
