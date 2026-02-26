@@ -282,6 +282,12 @@
       "replacements": ["isBuiltin", "builtinModules"],
       "url": {"type": "e18e", "id": "is-builtin-module"}
     },
+    "is-core-module": {
+      "type": "module",
+      "moduleName": "is-core-module",
+      "replacements": ["isBuiltin", "builtinModules"],
+      "url": {"type": "e18e", "id": "is-builtin-module"}
+    },
     "jquery": {
       "type": "module",
       "moduleName": "jquery",
