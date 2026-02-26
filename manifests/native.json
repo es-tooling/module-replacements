@@ -1306,6 +1306,18 @@
         "compatKey": "javascript.builtins.parseInt"
       }
     },
+    "queueMicrotask": {
+      "id": "queueMicrotask",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/Window/queueMicrotask"
+      },
+      "webFeatureId": {
+        "featureId": "queuemicrotask",
+        "compatKey": "api.queueMicrotask"
+      }
+    },
     "safe-buffer": {
       "id": "safe-buffer",
       "type": "removal",
@@ -1894,6 +1906,11 @@
       "type": "module",
       "moduleName": "promise.prototype.finally",
       "replacements": ["Promise.prototype.finally"]
+    },
+    "queue-microtask": {
+      "type": "module",
+      "moduleName": "queue-microtask",
+      "replacements": ["queueMicrotask"]
     },
     "reflect.getprototypeof": {
       "type": "module",
