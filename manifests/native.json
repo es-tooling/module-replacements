@@ -1880,6 +1880,11 @@
       "moduleName": "pinkie-promise",
       "replacements": ["Promise"]
     },
+    "pony-cause": {
+      "type": "module",
+      "moduleName": "pony-cause",
+      "replacements": ["Error.prototype.cause"]
+    },
     "promise.allsettled": {
       "type": "module",
       "moduleName": "promise.allsettled",
