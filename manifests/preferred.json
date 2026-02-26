@@ -240,6 +240,12 @@
       "replacements": ["dlv", "object-path"],
       "url": {"type": "e18e", "id": "dot-prop"}
     },
+    "get-stream": {
+      "type": "module",
+      "moduleName": "get-stream",
+      "replacements": [],
+      "url": {"type": "e18e", "id": ""}
+    },
     "glob": {
       "type": "module",
       "moduleName": "glob",
