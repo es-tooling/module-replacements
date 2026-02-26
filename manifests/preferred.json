@@ -1,5 +1,11 @@
 {
   "mappings": {
+    "@iarna/toml": {
+      "type": "module",
+      "moduleName": "@iarna/toml",
+      "replacements": ["smol-toml"],
+      "url": {"type": "e18e", "id": "toml"}
+    },
     "@jsdevtools/ez-spawn": {
       "type": "module",
       "moduleName": "@jsdevtools/ez-spawn",
@@ -2399,6 +2405,12 @@
       "replacements": ["fs.mkdtemp", "Deno.makeTempDir"],
       "url": {"type": "e18e", "id": "tempy"}
     },
+    "toml": {
+      "type": "module",
+      "moduleName": "toml",
+      "replacements": ["smol-toml"],
+      "url": {"type": "e18e", "id": "toml"}
+    },
     "traverse": {
       "type": "module",
       "moduleName": "traverse",
@@ -2996,6 +3008,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "rimraf"},
       "replacementModule": "premove"
+    },
+    "smol-toml": {
+      "id": "smol-toml",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "toml"},
+      "replacementModule": "smol-toml"
     },
     "sort-object": {
       "id": "sort-object",
