@@ -234,17 +234,17 @@
       "replacements": ["fs"],
       "url": {"type": "e18e", "id": "fs-extra"}
     },
-    "get-value": {
-      "type": "module",
-      "moduleName": "get-value",
-      "replacements": ["dlv", "object-path"],
-      "url": {"type": "e18e", "id": "dot-prop"}
-    },
     "get-stream": {
       "type": "module",
       "moduleName": "get-stream",
       "replacements": ["Buffer"],
       "url": {"type": "e18e", "id": "get-stream"}
+    },
+    "get-value": {
+      "type": "module",
+      "moduleName": "get-value",
+      "replacements": ["dlv", "object-path"],
+      "url": {"type": "e18e", "id": "dot-prop"}
     },
     "glob": {
       "type": "module",
