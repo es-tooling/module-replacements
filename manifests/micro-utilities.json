@@ -96,6 +96,12 @@
       "description": "You can use `instanceof ArrayBuffer`, or if cross-realm, use Object.prototype.toString.call(obj) === \"[object ArrayBuffer]\"",
       "example": "const isArrayBuffer = obj instanceof ArrayBuffer;\n// for cross-realm\nconst isArrayBufferCrossRealm = Object.prototype.toString.call(obj) === \"[object ArrayBuffer]\""
     },
+    "snippet::is-bigint": {
+      "id": "snippet::is-bigint",
+      "type": "simple",
+      "description": "You can use `typeof` to check if a value is a bigint.",
+      "example": "const isString = (value) => typeof value === \"bigint\";"
+    },
     "snippet::is-boolean": {
       "id": "snippet::is-boolean",
       "type": "simple",
@@ -345,6 +351,11 @@
       "type": "module",
       "moduleName": "is-array-buffer",
       "replacements": ["snippet::is-arraybuffer"]
+    },
+    "is-bigint": {
+      "type": "module",
+      "moduleName": "is-bigint",
+      "replacements": ["snippet::is-bigint"]
     },
     "is-boolean-object": {
       "type": "module",
