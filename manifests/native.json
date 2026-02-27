@@ -1337,6 +1337,12 @@
         "compatKey": "api.queueMicrotask"
       }
     },
+    "safe-buffer": {
+      "id": "safe-buffer",
+      "type": "removal",
+      "description": "All modern versions of Node have `Buffer.from` for safely creating buffers from arbitrary types.",
+      "url": {"type": "node", "id": "api/buffer.html"}
+    },
     "zlib.crc32": {
       "id": "zlib.crc32",
       "type": "native",
@@ -1345,12 +1351,6 @@
         "id": "api/zlib.html#zlibcrc32data-value"
       },
       "nodeFeatureId": {"moduleName": "zlib", "exportName": "crc32"}
-    },
-    "safe-buffer": {
-      "id": "safe-buffer",
-      "type": "removal",
-      "description": "All modern versions of Node have `Buffer.from` for safely creating buffers from arbitrary types.",
-      "url": {"type": "node", "id": "api/buffer.html"}
     }
   },
   "mappings": {
