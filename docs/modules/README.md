@@ -48,6 +48,7 @@ ESLint plugin.
 - [`find-pkg`](./find-pkg.md)
 - [`find-up`](./find-up.md)
 - [`fs-extra`](./fs-extra.md)
+- [`get-stream`](./get-stream.md)
 - [`glob`](./glob.md)
 - [`globby`](./globby.md)
 - [`graphemer`](./graphemer.md)

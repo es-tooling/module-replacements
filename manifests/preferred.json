@@ -234,6 +234,12 @@
       "replacements": ["fs"],
       "url": {"type": "e18e", "id": "fs-extra"}
     },
+    "get-stream": {
+      "type": "module",
+      "moduleName": "get-stream",
+      "replacements": ["Buffer"],
+      "url": {"type": "e18e", "id": "get-stream"}
+    },
     "get-value": {
       "type": "module",
       "moduleName": "get-value",
@@ -2496,6 +2502,13 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "xmldom"},
       "replacementModule": "@xmldom/xmldom"
+    },
+    "Buffer": {
+      "id": "Buffer",
+      "type": "native",
+      "description": "Buffer",
+      "nodeFeatureId": {"moduleName": "node:buffer", "exportName": "Buffer"},
+      "url": {"type": "node", "id": "api/buffer.html"}
     },
     "Buffer.compare": {
       "id": "Buffer.compare",
