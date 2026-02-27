@@ -16,7 +16,7 @@ const path = import.meta.resolve("my-module");
 
 ## `exsolve`
 
-[`exsolve`](https://www.npmjs.com/package/fast-querystring)
+[`exsolve`](https://www.npmjs.com/package/exsolve)
 
 ```ts
 import { resolveModulePath } from "exsolve";
