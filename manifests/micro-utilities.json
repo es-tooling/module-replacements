@@ -496,6 +496,11 @@
       "moduleName": "split-lines",
       "replacements": ["snippet::split-lines"]
     },
+    "toarray": {
+      "type": "module",
+      "moduleName": "toarray",
+      "replacements": ["snippet::array-coerce"]
+    },
     "uniq": {
       "type": "module",
       "moduleName": "uniq",
