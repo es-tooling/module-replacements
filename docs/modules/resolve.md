@@ -11,7 +11,7 @@ description: Modern alternatives to the resolve package
 Example:
 
 ```ts
-const path = import.meta.resolve('my-module');
+const path = import.meta.resolve('my-module')
 ```
 
 ## `exsolve`
@@ -19,9 +19,9 @@ const path = import.meta.resolve('my-module');
 [`exsolve`](https://www.npmjs.com/package/exsolve)
 
 ```ts
-import { resolveModulePath } from 'exsolve';
+import { resolveModulePath } from 'exsolve'
 
-const path = resolveModulePath('my-module');
+const path = resolveModulePath('my-module')
 ```
 
 ## `oxc-resolver`
@@ -29,8 +29,8 @@ const path = resolveModulePath('my-module');
 [`oxc-resolver`](https://www.npmjs.com/package/oxc-resolver)
 
 ```ts
-import { ResolverFactory } from 'oxc-resolver';
+import { ResolverFactory } from 'oxc-resolver'
 
-const resolver = new ResolverFactory();
-const { path } = resolver.sync(process.cwd(), 'my-module');
+const resolver = new ResolverFactory()
+const { path } = resolver.sync(process.cwd(), 'my-module')
 ```
