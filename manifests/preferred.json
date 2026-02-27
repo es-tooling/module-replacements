@@ -243,8 +243,8 @@
     "get-stream": {
       "type": "module",
       "moduleName": "get-stream",
-      "replacements": [],
-      "url": {"type": "e18e", "id": ""}
+      "replacements": ["Buffer"],
+      "url": {"type": "e18e", "id": "get-stream"}
     },
     "glob": {
       "type": "module",
@@ -2496,6 +2496,13 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "xmldom"},
       "replacementModule": "@xmldom/xmldom"
+    },
+    "Buffer": {
+      "id": "Buffer",
+      "type": "native",
+      "description": "Buffer",
+      "nodeFeatureId": {"moduleName": "node:buffer", "exportName": "Buffer"},
+      "url": {"type": "node", "id": "api/buffer.html"}
     },
     "Buffer.compare": {
       "id": "Buffer.compare",
