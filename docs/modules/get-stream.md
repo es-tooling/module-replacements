@@ -26,7 +26,7 @@ await Array.fromAsync(stream)
 
 ```ts
 async function streamToBuffer(stream) {
-  const chunks = await Array.fromAsync(stream, chunk => Buffer.from(chunk))
+  const chunks = await Array.fromAsync(stream, (chunk) => Buffer.from(chunk))
   return Buffer.concat(chunks)
 }
 ```
