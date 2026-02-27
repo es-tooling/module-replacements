@@ -75,6 +75,7 @@ ESLint plugin.
 - [`read-pkg-up`](./read-pkg-up.md)
 - [`read-package-up`](./read-package-up.md)
 - [`readable-stream`](./readable-stream.md)
+- [`resolve`](./resolve.md)
 - [`rimraf`](./rimraf.md)
 - [`shortid`](./shortid.md)
 - [`sort-object`](./sort-object.md)

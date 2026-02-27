@@ -2369,6 +2369,12 @@
       "replacements": ["node:stream", "streams"],
       "url": {"type": "e18e", "id": "readable-stream"}
     },
+    "resolve": {
+      "type": "module",
+      "moduleName": "resolve",
+      "replacements": ["exsolve", "oxc-resolver"],
+      "url": {"type": "e18e", "id": "resolve"}
+    },
     "rimraf": {
       "type": "module",
       "moduleName": "rimraf",
@@ -2733,6 +2739,12 @@
       "url": {"type": "e18e", "id": "eslint-plugin-node"},
       "replacementModule": "eslint-plugin-n"
     },
+    "exsolve": {
+      "id": "exsolve",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "resolve"},
+      "replacementModule": "exsolve"
+    },
     "fast-deep-equal": {
       "id": "fast-deep-equal",
       "type": "documented",
@@ -2978,6 +2990,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "object-hash"},
       "replacementModule": "ohash"
+    },
+    "oxc-resolver": {
+      "id": "oxc-resolver",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "resolve"},
+      "replacementModule": "oxc-resolver"
     },
     "package-manager-detector": {
       "id": "package-manager-detector",
