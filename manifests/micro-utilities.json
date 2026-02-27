@@ -72,6 +72,12 @@
       "description": "Every modern runtime provides a way to convert byte array to and from base64.",
       "example": "// From base64 to Uint8Array\nconst bytes = Uint8Array.fromBase64(base64)\n// From Uint8Array to base64\nconst base64 = bytes.toBase64()"
     },
+    "snippet::buffer-equal-constant-time": {
+      "id": "snippet::buffer-equal-constant-time",
+      "type": "simple",
+      "description": "You can use `crypto.timingSafeEqual` to check if Buffers are equal in constant time.",
+      "example": "import { timingSafeEqual } from 'crypto';\nconst buffersEqual = (a, b) => (a.length === b.length) && timingSafeEqual(a, b)"
+    },
     "snippet::call-bind": {
       "id": "snippet::call-bind",
       "type": "simple",
