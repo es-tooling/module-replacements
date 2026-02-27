@@ -20,6 +20,7 @@ const path = import.meta.resolve("my-module");
 
 ```ts
 import { resolveModulePath } from "exsolve";
+
 const path = resolveModulePath("my-module");
 ```
 
