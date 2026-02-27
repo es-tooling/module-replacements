@@ -66,6 +66,12 @@
       "description": "You can convert to and from a Set to remove duplicates from an array.",
       "example": "const unique = (arr) => [...new Set(arr)]"
     },
+    "snippet::async-function-constructor": {
+      "id": "snippet::async-function-constructor",
+      "type": "simple",
+      "description": "You can get the `AsyncFunction` using `async function`.",
+      "example": "const AsyncFunction = (async () => {}).constructor"
+    },
     "snippet::base64": {
       "id": "snippet::base64",
       "type": "simple",
@@ -95,6 +101,12 @@
       "type": "simple",
       "description": "You can use `instanceof ArrayBuffer`, or if cross-realm, use Object.prototype.toString.call(obj) === \"[object ArrayBuffer]\"",
       "example": "const isArrayBuffer = obj instanceof ArrayBuffer;\n// for cross-realm\nconst isArrayBufferCrossRealm = Object.prototype.toString.call(obj) === \"[object ArrayBuffer]\""
+    },
+    "snippet::is-async-function": {
+      "id": "snippet::is-async-function",
+      "type": "simple",
+      "description": "You can use `typeof` and `Object.prototype.toString.call` to check if it's an async function",
+      "example": "const isAsyncFunction = (obj) => typeof obj === \"function\" && Object.prototype.toString.call(obj) === \"[object AsyncFunction]\""
     },
     "snippet::is-bigint": {
       "id": "snippet::is-bigint",
@@ -307,6 +319,11 @@
       "moduleName": "arrify",
       "replacements": ["snippet::array-coerce"]
     },
+    "async-function": {
+      "type": "module",
+      "moduleName": "async-function",
+      "replacements": ["snippet::async-function-constructor"]
+    },
     "base64-js": {
       "type": "module",
       "moduleName": "base64-js",
@@ -351,6 +368,11 @@
       "type": "module",
       "moduleName": "is-array-buffer",
       "replacements": ["snippet::is-arraybuffer"]
+    },
+    "is-async-function": {
+      "type": "module",
+      "moduleName": "is-async-function",
+      "replacements": ["snippet::is-async-function"]
     },
     "is-bigint": {
       "type": "module",
