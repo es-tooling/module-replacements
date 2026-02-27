@@ -1325,6 +1325,15 @@
         "compatKey": "javascript.builtins.parseInt"
       }
     },
+    "path.parse": {
+      "id": "path.parse",
+      "type": "native",
+      "url": {
+        "type": "node",
+        "id": "api/path.html#pathparsepath"
+      },
+      "nodeFeatureId": {"moduleName": "path"}
+    },
     "queueMicrotask": {
       "id": "queueMicrotask",
       "type": "native",
@@ -1910,6 +1919,11 @@
       "type": "module",
       "moduleName": "parseint",
       "replacements": ["parseInt"]
+    },
+    "path-parse": {
+      "type": "module",
+      "moduleName": "path-parse",
+      "replacements": ["path.parse"]
     },
     "pinkie-promise": {
       "type": "module",
