@@ -6,6 +6,12 @@
       "replacements": ["@it-service-npm/remark-include"],
       "url": {"type": "e18e", "id": "remark-include--arcblock"}
     },
+    "@iarna/toml": {
+      "type": "module",
+      "moduleName": "@iarna/toml",
+      "replacements": ["smol-toml"],
+      "url": {"type": "e18e", "id": "toml"}
+    },
     "@jsdevtools/ez-spawn": {
       "type": "module",
       "moduleName": "@jsdevtools/ez-spawn",
@@ -95,6 +101,12 @@
       "moduleName": "crypto-js",
       "replacements": ["node:crypto", "crypto", "Bun.CryptoHasher"],
       "url": {"type": "e18e", "id": "crypto-js"}
+    },
+    "debug": {
+      "type": "module",
+      "moduleName": "debug",
+      "replacements": ["obug"],
+      "url": {"type": "e18e", "id": "debug"}
     },
     "deep-equal": {
       "type": "module",
@@ -279,6 +291,12 @@
     "is-builtin-module": {
       "type": "module",
       "moduleName": "is-builtin-module",
+      "replacements": ["isBuiltin", "builtinModules"],
+      "url": {"type": "e18e", "id": "is-builtin-module"}
+    },
+    "is-core-module": {
+      "type": "module",
+      "moduleName": "is-core-module",
       "replacements": ["isBuiltin", "builtinModules"],
       "url": {"type": "e18e", "id": "is-builtin-module"}
     },
@@ -2417,6 +2435,12 @@
       "replacements": ["fs.mkdtemp", "Deno.makeTempDir"],
       "url": {"type": "e18e", "id": "tempy"}
     },
+    "toml": {
+      "type": "module",
+      "moduleName": "toml",
+      "replacements": ["smol-toml"],
+      "url": {"type": "e18e", "id": "toml"}
+    },
     "traverse": {
       "type": "module",
       "moduleName": "traverse",
@@ -2632,10 +2656,7 @@
       "id": "URLSearchParams",
       "type": "native",
       "description": "URLSearchParams",
-      "webFeatureId": {
-        "featureId": "url",
-        "compatKey": "api.URLSearchParams"
-      },
+      "webFeatureId": {"featureId": "url", "compatKey": "api.URLSearchParams"},
       "url": {"type": "mdn", "id": "Web/API/URLSearchParams"}
     },
     "YAML": {
@@ -2808,10 +2829,7 @@
       "type": "native",
       "description": "fs.glob",
       "nodeFeatureId": {"moduleName": "node:fs", "exportName": "glob"},
-      "url": {
-        "type": "node",
-        "id": "api/fs.html#fspromisesglobpattern-options"
-      }
+      "url": {"type": "node", "id": "api/fs.html#fspromisesglobpattern-options"}
     },
     "fs.mkdir": {
       "id": "fs.mkdir",
@@ -2854,14 +2872,8 @@
       "id": "isBuiltin",
       "type": "native",
       "description": "isBuiltin",
-      "nodeFeatureId": {
-        "moduleName": "node:module",
-        "exportName": "isBuiltin"
-      },
-      "url": {
-        "type": "node",
-        "id": "api/module.html#moduleisbuiltinmodulename"
-      }
+      "nodeFeatureId": {"moduleName": "node:module", "exportName": "isBuiltin"},
+      "url": {"type": "node", "id": "api/module.html#moduleisbuiltinmodulename"}
     },
     "jquery": {
       "id": "jquery",
@@ -2979,6 +2991,12 @@
       "url": {"type": "e18e", "id": "dot-prop"},
       "replacementModule": "object-path"
     },
+    "obug": {
+      "id": "obug",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "debug"},
+      "replacementModule": "obug"
+    },
     "ofetch": {
       "id": "ofetch",
       "type": "documented",
@@ -3026,6 +3044,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "rimraf"},
       "replacementModule": "premove"
+    },
+    "smol-toml": {
+      "id": "smol-toml",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "toml"},
+      "replacementModule": "smol-toml"
     },
     "sort-object": {
       "id": "sort-object",
@@ -3141,10 +3165,7 @@
       "type": "native",
       "description": "zlib.gzipSync",
       "nodeFeatureId": {"moduleName": "node:zlib", "exportName": "gzipSync"},
-      "url": {
-        "type": "node",
-        "id": "api/zlib.html#zlibgzipsyncbuffer-options"
-      }
+      "url": {"type": "node", "id": "api/zlib.html#zlibgzipsyncbuffer-options"}
     }
   }
 }
