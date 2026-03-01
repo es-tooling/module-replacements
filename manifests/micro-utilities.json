@@ -237,8 +237,8 @@
     "snippet::shebang-regex": {
       "id": "snippet::shebang-regex",
       "type": "simple",
-      "description": "You can use `/^#!(.*)/` regex.",
-      "example": "const shebangRegex = /^#!(.*)/;"
+      "description": "You can use `/^#!(.+)/` regex.",
+      "example": "const shebangRegex = /^#!(.+)/;"
     },
     "snippet::split-lines": {
       "id": "snippet::split-lines",
