@@ -1261,6 +1261,18 @@
         "id": "Web/JavaScript/Reference/Global_Objects/String#html_wrapper_methods"
       }
     },
+    "for...in": {
+      "id": "for...in",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Statements/for...in"
+      },
+      "webFeatureId": {
+        "featureId": "iterators",
+        "compatKey": "javascript.statements.for_in"
+      }
+    },
     "for...of": {
       "id": "for...of",
       "type": "native",
@@ -1657,6 +1669,11 @@
       "type": "module",
       "moduleName": "for-each",
       "replacements": ["for...of"]
+    },
+    "for-in": {
+      "type": "module",
+      "moduleName": "for-in",
+      "replacements": ["for...in"]
     },
     "fs.realpath": {
       "type": "module",
