@@ -78,6 +78,12 @@
       "description": "Every modern runtime provides a way to bind to the call method of a function.",
       "example": "const fnBound = Function.call.bind(fn)"
     },
+    "snippet::for-own": {
+      "id": "snippet::for-own",
+      "type": "simple",
+      "description": "You can use `Object.keys(obj).forEach` to iterate over the own enumerable properties of an object.",
+      "example": "Object.keys(obj).forEach(key => {\n  const value = obj[key];\n  // do something\n});"
+    },
     "snippet::get-iterator": {
       "id": "snippet::get-iterator",
       "type": "simple",
@@ -234,6 +240,12 @@
       "description": "You can set the `toStringTag` of an object using `Object.defineProperty`.",
       "example": "const setToStringTag = (target, value) => Object.defineProperty(target, Symbol.toStringTag, { value, configurable: true });"
     },
+    "snippet::shebang-regex": {
+      "id": "snippet::shebang-regex",
+      "type": "simple",
+      "description": "You can use `/^#!(.+)/` regex.",
+      "example": "const shebangRegex = /^#!(.+)/;"
+    },
     "snippet::split-lines": {
       "id": "snippet::split-lines",
       "type": "simple",
@@ -336,6 +348,11 @@
       "type": "module",
       "moduleName": "filter-obj",
       "replacements": ["snippet::object-filter"]
+    },
+    "for-own": {
+      "type": "module",
+      "moduleName": "for-own",
+      "replacements": ["snippet::for-own"]
     },
     "has-flag": {
       "type": "module",
@@ -492,10 +509,20 @@
       "moduleName": "math-random",
       "replacements": ["snippet::math-random"]
     },
+    "object.map": {
+      "type": "module",
+      "moduleName": "object.map",
+      "replacements": ["snippet::object-map"]
+    },
     "repeat-string": {
       "type": "module",
       "moduleName": "repeat-string",
       "replacements": ["String.prototype.repeat"]
+    },
+    "shebang-regex": {
+      "type": "module",
+      "moduleName": "shebang-regex",
+      "replacements": ["snippet::shebang-regex"]
     },
     "slash": {
       "type": "module",
