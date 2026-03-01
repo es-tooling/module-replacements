@@ -505,7 +505,7 @@
     },
     "shebang-regex": {
       "type": "module",
-      "moduleName": "slash",
+      "moduleName": "shebang-regex",
       "replacements": ["snippet::shebang-regex"]
     },
     "slash": {
