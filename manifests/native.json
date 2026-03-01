@@ -1392,6 +1392,11 @@
       "moduleName": "aggregate-error",
       "replacements": ["AggregateError"]
     },
+    "arr-filter": {
+      "type": "module",
+      "moduleName": "arr-filter",
+      "replacements": ["Array.prototype.filter"]
+    },
     "array-buffer-byte-length": {
       "type": "module",
       "moduleName": "array-buffer-byte-length",
