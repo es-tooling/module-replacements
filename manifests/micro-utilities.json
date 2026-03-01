@@ -234,6 +234,12 @@
       "description": "You can set the `toStringTag` of an object using `Object.defineProperty`.",
       "example": "const setToStringTag = (target, value) => Object.defineProperty(target, Symbol.toStringTag, { value, configurable: true });"
     },
+    "snippet::shebang-regex": {
+      "id": "snippet::shebang-regex",
+      "type": "simple",
+      "description": "You can use `/^#!(.*)/` regex.",
+      "example": "const shebangRegex = /^#!(.*)/;"
+    },
     "snippet::split-lines": {
       "id": "snippet::split-lines",
       "type": "simple",
@@ -496,6 +502,11 @@
       "type": "module",
       "moduleName": "repeat-string",
       "replacements": ["String.prototype.repeat"]
+    },
+    "shebang-regex": {
+      "type": "module",
+      "moduleName": "slash",
+      "replacements": ["snippet::shebang-regex"]
     },
     "slash": {
       "type": "module",
