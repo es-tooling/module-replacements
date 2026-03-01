@@ -72,6 +72,12 @@
       "description": "Every modern runtime provides a way to convert byte array to and from base64.",
       "example": "// From base64 to Uint8Array\nconst bytes = Uint8Array.fromBase64(base64)\n// From Uint8Array to base64\nconst base64 = bytes.toBase64()"
     },
+    "snippet::bool-fn": {
+      "id": "snippet::bool-fn",
+      "type": "simple",
+      "description": "You can use an arrow function that returns required boolean value.",
+      "example": "// Inline function returning `true`\n() => true\n// Inline function returning `false`\n() => false"
+    },
     "snippet::call-bind": {
       "id": "snippet::call-bind",
       "type": "simple",
@@ -311,6 +317,11 @@
       "type": "module",
       "moduleName": "base64-js",
       "replacements": ["snippet::base64"]
+    },
+    "boolbase": {
+      "type": "module",
+      "moduleName": "boolbase",
+      "replacements": ["snippet::bool-fn"]
     },
     "call-bind": {
       "type": "module",
