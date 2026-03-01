@@ -1269,7 +1269,7 @@
         "id": "Web/JavaScript/Reference/Statements/for...in"
       },
       "webFeatureId": {
-        "featureId": "iterators",
+        "featureId": "javascript",
         "compatKey": "javascript.statements.for_in"
       }
     },
