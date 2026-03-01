@@ -78,6 +78,12 @@
       "description": "Every modern runtime provides a way to bind to the call method of a function.",
       "example": "const fnBound = Function.call.bind(fn)"
     },
+    "snippet::for-own": {
+      "id": "snippet::for-own",
+      "type": "simple",
+      "description": "You can use `Object.keys(obj).forEach` to iterate over the own enumerable properties of an object.",
+      "example": "Object.keys(obj).forEach(key => {\n  const value = obj[key];\n  // do something\n});"
+    },
     "snippet::get-iterator": {
       "id": "snippet::get-iterator",
       "type": "simple",
@@ -336,6 +342,11 @@
       "type": "module",
       "moduleName": "filter-obj",
       "replacements": ["snippet::object-filter"]
+    },
+    "for-own": {
+      "type": "module",
+      "moduleName": "for-own",
+      "replacements": ["snippet::for-own"]
     },
     "has-flag": {
       "type": "module",
