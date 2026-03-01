@@ -1397,6 +1397,11 @@
       "moduleName": "array-buffer-byte-length",
       "replacements": ["ArrayBuffer.prototype.byteLength"]
     },
+    "array-each": {
+      "type": "module",
+      "moduleName": "array-each",
+      "replacements": ["Array.prototype.forEach"]
+    },
     "array-every": {
       "type": "module",
       "moduleName": "array-every",
