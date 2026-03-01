@@ -60,6 +60,18 @@
         "compatKey": "javascript.builtins.TypedArray.slice"
       }
     },
+    "AbortController": {
+      "id": "AbortController",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/AbortController"
+      },
+      "webFeatureId": {
+        "featureId": "aborting",
+        "compatKey": "api.AbortController.AbortController"
+      }
+    },
     "AggregateError": {
       "id": "AggregateError",
       "type": "native",
@@ -1387,6 +1399,11 @@
     }
   },
   "mappings": {
+    "abort-controller": {
+      "type": "module",
+      "moduleName": "abort-controller",
+      "replacements": ["AbortController"]
+    },
     "aggregate-error": {
       "type": "module",
       "moduleName": "aggregate-error",
