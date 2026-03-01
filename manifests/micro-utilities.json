@@ -90,6 +90,12 @@
       "description": "You can use the includes method on the process.argv array to check if a flag is present.",
       "example": "process.argv.includes('--flag')"
     },
+    "snippet::is-arguments": {
+      "id": "snippet::is-arguments",
+      "type": "simple",
+      "description": "You can use `Symbol.toStringTag` together with `Object.prototype.toString.call(obj) === \"[object Arguments]\"`",
+      "example": "const isArguments = (val) => val?.[Symbol.toStringTag] === undefined && Object.prototype.toString.call(val) === \"[object Arguments]\";"
+    },
     "snippet::is-arraybuffer": {
       "id": "snippet::is-arraybuffer",
       "type": "simple",
@@ -346,6 +352,11 @@
       "type": "module",
       "moduleName": "iota-array",
       "replacements": ["snippet::array-from-count"]
+    },
+    "is-arguments": {
+      "type": "module",
+      "moduleName": "is-arguments",
+      "replacements": ["snippet::is-arguments"]
     },
     "is-array-buffer": {
       "type": "module",
