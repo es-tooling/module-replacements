@@ -492,6 +492,11 @@
       "moduleName": "math-random",
       "replacements": ["snippet::math-random"]
     },
+    "object.map": {
+      "type": "module",
+      "moduleName": "object.map",
+      "replacements": ["snippet::object-map"]
+    },
     "repeat-string": {
       "type": "module",
       "moduleName": "repeat-string",
