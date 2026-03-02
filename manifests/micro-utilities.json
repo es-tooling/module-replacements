@@ -156,6 +156,12 @@
       "description": "You can use `typeof` to check if a value is an object and `Object.getPrototypeOf` to ensure it's a plain object.",
       "example": "const isObject = (obj) => obj && typeof obj === \"object\" && (Object.getPrototypeOf(obj) === null || Object.getPrototypeOf(obj) === Object.prototype);"
     },
+    "snippet::is-object-or-function": {
+      "id": "snippet::is-object-or-function",
+      "type": "simple",
+      "description": "You can use `typeof` to check if a value is an object or a function.",
+      "example": "const isObjectOrFunction = (v) => v !== null && (typeof v === \"object\" || typeof v === \"function\");"
+    },
     "snippet::is-odd": {
       "id": "snippet::is-odd",
       "type": "simple",
@@ -423,6 +429,11 @@
       "type": "module",
       "moduleName": "is-number-object",
       "replacements": ["snippet:is-number"]
+    },
+    "is-obj": {
+      "type": "module",
+      "moduleName": "is-obj",
+      "replacements": ["snippet::is-object-or-function"]
     },
     "is-object": {
       "type": "module",
