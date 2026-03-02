@@ -216,6 +216,18 @@
         "compatKey": "javascript.builtins.Array.findIndex"
       }
     },
+    "Array.prototype.findLast": {
+      "id": "Array.prototype.findLast",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/findLast"
+      },
+      "webFeatureId": {
+        "featureId": "array-find",
+        "compatKey": "javascript.builtins.Array.findLast"
+      }
+    },
     "Array.prototype.flat": {
       "id": "Array.prototype.flat",
       "type": "native",
@@ -1505,6 +1517,11 @@
       "type": "module",
       "moduleName": "array.prototype.findindex",
       "replacements": ["Array.prototype.findIndex"]
+    },
+    "array.prototype.findlast": {
+      "type": "module",
+      "moduleName": "array.prototype.findlast",
+      "replacements": ["Array.prototype.findLast"]
     },
     "array.prototype.flat": {
       "type": "module",
