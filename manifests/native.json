@@ -216,6 +216,18 @@
         "compatKey": "javascript.builtins.Array.findIndex"
       }
     },
+    "Array.prototype.findLast": {
+      "id": "Array.prototype.findLast",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/findLast"
+      },
+      "webFeatureId": {
+        "featureId": "array-findlast",
+        "compatKey": "javascript.builtins.Array.findLast"
+      }
+    },
     "Array.prototype.flat": {
       "id": "Array.prototype.flat",
       "type": "native",
@@ -394,6 +406,18 @@
       "webFeatureId": {
         "featureId": "array-splice",
         "compatKey": "javascript.builtins.Array.splice"
+      }
+    },
+    "Array.prototype.toSorted": {
+      "id": "Array.prototype.toSorted",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/toSorted"
+      },
+      "webFeatureId": {
+        "featureId": "array-by-copy",
+        "compatKey": "javascript.builtins.Array.toSorted"
       }
     },
     "Array.prototype.unshift": {
@@ -1438,6 +1462,11 @@
       "moduleName": "arr-filter",
       "replacements": ["Array.prototype.filter"]
     },
+    "arr-map": {
+      "type": "module",
+      "moduleName": "arr-map",
+      "replacements": ["Array.prototype.map"]
+    },
     "array-buffer-byte-length": {
       "type": "module",
       "moduleName": "array-buffer-byte-length",
@@ -1518,6 +1547,11 @@
       "moduleName": "array.prototype.findindex",
       "replacements": ["Array.prototype.findIndex"]
     },
+    "array.prototype.findlast": {
+      "type": "module",
+      "moduleName": "array.prototype.findlast",
+      "replacements": ["Array.prototype.findLast"]
+    },
     "array.prototype.flat": {
       "type": "module",
       "moduleName": "array.prototype.flat",
@@ -1587,6 +1621,11 @@
       "type": "module",
       "moduleName": "array.prototype.splice",
       "replacements": ["Array.prototype.splice"]
+    },
+    "array.prototype.tosorted": {
+      "type": "module",
+      "moduleName": "array.prototype.tosorted",
+      "replacements": ["Array.prototype.toSorted"]
     },
     "array.prototype.unshift": {
       "type": "module",

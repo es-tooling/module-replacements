@@ -132,6 +132,12 @@
       "description": "You can use `typeof` to check if a value is an object and `Object.getPrototypeOf` to ensure it's a plain object.",
       "example": "const isObject = (obj) => obj && typeof obj === \"object\" && (Object.getPrototypeOf(obj) === null || Object.getPrototypeOf(obj) === Object.prototype);"
     },
+    "snippet::is-object-or-function": {
+      "id": "snippet::is-object-or-function",
+      "type": "simple",
+      "description": "You can use `typeof` to check if a value is an object or a function.",
+      "example": "const isObjectOrFunction = (v) => v !== null && (typeof v === \"object\" || typeof v === \"function\");"
+    },
     "snippet::is-odd": {
       "id": "snippet::is-odd",
       "type": "simple",
@@ -203,6 +209,12 @@
       "type": "simple",
       "description": "You can use `Object.fromEntries` with `Object.entries` and `Array.prototype.map` to map an object's properties.",
       "example": "const objectMap = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([k, v]) => fn(k, v)));"
+    },
+    "snippet::object-reduce": {
+      "id": "snippet::object-reduce",
+      "type": "simple",
+      "description": "You can use `Object.entries` and `Array.prototype.reduce`.",
+      "example": "const objectReduce = (obj, fn, initial) => Object.entries(obj).reduce((acc, [k, v]) => fn(acc, k, v), initial);"
     },
     "snippet::regexp-copy": {
       "id": "snippet::regexp-copy",
@@ -395,6 +407,11 @@
       "moduleName": "is-number-object",
       "replacements": ["snippet:is-number"]
     },
+    "is-obj": {
+      "type": "module",
+      "moduleName": "is-obj",
+      "replacements": ["snippet::is-object-or-function"]
+    },
     "is-object": {
       "type": "module",
       "moduleName": "is-object",
@@ -484,6 +501,11 @@
       "type": "module",
       "moduleName": "object.map",
       "replacements": ["snippet::object-map"]
+    },
+    "object.reduce": {
+      "type": "module",
+      "moduleName": "object.reduce",
+      "replacements": ["snippet::object-reduce"]
     },
     "shebang-regex": {
       "type": "module",
