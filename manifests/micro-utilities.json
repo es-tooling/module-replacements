@@ -234,6 +234,12 @@
       "description": "You can use `Object.fromEntries` with `Object.entries` and `Array.prototype.map` to map an object's properties.",
       "example": "const objectMap = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([k, v]) => fn(k, v)));"
     },
+    "snippet::object-reduce": {
+      "id": "snippet::object-reduce",
+      "type": "simple",
+      "description": "You can use `Object.entries` and `Array.prototype.reduce`.",
+      "example": "const objectReduce = (obj, fn, initial) => Object.entries(obj).reduce((acc, [k, v]) => fn(acc, k, v), initial);"
+    },
     "snippet::regexp-copy": {
       "id": "snippet::regexp-copy",
       "type": "simple",
@@ -524,6 +530,11 @@
       "type": "module",
       "moduleName": "object.map",
       "replacements": ["snippet::object-map"]
+    },
+    "object.reduce": {
+      "type": "module",
+      "moduleName": "object.reduce",
+      "replacements": ["snippet::object-reduce"]
     },
     "repeat-string": {
       "type": "module",
