@@ -90,6 +90,12 @@
       "description": "Every modern runtime provides a way to get the iterator function through the Symbol.iterator symbol.",
       "example": "const iterator = obj[Symbol.iterator]?.()"
     },
+    "snippet::get-own-enumerable-keys": {
+      "id": "snippet::get-own-enumerable-keys",
+      "type": "simple",
+      "description": "You can get own enumerable keys using `Object.keys` and `Object.getOwnPropertySymbols` with `Object.prototype.propertyIsEnumerable`.",
+      "example": "Object.keys(object).concat(Object.getOwnPropertySymbols(object).filter(key => Object.prototype.propertyIsEnumerable.call(object, key)))"
+    },
     "snippet::has-argv": {
       "id": "snippet::has-argv",
       "type": "simple",
@@ -353,6 +359,11 @@
       "type": "module",
       "moduleName": "for-own",
       "replacements": ["snippet::for-own"]
+    },
+    "get-own-enumerable-keys": {
+      "type": "module",
+      "moduleName": "get-own-enumerable-keys",
+      "replacements": ["snippet::get-own-enumerable-keys"]
     },
     "has-flag": {
       "type": "module",
