@@ -132,6 +132,12 @@
       "description": "You can use the modulo operator to check if a number is even.",
       "example": "(n % 2) === 0"
     },
+    "snippet::is-in-ssh": {
+      "id": "snippet::is-in-ssh",
+      "type": "simple",
+      "description": "You can check if the current environment is SSH by checking if the `SSH_CONNECTION` environment variable is set.",
+      "example": "const isInSsh = Boolean(process.env.SSH_CONNECTION);"
+    },
     "snippet::is-negative": {
       "id": "snippet::is-negative",
       "type": "simple",
@@ -416,6 +422,11 @@
       "type": "module",
       "moduleName": "is-finite",
       "replacements": ["Number.isFinite"]
+    },
+    "is-in-ssh": {
+      "type": "module",
+      "moduleName": "is-in-ssh",
+      "replacements": ["snippet::is-in-ssh"]
     },
     "is-negative": {
       "type": "module",
