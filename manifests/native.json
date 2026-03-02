@@ -396,6 +396,18 @@
         "compatKey": "javascript.builtins.Array.splice"
       }
     },
+    "Array.prototype.toSorted": {
+      "id": "Array.prototype.toSorted",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/toSorted"
+      },
+      "webFeatureId": {
+        "featureId": "array-by-copy",
+        "compatKey": "javascript.builtins.Array.toSorted"
+      }
+    },
     "Array.prototype.unshift": {
       "id": "Array.prototype.unshift",
       "type": "native",
@@ -1575,6 +1587,11 @@
       "type": "module",
       "moduleName": "array.prototype.splice",
       "replacements": ["Array.prototype.splice"]
+    },
+    "array.prototype.tosorted": {
+      "type": "module",
+      "moduleName": "array.prototype.tosorted",
+      "replacements": ["Array.prototype.toSorted"]
     },
     "array.prototype.unshift": {
       "type": "module",
