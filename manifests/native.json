@@ -1382,11 +1382,6 @@
       "description": "You can just use the `class` syntax.",
       "url": {"type": "mdn", "id": "Web/JavaScript/Reference/Classes/extends"}
     },
-    "is-finite": {
-      "type": "module",
-      "moduleName": "is-finite",
-      "replacements": ["Number.isFinite"]
-    },
     "parseInt": {
       "id": "parseInt",
       "type": "native",
@@ -1818,6 +1813,11 @@
       "type": "module",
       "moduleName": "is-error",
       "replacements": ["Error.isError"]
+    },
+    "is-finite": {
+      "type": "module",
+      "moduleName": "is-finite",
+      "replacements": ["Number.isFinite"]
     },
     "is-nan": {
       "type": "module",
