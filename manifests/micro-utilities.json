@@ -1,29 +1,5 @@
 {
   "replacements": {
-    "Number.isFinite": {
-      "id": "Number.isFinite",
-      "type": "native",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/Number/isFinite"
-      },
-      "webFeatureId": {
-        "featureId": "number",
-        "compatKey": "javascript.builtins.Number.isFinite"
-      }
-    },
-    "String.prototype.repeat": {
-      "id": "String.prototype.repeat",
-      "type": "native",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/String/repeat"
-      },
-      "webFeatureId": {
-        "featureId": "string-repeat",
-        "compatKey": "javascript.builtins.String.repeat"
-      }
-    },
     "snippet::array-coerce": {
       "id": "snippet::array-coerce",
       "type": "simple",
@@ -394,11 +370,6 @@
       "moduleName": "is-even",
       "replacements": ["snippet::is-even"]
     },
-    "is-finite": {
-      "type": "module",
-      "moduleName": "is-finite",
-      "replacements": ["Number.isFinite"]
-    },
     "is-negative": {
       "type": "module",
       "moduleName": "is-negative",
@@ -513,11 +484,6 @@
       "type": "module",
       "moduleName": "object.map",
       "replacements": ["snippet::object-map"]
-    },
-    "repeat-string": {
-      "type": "module",
-      "moduleName": "repeat-string",
-      "replacements": ["String.prototype.repeat"]
     },
     "shebang-regex": {
       "type": "module",

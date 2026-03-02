@@ -1147,6 +1147,18 @@
         "compatKey": "javascript.builtins.String.padStart"
       }
     },
+    "String.prototype.repeat": {
+      "id": "String.prototype.repeat",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/repeat"
+      },
+      "webFeatureId": {
+        "featureId": "string-repeat",
+        "compatKey": "javascript.builtins.String.repeat"
+      }
+    },
     "String.prototype.replaceAll": {
       "id": "String.prototype.replaceAll",
       "type": "native",
@@ -1369,6 +1381,11 @@
       "type": "removal",
       "description": "You can just use the `class` syntax.",
       "url": {"type": "mdn", "id": "Web/JavaScript/Reference/Classes/extends"}
+    },
+    "is-finite": {
+      "type": "module",
+      "moduleName": "is-finite",
+      "replacements": ["Number.isFinite"]
     },
     "parseInt": {
       "id": "parseInt",
@@ -2062,6 +2079,11 @@
       "moduleName": "remove",
       "replacements": ["fs.rm"]
     },
+    "repeat-string": {
+      "type": "module",
+      "moduleName": "repeat-string",
+      "replacements": ["String.prototype.repeat"]
+    },
     "setprototypeof": {
       "type": "module",
       "moduleName": "setprototypeof",
@@ -2101,6 +2123,11 @@
       "type": "module",
       "moduleName": "string.prototype.padstart",
       "replacements": ["String.prototype.padStart"]
+    },
+    "string.prototype.repeat": {
+      "type": "module",
+      "moduleName": "string.prototype.repeat",
+      "replacements": ["String.prototype.repeat"]
     },
     "string.prototype.replaceall": {
       "type": "module",
