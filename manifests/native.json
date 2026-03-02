@@ -224,7 +224,7 @@
         "id": "Web/JavaScript/Reference/Global_Objects/Array/findLast"
       },
       "webFeatureId": {
-        "featureId": "array-find",
+        "featureId": "array-findlast",
         "compatKey": "javascript.builtins.Array.findLast"
       }
     },
