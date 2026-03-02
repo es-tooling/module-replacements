@@ -405,6 +405,11 @@
       "moduleName": "is-finite",
       "replacements": ["Number.isFinite"]
     },
+    "is-in-ssh": {
+      "type": "module",
+      "moduleName": "is-in-ssh",
+      "replacements": ["snippet::is-in-ssh"]
+    },
     "is-negative": {
       "type": "module",
       "moduleName": "is-negative",
