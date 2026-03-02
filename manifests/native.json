@@ -1450,6 +1450,11 @@
       "moduleName": "arr-filter",
       "replacements": ["Array.prototype.filter"]
     },
+    "arr-map": {
+      "type": "module",
+      "moduleName": "arr-map",
+      "replacements": ["Array.prototype.map"]
+    },
     "array-buffer-byte-length": {
       "type": "module",
       "moduleName": "array-buffer-byte-length",
