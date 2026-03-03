@@ -318,6 +318,11 @@
       "moduleName": "base64-js",
       "replacements": ["snippet::base64"]
     },
+    "buffer-equal-constant-time": {
+      "type": "module",
+      "moduleName": "buffer-equal-constant-time",
+      "replacements": ["snippet::buffer-equal-constant-time"]
+    },
     "call-bind": {
       "type": "module",
       "moduleName": "call-bind",
