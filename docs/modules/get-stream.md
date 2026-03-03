@@ -6,6 +6,8 @@ description: Modern alternatives to the get-stream package
 
 ## Converting stream to string
 
+You can convert a stream to a string by using `Buffer.from` and a `for await`:
+
 ```ts
 async function streamToString(stream) {
   const chunks = []
@@ -18,11 +20,15 @@ async function streamToString(stream) {
 
 ## Converting stream to Array
 
+You can convert a stream to an array using `Array.fromAsync`:
+
 ```ts
 await Array.fromAsync(stream)
 ```
 
 ## Converting stream to Buffer
+
+You can convert a stream to a `Buffer` using `Array.fromAsync` with a mapper:
 
 ```ts
 async function streamToBuffer(stream) {
