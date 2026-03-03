@@ -1,41 +1,5 @@
 {
   "replacements": {
-    "Number.isFinite": {
-      "id": "Number.isFinite",
-      "type": "native",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/Number/isFinite"
-      },
-      "webFeatureId": {
-        "featureId": "number",
-        "compatKey": "javascript.builtins.Number.isFinite"
-      }
-    },
-    "RegExp.escape": {
-      "id": "RegExp.escape",
-      "type": "native",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/RegExp/escape"
-      },
-      "webFeatureId": {
-        "featureId": "regexp-escape",
-        "compatKey": "javascript.builtins.RegExp.escape"
-      }
-    },
-    "String.prototype.repeat": {
-      "id": "String.prototype.repeat",
-      "type": "native",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/String/repeat"
-      },
-      "webFeatureId": {
-        "featureId": "string-repeat",
-        "compatKey": "javascript.builtins.String.repeat"
-      }
-    },
     "snippet::array-coerce": {
       "id": "snippet::array-coerce",
       "type": "simple",
@@ -414,11 +378,6 @@
       "moduleName": "es-set-tostringtag",
       "replacements": ["snippet::set-tostringtag"]
     },
-    "escape-string-regexp": {
-      "type": "module",
-      "moduleName": "escape-string-regexp",
-      "replacements": ["RegExp.escape"]
-    },
     "filter-obj": {
       "type": "module",
       "moduleName": "filter-obj",
@@ -478,11 +437,6 @@
       "type": "module",
       "moduleName": "is-even",
       "replacements": ["snippet::is-even"]
-    },
-    "is-finite": {
-      "type": "module",
-      "moduleName": "is-finite",
-      "replacements": ["Number.isFinite"]
     },
     "is-in-ssh": {
       "type": "module",
@@ -618,11 +572,6 @@
       "type": "module",
       "moduleName": "object.reduce",
       "replacements": ["snippet::object-reduce"]
-    },
-    "repeat-string": {
-      "type": "module",
-      "moduleName": "repeat-string",
-      "replacements": ["String.prototype.repeat"]
     },
     "shebang-regex": {
       "type": "module",

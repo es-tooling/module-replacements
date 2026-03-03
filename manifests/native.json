@@ -1087,6 +1087,18 @@
         "compatKey": "javascript.builtins.Reflect.ownKeys"
       }
     },
+    "RegExp.escape": {
+      "id": "RegExp.escape",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/RegExp/escape"
+      },
+      "webFeatureId": {
+        "featureId": "regexp-escape",
+        "compatKey": "javascript.builtins.RegExp.escape"
+      }
+    },
     "RegExp.prototype.flags": {
       "id": "RegExp.prototype.flags",
       "type": "native",
@@ -1169,6 +1181,18 @@
       "webFeatureId": {
         "featureId": "string-pad",
         "compatKey": "javascript.builtins.String.padStart"
+      }
+    },
+    "String.prototype.repeat": {
+      "id": "String.prototype.repeat",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/repeat"
+      },
+      "webFeatureId": {
+        "featureId": "string-repeat",
+        "compatKey": "javascript.builtins.String.repeat"
       }
     },
     "String.prototype.replaceAll": {
@@ -1740,6 +1764,11 @@
       "moduleName": "es-string-html-methods",
       "replacements": ["es-string-html-methods"]
     },
+    "escape-string-regexp": {
+      "type": "module",
+      "moduleName": "escape-string-regexp",
+      "replacements": ["RegExp.escape"]
+    },
     "extend-shallow": {
       "type": "module",
       "moduleName": "extend-shallow",
@@ -1859,6 +1888,11 @@
       "type": "module",
       "moduleName": "is-error",
       "replacements": ["Error.isError"]
+    },
+    "is-finite": {
+      "type": "module",
+      "moduleName": "is-finite",
+      "replacements": ["Number.isFinite"]
     },
     "is-nan": {
       "type": "module",
@@ -2120,6 +2154,11 @@
       "moduleName": "remove",
       "replacements": ["fs.rm"]
     },
+    "repeat-string": {
+      "type": "module",
+      "moduleName": "repeat-string",
+      "replacements": ["String.prototype.repeat"]
+    },
     "setprototypeof": {
       "type": "module",
       "moduleName": "setprototypeof",
@@ -2159,6 +2198,11 @@
       "type": "module",
       "moduleName": "string.prototype.padstart",
       "replacements": ["String.prototype.padStart"]
+    },
+    "string.prototype.repeat": {
+      "type": "module",
+      "moduleName": "string.prototype.repeat",
+      "replacements": ["String.prototype.repeat"]
     },
     "string.prototype.replaceall": {
       "type": "module",
