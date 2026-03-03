@@ -347,7 +347,7 @@
     "escape-string-regexp": {
       "type": "module",
       "moduleName": "escape-string-regexp",
-      "replacements": ["RegExp.escape", "snippet::regexp-escape"]
+      "replacements": ["RegExp.escape"]
     },
     "filter-obj": {
       "type": "module",
