@@ -24,6 +24,16 @@ You can convert a stream to an array using `Array.fromAsync`:
 
 ```ts
 await Array.fromAsync(stream)
+
+// or before Node 22
+
+async function streamToArray(stream) {
+  const chunks = []
+  for await (const chunk of stream) {
+    chunks.push(chunk)
+  }
+  return chunks
+}
 ```
 
 ## Converting stream to Buffer
@@ -33,6 +43,16 @@ You can convert a stream to a `Buffer` using `Array.fromAsync` with a mapper:
 ```ts
 async function streamToBuffer(stream) {
   const chunks = await Array.fromAsync(stream, (chunk) => Buffer.from(chunk))
+  return Buffer.concat(chunks)
+}
+
+// or before Node 22
+
+async function streamToBuffer(stream) {
+  const chunks = []
+  for await (const chunk of stream) {
+    chunks.push(Buffer.from(chunk))
+  }
   return Buffer.concat(chunks)
 }
 ```
