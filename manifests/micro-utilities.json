@@ -93,7 +93,7 @@
     "snippet::is-arguments": {
       "id": "snippet::is-arguments",
       "type": "simple",
-      "description": "You can use `Symbol.toStringTag` together with `Object.prototype.toString.call(obj) === \"[object Arguments]\"`",
+      "description": "You can use `Object.prototype.toString.call(obj) === \"[object Arguments]\"`",
       "example": "const isArguments = (val) => Object.prototype.toString.call(val) === \"[object Arguments]\";"
     },
     "snippet::is-arraybuffer": {
