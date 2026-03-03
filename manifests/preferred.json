@@ -240,6 +240,12 @@
       "replacements": ["fs"],
       "url": {"type": "e18e", "id": "fs-extra"}
     },
+    "get-stream": {
+      "type": "module",
+      "moduleName": "get-stream",
+      "replacements": ["Buffer"],
+      "url": {"type": "e18e", "id": "get-stream"}
+    },
     "get-value": {
       "type": "module",
       "moduleName": "get-value",
@@ -2503,10 +2509,15 @@
       "url": {"type": "e18e", "id": "xmldom"},
       "replacementModule": "@xmldom/xmldom"
     },
+    "Buffer": {
+      "id": "Buffer",
+      "type": "native",
+      "nodeFeatureId": {"moduleName": "node:buffer", "exportName": "Buffer"},
+      "url": {"type": "node", "id": "api/buffer.html"}
+    },
     "Buffer.compare": {
       "id": "Buffer.compare",
       "type": "native",
-      "description": "Buffer.compare",
       "nodeFeatureId": {"moduleName": "node:buffer", "exportName": "Buffer"},
       "url": {
         "type": "node",
@@ -2516,14 +2527,12 @@
     "Buffer.prototype.equals": {
       "id": "Buffer.prototype.equals",
       "type": "native",
-      "description": "Buffer.prototype.equals",
       "nodeFeatureId": {"moduleName": "node:buffer", "exportName": "Buffer"},
       "url": {"type": "node", "id": "api/buffer.html#bufequalsotherbuffer"}
     },
     "Buffer.prototype.toString": {
       "id": "Buffer.prototype.toString",
       "type": "native",
-      "description": "Buffer.prototype.toString",
       "nodeFeatureId": {"moduleName": "node:buffer", "exportName": "Buffer"},
       "url": {
         "type": "node",
