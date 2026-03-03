@@ -234,12 +234,6 @@
       "description": "You can create a copy of a regular expression using the `RegExp` constructor.",
       "example": "const copyRegExp = (regexp) => new RegExp(regexp);"
     },
-    "snippet::regexp-escape": {
-      "id": "snippet::regexp-escape",
-      "type": "simple",
-      "description": "You can escape a regular expression using `String.prototype.replace`.",
-      "example": "const escapeStringRegexp = (string) => string.replace(/[|\\\\{}()[\\]^$+*?.]/g, '\\\\$&').replace(/-/g, '\\\\x2d');"
-    },
     "snippet::set-tostringtag": {
       "id": "snippet::set-tostringtag",
       "type": "simple",
