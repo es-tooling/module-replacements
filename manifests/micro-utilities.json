@@ -42,6 +42,12 @@
       "description": "You can convert to and from a Set to remove duplicates from an array.",
       "example": "const unique = (arr) => [...new Set(arr)]"
     },
+    "snippet::async-function-constructor": {
+      "id": "snippet::async-function-constructor",
+      "type": "simple",
+      "description": "You can get the `AsyncFunction` using `async function`.",
+      "example": "const AsyncFunction = (async () => {}).constructor"
+    },
     "snippet::base64": {
       "id": "snippet::base64",
       "type": "simple",
@@ -78,6 +84,12 @@
       "description": "You can use `instanceof ArrayBuffer`, or if cross-realm, use Object.prototype.toString.call(obj) === \"[object ArrayBuffer]\"",
       "example": "const isArrayBuffer = obj instanceof ArrayBuffer;\n// for cross-realm\nconst isArrayBufferCrossRealm = Object.prototype.toString.call(obj) === \"[object ArrayBuffer]\""
     },
+    "snippet::is-async-function": {
+      "id": "snippet::is-async-function",
+      "type": "simple",
+      "description": "You can use `typeof` and `Object.prototype.toString.call` to check if it's an async function",
+      "example": "const isAsyncFunction = (obj) => typeof obj === \"function\" && Object.prototype.toString.call(obj) === \"[object AsyncFunction]\""
+    },
     "snippet::is-bigint": {
       "id": "snippet::is-bigint",
       "type": "simple",
@@ -107,6 +119,12 @@
       "type": "simple",
       "description": "You can use the modulo operator to check if a number is even.",
       "example": "(n % 2) === 0"
+    },
+    "snippet::is-in-ssh": {
+      "id": "snippet::is-in-ssh",
+      "type": "simple",
+      "description": "You can check if the current environment is SSH by checking if the `SSH_CONNECTION` environment variable is set.",
+      "example": "const isInSsh = Boolean(process.env.SSH_CONNECTION);"
     },
     "snippet::is-negative": {
       "id": "snippet::is-negative",
@@ -191,6 +209,12 @@
       "type": "simple",
       "description": "You can check if the current environment is Windows by checking if `process.platform` is equal to \"win32\".",
       "example": "const isWindows = () => process.platform === \"win32\";"
+    },
+    "snippet::json-file": {
+      "id": "snippet::json-file",
+      "type": "simple",
+      "description": "You can use `JSON` and 'node:fs' to read and write json file.",
+      "example": "import * as fs from 'node:fs/promises'\nfs.readFile(file, 'utf8').then(JSON.parse)\nfs.writeFile(file, JSON.stringify(data, null, 2) + '\n')"
     },
     "snippet::math-random": {
       "id": "snippet::math-random",
@@ -307,6 +331,11 @@
       "moduleName": "arrify",
       "replacements": ["snippet::array-coerce"]
     },
+    "async-function": {
+      "type": "module",
+      "moduleName": "async-function",
+      "replacements": ["snippet::async-function-constructor"]
+    },
     "base64-js": {
       "type": "module",
       "moduleName": "base64-js",
@@ -357,6 +386,11 @@
       "moduleName": "is-array-buffer",
       "replacements": ["snippet::is-arraybuffer"]
     },
+    "is-async-function": {
+      "type": "module",
+      "moduleName": "is-async-function",
+      "replacements": ["snippet::is-async-function"]
+    },
     "is-bigint": {
       "type": "module",
       "moduleName": "is-bigint",
@@ -381,6 +415,11 @@
       "type": "module",
       "moduleName": "is-even",
       "replacements": ["snippet::is-even"]
+    },
+    "is-in-ssh": {
+      "type": "module",
+      "moduleName": "is-in-ssh",
+      "replacements": ["snippet::is-in-ssh"]
     },
     "is-negative": {
       "type": "module",
@@ -476,6 +515,11 @@
       "type": "module",
       "moduleName": "isobject",
       "replacements": ["snippet::is-object"]
+    },
+    "jsonfile": {
+      "type": "module",
+      "moduleName": "jsonfile",
+      "replacements": ["snippet::json-file"]
     },
     "kind-of": {
       "type": "module",

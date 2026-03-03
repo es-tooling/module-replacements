@@ -66,6 +66,12 @@
       "replacements": ["util.styleText", "picocolors", "ansis"],
       "url": {"type": "e18e", "id": "chalk"}
     },
+    "colors": {
+      "type": "module",
+      "moduleName": "colors",
+      "replacements": ["util.styleText", "picocolors", "ansis"],
+      "url": {"type": "e18e", "id": "chalk"}
+    },
     "core-util-is": {
       "type": "module",
       "moduleName": "core-util-is",
