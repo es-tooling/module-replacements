@@ -1680,7 +1680,8 @@
     "buffer-equal-constant-time": {
       "type": "module",
       "moduleName": "buffer-equal-constant-time",
-      "replacements": ["crypto.timingSafeEqual"]
+      "replacements": ["crypto.timingSafeEqual"],
+      "url": {"type": "e18e", "id": "buffer-equal-constant-time"}
     },
     "buffer-from": {
       "type": "module",
