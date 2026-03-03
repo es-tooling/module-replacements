@@ -372,11 +372,6 @@
       "moduleName": "es-set-tostringtag",
       "replacements": ["snippet::set-tostringtag"]
     },
-    "escape-string-regexp": {
-      "type": "module",
-      "moduleName": "escape-string-regexp",
-      "replacements": ["RegExp.escape"]
-    },
     "filter-obj": {
       "type": "module",
       "moduleName": "filter-obj",

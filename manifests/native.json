@@ -1087,6 +1087,18 @@
         "compatKey": "javascript.builtins.Reflect.ownKeys"
       }
     },
+    "RegExp.escape": {
+      "id": "RegExp.escape",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/RegExp/escape"
+      },
+      "webFeatureId": {
+        "featureId": "regexp-escape",
+        "compatKey": "javascript.builtins.RegExp.escape"
+      }
+    },
     "RegExp.prototype.flags": {
       "id": "RegExp.prototype.flags",
       "type": "native",
@@ -1751,6 +1763,11 @@
       "type": "module",
       "moduleName": "es-string-html-methods",
       "replacements": ["es-string-html-methods"]
+    },
+    "escape-string-regexp": {
+      "type": "module",
+      "moduleName": "escape-string-regexp",
+      "replacements": ["RegExp.escape"]
     },
     "extend-shallow": {
       "type": "module",
