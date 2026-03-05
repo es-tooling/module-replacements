@@ -18,6 +18,7 @@ ESLint plugin.
 - [`body-parser`](./body-parser.md)
 - [`buf-compare`](./buf-compare.md)
 - [`buffer-equal`](./buffer-equal.md)
+- [`buffer-equal-constant-time`](./buffer-equal-constant-time.md)
 - [`buffer-equals`](./buffer-equals.md)
 - [`builtin-modules`](./builtin-modules.md)
 - [`chalk`](./chalk.md)
