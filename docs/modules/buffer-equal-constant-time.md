@@ -50,5 +50,5 @@ const bufSecret = Buffer.from('303')
 bufferEqual(bufUser, bufSecret) // [!code --]
 bufUser.length === bufSecret.length // [!code ++]
   ? crypto.timingSafeEqual(bufUser, bufSecret) // [!code ++]
-  : !crypto.timingSafeEqual(bufUser, bufSecret) // [!code ++]
+  : !crypto.timingSafeEqual(bufUser, bufUser) // [!code ++]
 ```
