@@ -132,6 +132,12 @@
       "description": "You can use the modulo operator to check if a number is even.",
       "example": "(n % 2) === 0"
     },
+    "snippet::is-generator-function": {
+      "id": "snippet::is-generator-function",
+      "type": "simple",
+      "description": "You can use `typeof` and `Object.prototype.toString.call` to check if it's a generator function",
+      "example": "const isGeneratorFunction = (obj) => typeof obj === \"function\" && Object.prototype.toString.call(obj) === \"[object GeneratorFunction]\""
+    },
     "snippet::is-in-ssh": {
       "id": "snippet::is-in-ssh",
       "type": "simple",
@@ -437,6 +443,11 @@
       "type": "module",
       "moduleName": "is-even",
       "replacements": ["snippet::is-even"]
+    },
+    "is-generator-function": {
+      "type": "module",
+      "moduleName": "is-generator-function",
+      "replacements": ["snippet::is-generator-function"]
     },
     "is-in-ssh": {
       "type": "module",
