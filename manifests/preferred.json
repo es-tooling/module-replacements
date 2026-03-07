@@ -2381,6 +2381,12 @@
       "replacements": ["node:stream", "streams"],
       "url": {"type": "e18e", "id": "readable-stream"}
     },
+    "retry-request": {
+      "type": "module",
+      "moduleName": "retry-request",
+      "replacements": ["fetch", "ky", "ofetch"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
     "rimraf": {
       "type": "module",
       "moduleName": "rimraf",
@@ -2416,6 +2422,12 @@
       "moduleName": "strip-ansi",
       "replacements": ["util.stripVTControlCharacters", "Bun.stripANSI"],
       "url": {"type": "e18e", "id": "strip-ansi"}
+    },
+    "teeny-request": {
+      "type": "module",
+      "moduleName": "teeny-request",
+      "replacements": ["fetch", "ky", "ofetch"],
+      "url": {"type": "e18e", "id": "fetch"}
     },
     "tempy": {
       "type": "module",
