@@ -2381,6 +2381,12 @@
       "replacements": ["node:stream", "streams"],
       "url": {"type": "e18e", "id": "readable-stream"}
     },
+    "request": {
+      "type": "module",
+      "moduleName": "request",
+      "replacements": ["fetch", "ky", "ofetch"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
     "rimraf": {
       "type": "module",
       "moduleName": "rimraf",
