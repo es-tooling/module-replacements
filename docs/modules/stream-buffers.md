@@ -47,38 +47,36 @@ Push data over time example:
 import streamBuffers from 'stream-buffers' // [!code --]
 import { Readable } from 'node:stream' // [!code ++]
 
-const r = new streamBuffers.ReadableStreamBuffer() // [!code --]
-const r = new Readable({ read() {} }) // [!code ++]
+const rs = new streamBuffers.ReadableStreamBuffer() // [!code --]
+const rs = new Readable({ read() {} }) // [!code ++]
 
-r.put('first chunk') // [!code --]
-r.push('first chunk') // [!code ++]
+rs.put('first chunk') // [!code --]
+rs.push('first chunk') // [!code ++]
 
-r.put(Buffer.from('second chunk')) // [!code --]
-r.push(Buffer.from('second chunk')) // [!code ++]
+rs.put(Buffer.from('second chunk')) // [!code --]
+rs.push(Buffer.from('second chunk')) // [!code ++]
 
-r.stop() // [!code --]
-r.push(null) // [!code ++]
+rs.stop() // [!code --]
+rs.push(null) // [!code ++]
 ```
 
 Control chunk size and frequency example:
 
+<!-- prettier-ignore -->
 ```ts
 import streamBuffers from 'stream-buffers' // [!code --]
 import { Readable } from 'node:stream' // [!code ++]
 import { setTimeout } from 'node:timers/promises' // [!code ++]
 
-const r = new streamBuffers.ReadableStreamBuffer({ // [!code --]
-  frequency: 10, // [!code --]
-  chunkSize: 2048 // [!code --]
-}) // [!code --]
-r.put(data) // [!code --]
-r.stop() // [!code --]
+const rs = new streamBuffers.ReadableStreamBuffer({ frequency: 10, chunkSize: 2048 }) // [!code --]
+rs.put(data) // [!code --]
+rs.stop() // [!code --]
 
 const data = Buffer.from('...your data...') // [!code ++]
 const chunkSize = 2048 // [!code ++]
 const frequencyMs = 10 // [!code ++]
 
-const r = Readable.from(async function* () { // [!code ++]
+const rs = Readable.from(async function* () { // [!code ++]
   for (let i = 0; i < data.length; i += chunkSize) { // [!code ++]
     yield data.slice(i, i + chunkSize) // [!code ++]
     await setTimeout(frequencyMs) // [!code ++]
