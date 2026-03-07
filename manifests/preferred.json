@@ -318,12 +318,6 @@
       "replacements": ["jsx-ast-utils-x"],
       "url": {"type": "e18e", "id": "jsx-ast-utils"}
     },
-    "lint-staged": {
-      "type": "module",
-      "moduleName": "lint-staged",
-      "replacements": ["nano-staged"],
-      "url": {"type": "e18e", "id": "lint-staged"}
-    },
     "lodash": {
       "type": "module",
       "moduleName": "lodash",
