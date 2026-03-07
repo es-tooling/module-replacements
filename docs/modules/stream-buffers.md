@@ -67,7 +67,10 @@ import streamBuffers from 'stream-buffers' // [!code --]
 import { Readable } from 'node:stream' // [!code ++]
 import { setTimeout } from 'node:timers/promises' // [!code ++]
 
-const r = new streamBuffers.ReadableStreamBuffer({ frequency: 10, chunkSize: 2048 }) // [!code --]
+const r = new streamBuffers.ReadableStreamBuffer({ // [!code --]
+  frequency: 10, // [!code --]
+  chunkSize: 2048 // [!code --]
+}) // [!code --]
 r.put(data) // [!code --]
 r.stop() // [!code --]
 
