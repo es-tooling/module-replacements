@@ -2896,12 +2896,6 @@
       "url": {"type": "e18e", "id": "body-parser"},
       "replacementModule": "milliparsec"
     },
-    "nano-staged": {
-      "id": "nano-staged",
-      "type": "documented",
-      "url": {"type": "e18e", "id": "lint-staged"},
-      "replacementModule": "nano-staged"
-    },
     "nanoexec": {
       "id": "nanoexec",
       "type": "documented",
