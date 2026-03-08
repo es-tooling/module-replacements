@@ -2340,6 +2340,12 @@
       "replacements": ["Teleport"],
       "url": {"type": "e18e", "id": "portal-vue"}
     },
+    "preferred-pm": {
+      "type": "module",
+      "moduleName": "preferred-pm",
+      "replacements": ["package-manager-detector"],
+      "url": {"type": "e18e", "id": "detect-package-manager"}
+    },
     "q": {
       "type": "module",
       "moduleName": "q",
