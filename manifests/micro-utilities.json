@@ -135,7 +135,7 @@
     "snippet::is-generator-function": {
       "id": "snippet::is-generator-function",
       "type": "simple",
-      "description": "You can use `typeof` and `Object.prototype.toString.call` to check if it's a generator function",
+      "description": "You can use `typeof` and `Object.prototype.toString.call` to check if a value is a generator function",
       "example": "const isGeneratorFunction = (obj) => typeof obj === \"function\" && Object.prototype.toString.call(obj) === \"[object GeneratorFunction]\""
     },
     "snippet::is-in-ssh": {
