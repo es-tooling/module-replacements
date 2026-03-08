@@ -1303,6 +1303,15 @@
         "compatKey": "javascript.builtins.WeakMap"
       }
     },
+    "crypto.timingSafeEqual": {
+      "id": "crypto.timingSafeEqual",
+      "type": "native",
+      "url": {
+        "type": "node",
+        "id": "api/crypto.html#cryptotimingsafeequala-b"
+      },
+      "nodeFeatureId": {"moduleName": "crypto", "exportName": "timingSafeEqual"}
+    },
     "es-errors": {
       "id": "es-errors",
       "type": "removal",
@@ -1667,6 +1676,12 @@
       "type": "module",
       "moduleName": "buffer-crc32",
       "replacements": ["zlib.crc32"]
+    },
+    "buffer-equal-constant-time": {
+      "type": "module",
+      "moduleName": "buffer-equal-constant-time",
+      "replacements": ["crypto.timingSafeEqual"],
+      "url": {"type": "e18e", "id": "buffer-equal-constant-time"}
     },
     "buffer-from": {
       "type": "module",
