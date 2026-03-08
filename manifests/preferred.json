@@ -2357,6 +2357,17 @@
       ],
       "url": {"type": "e18e", "id": "qs"}
     },
+    "querystring": {
+      "type": "module",
+      "moduleName": "querystring",
+      "replacements": [
+        "URLSearchParams",
+        "fast-querystring",
+        "picoquery",
+        "neoqs"
+      ],
+      "url": {"type": "e18e", "id": "qs"}
+    },
     "read-package-up": {
       "type": "module",
       "moduleName": "read-package-up",
