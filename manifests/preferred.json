@@ -2346,9 +2346,9 @@
       "replacements": ["Promise", "nativebird"],
       "url": {"type": "e18e", "id": "bluebird-q"}
     },
-    "querystring": {
+    "qs": {
       "type": "module",
-      "moduleName": "querystring",
+      "moduleName": "qs",
       "replacements": [
         "URLSearchParams",
         "fast-querystring",
@@ -2357,9 +2357,9 @@
       ],
       "url": {"type": "e18e", "id": "qs"}
     },
-    "qs": {
+    "querystring": {
       "type": "module",
-      "moduleName": "qs",
+      "moduleName": "querystring",
       "replacements": [
         "URLSearchParams",
         "fast-querystring",
