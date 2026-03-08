@@ -2340,6 +2340,12 @@
       "replacements": ["Teleport"],
       "url": {"type": "e18e", "id": "portal-vue"}
     },
+    "preferred-pm": {
+      "type": "module",
+      "moduleName": "preferred-pm",
+      "replacements": ["package-manager-detector"],
+      "url": {"type": "e18e", "id": "detect-package-manager"}
+    },
     "q": {
       "type": "module",
       "moduleName": "q",
@@ -2349,6 +2355,17 @@
     "qs": {
       "type": "module",
       "moduleName": "qs",
+      "replacements": [
+        "URLSearchParams",
+        "fast-querystring",
+        "picoquery",
+        "neoqs"
+      ],
+      "url": {"type": "e18e", "id": "qs"}
+    },
+    "querystring": {
+      "type": "module",
+      "moduleName": "querystring",
       "replacements": [
         "URLSearchParams",
         "fast-querystring",

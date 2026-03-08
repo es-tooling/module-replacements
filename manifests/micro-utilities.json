@@ -54,12 +54,6 @@
       "description": "Every modern runtime provides a way to convert byte array to and from base64.",
       "example": "// From base64 to Uint8Array\nconst bytes = Uint8Array.fromBase64(base64)\n// From Uint8Array to base64\nconst base64 = bytes.toBase64()"
     },
-    "snippet::buffer-equal-constant-time": {
-      "id": "snippet::buffer-equal-constant-time",
-      "type": "simple",
-      "description": "You can use `crypto.timingSafeEqual` to check if Buffers are equal in constant time.",
-      "example": "import { timingSafeEqual } from 'crypto';\nconst buffersEqual = (a, b) => (a.length === b.length) && timingSafeEqual(a, b)"
-    },
     "snippet::call-bind": {
       "id": "snippet::call-bind",
       "type": "simple",
@@ -131,6 +125,12 @@
       "type": "simple",
       "description": "You can use the modulo operator to check if a number is even.",
       "example": "(n % 2) === 0"
+    },
+    "snippet::is-generator-function": {
+      "id": "snippet::is-generator-function",
+      "type": "simple",
+      "description": "You can use `typeof` and `Object.prototype.toString.call` to check if a value is a generator function",
+      "example": "const isGeneratorFunction = (obj) => typeof obj === \"function\" && Object.prototype.toString.call(obj) === \"[object GeneratorFunction]\""
     },
     "snippet::is-in-ssh": {
       "id": "snippet::is-in-ssh",
@@ -353,11 +353,6 @@
       "moduleName": "base64-js",
       "replacements": ["snippet::base64"]
     },
-    "buffer-equal-constant-time": {
-      "type": "module",
-      "moduleName": "buffer-equal-constant-time",
-      "replacements": ["snippet::buffer-equal-constant-time"]
-    },
     "call-bind": {
       "type": "module",
       "moduleName": "call-bind",
@@ -437,6 +432,11 @@
       "type": "module",
       "moduleName": "is-even",
       "replacements": ["snippet::is-even"]
+    },
+    "is-generator-function": {
+      "type": "module",
+      "moduleName": "is-generator-function",
+      "replacements": ["snippet::is-generator-function"]
     },
     "is-in-ssh": {
       "type": "module",
