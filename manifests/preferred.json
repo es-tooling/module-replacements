@@ -240,6 +240,12 @@
       "replacements": ["fs"],
       "url": {"type": "e18e", "id": "fs-extra"}
     },
+    "gaxios": {
+      "type": "module",
+      "moduleName": "gaxios",
+      "replacements": ["fetch", "ky", "ofetch"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
     "get-stream": {
       "type": "module",
       "moduleName": "get-stream",
