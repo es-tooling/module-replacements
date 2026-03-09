@@ -4,7 +4,7 @@ description: Modern alternatives to the stream-buffers package for buffering and
 
 # Replacements for `stream-buffers`
 
-## Node.js Utility Consumers
+## Utility Consumers (native, Node.js)
 
 Since Node.js ≥ 16.7.0 [Utility Consumers](https://nodejs.org/api/webstreams.html#webstreams_utility_consumers) let you consume a Readable stream fully into memory (`Buffer`/`string`/`JSON`/`Blob`/`ArrayBuffer`).
 
