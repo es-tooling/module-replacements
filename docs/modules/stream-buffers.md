@@ -13,13 +13,13 @@ Example:
 ```ts
 import streamBuffers from 'stream-buffers' // [!code --]
 import { pipeline } from 'node:stream/promises' // [!code --]
-import { buffer, text, json, blob, arrayBuffer } from 'node:stream/consumers' // [!code ++]
+import { buffer } from 'node:stream/consumers' // [!code ++]
 
 const sink = new streamBuffers.WritableStreamBuffer() // [!code --]
 await pipeline(readable, sink) // [!code --]
 
-const out = sink.getContents() // or sink.getContentsAsString('utf8') / JSON.parse(sink.getContentsAsString('utf8')) / new Blob([sink.getContents()]) / sink.getContents().buffer.slice(...) [!code --]
-const out = await buffer(readable) // or text(readable) / json(readable) / blob(readable) / arrayBuffer(readable) [!code ++]
+const out = sink.getContents() // [!code --]
+const out = await buffer(readable) // [!code ++]
 ```
 
 Capturing output when an API expects a Writable example:
@@ -33,9 +33,9 @@ const sink = new streamBuffers.WritableStreamBuffer() // [!code --]
 const sink = new PassThrough() // [!code ++]
 
 await someFnThatWritesTo(sink) // [!code --]
-const out = sink.getContents() // or sink.getContentsAsString('utf8') [!code --]
+const out = sink.getContents() // [!code --]
 
-const resultP = buffer(sink) // or text(sink) [!code ++]
+const resultP = buffer(sink) // [!code ++]
 await someFnThatWritesTo(sink) // [!code ++]
 sink.end() // [!code ++]
 const out = await resultP // [!code ++]
