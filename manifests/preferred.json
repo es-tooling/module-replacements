@@ -240,6 +240,12 @@
       "replacements": ["fs"],
       "url": {"type": "e18e", "id": "fs-extra"}
     },
+    "gaxios": {
+      "type": "module",
+      "moduleName": "gaxios",
+      "replacements": ["fetch", "ky", "ofetch"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
     "get-stream": {
       "type": "module",
       "moduleName": "get-stream",
@@ -2340,6 +2346,12 @@
       "replacements": ["Teleport"],
       "url": {"type": "e18e", "id": "portal-vue"}
     },
+    "preferred-pm": {
+      "type": "module",
+      "moduleName": "preferred-pm",
+      "replacements": ["package-manager-detector"],
+      "url": {"type": "e18e", "id": "detect-package-manager"}
+    },
     "q": {
       "type": "module",
       "moduleName": "q",
@@ -2349,6 +2361,17 @@
     "qs": {
       "type": "module",
       "moduleName": "qs",
+      "replacements": [
+        "URLSearchParams",
+        "fast-querystring",
+        "picoquery",
+        "neoqs"
+      ],
+      "url": {"type": "e18e", "id": "qs"}
+    },
+    "querystring": {
+      "type": "module",
+      "moduleName": "querystring",
       "replacements": [
         "URLSearchParams",
         "fast-querystring",
@@ -2381,10 +2404,16 @@
       "replacements": ["node:stream", "streams"],
       "url": {"type": "e18e", "id": "readable-stream"}
     },
+    "request": {
+      "type": "module",
+      "moduleName": "request",
+      "replacements": ["fetch", "ky", "ofetch"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
     "retry-request": {
       "type": "module",
       "moduleName": "retry-request",
-      "replacements": ["fetch", "ky", "ofetch"],
+      "replacements": ["ky", "ofetch"],
       "url": {"type": "e18e", "id": "fetch"}
     },
     "rimraf": {

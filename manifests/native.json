@@ -1303,6 +1303,39 @@
         "compatKey": "javascript.builtins.WeakMap"
       }
     },
+    "atob": {
+      "id": "atob",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/Window/atob"
+      },
+      "webFeatureId": {
+        "featureId": "base64encodedecode",
+        "compatKey": "api.atob"
+      }
+    },
+    "btoa": {
+      "id": "btoa",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/Window/btoa"
+      },
+      "webFeatureId": {
+        "featureId": "base64encodedecode",
+        "compatKey": "api.btoa"
+      }
+    },
+    "crypto.timingSafeEqual": {
+      "id": "crypto.timingSafeEqual",
+      "type": "native",
+      "url": {
+        "type": "node",
+        "id": "api/crypto.html#cryptotimingsafeequala-b"
+      },
+      "nodeFeatureId": {"moduleName": "crypto", "exportName": "timingSafeEqual"}
+    },
     "es-errors": {
       "id": "es-errors",
       "type": "removal",
@@ -1663,10 +1696,26 @@
       "moduleName": "arraybuffer.prototype.slice",
       "replacements": ["ArrayBuffer.prototype.slice"]
     },
+    "atob": {
+      "type": "module",
+      "moduleName": "atob",
+      "replacements": ["atob"]
+    },
+    "btoa": {
+      "type": "module",
+      "moduleName": "btoa",
+      "replacements": ["btoa"]
+    },
     "buffer-crc32": {
       "type": "module",
       "moduleName": "buffer-crc32",
       "replacements": ["zlib.crc32"]
+    },
+    "buffer-equal-constant-time": {
+      "type": "module",
+      "moduleName": "buffer-equal-constant-time",
+      "replacements": ["crypto.timingSafeEqual"],
+      "url": {"type": "e18e", "id": "buffer-equal-constant-time"}
     },
     "buffer-from": {
       "type": "module",
