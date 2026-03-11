@@ -32,13 +32,11 @@ import { buffer, text } from 'node:stream/consumers' // [!code ++]
 const sink = new streamBuffers.WritableStreamBuffer() // [!code --]
 const sink = new PassThrough() // [!code ++]
 
-await someFnThatWritesTo(sink) // [!code --]
+const outPromise = buffer(sink) // [!code ++]
+await someFnThatWritesTo(sink)
 const out = sink.getContents() // [!code --]
-
-const resultP = buffer(sink) // [!code ++]
-await someFnThatWritesTo(sink) // [!code ++]
 sink.end() // [!code ++]
-const out = await resultP // [!code ++]
+const out = await outPromise // [!code ++]
 ```
 
 Push data over time example:
