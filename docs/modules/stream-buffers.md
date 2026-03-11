@@ -66,13 +66,13 @@ import streamBuffers from 'stream-buffers' // [!code --]
 import { Readable } from 'node:stream' // [!code ++]
 import { setTimeout } from 'node:timers/promises' // [!code ++]
 
-const rs = new streamBuffers.ReadableStreamBuffer({ frequency: 10, chunkSize: 2048 }) // [!code --]
+const data = Buffer.from('...your data...')
+const frequencyMs = 10
+const chunkSize = 2048
+
+const rs = new streamBuffers.ReadableStreamBuffer({ frequency: frequencyMs, chunkSize: chunkSize }) // [!code --]
 rs.put(data) // [!code --]
 rs.stop() // [!code --]
-
-const data = Buffer.from('...your data...') // [!code ++]
-const chunkSize = 2048 // [!code ++]
-const frequencyMs = 10 // [!code ++]
 
 const rs = Readable.from(async function* () { // [!code ++]
   for (let i = 0; i < data.length; i += chunkSize) { // [!code ++]
