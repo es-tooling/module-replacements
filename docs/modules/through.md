@@ -7,8 +7,8 @@ description: Modern alternatives to the through package
 ## `stream.Writable` (native, Node.js)
 
 ```ts
-import through from 'through'; // [!code --]
-import { Writable } from 'node:stream'; // [!code ++]
+import through from 'through' // [!code --]
+import { Writable } from 'node:stream' // [!code ++]
 
 through(fn) // [!code --]
 new Writable({ // [!code ++]
