@@ -6,6 +6,7 @@ description: Modern alternatives to the through package
 
 ## `stream.Writable` (native, Node.js)
 
+<!-- prettier-ignore -->
 ```ts
 import through from 'through' // [!code --]
 import { Writable } from 'node:stream' // [!code ++]
