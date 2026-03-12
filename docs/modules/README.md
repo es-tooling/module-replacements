@@ -73,6 +73,7 @@ ESLint plugin.
 - [`portal-vue`](./portal-vue.md)
 - [`pkg-dir`](./pkg-dir.md)
 - [`qs`](./qs.md)
+- [`react-helmet`](./react-helmet.md)
 - [`read-pkg`](./read-pkg.md)
 - [`read-pkg-up`](./read-pkg-up.md)
 - [`read-package-up`](./read-package-up.md)
