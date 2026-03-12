@@ -21,7 +21,7 @@
     "axios": {
       "type": "module",
       "moduleName": "axios",
-      "replacements": ["fetch", "ky", "ofetch"],
+      "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
     "bluebird": {
@@ -93,7 +93,7 @@
     "cross-fetch": {
       "type": "module",
       "moduleName": "cross-fetch",
-      "replacements": ["fetch", "ky", "ofetch"],
+      "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
     "crypto-js": {
@@ -249,7 +249,7 @@
     "gaxios": {
       "type": "module",
       "moduleName": "gaxios",
-      "replacements": ["fetch", "ky", "ofetch"],
+      "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
     "get-stream": {
@@ -2295,7 +2295,7 @@
     "node-fetch": {
       "type": "module",
       "moduleName": "node-fetch",
-      "replacements": ["fetch", "ky", "ofetch"],
+      "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
     "npm-run-all": {
@@ -2413,7 +2413,13 @@
     "request": {
       "type": "module",
       "moduleName": "request",
-      "replacements": ["fetch", "ky", "ofetch"],
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
+    "retry-request": {
+      "type": "module",
+      "moduleName": "retry-request",
+      "replacements": ["ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
     "rimraf": {
@@ -2451,6 +2457,12 @@
       "moduleName": "strip-ansi",
       "replacements": ["util.stripVTControlCharacters", "Bun.stripANSI"],
       "url": {"type": "e18e", "id": "strip-ansi"}
+    },
+    "teeny-request": {
+      "type": "module",
+      "moduleName": "teeny-request",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
     },
     "tempy": {
       "type": "module",
