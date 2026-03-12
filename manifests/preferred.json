@@ -114,6 +114,12 @@
       "replacements": ["dequal", "fast-deep-equal"],
       "url": {"type": "e18e", "id": "deep-equal"}
     },
+    "deep-equal-json": {
+      "type": "module",
+      "moduleName": "deep-equal-json",
+      "replacements": ["dequal", "fast-deep-equal"],
+      "url": {"type": "e18e", "id": "deep-equal"}
+    },
     "depcheck": {
       "type": "module",
       "moduleName": "depcheck",
