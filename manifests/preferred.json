@@ -12,6 +12,12 @@
       "replacements": ["tinyexec"],
       "url": {"type": "e18e", "id": "ez-spawn"}
     },
+    "@ljharb/through": {
+      "type": "module",
+      "moduleName": "@ljharb/through",
+      "replacements": ["node:stream"],
+      "url": {"type": "e18e", "id": "through"}
+    },
     "axios": {
       "type": "module",
       "moduleName": "axios",
@@ -2422,6 +2428,12 @@
       "moduleName": "tempy",
       "replacements": ["fs.mkdtemp", "Deno.makeTempDir"],
       "url": {"type": "e18e", "id": "tempy"}
+    },
+    "through": {
+      "type": "module",
+      "moduleName": "through",
+      "replacements": ["node:stream"],
+      "url": {"type": "e18e", "id": "through"}
     },
     "toml": {
       "type": "module",
