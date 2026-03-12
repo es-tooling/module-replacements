@@ -12,7 +12,7 @@ import { Writable } from 'node:stream'; // [!code ++]
 
 through(fn) // [!code --]
 new Writable({ // [!code ++]
-  write: (chunk, encoding, callback) => {  // [!code ++]
+  write: (chunk, encoding, callback) => { // [!code ++]
     fn(chunk) // [!code ++]
     callback() // [!code ++]
   } // [!code ++]
