@@ -1445,6 +1445,15 @@
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol"
       }
     },
+    "has-template-literals": {
+      "id": "has-template-literals",
+      "type": "removal",
+      "description": "Every modern environment has support for Template literals. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Template_literals"
+      }
+    },
     "has-tostringtag": {
       "id": "has-tostringtag",
       "type": "removal",
@@ -1925,6 +1934,11 @@
       "type": "module",
       "moduleName": "has-symbols",
       "replacements": ["has-symbols"]
+    },
+    "has-template-literals": {
+      "type": "module",
+      "moduleName": "has-template-literals",
+      "replacements": ["has-template-literals"]
     },
     "has-tostringtag": {
       "type": "module",
