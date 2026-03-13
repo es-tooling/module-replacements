@@ -6,9 +6,9 @@ description: Native Node.js alternatives to the rimraf package for recursive dir
 
 ## `fs.rm` (native, Node.js)
 
-### Async methods
+Node.js v14.14.0 and above provide a native alternative: [`fs.rm`](https://nodejs.org/api/fs.html#fspromisesrmpath-options) and [`fs.rmSync`](https://nodejs.org/api/fs.html#fsrmsyncpath-options). It supports recursive deletion and works as a direct replacement.
 
-Node.js v14.14.0 and above provide a native alternative: [`fs.rm`](https://nodejs.org/api/fs.html#fspromisesrmpath-options). It supports recursive deletion and works as a direct replacement.
+### Async methods
 
 ```ts
 import rimraf from 'rimraf' // [!code --]
@@ -27,6 +27,9 @@ import * as fs from 'node:fs' // [!code ++]
 await rimraf.sync('./dist') // [!code --]
 await fs.rmSync('./dist', { recursive: true, force: true }) // [!code ++]
 ```
+
+> [!IMPORTANT]
+> Do not forget to pass `{ recursive: true, force: true }`, otherwise it will not work.
 
 ## `fs.rmdir` (native, Node.js before v14.14.0)
 
