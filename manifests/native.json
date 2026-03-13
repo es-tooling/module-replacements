@@ -1418,6 +1418,15 @@
         "id": "Web/JavaScript/Reference/Global_Objects/BigInt"
       }
     },
+    "has-optional-chaining": {
+      "id": "has-optional-chaining",
+      "type": "removal",
+      "description": "Every modern environment has support for Optional chaining. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Operators/Optional_chaining"
+      }
+    },
     "has-property-descriptors": {
       "id": "has-property-descriptors",
       "type": "removal",
@@ -1914,6 +1923,11 @@
       "type": "module",
       "moduleName": "has-bigints",
       "replacements": ["has-bigints"]
+    },
+    "has-optional-chaining": {
+      "type": "module",
+      "moduleName": "has-optional-chaining",
+      "replacements": ["has-optional-chaining"]
     },
     "has-own-prop": {
       "type": "module",
