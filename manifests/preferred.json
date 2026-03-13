@@ -2392,6 +2392,12 @@
       ],
       "url": {"type": "e18e", "id": "qs"}
     },
+    "randomatic": {
+      "type": "module",
+      "moduleName": "randomatic",
+      "replacements": ["nanoid"],
+      "url": {"type": "e18e", "id": "shortid"}
+    },
     "read-package-up": {
       "type": "module",
       "moduleName": "read-package-up",
