@@ -66,6 +66,11 @@
       "replacements": ["util.styleText", "picocolors", "ansis"],
       "url": {"type": "e18e", "id": "chalk"}
     },
+    "clean-webpack-plugin": {
+      "type": "module",
+      "moduleName": "clean-webpack-plugin",
+      "url": {"type": "e18e", "id": "clean-webpack-plugin"}
+    },
     "cli-color": {
       "type": "module",
       "moduleName": "cli-color",

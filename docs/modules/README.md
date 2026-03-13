@@ -22,6 +22,7 @@ ESLint plugin.
 - [`buffer-equals`](./buffer-equals.md)
 - [`builtin-modules`](./builtin-modules.md)
 - [`chalk`](./chalk.md)
+- [`clean-webpack-plugin`](./clean-webpack-plugin.md)
 - [`core-util-is`](./core-util-is.md)
 - [`cpx`](./cpx.md)
 - [`cross-fetch`](./fetch.md)
