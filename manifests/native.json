@@ -1418,6 +1418,15 @@
         "id": "Web/JavaScript/Reference/Global_Objects/BigInt"
       }
     },
+    "has-dynamic-import": {
+      "id": "has-dynamic-import",
+      "type": "removal",
+      "description": "Every modern environment has support for dynamic import. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Operators/import"
+      }
+    },
     "has-optional-chaining": {
       "id": "has-optional-chaining",
       "type": "removal",
@@ -1923,6 +1932,11 @@
       "type": "module",
       "moduleName": "has-bigints",
       "replacements": ["has-bigints"]
+    },
+    "has-dynamic-import": {
+      "type": "module",
+      "moduleName": "has-dynamic-import",
+      "replacements": ["has-dynamic-import"]
     },
     "has-optional-chaining": {
       "type": "module",
