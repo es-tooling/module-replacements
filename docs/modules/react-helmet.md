@@ -11,15 +11,13 @@ description: Modern alternatives to the react-helmet package
 Example:
 
 ```jsx
-function BlogPost({post}) {
+function BlogPost({ post }) {
   return (
     <article>
       <h1>{post.title}</h1>
       <title>{post.title}</title>
       <meta name="keywords" content={post.keywords} />
-      <p>
-        Eee equals em-see-squared...
-      </p>
+      <p>Eee equals em-see-squared...</p>
     </article>
   )
 }
