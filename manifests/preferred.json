@@ -3219,7 +3219,8 @@
     "webpack.output.clean": {
       "id": "webpack.output.clean",
       "type": "documented",
-      "url": {"type": "e18e", "id": "clean-webpack-plugin"}
+      "url": {"type": "e18e", "id": "clean-webpack-plugin"},
+      "replacementModule": "webpack"
     },
     "wireit": {
       "id": "wireit",
