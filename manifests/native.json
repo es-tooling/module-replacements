@@ -1454,6 +1454,15 @@
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag"
       }
     },
+    "has-typed-arrays": {
+      "id": "has-typed-arrays",
+      "type": "removal",
+      "description": "Every modern environment has support for `TypedArrays. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/TypedArray"
+      }
+    },
     "inherits": {
       "id": "inherits",
       "type": "removal",
@@ -1921,6 +1930,11 @@
       "type": "module",
       "moduleName": "has-tostringtag",
       "replacements": ["has-tostringtag"]
+    },
+    "has-typed-arrays": {
+      "type": "module",
+      "moduleName": "has-typed-arrays",
+      "replacements": ["has-typed-arrays"]
     },
     "hasown": {
       "type": "module",
