@@ -12,10 +12,16 @@
       "replacements": ["tinyexec"],
       "url": {"type": "e18e", "id": "ez-spawn"}
     },
+    "@ljharb/through": {
+      "type": "module",
+      "moduleName": "@ljharb/through",
+      "replacements": ["node:stream"],
+      "url": {"type": "e18e", "id": "through"}
+    },
     "axios": {
       "type": "module",
       "moduleName": "axios",
-      "replacements": ["fetch", "ky", "ofetch"],
+      "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
     "bluebird": {
@@ -66,6 +72,12 @@
       "replacements": ["util.styleText", "picocolors", "ansis"],
       "url": {"type": "e18e", "id": "chalk"}
     },
+    "colors": {
+      "type": "module",
+      "moduleName": "colors",
+      "replacements": ["util.styleText", "picocolors", "ansis"],
+      "url": {"type": "e18e", "id": "chalk"}
+    },
     "core-util-is": {
       "type": "module",
       "moduleName": "core-util-is",
@@ -81,7 +93,7 @@
     "cross-fetch": {
       "type": "module",
       "moduleName": "cross-fetch",
-      "replacements": ["fetch", "ky", "ofetch"],
+      "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
     "crypto-js": {
@@ -99,6 +111,12 @@
     "deep-equal": {
       "type": "module",
       "moduleName": "deep-equal",
+      "replacements": ["dequal", "fast-deep-equal"],
+      "url": {"type": "e18e", "id": "deep-equal"}
+    },
+    "deep-equal-json": {
+      "type": "module",
+      "moduleName": "deep-equal-json",
       "replacements": ["dequal", "fast-deep-equal"],
       "url": {"type": "e18e", "id": "deep-equal"}
     },
@@ -234,6 +252,18 @@
       "replacements": ["fs"],
       "url": {"type": "e18e", "id": "fs-extra"}
     },
+    "gaxios": {
+      "type": "module",
+      "moduleName": "gaxios",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
+    "get-stream": {
+      "type": "module",
+      "moduleName": "get-stream",
+      "replacements": ["Buffer"],
+      "url": {"type": "e18e", "id": "get-stream"}
+    },
     "get-value": {
       "type": "module",
       "moduleName": "get-value",
@@ -281,6 +311,18 @@
       "moduleName": "is-builtin-module",
       "replacements": ["isBuiltin", "builtinModules"],
       "url": {"type": "e18e", "id": "is-builtin-module"}
+    },
+    "is-core-module": {
+      "type": "module",
+      "moduleName": "is-core-module",
+      "replacements": ["isBuiltin", "builtinModules"],
+      "url": {"type": "e18e", "id": "is-builtin-module"}
+    },
+    "isomorphic-fetch": {
+      "type": "module",
+      "moduleName": "isomorphic-fetch",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
     },
     "jquery": {
       "type": "module",
@@ -2265,7 +2307,7 @@
     "node-fetch": {
       "type": "module",
       "moduleName": "node-fetch",
-      "replacements": ["fetch", "ky", "ofetch"],
+      "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
     "npm-run-all": {
@@ -2322,6 +2364,12 @@
       "replacements": ["Teleport"],
       "url": {"type": "e18e", "id": "portal-vue"}
     },
+    "preferred-pm": {
+      "type": "module",
+      "moduleName": "preferred-pm",
+      "replacements": ["package-manager-detector"],
+      "url": {"type": "e18e", "id": "detect-package-manager"}
+    },
     "q": {
       "type": "module",
       "moduleName": "q",
@@ -2338,6 +2386,23 @@
         "neoqs"
       ],
       "url": {"type": "e18e", "id": "qs"}
+    },
+    "querystring": {
+      "type": "module",
+      "moduleName": "querystring",
+      "replacements": [
+        "URLSearchParams",
+        "fast-querystring",
+        "picoquery",
+        "neoqs"
+      ],
+      "url": {"type": "e18e", "id": "qs"}
+    },
+    "randomatic": {
+      "type": "module",
+      "moduleName": "randomatic",
+      "replacements": ["nanoid"],
+      "url": {"type": "e18e", "id": "shortid"}
     },
     "read-package-up": {
       "type": "module",
@@ -2363,11 +2428,23 @@
       "replacements": ["node:stream", "streams"],
       "url": {"type": "e18e", "id": "readable-stream"}
     },
+    "request": {
+      "type": "module",
+      "moduleName": "request",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
     "resolve": {
       "type": "module",
       "moduleName": "resolve",
       "replacements": ["exsolve", "oxc-resolver"],
       "url": {"type": "e18e", "id": "resolve"}
+    },
+    "retry-request": {
+      "type": "module",
+      "moduleName": "retry-request",
+      "replacements": ["ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
     },
     "rimraf": {
       "type": "module",
@@ -2405,11 +2482,23 @@
       "replacements": ["util.stripVTControlCharacters", "Bun.stripANSI"],
       "url": {"type": "e18e", "id": "strip-ansi"}
     },
+    "teeny-request": {
+      "type": "module",
+      "moduleName": "teeny-request",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
     "tempy": {
       "type": "module",
       "moduleName": "tempy",
       "replacements": ["fs.mkdtemp", "Deno.makeTempDir"],
       "url": {"type": "e18e", "id": "tempy"}
+    },
+    "through": {
+      "type": "module",
+      "moduleName": "through",
+      "replacements": ["node:stream"],
+      "url": {"type": "e18e", "id": "through"}
     },
     "toml": {
       "type": "module",
@@ -2440,6 +2529,12 @@
       "moduleName": "utf8",
       "replacements": ["TextEncoder", "Buffer.prototype.toString"],
       "url": {"type": "e18e", "id": "utf8"}
+    },
+    "whatwg-fetch": {
+      "type": "module",
+      "moduleName": "whatwg-fetch",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
     },
     "xmldom": {
       "type": "module",
@@ -2497,10 +2592,15 @@
       "url": {"type": "e18e", "id": "xmldom"},
       "replacementModule": "@xmldom/xmldom"
     },
+    "Buffer": {
+      "id": "Buffer",
+      "type": "native",
+      "nodeFeatureId": {"moduleName": "node:buffer", "exportName": "Buffer"},
+      "url": {"type": "node", "id": "api/buffer.html"}
+    },
     "Buffer.compare": {
       "id": "Buffer.compare",
       "type": "native",
-      "description": "Buffer.compare",
       "nodeFeatureId": {"moduleName": "node:buffer", "exportName": "Buffer"},
       "url": {
         "type": "node",
@@ -2510,14 +2610,12 @@
     "Buffer.prototype.equals": {
       "id": "Buffer.prototype.equals",
       "type": "native",
-      "description": "Buffer.prototype.equals",
       "nodeFeatureId": {"moduleName": "node:buffer", "exportName": "Buffer"},
       "url": {"type": "node", "id": "api/buffer.html#bufequalsotherbuffer"}
     },
     "Buffer.prototype.toString": {
       "id": "Buffer.prototype.toString",
       "type": "native",
-      "description": "Buffer.prototype.toString",
       "nodeFeatureId": {"moduleName": "node:buffer", "exportName": "Buffer"},
       "url": {
         "type": "node",

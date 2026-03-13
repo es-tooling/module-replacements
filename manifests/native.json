@@ -60,6 +60,18 @@
         "compatKey": "javascript.builtins.TypedArray.slice"
       }
     },
+    "AbortController": {
+      "id": "AbortController",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/AbortController"
+      },
+      "webFeatureId": {
+        "featureId": "aborting",
+        "compatKey": "api.AbortController.AbortController"
+      }
+    },
     "AggregateError": {
       "id": "AggregateError",
       "type": "native",
@@ -202,6 +214,18 @@
       "webFeatureId": {
         "featureId": "array-find",
         "compatKey": "javascript.builtins.Array.findIndex"
+      }
+    },
+    "Array.prototype.findLast": {
+      "id": "Array.prototype.findLast",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/findLast"
+      },
+      "webFeatureId": {
+        "featureId": "array-findlast",
+        "compatKey": "javascript.builtins.Array.findLast"
       }
     },
     "Array.prototype.flat": {
@@ -382,6 +406,18 @@
       "webFeatureId": {
         "featureId": "array-splice",
         "compatKey": "javascript.builtins.Array.splice"
+      }
+    },
+    "Array.prototype.toSorted": {
+      "id": "Array.prototype.toSorted",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/toSorted"
+      },
+      "webFeatureId": {
+        "featureId": "array-by-copy",
+        "compatKey": "javascript.builtins.Array.toSorted"
       }
     },
     "Array.prototype.unshift": {
@@ -700,6 +736,18 @@
       "webFeatureId": {
         "featureId": "number",
         "compatKey": "javascript.builtins.Math.log1p"
+      }
+    },
+    "Math.log2": {
+      "id": "Math.log2",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Math/log2"
+      },
+      "webFeatureId": {
+        "featureId": "number",
+        "compatKey": "javascript.builtins.Math.log2"
       }
     },
     "Math.sign": {
@@ -1039,6 +1087,18 @@
         "compatKey": "javascript.builtins.Reflect.ownKeys"
       }
     },
+    "RegExp.escape": {
+      "id": "RegExp.escape",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/RegExp/escape"
+      },
+      "webFeatureId": {
+        "featureId": "regexp-escape",
+        "compatKey": "javascript.builtins.RegExp.escape"
+      }
+    },
     "RegExp.prototype.flags": {
       "id": "RegExp.prototype.flags",
       "type": "native",
@@ -1121,6 +1181,18 @@
       "webFeatureId": {
         "featureId": "string-pad",
         "compatKey": "javascript.builtins.String.padStart"
+      }
+    },
+    "String.prototype.repeat": {
+      "id": "String.prototype.repeat",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/String/repeat"
+      },
+      "webFeatureId": {
+        "featureId": "string-repeat",
+        "compatKey": "javascript.builtins.String.repeat"
       }
     },
     "String.prototype.replaceAll": {
@@ -1219,6 +1291,51 @@
         "compatKey": "javascript.builtins.Symbol.description"
       }
     },
+    "WeakMap": {
+      "id": "WeakMap",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/WeakMap"
+      },
+      "webFeatureId": {
+        "featureId": "weakmap",
+        "compatKey": "javascript.builtins.WeakMap"
+      }
+    },
+    "atob": {
+      "id": "atob",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/Window/atob"
+      },
+      "webFeatureId": {
+        "featureId": "base64encodedecode",
+        "compatKey": "api.atob"
+      }
+    },
+    "btoa": {
+      "id": "btoa",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/Window/btoa"
+      },
+      "webFeatureId": {
+        "featureId": "base64encodedecode",
+        "compatKey": "api.btoa"
+      }
+    },
+    "crypto.timingSafeEqual": {
+      "id": "crypto.timingSafeEqual",
+      "type": "native",
+      "url": {
+        "type": "node",
+        "id": "api/crypto.html#cryptotimingsafeequala-b"
+      },
+      "nodeFeatureId": {"moduleName": "crypto", "exportName": "timingSafeEqual"}
+    },
     "es-errors": {
       "id": "es-errors",
       "type": "removal",
@@ -1235,6 +1352,18 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String#html_wrapper_methods"
+      }
+    },
+    "for...in": {
+      "id": "for...in",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Statements/for...in"
+      },
+      "webFeatureId": {
+        "featureId": "javascript",
+        "compatKey": "javascript.statements.for_in"
       }
     },
     "for...of": {
@@ -1278,6 +1407,15 @@
       "webFeatureId": {
         "featureId": "globalthis",
         "compatKey": "javascript.builtins.globalThis"
+      }
+    },
+    "has-bigints": {
+      "id": "has-bigints",
+      "type": "removal",
+      "description": "Every modern environment has support for BigInt. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/BigInt"
       }
     },
     "has-proto": {
@@ -1325,6 +1463,15 @@
         "compatKey": "javascript.builtins.parseInt"
       }
     },
+    "path.parse": {
+      "id": "path.parse",
+      "type": "native",
+      "url": {
+        "type": "node",
+        "id": "api/path.html#pathparsepath"
+      },
+      "nodeFeatureId": {"moduleName": "path"}
+    },
     "queueMicrotask": {
       "id": "queueMicrotask",
       "type": "native",
@@ -1342,18 +1489,47 @@
       "type": "removal",
       "description": "All modern versions of Node have `Buffer.from` for safely creating buffers from arbitrary types.",
       "url": {"type": "node", "id": "api/buffer.html"}
+    },
+    "zlib.crc32": {
+      "id": "zlib.crc32",
+      "type": "native",
+      "url": {
+        "type": "node",
+        "id": "api/zlib.html#zlibcrc32data-value"
+      },
+      "nodeFeatureId": {"moduleName": "zlib", "exportName": "crc32"}
     }
   },
   "mappings": {
+    "abort-controller": {
+      "type": "module",
+      "moduleName": "abort-controller",
+      "replacements": ["AbortController"]
+    },
     "aggregate-error": {
       "type": "module",
       "moduleName": "aggregate-error",
       "replacements": ["AggregateError"]
     },
+    "arr-filter": {
+      "type": "module",
+      "moduleName": "arr-filter",
+      "replacements": ["Array.prototype.filter"]
+    },
+    "arr-map": {
+      "type": "module",
+      "moduleName": "arr-map",
+      "replacements": ["Array.prototype.map"]
+    },
     "array-buffer-byte-length": {
       "type": "module",
       "moduleName": "array-buffer-byte-length",
       "replacements": ["ArrayBuffer.prototype.byteLength"]
+    },
+    "array-each": {
+      "type": "module",
+      "moduleName": "array-each",
+      "replacements": ["Array.prototype.forEach"]
     },
     "array-every": {
       "type": "module",
@@ -1425,6 +1601,11 @@
       "moduleName": "array.prototype.findindex",
       "replacements": ["Array.prototype.findIndex"]
     },
+    "array.prototype.findlast": {
+      "type": "module",
+      "moduleName": "array.prototype.findlast",
+      "replacements": ["Array.prototype.findLast"]
+    },
     "array.prototype.flat": {
       "type": "module",
       "moduleName": "array.prototype.flat",
@@ -1495,6 +1676,11 @@
       "moduleName": "array.prototype.splice",
       "replacements": ["Array.prototype.splice"]
     },
+    "array.prototype.tosorted": {
+      "type": "module",
+      "moduleName": "array.prototype.tosorted",
+      "replacements": ["Array.prototype.toSorted"]
+    },
     "array.prototype.unshift": {
       "type": "module",
       "moduleName": "array.prototype.unshift",
@@ -1510,6 +1696,27 @@
       "moduleName": "arraybuffer.prototype.slice",
       "replacements": ["ArrayBuffer.prototype.slice"]
     },
+    "atob": {
+      "type": "module",
+      "moduleName": "atob",
+      "replacements": ["atob"]
+    },
+    "btoa": {
+      "type": "module",
+      "moduleName": "btoa",
+      "replacements": ["btoa"]
+    },
+    "buffer-crc32": {
+      "type": "module",
+      "moduleName": "buffer-crc32",
+      "replacements": ["zlib.crc32"]
+    },
+    "buffer-equal-constant-time": {
+      "type": "module",
+      "moduleName": "buffer-equal-constant-time",
+      "replacements": ["crypto.timingSafeEqual"],
+      "url": {"type": "e18e", "id": "buffer-equal-constant-time"}
+    },
     "buffer-from": {
       "type": "module",
       "moduleName": "buffer-from",
@@ -1519,6 +1726,11 @@
       "type": "module",
       "moduleName": "concat-map",
       "replacements": ["Array.prototype.flatMap"]
+    },
+    "crc-32": {
+      "type": "module",
+      "moduleName": "crc-32",
+      "replacements": ["zlib.crc32"]
     },
     "data-view-buffer": {
       "type": "module",
@@ -1601,6 +1813,11 @@
       "moduleName": "es-string-html-methods",
       "replacements": ["es-string-html-methods"]
     },
+    "escape-string-regexp": {
+      "type": "module",
+      "moduleName": "escape-string-regexp",
+      "replacements": ["RegExp.escape"]
+    },
     "extend-shallow": {
       "type": "module",
       "moduleName": "extend-shallow",
@@ -1615,6 +1832,11 @@
       "type": "module",
       "moduleName": "for-each",
       "replacements": ["for...of"]
+    },
+    "for-in": {
+      "type": "module",
+      "moduleName": "for-in",
+      "replacements": ["for...in"]
     },
     "fs.realpath": {
       "type": "module",
@@ -1660,6 +1882,11 @@
       "type": "module",
       "moduleName": "has",
       "replacements": ["Object.prototype.hasOwnProperty"]
+    },
+    "has-bigints": {
+      "type": "module",
+      "moduleName": "has-bigints",
+      "replacements": ["has-bigints"]
     },
     "has-own-prop": {
       "type": "module",
@@ -1711,6 +1938,11 @@
       "moduleName": "is-error",
       "replacements": ["Error.isError"]
     },
+    "is-finite": {
+      "type": "module",
+      "moduleName": "is-finite",
+      "replacements": ["Number.isFinite"]
+    },
     "is-nan": {
       "type": "module",
       "moduleName": "is-nan",
@@ -1745,6 +1977,11 @@
       "type": "module",
       "moduleName": "left-pad",
       "replacements": ["String.prototype.padStart"]
+    },
+    "math-log2": {
+      "type": "module",
+      "moduleName": "math-log2",
+      "replacements": ["Math.log2"]
     },
     "math.acosh": {
       "type": "module",
@@ -1805,6 +2042,11 @@
       "type": "module",
       "moduleName": "node.extend",
       "replacements": ["Object.assign"]
+    },
+    "number-is-integer": {
+      "type": "module",
+      "moduleName": "number-is-integer",
+      "replacements": ["Number.isInteger"]
     },
     "number.isfinite": {
       "type": "module",
@@ -1911,6 +2153,11 @@
       "moduleName": "parseint",
       "replacements": ["parseInt"]
     },
+    "path-parse": {
+      "type": "module",
+      "moduleName": "path-parse",
+      "replacements": ["path.parse"]
+    },
     "pinkie-promise": {
       "type": "module",
       "moduleName": "pinkie-promise",
@@ -1956,6 +2203,11 @@
       "moduleName": "remove",
       "replacements": ["fs.rm"]
     },
+    "repeat-string": {
+      "type": "module",
+      "moduleName": "repeat-string",
+      "replacements": ["String.prototype.repeat"]
+    },
     "setprototypeof": {
       "type": "module",
       "moduleName": "setprototypeof",
@@ -1995,6 +2247,11 @@
       "type": "module",
       "moduleName": "string.prototype.padstart",
       "replacements": ["String.prototype.padStart"]
+    },
+    "string.prototype.repeat": {
+      "type": "module",
+      "moduleName": "string.prototype.repeat",
+      "replacements": ["String.prototype.repeat"]
     },
     "string.prototype.replaceall": {
       "type": "module",
@@ -2075,6 +2332,11 @@
       "type": "module",
       "moduleName": "typedarray.prototype.slice",
       "replacements": ["%TypedArray%.prototype.slice"]
+    },
+    "weak-map": {
+      "type": "module",
+      "moduleName": "weak-map",
+      "replacements": ["WeakMap"]
     },
     "xtend": {
       "type": "module",
