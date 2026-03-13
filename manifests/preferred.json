@@ -2777,6 +2777,12 @@
       "url": {"type": "e18e", "id": "dot-prop"},
       "replacementModule": "dlv"
     },
+    "elysia": {
+      "id": "elysia",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "elysia"
+    },
     "emoji-regex-xs": {
       "id": "emoji-regex-xs",
       "type": "documented",
@@ -2917,6 +2923,18 @@
         "exportName": "rmdir"
       },
       "url": {"type": "node", "id": "api/fs.html#fspromisesrmdirpath-options"}
+    },
+    "h3": {
+      "id": "h3",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "h3"
+    },
+    "hono": {
+      "id": "hono",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "hono"
     },
     "isBuiltin": {
       "id": "isBuiltin",
@@ -3140,6 +3158,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "execa"},
       "replacementModule": "tinyexec"
+    },
+    "tinyhttp": {
+      "id": "tinyhttp",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "@tinyhttp/app"
     },
     "tinyglobby": {
       "id": "tinyglobby",
