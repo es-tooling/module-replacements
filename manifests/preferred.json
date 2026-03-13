@@ -2310,6 +2310,12 @@
       "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
+    "node-telegram-bot-api": {
+      "type": "module",
+      "moduleName": "node-telegram-bot-api",
+      "replacements": ["grammy"],
+      "url": {"type": "e18e", "id": "node-telegram-bot-api"}
+    },
     "npm-run-all": {
       "type": "module",
       "moduleName": "npm-run-all",
@@ -2929,6 +2935,12 @@
         "exportName": "rmdir"
       },
       "url": {"type": "node", "id": "api/fs.html#fspromisesrmdirpath-options"}
+    },
+    "grammy": {
+      "id": "grammy",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "node-telegram-bot-api"},
+      "replacementModule": "grammy"
     },
     "isBuiltin": {
       "id": "isBuiltin",
