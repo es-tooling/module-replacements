@@ -192,6 +192,12 @@
       "replacements": ["tinyexec", "nanoexec", "Bun.Shell"],
       "url": {"type": "e18e", "id": "execa"}
     },
+    "express": {
+      "type": "module",
+      "moduleName": "express",
+      "replacements": ["h3", "tinyhttp", "hono", "elysia"],
+      "url": {"type": "e18e", "id": "express"}
+    },
     "ez-spawn": {
       "type": "module",
       "moduleName": "ez-spawn",
