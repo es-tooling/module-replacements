@@ -318,6 +318,12 @@
       "replacements": ["isBuiltin", "builtinModules"],
       "url": {"type": "e18e", "id": "is-builtin-module"}
     },
+    "isomorphic-fetch": {
+      "type": "module",
+      "moduleName": "isomorphic-fetch",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
     "jquery": {
       "type": "module",
       "moduleName": "jquery",
@@ -2517,6 +2523,12 @@
       "moduleName": "utf8",
       "replacements": ["TextEncoder", "Buffer.prototype.toString"],
       "url": {"type": "e18e", "id": "utf8"}
+    },
+    "whatwg-fetch": {
+      "type": "module",
+      "moduleName": "whatwg-fetch",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
     },
     "xmldom": {
       "type": "module",
