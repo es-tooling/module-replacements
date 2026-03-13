@@ -13,8 +13,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin') // [!code --]
 
 module.exports = {
   plugins: [new CleanWebpackPlugin()], // [!code --]
-  output: { // [!code ++]
-    clean: true // [!code ++]
-  } // [!code ++]
+  output: { clean: true } // [!code ++]
 }
 ```
