@@ -60,6 +60,12 @@
       "description": "Every modern runtime provides a way to bind to the call method of a function.",
       "example": "const fnBound = Function.call.bind(fn)"
     },
+    "snippet::char-last": {
+      "id": "snippet::char-last",
+      "type": "simple",
+      "description": "You can use `str.at(-1)` if supported or `str[str.length - 1]` to get the last character of a string.",
+      "example": "const last = (str) => str.at(-1);\n// or in older environments\nconst last = (str) => str[str.length - 1]"
+    },
     "snippet::for-own": {
       "id": "snippet::for-own",
       "type": "simple",
@@ -547,6 +553,11 @@
       "type": "module",
       "moduleName": "kind-of",
       "replacements": ["snippet::typeof"]
+    },
+    "last-char": {
+      "type": "module",
+      "moduleName": "last-char",
+      "replacements": ["snippet::char-last"]
     },
     "lower-case": {
       "type": "module",
