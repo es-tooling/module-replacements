@@ -1418,6 +1418,15 @@
         "id": "Web/JavaScript/Reference/Global_Objects/BigInt"
       }
     },
+    "has-property-descriptors": {
+      "id": "has-property-descriptors",
+      "type": "removal",
+      "description": "Every modern environment has full property descriptor support. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors"
+      }
+    },
     "has-proto": {
       "id": "has-proto",
       "type": "removal",
@@ -1892,6 +1901,11 @@
       "type": "module",
       "moduleName": "has-own-prop",
       "replacements": ["Object.prototype.hasOwnProperty"]
+    },
+    "has-property-descriptors": {
+      "type": "module",
+      "moduleName": "has-property-descriptors",
+      "replacements": ["has-property-descriptors"]
     },
     "has-proto": {
       "type": "module",
