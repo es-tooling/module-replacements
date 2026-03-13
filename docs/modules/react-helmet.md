@@ -21,7 +21,7 @@ function BlogPost({post}) {
         Eee equals em-see-squared...
       </p>
     </article>
-  );
+  )
 }
 ```
 
