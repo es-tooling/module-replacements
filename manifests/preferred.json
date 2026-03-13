@@ -3159,17 +3159,17 @@
       "url": {"type": "e18e", "id": "execa"},
       "replacementModule": "tinyexec"
     },
-    "tinyhttp": {
-      "id": "tinyhttp",
-      "type": "documented",
-      "url": {"type": "e18e", "id": "express"},
-      "replacementModule": "@tinyhttp/app"
-    },
     "tinyglobby": {
       "id": "tinyglobby",
       "type": "documented",
       "url": {"type": "e18e", "id": "fast-glob"},
       "replacementModule": "tinyglobby"
+    },
+    "tinyhttp": {
+      "id": "tinyhttp",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "@tinyhttp/app"
     },
     "unicode-segmenter": {
       "id": "unicode-segmenter",
