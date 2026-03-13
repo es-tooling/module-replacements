@@ -3116,7 +3116,7 @@
     "react-helmet-async": {
       "id": "react-helmet-async",
       "type": "documented",
-      "url": {"type": "e18e", "id": "react-helmet-async"},
+      "url": {"type": "e18e", "id": "react-helmet"},
       "replacementModule": "react-helmet-async"
     },
     "smol-toml": {
