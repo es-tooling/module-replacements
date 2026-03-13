@@ -12,6 +12,7 @@ Express has been the industry standard for years, but the ecosystem has shifted 
 
 Example:
 
+<!-- prettier-ignore -->
 ```ts
 import express from 'express' // [!code --]
 import { H3, defineHandler, toNodeHandler } from 'h3' // [!code ++]
