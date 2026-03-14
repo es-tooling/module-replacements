@@ -642,6 +642,18 @@
         "compatKey": "javascript.builtins.Function.name"
       }
     },
+    "Iterator.prototype": {
+      "id": "Iterator.prototype",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Iterator"
+      },
+      "webFeatureId": {
+        "featureId": "iterator-methods",
+        "compatKey": "javascript.builtins.Iterator.Iterator"
+      }
+    },
     "Map": {
       "id": "Map",
       "type": "native",
@@ -2076,6 +2088,11 @@
       "type": "module",
       "moduleName": "iterate-value",
       "replacements": ["for...of"]
+    },
+    "iterator.prototype": {
+      "type": "module",
+      "moduleName": "iterator.prototype",
+      "replacements": ["Iterator.prototype"]
     },
     "last-index-of": {
       "type": "module",
