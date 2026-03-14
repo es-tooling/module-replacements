@@ -1430,7 +1430,7 @@
     "has-optional-chaining": {
       "id": "has-optional-chaining",
       "type": "removal",
-      "description": "Every modern environment has support for Optional chaining. You can just remove the check.",
+      "description": "Every modern environment has support for optional chaining. You can just remove the check.",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Operators/Optional_chaining"
@@ -1466,7 +1466,7 @@
     "has-template-literals": {
       "id": "has-template-literals",
       "type": "removal",
-      "description": "Every modern environment has support for Template literals. You can just remove the check.",
+      "description": "Every modern environment has support for template literals. You can just remove the check.",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Template_literals"
@@ -1484,7 +1484,7 @@
     "has-typed-arrays": {
       "id": "has-typed-arrays",
       "type": "removal",
-      "description": "Every modern environment has support for `TypedArrays. You can just remove the check.",
+      "description": "Every modern environment has support for typed arrays. You can just remove the check.",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/TypedArray"
