@@ -8,6 +8,7 @@ description: Modern alternatives to the sort-object package for sorting object k
 
 Example:
 
+<!-- prettier-ignore -->
 ```js
 import split from 'split' // [!code --]
 import { createInterface } from 'node:readline' // [!code ++]
