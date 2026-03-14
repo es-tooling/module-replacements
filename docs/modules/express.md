@@ -67,7 +67,7 @@ export default app // [!code ++]
 
 ## `elysia`
 
-If you are using Bun, [`elysia`](https://github.com/elysiajs/elysia) is often the best choice.
+If you are using Bun, [`elysia`](https://github.com/elysiajs/elysia) is often the best choice as it is specifically optimized for the Bun runtime.
 
 Example:
 
