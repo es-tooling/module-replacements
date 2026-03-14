@@ -1390,6 +1390,11 @@
         "id": "Web/JavaScript/Reference/Global_Objects/String#html_wrapper_methods"
       }
     },
+    "es7-shim": {
+      "id": "es7-shim",
+      "type": "removal",
+      "description": "Every modern environment has support for ES7/ES2016 apis."
+    },
     "for...in": {
       "id": "for...in",
       "type": "native",
@@ -1903,6 +1908,11 @@
       "type": "module",
       "moduleName": "es-string-html-methods",
       "replacements": ["es-string-html-methods"]
+    },
+    "es7-shim": {
+      "type": "module",
+      "moduleName": "es7-shim",
+      "replacements": ["es7-shim"]
     },
     "escape-string-regexp": {
       "type": "module",
