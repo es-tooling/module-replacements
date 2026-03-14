@@ -84,6 +84,12 @@
       "replacements": ["util.types"],
       "url": {"type": "e18e", "id": "core-util-is"}
     },
+    "cosmiconfig": {
+      "type": "module",
+      "moduleName": "cosmiconfig",
+      "replacements": ["lilconfig"],
+      "url": {"type": "e18e", "id": "cosmiconfig"}
+    },
     "cpx": {
       "type": "module",
       "moduleName": "cpx",
@@ -2972,6 +2978,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "fetch"},
       "replacementModule": "ky"
+    },
+    "lilconfig": {
+      "id": "lilconfig",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "cosmiconfig"},
+      "replacementModule": "lilconfig"
     },
     "lodash-underscore": {
       "id": "lodash-underscore",
