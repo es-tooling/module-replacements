@@ -81,6 +81,7 @@ ESLint plugin.
 - [`rimraf`](./rimraf.md)
 - [`shortid`](./shortid.md)
 - [`sort-object`](./sort-object.md)
+- [`split`](./split.md)
 - [`string-width`](./string-width.md)
 - [`strip-ansi`](./strip-ansi.md)
 - [`tempy`](./tempy.md)
