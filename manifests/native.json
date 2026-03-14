@@ -228,6 +228,18 @@
         "compatKey": "javascript.builtins.Array.findLast"
       }
     },
+    "Array.prototype.findLastIndex": {
+      "id": "Array.prototype.findLastIndex",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/findLastIndex"
+      },
+      "webFeatureId": {
+        "featureId": "array-findlast",
+        "compatKey": "javascript.builtins.Array.findLastIndex"
+      }
+    },
     "Array.prototype.flat": {
       "id": "Array.prototype.flat",
       "type": "native",
@@ -406,6 +418,18 @@
       "webFeatureId": {
         "featureId": "array-splice",
         "compatKey": "javascript.builtins.Array.splice"
+      }
+    },
+    "Array.prototype.toReversed": {
+      "id": "Array.prototype.toReversed",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/toReversed"
+      },
+      "webFeatureId": {
+        "featureId": "array-by-copy",
+        "compatKey": "javascript.builtins.Array.toReversed"
       }
     },
     "Array.prototype.toSorted": {
@@ -1606,6 +1630,11 @@
       "moduleName": "array.prototype.findlast",
       "replacements": ["Array.prototype.findLast"]
     },
+    "array.prototype.findlastindex": {
+      "type": "module",
+      "moduleName": "array.prototype.findlastindex",
+      "replacements": ["Array.prototype.findLastIndex"]
+    },
     "array.prototype.flat": {
       "type": "module",
       "moduleName": "array.prototype.flat",
@@ -1675,6 +1704,11 @@
       "type": "module",
       "moduleName": "array.prototype.splice",
       "replacements": ["Array.prototype.splice"]
+    },
+    "array.prototype.toreversed": {
+      "type": "module",
+      "moduleName": "array.prototype.toreversed",
+      "replacements": ["Array.prototype.toReversed"]
     },
     "array.prototype.tosorted": {
       "type": "module",

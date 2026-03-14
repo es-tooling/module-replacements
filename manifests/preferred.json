@@ -324,6 +324,12 @@
       "replacements": ["isBuiltin", "builtinModules"],
       "url": {"type": "e18e", "id": "is-builtin-module"}
     },
+    "isomorphic-fetch": {
+      "type": "module",
+      "moduleName": "isomorphic-fetch",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
     "jquery": {
       "type": "module",
       "moduleName": "jquery",
@@ -2310,6 +2316,12 @@
       "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
+    "node-telegram-bot-api": {
+      "type": "module",
+      "moduleName": "node-telegram-bot-api",
+      "replacements": ["grammy"],
+      "url": {"type": "e18e", "id": "node-telegram-bot-api"}
+    },
     "npm-run-all": {
       "type": "module",
       "moduleName": "npm-run-all",
@@ -2397,6 +2409,12 @@
         "neoqs"
       ],
       "url": {"type": "e18e", "id": "qs"}
+    },
+    "randomatic": {
+      "type": "module",
+      "moduleName": "randomatic",
+      "replacements": ["nanoid"],
+      "url": {"type": "e18e", "id": "shortid"}
     },
     "read-package-up": {
       "type": "module",
@@ -2517,6 +2535,12 @@
       "moduleName": "utf8",
       "replacements": ["TextEncoder", "Buffer.prototype.toString"],
       "url": {"type": "e18e", "id": "utf8"}
+    },
+    "whatwg-fetch": {
+      "type": "module",
+      "moduleName": "whatwg-fetch",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
     },
     "xmldom": {
       "type": "module",
@@ -2924,12 +2948,17 @@
       },
       "url": {"type": "node", "id": "api/fs.html#fspromisesrmdirpath-options"}
     },
+    "grammy": {
+      "id": "grammy",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "node-telegram-bot-api"},
+      "replacementModule": "grammy"
+    },
     "h3": {
       "id": "h3",
       "type": "documented",
       "url": {"type": "e18e", "id": "express"},
       "replacementModule": "h3"
-    },
     "hono": {
       "id": "hono",
       "type": "documented",

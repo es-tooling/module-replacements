@@ -68,6 +68,7 @@ ESLint plugin.
 - [`moment.js`](./moment.md)
 - [`npm-run-all`](./npm-run-all.md)
 - [`node-fetch`](./fetch.md)
+- [`node-telegram-bot-api`](./node-telegram-bot-api.md)
 - [`object-hash`](./object-hash.md)
 - [`ora`](./ora.md)
 - [`path-exists`](./path-exists.md)
