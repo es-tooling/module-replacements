@@ -29,12 +29,13 @@ function BlogPost({ post }) {
 
 Example:
 
+<!-- prettier-ignore -->
 ```jsx
 import { Helmet } from 'react-helmet' // [!code --]
 import { Helmet, HelmetProvider } from 'react-helmet-async' // [!code ++]
 
 const app = (
-  <HelmetProvider>
+  <HelmetProvider> // [!code ++]
     <App>
       <Helmet>
         <title>Hello World</title>
@@ -42,6 +43,6 @@ const app = (
       </Helmet>
       <h1>Hello World</h1>
     </App>
-  </HelmetProvider>
+  </HelmetProvider> // [!code ++]
 )
 ```
