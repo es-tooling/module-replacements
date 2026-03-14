@@ -66,6 +66,12 @@
       "replacements": ["util.styleText", "picocolors", "ansis"],
       "url": {"type": "e18e", "id": "chalk"}
     },
+    "clean-webpack-plugin": {
+      "type": "module",
+      "moduleName": "clean-webpack-plugin",
+      "replacements": ["webpack.output.clean"],
+      "url": {"type": "e18e", "id": "clean-webpack-plugin"}
+    },
     "cli-color": {
       "type": "module",
       "moduleName": "cli-color",
@@ -2310,6 +2316,12 @@
       "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
+    "node-telegram-bot-api": {
+      "type": "module",
+      "moduleName": "node-telegram-bot-api",
+      "replacements": ["grammy"],
+      "url": {"type": "e18e", "id": "node-telegram-bot-api"}
+    },
     "npm-run-all": {
       "type": "module",
       "moduleName": "npm-run-all",
@@ -2942,6 +2954,12 @@
       },
       "url": {"type": "node", "id": "api/fs.html#fspromisesrmdirpath-options"}
     },
+    "grammy": {
+      "id": "grammy",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "node-telegram-bot-api"},
+      "replacementModule": "grammy"
+    },
     "import.meta.resolve": {
       "id": "import.meta.resolve",
       "type": "native",
@@ -3236,6 +3254,12 @@
       "description": "util.types",
       "nodeFeatureId": {"moduleName": "node:util", "exportName": "types"},
       "url": {"type": "node", "id": "api/util.html#utiltypes"}
+    },
+    "webpack.output.clean": {
+      "id": "webpack.output.clean",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "clean-webpack-plugin"},
+      "replacementModule": "webpack"
     },
     "wireit": {
       "id": "wireit",

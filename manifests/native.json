@@ -228,6 +228,18 @@
         "compatKey": "javascript.builtins.Array.findLast"
       }
     },
+    "Array.prototype.findLastIndex": {
+      "id": "Array.prototype.findLastIndex",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/findLastIndex"
+      },
+      "webFeatureId": {
+        "featureId": "array-findlast",
+        "compatKey": "javascript.builtins.Array.findLastIndex"
+      }
+    },
     "Array.prototype.flat": {
       "id": "Array.prototype.flat",
       "type": "native",
@@ -406,6 +418,18 @@
       "webFeatureId": {
         "featureId": "array-splice",
         "compatKey": "javascript.builtins.Array.splice"
+      }
+    },
+    "Array.prototype.toReversed": {
+      "id": "Array.prototype.toReversed",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Array/toReversed"
+      },
+      "webFeatureId": {
+        "featureId": "array-by-copy",
+        "compatKey": "javascript.builtins.Array.toReversed"
       }
     },
     "Array.prototype.toSorted": {
@@ -616,6 +640,18 @@
       "webFeatureId": {
         "featureId": "functions",
         "compatKey": "javascript.builtins.Function.name"
+      }
+    },
+    "Iterator.prototype": {
+      "id": "Iterator.prototype",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Iterator"
+      },
+      "webFeatureId": {
+        "featureId": "iterator-methods",
+        "compatKey": "javascript.builtins.Iterator.Iterator"
       }
     },
     "Map": {
@@ -1354,6 +1390,11 @@
         "id": "Web/JavaScript/Reference/Global_Objects/String#html_wrapper_methods"
       }
     },
+    "es7-shim": {
+      "id": "es7-shim",
+      "type": "removal",
+      "description": "Every modern environment has support for ES7/ES2016 apis."
+    },
     "for...in": {
       "id": "for...in",
       "type": "native",
@@ -1418,6 +1459,33 @@
         "id": "Web/JavaScript/Reference/Global_Objects/BigInt"
       }
     },
+    "has-dynamic-import": {
+      "id": "has-dynamic-import",
+      "type": "removal",
+      "description": "Every modern environment has support for dynamic import. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Operators/import"
+      }
+    },
+    "has-optional-chaining": {
+      "id": "has-optional-chaining",
+      "type": "removal",
+      "description": "Every modern environment has support for optional chaining. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Operators/Optional_chaining"
+      }
+    },
+    "has-property-descriptors": {
+      "id": "has-property-descriptors",
+      "type": "removal",
+      "description": "Every modern environment has full property descriptor support. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors"
+      }
+    },
     "has-proto": {
       "id": "has-proto",
       "type": "removal",
@@ -1436,6 +1504,15 @@
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol"
       }
     },
+    "has-template-literals": {
+      "id": "has-template-literals",
+      "type": "removal",
+      "description": "Every modern environment has support for template literals. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Template_literals"
+      }
+    },
     "has-tostringtag": {
       "id": "has-tostringtag",
       "type": "removal",
@@ -1443,6 +1520,15 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag"
+      }
+    },
+    "has-typed-arrays": {
+      "id": "has-typed-arrays",
+      "type": "removal",
+      "description": "Every modern environment has support for typed arrays. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/TypedArray"
       }
     },
     "inherits": {
@@ -1606,6 +1692,11 @@
       "moduleName": "array.prototype.findlast",
       "replacements": ["Array.prototype.findLast"]
     },
+    "array.prototype.findlastindex": {
+      "type": "module",
+      "moduleName": "array.prototype.findlastindex",
+      "replacements": ["Array.prototype.findLastIndex"]
+    },
     "array.prototype.flat": {
       "type": "module",
       "moduleName": "array.prototype.flat",
@@ -1675,6 +1766,11 @@
       "type": "module",
       "moduleName": "array.prototype.splice",
       "replacements": ["Array.prototype.splice"]
+    },
+    "array.prototype.toreversed": {
+      "type": "module",
+      "moduleName": "array.prototype.toreversed",
+      "replacements": ["Array.prototype.toReversed"]
     },
     "array.prototype.tosorted": {
       "type": "module",
@@ -1813,6 +1909,11 @@
       "moduleName": "es-string-html-methods",
       "replacements": ["es-string-html-methods"]
     },
+    "es7-shim": {
+      "type": "module",
+      "moduleName": "es7-shim",
+      "replacements": ["es7-shim"]
+    },
     "escape-string-regexp": {
       "type": "module",
       "moduleName": "escape-string-regexp",
@@ -1858,6 +1959,11 @@
       "moduleName": "functions-have-names",
       "replacements": ["Function.prototype.name"]
     },
+    "get-proto": {
+      "type": "module",
+      "moduleName": "get-proto",
+      "replacements": ["Object.getPrototypeOf"]
+    },
     "get-symbol-description": {
       "type": "module",
       "moduleName": "get-symbol-description",
@@ -1888,10 +1994,25 @@
       "moduleName": "has-bigints",
       "replacements": ["has-bigints"]
     },
+    "has-dynamic-import": {
+      "type": "module",
+      "moduleName": "has-dynamic-import",
+      "replacements": ["has-dynamic-import"]
+    },
+    "has-optional-chaining": {
+      "type": "module",
+      "moduleName": "has-optional-chaining",
+      "replacements": ["has-optional-chaining"]
+    },
     "has-own-prop": {
       "type": "module",
       "moduleName": "has-own-prop",
       "replacements": ["Object.prototype.hasOwnProperty"]
+    },
+    "has-property-descriptors": {
+      "type": "module",
+      "moduleName": "has-property-descriptors",
+      "replacements": ["has-property-descriptors"]
     },
     "has-proto": {
       "type": "module",
@@ -1903,10 +2024,20 @@
       "moduleName": "has-symbols",
       "replacements": ["has-symbols"]
     },
+    "has-template-literals": {
+      "type": "module",
+      "moduleName": "has-template-literals",
+      "replacements": ["has-template-literals"]
+    },
     "has-tostringtag": {
       "type": "module",
       "moduleName": "has-tostringtag",
       "replacements": ["has-tostringtag"]
+    },
+    "has-typed-arrays": {
+      "type": "module",
+      "moduleName": "has-typed-arrays",
+      "replacements": ["has-typed-arrays"]
     },
     "hasown": {
       "type": "module",
@@ -1967,6 +2098,11 @@
       "type": "module",
       "moduleName": "iterate-value",
       "replacements": ["for...of"]
+    },
+    "iterator.prototype": {
+      "type": "module",
+      "moduleName": "iterator.prototype",
+      "replacements": ["Iterator.prototype"]
     },
     "last-index-of": {
       "type": "module",
