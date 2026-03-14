@@ -2476,6 +2476,12 @@
       "replacements": ["sort-object", "sort-object-keys", "sortobject"],
       "url": {"type": "e18e", "id": "sort-object"}
     },
+    "stream-buffers": {
+      "type": "module",
+      "moduleName": "stream-buffers",
+      "replacements": ["node:stream"],
+      "url": {"type": "e18e", "id": "stream-buffers"}
+    },
     "string-width": {
       "type": "module",
       "moduleName": "string-width",
