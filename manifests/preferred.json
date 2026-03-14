@@ -3119,6 +3119,19 @@
       "url": {"type": "e18e", "id": "rimraf"},
       "replacementModule": "premove"
     },
+    "readline.createInterface": {
+      "id": "readline.createInterface",
+      "type": "native",
+      "description": "readline.createInterface",
+      "nodeFeatureId": {
+        "moduleName": "node:readline",
+        "exportName": "createInterface"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/readline.html#readlinecreateinterfaceoptions"
+      }
+    },
     "smol-toml": {
       "id": "smol-toml",
       "type": "documented",
