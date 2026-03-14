@@ -29,7 +29,7 @@ await fs.rmSync('./dist', { recursive: true, force: true }) // [!code ++]
 ```
 
 > [!IMPORTANT]
-> Do not forget to pass `{ recursive: true, force: true }`, otherwise it will not work.
+> Remember to set `{ recursive: true, force: true }` to match the behavior of rimraf.
 
 ## `fs.rmdir` (native, Node.js before v14.14.0)
 
