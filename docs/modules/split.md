@@ -1,5 +1,5 @@
 ---
-description: Modern alternatives to the sort-object package for sorting object keys
+description: Native Node.js alternatives to the split package for splitting stream by lines
 ---
 
 # Replacements for `split`
