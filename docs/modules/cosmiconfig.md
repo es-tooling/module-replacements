@@ -1,8 +1,8 @@
 ---
-description: Modern alternatives to the comsiconfig package
+description: Modern alternatives to the cosmiconfig package
 ---
 
-# Replacements for `comsiconfig`
+# Replacements for `cosmiconfig`
 
 ## `lilconfig`
 

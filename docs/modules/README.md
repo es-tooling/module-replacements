@@ -23,7 +23,7 @@ ESLint plugin.
 - [`builtin-modules`](./builtin-modules.md)
 - [`chalk`](./chalk.md)
 - [`core-util-is`](./core-util-is.md)
-- [`comsiconfig`](./comsiconfig.md)
+- [`cosmiconfig`](./cosmiconfig.md)
 - [`cpx`](./cpx.md)
 - [`cross-fetch`](./fetch.md)
 - [`crypto-js`](./crypto-js.md)
