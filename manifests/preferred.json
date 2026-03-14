@@ -2470,6 +2470,12 @@
       "replacements": ["sort-object", "sort-object-keys", "sortobject"],
       "url": {"type": "e18e", "id": "sort-object"}
     },
+    "split": {
+      "type": "module",
+      "moduleName": "split",
+      "replacements": ["readline.createInterface"],
+      "url": {"type": "e18e", "id": "split"}
+    },
     "string-width": {
       "type": "module",
       "moduleName": "string-width",
