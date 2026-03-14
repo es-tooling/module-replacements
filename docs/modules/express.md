@@ -8,7 +8,7 @@ Express has been the industry standard for years, but the ecosystem has shifted 
 
 ## `h3`
 
-[`h3`](https://github.com/h3js/h3) is a minimal H(TTP) framework built for high performance and portability. It is the engine behind Nuxt and Nitro, designed to work anywhere (Node.js, Workers, Deno, Bun).
+[`h3`](https://github.com/h3js/h3) is a minimal H(TTP) framework built for high performance and portability.
 
 Example:
 
@@ -30,7 +30,7 @@ createServer(toNodeHandler(app)).listen(3000) // [!code ++]
 
 ## `tinyhttp`
 
-[`tinyhttp`](https://github.com/tinyhttp/tinyhttp) is a modern, Express-like web framework written in TypeScript. It is designed to be a drop-in replacement that is significantly lighter and faster while remaining compatible with many Express middlewares.
+[`tinyhttp`](https://github.com/tinyhttp/tinyhttp) is designed to be a drop-in replacement remaining compatible with many Express middlewares.
 
 Example:
 
@@ -41,14 +41,14 @@ import { App } from '@tinyhttp/app' // [!code ++]
 const app = express() // [!code --]
 const app = new App() // [!code ++]
 
-app.get('/', (req, res) => res.send('Hello world')) // [!code --]
+app.get('/', (req, res) => res.send('Hello world'))
 
 app.listen(3000)
 ```
 
 ## `hono`
 
-[`hono`](https://github.com/honojs/hono) is a small, simple, and ultrafast web framework for the Edges. It has excellent TypeScript support and built-in middleware for common tasks without the overhead of heavy dependencies.
+[`hono`](https://github.com/honojs/hono) is a small, simple, and fast web framework for the Edges.
 
 Example:
 
@@ -67,7 +67,7 @@ export default app // [!code ++]
 
 ## `elysia`
 
-If you are using Bun, [`elysia`](https://github.com/elysiajs/elysia) is often the best choice. It is specifically optimized for the Bun runtime and provides "End-to-End Type Safety," allowing your frontend to inherit types directly from your backend.
+If you are using Bun, [`elysia`](https://github.com/elysiajs/elysia) is often the best choice.
 
 Example:
 
