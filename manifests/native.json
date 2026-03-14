@@ -1892,6 +1892,11 @@
       "moduleName": "functions-have-names",
       "replacements": ["Function.prototype.name"]
     },
+    "get-proto": {
+      "type": "module",
+      "moduleName": "get-proto",
+      "replacements": ["Object.getPrototypeOf"]
+    },
     "get-symbol-description": {
       "type": "module",
       "moduleName": "get-symbol-description",
