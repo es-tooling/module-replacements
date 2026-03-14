@@ -1442,6 +1442,33 @@
         "id": "Web/JavaScript/Reference/Global_Objects/BigInt"
       }
     },
+    "has-dynamic-import": {
+      "id": "has-dynamic-import",
+      "type": "removal",
+      "description": "Every modern environment has support for dynamic import. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Operators/import"
+      }
+    },
+    "has-optional-chaining": {
+      "id": "has-optional-chaining",
+      "type": "removal",
+      "description": "Every modern environment has support for optional chaining. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Operators/Optional_chaining"
+      }
+    },
+    "has-property-descriptors": {
+      "id": "has-property-descriptors",
+      "type": "removal",
+      "description": "Every modern environment has full property descriptor support. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors"
+      }
+    },
     "has-proto": {
       "id": "has-proto",
       "type": "removal",
@@ -1460,6 +1487,15 @@
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol"
       }
     },
+    "has-template-literals": {
+      "id": "has-template-literals",
+      "type": "removal",
+      "description": "Every modern environment has support for template literals. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Template_literals"
+      }
+    },
     "has-tostringtag": {
       "id": "has-tostringtag",
       "type": "removal",
@@ -1467,6 +1503,15 @@
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag"
+      }
+    },
+    "has-typed-arrays": {
+      "id": "has-typed-arrays",
+      "type": "removal",
+      "description": "Every modern environment has support for typed arrays. You can just remove the check.",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/TypedArray"
       }
     },
     "inherits": {
@@ -1922,10 +1967,25 @@
       "moduleName": "has-bigints",
       "replacements": ["has-bigints"]
     },
+    "has-dynamic-import": {
+      "type": "module",
+      "moduleName": "has-dynamic-import",
+      "replacements": ["has-dynamic-import"]
+    },
+    "has-optional-chaining": {
+      "type": "module",
+      "moduleName": "has-optional-chaining",
+      "replacements": ["has-optional-chaining"]
+    },
     "has-own-prop": {
       "type": "module",
       "moduleName": "has-own-prop",
       "replacements": ["Object.prototype.hasOwnProperty"]
+    },
+    "has-property-descriptors": {
+      "type": "module",
+      "moduleName": "has-property-descriptors",
+      "replacements": ["has-property-descriptors"]
     },
     "has-proto": {
       "type": "module",
@@ -1937,10 +1997,20 @@
       "moduleName": "has-symbols",
       "replacements": ["has-symbols"]
     },
+    "has-template-literals": {
+      "type": "module",
+      "moduleName": "has-template-literals",
+      "replacements": ["has-template-literals"]
+    },
     "has-tostringtag": {
       "type": "module",
       "moduleName": "has-tostringtag",
       "replacements": ["has-tostringtag"]
+    },
+    "has-typed-arrays": {
+      "type": "module",
+      "moduleName": "has-typed-arrays",
+      "replacements": ["has-typed-arrays"]
     },
     "hasown": {
       "type": "module",
