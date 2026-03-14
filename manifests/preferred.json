@@ -2959,6 +2959,7 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "express"},
       "replacementModule": "h3"
+    },
     "hono": {
       "id": "hono",
       "type": "documented",
