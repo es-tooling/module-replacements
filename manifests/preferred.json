@@ -66,6 +66,12 @@
       "replacements": ["util.styleText", "picocolors", "ansis"],
       "url": {"type": "e18e", "id": "chalk"}
     },
+    "clean-webpack-plugin": {
+      "type": "module",
+      "moduleName": "clean-webpack-plugin",
+      "replacements": ["webpack.output.clean"],
+      "url": {"type": "e18e", "id": "clean-webpack-plugin"}
+    },
     "cli-color": {
       "type": "module",
       "moduleName": "cli-color",
@@ -3221,6 +3227,12 @@
       "description": "util.types",
       "nodeFeatureId": {"moduleName": "node:util", "exportName": "types"},
       "url": {"type": "node", "id": "api/util.html#utiltypes"}
+    },
+    "webpack.output.clean": {
+      "id": "webpack.output.clean",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "clean-webpack-plugin"},
+      "replacementModule": "webpack"
     },
     "wireit": {
       "id": "wireit",
