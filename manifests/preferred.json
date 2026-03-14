@@ -2437,7 +2437,7 @@
     "resolve": {
       "type": "module",
       "moduleName": "resolve",
-      "replacements": ["exsolve", "oxc-resolver"],
+      "replacements": ["import.meta.resolve", "exsolve", "oxc-resolver"],
       "url": {"type": "e18e", "id": "resolve"}
     },
     "retry-request": {
@@ -2941,6 +2941,15 @@
         "exportName": "rmdir"
       },
       "url": {"type": "node", "id": "api/fs.html#fspromisesrmdirpath-options"}
+    },
+    "import.meta.resolve": {
+      "id": "import.meta.resolve",
+      "type": "native",
+      "description": "import.meta.resolve",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Operators/import.meta/resolve"
+      }
     },
     "isBuiltin": {
       "id": "isBuiltin",
