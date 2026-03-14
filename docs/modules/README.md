@@ -41,6 +41,7 @@ ESLint plugin.
 - [`eslint-plugin-react`](./eslint-plugin-react.md)
 - [`eslint-plugin-vitest`](./eslint-plugin-vitest.md)
 - [`execa`](./execa.md)
+- [`express`](./express.md)
 - [`ezspawn`](./ez-spawn.md)
 - [`faker`](./faker.md)
 - [`fast-glob`](./fast-glob.md)
