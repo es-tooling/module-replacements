@@ -1063,18 +1063,6 @@
         "compatKey": "javascript.builtins.Promise.finally"
       }
     },
-    "Reflect.defineProperty": {
-      "id": "Reflect.defineProperty",
-      "type": "native",
-      "url": {
-        "type": "mdn",
-        "id": "Web/JavaScript/Reference/Global_Objects/Reflect/defineProperty"
-      },
-      "webFeatureId": {
-        "featureId": "proxy-reflect",
-        "compatKey": "javascript.builtins.Reflect.defineProperty"
-      }
-    },
     "Reflect.getPrototypeOf": {
       "id": "Reflect.getPrototypeOf",
       "type": "native",
@@ -1783,7 +1771,7 @@
     "define-property": {
       "type": "module",
       "moduleName": "define-property",
-      "replacements": ["Reflect.defineProperty"]
+      "replacements": ["Object.defineProperty"]
     },
     "error-cause": {
       "type": "module",
