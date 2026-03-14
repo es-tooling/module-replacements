@@ -2416,6 +2416,12 @@
       "replacements": ["nanoid"],
       "url": {"type": "e18e", "id": "shortid"}
     },
+    "react-helmet": {
+      "type": "module",
+      "moduleName": "react-helmet",
+      "replacements": ["react-helmet-async"],
+      "url": {"type": "e18e", "id": "react-helmet"}
+    },
     "read-package-up": {
       "type": "module",
       "moduleName": "read-package-up",
@@ -3124,6 +3130,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "rimraf"},
       "replacementModule": "premove"
+    },
+    "react-helmet-async": {
+      "id": "react-helmet-async",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "react-helmet"},
+      "replacementModule": "react-helmet-async"
     },
     "smol-toml": {
       "id": "smol-toml",
