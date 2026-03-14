@@ -18,7 +18,7 @@ import { lilconfig, lilconfigSync } from 'lilconfig'
 
 const options = {
   searchPlaces: [
-    'package.json',
+    'package.json', // Will use "myapp" field
     '.myapprc',
     '.myapprc.json',
     'myapp.config.js'
