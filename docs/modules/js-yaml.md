@@ -43,7 +43,7 @@ const out = parseAllDocuments(src).map((d) => d.toJSON()) // [!code ++]
 
 ## Bun `YAML` API
 
-[Native YAML parsing](https://bun.com/blog/release-notes/bun-v1.2.21#native-yaml-support) is supported in Bun since v1.2.21.
+[Native YAML parsing](https://bun.com/docs/runtime/yaml) is supported in Bun since [v1.2.21](https://bun.com/blog/release-notes/bun-v1.2.21#native-yaml-support).
 
 Example:
 

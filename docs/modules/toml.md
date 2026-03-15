@@ -30,7 +30,7 @@ const text = stringify(obj)
 
 ## Bun `TOML` API (native)
 
-[Native TOML parsing](https://bun.com/reference/bun/TOML) is supported in Bun.
+[Native TOML parsing](https://bun.com/docs/runtime/toml#runtime-api) is supported in Bun.
 
 Example:
 
