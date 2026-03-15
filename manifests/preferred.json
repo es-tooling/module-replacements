@@ -18,6 +18,12 @@
       "replacements": ["node:stream"],
       "url": {"type": "e18e", "id": "through"}
     },
+    "arg": {
+      "type": "module",
+      "moduleName": "arg",
+      "replacements": ["util.parseArgs"],
+      "url": {"type": "e18e", "id": "parseargs"}
+    },
     "axios": {
       "type": "module",
       "moduleName": "axios",
@@ -83,6 +89,12 @@
       "moduleName": "colors",
       "replacements": ["util.styleText", "picocolors", "ansis"],
       "url": {"type": "e18e", "id": "chalk"}
+    },
+    "commander": {
+      "type": "module",
+      "moduleName": "commander",
+      "replacements": ["util.parseArgs"],
+      "url": {"type": "e18e", "id": "parseargs"}
     },
     "core-util-is": {
       "type": "module",
@@ -2304,6 +2316,18 @@
       "replacements": ["node:crypto"],
       "url": {"type": "e18e", "id": "md5"}
     },
+    "meow": {
+      "type": "module",
+      "moduleName": "meow",
+      "replacements": ["util.parseArgs"],
+      "url": {"type": "e18e", "id": "parseargs"}
+    },
+    "minimist": {
+      "type": "module",
+      "moduleName": "minimist",
+      "replacements": ["util.parseArgs"],
+      "url": {"type": "e18e", "id": "parseargs"}
+    },
     "mkdirp": {
       "type": "module",
       "moduleName": "mkdirp",
@@ -2315,6 +2339,12 @@
       "moduleName": "moment",
       "replacements": ["day.js", "date-fns", "luxon", "Date"],
       "url": {"type": "e18e", "id": "moment"}
+    },
+    "mri": {
+      "type": "module",
+      "moduleName": "mri",
+      "replacements": ["util.parseArgs"],
+      "url": {"type": "e18e", "id": "parseargs"}
     },
     "node-fetch": {
       "type": "module",
@@ -2464,6 +2494,12 @@
       "replacements": ["fs.rm", "fs.rmdir", "premove"],
       "url": {"type": "e18e", "id": "rimraf"}
     },
+    "sade": {
+      "type": "module",
+      "moduleName": "sade",
+      "replacements": ["util.parseArgs"],
+      "url": {"type": "e18e", "id": "parseargs"}
+    },
     "set-value": {
       "type": "module",
       "moduleName": "set-value",
@@ -2559,6 +2595,18 @@
       "moduleName": "xmldom",
       "replacements": ["@xmldom/xmldom"],
       "url": {"type": "e18e", "id": "xmldom"}
+    },
+    "yargs": {
+      "type": "module",
+      "moduleName": "yargs",
+      "replacements": ["util.parseArgs"],
+      "url": {"type": "e18e", "id": "parseargs"}
+    },
+    "yargs-parser": {
+      "type": "module",
+      "moduleName": "yargs-parser",
+      "replacements": ["util.parseArgs"],
+      "url": {"type": "e18e", "id": "parseargs"}
     }
   },
   "replacements": {
@@ -3258,6 +3306,12 @@
       "description": "util.types",
       "nodeFeatureId": {"moduleName": "node:util", "exportName": "types"},
       "url": {"type": "node", "id": "api/util.html#utiltypes"}
+    },
+    "util.parseArgs": {
+      "id": "util.parseArgs",
+      "type": "native",
+      "nodeFeatureId": {"moduleName": "node:util", "exportName": "parseArgs"},
+      "url": {"type": "node", "id": "api/util.html#utilparseargsconfig"}
     },
     "webpack.output.clean": {
       "id": "webpack.output.clean",
