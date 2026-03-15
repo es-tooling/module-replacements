@@ -90,6 +90,12 @@
       "replacements": ["util.types"],
       "url": {"type": "e18e", "id": "core-util-is"}
     },
+    "cosmiconfig": {
+      "type": "module",
+      "moduleName": "cosmiconfig",
+      "replacements": ["lilconfig"],
+      "url": {"type": "e18e", "id": "cosmiconfig"}
+    },
     "cpx": {
       "type": "module",
       "moduleName": "cpx",
@@ -192,11 +198,23 @@
       "replacements": ["@vitest/eslint-plugin"],
       "url": {"type": "e18e", "id": "eslint-plugin-vitest"}
     },
+    "event-stream": {
+      "type": "module",
+      "moduleName": "event-stream",
+      "replacements": ["node:stream"],
+      "url": {"type": "e18e", "id": "event-stream"}
+    },
     "execa": {
       "type": "module",
       "moduleName": "execa",
       "replacements": ["tinyexec", "nanoexec", "Bun.Shell"],
       "url": {"type": "e18e", "id": "execa"}
+    },
+    "express": {
+      "type": "module",
+      "moduleName": "express",
+      "replacements": ["h3", "tinyhttp", "hono", "elysia"],
+      "url": {"type": "e18e", "id": "express"}
     },
     "ez-spawn": {
       "type": "module",
@@ -2482,6 +2500,12 @@
       "replacements": ["sort-object", "sort-object-keys", "sortobject"],
       "url": {"type": "e18e", "id": "sort-object"}
     },
+    "split": {
+      "type": "module",
+      "moduleName": "split",
+      "replacements": ["readline.createInterface"],
+      "url": {"type": "e18e", "id": "split"}
+    },
     "string-width": {
       "type": "module",
       "moduleName": "string-width",
@@ -2541,6 +2565,12 @@
       "moduleName": "utf8",
       "replacements": ["TextEncoder", "Buffer.prototype.toString"],
       "url": {"type": "e18e", "id": "utf8"}
+    },
+    "uuidv4": {
+      "type": "module",
+      "moduleName": "uuidv4",
+      "replacements": ["node:crypto", "crypto"],
+      "url": {"type": "e18e", "id": "uuidv4"}
     },
     "whatwg-fetch": {
       "type": "module",
@@ -2792,6 +2822,12 @@
       "url": {"type": "e18e", "id": "dot-prop"},
       "replacementModule": "dlv"
     },
+    "elysia": {
+      "id": "elysia",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "elysia"
+    },
     "emoji-regex-xs": {
       "id": "emoji-regex-xs",
       "type": "documented",
@@ -2937,6 +2973,18 @@
       "url": {"type": "e18e", "id": "node-telegram-bot-api"},
       "replacementModule": "grammy"
     },
+    "h3": {
+      "id": "h3",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "h3"
+    },
+    "hono": {
+      "id": "hono",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "hono"
+    },
     "import.meta.resolve": {
       "id": "import.meta.resolve",
       "type": "native",
@@ -2974,6 +3022,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "fetch"},
       "replacementModule": "ky"
+    },
+    "lilconfig": {
+      "id": "lilconfig",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "cosmiconfig"},
+      "replacementModule": "lilconfig"
     },
     "lodash-underscore": {
       "id": "lodash-underscore",
@@ -3125,6 +3179,19 @@
       "url": {"type": "e18e", "id": "rimraf"},
       "replacementModule": "premove"
     },
+    "readline.createInterface": {
+      "id": "readline.createInterface",
+      "type": "native",
+      "description": "readline.createInterface",
+      "nodeFeatureId": {
+        "moduleName": "node:readline",
+        "exportName": "createInterface"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/readline.html#readlinecreateinterfaceoptions"
+      }
+    },
     "smol-toml": {
       "id": "smol-toml",
       "type": "documented",
@@ -3175,6 +3242,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "fast-glob"},
       "replacementModule": "tinyglobby"
+    },
+    "tinyhttp": {
+      "id": "tinyhttp",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "@tinyhttp/app"
     },
     "unicode-segmenter": {
       "id": "unicode-segmenter",
