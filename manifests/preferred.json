@@ -2482,6 +2482,12 @@
       "replacements": ["sort-object", "sort-object-keys", "sortobject"],
       "url": {"type": "e18e", "id": "sort-object"}
     },
+    "split": {
+      "type": "module",
+      "moduleName": "split",
+      "replacements": ["readline.createInterface"],
+      "url": {"type": "e18e", "id": "split"}
+    },
     "string-width": {
       "type": "module",
       "moduleName": "string-width",
@@ -3136,6 +3142,19 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "rimraf"},
       "replacementModule": "premove"
+    },
+    "readline.createInterface": {
+      "id": "readline.createInterface",
+      "type": "native",
+      "description": "readline.createInterface",
+      "nodeFeatureId": {
+        "moduleName": "node:readline",
+        "exportName": "createInterface"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/readline.html#readlinecreateinterfaceoptions"
+      }
     },
     "smol-toml": {
       "id": "smol-toml",
