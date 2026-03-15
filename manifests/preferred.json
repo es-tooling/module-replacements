@@ -210,6 +210,12 @@
       "replacements": ["tinyexec", "nanoexec", "Bun.Shell"],
       "url": {"type": "e18e", "id": "execa"}
     },
+    "express": {
+      "type": "module",
+      "moduleName": "express",
+      "replacements": ["h3", "tinyhttp", "hono", "elysia"],
+      "url": {"type": "e18e", "id": "express"}
+    },
     "ez-spawn": {
       "type": "module",
       "moduleName": "ez-spawn",
@@ -2825,6 +2831,12 @@
       "url": {"type": "e18e", "id": "dot-prop"},
       "replacementModule": "dlv"
     },
+    "elysia": {
+      "id": "elysia",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "elysia"
+    },
     "emoji-regex-xs": {
       "id": "emoji-regex-xs",
       "type": "documented",
@@ -2971,6 +2983,18 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "node-telegram-bot-api"},
       "replacementModule": "grammy"
+    },
+    "h3": {
+      "id": "h3",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "h3"
+    },
+    "hono": {
+      "id": "hono",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "hono"
     },
     "isBuiltin": {
       "id": "isBuiltin",
@@ -3219,6 +3243,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "fast-glob"},
       "replacementModule": "tinyglobby"
+    },
+    "tinyhttp": {
+      "id": "tinyhttp",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "@tinyhttp/app"
     },
     "unicode-segmenter": {
       "id": "unicode-segmenter",

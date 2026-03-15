@@ -43,6 +43,7 @@ ESLint plugin.
 - [`eslint-plugin-vitest`](./eslint-plugin-vitest.md)
 - [`event-stream`](./event-stream.md)
 - [`execa`](./execa.md)
+- [`express`](./express.md)
 - [`ezspawn`](./ez-spawn.md)
 - [`faker`](./faker.md)
 - [`fast-glob`](./fast-glob.md)
