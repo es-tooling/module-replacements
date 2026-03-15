@@ -66,6 +66,12 @@
       "replacements": ["util.styleText", "picocolors", "ansis"],
       "url": {"type": "e18e", "id": "chalk"}
     },
+    "clean-webpack-plugin": {
+      "type": "module",
+      "moduleName": "clean-webpack-plugin",
+      "replacements": ["webpack.output.clean"],
+      "url": {"type": "e18e", "id": "clean-webpack-plugin"}
+    },
     "cli-color": {
       "type": "module",
       "moduleName": "cli-color",
@@ -83,6 +89,12 @@
       "moduleName": "core-util-is",
       "replacements": ["util.types"],
       "url": {"type": "e18e", "id": "core-util-is"}
+    },
+    "cosmiconfig": {
+      "type": "module",
+      "moduleName": "cosmiconfig",
+      "replacements": ["lilconfig"],
+      "url": {"type": "e18e", "id": "cosmiconfig"}
     },
     "cpx": {
       "type": "module",
@@ -186,11 +198,23 @@
       "replacements": ["@vitest/eslint-plugin"],
       "url": {"type": "e18e", "id": "eslint-plugin-vitest"}
     },
+    "event-stream": {
+      "type": "module",
+      "moduleName": "event-stream",
+      "replacements": ["node:stream"],
+      "url": {"type": "e18e", "id": "event-stream"}
+    },
     "execa": {
       "type": "module",
       "moduleName": "execa",
       "replacements": ["tinyexec", "nanoexec", "Bun.Shell"],
       "url": {"type": "e18e", "id": "execa"}
+    },
+    "express": {
+      "type": "module",
+      "moduleName": "express",
+      "replacements": ["h3", "tinyhttp", "hono", "elysia"],
+      "url": {"type": "e18e", "id": "express"}
     },
     "ez-spawn": {
       "type": "module",
@@ -2310,6 +2334,12 @@
       "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
+    "node-telegram-bot-api": {
+      "type": "module",
+      "moduleName": "node-telegram-bot-api",
+      "replacements": ["grammy"],
+      "url": {"type": "e18e", "id": "node-telegram-bot-api"}
+    },
     "npm-run-all": {
       "type": "module",
       "moduleName": "npm-run-all",
@@ -2470,6 +2500,12 @@
       "replacements": ["sort-object", "sort-object-keys", "sortobject"],
       "url": {"type": "e18e", "id": "sort-object"}
     },
+    "split": {
+      "type": "module",
+      "moduleName": "split",
+      "replacements": ["readline.createInterface"],
+      "url": {"type": "e18e", "id": "split"}
+    },
     "string-width": {
       "type": "module",
       "moduleName": "string-width",
@@ -2529,6 +2565,12 @@
       "moduleName": "utf8",
       "replacements": ["TextEncoder", "Buffer.prototype.toString"],
       "url": {"type": "e18e", "id": "utf8"}
+    },
+    "uuidv4": {
+      "type": "module",
+      "moduleName": "uuidv4",
+      "replacements": ["node:crypto", "crypto"],
+      "url": {"type": "e18e", "id": "uuidv4"}
     },
     "whatwg-fetch": {
       "type": "module",
@@ -2795,6 +2837,12 @@
       "url": {"type": "e18e", "id": "dot-prop"},
       "replacementModule": "dlv"
     },
+    "elysia": {
+      "id": "elysia",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "elysia"
+    },
     "emoji-regex-xs": {
       "id": "emoji-regex-xs",
       "type": "documented",
@@ -2936,6 +2984,24 @@
       },
       "url": {"type": "node", "id": "api/fs.html#fspromisesrmdirpath-options"}
     },
+    "grammy": {
+      "id": "grammy",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "node-telegram-bot-api"},
+      "replacementModule": "grammy"
+    },
+    "h3": {
+      "id": "h3",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "h3"
+    },
+    "hono": {
+      "id": "hono",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "hono"
+    },
     "isBuiltin": {
       "id": "isBuiltin",
       "type": "native",
@@ -2966,6 +3032,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "fetch"},
       "replacementModule": "ky"
+    },
+    "lilconfig": {
+      "id": "lilconfig",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "cosmiconfig"},
+      "replacementModule": "lilconfig"
     },
     "lodash-underscore": {
       "id": "lodash-underscore",
@@ -3119,6 +3191,19 @@
       "url": {"type": "e18e", "id": "react-helmet"},
       "replacementModule": "react-helmet-async"
     },
+    "readline.createInterface": {
+      "id": "readline.createInterface",
+      "type": "native",
+      "description": "readline.createInterface",
+      "nodeFeatureId": {
+        "moduleName": "node:readline",
+        "exportName": "createInterface"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/readline.html#readlinecreateinterfaceoptions"
+      }
+    },
     "smol-toml": {
       "id": "smol-toml",
       "type": "documented",
@@ -3171,6 +3256,12 @@
       "url": {"type": "e18e", "id": "fast-glob"},
       "replacementModule": "tinyglobby"
     },
+    "tinyhttp": {
+      "id": "tinyhttp",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "express"},
+      "replacementModule": "@tinyhttp/app"
+    },
     "unicode-segmenter": {
       "id": "unicode-segmenter",
       "type": "documented",
@@ -3221,6 +3312,12 @@
       "description": "util.types",
       "nodeFeatureId": {"moduleName": "node:util", "exportName": "types"},
       "url": {"type": "node", "id": "api/util.html#utiltypes"}
+    },
+    "webpack.output.clean": {
+      "id": "webpack.output.clean",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "clean-webpack-plugin"},
+      "replacementModule": "webpack"
     },
     "wireit": {
       "id": "wireit",
