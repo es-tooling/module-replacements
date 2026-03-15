@@ -25,17 +25,20 @@ createReadStream('file.txt').pipe(es.split()) // [!code --]
 const lines = createInterface({ input: createReadStream('file.txt') }) // [!code ++]
 ```
 
-## `es.map()`
+## `es.map()` replacement
 
+<!-- prettier-ignore -->
 ```ts
 import es from 'event-stream' // [!code --]
-import { Readable } from 'node:stream' // [!code ++]
 
-es.map((data, cb) => cb(null, fn(data))) // [!code --]
-Readable.from(source).map(data => fn(data)) // [!code ++]
+readableStream.pipe( // [!code --]
+  es.map((data, cb) => cb(null, fn(data))) // [!code --]
+) // [!code --]
+
+readableStream.map((data) => fn(data)) // [!code ++]
 ```
 
-## `es.merge()`
+## `es.merge()` replacement
 
 ```ts
 import es from 'event-stream' // [!code --]
