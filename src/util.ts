@@ -1,4 +1,4 @@
-import type { KnownUrl } from './types.js'
+import type {KnownUrl} from './types.js';
 
 export function resolveDocUrl(url?: KnownUrl): string | null {
   if (!url) return null;
