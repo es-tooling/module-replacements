@@ -24,6 +24,7 @@ ESLint plugin.
 - [`chalk`](./chalk.md)
 - [`clean-webpack-plugin`](./clean-webpack-plugin.md)
 - [`core-util-is`](./core-util-is.md)
+- [`cosmiconfig`](./cosmiconfig.md)
 - [`cpx`](./cpx.md)
 - [`cross-fetch`](./fetch.md)
 - [`crypto-js`](./crypto-js.md)
