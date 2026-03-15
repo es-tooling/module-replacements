@@ -12,10 +12,16 @@
       "replacements": ["tinyexec"],
       "url": {"type": "e18e", "id": "ez-spawn"}
     },
+    "@ljharb/through": {
+      "type": "module",
+      "moduleName": "@ljharb/through",
+      "replacements": ["node:stream"],
+      "url": {"type": "e18e", "id": "through"}
+    },
     "axios": {
       "type": "module",
       "moduleName": "axios",
-      "replacements": ["fetch", "ky", "ofetch"],
+      "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
     "bluebird": {
@@ -60,6 +66,12 @@
       "replacements": ["util.styleText", "picocolors", "ansis"],
       "url": {"type": "e18e", "id": "chalk"}
     },
+    "clean-webpack-plugin": {
+      "type": "module",
+      "moduleName": "clean-webpack-plugin",
+      "replacements": ["webpack.output.clean"],
+      "url": {"type": "e18e", "id": "clean-webpack-plugin"}
+    },
     "cli-color": {
       "type": "module",
       "moduleName": "cli-color",
@@ -78,6 +90,12 @@
       "replacements": ["util.types"],
       "url": {"type": "e18e", "id": "core-util-is"}
     },
+    "cosmiconfig": {
+      "type": "module",
+      "moduleName": "cosmiconfig",
+      "replacements": ["lilconfig"],
+      "url": {"type": "e18e", "id": "cosmiconfig"}
+    },
     "cpx": {
       "type": "module",
       "moduleName": "cpx",
@@ -87,7 +105,7 @@
     "cross-fetch": {
       "type": "module",
       "moduleName": "cross-fetch",
-      "replacements": ["fetch", "ky", "ofetch"],
+      "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
     "crypto-js": {
@@ -105,6 +123,12 @@
     "deep-equal": {
       "type": "module",
       "moduleName": "deep-equal",
+      "replacements": ["dequal", "fast-deep-equal"],
+      "url": {"type": "e18e", "id": "deep-equal"}
+    },
+    "deep-equal-json": {
+      "type": "module",
+      "moduleName": "deep-equal-json",
       "replacements": ["dequal", "fast-deep-equal"],
       "url": {"type": "e18e", "id": "deep-equal"}
     },
@@ -174,6 +198,12 @@
       "replacements": ["@vitest/eslint-plugin"],
       "url": {"type": "e18e", "id": "eslint-plugin-vitest"}
     },
+    "event-stream": {
+      "type": "module",
+      "moduleName": "event-stream",
+      "replacements": ["node:stream"],
+      "url": {"type": "e18e", "id": "event-stream"}
+    },
     "execa": {
       "type": "module",
       "moduleName": "execa",
@@ -240,6 +270,12 @@
       "replacements": ["fs"],
       "url": {"type": "e18e", "id": "fs-extra"}
     },
+    "gaxios": {
+      "type": "module",
+      "moduleName": "gaxios",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
     "get-stream": {
       "type": "module",
       "moduleName": "get-stream",
@@ -299,6 +335,12 @@
       "moduleName": "is-core-module",
       "replacements": ["isBuiltin", "builtinModules"],
       "url": {"type": "e18e", "id": "is-builtin-module"}
+    },
+    "isomorphic-fetch": {
+      "type": "module",
+      "moduleName": "isomorphic-fetch",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
     },
     "jquery": {
       "type": "module",
@@ -2283,8 +2325,14 @@
     "node-fetch": {
       "type": "module",
       "moduleName": "node-fetch",
-      "replacements": ["fetch", "ky", "ofetch"],
+      "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
+    },
+    "node-telegram-bot-api": {
+      "type": "module",
+      "moduleName": "node-telegram-bot-api",
+      "replacements": ["grammy"],
+      "url": {"type": "e18e", "id": "node-telegram-bot-api"}
     },
     "npm-run-all": {
       "type": "module",
@@ -2340,6 +2388,12 @@
       "replacements": ["Teleport"],
       "url": {"type": "e18e", "id": "portal-vue"}
     },
+    "preferred-pm": {
+      "type": "module",
+      "moduleName": "preferred-pm",
+      "replacements": ["package-manager-detector"],
+      "url": {"type": "e18e", "id": "detect-package-manager"}
+    },
     "q": {
       "type": "module",
       "moduleName": "q",
@@ -2356,6 +2410,23 @@
         "neoqs"
       ],
       "url": {"type": "e18e", "id": "qs"}
+    },
+    "querystring": {
+      "type": "module",
+      "moduleName": "querystring",
+      "replacements": [
+        "URLSearchParams",
+        "fast-querystring",
+        "picoquery",
+        "neoqs"
+      ],
+      "url": {"type": "e18e", "id": "qs"}
+    },
+    "randomatic": {
+      "type": "module",
+      "moduleName": "randomatic",
+      "replacements": ["nanoid"],
+      "url": {"type": "e18e", "id": "shortid"}
     },
     "read-package-up": {
       "type": "module",
@@ -2381,6 +2452,18 @@
       "replacements": ["node:stream", "streams"],
       "url": {"type": "e18e", "id": "readable-stream"}
     },
+    "request": {
+      "type": "module",
+      "moduleName": "request",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
+    "retry-request": {
+      "type": "module",
+      "moduleName": "retry-request",
+      "replacements": ["ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
     "rimraf": {
       "type": "module",
       "moduleName": "rimraf",
@@ -2405,6 +2488,12 @@
       "replacements": ["sort-object", "sort-object-keys", "sortobject"],
       "url": {"type": "e18e", "id": "sort-object"}
     },
+    "split": {
+      "type": "module",
+      "moduleName": "split",
+      "replacements": ["readline.createInterface"],
+      "url": {"type": "e18e", "id": "split"}
+    },
     "stream-buffers": {
       "type": "module",
       "moduleName": "stream-buffers",
@@ -2423,11 +2512,23 @@
       "replacements": ["util.stripVTControlCharacters", "Bun.stripANSI"],
       "url": {"type": "e18e", "id": "strip-ansi"}
     },
+    "teeny-request": {
+      "type": "module",
+      "moduleName": "teeny-request",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
     "tempy": {
       "type": "module",
       "moduleName": "tempy",
       "replacements": ["fs.mkdtemp", "Deno.makeTempDir"],
       "url": {"type": "e18e", "id": "tempy"}
+    },
+    "through": {
+      "type": "module",
+      "moduleName": "through",
+      "replacements": ["node:stream"],
+      "url": {"type": "e18e", "id": "through"}
     },
     "toml": {
       "type": "module",
@@ -2458,6 +2559,18 @@
       "moduleName": "utf8",
       "replacements": ["TextEncoder", "Buffer.prototype.toString"],
       "url": {"type": "e18e", "id": "utf8"}
+    },
+    "uuidv4": {
+      "type": "module",
+      "moduleName": "uuidv4",
+      "replacements": ["node:crypto", "crypto"],
+      "url": {"type": "e18e", "id": "uuidv4"}
+    },
+    "whatwg-fetch": {
+      "type": "module",
+      "moduleName": "whatwg-fetch",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
     },
     "xmldom": {
       "type": "module",
@@ -2859,6 +2972,12 @@
       },
       "url": {"type": "node", "id": "api/fs.html#fspromisesrmdirpath-options"}
     },
+    "grammy": {
+      "id": "grammy",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "node-telegram-bot-api"},
+      "replacementModule": "grammy"
+    },
     "isBuiltin": {
       "id": "isBuiltin",
       "type": "native",
@@ -2889,6 +3008,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "fetch"},
       "replacementModule": "ky"
+    },
+    "lilconfig": {
+      "id": "lilconfig",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "cosmiconfig"},
+      "replacementModule": "lilconfig"
     },
     "lodash-underscore": {
       "id": "lodash-underscore",
@@ -3036,6 +3161,19 @@
       "url": {"type": "e18e", "id": "rimraf"},
       "replacementModule": "premove"
     },
+    "readline.createInterface": {
+      "id": "readline.createInterface",
+      "type": "native",
+      "description": "readline.createInterface",
+      "nodeFeatureId": {
+        "moduleName": "node:readline",
+        "exportName": "createInterface"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/readline.html#readlinecreateinterfaceoptions"
+      }
+    },
     "smol-toml": {
       "id": "smol-toml",
       "type": "documented",
@@ -3138,6 +3276,12 @@
       "description": "util.types",
       "nodeFeatureId": {"moduleName": "node:util", "exportName": "types"},
       "url": {"type": "node", "id": "api/util.html#utiltypes"}
+    },
+    "webpack.output.clean": {
+      "id": "webpack.output.clean",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "clean-webpack-plugin"},
+      "replacementModule": "webpack"
     },
     "wireit": {
       "id": "wireit",
