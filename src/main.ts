@@ -13,6 +13,7 @@ const preferredReplacements = JSON.parse(
 ) as ManifestModule;
 
 export * from './types.js';
+export * from './util.js';
 
 export {nativeReplacements, microUtilsReplacements, preferredReplacements};
 
