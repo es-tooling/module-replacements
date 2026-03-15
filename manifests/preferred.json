@@ -2452,6 +2452,12 @@
       "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
+    "resolve": {
+      "type": "module",
+      "moduleName": "resolve",
+      "replacements": ["import.meta.resolve", "exsolve", "oxc-resolver"],
+      "url": {"type": "e18e", "id": "resolve"}
+    },
     "retry-request": {
       "type": "module",
       "moduleName": "retry-request",
@@ -2565,7 +2571,6 @@
     "--env-file": {
       "id": "--env-file",
       "type": "native",
-      "description": "--env-file",
       "url": {"type": "node", "id": "api/cli.html#--env-filefile"}
     },
     "@eslint-community/eslint-plugin-eslint-comments": {
@@ -2643,37 +2648,31 @@
     "Bun.CryptoHasher": {
       "id": "Bun.CryptoHasher",
       "type": "native",
-      "description": "Bun.CryptoHasher",
       "url": "https://bun.com/docs/runtime/hashing"
     },
     "Bun.Shell": {
       "id": "Bun.Shell",
       "type": "native",
-      "description": "Bun.Shell",
       "url": "https://bun.com/docs/runtime/shell"
     },
     "Bun.file": {
       "id": "Bun.file",
       "type": "native",
-      "description": "Bun.file",
       "url": "https://bun.com/reference/bun/file"
     },
     "Bun.stringWidth": {
       "id": "Bun.stringWidth",
       "type": "native",
-      "description": "Bun.stringWidth",
       "url": "https://bun.com/reference/bun/stringWidth"
     },
     "Bun.stripANSI": {
       "id": "Bun.stripANSI",
       "type": "native",
-      "description": "Bun.stripANSI",
       "url": "https://bun.com/reference/bun/stripANSI"
     },
     "Date": {
       "id": "Date",
       "type": "native",
-      "description": "Date",
       "webFeatureId": {
         "featureId": "date",
         "compatKey": "javascript.builtins.Date"
@@ -2686,13 +2685,11 @@
     "Deno.makeTempDir": {
       "id": "Deno.makeTempDir",
       "type": "native",
-      "description": "Deno.makeTempDir",
       "url": "https://docs.deno.com/api/deno/~/Deno.makeTempDir"
     },
     "Intl.Segmenter": {
       "id": "Intl.Segmenter",
       "type": "native",
-      "description": "Intl.Segmenter",
       "webFeatureId": {
         "featureId": "intl-segmenter",
         "compatKey": "javascript.builtins.Intl.Segmenter"
@@ -2705,7 +2702,6 @@
     "Promise": {
       "id": "Promise",
       "type": "native",
-      "description": "Promise",
       "webFeatureId": {
         "featureId": "promise",
         "compatKey": "javascript.builtins.Promise"
@@ -2724,7 +2720,6 @@
     "TextEncoder": {
       "id": "TextEncoder",
       "type": "native",
-      "description": "TextEncoder",
       "webFeatureId": {
         "featureId": "text-encoding",
         "compatKey": "api.TextEncoder"
@@ -2734,14 +2729,12 @@
     "URL": {
       "id": "URL",
       "type": "native",
-      "description": "URL",
       "webFeatureId": {"featureId": "url", "compatKey": "api.URL"},
       "url": {"type": "mdn", "id": "Web/API/URL"}
     },
     "URLSearchParams": {
       "id": "URLSearchParams",
       "type": "native",
-      "description": "URLSearchParams",
       "webFeatureId": {"featureId": "url", "compatKey": "api.URLSearchParams"},
       "url": {"type": "mdn", "id": "Web/API/URLSearchParams"}
     },
@@ -2760,7 +2753,6 @@
     "builtinModules": {
       "id": "builtinModules",
       "type": "native",
-      "description": "builtinModules",
       "nodeFeatureId": {
         "moduleName": "node:module",
         "exportName": "builtinModules"
@@ -2782,7 +2774,6 @@
     "crypto": {
       "id": "crypto",
       "type": "native",
-      "description": "crypto",
       "webFeatureId": {
         "featureId": "web-cryptography",
         "compatKey": "api.crypto"
@@ -2849,6 +2840,12 @@
       "url": {"type": "e18e", "id": "eslint-plugin-node"},
       "replacementModule": "eslint-plugin-n"
     },
+    "exsolve": {
+      "id": "exsolve",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "resolve"},
+      "replacementModule": "exsolve"
+    },
     "fast-deep-equal": {
       "id": "fast-deep-equal",
       "type": "documented",
@@ -2882,7 +2879,6 @@
     "fetch": {
       "id": "fetch",
       "type": "native",
-      "description": "fetch API",
       "webFeatureId": {"featureId": "fetch", "compatKey": "api.fetch"},
       "url": {"type": "mdn", "id": "Web/API/Fetch_API"}
     },
@@ -2896,7 +2892,6 @@
     "fs.access": {
       "id": "fs.access",
       "type": "native",
-      "description": "fs.access",
       "nodeFeatureId": {
         "moduleName": "node:fs/promises",
         "exportName": "access"
@@ -2906,28 +2901,24 @@
     "fs.existsSync": {
       "id": "fs.existsSync",
       "type": "native",
-      "description": "fs.existsSync",
       "nodeFeatureId": {"moduleName": "node:fs", "exportName": "existsSync"},
       "url": {"type": "node", "id": "api/fs.html#fsexistssyncpath"}
     },
     "fs.glob": {
       "id": "fs.glob",
       "type": "native",
-      "description": "fs.glob",
       "nodeFeatureId": {"moduleName": "node:fs", "exportName": "glob"},
       "url": {"type": "node", "id": "api/fs.html#fspromisesglobpattern-options"}
     },
     "fs.mkdir": {
       "id": "fs.mkdir",
       "type": "native",
-      "description": "fs.mkdir",
       "nodeFeatureId": {"moduleName": "node:fs", "exportName": "mkdir"},
       "url": {"type": "node", "id": "api/fs.html#fspromisesmkdirpath-options"}
     },
     "fs.mkdtemp": {
       "id": "fs.mkdtemp",
       "type": "native",
-      "description": "fs.mkdtemp",
       "nodeFeatureId": {
         "moduleName": "node:fs/promises",
         "exportName": "mkdtemp"
@@ -2940,14 +2931,12 @@
     "fs.rm": {
       "id": "fs.rm",
       "type": "native",
-      "description": "fs.rm",
       "nodeFeatureId": {"moduleName": "node:fs/promises", "exportName": "rm"},
       "url": {"type": "node", "id": "api/fs.html#fspromisesrmpath-options"}
     },
     "fs.rmdir": {
       "id": "fs.rmdir",
       "type": "native",
-      "description": "fs.rmdir",
       "nodeFeatureId": {
         "moduleName": "node:fs/promises",
         "exportName": "rmdir"
@@ -2960,10 +2949,17 @@
       "url": {"type": "e18e", "id": "node-telegram-bot-api"},
       "replacementModule": "grammy"
     },
+    "import.meta.resolve": {
+      "id": "import.meta.resolve",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Operators/import.meta/resolve"
+      }
+    },
     "isBuiltin": {
       "id": "isBuiltin",
       "type": "native",
-      "description": "isBuiltin",
       "nodeFeatureId": {"moduleName": "node:module", "exportName": "isBuiltin"},
       "url": {"type": "node", "id": "api/module.html#moduleisbuiltinmodulename"}
     },
@@ -3060,7 +3056,6 @@
     "node:crypto": {
       "id": "node:crypto",
       "type": "native",
-      "description": "node:crypto",
       "nodeFeatureId": {"moduleName": "node:crypto"},
       "url": {"type": "node", "id": "api/crypto.html"}
     },
@@ -3073,7 +3068,6 @@
     "node:stream": {
       "id": "node:stream",
       "type": "native",
-      "description": "node:stream",
       "nodeFeatureId": {"moduleName": "node:stream"},
       "url": {"type": "node", "id": "api/stream.html"}
     },
@@ -3106,6 +3100,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "object-hash"},
       "replacementModule": "ohash"
+    },
+    "oxc-resolver": {
+      "id": "oxc-resolver",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "resolve"},
+      "replacementModule": "oxc-resolver"
     },
     "package-manager-detector": {
       "id": "package-manager-detector",
@@ -3183,7 +3183,6 @@
     "streams": {
       "id": "streams",
       "type": "native",
-      "description": "streams",
       "webFeatureId": {
         "featureId": "streams",
         "compatKey": "api.ReadableStream"
@@ -3217,7 +3216,6 @@
     "unicodeClassEscape": {
       "id": "unicodeClassEscape",
       "type": "native",
-      "description": "unicodeClassEscape",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape"
@@ -3232,7 +3230,6 @@
     "util.stripVTControlCharacters": {
       "id": "util.stripVTControlCharacters",
       "type": "native",
-      "description": "util.stripVTControlCharacters",
       "nodeFeatureId": {
         "moduleName": "node:util",
         "exportName": "stripVTControlCharacters"
@@ -3245,7 +3242,6 @@
     "util.styleText": {
       "id": "util.styleText",
       "type": "native",
-      "description": "util.styleText",
       "nodeFeatureId": {"moduleName": "node:util", "exportName": "styleText"},
       "url": {
         "type": "node",
@@ -3255,7 +3251,6 @@
     "util.types": {
       "id": "util.types",
       "type": "native",
-      "description": "util.types",
       "nodeFeatureId": {"moduleName": "node:util", "exportName": "types"},
       "url": {"type": "node", "id": "api/util.html#utiltypes"}
     },
@@ -3280,7 +3275,6 @@
     "zlib.gzipSync": {
       "id": "zlib.gzipSync",
       "type": "native",
-      "description": "zlib.gzipSync",
       "nodeFeatureId": {"moduleName": "node:zlib", "exportName": "gzipSync"},
       "url": {"type": "node", "id": "api/zlib.html#zlibgzipsyncbuffer-options"}
     }
