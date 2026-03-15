@@ -198,6 +198,12 @@
       "replacements": ["@vitest/eslint-plugin"],
       "url": {"type": "e18e", "id": "eslint-plugin-vitest"}
     },
+    "event-stream": {
+      "type": "module",
+      "moduleName": "event-stream",
+      "replacements": ["node:stream"],
+      "url": {"type": "e18e", "id": "event-stream"}
+    },
     "execa": {
       "type": "module",
       "moduleName": "execa",
