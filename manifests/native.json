@@ -1864,6 +1864,11 @@
       "moduleName": "define-properties",
       "replacements": ["Object.defineProperties"]
     },
+    "define-property": {
+      "type": "module",
+      "moduleName": "define-property",
+      "replacements": ["Object.defineProperty"]
+    },
     "error-cause": {
       "type": "module",
       "moduleName": "error-cause",
