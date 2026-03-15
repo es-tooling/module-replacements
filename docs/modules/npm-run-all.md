@@ -69,10 +69,10 @@ If you are using bun you can use [`bun run --parallel`](https://bun.com/docs/run
 
 ```json
 {
-  "scripts": {
-    "dev": "npm-run-all --parallel \"dev:*\"", // [!code --]
-    "dev": "bun run --parallel dev:*" // [!code ++]
-  }
+  "scripts": {
+    "dev": "npm-run-all --parallel \"dev:*\"", // [!code --]
+    "dev": "bun run --parallel dev:*" // [!code ++]
+  }
 }
 ```
 
@@ -80,9 +80,9 @@ If you are using bun you can use [`bun run --parallel`](https://bun.com/docs/run
 
 ```json
 {
-  "scripts": {
-    "build": "run-s clean lint compile", // [!code --]
-    "build": "bun run --sequential clean lint compile" // [!code ++]
-  }
+  "scripts": {
+    "build": "run-s clean lint compile", // [!code --]
+    "build": "bun run --sequential clean lint compile" // [!code ++]
+  }
 }
 ```
