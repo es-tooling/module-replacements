@@ -2548,6 +2548,12 @@
       "replacements": ["TextEncoder", "Buffer.prototype.toString"],
       "url": {"type": "e18e", "id": "utf8"}
     },
+    "uuidv4": {
+      "type": "module",
+      "moduleName": "uuidv4",
+      "replacements": ["node:crypto", "crypto"],
+      "url": {"type": "e18e", "id": "uuidv4"}
+    },
     "whatwg-fetch": {
       "type": "module",
       "moduleName": "whatwg-fetch",
