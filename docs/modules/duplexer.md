@@ -1,20 +1,20 @@
-[`Duplex.from`](https://nodejs.org/api/stream.html#streamduplexfromsrc) can be used instead
+---
+description: Modern alternatives to the duplexer package
+---
 
-Before:
+# Replacements for `duplexer`
 
+## `stream.Duplex.from` (native, Node.js)
+
+<!-- prettier-ignore -->
 ```js
-import duplexer from 'duplexer'
+import duplexer from 'duplexer' // [!code --]
+import { Duplex } from 'node:stream' // [!code ++]
 
-duplexer(writableStream, readableStream)
-```
+duplexer(writableStream, readableStream) // [!code --]
 
-After:
-
-```js
-import { Duplex } from 'node:stream'
-
-Duplex.from({
-  writable: writableStream,
-  readable: readableStream
-})
+Duplex.from({ // [!code ++]
+  writable: writableStream, // [!code ++]
+  readable: readableStream // [!code ++]
+}) // [!code ++]
 ```
