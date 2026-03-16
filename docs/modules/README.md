@@ -83,9 +83,9 @@ ESLint plugin.
 - [`readable-stream`](./readable-stream.md)
 - [`rimraf`](./rimraf.md)
 - [`shortid`](./shortid.md)
-- [`sort-object`](./sort-object.md))
+- [`sort-object`](./sort-object.md)
 - [`split`](./split.md)
-- [`stream-buffers`](./stream-buffers.md
+- [`stream-buffers`](./stream-buffers.md)
 - [`string-width`](./string-width.md)
 - [`strip-ansi`](./strip-ansi.md)
 - [`tempy`](./tempy.md)
