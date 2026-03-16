@@ -123,13 +123,13 @@
     "deep-equal": {
       "type": "module",
       "moduleName": "deep-equal",
-      "replacements": ["dequal", "fast-deep-equal"],
+      "replacements": ["dequal", "util.isDeepStrictEqual"],
       "url": {"type": "e18e", "id": "deep-equal"}
     },
     "deep-equal-json": {
       "type": "module",
       "moduleName": "deep-equal-json",
-      "replacements": ["dequal", "fast-deep-equal"],
+      "replacements": ["dequal", "util.isDeepStrictEqual"],
       "url": {"type": "e18e", "id": "deep-equal"}
     },
     "depcheck": {
@@ -2882,12 +2882,6 @@
       "url": {"type": "e18e", "id": "resolve"},
       "replacementModule": "exsolve"
     },
-    "fast-deep-equal": {
-      "id": "fast-deep-equal",
-      "type": "documented",
-      "url": {"type": "e18e", "id": "deep-equal"},
-      "replacementModule": "fast-deep-equal"
-    },
     "fast-querystring": {
       "id": "fast-querystring",
       "type": "documented",
@@ -3296,6 +3290,18 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "uri-js"},
       "replacementModule": "uri-js-replace"
+    },
+    "util.isDeepStrictEqual": {
+      "id": "util.isDeepStrictEqual",
+      "type": "native",
+      "nodeFeatureId": {
+        "moduleName": "node:util",
+        "exportName": "isDeepStrictEqual"
+      },
+      "url": {
+        "type": "node",
+        "id": "api/util.html#utilisdeepstrictequalval1-val2-options"
+      }
     },
     "util.stripVTControlCharacters": {
       "id": "util.stripVTControlCharacters",
