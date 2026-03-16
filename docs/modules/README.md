@@ -98,4 +98,5 @@ ESLint plugin.
 - [`uri-js`](./uri-js.md)
 - [`utf8`](./utf8.md)
 - [`uuidv4`](./uuidv4.md)
+- [`welknown`](./welknown.md)
 - [`xmldom`](./xmldom.md)
