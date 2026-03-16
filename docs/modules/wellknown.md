@@ -1,5 +1,5 @@
 ---
-description: Modern replacements for the unmaintained wellknown package, a WKT parser and stringifier
+description: Modern replacements for the wellknown package, a WKT parser and stringifier
 ---
 
 # Replacements for `wellknown`
