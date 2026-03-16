@@ -2437,7 +2437,7 @@
     "react-helmet": {
       "type": "module",
       "moduleName": "react-helmet",
-      "replacements": ["react-helmet-async"],
+      "replacements": ["react:metadata", "react-helmet-async"],
       "url": {"type": "e18e", "id": "react-helmet"}
     },
     "read-package-up": {
@@ -3190,6 +3190,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "react-helmet"},
       "replacementModule": "react-helmet-async"
+    },
+    "react:metadata": {
+      "id": "react:metadata",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "react-helmet"},
+      "replacementModule": "react"
     },
     "readline.createInterface": {
       "id": "readline.createInterface",
