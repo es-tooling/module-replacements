@@ -1339,6 +1339,11 @@
         "compatKey": "javascript.builtins.WeakMap"
       }
     },
+    "airbnb-js-shims": {
+      "id": "airbnb-js-shims",
+      "type": "removal",
+      "description": "Every modern environment has support for all of the apis included in this library."
+    },
     "atob": {
       "id": "atob",
       "type": "native",
@@ -1596,6 +1601,11 @@
       "type": "module",
       "moduleName": "aggregate-error",
       "replacements": ["AggregateError"]
+    },
+    "airbnb-js-shims": {
+      "type": "module",
+      "moduleName": "airbnb-js-shims",
+      "replacements": ["airbnb-js-shims"]
     },
     "arr-filter": {
       "type": "module",
