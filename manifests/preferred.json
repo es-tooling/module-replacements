@@ -2988,6 +2988,10 @@
     "import.meta.resolve": {
       "id": "import.meta.resolve",
       "type": "native",
+      "webFeatureId": {
+        "featureId": "js-modules",
+        "compatKey": "javascript.operators.import_meta.resolve"
+      },
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Operators/import.meta/resolve"
