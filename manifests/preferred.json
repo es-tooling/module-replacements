@@ -2584,6 +2584,12 @@
       "replacements": ["node:crypto", "crypto"],
       "url": {"type": "e18e", "id": "uuidv4"}
     },
+    "wellknown": {
+      "type": "module",
+      "moduleName": "wellknown",
+      "replacements": ["betterknown"],
+      "url": {"type": "e18e", "id": "wellknown"}
+    },
     "whatwg-fetch": {
       "type": "module",
       "moduleName": "whatwg-fetch",
@@ -2779,6 +2785,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "chalk"},
       "replacementModule": "ansis"
+    },
+    "betterknown": {
+      "id": "betterknown",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "wellknown"},
+      "replacementModule": "betterknown"
     },
     "builtinModules": {
       "id": "builtinModules",
