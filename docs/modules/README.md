@@ -23,6 +23,7 @@ ESLint plugin.
 - [`builtin-modules`](./builtin-modules.md)
 - [`chalk`](./chalk.md)
 - [`clean-webpack-plugin`](./clean-webpack-plugin.md)
+- [`collection-map`](./collection-map.md)
 - [`core-util-is`](./core-util-is.md)
 - [`cosmiconfig`](./cosmiconfig.md)
 - [`cpx`](./cpx.md)

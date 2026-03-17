@@ -1818,6 +1818,12 @@
       "moduleName": "buffer-from",
       "replacements": ["Buffer.from"]
     },
+    "collection-map": {
+      "type": "module",
+      "moduleName": "collection-map",
+      "replacements": ["Array.prototype.map", "Object.keys", "Object.values"],
+      "url": {"type": "e18e", "id": "collection-map"}
+    },
     "concat-map": {
       "type": "module",
       "moduleName": "concat-map",
