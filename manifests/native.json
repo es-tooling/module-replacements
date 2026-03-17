@@ -1395,12 +1395,6 @@
       "type": "removal",
       "description": "Every modern environment has support for ES7/ES2016 apis."
     },
-    "extends": {
-      "id": "extends",
-      "type": "removal",
-      "description": "You can use ES6 classes `extends` syntax for prototype inheritance.",
-      "url": {"type": "mdn", "id": "Web/JavaScript/Reference/Classes/extends"}
-    },
     "for...in": {
       "id": "for...in",
       "type": "native",
@@ -2058,11 +2052,6 @@
       "type": "module",
       "moduleName": "index-of",
       "replacements": ["Array.prototype.indexOf"]
-    },
-    "inherits": {
-      "type": "module",
-      "moduleName": "inherits",
-      "replacements": ["extends"]
     },
     "is-buffer": {
       "type": "module",
