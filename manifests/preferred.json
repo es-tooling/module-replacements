@@ -3325,11 +3325,11 @@
       "url": {"type": "e18e", "id": "invariant"},
       "replacementModule": "tiny-invariant"
     },
-    "tinyclipboard": {
-      "id": "tinyclipboard",
+    "tinyclip": {
+      "id": "tinyclip",
       "type": "documented",
       "url": {"type": "e18e", "id": "clipboardy"},
-      "replacementModule": "tinyclipboard"
+      "replacementModule": "tinyclip"
     },
     "tinyexec": {
       "id": "tinyexec",
