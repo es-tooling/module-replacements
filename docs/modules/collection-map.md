@@ -6,17 +6,24 @@ description: Native alternatives to the collection-map package
 
 ## Objects
 
+<!-- prettier-ignore -->
 ```js
 const map = require('collection-map') // [!code --]
 const data = { a: 'foo', b: 'bar', c: 'baz' }
 
 // Mapping values
 const res = map(data, (item) => item) // [!code --]
-const res = Object.values(data) // [!code ++]
+const res = Object.values(data).map((item) => item) // [!code ++]
 
 // Mapping keys
 const res = map(data, (item, key) => key) // [!code --]
-const res = Object.keys(data) // [!code ++]
+const res = Object.keys(data).map((key) => key) // [!code ++]
+
+// Mapping keys and values
+const res = map(data, (item, key) => fn(item, key)) // [!code --]
+const res = Object.fromEntries( // [!code ++]
+  Object.entries(data).map(([key, value]) => fn(value, key)) // [!code ++]
+) // [!code ++]
 ```
 
 ## Arrays
@@ -32,6 +39,10 @@ const res = data.map((item) => item) // [!code ++]
 // Mapping indices
 const res = map(data, (item, index) => index) // [!code --]
 const res = data.map((_, index) => index) // [!code ++]
+
+// Mapping items indices
+const res = map(data, (item, index) => fn(item, index)) // [!code --]
+const res = data.map((item, index) => fn(item, index)) // [!code ++]
 ```
 
 ## Property Strings
