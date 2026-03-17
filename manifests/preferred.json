@@ -78,11 +78,53 @@
       "replacements": ["util.styleText", "picocolors", "ansis"],
       "url": {"type": "e18e", "id": "chalk"}
     },
+    "ClipboardAPI": {
+      "id": "ClipboardAPI",
+      "type": "mdn",
+      "webFeatureId": {
+        "featureId": "clipboard",
+        "compatKey": "api.ClipboardAPI"
+      },
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/Clipboard_API"
+      }
+    },
+    "clipboard": {
+      "type": "module",
+      "moduleName": "clipboard",
+      "replacements": ["ClipboardAPI"],
+      "url": {"type": "e18e", "id": "copy-to-clipboard"}
+    },
+    "clipboard-copy": {
+      "type": "module",
+      "moduleName": "clipboard-copy",
+      "replacements": ["ClipboardAPI"],
+      "url": {"type": "e18e", "id": "copy-to-clipboard"}
+    },
+    "clipboardy": {
+      "type": "module",
+      "moduleName": "clipboardy",
+      "replacements": ["tinyexec", "ClipboardAPI"],
+      "url": {"type": "e18e", "id": "clipboardy"}
+    },
     "colors": {
       "type": "module",
       "moduleName": "colors",
       "replacements": ["util.styleText", "picocolors", "ansis"],
       "url": {"type": "e18e", "id": "chalk"}
+    },
+    "copy-text-to-clipboard": {
+      "type": "module",
+      "moduleName": "copy-text-to-clipboard",
+      "replacements": ["ClipboardAPI"],
+      "url": {"type": "e18e", "id": "copy-to-clipboard"}
+    },
+    "copy-to-clipboard": {
+      "type": "module",
+      "moduleName": "copy-to-clipboard",
+      "replacements": ["ClipboardAPI"],
+      "url": {"type": "e18e", "id": "copy-to-clipboard"}
     },
     "core-util-is": {
       "type": "module",
@@ -3282,6 +3324,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "invariant"},
       "replacementModule": "tiny-invariant"
+    },
+    "tinyclipboard": {
+      "id": "tinyclipboard",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "clipboardy"},
+      "replacementModule": "tinyclipboard"
     },
     "tinyexec": {
       "id": "tinyexec",
