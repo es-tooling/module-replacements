@@ -1575,6 +1575,15 @@
       "description": "All modern versions of Node have `Buffer.from` for safely creating buffers from arbitrary types.",
       "url": {"type": "node", "id": "api/buffer.html"}
     },
+    "util.promisify": {
+      "id": "util.promisify",
+      "type": "native",
+      "url": {
+        "type": "node",
+        "id": "api/util.html#utilpromisifyoriginal"
+      },
+      "nodeFeatureId": {"moduleName": "util", "exportName": "promisify"}
+    },
     "zlib.crc32": {
       "id": "zlib.crc32",
       "type": "native",
@@ -2472,6 +2481,11 @@
       "type": "module",
       "moduleName": "typedarray.prototype.slice",
       "replacements": ["%TypedArray%.prototype.slice"]
+    },
+    "util.promisify": {
+      "type": "module",
+      "moduleName": "util.promisify",
+      "replacements": ["util.promisify"]
     },
     "weak-map": {
       "type": "module",
