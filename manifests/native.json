@@ -1342,7 +1342,7 @@
     "airbnb-js-shims": {
       "id": "airbnb-js-shims",
       "type": "removal",
-      "description": "Every modern environment has support for all of the apis included in this library."
+      "description": "Every modern environment has native support for all of the APIs included in this library."
     },
     "atob": {
       "id": "atob",
