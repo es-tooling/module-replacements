@@ -105,7 +105,7 @@
     "clipboardy": {
       "type": "module",
       "moduleName": "clipboardy",
-      "replacements": ["tinyexec", "ClipboardAPI"],
+      "replacements": ["tinyclip", "ClipboardAPI"],
       "url": {"type": "e18e", "id": "clipboardy"}
     },
     "colors": {
