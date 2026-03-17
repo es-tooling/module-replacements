@@ -156,6 +156,12 @@
       "replacements": ["--env-file"],
       "url": {"type": "e18e", "id": "dotenv"}
     },
+    "duplexer": {
+      "type": "module",
+      "moduleName": "duplexer",
+      "replacements": ["node:stream"],
+      "url": {"type": "e18e", "id": "duplexer"}
+    },
     "emoji-regex": {
       "type": "module",
       "moduleName": "emoji-regex",

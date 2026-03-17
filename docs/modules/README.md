@@ -34,6 +34,7 @@ ESLint plugin.
 - [`detect-package-manager`](./detect-package-manager.md)
 - [`dot-prop`](./dot-prop.md)
 - [`dotenv`](./dotenv.md)
+- [`duplexer`](./duplexer.md)
 - [`emoji-regex`](./emoji-regex.md)
 - [`eslint-plugin-es`](./eslint-plugin-es.md)
 - [`eslint-plugin-eslint-comments`](./eslint-plugin-eslint-comments.md)
