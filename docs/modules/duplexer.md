@@ -4,7 +4,7 @@ description: Modern alternatives to the duplexer package
 
 # Replacements for `duplexer`
 
-## `stream.Duplex.from` (native, Node.js)
+## `Duplex.from` (native, Node.js)
 
 <!-- prettier-ignore -->
 ```js
