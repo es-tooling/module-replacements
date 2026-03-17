@@ -2540,7 +2540,7 @@
       "type": "module",
       "moduleName": "temp",
       "replacements": ["fs.mkdtemp", "Deno.makeTempDir"],
-      "url": {"type": "e18e", "id": "temp"}
+      "url": {"type": "e18e", "id": "tempy"}
     },
     "tempy": {
       "type": "module",
