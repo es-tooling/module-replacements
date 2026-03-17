@@ -2536,6 +2536,12 @@
       "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
+    "temp": {
+      "type": "module",
+      "moduleName": "temp",
+      "replacements": ["fs.mkdtemp", "Deno.makeTempDir"],
+      "url": {"type": "e18e", "id": "temp"}
+    },
     "tempy": {
       "type": "module",
       "moduleName": "tempy",

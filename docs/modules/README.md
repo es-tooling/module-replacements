@@ -91,6 +91,7 @@ ESLint plugin.
 - [`stream-buffers`](./stream-buffers.md)
 - [`string-width`](./string-width.md)
 - [`strip-ansi`](./strip-ansi.md)
+- [`temp`](./temp.md)
 - [`tempy`](./tempy.md)
 - [`through`](./through.md)
 - [`toml`](./toml.md)
