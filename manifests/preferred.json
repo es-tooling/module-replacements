@@ -324,6 +324,12 @@
       "replacements": ["zlib.gzipSync"],
       "url": {"type": "e18e", "id": "gzip-size"}
     },
+    "inherits": {
+      "type": "module",
+      "moduleName": "inherits",
+      "replacements": ["extends", "util.inherits"],
+      "url": {"type": "e18e", "id": "inherits"}
+    },
     "invariant": {
       "type": "module",
       "moduleName": "invariant",
@@ -2894,6 +2900,12 @@
       "url": {"type": "e18e", "id": "resolve"},
       "replacementModule": "exsolve"
     },
+    "extends": {
+      "id": "extends",
+      "type": "native",
+      "description": "You can use ES6 classes `extends` syntax for prototype inheritance.",
+      "url": {"type": "mdn", "id": "Web/JavaScript/Reference/Classes/extends"}
+    },
     "fast-querystring": {
       "id": "fast-querystring",
       "type": "documented",
@@ -3302,6 +3314,15 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "uri-js"},
       "replacementModule": "uri-js-replace"
+    },
+    "util.inherits": {
+      "id": "util.inherits",
+      "type": "native",
+      "nodeFeatureId": {"moduleName": "node:util", "exportName": "inherits"},
+      "url": {
+        "type": "node",
+        "id": "api/util.html#utilinheritsconstructor-superconstructor"
+      }
     },
     "util.isDeepStrictEqual": {
       "id": "util.isDeepStrictEqual",

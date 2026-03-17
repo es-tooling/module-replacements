@@ -1531,12 +1531,6 @@
         "id": "Web/JavaScript/Reference/Global_Objects/TypedArray"
       }
     },
-    "inherits": {
-      "id": "inherits",
-      "type": "removal",
-      "description": "You can just use the `class` syntax.",
-      "url": {"type": "mdn", "id": "Web/JavaScript/Reference/Classes/extends"}
-    },
     "parseInt": {
       "id": "parseInt",
       "type": "native",
@@ -2058,11 +2052,6 @@
       "type": "module",
       "moduleName": "index-of",
       "replacements": ["Array.prototype.indexOf"]
-    },
-    "inherits": {
-      "type": "module",
-      "moduleName": "inherits",
-      "replacements": ["inherits"]
     },
     "is-buffer": {
       "type": "module",
