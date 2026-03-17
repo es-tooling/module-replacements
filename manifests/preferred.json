@@ -327,7 +327,8 @@
     "inherits": {
       "type": "module",
       "moduleName": "inherits",
-      "replacements": ["extends", "util.inherits"]
+      "replacements": ["extends", "util.inherits"],
+      "url": {"type": "e18e", "id": "inherits"}
     },
     "invariant": {
       "type": "module",
