@@ -7,14 +7,14 @@ assignees:
   - octocat
 type: replacement
 body:
-  - type: markdown
-    id: description
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this replacement request!
   - type: textarea
     id: replacement
     attributes:
       label: Package to replace?
     validations:
       required: true
+  - type: markdown
+    id: description
+    attributes:
+      value: |
+        Why do you want to replace X with Y
