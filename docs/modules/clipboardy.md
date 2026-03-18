@@ -4,7 +4,7 @@ description: Modern alternatives to the clipboardy package for copy/pasting on N
 
 # Replacements for `clipboardy`
 
-## `tinyclip` (native, Node.js)
+## [`tinyclip`](https://github.com/tinylibs/tinyclip) (native, Node.js)
 
 ```js
 import clipboard from 'clipboardy' // [!code --]
