@@ -2750,7 +2750,7 @@
     },
     "ClipboardAPI": {
       "id": "ClipboardAPI",
-      "type": "mdn",
+      "type": "native",
       "webFeatureId": {
         "featureId": "async-clipboard",
         "compatKey": "api.Clipboard"
