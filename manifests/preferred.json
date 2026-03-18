@@ -82,13 +82,13 @@
       "type": "module",
       "moduleName": "clipboard",
       "replacements": ["ClipboardAPI"],
-      "url": {"type": "e18e", "id": "copy-to-clipboard"}
+      "url": {"type": "e18e", "id": "clipboardy"}
     },
     "clipboard-copy": {
       "type": "module",
       "moduleName": "clipboard-copy",
       "replacements": ["ClipboardAPI"],
-      "url": {"type": "e18e", "id": "copy-to-clipboard"}
+      "url": {"type": "e18e", "id": "clipboardy"}
     },
     "clipboardy": {
       "type": "module",
@@ -106,13 +106,13 @@
       "type": "module",
       "moduleName": "copy-text-to-clipboard",
       "replacements": ["ClipboardAPI"],
-      "url": {"type": "e18e", "id": "copy-to-clipboard"}
+      "url": {"type": "e18e", "id": "clipboardy"}
     },
     "copy-to-clipboard": {
       "type": "module",
       "moduleName": "copy-to-clipboard",
       "replacements": ["ClipboardAPI"],
-      "url": {"type": "e18e", "id": "copy-to-clipboard"}
+      "url": {"type": "e18e", "id": "clipboardy"}
     },
     "core-util-is": {
       "type": "module",
