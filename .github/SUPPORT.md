@@ -1,3 +1,3 @@
 # Support
 
-reach out on the [e18e discord](https://discord.gg/tEmeqmNT)
+Reach out on the [e18e discord](https://chat.e18e.dev)
