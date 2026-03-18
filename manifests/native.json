@@ -504,6 +504,18 @@
         "compatKey": "javascript.builtins.ArrayBuffer.slice"
       }
     },
+    "AsyncIterator.prototype": {
+      "id": "AsyncIterator.prototype",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/JavaScript/Reference/Global_Objects/AsyncIterator"
+      },
+      "webFeatureId": {
+        "featureId": "async-iterators",
+        "compatKey": "javascript.builtins.AsyncIterator"
+      }
+    },
     "BigInt": {
       "id": "BigInt",
       "type": "native",
@@ -1804,6 +1816,11 @@
       "type": "module",
       "moduleName": "arraybuffer.prototype.slice",
       "replacements": ["ArrayBuffer.prototype.slice"]
+    },
+    "asynciterator.prototype": {
+      "type": "module",
+      "moduleName": "asynciterator.prototype",
+      "replacements": ["AsyncIterator.prototype"]
     },
     "atob": {
       "type": "module",
