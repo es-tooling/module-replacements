@@ -3,8 +3,9 @@ description: Recommend a replacement
 title: '[Replacement]: '
 labels: ['replacement', 'triage']
 assignees:
-  - octocat
-  - octocat
+  - 43081j
+  - gameroman
+  - joaopedrodcf
 type: replacement
 body:
   - type: textarea
