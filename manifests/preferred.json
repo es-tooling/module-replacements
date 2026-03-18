@@ -82,8 +82,8 @@
       "id": "ClipboardAPI",
       "type": "mdn",
       "webFeatureId": {
-        "featureId": "clipboard",
-        "compatKey": "api.ClipboardAPI"
+        "featureId": "async-clipboard",
+        "compatKey": "api.Clipboard"
       },
       "url": {
         "type": "mdn",
