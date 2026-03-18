@@ -23,7 +23,7 @@ isDeepStrictEqual(a, b) // true [!code ++]
 
 ## `dequal`
 
-[`dequal`](https://www.npmjs.com/package/dequal) has the same simple API as `deep-equal`.
+[`dequal`](https://github.com/lukeed/dequal) has the same simple API as `deep-equal`.
 
 Example:
 

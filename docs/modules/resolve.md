@@ -16,7 +16,7 @@ const path = import.meta.resolve('my-module')
 
 ## `exsolve`
 
-[`exsolve`](https://www.npmjs.com/package/exsolve)
+[`exsolve`](https://github.com/unjs/exsolve)
 
 ```ts
 import { resolveModulePath } from 'exsolve'
@@ -26,7 +26,7 @@ const path = resolveModulePath('my-module')
 
 ## `oxc-resolver`
 
-[`oxc-resolver`](https://www.npmjs.com/package/oxc-resolver)
+[`oxc-resolver`](https://github.com/oxc-project/oxc-resolver)
 
 ```ts
 import { ResolverFactory } from 'oxc-resolver'
