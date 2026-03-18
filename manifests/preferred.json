@@ -78,18 +78,6 @@
       "replacements": ["util.styleText", "picocolors", "ansis"],
       "url": {"type": "e18e", "id": "chalk"}
     },
-    "ClipboardAPI": {
-      "id": "ClipboardAPI",
-      "type": "mdn",
-      "webFeatureId": {
-        "featureId": "async-clipboard",
-        "compatKey": "api.Clipboard"
-      },
-      "url": {
-        "type": "mdn",
-        "id": "Web/API/Clipboard_API"
-      }
-    },
     "clipboard": {
       "type": "module",
       "moduleName": "clipboard",
@@ -2759,6 +2747,18 @@
       "id": "Bun.stripANSI",
       "type": "native",
       "url": "https://bun.com/reference/bun/stripANSI"
+    },
+    "ClipboardAPI": {
+      "id": "ClipboardAPI",
+      "type": "mdn",
+      "webFeatureId": {
+        "featureId": "async-clipboard",
+        "compatKey": "api.Clipboard"
+      },
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/Clipboard_API"
+      }
     },
     "Date": {
       "id": "Date",
