@@ -11,16 +11,6 @@ Node.js has the [`fs.mkdtemp`](https://nodejs.org/api/fs.html#fsmkdtempprefix-op
 Example:
 
 ```ts
-import { temporaryDirectory } from 'tempy' // [!code --]
-import { mkdtemp, realpath } from 'node:fs/promises' // [!code ++]
-import { join } from 'node:path' // [!code ++]
-import { tmpdir } from 'node:os' // [!code ++]
-
-const tempDirPath = temporaryDirectory() // [!code --]
-const tempDirPath = await mkdtemp(join(await realpath(tmpdir()), 'foo-')) // [!code ++]
-```
-
-```ts
 import temp from 'temp' // [!code --]
 import { mkdtemp, realpath } from 'node:fs/promises' // [!code ++]
 import { join } from 'node:path' // [!code ++]
@@ -64,13 +54,6 @@ import { temporaryFile } from 'tempy' // [!code --]
 
 const tempFile = temporaryFile({ extension: 'txt' }) // [!code --]
 const tempFile = await Deno.makeTempFile({ suffix: '.txt' }) // [!code ++]
-```
-
-```ts
-import temp from 'temp' // [!code --]
-
-const tempFile = temp.openSync('foo').path // [!code --]
-const tempFile = await Deno.makeTempFile({ prefix: 'foo-' }) // [!code ++]
 ```
 
 > [!NOTE]
