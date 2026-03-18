@@ -1927,6 +1927,11 @@
       "moduleName": "es-string-html-methods",
       "replacements": ["es-string-html-methods"]
     },
+    "es6-promise": {
+      "type": "module",
+      "moduleName": "es6-promise",
+      "replacements": ["Promise"]
+    },
     "es7-shim": {
       "type": "module",
       "moduleName": "es7-shim",
@@ -2326,6 +2331,11 @@
       "type": "module",
       "moduleName": "promise.prototype.finally",
       "replacements": ["Promise.prototype.finally"]
+    },
+    "promish": {
+      "type": "module",
+      "moduleName": "promish",
+      "replacements": ["Promise"]
     },
     "queue-microtask": {
       "type": "module",
