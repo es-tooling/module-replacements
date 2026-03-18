@@ -4,7 +4,7 @@ description: Modern alternatives to the clipboardy package for copy/pasting on N
 
 # Replacements for `clipboardy`
 
-## `tinyclip` (Node.js)
+## `tinyclip` (native, Node.js)
 
 ```js
 import clipboard from 'clipboardy' // [!code --]
@@ -16,9 +16,10 @@ await clipboard.read() // [!code --]
 await clipboard.readText() // [!code ++]
 ```
 
-`writeSync()` and `readSync()` do not have any equivalent in `tinyclip`, we recommend you migrate to their async versions.
+> [!NOTE]
+> `writeSync()` and `readSync()` do not have any equivalent in `tinyclip`, we recommend you migrate to their async versions.
 
-## Clipboard API (browser)
+## Clipboard API (native, browser)
 
 Learn more about the [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API).
 
@@ -31,4 +32,5 @@ await clipboard.read() // [!code --]
 await navigator.clipboard.readText() // [!code ++]
 ```
 
-`writeSync()` and `readSync()` do not work in browsers.
+> [!NOTE]
+> `writeSync()` and `readSync()` do not have an equivalent in browsers.
