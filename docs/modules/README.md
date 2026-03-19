@@ -24,6 +24,7 @@ ESLint plugin.
 - [`chalk`](./chalk.md)
 - [`clean-webpack-plugin`](./clean-webpack-plugin.md)
 - [`clipboardy`](./clipboardy.md)
+- [`collection-map`](./collection-map.md)
 - [`core-util-is`](./core-util-is.md)
 - [`cosmiconfig`](./cosmiconfig.md)
 - [`cpx`](./cpx.md)
