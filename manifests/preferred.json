@@ -78,11 +78,41 @@
       "replacements": ["util.styleText", "picocolors", "ansis"],
       "url": {"type": "e18e", "id": "chalk"}
     },
+    "clipboard": {
+      "type": "module",
+      "moduleName": "clipboard",
+      "replacements": ["ClipboardAPI"],
+      "url": {"type": "e18e", "id": "clipboardy"}
+    },
+    "clipboard-copy": {
+      "type": "module",
+      "moduleName": "clipboard-copy",
+      "replacements": ["ClipboardAPI"],
+      "url": {"type": "e18e", "id": "clipboardy"}
+    },
+    "clipboardy": {
+      "type": "module",
+      "moduleName": "clipboardy",
+      "replacements": ["tinyclip", "ClipboardAPI"],
+      "url": {"type": "e18e", "id": "clipboardy"}
+    },
     "colors": {
       "type": "module",
       "moduleName": "colors",
       "replacements": ["util.styleText", "picocolors", "ansis"],
       "url": {"type": "e18e", "id": "chalk"}
+    },
+    "copy-text-to-clipboard": {
+      "type": "module",
+      "moduleName": "copy-text-to-clipboard",
+      "replacements": ["ClipboardAPI"],
+      "url": {"type": "e18e", "id": "clipboardy"}
+    },
+    "copy-to-clipboard": {
+      "type": "module",
+      "moduleName": "copy-to-clipboard",
+      "replacements": ["ClipboardAPI"],
+      "url": {"type": "e18e", "id": "clipboardy"}
     },
     "core-util-is": {
       "type": "module",
@@ -2724,6 +2754,18 @@
       "type": "native",
       "url": "https://bun.com/reference/bun/stripANSI"
     },
+    "ClipboardAPI": {
+      "id": "ClipboardAPI",
+      "type": "native",
+      "webFeatureId": {
+        "featureId": "async-clipboard",
+        "compatKey": "api.Clipboard"
+      },
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/Clipboard_API"
+      }
+    },
     "Date": {
       "id": "Date",
       "type": "native",
@@ -3288,6 +3330,12 @@
       "type": "documented",
       "url": {"type": "e18e", "id": "invariant"},
       "replacementModule": "tiny-invariant"
+    },
+    "tinyclip": {
+      "id": "tinyclip",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "clipboardy"},
+      "replacementModule": "tinyclip"
     },
     "tinyexec": {
       "id": "tinyexec",
