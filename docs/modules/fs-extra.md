@@ -50,9 +50,6 @@ fs.rmSync(path, { recursive: true, force: true }) // [!code ++]
 
 ```js
 await fsExtra.mkdirs(dir) // [!code --]
-await fsExtra.mkdirp(dir) // [!code --]
-await fsExtra.ensureDir(dir) // [!code --]
-
 await fsPromises.mkdir(dir, { recursive: true }) // [!code ++]
 ```
 
@@ -60,9 +57,6 @@ await fsPromises.mkdir(dir, { recursive: true }) // [!code ++]
 
 ```js
 fsExtra.mkdirsSync(dir) // [!code --]
-fsExtra.mkdirpSync(dir) // [!code --]
-fsExtra.ensureDirSync(dir) // [!code --]
-
 fs.mkdirSync(dir, { recursive: true }) // [!code ++]
 ```
 
@@ -119,7 +113,6 @@ await fsPromises.writeFile(file, JSON.stringify(obj, null, 2)) // [!code ++]
 
 ```js
 await fsExtra.ensureFile(file) // [!code --]
-await fsExtra.createFile(file) // [!code --]
 
 await fsPromises.mkdir(path.dirname(file), { recursive: true }) // [!code ++]
 await fsPromises.access(file).catch(() => fsPromises.writeFile(file, '')) // [!code ++]
@@ -129,7 +122,6 @@ await fsPromises.access(file).catch(() => fsPromises.writeFile(file, '')) // [!c
 
 ```js
 fsExtra.ensureFileSync(file) // [!code --]
-fsExtra.createFileSync(file) // [!code --]
 
 fs.mkdirSync(path.dirname(file), { recursive: true }) // [!code ++]
 fs.writeFileSync(file, '') // [!code ++]
@@ -139,7 +131,6 @@ fs.writeFileSync(file, '') // [!code ++]
 
 ```js
 await fsExtra.ensureLink(src, dest) // [!code --]
-await fsExtra.createLink(src, dest) // [!code --]
 
 await fsPromises.mkdir(path.dirname(dest), { recursive: true }) // [!code ++]
 await fsPromises.link(src, dest) // [!code ++]
@@ -149,8 +140,6 @@ await fsPromises.link(src, dest) // [!code ++]
 
 ```js
 fsExtra.ensureLinkSync(src, dest) // [!code --]
-fsExtra.createLinkSync(src, dest) // [!code --]
-
 fs.mkdirSync(path.dirname(dest), { recursive: true }) // [!code ++]
 fs.linkSync(src, dest) // [!code ++]
 ```
@@ -159,7 +148,6 @@ fs.linkSync(src, dest) // [!code ++]
 
 ```js
 await fsExtra.ensureSymlink(src, dest) // [!code --]
-await fsExtra.createSymlink(src, dest) // [!code --]
 
 await fsPromises.mkdir(path.dirname(dest), { recursive: true }) // [!code ++]
 await fsPromises.symlink(src, dest) // [!code ++]
@@ -169,7 +157,6 @@ await fsPromises.symlink(src, dest) // [!code ++]
 
 ```js
 fsExtra.ensureSymlinkSync(src, dest) // [!code --]
-fsExtra.createSymlinkSync(src, dest) // [!code --]
 
 fs.mkdirSync(path.dirname(dest), { recursive: true }) // [!code ++]
 fs.symlinkSync(src, dest) // [!code ++]
@@ -179,7 +166,6 @@ fs.symlinkSync(src, dest) // [!code ++]
 
 ```js
 await fsExtra.emptyDir(dir) // [!code --]
-await fsExtra.emptydir(dir) // [!code --]
 
 await fsPromises.rm(dir, { recursive: true, force: true }) // [!code ++]
 await fsPromises.mkdir(dir, { recursive: true }) // [!code ++]
