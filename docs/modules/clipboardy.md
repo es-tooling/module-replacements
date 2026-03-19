@@ -6,7 +6,7 @@ description: Modern alternatives to the clipboardy package for copy/pasting on N
 
 ## `tinyclip`
 
-If you need clipboard functionality in Node.js, use [`tinyclip`](https://github.com/tinylibs/tinyclip):
+[`tinyclip`](https://github.com/tinylibs/tinyclip) provides cross-platform clipboard functionality to Node.js.
 
 ```js
 import clipboard from 'clipboardy' // [!code --]
