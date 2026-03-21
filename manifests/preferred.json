@@ -20,7 +20,7 @@
     },
     "@supabase/node-fetch": {
       "type": "module",
-      "moduleName": "supabase/node-fetch",
+      "moduleName": "@supabase/node-fetch",
       "replacements": ["fetch", "ofetch", "ky"],
       "url": {"type": "e18e", "id": "fetch"}
     },
