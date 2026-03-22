@@ -1339,6 +1339,18 @@
         "compatKey": "javascript.builtins.Symbol.description"
       }
     },
+    "URL": {
+      "id": "URL",
+      "type": "native",
+      "url": {
+        "type": "mdn",
+        "id": "Web/API/URL"
+      },
+      "webFeatureId": {
+        "featureId": "url",
+        "compatKey": "api.URL"
+      }
+    },
     "WeakMap": {
       "id": "WeakMap",
       "type": "native",
@@ -2524,6 +2536,11 @@
       "type": "module",
       "moduleName": "weak-map",
       "replacements": ["WeakMap"]
+    },
+    "whatwg-url": {
+      "type": "module",
+      "moduleName": "whatwg-url",
+      "replacements": ["URL"]
     },
     "xtend": {
       "type": "module",
