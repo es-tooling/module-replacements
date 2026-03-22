@@ -3,6 +3,7 @@
     "target": "es2020",
     "module": "nodenext",
     "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
     "types": ["node"],
     "declaration": true,
     "isolatedModules": true,
