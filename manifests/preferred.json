@@ -18,6 +18,12 @@
       "replacements": ["node:stream"],
       "url": {"type": "e18e", "id": "through"}
     },
+    "@supabase/node-fetch": {
+      "type": "module",
+      "moduleName": "@supabase/node-fetch",
+      "replacements": ["fetch", "ofetch", "ky"],
+      "url": {"type": "e18e", "id": "fetch"}
+    },
     "axios": {
       "type": "module",
       "moduleName": "axios",
