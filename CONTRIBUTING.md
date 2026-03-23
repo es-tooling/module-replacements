@@ -64,12 +64,12 @@ When using the `native` type:
 - The mapping generally does not need a `url`
 - The replacement should have a `url` to its external documentation (e.g. MDN or Node docs)
 - The replacement should have a `webFeatureId` if it is a web standard (these come from the [`web-features` dataset](https://github.com/web-platform-dx/web-features/tree/main/features))
-- The replacement should have a `nodeFeatureId` if it is a Node built-in (these come from the Node documentation)
+- The replacement should have a `nodeFeatureId` if it is a Node built-in (these are of the form `{moduleName[, exportName]}`. For example, `fs` would be `{"moduleName": "fs"}`, while `fs.readFile` would be `{"moduleName": "fs", "exportName": "readFile"}`)
 
 When using the `simple` type:
 
 - The replacement should be of the form `snippet::{name}` where `name` is a suitable descriptive name for what the snippet does (e.g. `snippet:is-odd` for a snippet that checks if a number is odd)
-- The replacement description should be a short human-readable description of what the snippet does, and how it replaces the old module
+- The replacement description should be a short human-readable description of what the snippet does, and how it replaces the old module (e.g. "You can use arr.at(-1) to get the last element of an array")
 - The replacement should have an `example` which is purely code (i.e. it should be valid JS in its entirety) and should show the snippet
 
 When using the `removal` type:
@@ -98,13 +98,8 @@ Just like when adding a new module, we will evaluate the replacement based on si
 We currently validate the data through a set of lint scripts which you can run with `npm run lint`. This will check for things like:
 
 - All manifests conform to the JSON schema
-- Replacement keys match their `id` property
-- `webFeatureId` values reference valid features and compat keys from the `web-features` dataset
-- Mapping keys match their `moduleName` for module-type mappings
-- Mappings only reference replacements that exist
-- All documented modules (in `docs/modules/`) are listed in the modules README
-- All documented modules have a corresponding entry in a manifest
-- No module appears in multiple manifests
-- Mappings and replacements are sorted alphabetically
-- No replacement has `engines` set (these are populated automatically at publish time)
-- All e18e URLs in mappings and replacements point to documentation files that exist
+- Valid references (`webFeatureId`, `nodeFeatureId`, docs, etc.)
+- No duplicate mappings or replacements
+- Documentation is up to date
+
+These checks are not exhaustive, we will also validate other things and do some manual checks when reviewing PRs.
