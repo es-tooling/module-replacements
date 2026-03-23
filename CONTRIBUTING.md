@@ -63,8 +63,8 @@ When using the `native` type:
 
 - The mapping generally does not need a `url`
 - The replacement should have a `url` to its external documentation (e.g. MDN or Node docs)
-- If it's a web standard, then the replacement should have a `webFeatureId` (these come from the [`web-features` dataset](https://github.com/web-platform-dx/web-features/tree/main/features))
-- If it's a Node built-in, then the replacement should have a `nodeFeatureId` (these are of the form `{ moduleName: string, exportName?: string }`. For example, `fs` would be `{"moduleName": "fs"}`, while `fs.readFile` would be `{"moduleName": "fs", "exportName": "readFile"}`)
+- If it's a web standard, then the replacement should have a `webFeatureId` (these come from the [`web-features` dataset](https://github.com/web-platform-dx/web-features/tree/main/features)), and a `url` to MDN
+- If it's a Node built-in, then the replacement should have a `nodeFeatureId` (these are of the form `{ moduleName: string, exportName?: string }`. For example, `fs` would be `{"moduleName": "fs"}`, while `fs.readFile` would be `{"moduleName": "fs", "exportName": "readFile"}`), and a `url` to the Node docs
 
 When using the `simple` type:
 
