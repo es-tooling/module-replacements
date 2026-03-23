@@ -51,20 +51,20 @@ There are different types of replacements available:
 - `removal`: for removing the old module without a replacement (e.g. modules which check if a now widely supported API is available)
 - `simple`: for replacing the old module with inline code
 - `native`: for replacing the old module with native APIs (e.g. standard web APIs, or Node built-ins)
-- `documented`: for replacing the old module with a documented alternative
+- `documented`: a guide for replacing the old module with a new module and/or code
 
 When using the `documented` type, you should generally follow these guidelines:
 
-- The mapping should have a `url` which points to an e18e documentation page (i.e. those in the [modules](https://github.com/es-tooling/module-replacements/tree/main/docs/modules) directory of the repo) which describes the replacement and how to migrate to it.
+- The mapping should have a `url` which points to an e18e documentation page (i.e. those in the [modules](https://github.com/es-tooling/module-replacements/tree/main/docs/modules) directory of the repo) which describes the replacement and how to migrate to it. Documentation here will be automatically synced weekly to the e18e website.
 - The replacement does not necessarily need a `url` itself
 - The replacement does not need a `description`
 
 When using the `native` type:
 
-- The mapping generally does not need a `url`
+- The mapping generally does not need a `url`, but if it does then it's because ...
 - The replacement should have a `url` to its external documentation (e.g. MDN or Node docs)
-- The replacement should have a `webFeatureId` if it is a web standard (these come from the [`web-features` dataset](https://github.com/web-platform-dx/web-features/tree/main/features))
-- The replacement should have a `nodeFeatureId` if it is a Node built-in (these are of the form `{ moduleName: string, exportName?: string }`. For example, `fs` would be `{"moduleName": "fs"}`, while `fs.readFile` would be `{"moduleName": "fs", "exportName": "readFile"}`)
+- If it's a web standard, then the replacement should have a `webFeatureId` (these come from the [`web-features` dataset](https://github.com/web-platform-dx/web-features/tree/main/features))
+- If it's a Node built-in, then the replacement should have a `nodeFeatureId` (these are of the form `{ moduleName: string, exportName?: string }`. For example, `fs` would be `{"moduleName": "fs"}`, while `fs.readFile` would be `{"moduleName": "fs", "exportName": "readFile"}`)
 
 When using the `simple` type:
 
