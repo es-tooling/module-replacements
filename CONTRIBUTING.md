@@ -51,7 +51,7 @@ There are different types of replacements available:
 - `removal`: for removing the old module without a replacement (e.g. modules which check if a now widely supported API is available)
 - `simple`: for replacing the old module with inline code
 - `native`: for replacing the old module with native APIs (e.g. standard web APIs, or Node built-ins)
-- `documented`: a guide for replacing the old module with a new module and/or code
+- `documented`: for replacing the old module with a documented alternative
 
 When using the `documented` type, you should generally follow these guidelines:
 
