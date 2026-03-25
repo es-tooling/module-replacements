@@ -52,6 +52,7 @@
         "default": "./dist/main.js"
       }
     },
+    "./manifests/*.json": "./manifests/*.json",
     "./package.json": "./package.json"
   },
   "types": "./dist/main.d.ts",
