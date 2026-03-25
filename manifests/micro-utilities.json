@@ -21,8 +21,8 @@
     "snippet::array-last": {
       "id": "snippet::array-last",
       "type": "simple",
-      "description": "You can use arr.at(-1) if supported or arr[arr.length - 1] to get the last element of an array.",
-      "example": "const last = (arr) => arr.at(-1);\n// or in older environments\nconst last = (arr) => arr[arr.length - 1]"
+      "description": "You can use `arr.at(-1)` if supported or `arr[arr.length - 1]` to get the last element of an array.",
+      "example": "const last = (arr) => arr.at(-1);\n// or in older environments\nconst lastLegacy = (arr) => arr[arr.length - 1]"
     },
     "snippet::array-slice-exclude-last-n": {
       "id": "snippet::array-slice-exclude-last-n",
@@ -64,7 +64,7 @@
       "id": "snippet::char-last",
       "type": "simple",
       "description": "You can use `str.at(-1)` if supported or `str[str.length - 1]` to get the last character of a string.",
-      "example": "const last = (str) => str.at(-1);\n// or in older environments\nconst last = (str) => str[str.length - 1]"
+      "example": "const last = (str) => str.at(-1);\n// or in older environments\nconst lastLegacy = (str) => str[str.length - 1]"
     },
     "snippet::for-own": {
       "id": "snippet::for-own",
@@ -232,7 +232,7 @@
       "id": "snippet::json-file",
       "type": "simple",
       "description": "You can use `JSON` and 'node:fs' to read and write json file.",
-      "example": "import * as fs from 'node:fs/promises'\nfs.readFile(file, 'utf8').then(JSON.parse)\nfs.writeFile(file, JSON.stringify(data, null, 2) + '\n')"
+      "example": "import * as fs from 'node:fs/promises'\nfs.readFile(file, 'utf8').then(JSON.parse)\nfs.writeFile(file, JSON.stringify(data, null, 2) + '\\n')"
     },
     "snippet::math-random": {
       "id": "snippet::math-random",
@@ -304,7 +304,7 @@
       "id": "snippet::unix-paths",
       "type": "simple",
       "description": "You can check the start of a path for the Windows extended-length path prefix and if it's not present, replace backslashes with forward slashes.",
-      "example": "path.startsWith('\\\\?\\') ? path : path.replace(/\\/g, '/')"
+      "example": "path.startsWith('\\\\\\\\?\\\\') ? path : path.replace(/\\\\/g, '/')"
     },
     "snippet:is-number": {
       "id": "snippet:is-number",

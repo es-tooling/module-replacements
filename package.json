@@ -13,7 +13,7 @@
     "prepare": "tsc",
     "lint": "npm run lint:format && npm run lint:manifests",
     "lint:format": "prettier --check \"./**/*.{js,ts,json,md,yml}\"",
-    "lint:manifests": "node scripts/validate-modules.js",
+    "lint:manifests": "node --experimental-vm-modules scripts/validate-modules.js",
     "sort-manifests": "node scripts/sort-manifests.js",
     "update-engines": "npm run update-engines:web && npm run update-engines:bcd && npm run update-engines:runtimes && npm run update-engines:node",
     "update-engines:web": "node scripts/update-engines-web.ts",
