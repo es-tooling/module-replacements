@@ -214,7 +214,7 @@ async function updateReplacementNodeEngine(
   }
 
   const existingNodeEngine = replacement.engines?.find(
-    (e) => e.engine === 'node'
+    (e) => e.engine === 'nodejs'
   );
 
   if (existingNodeEngine?.minVersion === nodeVersion) {
@@ -222,11 +222,11 @@ async function updateReplacementNodeEngine(
   }
 
   const otherEngines =
-    replacement.engines?.filter((e) => e.engine !== 'node') ?? [];
+    replacement.engines?.filter((e) => e.engine !== 'nodejs') ?? [];
 
   return {
     ...replacement,
-    engines: [...otherEngines, {engine: 'node', minVersion: nodeVersion}]
+    engines: [...otherEngines, {engine: 'nodejs', minVersion: nodeVersion}]
   };
 }
 
