@@ -3,13 +3,13 @@
     "snippet::array-coerce": {
       "id": "snippet::array-coerce",
       "type": "simple",
-      "description": "You can use a combination of a ternary operator and Array.isArray to make sure a value, undefined, null or an array is always returned as an array.",
+      "description": "You can use a combination of a ternary operator and `Array.isArray` to make sure a value, `undefined`, `null` or an array is always returned as an array.",
       "example": "(arr == null ? [] : Array.isArray(arr) ? arr : [arr])"
     },
     "snippet::array-difference": {
       "id": "snippet::array-difference",
       "type": "simple",
-      "description": "You can use a combination of filter and includes to calculate the difference between two arrays.",
+      "description": "You can use a combination of `filter` and `includes` to calculate the difference between two arrays.",
       "example": "const difference = (a, b) => a.filter((item) => !b.includes(item))"
     },
     "snippet::array-from-count": {
@@ -33,13 +33,13 @@
     "snippet::array-union": {
       "id": "snippet::array-union",
       "type": "simple",
-      "description": "You can use a combination of the spread operator and Set to create a union of two arrays.",
+      "description": "You can use a combination of the spread operator and `Set` to create a union of two arrays.",
       "example": "const union = (a, b) => [...new Set([...a, ...b])]"
     },
     "snippet::array-unique": {
       "id": "snippet::array-unique",
       "type": "simple",
-      "description": "You can convert to and from a Set to remove duplicates from an array.",
+      "description": "You can convert to and from a `Set` to remove duplicates from an array.",
       "example": "const unique = (arr) => [...new Set(arr)]"
     },
     "snippet::async-function-constructor": {
@@ -57,7 +57,7 @@
     "snippet::call-bind": {
       "id": "snippet::call-bind",
       "type": "simple",
-      "description": "Every modern runtime provides a way to bind to the call method of a function.",
+      "description": "Every modern runtime provides a way to bind to the `call` method of a function.",
       "example": "const fnBound = Function.call.bind(fn)"
     },
     "snippet::char-last": {
@@ -75,13 +75,13 @@
     "snippet::get-iterator": {
       "id": "snippet::get-iterator",
       "type": "simple",
-      "description": "Every modern runtime provides a way to get the iterator function through the Symbol.iterator symbol.",
+      "description": "Every modern runtime provides a way to get the iterator function through the `Symbol.iterator` symbol.",
       "example": "const iterator = obj[Symbol.iterator]?.()"
     },
     "snippet::has-argv": {
       "id": "snippet::has-argv",
       "type": "simple",
-      "description": "You can use the includes method on the process.argv array to check if a flag is present.",
+      "description": "You can use the `includes` method on the `process.argv` array to check if a flag is present.",
       "example": "process.argv.includes('--flag')"
     },
     "snippet::is-arguments": {
@@ -93,7 +93,7 @@
     "snippet::is-arraybuffer": {
       "id": "snippet::is-arraybuffer",
       "type": "simple",
-      "description": "You can use `instanceof ArrayBuffer`, or if cross-realm, use Object.prototype.toString.call(obj) === \"[object ArrayBuffer]\"",
+      "description": "You can use `instanceof ArrayBuffer`, or if cross-realm, use `Object.prototype.toString.call(obj) === \"[object ArrayBuffer]\"`",
       "example": "const isArrayBuffer = obj instanceof ArrayBuffer;\n// for cross-realm\nconst isArrayBufferCrossRealm = Object.prototype.toString.call(obj) === \"[object ArrayBuffer]\""
     },
     "snippet::is-async-function": {
@@ -111,19 +111,19 @@
     "snippet::is-boolean": {
       "id": "snippet::is-boolean",
       "type": "simple",
-      "description": "You can use typeof to check if a value is a boolean primitive, and Object.prototype.toString.call to check if it's a Boolean object.",
+      "description": "You can use `typeof` to check if a value is a boolean primitive, and `Object.prototype.toString.call` to check if it's a `Boolean` object.",
       "example": "Object.prototype.toString.call(v) === \"[object Boolean]\""
     },
     "snippet::is-ci": {
       "id": "snippet::is-ci",
       "type": "simple",
-      "description": "Every major CI provider sets a CI environment variable that you can use to detect if you're running in a CI environment.",
+      "description": "Every major CI provider sets a `CI` environment variable that you can use to detect if you're running in a CI environment.",
       "example": "Boolean(process.env.CI)"
     },
     "snippet::is-date": {
       "id": "snippet::is-date",
       "type": "simple",
-      "description": "You can use `instanceof Date`, or if cross-realm, use Object.prototype.toString.call(v) === \"[object Date]\"",
+      "description": "You can use `instanceof Date`, or if cross-realm, use `Object.prototype.toString.call(v) === \"[object Date]\"`",
       "example": "const isDate = v instanceof Date;\n// for cross-realm\nconst isDateCrossRealm = Object.prototype.toString.call(v) === \"[object Date]\""
     },
     "snippet::is-even": {
@@ -159,7 +159,7 @@
     "snippet::is-npm": {
       "id": "snippet::is-npm",
       "type": "simple",
-      "description": "If the current environment is npm the `npm_config_user_agent` environment variable will be set and start with \"npm\".",
+      "description": "If the current environment is npm the `npm_config_user_agent` environment variable will be set and start with `\"npm\"`.",
       "example": "const isNpm = process.env.npm_config_user_agent?.startsWith(\"npm\")"
     },
     "snippet::is-object": {
@@ -183,7 +183,7 @@
     "snippet::is-primitve": {
       "id": "snippet::is-primitve",
       "type": "simple",
-      "description": "You can check `typeof` of a value to determine if it's a primitive. Note that `typeof null` is \"object\" so you need to check for null separately.",
+      "description": "You can check `typeof` of a value to determine if it's a primitive. Note that `typeof null` is `\"object\"` so you need to check for `null` separately.",
       "example": "const isPrimitive = (value) => value === null || (typeof value !== \"function\" && typeof value !== \"object\");"
     },
     "snippet::is-regexp": {
@@ -231,7 +231,7 @@
     "snippet::json-file": {
       "id": "snippet::json-file",
       "type": "simple",
-      "description": "You can use `JSON` and 'node:fs' to read and write json file.",
+      "description": "You can use `JSON` and `node:fs` to read and write JSON files.",
       "example": "import * as fs from 'node:fs/promises'\nfs.readFile(file, 'utf8').then(JSON.parse)\nfs.writeFile(file, JSON.stringify(data, null, 2) + '\\n')"
     },
     "snippet::math-random": {
