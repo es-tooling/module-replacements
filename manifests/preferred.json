@@ -2999,7 +2999,6 @@
     "fs": {
       "id": "fs",
       "type": "native",
-      "description": "Node file system module",
       "nodeFeatureId": {"moduleName": "node:fs"},
       "url": {"type": "node", "id": "api/fs.html"}
     },
@@ -3288,7 +3287,6 @@
     "readline.createInterface": {
       "id": "readline.createInterface",
       "type": "native",
-      "description": "readline.createInterface",
       "nodeFeatureId": {
         "moduleName": "node:readline",
         "exportName": "createInterface"
@@ -3307,7 +3305,7 @@
     "sort-object": {
       "id": "sort-object",
       "type": "removal",
-      "description": "Object.entries and Array.prototype.sort can be used to sort object keys.",
+      "description": "`Object.entries` and `Array.prototype.sort` can be used to sort object keys.",
       "url": {"type": "e18e", "id": "sort-object"}
     },
     "sort-object-keys": {

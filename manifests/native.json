@@ -897,7 +897,7 @@
     "Object.assign": {
       "id": "Object.assign",
       "type": "native",
-      "description": "Object.assign, or if deep clones are needed, use structuredClone",
+      "description": "`Object.assign`, or if deep clones are needed, use `structuredClone`",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Object/assign"
@@ -1404,7 +1404,7 @@
     "es-errors": {
       "id": "es-errors",
       "type": "removal",
-      "description": "Error and its subclasses are natively built into all modern environments.",
+      "description": "`Error` and its subclasses are natively built into all modern environments.",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Error"
@@ -1413,7 +1413,7 @@
     "es-string-html-methods": {
       "id": "es-string-html-methods",
       "type": "removal",
-      "description": "All the methods exported by this modules are generally available on the String prototype in modern environments.",
+      "description": "All the methods exported by this modules are generally available on the `String` prototype in modern environments.",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/String#html_wrapper_methods"
@@ -1439,7 +1439,7 @@
     "for...of": {
       "id": "for...of",
       "type": "native",
-      "description": "for...of (using \"Object.entries\" if dealing with objects)",
+      "description": "`for...of` (using `Object.entries` if dealing with objects)",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Statements/for...of"
@@ -1482,7 +1482,7 @@
     "has-bigints": {
       "id": "has-bigints",
       "type": "removal",
-      "description": "Every modern environment has support for BigInt. You can just remove the check.",
+      "description": "Every modern environment has support for `BigInt`. You can just remove the check.",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/BigInt"
@@ -1491,7 +1491,7 @@
     "has-dynamic-import": {
       "id": "has-dynamic-import",
       "type": "removal",
-      "description": "Every modern environment has support for dynamic import. You can just remove the check.",
+      "description": "Every modern environment has support for dynamic `import()`. You can just remove the check.",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Operators/import"
@@ -1518,7 +1518,7 @@
     "has-proto": {
       "id": "has-proto",
       "type": "removal",
-      "description": "Every modern environment has support for __proto__. You can just remove the check.",
+      "description": "Every modern environment has support for `__proto__`. You can just remove the check.",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Operators/Object_initializer#prototype_setter"
@@ -1527,7 +1527,7 @@
     "has-symbols": {
       "id": "has-symbols",
       "type": "removal",
-      "description": "Every modern environment has support for Symbols. You can just remove the check.",
+      "description": "Every modern environment has support for `Symbol`. You can just remove the check.",
       "url": {
         "type": "mdn",
         "id": "Web/JavaScript/Reference/Global_Objects/Symbol"
