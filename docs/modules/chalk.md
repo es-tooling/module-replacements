@@ -54,7 +54,7 @@ console.log(picocolors.blue(picocolors.bgRed('blue on red'))) // [!code ++]
 Example:
 
 ```ts
-import ansis from 'ansis' // [!code ++]
+import { ansis } from 'ansis' // [!code ++]
 import chalk from 'chalk' // [!code --]
 
 console.log(`Hello ${chalk.blue('blue')} world!`) // [!code --]
