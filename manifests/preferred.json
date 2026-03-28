@@ -282,6 +282,12 @@
       "replacements": ["tinyglobby"],
       "url": {"type": "e18e", "id": "fast-glob"}
     },
+    "feather-icons": {
+      "type": "module",
+      "moduleName": "feather-icons",
+      "replacements": ["lucide"],
+      "url": {"type": "e18e", "id": "feather"}
+    },
     "find-cache-dir": {
       "type": "module",
       "moduleName": "find-cache-dir",
@@ -2482,6 +2488,12 @@
       "replacements": ["nanoid"],
       "url": {"type": "e18e", "id": "shortid"}
     },
+    "react-feather": {
+      "type": "module",
+      "moduleName": "react-feather",
+      "replacements": ["lucide-react"],
+      "url": {"type": "e18e", "id": "feather"}
+    },
     "react-helmet": {
       "type": "module",
       "moduleName": "react-helmet",
@@ -3127,6 +3139,18 @@
       "type": "removal",
       "url": {"type": "e18e", "id": "lodash-underscore"},
       "description": "lodash and Underscore can be replaced with native JavaScript APIs"
+    },
+    "lucide": {
+      "id": "lucide",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "feather"},
+      "replacementModule": "lucide"
+    },
+    "lucide-react": {
+      "id": "lucide-react",
+      "type": "documented",
+      "url": {"type": "e18e", "id": "feather"},
+      "replacementModule": "lucide-react"
     },
     "luxon": {
       "id": "luxon",
